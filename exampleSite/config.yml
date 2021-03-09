@@ -1,0 +1,47 @@
+author: PoppyGo
+baseURL: /
+baseurl: 'https://www.example.com/'
+copyright: MIT
+description: ''
+languageCode: en-us
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+menu:
+  main:
+    - name: About
+      url: /about
+      weight: 1
+    - name: Archives
+      url: /archives
+      weight: 1
+    - name: Source code
+      url: 'https://github.com/leonardofaria/bento'
+      weight: 1
+params:
+  authorBio: 'Bento is a doggo who likes to code. Follow him on <a href=''#''>Twitter</a>'
+  authorbio: ''
+  avatar: images/avatar.jpg
+  copyright: Copyright © 2021 PoppyGo
+  cover: images/vancouver.jpg
+  description: 'A minimalist modular theme for Hugo, build with bassCSS'
+  email: email@xxxx.com
+  github: XXXX
+  headline: This is a headline
+  linkedin: 'https://linkedin.com/in/XXXX'
+  ogImage: images/og_image.jpg
+  ogimage: ''
+  twitter: XXXX
+  umami:
+    siteID: XXXXX
+    siteid: ''
+    trackerScript: //umami.example.com/umami.js
+    trackerscript: ''
+taxonomies:
+  category: categories
+  tag: tags
+theme: poppygo-one
+title: PoppyGo One Hugo Theme

@@ -1,0 +1,99 @@
+{
+   "menu": [
+     {
+       "key": "singles",
+       "menuItems": [
+         {
+           "key": "s___index",
+           "visible": true
+         },
+         {
+           "key": "s__post",
+           "visible": true
+         },
+         {
+           "key": "s__portfolio",
+           "visible": true
+         },
+         {
+           "key": "s__products",
+           "visible": true
+         },
+         {
+           "key": "s__contentblocks",
+           "visible": true
+         }
+       ],
+       "title": "Home and section pages",
+       "visible": true
+     },
+     {
+       "key": "collections",
+       "menuItems": [
+         {
+           "key": "c__post",
+           "visible": true
+         },
+         {
+           "key": "c__pages",
+           "visible": true
+         },
+         {
+           "key": "c__portfolio",
+           "visible": true
+         },
+         {
+           "key": "c__products",
+           "visible": true
+         }
+       ],
+       "title": "Grouped pages",
+       "visible": true
+     },
+     {
+       "key": "general",
+       "menuItems": [
+         {
+           "key": "config",
+           "visible": true
+         },
+         {
+           "key": "menus",
+           "visible": true
+         },
+         {
+           "key": "c__contentblocks",
+           "visible": true
+         }
+       ],
+       "title": "Site settings",
+       "visible": true
+     },
+     {
+       "key": "poppygo",
+       "menuItems": [
+         {
+           "key": "pogocms",
+           "visible": true
+         }
+       ],
+       "title": "PoppyGo",
+       "visible": true
+     },
+     {
+       "key": "data",
+       "menuItems": [
+         {
+           "key": "ds_data_css-theme",
+           "visible": true
+         },
+         {
+           "key": "ds_data_theme",
+           "visible": true
+         }
+       ],
+       "title": "Other content",
+       "visible": true
+     }
+   ]
+ }
