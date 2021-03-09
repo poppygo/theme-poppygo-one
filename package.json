@@ -3,7 +3,7 @@
   "scripts": {
     "prod": "cross-env NODE_ENV=production postcss src/tailwind.css -o assets/css/tailwind.css",
     "tailwind": "cross-env NODE_ENV=production tailwindcss build src/tailwind.css -o assets/css/tailwind.css",
-    "tailwind_unpurged": "cross-env NODE_ENV=development tailwindcss build src/tailwind.css -o static/tailwind_unpurged.css"
+    "tailwind_unpurged": "cross-env NODE_ENV=development tailwindcss build src/tailwind.css -o assets/css/tailwind.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
