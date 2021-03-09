@@ -87,7 +87,6 @@
   {{- partial "process/googlefonts" -}}
   {{- partial "process/bundlecss" -}}
 
-
   {{ if .Site.Params.RelPermalink}}
   <link href="{{ with .OutputFormats.Get "RSS" }} {{ .RelPermalink  }} {{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
   {{else}}
@@ -103,17 +102,12 @@
 
   <style>
     :root {
-      --color-bg-primary: {{ $.Site.Data.theme.css.color_bg_primary }};
-      --color-bg-secondary: {{ $.Site.Data.theme.css.color_bg_secondary }};
-      --color-bg-default: {{ $.Site.Data.theme.css.color_bg_default }};
-      --color-bg-inverse: {{ $.Site.Data.theme.css.color_bg_inverse }};
-
-      --color-text-primary: {{ $.Site.Data.theme.css.color_text_primary }};
-      --color-text-secondary: {{ $.Site.Data.theme.css.color_text_secondary }};
-      --color-text-default: {{ $.Site.Data.theme.css.color_text_default }};
-      --color-text-default-soft: {{ $.Site.Data.theme.css.color_text_default_soft }};
-      --color-text-inverse: {{ $.Site.Data.theme.css.color_text_inverse }};
-      --color-text-inverse-soft: {{ $.Site.Data.theme.css.color_text_inverse_soft }};
+      --pogo-color-1: {{ $.Site.Data.theme.css.pogo_color_1 }};
+      --pogo-color-2: {{ $.Site.Data.theme.css.pogo_color_2 }};
+      --pogo-color-3: {{ $.Site.Data.theme.css.pogo_color_3 }};
+      --pogo-color-4: {{ $.Site.Data.theme.css.pogo_color_4 }};
+      --pogo-color-5: {{ $.Site.Data.theme.css.pogo_color_5 }};
+      --pogo-color-6: {{ $.Site.Data.theme.css.pogo_color_6 }};
 
       --font-display: {{ $.Site.Data.theme.css.font_display }};
       --font-body: {{ $.Site.Data.theme.css.font_body }};
