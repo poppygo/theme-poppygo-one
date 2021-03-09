@@ -1,22 +1,18 @@
 module.exports = {
-  purge: [
-    './layouts/**/*.html'
-  ],
+  purge: {
+    enabled: true,
+    content: ['./layouts/**/*.html'],
+  },
   theme: {
-    colors: {},
-    textColor: {
-      primary: "var(--color-text-primary)",
-      secondary: "var(--color-text-secondary)",
-      default: "var(--color-text-default)",
-      "default-soft": "var(--color-text-default-soft)",
-      inverse: "var(--color-text-inverse)",
-      "inverse-soft": "var(--color-text-inverse-soft)"
-    },
-    backgroundColor: {
-      primary: "var(--color-bg-primary)",
-      secondary: "var(--color-bg-secondary)",
-      default: "var(--color-bg-default)",
-      inverse: "var(--color-bg-inverse)"
+    extend: {
+      colors: {
+        pogocolor1: 'var(--pogo-color-1)',
+        pogocolor2: 'var(--pogo-color-2)',
+        pogocolor3: 'var(--pogo-color-3)',
+        pogocolor4: 'var(--pogo-color-4)',
+        pogocolor5: 'var(--pogo-color-5)',
+        pogocolor6: 'var(--pogo-color-6)',
+      }
     },
     fontFamily: {
       display: "var(--font-display)",

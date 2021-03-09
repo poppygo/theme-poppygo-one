@@ -14,11 +14,11 @@
   {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.fg_image "path" $content.fg_image_path "link" .RelPermalink "scale" "w-100") -}}
 
   <div class="block">
-    {{- $btnclasses := slice "bg-primary" "bg-secondary bg-secondary" -}}
+    {{- $btnclasses := slice "bg-pogocolor2" "bg-pogocolor3" "bg-pogocolor3" -}}
     {{- $txtclasses := slice "text-primary" "text-secondary text-secondary" -}}
     {{- range $index, $value := $content.buttons -}}
     <a href="{{.link }}">
-      <button type="button" class="font-body rounded-btn text-xl font-medium {{ index $btnclasses $index }} {{ index $txtclasses $index }} px-6 py-3 mr-2">
+      <button type="button" class="font-body rounded-btn {{ index $btnclasses $index }} {{ index $txtclasses $index }} text-xl font-medium px-6 py-3 mr-2">
         {{- .label -}}
       </button>
     </a>

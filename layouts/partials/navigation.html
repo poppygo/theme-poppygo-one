@@ -1,18 +1,41 @@
-<nav class="p1 m0 bg-white border-bottom">
-    <div class="clearfix relative">
-        <div class="brand center"><a class="btn blue regular caps" href="/">PoppyGo One</a></div>
-        <div class="menu clearfix hide">
-            <ul class="md-col clearfix list-reset m0 mt2">
-                <li class="md-col"><a class="block btn black" href="#!">Single Malt</a></li>
-                <li class="md-col"><a class="block btn black" href="#!"> Bourbon</a></li>
-                <li class="md-col"> <a class="block btn black" href="#!"> Rye</a></li>
-            </ul>
-            <span class="md-col-right search px2 mt2"> <input class="input block" type="search" placeholder="Distill" />  </span>
-            <ul class="md-col-right clearfix list-reset m0 mt2">
-                <li class="md-col flex"><a class="block btn black" href="#!">Rocks </a></li>
-                <li class="md-col flex"><a class="block btn btn-primary" href="#!">Neat </a></li>
-            </ul>
-        </div>
-        <div class="toggle absolute top-0 right-0"><button class="btn btn-secondary bg-white black regular">&#9776;</button></div>
-    </div>
+<nav class="flex flex-row my-3">
+  <div class="flex-none w-16 ">
+  </div>
+  <div class="flex-grow text-center ">
+      <a class="uppercase text-pogocolor1 text-xl" href="/">PoppyGo One</a>
+  </div>
+  <div class="flex-none w-16 ">
+      <p id="hamburgerbtn" xclass="xmd:hidden">
+      &#9776;
+      </p>
+  </div>
 </nav>
+
+<div class="container mx-auto p-5">
+  <nav class="flex-row md:justify-between">
+    <ul class="hidden md:flex md:flex-row" id="mobileMenu">
+      <li class="pr-5"><a>Services </a></li>
+      <li class="pr-5"><a>Porfolio</a></li>
+      <li class="pr-5"><a>About</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<style>
+    .active{
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function(){
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+
