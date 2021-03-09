@@ -8,12 +8,12 @@
 
 {{ partial "process/get_background_style" (dict "page" $content.bg_resource_page "css_class" $content.name "bg_image" $content.bg_image "imagePath" $content.bg_image_path) }}
 
-<header class="center px3 py4 white bg-gray bg-cover bg-center {{$content.name}}">
-  <h1 class="h1 h0-responsive caps mt4 mb0 regular">{{$content.title}}</h1>
+<header class="center px-4 py-20 bg-gray bg-cover bg-center {{$content.name}}">
+  <h1 class="text-9xl uppercase mt-20 ">{{$content.title}}</h1>
   <p class="h3">{{ $content.subtitle }}</p>
   {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.fg_image "path" $content.fg_image_path "link" .RelPermalink "scale" "w-100") -}}
 
-  <div class="block">
+  <div class="block p-20 text-white">
     {{- $btnclasses := slice "bg-pogocolor2" "bg-pogocolor3" "bg-pogocolor3" -}}
     {{- $txtclasses := slice "text-primary" "text-secondary text-secondary" -}}
     {{- range $index, $value := $content.buttons -}}

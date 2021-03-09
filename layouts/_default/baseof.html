@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="{{ .Site.LanguageCode }}">
   {{- partial "head.html" . -}}
-  <body xclass="flex flex-column" style="min-height:100vh">
+  <body class="flex flex-col flex-auto min-h-screen" >
     {{- partial "navigation.html" . -}}
-    <main xclass="flex-auto">
+    <main class="flex-grow">
     {{- block "main" . }}{{- end }}
     </main>
     {{- partial "footer.html" . -}}

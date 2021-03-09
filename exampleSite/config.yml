@@ -1,6 +1,6 @@
 author: PoppyGo
 baseURL: /
-baseurl: 'https://www.example.com/'
+baseurl: '/'
 copyright: MIT
 description: ''
 languageCode: en-us
@@ -13,21 +13,21 @@ markup:
 menu:
   main:
     - name: About
-      url: /about
+      url: /about/
       weight: 1
-    - name: Archives
-      url: /archives
-      weight: 1
-    - name: Source code
-      url: 'https://github.com/leonardofaria/bento'
-      weight: 1
+    - name: Docs
+      url: /docs/
+      weight: 2
+    - name: Content Blocks
+      url: /contentblocks/
+      weight: 3
 params:
-  authorBio: 'Bento is a doggo who likes to code. Follow him on <a href=''#''>Twitter</a>'
+  authorBio: 'PoppyGo is one year old'
   authorbio: ''
   avatar: images/avatar.jpg
   copyright: Copyright © 2021 PoppyGo
   cover: images/vancouver.jpg
-  description: 'A minimalist modular theme for Hugo, build with bassCSS'
+  description: 'A minimalist modular theme for Hugo, build with Tailwind'
   email: email@xxxx.com
   github: XXXX
   headline: This is a headline

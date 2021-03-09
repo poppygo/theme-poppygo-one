@@ -1,31 +1,44 @@
-<nav class="flex flex-row py-3 border-b-2 border-pogocolor1 bg-pogocolor3">
-  <div class="flex-none w-16 ">
-  </div>
-  <div class="flex-grow text-center">
-      <a class="uppercase text-pogocolor1 text-xl" href="/">PoppyGo One</a>
-  </div>
-  <div class="flex-none w-16 ">
-      <p id="hamburger-btn">
-      &#9776;
-      </p>
-  </div>
-</nav>
+<div class="z-10">
+  <nav class="flex -mb-24 py-3 bg-transparent">
+    <div class="flex-none w-16 ">
+    </div>
+    <div class="py-5 flex-grow text-center">
+        <a class="uppercase bg-pogocolor4 p-3 text-pogocolor1 text-xl" href="/">PoppyGo One</a>
+    </div>
+    <div class="flex-none w-16">
+        <button id="hamburger-open" class="text-xl py-3">
+        &#9776;
+      </button>
+    </div>
+  </nav>
 
-<div class="bg-pogocolor4 border-pogocolor1">
-    <ul class="hidden p-5" id="menu">
-      <li><a>Services</a></li>
-      <li><a>Porfolio</a></li>
-      <li><a>About</a></li>
-      <li><a>Contact</a></li>
+  <div class="bg-pogocolor4 border-pogocolor1">
+    <ul id="menu" class="px-12 py-5 hidden w-full flex flex-col lg:flex-row justify-end items-end lg:items-center">
+      {{ range .Site.Menus.main.ByWeight }}
+        <li class="flex my-2 lg:my-2 mx-1 lg:mx-2">
+          <a title="{{ .Name }}" class="uppercase font-bold lg:py-2 lg:px-3 rounded text-sm opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+      <button id="hamburger-close" class="">
+      &#10060;
+    </button>
     </ul>
+  </div>
 </div>
 
+
 <script>
-    let hamburger = document.getElementById('hamburger-btn');
+    let hamburger = document.getElementById('hamburger-open');
+    let close = document.getElementById('hamburger-close');
     let menu = document.getElementById('menu');
 
     hamburger.addEventListener('click', function(){
         menu.classList.toggle('hidden');
+        hamburger.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', function(){
+        menu.classList.toggle('hidden');
+        hamburger.classList.toggle('hidden');
     });
 </script>
-
