@@ -1,41 +1,31 @@
-<nav class="flex flex-row my-3">
+<nav class="flex flex-row py-3 border-b-2 border-pogocolor1 bg-pogocolor3">
   <div class="flex-none w-16 ">
   </div>
-  <div class="flex-grow text-center ">
+  <div class="flex-grow text-center">
       <a class="uppercase text-pogocolor1 text-xl" href="/">PoppyGo One</a>
   </div>
   <div class="flex-none w-16 ">
-      <p id="hamburgerbtn" xclass="xmd:hidden">
+      <p id="hamburger-btn">
       &#9776;
       </p>
   </div>
 </nav>
 
-<div class="container mx-auto p-5">
-  <nav class="flex-row md:justify-between">
-    <ul class="hidden md:flex md:flex-row" id="mobileMenu">
-      <li class="pr-5"><a>Services </a></li>
-      <li class="pr-5"><a>Porfolio</a></li>
-      <li class="pr-5"><a>About</a></li>
+<div class="bg-pogocolor4 border-pogocolor1">
+    <ul class="hidden p-5" id="menu">
+      <li><a>Services</a></li>
+      <li><a>Porfolio</a></li>
+      <li><a>About</a></li>
       <li><a>Contact</a></li>
     </ul>
-  </nav>
 </div>
 
-
-<style>
-    .active{
-        display: block;
-    }
-</style>
-
 <script>
-    let hamburger = document.getElementById('hamburgerbtn');
-
-    let mobileMenu = document.getElementById('mobileMenu');
+    let hamburger = document.getElementById('hamburger-btn');
+    let menu = document.getElementById('menu');
 
     hamburger.addEventListener('click', function(){
-        mobileMenu.classList.toggle('active');
+        menu.classList.toggle('hidden');
     });
 </script>
 

@@ -2,7 +2,7 @@ default: build_css build_hugotheme build_pogosite
 
 build_css:
 	@echo COMPILING STATIC CSS
-	@npm run prod
+	@npm run tailwind
 
 clean_dist:
 	@rm -Rf ./dist
@@ -32,4 +32,4 @@ release: build_pogosite
 	@echo "## Changelog\n" > ./dist/changelog.txt
 	@git log v`cat VERSION` --pretty=format:"%h : %s" | grep -v Merge >> ./dist/changelog.txt
 	@cat ./dist/changelog.txt
-	@gh release create v`cat VERSION` dist/poppygo-one.pogosite dist/poppygo-one.tgz -t v`cat VERSION` -F dist/changelog.txt
+	@gh release create v`cat VERSION` dist/poppygo-one.pogosite dist/poppygo-one.tgz -p -t v`cat VERSION` -F dist/changelog.txt
