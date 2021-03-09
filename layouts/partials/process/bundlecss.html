@@ -1,0 +1,7 @@
+{{ $basscss := resources.Get "css/basscss-custom.css" }}
+{{ $custom := resources.Get "css/custom.css" }}
+{{ $tailwind := resources.Get "css/tailwind.css" }}
+{{ $css := slice  $custom $basscss $tailwind | resources.Concat "css/poppygo-one.css" }}
+
+{{- $css = $css | minify | fingerprint "md5" -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

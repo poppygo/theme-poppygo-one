@@ -1,0 +1,93 @@
+{{ "<!-- snippet list mediacards -->" | safeHTML }}
+<section class="p2 container mx-auto clearfix">
+  <h1>{{ .snippetOverride.title | default .snippet.Params.title }}</h1>
+  <div class="clearfix mxn2">
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block rounded" />
+     </a>
+   </div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="sm-show md-hide clearfix"></div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="md-show lg-hide clearfix"></div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="sm-show md-hide clearfix"></div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="md-show lg-hide clearfix"></div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="sm-show md-hide clearfix"></div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+   <div class="col col-6 sm-col-4 md-col-3 lg-col-2 px2 mb3">
+     <a href="#" class="block">
+       <img src="http://d2v52k3cl9vedd.cloudfront.net/assets/images/placeholder-square.svg" class="block" />
+     </a>
+   </div>
+ </div>
+
+</section>
+
+
+
+{{/* <section class="" id="">
+  <div id="reading-progress-bar" role="presentation" class="fixed z-10 top-0 left-0 h-1 bg-gray-700"></div>
+
+    {{ $paginator := .page.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+    {{ range $paginator.Pages }}
+      <article class="article border-b border-gray-400">
+        <h1><a href="{{.Permalink}}" class="no-underline">{{ .Title }}</a></h1>
+
+        {{ .Summary }}
+      </article>
+    {{ end }}
+
+    {{ if gt $paginator.TotalPages 1 }}
+      {{ template "_internal/pagination.html" . }}
+    {{ end }}
+
+  </div>
+</section> */}}

@@ -1,0 +1,5 @@
+{{- $items_sort := "desc" -}}
+{{- $items := where site.RegularPages "Type" "eq" .type -}}
+{{- $sort_by := .weight -}}
+{{- $items = sort $items $sort_by $items_sort -}}
+{{- return $items -}}

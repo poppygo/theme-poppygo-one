@@ -1,0 +1,10 @@
+{{ define "main"}}
+  <section class="container">
+      <article class="">
+        {{ range site.RegularPages.GroupByDate "2006" -}}
+            {{ partial "post-summary.html" . }}
+        {{ end }}
+      </article>
+    </main>
+  </body>
+{{end}}

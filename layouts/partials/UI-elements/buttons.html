@@ -1,0 +1,8 @@
+<div class="block">
+  {{- $btnclasses := slice "btn-primary" "btn-secondary btn-secondary" -}}
+  {{- range $index, $value := . -}}
+    <a href="{{.link }}" class="h3 btn mb4 {{ index $btnclasses $index }}">
+        {{- .label -}}
+    </a>
+  {{- end -}}
+</div>

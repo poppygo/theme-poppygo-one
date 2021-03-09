@@ -1,0 +1,52 @@
+{{ "<!-- snippet form one -->" | safeHTML }}
+<section class=" container">
+  <div>
+    <h1>{{ .snippetOverride.title | default .snippet.Params.title }}</h1>
+  </div>
+
+  <div class="flex mb2">
+    <label for="search-input" class="hide">Search</label>
+    <input
+      type="search"
+      id="search-input"
+      class="flex-auto m0 field-light rounded-left"
+      placeholder="Search">
+    <button class="button rounded-right border black bg-silver">Go</button>
+  </div>
+
+  <div class="flex mb2">
+    <label for="search-input" class="hide">Search</label>
+    <input
+      type="search"
+      id="search-input"
+      class="flex-auto m0 field-light rounded-left"
+      placeholder="Search">
+    <button class="button not-rounded black bg-silver">Button</button>
+    <button class="button rounded-right border-left black bg-silver">Go</button>
+  </div>
+
+  <div class="flex mb2">
+    <button class="button rounded-left black bg-silver">Button</button>
+    <label for="search-input" class="hide">Search</label>
+    <input
+      type="search"
+      id="search-input"
+      class="flex-auto m0 field-light not-rounded"
+      placeholder="Search">
+    <button class="button rounded-right border-left black bg-silver">Go</button>
+  </div>
+
+  <div class="flex flex-stretch mb2 border rounded">
+    <label for="search-input" class="hide">Search</label>
+    <div class="flex flex-center px1 h5 bold">
+      <svg class="geomicon icon gray" data-icon="search" viewBox="0 0 32 32" style="fill:currentcolor"><path d="M12 0 A12 12 0 0 0 0 12 A12 12 0 0 0 12 24 A12 12 0 0 0 18.5 22.25 L28 32 L32 28 L22.25 18.5 A12 12 0 0 0 24 12 A12 12 0 0 0 12 0 M12 4 A8 8 0 0 1 12 20 A8 8 0 0 1 12 4  "></path></svg>
+    </div>
+    <input
+      type="search"
+      id="search-input"
+      class="flex-auto m0 field-light not-rounded border-none"
+      placeholder="Search">
+    <button class="button rounded-right black bg-silver">Go</button>
+  </div>
+
+</div>

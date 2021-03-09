@@ -1,0 +1,77 @@
+{{/*  Usage:
+- Add partial to your template: {{ partial "process/get_background_style" (dict "page" .section "css_class" .class "bg_image" .section.bg_image "resource_page" .page "imagePath" .imagePath)}}
+- And add the class to your container:  for example class = "{{.class}}"
+*/}}
+
+{{ $css_class := .css_class }}
+{{ $path := .imagePath }}
+
+{{ if .page.IsSection }}
+    {{ $path := "" }}
+{{ end }}
+
+{{ $image := "" }}
+
+{{ if .bg_image }}
+  {{ if .resource_page }}
+    {{ $page = .resource_page }}
+  {{ end }}
+
+  {{ $image_path := printf "%s*%s*" $path .bg_image }}
+  {{ $image := (.page.Resources.ByType "image").GetMatch $image_path}}
+
+  {{ with $image }}
+      {{ $extraSmall := .Resize "500x" }}
+      {{ $small := .Resize "768x" }}
+      {{ $medium := .Resize "992x" }}
+      {{ $large := .Resize "1200x" }}
+      {{ $extralarge := .Resize "1920x" }}
+      <style>
+            @media (max-width: 667px) {
+              .{{$css_class}} {
+                background:
+                  url({{$extraSmall.RelPermalink | safeCSS }}) no-repeat center;
+                background-size: cover;
+              }
+            }
+
+            @media (min-width: 668px) {
+              .{{$css_class}} {
+              background:
+                url({{$small.RelPermalink | safeCSS }}) no-repeat center ;
+                background-size: cover;
+              }
+
+            }
+
+            @media (min-width: 992px) {
+              .{{$css_class}} {
+
+              background:
+                url( {{$medium.RelPermalink | safeCSS }}) no-repeat center;
+                background-size: cover;
+              }
+              }
+            }
+
+            @media (min-width: 1200px) {
+              .{{$css_class}} {
+
+              background:
+                url({{$large.RelPermalink | safeCSS }}) no-repeat center;
+                background-size: cover;
+              }
+            }
+
+            @media (min-width: 1600px) {
+              .{{$css_class}} {
+
+              background:
+                url({{$extralarge.RelPermalink | safeCSS }}) no-repeat center;
+                background-size: cover;
+              }
+            }
+          }
+      </style>
+  {{ end }}
+{{ end }}

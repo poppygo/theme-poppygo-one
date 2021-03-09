@@ -1,0 +1,34 @@
+
+{{- $contentBlock := .contentBlock -}}
+{{- $section := .section -}}
+{{- $content := dict "name" ( .section.name | default .contentBlock.Name) -}}
+
+{{/* -----------get Params -------- */}}
+{{- $params := slice "title" "subtitle" "fg_image" "bg_image" "full_width" "max_columns" "buttons" "items" -}}
+
+{{- range $params}}
+  {{- $override := index $section . -}}
+  {{- $default := index $contentBlock.Params . -}}
+  {{- $content = merge $content (dict . ( $override | default $default )) -}}
+{{- end -}}
+
+{{/* -----------get Image vars -------- */}}
+{{- if .section.bg_image}}
+    {{- $content = merge $content (dict "bg_resource_page" .page) -}}
+    {{- $content = merge $content (dict "bg_image_path" "images/") -}}
+{{- else -}}
+    {{- $content = merge $content (dict "bg_resource_page" (site.GetPage "contentblocks")) -}}
+    {{- $content = merge $content (dict "bg_image_path" ( printf "%s/%s" (path.Base (path.Dir .contentBlock)) "images/")) -}}
+{{- end -}}
+
+{{- if .section.fg_image}}
+    {{- $content = merge $content (dict "fg_resource_page" .page) -}}
+    {{- $content = merge $content (dict "fg_image_path" "images/") -}}
+{{- else -}}
+    {{- $content = merge $content (dict "fg_resource_page" (site.GetPage "contentblocks")) -}}
+    {{- $content = merge $content (dict "fg_image_path"  (printf "%s/%s" (path.Base (path.Dir .contentBlock)) "images/")) -}}
+{{- end -}}
+
+{{/* -----------return -------- */}}
+
+{{- return $content -}}
