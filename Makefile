@@ -30,6 +30,6 @@ release: build_pogosite
 	@git tag -a v`cat VERSION` -m "new version `cat VERSION`"
 	@git push origin v`cat VERSION`
 	@echo "## Changelog\n" > ./dist/changelog.txt
-	@git log v`cat VERSION` --pretty=format:"%h : %s" | grep -v Merge >> ./dist/changelog.txt
+	@git log $$(git describe --tags --abbrev=0)..HEAD --pretty=format:"%h: %s" | grep -v Merge >> ./dist/changelog.txt
 	@cat ./dist/changelog.txt
 	@gh release create v`cat VERSION` dist/poppygo-one.pogosite dist/poppygo-one.tgz -p -t v`cat VERSION` -F dist/changelog.txt
