@@ -1,0 +1,21 @@
+{{- define "main" -}}
+  <div id="reading-progress-bar" role="presentation" class="fixed z-10 top-0 left-0 h-1 bg-gray-700"></div>
+  {{ "<!-- default contentblocks -->" | safeHTML }}
+<div class = "mt-32">
+
+  <h1 class = "text-9xl uppercase text-center m-20"> This is an overview of all contentblocks that you can use</h1>
+
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+  {{ range $paginator.Pages }}
+      <h1 class = "text-4xl text-center m-20"> ------------{{.File.ContentBaseName }}-------- </h1>
+      {{- $contentblock_layout := printf "contentblock-layouts/%s/%s" .Params.pogo_type .Params.pogo_variant -}}
+      {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $contentblock_layout )) }}
+          {{- partial $contentblock_layout (dict "page" . "section" .Params "contentBlock" .  ) -}}
+      {{- end -}}
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
+</div>
+{{- end -}}

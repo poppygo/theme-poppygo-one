@@ -1,0 +1,24 @@
+---
+draft: false
+iscjklanguage: ''
+mainContent: ''
+resources: []
+title: I am a gallery
+subtitle: Galleries are great for your products and portfolio
+summary: -|
+    I am the summary of the gallery, which can be used for opengraph and SEO descriptions
+pogo_type: pogo-list
+pogo_variant: gallery
+list: contentblocks
+fg_image: fore
+bg_image: back
+full-width: false
+enabled: true
+buttons:
+  - label: See all
+    link: /contentBlocks/
+---
+### I am the main content
+
+Here you have full freedom to add content as much as you want.
+You can add  Images as shortcodes, columns as shortcodes etc.

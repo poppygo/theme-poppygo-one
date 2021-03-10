@@ -1,0 +1,14 @@
+{{- define "main" -}}
+{{ "<!-- default contentblocks -->" | safeHTML }}
+
+<div class= "m-24 text-center text-6xl">
+    <h1> This is a preview of {{.File.ContentBaseName }} </h1>
+</div>
+
+<div class = "mt-20">
+  {{- $contentblock_layout := printf "contentblock-layouts/%s/%s" .Params.pogo_type .Params.pogo_variant -}}
+  {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $contentblock_layout )) }}
+      {{- partial $contentblock_layout (dict "page" . "section" .Params "contentBlock" .  ) -}}
+  {{- end -}}
+<div>
+{{- end -}}
