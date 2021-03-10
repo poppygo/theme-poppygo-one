@@ -1,8 +1,5 @@
 ---
 draft: false
-iscjklanguage: ''
-mainContent: ''
-resources: []
 title: I am a gallery
 subtitle: Galleries are great for your products and portfolio
 summary: -|
@@ -11,9 +8,9 @@ pogo_type: pogo-list
 pogo_variant: gallery
 list: contentblocks
 fg_image: fore
-bg_image: back
 full-width: false
-enabled: true
+max_amount: 6
+size: 450
 buttons:
   - label: See all
     link: /contentBlocks/

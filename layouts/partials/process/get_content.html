@@ -4,7 +4,18 @@
 {{- $content := dict "name" ( .section.name | default .contentBlock.Name) -}}
 
 {{/* -----------get Params -------- */}}
-{{- $params := slice "title" "subtitle" "fg_image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" -}}
+{{- $params := slice
+"title"
+"subtitle"
+"fg_image"
+"bg_image"
+"full_width"
+"max_columns"
+"buttons"
+"items"
+"list"
+"max_amount"
+"size" -}}
 
 {{- range $params}}
   {{- $override := index $section . -}}
