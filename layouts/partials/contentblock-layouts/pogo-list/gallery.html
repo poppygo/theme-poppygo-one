@@ -6,7 +6,7 @@
 
 {{/*----------- Section Layout ---------*/}}
 
-{{ partial "process/get_background_style" (dict "page" .page "css_class" $content.name "bg_image" $content.bg_image "imagePath" "images") }}
+{{ partial "UI-elements/bg_image" (dict "page" .page "css_class" $content.name "bg_image" $content.bg_image "path" "images/") }}
 
 {{- with $content -}}
   {{- $items := partial "process/sortedItems" (dict "type" .list ) -}}
@@ -15,12 +15,10 @@
     <h1 class="text-5xl mt-10 mb-20">{{ .title }}</h1>
     <div class=" grid gap-3 grid-cols-2 md:grid-cols-5 lg:grid-cols-9">
         {{- range $items -}}
-
-          <div class="bg-pogocolor4 text-white ">
-          <h1>{{.Title}}</h1>
-            <div class="">
-              {{- partial "UI-elements/image" (dict "resource_page" . "name" .Params.fg_image "path" "images/" "link" .RelPermalink "scale" "full-width") -}}
-            </div>
+        {{- partial "UI-elements/bg_image" (dict "page" . "css_class" .File.ContentBaseName "bg_image" .Params.fg_image "path" "images/") -}}
+          <div class="bg-pogocolor4 text-white {{.File.ContentBaseName}} bg-cover bg-center py-10 px-2">
+              <h1 class="text-center">{{.Title}}</h1>
+              <h1 class="text-center">{{.Summary}}</h1>
           </div>
         {{- end -}}
     </div>

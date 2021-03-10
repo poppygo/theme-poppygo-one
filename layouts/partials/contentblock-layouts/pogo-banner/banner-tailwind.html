@@ -6,10 +6,10 @@
 
 {{/*----------- Section Layout ---------*/}}
 
-{{ partial "process/get_background_style" (dict "page" .page "css_class" $page.File.ContentBaseName "bg_image" $content.bg_image "imagePath" "images/") }}
+{{ partial "UI-elements/bg_image" (dict "page" .page "css_class" $page.File.ContentBaseName "bg_image" $content.bg_image "path" "images/") }}
 
 {{- with $content -}}
-<header class="text-center px-4 py-20 bg-gray bg-cover bg-center {{$page.File.ContentBaseName}}">
+<header class="bg-fixed text-center bg-cover px-4 py-20 {{$page.File.ContentBaseName}}">
   <h1 class="text-9xl uppercase mt-20 ">{{.title}}</h1>
   <p class="h3">{{ .subtitle }}</p>
   {{- partial "UI-elements/image" (dict "resource_page" $page "name" .fg_image "path" "images/" "link" .link "scale" "w-100") -}}

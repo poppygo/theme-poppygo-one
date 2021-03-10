@@ -4,42 +4,55 @@ iscjklanguage: ''
 mainContent: ''
 resources: []
 sections:
-  - contentblock: twbanner
+  - bg_image: null
+    contentblock: twbanner
     name: testbanner
-    title: 'Lekker laat'
-    bg_image:
-  - contentblock: gallery1
+    title: Intoducting the concept of reusable content blocks
+  - bg_image: ''
+    contentblock: gallery1
     name: testlist4
     title: ''
-  - contentblock: cards1
+  - bg_image: ''
+    contentblock: cards1
     name: testenumeration2
     title: ''
-  - contentblock: mediaobject1
+  - bg_image: ''
+    contentblock: mediaobject1
     name: testenumeration3
     title: ''
-  - contentblock: threeup1
+  - bg_image: ''
+    contentblock: threeup1
     name: testenumeration4
     title: ''
-  - contentblock: article1
+  - bg_image: ''
+    contentblock: article1
     name: testarticle
     title: Test the article snippet
-  - contentblock: list-mediaobjects
+  - bg_image: ''
+    contentblock: list-mediaobjects
     name: testlist1
     title: ''
-  - contentblock: blog-teaser1
+  - bg_image: ''
+    contentblock: blog-teaser1
     name: testlist2
     title: ''
-  - contentblock: listcards
+  - bg_image: ''
+    contentblock: listcards
     name: testlist3
     title: ''
-  - contentblock: form1
+  - bg_image: ''
+    contentblock: form1
     name: testform
     title: Test the form snippet
-  - contentblock: portfolio1
+  - bg_image: ''
+    contentblock: portfolio1
     name: testportfolio
     title: Test the portfolio snippet
-  - contentblock: product1
+  - bg_image: ''
+    contentblock: product1
     name: testproduct
     title: Test the product snippet
 title: Tailwind Demo Page
+
 ---
+

@@ -3,7 +3,6 @@
 */}}
 
 {{ $link := .link}}
-{{ $scale := .scale }}
 {{ $class := .class }}
 
 {{ $image_path := printf "%s*%s*" .path .name }}
@@ -27,7 +26,7 @@
 
   src="{{ ($image.Resize "640x").Permalink }}"
 
-  class="lazyload image {{$scale}} {{$class}}"
+  class="lazyload {{$class}}"
   alt="{{ $filename}}"
 
   {{/*

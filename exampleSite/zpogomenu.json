@@ -45,6 +45,10 @@
          {
            "key": "c__products",
            "visible": true
+         },
+         {
+           "key": "c__contentblocks",
+           "visible": true
          }
        ],
        "title": "Grouped pages",

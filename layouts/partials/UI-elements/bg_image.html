@@ -4,7 +4,7 @@
 */}}
 
 {{ $css_class := .css_class }}
-{{ $path := .imagePath }}
+{{ $path := .path }}
 
 {{ if .page.IsSection }}
     {{ $path := "" }}
@@ -18,7 +18,6 @@
   {{ end }}
 
   {{ $image_path := printf "%s*%s*" $path .bg_image }}
-
   {{ $image := (.page.Resources.ByType "image").GetMatch $image_path}}
 
   {{ with $image }}
@@ -30,46 +29,34 @@
       <style>
             @media (max-width: 667px) {
               .{{$css_class}} {
-                background:
-                  url({{$extraSmall.RelPermalink | safeCSS }}) no-repeat center;
-                background-size: cover;
+                background-image:
+                  url({{$extraSmall.RelPermalink | safeCSS }}) ;
               }
             }
-
             @media (min-width: 668px) {
               .{{$css_class}} {
-              background:
-                url({{$small.RelPermalink | safeCSS }}) no-repeat center ;
-                background-size: cover;
+              background-image:
+                url({{$small.RelPermalink | safeCSS }}) ;
               }
-
             }
-
             @media (min-width: 992px) {
               .{{$css_class}} {
 
-              background:
-                url( {{$medium.RelPermalink | safeCSS }}) no-repeat center;
-                background-size: cover;
+              background-image:
+                url( {{$medium.RelPermalink | safeCSS }}) ;
               }
               }
             }
-
             @media (min-width: 1200px) {
               .{{$css_class}} {
-
-              background:
-                url({{$large.RelPermalink | safeCSS }}) no-repeat center;
-                background-size: cover;
+              background-image:
+                url({{$large.RelPermalink | safeCSS }}) ;
               }
             }
-
             @media (min-width: 1600px) {
               .{{$css_class}} {
-
-              background:
-                url({{$extralarge.RelPermalink | safeCSS }}) no-repeat center;
-                background-size: cover;
+              background-image:
+                url({{$extralarge.RelPermalink | safeCSS }}) ;
               }
             }
           }

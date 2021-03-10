@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/configuring-the-theme/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/configuring-the-theme/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/products/configuring-the-theme/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/products/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/theme/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/twbanner/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/gallery1/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/blog-teaser1/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/listcards/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/list-mediaobjects/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/form1/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/cards1/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/enumeration1/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/mediaobject1/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/threeup1/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/index/</loc>
+  </url>
+  
+  <url>
+    <loc>/pages/</loc>
+  </url>
+  
+  <url>
+    <loc>/pages/testpage-tailwind/</loc>
+  </url>
+  
+  <url>
+    <loc>/pages/testpage/</loc>
+  </url>
+  
+  <url>
+    <loc>/contentblocks/article1/</loc>
+  </url>
+  
+</urlset>
