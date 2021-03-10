@@ -4,16 +4,11 @@ iscjklanguage: ''
 mainContent: ''
 resources: []
 title: The article section
-summary: -|
-    I am the summary of the banner, which can be used for opengraph and SEO descriptions
-type: pogo-article
-variant: article-one
-fg_images:
- - foreground
+pogo_type: pogo-article
+pogo_variant: article-one
+fg_image: foreground
 bg_image: background
-full-width: false
-enabled: true
-
+full_width: false
 ---
 
 TestContent

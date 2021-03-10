@@ -18,6 +18,7 @@
   {{ end }}
 
   {{ $image_path := printf "%s*%s*" $path .bg_image }}
+
   {{ $image := (.page.Resources.ByType "image").GetMatch $image_path}}
 
   {{ with $image }}

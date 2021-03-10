@@ -1,4 +1,23 @@
-{{- $contentblocks := .Site.GetPage "/contentblocks" -}}
+
+{{- $page := . -}}
+{{- $contentblocks := where site.RegularPages "Type" "eq" "contentblocks" -}}
+
+{{- range .Params.sections -}}
+    {{- $section := . -}}
+    {{- range $contentblocks -}}
+        {{- if in . $section.contentblock -}}
+            {{- $contentblock_layout := printf "contentblock-layouts/%s/%s" .Params.pogo_type .Params.pogo_variant -}}
+            {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $contentblock_layout )) }}
+                {{- partial $contentblock_layout (dict "page" $page "section" $section "contentBlock" .  ) -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+
+
+
+{{/* {{- $contentblocks := .Site.GetPage "/contentblocks" -}}
 
 {{- $page := . -}}
 
@@ -12,4 +31,4 @@
             {{- end -}}
         {{- end -}}
     {{- end -}}
-{{- end -}}
+{{- end -}} */}}

@@ -7,10 +7,9 @@ title: I am an enumeration of columns with equal height
 subtitle: Columns can be used to give a layout to your content
 summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
-type: pogo-enumeration
-variant: equal-columns
-fg_images:
- - foreground
+pogo_type: pogo-enumeration
+pogo_variant: equal-columns
+fg_image: foreground
 bg_image: background
 full-width: false
 enabled: true

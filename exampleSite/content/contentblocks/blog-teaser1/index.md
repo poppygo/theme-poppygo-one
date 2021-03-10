@@ -5,17 +5,14 @@ mainContent: ''
 resources: []
 title: I am a list of items presented as blog teaser
 subtitle: Columns can be used to give a layout to your content
-summary: -|
-    I am the summary of the banner, which can be used for opengraph and SEO descriptions
-type: pogo-list
-variant: blog-teaser
-fg_images:
- - foreground
+pogo_type: pogo-list
+pogo_variant: blog-teaser
+fg_image: foreground
 bg_image: background
-full-width: false
+full_width: false
 enabled: true
-list-section: ''
-list-taxonomy:
+list_section: ''
+list_taxonomy:
   taxonomy: 'tags'
   term: ''
 

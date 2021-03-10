@@ -1,5 +1,5 @@
 {{ "<!-- snippet enumeration cards -->" | safeHTML }}
-
+{{- $page := .page -}}
 {{/*----------- Determine content ---------*/}}
 
 {{- $content := partial "process/get_content" (dict "page" .page "section" .section "contentBlock" .contentBlock) -}}
@@ -17,7 +17,7 @@
           <div class="{{$columns}} border-box flex ">
             <div class = "m1 border rounded">
               <div>
-              {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "path" $content.fg_image_path "link" .RelPermalink "scale" "full-width") -}}
+              {{- partial "UI-elements/image" (dict "resource_page" $page "name" .image "path" "images/" "link" .RelPermalink "scale" "full-width") -}}
              </div>
               <div class = "p1">
                 <p class="m0">{{.bodytext | markdownify }}</p>
@@ -30,5 +30,4 @@
     </div>
   </div>
 </section>
-
 {{- end -}}

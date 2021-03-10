@@ -7,12 +7,12 @@ title: I am a banner
 subtitle: Banners can be used for selling your proposition
 summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
-type: pogo-banner
-variant: banner-tailwind
+pogo_type: pogo-banner
+pogo_variant: banner-tailwind
 fg_image:
 bg_image: back
 full-width: false
-enabled: true
+name: twbanner
 buttons:
   - label: bekijk onze lessen
     link: /cursussen/

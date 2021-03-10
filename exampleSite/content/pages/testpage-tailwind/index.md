@@ -6,8 +6,8 @@ resources: []
 sections:
   - contentblock: twbanner
     name: testbanner
-    title: 'Lekker winderig'
-    bg_image: 
+    title: 'Lekker laat'
+    bg_image:
   - contentblock: gallery1
     name: testlist4
     title: ''

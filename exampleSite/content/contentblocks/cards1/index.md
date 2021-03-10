@@ -7,8 +7,8 @@ title: I am an enumeration in the form of cards
 subtitle: Cards can be used to give a layout to your content
 summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
-type: pogo-enumeration
-variant: cards
+pogo_type: pogo-enumeration
+pogo_variant: cards
 bg_image: background
 full_width: true
 max_columns: 6

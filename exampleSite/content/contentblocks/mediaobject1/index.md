@@ -7,8 +7,8 @@ title: I am an enumeration with media objects
 subtitle: Columns can be used to give a layout to your content
 summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
-type: pogo-enumeration
-variant: media-object
+pogo_type: pogo-enumeration
+pogo_variant: media-object
 fg_images:
  - foreground
 bg_image: background

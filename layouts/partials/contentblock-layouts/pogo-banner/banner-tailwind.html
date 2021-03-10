@@ -1,22 +1,23 @@
-{{ "<!-- banner one -->" | safeHTML }}
-
+{{- "<!-- banner one -->" | safeHTML -}}
+{{- $page := .page -}}
 {{/*----------- Determine content ---------*/}}
 
 {{- $content := partial "process/get_content" (dict "page" .page "section" .section "contentBlock" .contentBlock) -}}
 
 {{/*----------- Section Layout ---------*/}}
 
-{{ partial "process/get_background_style" (dict "page" $content.bg_resource_page "css_class" $content.name "bg_image" $content.bg_image "imagePath" $content.bg_image_path) }}
+{{ partial "process/get_background_style" (dict "page" .page "css_class" $page.File.ContentBaseName "bg_image" $content.bg_image "imagePath" "images/") }}
 
-<header class="center px-4 py-20 bg-gray bg-cover bg-center {{$content.name}}">
-  <h1 class="text-9xl uppercase mt-20 ">{{$content.title}}</h1>
-  <p class="h3">{{ $content.subtitle }}</p>
-  {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.fg_image "path" $content.fg_image_path "link" .RelPermalink "scale" "w-100") -}}
+{{- with $content -}}
+<header class="text-center px-4 py-20 bg-gray bg-cover bg-center {{$page.File.ContentBaseName}}">
+  <h1 class="text-9xl uppercase mt-20 ">{{.title}}</h1>
+  <p class="h3">{{ .subtitle }}</p>
+  {{- partial "UI-elements/image" (dict "resource_page" $page "name" .fg_image "path" "images/" "link" .link "scale" "w-100") -}}
 
   <div class="block p-20 text-white">
     {{- $btnclasses := slice "bg-pogocolor2" "bg-pogocolor3" "bg-pogocolor3" -}}
     {{- $txtclasses := slice "text-primary" "text-secondary text-secondary" -}}
-    {{- range $index, $value := $content.buttons -}}
+    {{- range $index, $value := .buttons -}}
     <a href="{{.link }}">
       <button type="button" class="font-body rounded-btn {{ index $btnclasses $index }} {{ index $txtclasses $index }} text-xl font-medium px-6 py-3 mr-2">
         {{- .label -}}
@@ -24,5 +25,5 @@
     </a>
     {{- end -}}
   </div>
-
 </header>
+{{- end -}}

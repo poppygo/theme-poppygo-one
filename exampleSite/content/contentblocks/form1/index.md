@@ -7,10 +7,9 @@ title: I am a row with columns
 subtitle: Columns can be used to give a layout to your content
 summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
-type: pogo-form
-variant: form-one
-fg_images:
- - foreground
+pogo_type: pogo-form
+pogo_variant: form-one
+fg_image: foreground
 bg_image: background
 full-width: false
 enabled: true
