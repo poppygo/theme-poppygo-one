@@ -1,19 +1,37 @@
+{{- $colors := "" -}}
+{{- $fonts := "" -}}
+{{- $fontweights := "" -}}
 
+{{- range $key,$value := $.Site.Data.design.colorscheme -}}
+    {{- $colors = printf "%s %s" $colors (printf "--%s: %s;" (replace $key "_" "-" ) $value ) -}}
+{{- end -}}
+
+{{- range $.Site.Data.design.fontscheme -}}
+    {{- $fonts = printf "%s %s" $fonts (printf "--font-%s: %s;" (replace .name "_" "-" ) .family ) -}}
+    {{- $fontweights := printf "%s %s" $fontweights (printf "--font-weight-%s: %s;" (replace .name "_" "-" ) (string .weight) )  }}
+{{- end -}}
 
 <style>
   :root {
-    --poppy-color-1: {{ $.Site.Data.design.colorscheme.poppy_color_1 }};
-    --poppy-color-2: {{ $.Site.Data.design.colorscheme.poppy_color_2 }};
-    --poppy-color-3: {{ $.Site.Data.design.colorscheme.poppy_color_3 }};
-    --poppy-color-4: {{ $.Site.Data.design.colorscheme.poppy_color_4 }};
-    --poppy-color-5: {{ $.Site.Data.design.colorscheme.poppy_color_5 }};
-    --poppy-color-6: {{ $.Site.Data.design.colorscheme.poppy_color_6 }};
-
-    --font-display: {{ $.Site.Data.design.fontscheme.font_display }};
-    --font-body: {{ $.Site.Data.design.general_object.font_body }};
-
-    --font-weight-normal: {{ $.Site.Data.design.fontscheme.font_weight_body }};
-    --font-weight-display: {{ $.Site.Data.design.fontscheme.font_weight_display }};
-
+    {{- $colors | safeCSS -}}
+    {{- $fonts | safeCSS -}}
+    {{- $fontweights | safeCSS -}}
   }
 </style>
+
+{{- $googlefonts := "" -}}
+{{- $url_weights := ":ital,wght@0,400;0,700;1,400&"}}
+
+{{- range $.Site.Data.design.fontscheme -}}
+    {{- $googlefonts = printf "%s%s" $googlefonts (printf "family=%s%s" (replace .family " " "+" ) $url_weights ) -}}
+{{- end -}}
+{{- $googlefonts = printf "%sdisplay=swap" $googlefonts -}}
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css2?%sdisplay=swap\"" $googlefonts | safeHTMLAttr }}>
+
+{{/*}}
+<link rel="preload" {{ printf "href=\"https://fonts.googleapis.com/css2?%sdisplay=swap\"" .  | safeHTMLAttr }} as="css" >
+*/}}

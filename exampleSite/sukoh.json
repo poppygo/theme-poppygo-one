@@ -406,13 +406,13 @@
            "type": "string"
          },
          {
-           "key": "pogo_type",
-           "title": "Pogo type",
+           "key": "poppy_type",
+           "title": "Poppy type",
            "type": "string"
          },
          {
-           "key": "pogo_variant",
-           "title": "Pogo variant",
+           "key": "poppy_variant",
+           "title": "Poppy variant",
            "type": "string"
          },
          {
@@ -501,7 +501,7 @@
              {
                "key": "title",
                "title": "Title",
-               "type": "string"
+               "type": "markdown"
              }
            ],
            "key": "sections",
@@ -515,7 +515,7 @@
        "title": "Pages"
      }
    ],
-   "hugover": "extended_0.81.0",
+   "hugover": "extended_0.76.5",
    "menu": [
      {
        "key": "singles",
@@ -587,10 +587,7 @@
        "key": "data",
        "menuItems": [
          {
-           "key": "ds_data_css-theme"
-         },
-         {
-           "key": "ds_data_theme"
+           "key": "ds_data_design"
          }
        ],
        "title": "Other content"
@@ -609,76 +606,210 @@
          {
            "fields": [
              {
-               "key": "font_body",
-               "title": "Font body",
+               "key": "color",
+               "title": "Color",
                "type": "string"
              },
              {
-               "key": "font_display",
-               "title": "Font display",
+               "key": "font",
+               "title": "Font",
                "type": "string"
              },
              {
-               "key": "font_weight_btn",
-               "title": "Font weight btn",
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
                "type": "string"
              },
              {
-               "key": "font_weight_display",
-               "title": "Font weight display",
+               "key": "rounded",
+               "title": "Rounded",
                "type": "string"
              },
              {
-               "key": "font_weight_normal",
-               "title": "Font weight normal",
+               "key": "size",
+               "title": "Size",
                "type": "string"
              },
              {
-               "key": "pogo_color_1",
-               "title": "Pogo color 1",
+               "key": "space",
+               "title": "Space",
+               "type": "number"
+             },
+             {
+               "key": "text_color",
+               "title": "Text color",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "poppy_color1",
+               "title": "Poppy color1",
                "type": "string"
              },
              {
-               "key": "pogo_color_2",
-               "title": "Pogo color 2",
+               "key": "poppy_color2",
+               "title": "Poppy color2",
                "type": "string"
              },
              {
-               "key": "pogo_color_3",
-               "title": "Pogo color 3",
+               "key": "poppy_color3",
+               "title": "Poppy color3",
                "type": "string"
              },
              {
-               "key": "pogo_color_4",
-               "title": "Pogo color 4",
+               "key": "poppy_color4",
+               "title": "Poppy color4",
                "type": "string"
              },
              {
-               "key": "pogo_color_5",
-               "title": "Pogo color 5",
+               "key": "poppy_color5",
+               "title": "Poppy color5",
                "type": "string"
              },
              {
-               "key": "pogo_color_6",
-               "title": "Pogo color 6",
-               "type": "string"
-             },
-             {
-               "key": "rounded_btn",
-               "title": "Rounded btn",
+               "key": "poppy_color6",
+               "title": "Poppy color6",
                "type": "string"
              }
            ],
            "groupdata": true,
-           "key": "css",
-           "title": "Css",
+           "key": "colorscheme",
+           "title": "Colorscheme",
+           "type": "section"
+         },
+         {
+           "fields": [
+             {
+               "key": "family",
+               "title": "Family",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "weight",
+               "title": "Weight",
+               "type": "number"
+             }
+           ],
+           "key": "fontscheme",
+           "title": "Fontscheme",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "art_font",
+               "title": "Art font",
+               "type": "string"
+             },
+             {
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "body_font",
+               "title": "Body font",
+               "type": "string"
+             },
+             {
+               "key": "body_size",
+               "title": "Body size",
+               "type": "string"
+             },
+             {
+               "key": "body_space",
+               "title": "Body space",
+               "type": "number"
+             },
+             {
+               "key": "border",
+               "title": "Border",
+               "type": "number"
+             },
+             {
+               "key": "inner_space",
+               "title": "Inner space",
+               "type": "number"
+             },
+             {
+               "key": "outer_space",
+               "title": "Outer space",
+               "type": "number"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "shadow",
+               "title": "Shadow",
+               "type": "string"
+             },
+             {
+               "key": "subtitle_font",
+               "title": "Subtitle font",
+               "type": "string"
+             },
+             {
+               "key": "subtitle_size",
+               "title": "Subtitle size",
+               "type": "string"
+             },
+             {
+               "key": "subtitle_space",
+               "title": "Subtitle space",
+               "type": "number"
+             },
+             {
+               "key": "text_dark",
+               "title": "Text dark",
+               "type": "string"
+             },
+             {
+               "key": "text_light",
+               "title": "Text light",
+               "type": "string"
+             },
+             {
+               "key": "title_font",
+               "title": "Title font",
+               "type": "string"
+             },
+             {
+               "key": "title_size",
+               "title": "Title size",
+               "type": "string"
+             },
+             {
+               "key": "title_space",
+               "title": "Title space",
+               "type": "number"
+             }
+           ],
+           "groupdata": true,
+           "key": "general_object",
+           "title": "General object",
            "type": "section"
          }
        ],
-       "file": "/data/theme.yaml",
-       "key": "ds_data_theme",
+       "file": "/data/design.yaml",
+       "key": "ds_data_design",
        "previewUrl": "/",
-       "title": "Theme"
+       "title": "Design"
      },
      {
        "dataformat": "yml",

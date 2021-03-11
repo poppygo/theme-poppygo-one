@@ -88,11 +88,7 @@
        "key": "data",
        "menuItems": [
          {
-           "key": "ds_data_css-theme",
-           "visible": true
-         },
-         {
-           "key": "ds_data_theme",
+           "key": "ds_data_design",
            "visible": true
          }
        ],

@@ -1,11 +1,15 @@
-<div class="my-2 text-white">
-  {{- $btnclasses := slice "bg-poppycolor2" "bg-poppycolor3" "bg-poppycolor3" -}}
-  {{- $txtclasses := slice "text-primary" "text-secondary text-secondary" -}}
-  {{- range $index, $value := . -}}
-  <a href="{{.link }}">
-    <button type="button" class="font-body rounded-2xl {{ index $btnclasses $index }} {{ index $txtclasses $index }} text-xl font-medium px-6 py-3">
-      {{- .label -}}
-    </button>
-  </a>
-  {{- end -}}
-</div>
+{{ $page := .page }}
+
+{{- $design := partial "process/get_design" $page -}}
+
+  <div class="my-2 ">
+    {{- $btnclasses := slice $design.button_primary $design.button_seconday $design.button_secondary -}}
+    {{- range $index, $value := .buttons -}}
+      <a href="{{.link }}">
+
+        <button type="button" class=" {{ index $btnclasses $index }} ">
+          {{- .label -}}
+        </button>
+      </a>
+    {{- end -}}
+  </div>

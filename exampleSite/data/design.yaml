@@ -1,33 +1,58 @@
 colorscheme:
-  poppy_color_1: '#ff0000'
-  poppy_color_2: '#5205ad'
-  poppy_color_3: '#ff73b3'
-  poppy_color_4: '#6a6a6a'
-  poppy_color_5: '#44467b'
-  poppy_color_6: '#00ff00'
+  poppy_color1: '#ff0000'
+  poppy_color2: '#5205ad'
+  poppy_color3: '#ff73b3'
+  poppy_color4: '#6a6a6a'
+  poppy_color5: '#44467b'
+  poppy_color6: '#00ff00'
 
 fontscheme:
-  font_display: 'Futura, Trebuchet MS, Arial, sans-serif'
-  font_weight_display: 600
-  font_body: 'Futura, Trebuchet MS, Arial, sans-serif'
-  font_weight_body: 300
+  - name: display1
+    family: Averia Sans Libre
+    weight: 700
+  - name: body
+    family: Nunito
+    weight: 400
+  - name: art
+    family: Turret Road
+    weight: 700
+  - name: display2
+    family: Comfortaa
+    weight: 400
+
 
 general_object:
-  title_font: font-dislay
+  title_font: display1
   title_size: 7xl
   title_space: 10
-  body_font: font-body
+  body_font: body
+  art_font: art
   body_size: lg
   body_space: 5
   rounded: 2xl
   border: 2
-  bg_color: poppycolor4
-  text_light: white
-  text_dark: poppycolor4
+  shadow: lg
+  bg_color: poppycolor6
+  text_light: poppycolor1
+  text_dark: poppycolor2
   subtitle_size: 2xl
-  subtitle_font: font-display
+  subtitle_font: display2
   subtitle_space: 6
   inner_space: 10
   outer_space: 10
 
 buttons:
+  - name: primary
+    space: 3
+    font: art
+    size: 6xl
+    color: poppycolor3
+    text_color: poppycolor5
+    rounded: 2xl
+  - name: secondary
+    space: 2
+    font: display1
+    size: sm
+    color: poppycolor4
+    text_color: poppycolor1
+    rounded:

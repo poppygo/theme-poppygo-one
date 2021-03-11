@@ -10,7 +10,7 @@ summary: -|
 poppy_type: poppy-enumeration
 poppy_variant: cards
 bg_image: background
-full_width: true
+full_width: false
 max_columns: 6
 items:
   - name: item1
@@ -49,7 +49,7 @@ items:
     image: foreground
     bodytext: |
       **I am a markdown bodytext.**
-      
+
       You have the full freedom to add any text or images here. You can even embed columns as shortcodes.
     buttons:
       - link: /
