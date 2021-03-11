@@ -710,29 +710,9 @@
          {
            "fields": [
              {
-               "key": "art_font",
-               "title": "Art font",
-               "type": "string"
-             },
-             {
                "key": "bg_color",
                "title": "Bg color",
                "type": "string"
-             },
-             {
-               "key": "body_font",
-               "title": "Body font",
-               "type": "string"
-             },
-             {
-               "key": "body_size",
-               "title": "Body size",
-               "type": "string"
-             },
-             {
-               "key": "body_space",
-               "title": "Body space",
-               "type": "number"
              },
              {
                "key": "border",
@@ -743,6 +723,12 @@
                "key": "inner_space",
                "title": "Inner space",
                "type": "number"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
              },
              {
                "key": "outer_space",
@@ -760,21 +746,6 @@
                "type": "string"
              },
              {
-               "key": "subtitle_font",
-               "title": "Subtitle font",
-               "type": "string"
-             },
-             {
-               "key": "subtitle_size",
-               "title": "Subtitle size",
-               "type": "string"
-             },
-             {
-               "key": "subtitle_space",
-               "title": "Subtitle space",
-               "type": "number"
-             },
-             {
                "key": "text_dark",
                "title": "Text dark",
                "type": "string"
@@ -783,27 +754,39 @@
                "key": "text_light",
                "title": "Text light",
                "type": "string"
-             },
+             }
+           ],
+           "key": "objects",
+           "title": "Objects",
+           "type": "accordion"
+         },
+         {
+           "fields": [
              {
-               "key": "title_font",
-               "title": "Title font",
+               "key": "font",
+               "title": "Font",
                "type": "string"
              },
              {
-               "key": "title_size",
-               "title": "Title size",
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
                "type": "string"
              },
              {
-               "key": "title_space",
-               "title": "Title space",
+               "key": "size",
+               "title": "Size",
+               "type": "string"
+             },
+             {
+               "key": "space",
+               "title": "Space",
                "type": "number"
              }
            ],
-           "groupdata": true,
-           "key": "general_object",
-           "title": "General object",
-           "type": "section"
+           "key": "typographies",
+           "title": "Typographies",
+           "type": "accordion"
          }
        ],
        "file": "/data/design.yaml",

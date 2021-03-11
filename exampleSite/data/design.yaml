@@ -20,26 +20,34 @@ fontscheme:
     family: Comfortaa
     weight: 400
 
+typographies:
+  - name: title
+    font: display1
+    size: 7xl
+    space: 10
+  - name: subtitle
+    font: display2
+    size: 2xl
+    space: 6
+  - name: body
+    font: body
+    size: lg
+    space: 5
+  - name: art
+    font: art
+    size: 7xl
+    space: 0
 
-general_object:
-  title_font: display1
-  title_size: 7xl
-  title_space: 10
-  body_font: body
-  art_font: art
-  body_size: lg
-  body_space: 5
-  rounded: 2xl
-  border: 2
-  shadow: lg
-  bg_color: poppycolor6
-  text_light: poppycolor1
-  text_dark: poppycolor2
-  subtitle_size: 2xl
-  subtitle_font: display2
-  subtitle_space: 6
-  inner_space: 10
-  outer_space: 10
+objects:
+  - name: general
+    rounded: 2xl
+    border: 2
+    shadow: lg
+    bg_color: poppycolor6
+    text_light: poppycolor1
+    text_dark: poppycolor2
+    inner_space: 10
+    outer_space: 10
 
 buttons:
   - name: primary
