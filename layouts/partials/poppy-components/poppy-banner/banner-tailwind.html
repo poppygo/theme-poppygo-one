@@ -1,8 +1,8 @@
 {{- "<!-- banner one -->" | safeHTML -}}
 {{- $page := .page -}}
 {{- $bg_css := printf "%s-%s" $page.Section $page.File.ContentBaseName -}}
-{{- $content := partial "process/get_content" (dict "page" .page "section" .section "contentblock" .contentblock) -}}
-{{- $design := partial "process/get_design" .contentblock -}}
+{{- $content := partial "process/get_content" (dict "page" .page "section" .section "page_component" .page_component) -}}
+{{- $design := partial "process/get_design" .page_component -}}
 
 {{- partial "UI-elements/bg_image" (dict "page" .page "css_class" $bg_css "bg_image" $content.bg_image "path" "images/") }}
 

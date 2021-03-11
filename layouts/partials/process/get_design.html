@@ -1,5 +1,5 @@
 
-{{- $contentblock := . -}}
+{{- $page_component := . -}}
 {{- $typographyData := site.Data.design.typographies -}}
 {{- $objectData := site.Data.design.objects -}}
 {{- $buttonData := site.Data.design.buttons -}}
@@ -9,7 +9,7 @@
   {{- range $key, $value := . -}}
 
     {{/* Set override */}}
-    {{- $override := index $contentblock.Params $key -}}
+    {{- $override := index $page_component.Params $key -}}
     {{- $default := $value -}}
     {{- $value := $override | default $default }}
 

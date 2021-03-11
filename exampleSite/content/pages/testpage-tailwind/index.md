@@ -3,56 +3,55 @@ draft: false
 iscjklanguage: ''
 mainContent: ''
 resources: []
-sections:
+page_sections:
   - bg_image: null
-    contentblock: twbanner
+    page_component: twbanner
     name: testbanner
     title: Intoducting the concept of reusable content blocks
   - bg_image: ''
-    contentblock: gallery1
+    page_component: gallery1
     name: testlist4
     title: ''
   - bg_image: ''
-    contentblock: cards1
+    page_component: cards1
     name: testenumeration2
     title: ''
   - bg_image: ''
-    contentblock: mediaobject1
+    page_component: mediaobject1
     name: testenumeration3
     title: ''
   - bg_image: ''
-    contentblock: threeup1
+    page_component: threeup1
     name: testenumeration4
     title: ''
   - bg_image: ''
-    contentblock: article1
+    page_component: article1
     name: testarticle
     title: Test the article snippet
   - bg_image: ''
-    contentblock: list-mediaobjects
+    page_component: list-mediaobjects
     name: testlist1
     title: ''
   - bg_image: ''
-    contentblock: blog-teaser1
+    page_component: blog-teaser1
     name: testlist2
     title: ''
   - bg_image: ''
-    contentblock: listcards
+    page_component: listcards
     name: testlist3
     title: ''
   - bg_image: ''
-    contentblock: form1
+    page_component: form1
     name: testform
     title: Test the form snippet
   - bg_image: ''
-    contentblock: portfolio1
+    page_component: portfolio1
     name: testportfolio
     title: Test the portfolio snippet
   - bg_image: ''
-    contentblock: product1
+    page_component: product1
     name: testproduct
     title: Test the product snippet
 title: Tailwind Demo Page
 
 ---
-

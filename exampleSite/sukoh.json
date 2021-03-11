@@ -105,218 +105,10 @@
            "type": "chips"
          }
        ],
-       "folder": "content/portfolio/",
-       "itemtitle": "Portfolio",
-       "key": "c__portfolio",
-       "title": "Portfolio"
-     },
-     {
-       "dataformat": "yaml",
-       "extension": "md",
-       "fields": [
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "description",
-           "title": "Description",
-           "type": "markdown"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "images",
-           "path": "images",
-           "title": "Images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "author",
-           "title": "Author",
-           "type": "string"
-         },
-         {
-           "default": "now",
-           "key": "date",
-           "title": "Date",
-           "type": "date"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "key": "lastmod",
-           "title": "Lastmod",
-           "type": "hidden"
-         },
-         {
-           "key": "publishdate",
-           "title": "Publishdate",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "snippets",
-           "title": "Snippets",
-           "type": "accordion"
-         },
-         {
-           "key": "tags",
-           "title": "Tags",
-           "type": "chips"
-         }
-       ],
        "folder": "content/post/",
        "itemtitle": "Post",
        "key": "c__post",
        "title": "Post"
-     },
-     {
-       "dataformat": "yaml",
-       "extension": "md",
-       "fields": [
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "description",
-           "title": "Description",
-           "type": "markdown"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "images",
-           "path": "images",
-           "title": "Images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "author",
-           "title": "Author",
-           "type": "string"
-         },
-         {
-           "default": "now",
-           "key": "date",
-           "title": "Date",
-           "type": "date"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "key": "lastmod",
-           "title": "Lastmod",
-           "type": "hidden"
-         },
-         {
-           "key": "publishdate",
-           "title": "Publishdate",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "snippets",
-           "title": "Snippets",
-           "type": "accordion"
-         },
-         {
-           "key": "tags",
-           "title": "Tags",
-           "type": "chips"
-         }
-       ],
-       "folder": "content/products/",
-       "itemtitle": "Product",
-       "key": "c__products",
-       "title": "Products"
      },
      {
        "dataformat": "yaml",
@@ -426,10 +218,10 @@
            "type": "markdown"
          }
        ],
-       "folder": "content/contentblocks/",
-       "itemtitle": "Contentblock",
-       "key": "c__contentblocks",
-       "title": "Contentblocks"
+       "folder": "content/page-components/",
+       "itemtitle": "Page component",
+       "key": "c__page-components",
+       "title": "Page components"
      },
      {
        "dataformat": "yaml",
@@ -476,8 +268,86 @@
            "type": "hidden"
          },
          {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "hidden"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "markdown"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
            "key": "resources",
            "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "folder": "content/pages/",
+       "itemtitle": "Page",
+       "key": "c__pages",
+       "title": "Pages"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
            "type": "hidden"
          },
          {
@@ -488,31 +358,36 @@
                "type": "hidden"
              },
              {
-               "key": "contentblock",
-               "title": "Contentblock",
-               "type": "string"
-             },
-             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
                "type": "string"
              },
              {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
                "key": "title",
                "title": "Title",
-               "type": "markdown"
+               "type": "string"
              }
            ],
-           "key": "sections",
-           "title": "Sections",
+           "key": "page_sections",
+           "title": "Page sections",
            "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
          }
        ],
-       "folder": "content/pages/",
-       "itemtitle": "Page",
-       "key": "c__pages",
-       "title": "Pages"
+       "folder": "content/portfolio/",
+       "itemtitle": "Portfolio",
+       "key": "c__portfolio",
+       "title": "Portfolio"
      }
    ],
    "hugover": "extended_0.76.5",
@@ -530,10 +405,7 @@
            "key": "s__portfolio"
          },
          {
-           "key": "s__products"
-         },
-         {
-           "key": "s__contentblocks"
+           "key": "s__page-components"
          }
        ],
        "title": "Home and section pages"
@@ -551,10 +423,7 @@
            "key": "c__portfolio"
          },
          {
-           "key": "c__products"
-         },
-         {
-           "key": "c__contentblocks"
+           "key": "c__page-components"
          }
        ],
        "title": "Grouped pages"
@@ -567,9 +436,6 @@
          },
          {
            "key": "menus"
-         },
-         {
-           "key": "c__contentblocks"
          }
        ],
        "title": "Site settings"
@@ -1002,85 +868,6 @@
        "dataformat": "yaml",
        "fields": [
          {
-           "content": "Relative link of this page: /portfolio/",
-           "key": "info-s__portfolio",
-           "theme": "gray-bare",
-           "title": "Info s portfolio",
-           "type": "info"
-         },
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "page_related_images",
-           "path": "",
-           "title": "Page related images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "aliases",
-           "title": "Aliases",
-           "type": "chips"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "snippet",
-               "title": "Snippet",
-               "type": "string"
-             },
-             {
-               "key": "snippet-type",
-               "title": "Snippet type",
-               "type": "string"
-             }
-           ],
-           "key": "snippets",
-           "title": "Snippets",
-           "type": "accordion"
-         }
-       ],
-       "file": "content/portfolio/_index.md",
-       "key": "s__portfolio",
-       "previewUrl": "/portfolio/",
-       "title": "Portfolio"
-     },
-     {
-       "dataformat": "yaml",
-       "fields": [
-         {
            "content": "Relative link of this page: /post/",
            "key": "info-s__post",
            "theme": "gray-bare",
@@ -1170,10 +957,66 @@
        "dataformat": "yaml",
        "fields": [
          {
-           "content": "Relative link of this page: /products/",
-           "key": "info-s__products",
+           "content": "Relative link of this page: /page-components/",
+           "key": "info-s__page-components",
            "theme": "gray-bare",
-           "title": "Info s products",
+           "title": "Info s page components",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         }
+       ],
+       "file": "content/page-components/_index.md",
+       "key": "s__page-components",
+       "previewUrl": "/page-components/",
+       "title": "Page components"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /portfolio/",
+           "key": "info-s__portfolio",
+           "theme": "gray-bare",
+           "title": "Info s portfolio",
            "type": "info"
          },
          {
@@ -1224,82 +1067,41 @@
          {
            "fields": [
              {
-               "arrayTitle": true,
-               "key": "snippet",
-               "title": "Snippet",
+               "key": "bg_image",
+               "title": "Bg image",
                "type": "string"
              },
              {
-               "key": "snippet-type",
-               "title": "Snippet type",
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
-           "key": "snippets",
-           "title": "Snippets",
+           "key": "page_sections",
+           "title": "Page sections",
            "type": "accordion"
          }
        ],
-       "file": "content/products/_index.md",
-       "key": "s__products",
-       "previewUrl": "/products/",
-       "title": "Products"
-     },
-     {
-       "dataformat": "yaml",
-       "fields": [
-         {
-           "content": "Relative link of this page: /contentblocks/",
-           "key": "info-s__contentblocks",
-           "theme": "gray-bare",
-           "title": "Info s contentblocks",
-           "type": "info"
-         },
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "page_related_images",
-           "path": "",
-           "title": "Page related images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         }
-       ],
-       "file": "content/contentblocks/_index.md",
-       "key": "s__contentblocks",
-       "previewUrl": "/contentblocks/",
-       "title": "Contentblocks"
+       "file": "content/portfolio/_index.md",
+       "key": "s__portfolio",
+       "previewUrl": "/portfolio/",
+       "title": "Portfolio"
      },
      {
        "dataformat": "json",

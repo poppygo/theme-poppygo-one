@@ -16,11 +16,7 @@
            "visible": true
          },
          {
-           "key": "s__products",
-           "visible": true
-         },
-         {
-           "key": "s__contentblocks",
+           "key": "s__page-components",
            "visible": true
          }
        ],
@@ -43,11 +39,7 @@
            "visible": true
          },
          {
-           "key": "c__products",
-           "visible": true
-         },
-         {
-           "key": "c__contentblocks",
+           "key": "c__page-components",
            "visible": true
          }
        ],
@@ -63,10 +55,6 @@
          },
          {
            "key": "menus",
-           "visible": true
-         },
-         {
-           "key": "c__contentblocks",
            "visible": true
          }
        ],

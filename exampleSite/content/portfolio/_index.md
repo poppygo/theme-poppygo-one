@@ -1,13 +1,14 @@
 ---
 aliases:
-  - posts
-  - articles
-  - blog
   - showcase
   - docs
+  - product
 title: Portfolio
-snippets:
-  - snippet-type: pogo-list
-    snippet: list1
+page_sections:
+  - bg_image: ''
+    page_component: gallery1
+    list: portfolio
+    name: testlist4
+    title: 'Have a look at the portfolio'
 
 ---
