@@ -1,34 +1,34 @@
 {{- $columns := "" -}}
 
 {{- if le .max_columns 2 -}}
-    {{- $columns = "sm-col-6 md-col-6 lg-col-6 mx-auto" -}}
+    {{- $columns = "sm:w-1/2 md:w-1/2 lg:w-1/2 mx-auto" -}}
 {{- else if le .max_columns 3 -}}
     {{- if or (eq .amount 2) (eq .amount 4) -}}
-      {{- $columns = "sm-col-6 mx-auto" -}}
+      {{- $columns = "sm:w-1/2 mx-auto" -}}
     {{- else  -}}
-      {{- $columns = "col-12 sm-col-6 md-col-4 mx-auto" -}}
+      {{- $columns = "w-full sm:w-1/2 md:w-1/3 mx-auto" -}}
     {{- end -}}
 {{- else if or (le .max_columns 4) (le .max_columns 5) -}}
     {{- if le .amount 2 -}}
-      {{- $columns = "col-sm-6 mx-auto" -}}
+      {{- $columns = "sm:w-1/2 mx-auto" -}}
     {{- else if or (eq .amount 3) (eq .amount 5) (eq .amount 6) -}}
-      {{- $columns = "col-6 sm-col-6 md-col-4 mx-auto" -}}
+      {{- $columns = "w-1/2 sm:w-1/2 md:w-1/3 mx-auto" -}}
     {{- else -}}
-      {{- $columns = "col-6 sm-col-6 md-col-3 mx-auto" -}}
+      {{- $columns = "w-1/2 sm:w-1/2 w-1/4 mx-auto" -}}
     {{- end -}}
 {{- else if le .max_columns 6 -}}
   {{- if eq .amount 2 -}}
-    {{- $columns = "sm-col-6 md-col-6 lg-col-6 mx-auto" -}}
+    {{- $columns = "sm:w-1/2 md:w1/2 lg:w-1/2 mx-auto" -}}
   {{- else if eq .amount 3 -}}
-    {{- $columns = "col-6 sm-col-12 md-col-4 mx-auto" -}}
+    {{- $columns = "w-1/2 sm:w-full md:w-1/3 mx-auto" -}}
   {{- else if eq .amount 4 -}}
-    {{- $columns = "col-6 sm-col-6 md-col-3 mx-auto" -}}
+    {{- $columns = "w-1/2 sm:w-1/2 md:w-1/4 mx-auto" -}}
   {{- else if le .amount 6 -}}
-    {{- $columns = "col-6 sm-col-6 md-col-4 lg-col-2 mx-auto"  -}}
+    {{- $columns = "w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/6 mx-auto"  -}}
   {{- else if le .amount 8 -}}
-    {{- $columns = "col-6 sm-col-6 md-col-3 mx-auto" -}}
+    {{- $columns = "w-1/2 sm:w-1/2 md:w-1/4  mx-auto" -}}
   {{- else -}}
-    {{- $columns = "col-6 sm-col-4 md-col-3 lg-col-2 mx-auto" -}}
+    {{- $columns = "w-1/2 sm:w-1/3  md:w-1/4  lg:w-1/6 mx-auto" -}}
   {{- end -}}
 {{- end -}}
 

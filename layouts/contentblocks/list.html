@@ -6,16 +6,12 @@
   <h1 class = "text-9xl uppercase text-center m-20"> This is an overview of all contentblocks that you can use</h1>
 
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-  {{ range $paginator.Pages }}
+  {{ range .Pages }}
       <h1 class = "text-4xl text-center m-20"> ------------{{.File.ContentBaseName }}-------- </h1>
-      {{- $contentblock_layout := printf "contentblock-layouts/%s/%s" .Params.pogo_type .Params.pogo_variant -}}
-      {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $contentblock_layout )) }}
-          {{- partial $contentblock_layout (dict "page" . "section" .Params "contentBlock" .  ) -}}
+      {{- $poppyComponent := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
+      {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $poppyComponent )) }}
+          {{- partial $poppyComponent (dict "page" . "section" .Params "contentblock" .  ) -}}
       {{- end -}}
-  {{ end }}
-
-  {{ if gt $paginator.TotalPages 1 }}
-    {{ template "_internal/pagination.html" . }}
   {{ end }}
 </div>
 {{- end -}}

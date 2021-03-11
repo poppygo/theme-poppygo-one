@@ -1,0 +1,44 @@
+{{ "<!-- snippet enumeration cards -->" | safeHTML }}
+{{- $page := .page -}}
+{{- $content := partial "process/get_content" (dict "page" .page "section" .section "contentblock" .contentblock) -}}
+{{- $design := partial "process/get_design" .contentblock -}}
+
+
+{{- with $design -}}
+{{- $columns := partial "UI-elements/responsive-columns" (dict "amount" (len $content.items ) "max_columns" $content.max_columns) -}}
+    <div class="{{- if not .full_width -}} container {{- end -}} {{.outer_space}} mx-auto px-4 md:px-12 {{.text_dark}}">
+      <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
+      <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
+        <div class="flex flex-wrap -mx-1 lg:-mx-4">
+            {{- range $content.items -}}
+            <div class="flex my-1 px-1 w-full {{$columns}}">
+                <div class=" overflow-hidden {{.rounded}} shadow-lg">
+                    {{- partial "UI-elements/image" (dict "resource_page" $page "name" .image "path" "images/" "link" .RelPermalink "class" "w-full") -}}
+                    <div class="prose p-2 md:p-4">
+                        {{.bodytext | markdownify }}
+                    </div>
+                    <div class="px-3">
+                        {{- partial "UI-elements/buttons" .buttons -}}
+                    </div>
+                      <div class="flex items-center justify-between leading-none p-2 md:p-4">
+                          <a class="flex items-center no-underline hover:underline {{.text_dark}}" href="#">
+                              <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+                              <p class="ml-2 text-sm">
+                                  Author Name
+                              </p>
+                          </a>
+                          <a class="no-underline {{.text_dark}} hover:{{.text_light}}" href="#">
+                              <span class="hidden">Like</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+</svg>
+                          </a>
+                    </div>
+
+                </div>
+            </div>
+
+            {{- end -}}
+        </div>
+    </div>
+{{- end -}}

@@ -6,9 +6,9 @@
     {{- $section := . -}}
     {{- range $contentblocks -}}
         {{- if in . $section.contentblock -}}
-            {{- $contentblock_layout := printf "contentblock-layouts/%s/%s" .Params.pogo_type .Params.pogo_variant -}}
-            {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $contentblock_layout )) }}
-                {{- partial $contentblock_layout (dict "page" $page "section" $section "contentBlock" .  ) -}}
+            {{- $poppyComponent := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
+            {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $poppyComponent )) }}
+                {{- partial $poppyComponent (dict "page" $page "section" $section "contentblock" .  ) -}}
             {{- end -}}
         {{- end -}}
     {{- end -}}
@@ -25,9 +25,9 @@
     {{- $section := . -}}
     {{- range $contentblocks.Resources.ByType "page" -}}
         {{- if in . $section.contentblock -}}
-            {{- $contentblock_layout := printf "contentblock-layouts/%s/%s" .Params.type .Params.variant -}}
-            {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $contentblock_layout )) }}
-                {{- partial $contentblock_layout (dict "page" $page "section" $section "contentBlock" .  ) -}}
+            {{- $poppyComponent := printf "poppy-components/%s/%s" .Params.type .Params.variant -}}
+            {{- if (fileExists (printf "themes/poppygo-one/layouts/partials/%s.html" $poppyComponent )) }}
+                {{- partial $poppyComponent (dict "page" $page "section" $section "contentblock" .  ) -}}
             {{- end -}}
         {{- end -}}
     {{- end -}}

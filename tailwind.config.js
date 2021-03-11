@@ -1,16 +1,16 @@
 module.exports = {
   purge: {
-    content: ['./layouts/**/*.html'],
+  //  content: ['./layouts/**/*.html'],
   },
   theme: {
     extend: {
       colors: {
-        pogocolor1: 'var(--pogo-color-1)',
-        pogocolor2: 'var(--pogo-color-2)',
-        pogocolor3: 'var(--pogo-color-3)',
-        pogocolor4: 'var(--pogo-color-4)',
-        pogocolor5: 'var(--pogo-color-5)',
-        pogocolor6: 'var(--pogo-color-6)',
+        poppycolor1: 'var(--poppy-color-1)',
+        poppycolor2: 'var(--poppy-color-2)',
+        poppycolor3: 'var(--poppy-color-3)',
+        poppycolor4: 'var(--poppy-color-4)',
+        poppycolor5: 'var(--poppy-color-5)',
+        poppycolor6: 'var(--poppy-color-6)',
       }
     },
     fontFamily: {
@@ -20,13 +20,11 @@ module.exports = {
     fontWeights: {
       normal: "var(--font-weight-normal)",
       display: "var(--font-weight-display)",
-      btn: "var(--font-weight-btn)"
-    },
-    borderRadius: {
-      none: "0",
-      btn: "var(--rounded-btn)"
     },
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
 };

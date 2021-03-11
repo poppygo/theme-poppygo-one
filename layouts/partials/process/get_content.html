@@ -1,25 +1,14 @@
 
-{{- $contentBlock := .contentBlock -}}
+{{- $contentblock := .contentblock -}}
 {{- $section := .section -}}
-{{- $content := dict "name" ( .section.name | default .contentBlock.Name) -}}
+{{- $content := dict "name" ( .section.name | default .contentblock.Name) -}}
 
 {{/* -----------get Params -------- */}}
-{{- $params := slice
-"title"
-"subtitle"
-"fg_image"
-"bg_image"
-"full_width"
-"max_columns"
-"buttons"
-"items"
-"list"
-"max_amount"
-"size" -}}
+{{- $params := slice "title" "subtitle" "fg_image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size"  -}}
 
 {{- range $params}}
   {{- $override := index $section . -}}
-  {{- $default := index $contentBlock.Params . -}}
+  {{- $default := index $contentblock.Params . -}}
   {{- $content = merge $content (dict . ( $override | default $default )) -}}
 {{- end -}}
 

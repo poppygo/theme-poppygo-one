@@ -1,0 +1,33 @@
+colorscheme:
+  poppy_color_1: '#ff0000'
+  poppy_color_2: '#5205ad'
+  poppy_color_3: '#ff73b3'
+  poppy_color_4: '#6a6a6a'
+  poppy_color_5: '#44467b'
+  poppy_color_6: '#00ff00'
+
+fontscheme:
+  font_display: 'Futura, Trebuchet MS, Arial, sans-serif'
+  font_weight_display: 600
+  font_body: 'Futura, Trebuchet MS, Arial, sans-serif'
+  font_weight_body: 300
+
+general_object:
+  title_font: font-dislay
+  title_size: 7xl
+  title_space: 10
+  body_font: font-body
+  body_size: lg
+  body_space: 5
+  rounded: 2xl
+  border: 2
+  bg_color: poppycolor4
+  text_light: white
+  text_dark: poppycolor4
+  subtitle_size: 2xl
+  subtitle_font: font-display
+  subtitle_space: 6
+  inner_space: 10
+  outer_space: 10
+
+buttons:

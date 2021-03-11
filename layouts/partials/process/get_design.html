@@ -1,0 +1,39 @@
+
+{{- $contentblock := . -}}
+{{- $designData := site.Data.design.general_object -}}
+{{- $design := dict -}}
+{{- $typography := dict -}}
+
+{{/* -----------get Params -------- */}}
+
+{{- range $key, $value := $designData -}}
+  {{/* Set override */}}
+  {{- $override := index $contentblock.Params $key -}}
+  {{- $default := $value -}}
+  {{- $value := $override | default $default }}
+
+  {{/*transform to tailwind classed */}}
+  {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}{{- end -}}
+  {{- if in $key "margin" -}} {{- $value = printf "my-%s" $value -}}{{- end -}}
+  {{- if in $key "space" -}} {{- $value = printf "py-%s" (string $value) -}}{{- end -}}
+  {{- if in $key "bg" -}} {{- $value = printf "bg-%s" $value -}}{{- end -}}
+  {{- if in $key "text" -}} {{- $value = printf "text-%s" $value -}}{{- end -}}
+  {{- if eq $key "rounded" -}} {{- $value = printf "rounded-%s" $value -}}{{- end -}}
+
+  {{- if or (in $key "title") (in $key "subtitle") (in $key "body") -}}
+        {{- $typography = merge $typography (dict $key $value) -}}
+  {{- else }}
+        {{- $design = merge $design (dict $key $value) -}}
+  {{- end -}}
+
+{{- end -}}
+
+{{- with $typography -}}
+  {{- $design = merge $design (dict "title" (printf "%s %s %s" .title_size .title_font .title_space  )) -}}
+  {{- $design = merge $design (dict "subtitle" (printf "%s %s %s" .subtitle_size .subtitle_font .subtitle_space  )) -}}
+  {{- $design = merge $design (dict "body" (printf "%s %s %s" .body_size .body_font .body_space  )) -}}
+{{- end -}}
+
+{{/* -----------return -------- */}}
+
+{{- return $design -}}
