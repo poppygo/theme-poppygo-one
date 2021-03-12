@@ -12,6 +12,20 @@
   {{- $content = merge $content (dict . ( $override | default $default )) -}}
 {{- end -}}
 
-{{/* -----------return -------- */}}
+
+{{/* -----------Change resource page when images are set in the page section  -------- */}}
+{{- if .section.bg_image}}
+    {{- $content = merge $content (dict "bg_resource_page" .page) -}}
+{{- else -}}
+    {{- $content = merge $content (dict "bg_resource_page" $page_component ) -}}
+{{- end -}}
+
+{{- $content = merge $content (dict "bg_css" (printf "%s" $content.name)) -}}
+
+{{- if .section.fg_image}}
+    {{- $content = merge $content (dict "fg_resource_page" .page) -}}
+{{- else -}}
+    {{- $content = merge $content (dict "fg_resource_page" $page_component) -}}
+{{- end -}}
 
 {{- return $content -}}

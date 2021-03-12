@@ -72,11 +72,6 @@
            "type": "hidden"
          },
          {
-           "key": "publishdate",
-           "title": "Publishdate",
-           "type": "hidden"
-         },
-         {
            "fields": [
              {
                "key": "image",
@@ -90,14 +85,24 @@
                "type": "string"
              },
              {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
                "key": "title",
                "title": "Title",
                "type": "string"
              }
            ],
-           "key": "snippets",
-           "title": "Snippets",
+           "key": "page_sections",
+           "title": "Page sections",
            "type": "accordion"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
          },
          {
            "key": "tags",
@@ -105,10 +110,10 @@
            "type": "chips"
          }
        ],
-       "folder": "content/post/",
+       "folder": "content/posts/",
        "itemtitle": "Post",
-       "key": "c__post",
-       "title": "Post"
+       "key": "c__posts",
+       "title": "Posts"
      },
      {
        "dataformat": "yaml",
@@ -272,7 +277,25 @@
              {
                "key": "bg_image",
                "title": "Bg image",
-               "type": "hidden"
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
              },
              {
                "arrayTitle": true,
@@ -284,6 +307,11 @@
                "key": "page_component",
                "title": "Page component",
                "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "markdown"
              },
              {
                "key": "title",
@@ -399,22 +427,22 @@
            "key": "s___index"
          },
          {
-           "key": "s__post"
+           "key": "s__page-components"
          },
          {
            "key": "s__portfolio"
          },
          {
-           "key": "s__page-components"
+           "key": "s__posts"
          }
        ],
-       "title": "Home and section pages"
+       "title": "Single pages"
      },
      {
        "key": "collections",
        "menuItems": [
          {
-           "key": "c__post"
+           "key": "c__page-components"
          },
          {
            "key": "c__pages"
@@ -423,10 +451,19 @@
            "key": "c__portfolio"
          },
          {
-           "key": "c__page-components"
+           "key": "c__posts"
          }
        ],
-       "title": "Grouped pages"
+       "title": "Collections of pages"
+     },
+     {
+       "key": "data",
+       "menuItems": [
+         {
+           "key": "ds_data_design"
+         }
+       ],
+       "title": "Data files"
      },
      {
        "key": "general",
@@ -448,15 +485,6 @@
          }
        ],
        "title": "PoppyGo"
-     },
-     {
-       "key": "data",
-       "menuItems": [
-         {
-           "key": "ds_data_design"
-         }
-       ],
-       "title": "Other content"
      }
    ],
    "serve": [
@@ -589,6 +617,11 @@
                "key": "inner_space",
                "title": "Inner space",
                "type": "number"
+             },
+             {
+               "key": "item_bg_color",
+               "title": "Item bg color",
+               "type": "string"
              },
              {
                "arrayTitle": true,
@@ -868,10 +901,10 @@
        "dataformat": "yaml",
        "fields": [
          {
-           "content": "Relative link of this page: /post/",
-           "key": "info-s__post",
+           "content": "Relative link of this page: /posts/",
+           "key": "info-s__posts",
            "theme": "gray-bare",
-           "title": "Info s post",
+           "title": "Info s posts",
            "type": "info"
          },
          {
@@ -915,11 +948,6 @@
            "type": "chips"
          },
          {
-           "key": "author",
-           "title": "Author",
-           "type": "string"
-         },
-         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
@@ -927,31 +955,41 @@
          {
            "fields": [
              {
-               "arrayTitle": true,
-               "key": "snippet",
-               "title": "Snippet",
+               "key": "bg_image",
+               "title": "Bg image",
                "type": "string"
              },
              {
-               "key": "snippet-type",
-               "title": "Snippet type",
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
-           "key": "snippets",
-           "title": "Snippets",
+           "key": "page_sections",
+           "title": "Page sections",
            "type": "accordion"
-         },
-         {
-           "key": "tags",
-           "title": "Tags",
-           "type": "chips"
          }
        ],
-       "file": "content/post/_index.md",
-       "key": "s__post",
-       "previewUrl": "/post/",
-       "title": "Post"
+       "file": "content/posts/_index.md",
+       "key": "s__posts",
+       "previewUrl": "/posts/",
+       "title": "Posts"
      },
      {
        "dataformat": "yaml",

@@ -22,9 +22,14 @@ menu:
       url: /posts/
       weight: 0
     - identifier: ''
-      name: portfolio
+      name: Portfolio
       parent: ''
       url: /portfolio/
+      weight: 0
+    - identifier: ''
+      name: Components ready
+      parent: ''
+      url: /pages/components-ready/
       weight: 0
 params:
   authorBio: PoppyGo is one year old

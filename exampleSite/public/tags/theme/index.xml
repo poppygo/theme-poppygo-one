@@ -10,30 +10,10 @@
     <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring the theme</title>
-      <link>/portfolio/configuring-the-theme/</link>
+      <link>/posts/configuring-the-theme/</link>
       <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/portfolio/configuring-the-theme/</guid>
-      <description>Sharing the config.toml used in this website:
-# Better code higlighting # via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3 pygmentsCodefences = true pygmentsStyle = &amp;#34;vs&amp;#34; # Integrations googleAnalytics = &amp;#34;UA-XXXXXX-XX&amp;#34; disqusShortname = &amp;#34;your-disqus-shortname&amp;#34; # Hightlight theme [markup.highlight] style = &amp;#34;github&amp;#34; # Allow HTML rendering inside markdown [markup.goldmark.renderer] unsafe = true [params] # Show intro in the home page (with headline and description) intro = true headline = &amp;#34;This is a headline&amp;#34; description = &amp;#34;A minimalist theme for Hugo, build with Tailwind CSS.</description>
-    </item>
-    
-    <item>
-      <title>Configuring the theme</title>
-      <link>/post/configuring-the-theme/</link>
-      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/configuring-the-theme/</guid>
-      <description>Sharing the config.toml used in this website:
-# Better code higlighting # via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3 pygmentsCodefences = true pygmentsStyle = &amp;#34;vs&amp;#34; # Integrations googleAnalytics = &amp;#34;UA-XXXXXX-XX&amp;#34; disqusShortname = &amp;#34;your-disqus-shortname&amp;#34; # Hightlight theme [markup.highlight] style = &amp;#34;github&amp;#34; # Allow HTML rendering inside markdown [markup.goldmark.renderer] unsafe = true [params] # Show intro in the home page (with headline and description) intro = true headline = &amp;#34;This is a headline&amp;#34; description = &amp;#34;A minimalist theme for Hugo, build with Tailwind CSS.</description>
-    </item>
-    
-    <item>
-      <title>Configuring the theme</title>
-      <link>/products/configuring-the-theme/</link>
-      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/products/configuring-the-theme/</guid>
+      <guid>/posts/configuring-the-theme/</guid>
       <description>Sharing the config.toml used in this website:
 # Better code higlighting # via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3 pygmentsCodefences = true pygmentsStyle = &amp;#34;vs&amp;#34; # Integrations googleAnalytics = &amp;#34;UA-XXXXXX-XX&amp;#34; disqusShortname = &amp;#34;your-disqus-shortname&amp;#34; # Hightlight theme [markup.highlight] style = &amp;#34;github&amp;#34; # Allow HTML rendering inside markdown [markup.goldmark.renderer] unsafe = true [params] # Show intro in the home page (with headline and description) intro = true headline = &amp;#34;This is a headline&amp;#34; description = &amp;#34;A minimalist theme for Hugo, build with Tailwind CSS.</description>
     </item>

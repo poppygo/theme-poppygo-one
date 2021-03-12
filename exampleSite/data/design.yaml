@@ -1,3 +1,18 @@
+buttons:
+  - color: poppycolor3
+    font: body
+    name: primary
+    rounded: 2xl
+    size: lg
+    space: 3
+    text_color: poppycolor5
+  - color: poppycolor4
+    font: display1
+    name: secondary
+    rounded: null
+    size: sm
+    space: 2
+    text_color: poppycolor1
 colorscheme:
   poppy_color1: '#ff0000'
   poppy_color2: '#5205ad'
@@ -5,62 +20,54 @@ colorscheme:
   poppy_color4: '#6a6a6a'
   poppy_color5: '#44467b'
   poppy_color6: '#00ff00'
-
 fontscheme:
-  - name: display1
-    family: Averia Sans Libre
+  - family: Averia Sans Libre
+    name: display1
     weight: 700
-  - name: body
-    family: Nunito
+  - family: Nunito
+    name: body
     weight: 400
-  - name: art
-    family: Turret Road
+  - family: Turret Road
+    name: art
     weight: 700
-  - name: display2
-    family: Comfortaa
+  - family: Comfortaa
+    name: display2
     weight: 400
-
+objects:
+  - bg_color: poppycolor6
+    border: 2
+    inner_space: 10
+    item_bg_color: white
+    name: components
+    outer_space: 10
+    rounded: 2xl
+    shadow: lg
+    text_dark: poppycolor2
+    text_light: poppycolor1
+  - bg_color: poppycolor6
+    border: 2
+    inner_space: 10
+    item_bg_color: ''
+    name: site
+    outer_space: 10
+    rounded: 2xl
+    shadow: lg
+    text_dark: poppycolor2
+    text_light: poppycolor1
 typographies:
-  - name: title
-    font: display1
+  - font: display1
+    name: title
     size: 7xl
     space: 10
-  - name: subtitle
-    font: display2
+  - font: display2
+    name: subtitle
     size: 2xl
     space: 6
-  - name: body
-    font: body
+  - font: body
+    name: body
     size: lg
     space: 5
-  - name: art
-    font: art
+  - font: art
+    name: art
     size: 7xl
     space: 0
-
-objects:
-  - name: general
-    rounded: 2xl
-    border: 2
-    shadow: lg
-    bg_color: poppycolor6
-    text_light: poppycolor1
-    text_dark: poppycolor2
-    inner_space: 10
-    outer_space: 10
-
-buttons:
-  - name: primary
-    space: 3
-    font: art
-    size: 6xl
-    color: poppycolor3
-    text_color: poppycolor5
-    rounded: 2xl
-  - name: secondary
-    space: 2
-    font: display1
-    size: sm
-    color: poppycolor4
-    text_color: poppycolor1
-    rounded:

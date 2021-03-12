@@ -3,6 +3,11 @@
 {{- $content := partial "process/get_content" (dict "page" .page "section" .section "page_component" .page_component) -}}
 {{- $design := partial "process/get_design" .page_component -}}
 
+{{- with $content -}}
+  {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
+{{- end -}}
+
+
 {{- $items := partial "process/sortedItems" (dict "type" $content.list ) -}}
 {{- $size := $content.size | default 450 -}}
 {{- $max_amount := $content.max_amount | default (len $items) -}}
@@ -15,13 +20,13 @@
 </style>
 
 {{- with $design -}}
-  <section class ="text-center {{.outer_space}} {{.text_dark}} {{ if not $content.full_width }} container {{ end }} mx-auto ">
+  <section class ="text-center {{.outer_space}} {{.text_dark}} {{ if not $content.full_width }} container {{ end }} mx-auto {{$content.bg_css}} ">
     <h1 class = "{{.title }} ">{{ $content.title }}</h1>
     <p class = "{{.subtitle }}">{{ $content.subtitle }}</p>
     <div class = "grid gap-3 square-grid overflow-clip mx-auto">
         {{- range first $max_amount $items -}}
         {{- $bg_css := printf "%s-%s" $page.File.ContentBaseName .File.ContentBaseName -}}
-        {{- partial "UI-elements/bg_image" (dict "page" . "css_class" $bg_css "bg_image" .Params.fg_image "path" "images/") -}}
+        {{- partial "UI-elements/bg_image" (dict "page" . "css_class" $bg_css "bg_image" .Params.fg_image ) -}}
           <a class="{{$design.bg_color}} {{$design.text_light}} {{$bg_css}} {{$design.rounded}} {{$design.border}} {{$design.shadow}} bg-cover bg-center {{$design.inner_space}} px-2" href={{.RelPermalink }}>
               <h1 class="text-center text-3xl {{$design.art}} ">{{.Title}}</h1>
           </a>

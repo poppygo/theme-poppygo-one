@@ -5,7 +5,7 @@
 {{ $link := .link}}
 {{ $class := .class }}
 
-{{ $image_path := printf "%s*%s*" .path .name }}
+{{ $image_path := printf "images/*%s*" .name }}
 {{ $sizes := (slice "480" "800" "1500") }}
 {{ $image := (.resource_page.Resources.ByType "image").GetMatch $image_path}}
 

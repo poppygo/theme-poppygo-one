@@ -3,37 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>/sukoh.json</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/configuring-the-theme/</loc>
+    <loc>/posts/configuring-the-theme/</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/configuring-the-theme/</loc>
-    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/products/configuring-the-theme/</loc>
-    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/portfolio/</loc>
-    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/products/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,7 +28,7 @@
   </url>
   
   <url>
-    <loc>/contentblocks/</loc>
+    <loc>/page-components/</loc>
   </url>
   
   <url>
@@ -56,47 +36,43 @@
   </url>
   
   <url>
-    <loc>/contentblocks/twbanner/</loc>
+    <loc>/page-components/twbanner/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/gallery1/</loc>
+    <loc>/page-components/gallery1/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/blog-teaser1/</loc>
+    <loc>/page-components/blog-teaser1/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/listcards/</loc>
+    <loc>/page-components/listcards/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/list-mediaobjects/</loc>
+    <loc>/page-components/list-mediaobjects/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/form1/</loc>
+    <loc>/page-components/form1/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/cards1/</loc>
+    <loc>/page-components/cards1/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/enumeration1/</loc>
+    <loc>/page-components/shortlist2/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/mediaobject1/</loc>
+    <loc>/page-components/mediaobject1/</loc>
   </url>
   
   <url>
-    <loc>/contentblocks/threeup1/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/index/</loc>
+    <loc>/page-components/threeup1/</loc>
   </url>
   
   <url>
@@ -104,15 +80,31 @@
   </url>
   
   <url>
+    <loc>/portfolio/</loc>
+  </url>
+  
+  <url>
+    <loc>/portfolio/item3/</loc>
+  </url>
+  
+  <url>
+    <loc>/portfolio/item1/</loc>
+  </url>
+  
+  <url>
+    <loc>/portfolio/item2/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/post1/</loc>
+  </url>
+  
+  <url>
     <loc>/pages/testpage-tailwind/</loc>
   </url>
   
   <url>
-    <loc>/pages/testpage/</loc>
-  </url>
-  
-  <url>
-    <loc>/contentblocks/article1/</loc>
+    <loc>/page-components/article1/</loc>
   </url>
   
 </urlset>

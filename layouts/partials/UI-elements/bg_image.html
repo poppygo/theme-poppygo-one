@@ -3,27 +3,16 @@
 - And add the class to your container:  for example class = "{{.class}}"
 */}}
 
-{{ $css_class := .css_class }}
-{{ $path := .path }}
-
-{{ if .page.IsSection }}
-    {{ $path := "" }}
-{{ end }}
-
-{{ if .bg_image }}
-  {{ if .resource_page }}
-    {{ $page = .resource_page }}
-  {{ end }}
-
-  {{ $image_path := printf "%s*%s*" $path .bg_image }}
-  {{ $image := (.page.Resources.ByType "image").GetMatch $image_path}}
-
-  {{ with $image }}
-      {{ $extraSmall := .Resize "500x" }}
-      {{ $small := .Resize "768x" }}
-      {{ $medium := .Resize "992x" }}
-      {{ $large := .Resize "1200x" }}
-      {{ $extralarge := .Resize "1920x" }}
+{{- $css_class := .css_class -}}
+{{- if .bg_image -}}
+  {{- $image_path := printf "images/*%s*" .bg_image -}}
+  {{- $image := (.page.Resources.ByType "image").GetMatch $image_path -}}
+  {{- with $image -}}
+      {{- $extraSmall := .Resize "500x" -}}
+      {{- $small := .Resize "768x" -}}
+      {{- $medium := .Resize "992x" -}}
+      {{- $large := .Resize "1200x" -}}
+      {{- $extralarge := .Resize "1920x" -}}
       <style>
 @media (max-width: 667px) {.{{$css_class}} {background-image:url({{$extraSmall.RelPermalink | safeCSS }}) ;}}
 @media (min-width: 668px) {.{{$css_class}} {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}
@@ -31,5 +20,5 @@
 @media (min-width: 1200px) {.{{$css_class}} {background-image:url({{$large.RelPermalink | safeCSS }}) ;}}
 @media (min-width: 1600px) {.{{$css_class}} {background-image:url({{$extralarge.RelPermalink | safeCSS }}) ;}}
       </style>
-  {{ end }}
-{{ end }}
+  {{- end -}}
+{{- end -}}
