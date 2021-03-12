@@ -12,7 +12,6 @@ poppy_variant: equal-columns
 fg_image: foreground
 bg_image: background
 full-width: false
-enabled: true
 items:
   - name: item1
     title: I am an item title

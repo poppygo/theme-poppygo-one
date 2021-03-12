@@ -60,15 +60,23 @@ typographies:
     name: title
     size: 7xl
     space: 10
+    color: poppycolor2
+    bg_color: none
   - font: display2
     name: subtitle
     size: 2xl
     space: 6
+    color: poppycolor1
+    bg_color: none
   - font: body
     name: body
     size: lg
     space: 5
+    color: poppycolor1
+    bg_color: none
   - font: art
     name: art
     size: 7xl
     space: 0
+    color: poppycolor1
+    bg_color: poppycolor5

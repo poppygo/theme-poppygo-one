@@ -49,7 +49,7 @@ page_sections:
     page_component: cards1
     subtitle: ''
     title: Showing a shortlist of benefits with cards
-  - bg_image: ''
+  - bg_image: 'none'
     buttons: []
     name: newsletter
     page_component: newsletter
@@ -59,4 +59,3 @@ resources: []
 title: Almost Finished components
 
 ---
-

@@ -9,7 +9,7 @@
 
 {{- with $design -}}
 {{- $columns := partial "UI-elements/responsive-columns" (dict "amount" (len $content.items ) "max_columns" $content.max_columns) -}}
-    <div class="{{- if not .full_width -}} container {{- end -}} {{.outer_space}} mx-auto px-4 md:px-12 bg_cover {{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
+    <div class="{{- if not .full_width -}} container {{- end -}} {{.outer_space}} mx-auto px-4 md:px-12 {{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
       <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
       <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
         <div class="flex">

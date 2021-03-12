@@ -9,9 +9,12 @@
   {{- range $key, $value := . -}}
 
     {{/* Set override */}}
-    {{- $override := index $page_component.Params $key -}}
-    {{- $default := $value -}}
-    {{- $value := $override | default $default }}
+
+    {{- if $page_component.Params.design -}}
+      {{- $override := index $page_component.Params.design $key -}}
+      {{- $default := $value -}}
+      {{- $value = $override | default $default }}
+    {{- end -}}
 
     {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}
     {{- else if in $key "margin" -}} {{- $value = printf "my-%s" (string $value) -}}
@@ -28,29 +31,51 @@
   {{- end -}}
 {{- end -}}
 
-
 {{ range $typographyData -}}
-    {{- $size := printf "text-%s" .size -}}
-    {{- $font := printf "font-%s" .font -}}
-    {{- $space := printf "py-%s" (string .space) -}}
-    {{- $name := printf "text-%s" .size -}}
+  {{- $name := .name -}}
+  {{- $type := "" -}}
+  {{- range $key, $value := . -}}
+    {{/* Set override */}}
+    {{- if $page_component.Params.design.typography -}}
+      {{- $override := index $page_component.Params.design.typography (printf "%s_%s" $name $key) -}}
+      {{- $default := $value -}}
+      {{- $value = string ($override | default $default) -}}
+    {{- end -}}
 
-    {{- $design = merge $design (dict .name (printf "%s %s %s" $size $font $space )) -}}
+    {{- if eq $key "size" -}} {{- $value = (printf "text-%s" $value ) -}} {{- end -}}
+    {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
+    {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  $value ) -}} {{- end -}}
+    {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
+    {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
+
+    {{- $type = printf "%s %s" $type $value -}}
+  {{- end -}}
+  {{- $design = merge $design (dict .name $type ) -}}
 {{- end -}}
 
 {{- range $buttonData -}}
-      {{- $spacex := printf "px-%s" (string (mul .space 3)) -}}
-      {{- $spacey := printf "py-%s" (string .space) -}}
-      {{- $font := printf "font-%s" .font -}}
-      {{- $size := printf "text-%s" (string .size) -}}
-      {{- $rounded := printf "rounded-%s" .rounded -}}
-      {{- $name := printf "button_%s" .name -}}
-      {{- $bg_color := printf "bg-%s" .color -}}
-      {{- $text_color := printf "text-%s" .text_color -}}
-      {{- $font_weight := printf "font-%s" .font_weight -}}
+  {{- $name := .name -}}
+  {{- $button := "" -}}
+  {{- range $key, $value := . -}}
+    {{/* Set override */}}
+    {{- if $page_component.Params.design.buttons -}}
+      {{- $override := index $page_component.Params.design.buttons (printf "%s_%s" $name $key) -}}
+      {{- $default := $value -}}
+      {{- $value = $override | default $default -}}
+    {{- end -}}
 
-      {{- $design = merge $design (dict $name (printf "%s %s %s %s %s %s %s %s" $spacex $spacey $font $size $bg_color $text_color $rounded $font_weight )) -}}
+        {{- if in $key "space" -}} {{- $value = printf "px-%s py-%s" (string (mul $value 4)) (string $value)  -}} {{- end -}}
+        {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
+        {{- if in $key "size" -}} {{- $value = printf "text-%s"  (string $value ) -}} {{- end -}}
+        {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
+        {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
+        {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
+
+        {{- if eq $key "name" -}} {{- $name = printf "button_%s"  $value  -}} {{- end -}}
+
+      {{- $button = printf "%s %s" $button $value -}}
+    {{- end -}}
+    {{- $design = merge $design (dict $name $button ) -}}
 {{- end -}}
-
 
 {{- return $design -}}

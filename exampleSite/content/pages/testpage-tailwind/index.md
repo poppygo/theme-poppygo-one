@@ -5,9 +5,9 @@ mainContent: ''
 resources: []
 page_sections:
   - bg_image: null
-    page_component: twbanner
+    page_component: header-banner
     name: testbanner
-    title: Intoducting the concept of reusable content blocks
+    title: Intoducing the concept of reusable content blocks
   - bg_image: ''
     page_component: gallery1
     name: testlist4

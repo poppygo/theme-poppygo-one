@@ -10,6 +10,13 @@ poppy_type: poppy-form
 poppy_variant: newsletter
 image: foreground
 bg_image: background
+design:
+  bg_color: poppycolor4
+  buttons:
+  typography:
+    title_font: art
+    title_size: 5xl
+    title_bg: poppycolor3
 full-width: false
 
 ---
@@ -17,4 +24,4 @@ full-width: false
 
 I'm baby whatever cray glossier pabst vexillologist kogi stumptown adaptogen edison bulb.
 Waistcoat chambray bicycle rights shaman asymmetrical, 90's DIY fixie glossier.
-Four loko before they sold out schlitz, umami brooklyn selvage pabst typewriter pug polaroid 
+Four loko before they sold out schlitz, umami brooklyn selvage pabst typewriter pug polaroid

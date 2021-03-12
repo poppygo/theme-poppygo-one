@@ -7,7 +7,7 @@
     {{- range $index, $value := .buttons -}}
       <a href="{{.link }}">
 
-        <button type="button" class=" {{ index $btnclasses $index }} ">
+        <button type="button" class=" hover:opacity-80 {{ index $btnclasses $index }} ">
           {{- .label -}}
         </button>
       </a>

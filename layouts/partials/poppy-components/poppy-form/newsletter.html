@@ -8,7 +8,6 @@
   {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
 {{- end -}}
 
-
 <style>
 .newsletter-grid {
   grid-template-columns:minmax(100px, 500px) 1fr  minmax(100px, 400px) ;
@@ -16,27 +15,26 @@
 }
 </style>
 
-
 {{- with $design -}}
+  <div class="{{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} bg-cover">
+    <div class = "grid newsletter-grid grid-flow-row block ">
 
-<div class="{{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} bg-cover">
-  <div class = "grid newsletter-grid grid-flow-row block">
-    <div class ="col-start-1 row-start-2 col-span-2 w-full overflow-hidden block">
-        {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "class" "w-full object-center") -}}
+      <div class ="col-start-1 row-start-2 col-span-2 w-full overflow-hidden ">
+          {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "class" " w-full  ") -}}
+      </div>
+
+      <div class="lg:col-start-2 col-span-full md:m-24 row-span-full">
+            <h2 class="text-xl text-left {{.title}}">{{$content.title}}</h2>
+          <span class="prose lg:prose-xl text-left {{.body}}">{{$content.body | markdownify }}</span>
+          <form action="#" class="mt-2  ">
+              <div class="flex items-center">
+                  <input type="email" action="POGOFORM" class="w-full h-16 px-2 py-4 {{.item_bg_color}} {{.rounded}} rounded-r-none {{.border}} focus:ring-4 focus:outline-none" required>
+                  <button class="h-16 {{.button_primary}} rounded-l-none flex-none hover:opacity-70">Sign Up</button>
+              </div>
+          </form>
+      </div>
+
     </div>
 
-    <div class="lg:col-start-2 col-span-full md:m-24 row-span-full">
-        <h2 class="text-xl text-left {{.subtitle}}">{{$content.title}}</h2>
-        <span class="prose lg:prose-xl text-left {{.body}}">{{$content.body | markdownify }}</span>
-        <form action="#" class="mt-2  ">
-            <div class="flex items-center">
-                <input type="email" action="POGOFORM" class="w-full h-16 px-2 py-4 {{.item_bg_color}} {{.rounded}} rounded-r-none {{.border}} focus:outline-none" required>
-                <button class="h-16 {{.button_primary}} rounded-l-none md:flex-none w-1/3">Sign Up</button>
-            </div>
-        </form>
-    </div>
   </div>
-
-</div>
-
 {{- end -}}

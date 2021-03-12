@@ -11,6 +11,15 @@ fg_image: fore
 full-width: false
 max_amount: 6
 size: 450
+design:
+  rounded: none
+  border: none
+  shadow: none
+  bg_color: poppycolor5
+  buttons:
+  typography:
+    title_bg_color: poppycolor
+    title_color: poppycolor3
 buttons:
   - label: See all
     link: /page-components/

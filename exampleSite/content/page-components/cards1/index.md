@@ -12,8 +12,9 @@ poppy_variant: cards
 bg_image: background
 full_width: false
 max_columns: 6
-bg_color: poppycolor3
-item_bg_color: poppycolor6
+design:
+  bg_color: poppycolor3
+  item_bg_color: poppycolor6
 items:
   - name: item1
     image: foreground

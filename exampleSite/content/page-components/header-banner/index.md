@@ -20,6 +20,9 @@ summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
   descriptions
 title: I am a banner
+design:
+  buttons:
+  typography:
 
 ---
 
