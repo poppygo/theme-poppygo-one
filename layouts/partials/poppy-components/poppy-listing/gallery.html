@@ -32,6 +32,6 @@
           </a>
         {{- end -}}
     </div>
-    {{- partial "UI-elements/buttons" (dict "page" $page "buttons" .buttons ) -}}
+    {{- partial "UI-elements/buttons" (dict "page" $page "buttons" $content.buttons ) -}}
   </section>
 {{- end -}}

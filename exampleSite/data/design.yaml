@@ -1,11 +1,12 @@
 buttons:
-  - color: poppycolor3
+  - color: poppycolor1
     font: body
     name: primary
     rounded: 2xl
-    size: lg
-    space: 3
-    text_color: poppycolor5
+    size: xl
+    space: 4
+    text_color: poppycolor2
+    font_weight: bold
   - color: poppycolor4
     font: display1
     name: secondary

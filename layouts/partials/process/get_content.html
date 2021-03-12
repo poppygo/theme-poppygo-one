@@ -3,8 +3,7 @@
 {{- $section := .section -}}
 {{- $content := dict "name" ( .section.name | default .page_component.Name) -}}
 
-{{/* -----------get Params -------- */}}
-{{- $params := slice "title" "subtitle" "fg_image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size"  -}}
+{{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size"  -}}
 
 {{- range $params}}
   {{- $override := index $section . -}}
@@ -12,6 +11,12 @@
   {{- $content = merge $content (dict . ( $override | default $default )) -}}
 {{- end -}}
 
+{{/* only articles get the markdown-content of the page in the body. Others get the markdown-content of the page component */}}
+{{- if eq .page_component.Params.pogo_type "pogo-article" -}}
+    {{- $content = merge $content (dict "body" .page.Content) -}}
+{{- else -}}
+  {{- $content = merge $content (dict "body" .page_component.Content) -}}
+{{- end -}}
 
 {{/* -----------Change resource page when images are set in the page section  -------- */}}
 {{- if .section.bg_image}}

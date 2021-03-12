@@ -40,15 +40,16 @@
 
 {{- range $buttonData -}}
       {{- $spacex := printf "px-%s" (string (mul .space 3)) -}}
-      {{- $spacey := printf "px-%s" (string .space) -}}
+      {{- $spacey := printf "py-%s" (string .space) -}}
       {{- $font := printf "font-%s" .font -}}
       {{- $size := printf "text-%s" (string .size) -}}
       {{- $rounded := printf "rounded-%s" .rounded -}}
       {{- $name := printf "button_%s" .name -}}
       {{- $bg_color := printf "bg-%s" .color -}}
       {{- $text_color := printf "text-%s" .text_color -}}
+      {{- $font_weight := printf "font-%s" .font_weight -}}
 
-      {{- $design = merge $design (dict $name (printf "%s %s %s %s %s %s %s" $spacex $spacey $font $size $bg_color $text_color $rounded )) -}}
+      {{- $design = merge $design (dict $name (printf "%s %s %s %s %s %s %s %s" $spacex $spacey $font $size $bg_color $text_color $rounded $font_weight )) -}}
 {{- end -}}
 
 
