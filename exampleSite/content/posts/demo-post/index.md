@@ -6,7 +6,7 @@ aliases:
 title: Demo post
 
 page_sections:
-  - bg_image: ''
+  - bg_image: none
     buttons: none
     name: headerbanner
     page_component: header-banner
@@ -16,11 +16,18 @@ page_sections:
     page_component: article1
     image: pageimage
     title: PageTitle
-  - bg_image: 'none'
+    bg_image:
+  - bg_image: back
     name: newsletter
     page_component: small-newsletter
     subtitle: ''
-    title: sign-up for the newsletter
+    title: Suscribe to the newsletter
+  - bg_image: back
+    name: other posts
+    page_component: gallery1
+    list: posts
+    subtitle: ''
+    title: Other posts
 
 ---
 
