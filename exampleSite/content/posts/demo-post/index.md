@@ -16,7 +16,7 @@ page_sections:
     page_component: article1
     image: pageimage
     title: PageTitle
-    bg_image:
+    bg_image: back
   - bg_image: back
     name: newsletter
     page_component: small-newsletter
