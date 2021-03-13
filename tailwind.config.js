@@ -11,7 +11,7 @@ module.exports = {
         poppycolor4: 'var(--poppy-color4)',
         poppycolor5: 'var(--poppy-color5)',
         poppycolor6: 'var(--poppy-color6)',
-      }
+      },
     },
     fontFamily: {
       display1: "var(--font-display1)",

@@ -5,6 +5,8 @@ date: '2020-07-04'
 description: A brief post showing all configuration options
 tags:
   - theme
+  - tag2
+  - tag3
 page_sections:
   - name: section1
     page_component: article1

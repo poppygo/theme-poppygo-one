@@ -1,14 +1,11 @@
 ---
-aliases:
-  - posts
-  - articles
-  - blog
-title: Portfolio
+
+title: Posts
 page_sections:
   - bg_image: ''
-    page_component: cards1
+    page_component: gallery1
     list: posts
-    name: section1
+    name: testlist4
     title: 'Have a look at the posts'
 
 ---

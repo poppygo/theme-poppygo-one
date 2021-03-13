@@ -1,7 +1,6 @@
 ---
 aliases:
   - showcase
-  - docs
   - product
 title: Portfolio
 page_sections:

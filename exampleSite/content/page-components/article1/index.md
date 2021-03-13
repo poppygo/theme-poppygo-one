@@ -10,5 +10,3 @@ fg_image: foreground
 bg_image: background
 full_width: false
 ---
-
-TestContent

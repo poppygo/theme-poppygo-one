@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div id="reading-progress-bar" role="presentation" class="fixed z-10 top-0 left-0 h-6 bg-gray-700"></div>
 {{ "<!-- default list template -->" | safeHTML }}
-{{ partial "page_sections" . }}
+{{ partial "process/page_sections" . }}
 
   {{/* {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
   {{ range $paginator.Pages }}

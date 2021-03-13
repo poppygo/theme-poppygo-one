@@ -1,12 +1,18 @@
--article one
+{{ "<!-- snippet shortlist cards -->" | safeHTML }}
+{{- $page := .page -}}
+{{- $content := partial "process/get_content" (dict "page" .page "section" .section "page_component" .page_component) -}}
+{{- $design := partial "process/get_design" .page_component -}}
 
-{{ $page := .page }}
+{{- with $content -}}
+  {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
+{{- end -}}
+
+{{- with $design -}}
 
 <section class="container">
 
 
-<h1>{{ .snippetOverride.title | default .snippet.Params.title }}</h1>
-<article class="article max-w-3xl mx-auto text-gray-700 w-full">
+<article class="prose max-w-3xl mx-auto text-gray-700 w-full">
     {{if not $page.Params.hideMetadata }}
       <header class="text-center pt-10 pb-6">
         <small class="text-center text-sm">
@@ -15,6 +21,7 @@
           </time>
 
           {{ range ($page.GetTerms "tags") }}
+            term
             <a href="{{$page.Permalink }}" class="inline-flex items-center px-4 py-1 rounded-full no-underline bg-orange-100 text-orange-800 hover:bg-orange-300 ml-4">
               {{.LinkTitle }}
             </a>
@@ -84,8 +91,5 @@
     {{ end }}
 </article>
 
-{{if not $page.Params.hideSuggestions }}
-  {{ partial "suggestions.html" $page }}
-{{ end }}
-
 </section>
+{{- end -}}
