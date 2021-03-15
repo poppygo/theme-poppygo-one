@@ -15,8 +15,8 @@ design:
   buttons:
   typography:
     title_font: art
-    title_size: 5xl
-    title_bg: poppycolor3
+    title_size: 6xl
+    title_bg: poppycolor2
 full-width: false
 
 ---

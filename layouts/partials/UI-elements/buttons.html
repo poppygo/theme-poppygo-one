@@ -1,6 +1,4 @@
-{{ $page := .page }}
-
-{{- $design := partial "process/get_design" $page -}}
+{{ $design := .design }}
 
   <div class="my-2 ">
     {{- $btnclasses := slice $design.button_primary $design.button_seconday $design.button_secondary -}}

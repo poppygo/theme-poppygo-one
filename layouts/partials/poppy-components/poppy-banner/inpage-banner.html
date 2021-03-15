@@ -6,6 +6,6 @@
   <header class="bg-fixed text-center bg-cover px-4 pt-32 {{.text_dark}} {{.outer_space}} {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
     <h1 class="text-6xl md:text-7xl lg:text-8xl  uppercase {{.title}} {{.text_dark}}">{{$content.title}}</h1>
     <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
-    {{- partial "UI-elements/buttons" (dict "page" $page "buttons" $content.buttons ) -}}
+    {{- partial "UI-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
   </header>
 {{- end -}}

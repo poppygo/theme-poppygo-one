@@ -1,18 +1,3 @@
 {{ define "main" }}
-<div id="reading-progress-bar" role="presentation" class="fixed z-10 top-0 left-0 h-6 bg-gray-700"></div>
-{{ "<!-- default list template -->" | safeHTML }}
-{{ partial "process/page_sections" . }}
-
-  {{/* {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-  {{ range $paginator.Pages }}
-    <article class="article border-b border-gray-400">
-      <h1><a href="{{.Permalink}}" class="no-underline">{{ .Title }}</a></h1>
-
-      {{ .Summary }}
-    </article>
-  {{ end }}
-
-  {{ if gt $paginator.TotalPages 1 }}
-    {{ template "_internal/pagination.html" . }}
-  {{ end }} */}}
+  {{ partial "poppy-engine/page_sections" . }}
 {{ end }}

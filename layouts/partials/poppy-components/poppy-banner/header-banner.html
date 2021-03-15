@@ -7,6 +7,6 @@
     <h1 class="text-6xl md:text-7xl lg:text-8xl  uppercase {{.title}} {{.text_dark}}">{{$content.title}}</h1>
     <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
     {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "link" $content.link "class" "w-full") -}}
-    {{- partial "UI-elements/buttons" (dict "page" $page "buttons" $content.buttons ) -}}
+    {{- partial "UI-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
   </header>
 {{- end -}}

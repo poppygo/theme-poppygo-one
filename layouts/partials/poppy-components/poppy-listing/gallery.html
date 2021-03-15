@@ -28,7 +28,7 @@
         {{- end -}}
     </div>
     <div class = "{{.outer_space}}">
-    {{- partial "UI-elements/buttons" (dict "page" $page "buttons" $content.buttons ) -}}
+    {{- partial "UI-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
     </div>
   </section>
 {{- end -}}
