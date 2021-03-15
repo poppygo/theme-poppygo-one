@@ -1,12 +1,6 @@
-{{- "<!-- poppy-form: newsletter  -->" | safeHTML -}}
 {{- $page := .page -}}
-{{- $bg_css := printf "%s-%s" $page.Section $page.File.ContentBaseName -}}
-{{- $content := partial "process/get_content" (dict "page" .page "section" .section "page_component" .page_component) -}}
-{{- $design := partial "process/get_design" .page_component -}}
-
-{{- with $content -}}
-  {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
-{{- end -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
 
 {{- with $design -}}
   <div class="{{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} bg-cover px-6 lg:px-32">

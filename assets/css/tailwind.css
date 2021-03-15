@@ -944,10 +944,6 @@ video {
   background-color: var(--poppy-color5);
 }
 
-.bg-poppycolor6 {
-  background-color: var(--poppy-color6);
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1134,6 +1130,10 @@ video {
 
 .h-2\/5 {
   height: 40%;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .text-xs {
@@ -1543,18 +1543,6 @@ video {
   color: var(--poppy-color3);
 }
 
-.text-poppycolor4 {
-  color: var(--poppy-color4);
-}
-
-.text-poppycolor5 {
-  color: var(--poppy-color5);
-}
-
-.text-poppycolor6 {
-  color: var(--poppy-color6);
-}
-
 .overflow-clip {
   text-overflow: clip;
 }
@@ -1569,6 +1557,10 @@ video {
 
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .w-4 {

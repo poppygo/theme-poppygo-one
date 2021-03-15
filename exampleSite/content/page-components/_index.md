@@ -1,6 +1,9 @@
 ---
 headless: true
 title: Components
+subpage_sections:
+  - page_component: component
+    name: component
 page_sections:
   - bg_image: ''
     page_component: gallery1

@@ -130,11 +130,6 @@
            "type": "string"
          },
          {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "hidden"
-         },
-         {
            "extensions": [
              "jpg",
              "png",
@@ -155,88 +150,14 @@
            "type": "bundle-manager"
          },
          {
-           "key": "bg_image",
-           "title": "Bg image",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
            "key": "mainContent",
            "title": "Main content",
            "type": "markdown"
          },
          {
-           "fields": [
-             {
-               "key": "bg_color",
-               "title": "Bg color",
-               "type": "string"
-             },
-             {
-               "key": "item_bg_color",
-               "title": "Item bg color",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "design",
-           "title": "Design",
-           "type": "section"
-         },
-         {
-           "key": "full-width",
-           "title": "Full width",
-           "type": "boolean"
-         },
-         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "key": "bodytext",
-               "title": "Bodytext",
-               "type": "markdown"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "label",
-                   "title": "Label",
-                   "type": "string"
-                 },
-                 {
-                   "key": "link",
-                   "title": "Link",
-                   "type": "string"
-                 }
-               ],
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "accordion"
-             },
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             }
-           ],
-           "key": "items",
-           "title": "Items",
-           "type": "accordion"
          },
          {
            "key": "poppy_type",
@@ -252,11 +173,6 @@
            "key": "resources",
            "title": "Resources",
            "type": "hidden"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
          }
        ],
        "folder": "content/page-components/",
@@ -932,6 +848,34 @@
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "hidden"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
          }
        ],
        "file": "content/_index.md",
@@ -1120,6 +1064,24 @@
            "key": "page_sections",
            "title": "Page sections",
            "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
          }
        ],
        "file": "content/page-components/_index.md",
@@ -1213,6 +1175,44 @@
            ],
            "key": "page_sections",
            "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
            "type": "accordion"
          }
        ],

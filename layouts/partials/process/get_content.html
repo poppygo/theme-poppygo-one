@@ -1,14 +1,22 @@
 
 {{- $page_component := .page_component -}}
 {{- $section := .section -}}
+{{- $page := .page -}}
 {{- $content := dict "name" ( .section.name | default .page_component.Name) -}}
 
 {{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size"  -}}
 
 {{- range $params}}
-  {{- $override := index $section . -}}
-  {{- $default := index $page_component.Params . -}}
-  {{- $content = merge $content (dict . ( $override | default $default )) -}}
+  {{- $section_value := index $section . -}}
+  {{- $component_value := index $page_component.Params . -}}
+  {{- $override := ( $section_value | default $component_value ) -}}
+
+  {{- if eq $override "->frompage" -}}
+    {{- $page_value := index $page.Params . -}}
+    {{- $content = merge $content (dict . $page_value ) -}}
+  {{ else }}
+    {{- $content = merge $content (dict . $override ) -}}
+  {{ end }}
 {{- end -}}
 
 {{/* only articles get the markdown-content of the page in the body. Others get the markdown-content of the page component */}}

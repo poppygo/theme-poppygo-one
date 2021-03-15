@@ -4,15 +4,28 @@
 {{- $themesDir := partial "process/get_hugo_config" "themesDir" -}}
 {{- $theme := partial "process/get_hugo_config" "theme" }}
 
-{{- range .Params.page_sections -}}
+
+{{- $sections := .Params.page_sections | default .Parent.Params.subpage_sections -}}
+
+
+{{- range $sections -}}
     {{- $page_section := .}}
-    {{- $page_component := site.GetPage (printf "%s/%s" "page-components" .page_component ) -}}
+    {{- $page_component := site.GetPage (printf "page-components/%s" .page_component ) -}}
 
     {{ with $page_component }}
       {{- $poppy_component := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
       {{- if (fileExists (printf "%s/%s/layouts/partials/%s.html" $themesDir $theme $poppy_component )) }}
-          {{- partial $poppy_component (dict "page" $page "section" $page_section "page_component" .  ) -}}
+
+          {{- $content := partial "process/get_content" (dict "page" $page "section" $page_section "page_component" . ) -}}
+          {{- $design := partial "process/get_design" . -}}
+
+          {{- with $content -}}
+            {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
+          {{- end -}}
+
+          {{- "<!-- {.File.ContentBaseName }} -->" | safeHTML -}}
+
+          {{- partial $poppy_component (dict "page" $page "content" $content "design" $design  ) -}}
       {{- end -}}
     {{ end }}
-
 {{- end -}}

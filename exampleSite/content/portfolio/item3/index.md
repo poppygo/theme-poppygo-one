@@ -5,9 +5,9 @@ mainContent: ''
 resources: []
 page_sections:
   - bg_image: null
-    page_component: twbanner
+    page_component: header-banner
     name: testbanner
-    title: Item1
+    title: You can override the default page_sections as set in my parent
   - bg_image: ''
     page_component: gallery1
     name: testlist4

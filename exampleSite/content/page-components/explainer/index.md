@@ -2,6 +2,7 @@
 bg_image: back
 design:
   bg_color: poppycolor4
+  item_bg_color: poppycolor6
   buttons:
     space: 4
   typography:
@@ -13,12 +14,9 @@ full-width: false
 image: explainer
 poppy_type: poppy-shortlist
 poppy_variant: switch-rows
-subtitle: null
+subtitle: ''
 summary: '-| I am the summary of the newsletter element, which is not very relevant'
 title: Explainer
-design:
-  bg_color: poppycolor3
-  item_bg_color: poppycolor6
 items:
   - name: item1
     image: explain
