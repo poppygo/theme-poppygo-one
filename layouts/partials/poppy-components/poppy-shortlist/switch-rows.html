@@ -1,0 +1,43 @@
+{{- "<!-- poppy-shortlist - explainer  -->" | safeHTML -}}
+
+
+{{- $page := .page -}}
+{{- $content := partial "process/get_content" (dict "page" .page "section" .section "page_component" .page_component) -}}
+{{- $design := partial "process/get_design" .page_component -}}
+
+{{- with $content -}}
+  {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
+{{- end -}}
+
+{{- with $design -}}
+
+    <div class="{{- if not .full_width -}} container {{- end -}} {{.outer_space}} mx-auto px-4 md:px-12 bg-cover {{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} ">
+      <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
+      <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
+        <div class="grid grid-cols-5 grid-flow-row-dense  ">
+            {{- range $index, $value := $content.items -}}
+
+            {{ $switch := ""}}
+            {{-  if not (modBool $index 2) -}}
+              {{ $switch = "col-start-1 md:col-start-3" -}}
+            {{- end -}}
+
+              <div class="bg-poppycolor2 col-span-5 md:col-span-3 {{$switch}} {{$design.rounded}} {{$design.shadow}} my-auto md:m-20 mb-5 ">
+                <div class=" prose p-2 md:p-4 {{.rounded}} ">
+                    {{.bodytext | markdownify }}
+                </div>
+
+                <div class="px-3 {{.rounded}}  ">
+                    {{- partial "UI-elements/buttons-secondary" (dict "page" $page "buttons" .buttons ) -}}
+                </div>
+              </div>
+
+
+              <div class= "bg-poppycolor3 col-span-5 md:col-span-2 my-auto" >
+                  {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "{{$design.rounded}} {{$design.shadow}} w-full object-cover") -}}
+              </div>
+
+            {{- end -}}
+        </div>
+    </div>
+{{- end -}}

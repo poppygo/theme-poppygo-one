@@ -1,0 +1,1223 @@
+{
+   "build": [
+     {
+       "config": "config.yml",
+       "key": "default"
+     }
+   ],
+   "collections": [
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "description",
+           "title": "Description",
+           "type": "markdown"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "author",
+           "title": "Author",
+           "type": "string"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "tags",
+           "title": "Tags",
+           "type": "chips"
+         }
+       ],
+       "folder": "content/posts/",
+       "itemtitle": "Post",
+       "key": "c__posts",
+       "title": "Posts"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "bg_image",
+           "title": "Bg image",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Fg image",
+           "type": "hidden"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "hidden"
+             },
+             {
+               "key": "typography",
+               "title": "Typography",
+               "type": "hidden"
+             }
+           ],
+           "groupdata": true,
+           "key": "design",
+           "title": "Design",
+           "type": "section"
+         },
+         {
+           "key": "full-width",
+           "title": "Full width",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "name",
+           "title": "Name",
+           "type": "string"
+         },
+         {
+           "key": "poppy_type",
+           "title": "Poppy type",
+           "type": "string"
+         },
+         {
+           "key": "poppy_variant",
+           "title": "Poppy variant",
+           "type": "string"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "folder": "content/page-components/",
+       "itemtitle": "Page component",
+       "key": "c__page-components",
+       "title": "Page components"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "markdown"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "markdown"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "folder": "content/pages/",
+       "itemtitle": "Page",
+       "key": "c__pages",
+       "title": "Pages"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "hidden"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "folder": "content/portfolio/",
+       "itemtitle": "Portfolio",
+       "key": "c__portfolio",
+       "title": "Portfolio"
+     }
+   ],
+   "hugover": "extended_0.76.5",
+   "menu": [
+     {
+       "key": "singles",
+       "menuItems": [
+         {
+           "key": "s___index"
+         },
+         {
+           "key": "s__page-components"
+         },
+         {
+           "key": "s__portfolio"
+         },
+         {
+           "key": "s__posts"
+         }
+       ],
+       "title": "Single pages"
+     },
+     {
+       "key": "collections",
+       "menuItems": [
+         {
+           "key": "c__page-components"
+         },
+         {
+           "key": "c__pages"
+         },
+         {
+           "key": "c__portfolio"
+         },
+         {
+           "key": "c__posts"
+         }
+       ],
+       "title": "Collections of pages"
+     },
+     {
+       "key": "data",
+       "menuItems": [
+         {
+           "key": "ds_data_design"
+         }
+       ],
+       "title": "Data files"
+     },
+     {
+       "key": "general",
+       "menuItems": [
+         {
+           "key": "config"
+         },
+         {
+           "key": "menus"
+         }
+       ],
+       "title": "Site settings"
+     },
+     {
+       "key": "poppygo",
+       "menuItems": [
+         {
+           "key": "pogocms"
+         }
+       ],
+       "title": "PoppyGo"
+     }
+   ],
+   "serve": [
+     {
+       "config": "config.yml",
+       "key": "default"
+     }
+   ],
+   "singles": [
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "fields": [
+             {
+               "key": "color",
+               "title": "Color",
+               "type": "string"
+             },
+             {
+               "key": "font",
+               "title": "Font",
+               "type": "string"
+             },
+             {
+               "key": "font_weight",
+               "title": "Font weight",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "size",
+               "title": "Size",
+               "type": "string"
+             },
+             {
+               "key": "space",
+               "title": "Space",
+               "type": "number"
+             },
+             {
+               "key": "text_color",
+               "title": "Text color",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "poppy_color1",
+               "title": "Poppy color1",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color2",
+               "title": "Poppy color2",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color3",
+               "title": "Poppy color3",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color4",
+               "title": "Poppy color4",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color5",
+               "title": "Poppy color5",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color6",
+               "title": "Poppy color6",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "colorscheme",
+           "title": "Colorscheme",
+           "type": "section"
+         },
+         {
+           "fields": [
+             {
+               "key": "family",
+               "title": "Family",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "weight",
+               "title": "Weight",
+               "type": "number"
+             }
+           ],
+           "key": "fontscheme",
+           "title": "Fontscheme",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "border",
+               "title": "Border",
+               "type": "number"
+             },
+             {
+               "key": "inner_space",
+               "title": "Inner space",
+               "type": "number"
+             },
+             {
+               "key": "item_bg_color",
+               "title": "Item bg color",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "outer_space",
+               "title": "Outer space",
+               "type": "number"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "shadow",
+               "title": "Shadow",
+               "type": "string"
+             },
+             {
+               "key": "text_dark",
+               "title": "Text dark",
+               "type": "string"
+             },
+             {
+               "key": "text_light",
+               "title": "Text light",
+               "type": "string"
+             }
+           ],
+           "key": "objects",
+           "title": "Objects",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "color",
+               "title": "Color",
+               "type": "string"
+             },
+             {
+               "key": "font",
+               "title": "Font",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "size",
+               "title": "Size",
+               "type": "string"
+             },
+             {
+               "key": "space",
+               "title": "Space",
+               "type": "number"
+             }
+           ],
+           "key": "typographies",
+           "title": "Typographies",
+           "type": "accordion"
+         }
+       ],
+       "file": "/data/design.yaml",
+       "key": "ds_data_design",
+       "previewUrl": "/",
+       "title": "Design"
+     },
+     {
+       "dataformat": "yml",
+       "fields": [
+         {
+           "key": "description",
+           "title": "Description",
+           "type": "string"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "authorbio",
+               "title": "Authorbio",
+               "type": "string"
+             },
+             {
+               "key": "avatar",
+               "title": "Avatar",
+               "type": "string"
+             },
+             {
+               "key": "copyright",
+               "title": "Copyright",
+               "type": "string"
+             },
+             {
+               "key": "cover",
+               "title": "Cover",
+               "type": "string"
+             },
+             {
+               "key": "description",
+               "title": "Description",
+               "type": "markdown"
+             },
+             {
+               "key": "email",
+               "title": "Email",
+               "type": "string"
+             },
+             {
+               "key": "github",
+               "title": "Github",
+               "type": "string"
+             },
+             {
+               "key": "headline",
+               "title": "Headline",
+               "type": "string"
+             },
+             {
+               "key": "linkedin",
+               "title": "Linkedin",
+               "type": "string"
+             },
+             {
+               "key": "ogimage",
+               "title": "Ogimage",
+               "type": "string"
+             },
+             {
+               "key": "twitter",
+               "title": "Twitter",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "siteid",
+                   "title": "Siteid",
+                   "type": "string"
+                 },
+                 {
+                   "key": "trackerscript",
+                   "title": "Trackerscript",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "umami",
+               "title": "Umami",
+               "type": "section"
+             }
+           ],
+           "groupdata": true,
+           "key": "params",
+           "title": "Params",
+           "type": "section"
+         }
+       ],
+       "file": "config.yml",
+       "key": "config",
+       "title": "Settings"
+     },
+     {
+       "dataformat": "yml",
+       "fields": [
+         {
+           "fields": [
+             {
+               "fields": [
+                 {
+                   "key": "identifier",
+                   "title": "Identifier",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "parent",
+                   "title": "Parent",
+                   "type": "string"
+                 },
+                 {
+                   "key": "url",
+                   "title": "Url",
+                   "type": "string"
+                 },
+                 {
+                   "key": "weight",
+                   "title": "Weight",
+                   "type": "number"
+                 }
+               ],
+               "key": "main",
+               "title": "Main",
+               "type": "accordion"
+             }
+           ],
+           "groupdata": true,
+           "key": "menu",
+           "title": "Menu",
+           "type": "section"
+         }
+       ],
+       "file": "/config.yml",
+       "key": "menus",
+       "title": "Menus"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /",
+           "key": "info-s___index",
+           "theme": "gray-bare",
+           "title": "Info s index",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "author",
+           "title": "Author",
+           "type": "string"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         }
+       ],
+       "file": "content/_index.md",
+       "key": "s___index",
+       "previewUrl": "/",
+       "title": "Index"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /posts/",
+           "key": "info-s__posts",
+           "theme": "gray-bare",
+           "title": "Info s posts",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         }
+       ],
+       "file": "content/posts/_index.md",
+       "key": "s__posts",
+       "previewUrl": "/posts/",
+       "title": "Posts"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /page-components/",
+           "key": "info-s__page-components",
+           "theme": "gray-bare",
+           "title": "Info s page components",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         }
+       ],
+       "file": "content/page-components/_index.md",
+       "key": "s__page-components",
+       "previewUrl": "/page-components/",
+       "title": "Page components"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /portfolio/",
+           "key": "info-s__portfolio",
+           "theme": "gray-bare",
+           "title": "Info s portfolio",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "aliases",
+           "title": "Aliases",
+           "type": "chips"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         }
+       ],
+       "file": "content/portfolio/_index.md",
+       "key": "s__portfolio",
+       "previewUrl": "/portfolio/",
+       "title": "Portfolio"
+     },
+     {
+       "dataformat": "json",
+       "fields": [
+         {
+           "fields": [
+             {
+               "key": "key",
+               "title": "Key",
+               "type": "readonly"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "key",
+                   "title": "Key",
+                   "type": "readonly"
+                 },
+                 {
+                   "key": "visible",
+                   "title": "Visible",
+                   "type": "boolean"
+                 }
+               ],
+               "key": "menuItems",
+               "title": "Menu items",
+               "type": "accordion"
+             },
+             {
+               "arrayTitle": true,
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             },
+             {
+               "key": "visible",
+               "title": "Visible",
+               "type": "boolean"
+             }
+           ],
+           "key": "menu",
+           "title": "Menu",
+           "type": "accordion"
+         }
+       ],
+       "file": "/zpogomenu.json",
+       "key": "pogocms",
+       "previewUrl": "/",
+       "title": "CMS"
+     }
+   ]
+ }

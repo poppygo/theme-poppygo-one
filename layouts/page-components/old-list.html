@@ -1,0 +1,17 @@
+{{- define "main" -}}
+  <div id="reading-progress-bar" role="presentation" class="fixed z-10 top-0 left-0 h-1 bg-gray-700"></div>
+  {{ "<!-- default page_components -->" | safeHTML }}
+<div class = "mt-32">
+
+  <h1 class = "text-9xl uppercase text-center m-20"> This is an overview of the Page Compontents that you can use</h1>
+
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+  {{ range .Pages }}
+      <h1 class = "text-4xl text-center m-20"> ------------{{.File.ContentBaseName }}-------- </h1>
+      {{- $poppy_component := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
+      {{- if (fileExists (printf "themes/theme-poppygo-one/layouts/partials/%s.html" $poppy_component )) }}
+          {{- partial $poppy_component (dict "page" . "section" .Params "page_component" .  ) -}}
+      {{- end -}}
+  {{ end }}
+</div>
+{{- end -}}

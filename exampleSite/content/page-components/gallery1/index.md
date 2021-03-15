@@ -15,7 +15,7 @@ design:
   rounded: none
   border: none
   shadow: none
-  bg_color: poppycolor5
+  bg_color: poppycolor4
   buttons:
   typography:
     title_bg_color: poppycolor
