@@ -132,7 +132,7 @@
          {
            "key": "subtitle",
            "title": "Subtitle",
-           "type": "markdown"
+           "type": "hidden"
          },
          {
            "extensions": [
@@ -160,9 +160,9 @@
            "type": "string"
          },
          {
-           "key": "fg_image",
-           "title": "Fg image",
-           "type": "hidden"
+           "key": "image",
+           "title": "Image",
+           "type": "string"
          },
          {
            "key": "mainContent",
@@ -172,20 +172,20 @@
          {
            "fields": [
              {
-               "arrayTitle": true,
-               "key": "label",
-               "title": "Label",
+               "key": "bg_color",
+               "title": "Bg color",
                "type": "string"
              },
              {
-               "key": "link",
-               "title": "Link",
+               "key": "item_bg_color",
+               "title": "Item bg color",
                "type": "string"
              }
            ],
-           "key": "buttons",
-           "title": "Buttons",
-           "type": "accordion"
+           "groupdata": true,
+           "key": "design",
+           "title": "Design",
+           "type": "section"
          },
          {
            "key": "full-width",
@@ -198,9 +198,45 @@
            "type": "hidden"
          },
          {
-           "key": "name",
-           "title": "Name",
-           "type": "string"
+           "fields": [
+             {
+               "key": "bodytext",
+               "title": "Bodytext",
+               "type": "markdown"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "items",
+           "title": "Items",
+           "type": "accordion"
          },
          {
            "key": "poppy_type",
@@ -418,7 +454,7 @@
        "title": "Portfolio"
      }
    ],
-   "hugover": "extended_0.76.5",
+   "hugover": "extended_0.80.0",
    "menu": [
      {
        "key": "singles",
@@ -476,15 +512,6 @@
          }
        ],
        "title": "Site settings"
-     },
-     {
-       "key": "poppygo",
-       "menuItems": [
-         {
-           "key": "pogocms"
-         }
-       ],
-       "title": "PoppyGo"
      }
    ],
    "serve": [
@@ -507,6 +534,11 @@
              {
                "key": "font",
                "title": "Font",
+               "type": "string"
+             },
+             {
+               "key": "font_weight",
+               "title": "Font weight",
                "type": "string"
              },
              {
@@ -661,6 +693,16 @@
          },
          {
            "fields": [
+             {
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "color",
+               "title": "Color",
+               "type": "string"
+             },
              {
                "key": "font",
                "title": "Font",
@@ -943,11 +985,6 @@
            "type": "markdown"
          },
          {
-           "key": "aliases",
-           "title": "Aliases",
-           "type": "chips"
-         },
-         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
@@ -1007,6 +1044,11 @@
            "type": "boolean"
          },
          {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
            "extensions": [
              "jpg",
              "png",
@@ -1040,6 +1082,44 @@
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "key": "max_amount",
+               "title": "Max amount",
+               "type": "number"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
          }
        ],
        "file": "content/page-components/_index.md",
@@ -1140,56 +1220,6 @@
        "key": "s__portfolio",
        "previewUrl": "/portfolio/",
        "title": "Portfolio"
-     },
-     {
-       "dataformat": "json",
-       "fields": [
-         {
-           "fields": [
-             {
-               "key": "key",
-               "title": "Key",
-               "type": "readonly"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "key",
-                   "title": "Key",
-                   "type": "readonly"
-                 },
-                 {
-                   "key": "visible",
-                   "title": "Visible",
-                   "type": "boolean"
-                 }
-               ],
-               "key": "menuItems",
-               "title": "Menu items",
-               "type": "accordion"
-             },
-             {
-               "arrayTitle": true,
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             },
-             {
-               "key": "visible",
-               "title": "Visible",
-               "type": "boolean"
-             }
-           ],
-           "key": "menu",
-           "title": "Menu",
-           "type": "accordion"
-         }
-       ],
-       "file": "/zpogomenu.json",
-       "key": "pogocms",
-       "previewUrl": "/",
-       "title": "CMS"
      }
    ]
  }

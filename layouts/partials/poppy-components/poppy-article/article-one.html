@@ -15,8 +15,8 @@
     {{if not $page.Params.hideMetadata }}
       <header class="text-center pt-10 pb-6">
         <small class="text-center text-sm">
-          <time class="text-gray-500" datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default $page.Date ($page.PublishDate)) }}">
-            {{ dateFormat "January 2, 2006" (default $page.Date ($page.PublishDate)) }}
+          <time class="text-gray-500" datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default $page.Lastmod ($page.PublishDate)) }}">
+            {{ dateFormat "January 2, 2006" (default $page.Lastmod ($page.PublishDate)) }}
           </time>
 
           {{ range ($page.GetTerms "tags") }}

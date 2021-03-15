@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PoppyGo One Hugo Theme</title>
+    <title>Components on PoppyGo One Hugo Theme</title>
     <link>/page-components/</link>
-    <description>Recent content on PoppyGo One Hugo Theme</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>MIT</copyright><atom:link href="/page-components/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Components on PoppyGo One Hugo Theme</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/page-components/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>I am a banner</title>
-      <link>/page-components/twbanner/</link>
+      <title>Explainer</title>
+      <link>/page-components/explainer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/page-components/twbanner/</guid>
+      <guid>/page-components/explainer/</guid>
+      <description>-| I am the summary of the newsletter element, which is not very relevant</description>
+    </item>
+    
+    <item>
+      <title>I am a banner</title>
+      <link>/page-components/header-banner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/page-components/header-banner/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
@@ -44,20 +51,20 @@
     </item>
     
     <item>
-      <title>I am a list of items presented as media objects</title>
-      <link>/page-components/list-mediaobjects/</link>
+      <title>I am a reusable newsletter compontent</title>
+      <link>/page-components/newsletter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/page-components/list-mediaobjects/</guid>
-      <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
+      <guid>/page-components/newsletter/</guid>
+      <description>-| I am the summary of the newsletter element, which is not very relevant</description>
     </item>
     
     <item>
-      <title>I am a row with columns</title>
-      <link>/page-components/form1/</link>
+      <title>I am an in-page banner for telling your story</title>
+      <link>/page-components/inpage-banner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/page-components/form1/</guid>
+      <guid>/page-components/inpage-banner/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
@@ -71,15 +78,6 @@
     </item>
     
     <item>
-      <title>I am an shortlist of columns with equal height</title>
-      <link>/page-components/shortlist2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/page-components/shortlist2/</guid>
-      <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
-    </item>
-    
-    <item>
       <title>I am an shortlist with media objects</title>
       <link>/page-components/mediaobject1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -89,12 +87,12 @@
     </item>
     
     <item>
-      <title>I am an shortlist with media objects</title>
-      <link>/page-components/threeup1/</link>
+      <title>Suscribe to our newsletter</title>
+      <link>/page-components/small-newsletter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/page-components/threeup1/</guid>
-      <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
+      <guid>/page-components/small-newsletter/</guid>
+      <description>-| I am the summary of the newsletter element, which is not very relevant</description>
     </item>
     
     <item>
@@ -103,7 +101,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/page-components/article1/</guid>
-      <description>TestContent</description>
+      <description></description>
     </item>
     
   </channel>

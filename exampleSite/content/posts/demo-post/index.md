@@ -12,7 +12,7 @@ page_sections:
     page_component: header-banner
     subtitle: A post has an article component, which works differently from other components
     title: Testpost page
-  - name: section1
+  - name: article
     page_component: article1
     image: pageimage
     title: PageTitle

@@ -8,15 +8,15 @@ summary: -|
     I am the summary of the newsletter element, which is not very relevant
 poppy_type: poppy-form
 poppy_variant: newsletter-simple
-image: foreground
-bg_image:
+image: none
+bg_image: back
 design:
-  bg_color: poppycolor6
+  bg_color: poppycolor3
   buttons:
   typography:
-    title_font: title
-    title_size: 3xl
-    title_bg: poppycolor3
+    title_font: subtitle
+    title_size: 5xl
+    title_bg: poppycolor2
 full-width: false
 
 ---

@@ -7,7 +7,7 @@ title: I am a list of items presented as blog teaser
 subtitle: Columns can be used to give a layout to your content
 poppy_type: poppy-listing
 poppy_variant: blog-teaser
-fg_image: foreground
+image: foreground
 bg_image: background
 full_width: false
 enabled: true

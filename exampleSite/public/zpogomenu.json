@@ -8,7 +8,7 @@
            "visible": true
          },
          {
-           "key": "s__post",
+           "key": "s__page-components",
            "visible": true
          },
          {
@@ -16,22 +16,18 @@
            "visible": true
          },
          {
-           "key": "s__page-components",
-           "visible": true
-         },
-         {
            "key": "s__posts",
            "visible": true
          }
        ],
-       "title": "Home and section pages",
+       "title": "Single pages",
        "visible": true
      },
      {
        "key": "collections",
        "menuItems": [
          {
-           "key": "c__post",
+           "key": "c__page-components",
            "visible": true
          },
          {
@@ -43,15 +39,22 @@
            "visible": true
          },
          {
-           "key": "c__page-components",
-           "visible": true
-         },
-         {
            "key": "c__posts",
            "visible": true
          }
        ],
-       "title": "Grouped pages",
+       "title": "Collections of pages",
+       "visible": true
+     },
+     {
+       "key": "data",
+       "menuItems": [
+         {
+           "key": "ds_data_design",
+           "visible": true
+         }
+       ],
+       "title": "Data files",
        "visible": true
      },
      {
@@ -67,28 +70,6 @@
          }
        ],
        "title": "Site settings",
-       "visible": true
-     },
-     {
-       "key": "poppygo",
-       "menuItems": [
-         {
-           "key": "pogocms",
-           "visible": true
-         }
-       ],
-       "title": "PoppyGo",
-       "visible": true
-     },
-     {
-       "key": "data",
-       "menuItems": [
-         {
-           "key": "ds_data_design",
-           "visible": true
-         }
-       ],
-       "title": "Other content",
        "visible": true
      }
    ]

@@ -8,7 +8,7 @@ buttons:
   - label: nog elements
     link: '#'
 draft: false
-fg_image: null
+image: 
 full-width: false
 iscjklanguage: ''
 name: twbanner
@@ -20,9 +20,12 @@ summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
   descriptions
 title: I am a banner
+
 design:
+
   buttons:
   typography:
+    title_color: pogocolor1
 
 ---
 

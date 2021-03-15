@@ -18,6 +18,16 @@
   </url>
   
   <url>
+    <loc>/tags/tag2/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tag3/</loc>
+    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
   </url>
@@ -28,7 +38,7 @@
   </url>
   
   <url>
-    <loc>/page-components/</loc>
+    <loc>/pages/components-ready/</loc>
   </url>
   
   <url>
@@ -36,7 +46,19 @@
   </url>
   
   <url>
-    <loc>/page-components/twbanner/</loc>
+    <loc>/page-components/</loc>
+  </url>
+  
+  <url>
+    <loc>/posts/demo-post/</loc>
+  </url>
+  
+  <url>
+    <loc>/page-components/explainer/</loc>
+  </url>
+  
+  <url>
+    <loc>/page-components/header-banner/</loc>
   </url>
   
   <url>
@@ -52,11 +74,11 @@
   </url>
   
   <url>
-    <loc>/page-components/list-mediaobjects/</loc>
+    <loc>/page-components/newsletter/</loc>
   </url>
   
   <url>
-    <loc>/page-components/form1/</loc>
+    <loc>/page-components/inpage-banner/</loc>
   </url>
   
   <url>
@@ -64,15 +86,7 @@
   </url>
   
   <url>
-    <loc>/page-components/shortlist2/</loc>
-  </url>
-  
-  <url>
     <loc>/page-components/mediaobject1/</loc>
-  </url>
-  
-  <url>
-    <loc>/page-components/threeup1/</loc>
   </url>
   
   <url>
@@ -96,11 +110,7 @@
   </url>
   
   <url>
-    <loc>/posts/post1/</loc>
-  </url>
-  
-  <url>
-    <loc>/pages/testpage-tailwind/</loc>
+    <loc>/page-components/small-newsletter/</loc>
   </url>
   
   <url>

@@ -1,7 +1,7 @@
 {{ define "main"}}
   <section class="container">
       <article class="">
-        {{ range site.RegularPages.GroupByDate "2006" -}}
+        {{ range site.RegularPages.GroupByPublishDate "2006" -}}
             {{ partial "post-summary.html" . }}
         {{ end }}
       </article>

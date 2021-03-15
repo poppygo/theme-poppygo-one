@@ -1,7 +1,6 @@
 ---
 draft: false
 iscjklanguage: ''
-mainContent: ''
 page_sections:
   - bg_image: ''
     buttons:
@@ -49,17 +48,37 @@ page_sections:
     page_component: cards1
     subtitle: ''
     title: Showing a shortlist of benefits with cards
-  - bg_image: 'none'
+  - bg_image: none
     buttons: []
     name: newsletter
     page_component: newsletter
     subtitle: ''
     title: The newsletter component for growing your customer database
-  - name: article
-    page_component: article1
+  - bg_image: fck
+    buttons: []
     image: pageimage
+    name: article
+    page_component: article1
+    subtitle: ''
     title: PageTitle
-    bg_image: back
+  - bg_image: fck
+    buttons: []
+    name: newsletter simple
+    page_component: small-newsletter
+    subtitle: This is good for you
+    title: Signup for the newsletter
+  - bg_image: ''
+    buttons: []
+    name: newsletter simple2
+    page_component: small-newsletter
+    subtitle: This is good for you
+    title: Signup for the newsletter
+  - bg_image: ''
+    buttons: []
+    name: explainer example
+    page_component: explainer
+    subtitle: This component is commonly used on a homepage
+    title: This is an explainer example with switching image and text at each row
 resources: []
 title: Almost Finished components
 

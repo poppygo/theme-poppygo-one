@@ -9,7 +9,7 @@ summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
 poppy_type: poppy-banner
 poppy_variant: inpage-banner
-fg_image:
+image:
 bg_image: for
 full-width: false
 name: inpage-banner

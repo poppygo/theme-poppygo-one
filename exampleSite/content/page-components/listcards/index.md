@@ -9,7 +9,7 @@ summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
 poppy_type: poppy-listing
 poppy_variant: cards
-fg_images:
+images:
  - foreground
 bg_image: background
 full-width: false

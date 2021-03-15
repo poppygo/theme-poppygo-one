@@ -7,7 +7,7 @@ summary: -|
 poppy_type: poppy-listing
 poppy_variant: gallery
 list: page-components
-fg_image: fore
+image: fore
 full-width: false
 max_amount: 6
 size: 450

@@ -4,128 +4,161 @@
     <title>PoppyGo One Hugo Theme</title>
     <link>/</link>
     <description>Recent content on PoppyGo One Hugo Theme</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>MIT</copyright>
-    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring the theme</title>
-      <link>/portfolio/configuring-the-theme/</link>
+      <link>/posts/configuring-the-theme/</link>
       <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/portfolio/configuring-the-theme/</guid>
+      <guid>/posts/configuring-the-theme/</guid>
       <description>Sharing the config.toml used in this website:
 # Better code higlighting # via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3 pygmentsCodefences = true pygmentsStyle = &amp;#34;vs&amp;#34; # Integrations googleAnalytics = &amp;#34;UA-XXXXXX-XX&amp;#34; disqusShortname = &amp;#34;your-disqus-shortname&amp;#34; # Hightlight theme [markup.highlight] style = &amp;#34;github&amp;#34; # Allow HTML rendering inside markdown [markup.goldmark.renderer] unsafe = true [params] # Show intro in the home page (with headline and description) intro = true headline = &amp;#34;This is a headline&amp;#34; description = &amp;#34;A minimalist theme for Hugo, build with Tailwind CSS.</description>
     </item>
     
     <item>
-      <title>Configuring the theme</title>
-      <link>/post/configuring-the-theme/</link>
-      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      <title>Almost Finished components</title>
+      <link>/pages/components-ready/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/configuring-the-theme/</guid>
-      <description>Sharing the config.toml used in this website:
-# Better code higlighting # via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3 pygmentsCodefences = true pygmentsStyle = &amp;#34;vs&amp;#34; # Integrations googleAnalytics = &amp;#34;UA-XXXXXX-XX&amp;#34; disqusShortname = &amp;#34;your-disqus-shortname&amp;#34; # Hightlight theme [markup.highlight] style = &amp;#34;github&amp;#34; # Allow HTML rendering inside markdown [markup.goldmark.renderer] unsafe = true [params] # Show intro in the home page (with headline and description) intro = true headline = &amp;#34;This is a headline&amp;#34; description = &amp;#34;A minimalist theme for Hugo, build with Tailwind CSS.</description>
+      <guid>/pages/components-ready/</guid>
+      <description>PoppyGo One PoppyGo One is a Hugo Theme.
+Development Requirement  npm  Setup npm install Create a new tailwind.css To compile a new tailwind css file run the following command:
+npm run prod Release management Prerequisites  Write access to the repositoty Github CLI npm make  New release To create a new release set a new version in .</description>
     </item>
     
     <item>
-      <title>Configuring the theme</title>
-      <link>/products/configuring-the-theme/</link>
-      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      <title>Demo post</title>
+      <link>/posts/demo-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/products/configuring-the-theme/</guid>
-      <description>Sharing the config.toml used in this website:
-# Better code higlighting # via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3 pygmentsCodefences = true pygmentsStyle = &amp;#34;vs&amp;#34; # Integrations googleAnalytics = &amp;#34;UA-XXXXXX-XX&amp;#34; disqusShortname = &amp;#34;your-disqus-shortname&amp;#34; # Hightlight theme [markup.highlight] style = &amp;#34;github&amp;#34; # Allow HTML rendering inside markdown [markup.goldmark.renderer] unsafe = true [params] # Show intro in the home page (with headline and description) intro = true headline = &amp;#34;This is a headline&amp;#34; description = &amp;#34;A minimalist theme for Hugo, build with Tailwind CSS.</description>
+      <guid>/posts/demo-post/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>I am a banner</title>
-      <link>/contentblocks/twbanner/</link>
+      <link>/page-components/header-banner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/twbanner/</guid>
+      <guid>/page-components/header-banner/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
     <item>
       <title>I am a gallery</title>
-      <link>/contentblocks/gallery1/</link>
+      <link>/page-components/gallery1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/gallery1/</guid>
+      <guid>/page-components/gallery1/</guid>
       <description>-| I am the summary of the gallery, which can be used for opengraph and SEO descriptions</description>
     </item>
     
     <item>
       <title>I am a list of items presented as blog teaser</title>
-      <link>/contentblocks/blog-teaser1/</link>
+      <link>/page-components/blog-teaser1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/blog-teaser1/</guid>
-      <description>I am the main content of the form snippet Here you have full freedom to add content as much as you want. You can add Images as shortcodes, columns as shortcodes etc.</description>
+      <guid>/page-components/blog-teaser1/</guid>
+      <description>I am the main content of the form pagecomponents Here you have full freedom to add content as much as you want. You can add Images as shortcodes, columns as shortcodes etc.</description>
     </item>
     
     <item>
       <title>I am a list of items presented as cards</title>
-      <link>/contentblocks/listcards/</link>
+      <link>/page-components/listcards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/listcards/</guid>
+      <guid>/page-components/listcards/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
     <item>
-      <title>I am a list of items presented as media objects</title>
-      <link>/contentblocks/list-mediaobjects/</link>
+      <title>I am a reusable newsletter compontent</title>
+      <link>/page-components/newsletter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/list-mediaobjects/</guid>
-      <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
+      <guid>/page-components/newsletter/</guid>
+      <description>-| I am the summary of the newsletter element, which is not very relevant</description>
     </item>
     
     <item>
       <title>I am a row with columns</title>
-      <link>/contentblocks/form1/</link>
+      <link>/page-components/form1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/form1/</guid>
+      <guid>/page-components/form1/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
     <item>
-      <title>I am an enumeration in the form of cards</title>
-      <link>/contentblocks/cards1/</link>
+      <title>I am an in-page banner for telling your story</title>
+      <link>/page-components/inpage-banner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/cards1/</guid>
+      <guid>/page-components/inpage-banner/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
     <item>
-      <title>I am an enumeration of columns with equal height</title>
-      <link>/contentblocks/enumeration1/</link>
+      <title>I am an shortlist in the form of cards</title>
+      <link>/page-components/cards1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/enumeration1/</guid>
+      <guid>/page-components/cards1/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
     <item>
-      <title>I am an enumeration with media objects</title>
-      <link>/contentblocks/mediaobject1/</link>
+      <title>I am an shortlist of columns with equal height</title>
+      <link>/page-components/shortlist2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/mediaobject1/</guid>
+      <guid>/page-components/shortlist2/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
     <item>
-      <title>I am an enumeration with media objects</title>
-      <link>/contentblocks/threeup1/</link>
+      <title>I am an shortlist with media objects</title>
+      <link>/page-components/mediaobject1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/threeup1/</guid>
+      <guid>/page-components/mediaobject1/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
+    </item>
+    
+    <item>
+      <title>Portfolio item 3</title>
+      <link>/portfolio/item3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/item3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portfolio item1</title>
+      <link>/portfolio/item1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/item1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portfolio item2</title>
+      <link>/portfolio/item2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/item2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suscribe to our newsletter</title>
+      <link>/page-components/small-newsletter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/page-components/small-newsletter/</guid>
+      <description>-| I am the summary of the newsletter element, which is not very relevant</description>
     </item>
     
     <item>
@@ -138,21 +171,12 @@
     </item>
     
     <item>
-      <title>Testpage</title>
-      <link>/pages/testpage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/pages/testpage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>The article section</title>
-      <link>/contentblocks/article1/</link>
+      <link>/page-components/article1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contentblocks/article1/</guid>
-      <description>TestContent</description>
+      <guid>/page-components/article1/</guid>
+      <description></description>
     </item>
     
   </channel>

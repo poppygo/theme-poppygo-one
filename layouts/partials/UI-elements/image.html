@@ -2,36 +2,36 @@
 {{ partial "image" (dict "page" . "name" .Params.image "path" "images/" "link" .RelPermalink "scale" "w-100")  }}
 */}}
 
-{{ $link := .link}}
-{{ $class := .class }}
+{{- $link := .link -}}
+{{- $class := .class -}}
 
-{{ $image_path := printf "images/*%s*" .name }}
-{{ $sizes := (slice "480" "800" "1500") }}
-{{ $image := (.resource_page.Resources.ByType "image").GetMatch $image_path}}
+{{- $image_path := printf "images/*%s*" .name -}}
+{{- $sizes := (slice "480" "800" "1500") -}}
+{{- $image := (.resource_page.Resources.ByType "image").GetMatch $image_path -}}
 
-{{ with $image }}
+{{- with $image -}}
     {{/* Check if the user set a caption for this image */}}
-    {{ $filename := path.Base .Name }}
-    {{ $caption := "" }}
+    {{- $filename := path.Base .Name -}}
+    {{- $caption := "" -}}
 
   <a href="{{$link}}" {{ with $caption }}data-caption="{{.|markdownify|emojify|safeHTMLAttr}}"{{ end }}>
   <img href = "{{$link}}" sizes="(min-width: 992px) 25vw, 55vw"
 
   srcset='
-  {{ range $sizes }}
-    {{ ($image.Resize (printf "%sx" .)).RelPermalink }} {{ (printf "%sw" .) }},
-  {{ end }}'
+  {{- range $sizes -}}
+    {{- ($image.Resize (printf "%sx" .)).RelPermalink }} {{ (printf "%sw" .) -}},
+  {{- end -}}'
 
   {{/* when no support for srcset (old browsers, RSS), we load small (640px) */}}
 
-  src="{{ ($image.Resize "640x").Permalink }}"
+  src="{{- ($image.Resize "640x").Permalink -}}"
 
   class="lazyload {{$class}}"
-  alt="{{ $filename}}"
+  alt="{{- $filename -}}"
 
   {{/*
-  width="{{ $image.Width }}"
-  height="{{ $image.Height }}"
+  width="{{- $image.Width -}}"
+  height="{{- $image.Height -}}"
 */}}
   >
 
@@ -40,4 +40,4 @@
   {{/* Width & height (or low res src) required for lazy loading. */}}
 
   </a>
-{{end}}
+{{- end -}}

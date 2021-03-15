@@ -5,9 +5,25 @@
     <link>/tags/</link>
     <description>Recent content in Tags on PoppyGo One Hugo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>MIT</copyright>
     <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tag2</title>
+      <link>/tags/tag2/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tag2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag3</title>
+      <link>/tags/tag3/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tag3/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>theme</title>
       <link>/tags/theme/</link>

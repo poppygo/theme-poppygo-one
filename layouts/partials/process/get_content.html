@@ -25,9 +25,9 @@
     {{- $content = merge $content (dict "bg_resource_page" $page_component ) -}}
 {{- end -}}
 
-{{- $content = merge $content (dict "bg_css" (printf "%s" $content.name)) -}}
+{{- $content = merge $content (dict "bg_css" (printf "bg_%s_%s" ($page_component.File.UniqueID) ($section.name | anchorize ))) -}}
 
-{{- if .section.fg_image}}
+{{- if .section.image}}
     {{- $content = merge $content (dict "fg_resource_page" .page) -}}
 {{- else -}}
     {{- $content = merge $content (dict "fg_resource_page" $page_component) -}}

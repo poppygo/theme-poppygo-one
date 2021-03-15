@@ -1,28 +1,29 @@
 buttons:
   - color: poppycolor1
     font: body
+    font_weight: bold
     name: primary
     rounded: 2xl
     size: xl
     space: 4
     text_color: poppycolor2
-    font_weight: bold
   - color: poppycolor4
     font: display1
+    font_weight: ''
     name: secondary
     rounded: null
     size: sm
     space: 2
     text_color: poppycolor1
 colorscheme:
-  poppy_color1: '#ff0000'
+  poppy_color1: '#996633'
   poppy_color2: '#5205ad'
   poppy_color3: '#ff73b3'
   poppy_color4: '#6a6a6a'
   poppy_color5: '#44467b'
   poppy_color6: '#00ff00'
 fontscheme:
-  - family: Averia Sans Libre
+  - family: Averia Serif Libre
     name: display1
     weight: 700
   - family: Nunito
@@ -56,27 +57,27 @@ objects:
     text_dark: poppycolor2
     text_light: poppycolor1
 typographies:
-  - font: display1
+  - bg_color: none
+    color: poppycolor2
+    font: display1
     name: title
     size: 7xl
     space: 10
-    color: poppycolor2
-    bg_color: none
-  - font: display2
+  - bg_color: none
+    color: poppycolor1
+    font: display2
     name: subtitle
     size: 2xl
     space: 6
+  - bg_color: none
     color: poppycolor1
-    bg_color: none
-  - font: body
+    font: body
     name: body
     size: lg
     space: 5
+  - bg_color: poppycolor5
     color: poppycolor1
-    bg_color: none
-  - font: art
+    font: art
     name: art
     size: 7xl
     space: 0
-    color: poppycolor1
-    bg_color: poppycolor5

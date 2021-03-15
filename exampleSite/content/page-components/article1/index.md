@@ -6,7 +6,7 @@ resources: []
 title: The article section
 poppy_type: poppy-article
 poppy_variant: article-one
-fg_image: foreground
+image: foreground
 bg_image:
 design:
   bg_color: poppycolor5
