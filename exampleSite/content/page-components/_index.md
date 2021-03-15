@@ -1,14 +1,20 @@
 ---
+draft: false
 headless: true
-title: Components
-subpage_sections:
-  - page_component: component
-    name: component
+iscjklanguage: ''
+mainContent: ''
 page_sections:
   - bg_image: ''
-    page_component: gallery1
     list: page-components
-    name: testlist4
-    title: 'Have a look at the page components'
     max_amount: 100
+    name: List of components
+    page_component: gallery1
+    title: Have a look at the page components
+resources: []
+subpage_sections:
+  - name: component
+    page_component: component
+title: Components
+
 ---
+

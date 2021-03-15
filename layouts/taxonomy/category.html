@@ -7,13 +7,13 @@
     {{ range .Paginator.Pages }}
       <div class="border-b border-gray-400">
         <h2 class="text-3xl font-bold"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        
+
         <p>{{ .Summary }}</p>
-      </div>    
+      </div>
     {{ end }}
   </article>
 
   {{ if gt .Paginator.TotalPages 1 }}
-    {{ partial "pagination.html" . }}
+    {{ partial "UI-elements/pagination.html" . }}
   {{ end }}
 {{ end }}

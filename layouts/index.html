@@ -2,7 +2,7 @@
   <section class="container">
       <article class="">
         {{ range site.RegularPages.GroupByPublishDate "2006" -}}
-            {{ partial "post-summary.html" . }}
+            {{ partial "poppy-components/poppy-listing/post-summary.html" . }}
         {{ end }}
       </article>
     </main>
