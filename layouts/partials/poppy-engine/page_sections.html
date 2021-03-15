@@ -1,12 +1,14 @@
 
 {{- $page := . -}}
-
+{{- $sections := slice -}}
 {{- $themesDir := partial "poppy-engine/get_hugo_config" "themesDir" -}}
 {{- $theme := partial "poppy-engine/get_hugo_config" "theme" }}
 
-
-{{- $sections := .Params.page_sections | default .Parent.Params.subpage_sections -}}
-
+{{ if .Parent}}
+  {{- $sections = .Params.page_sections | default .Parent.Params.subpage_sections -}}
+{{ else }}
+  {{- $sections = .Params.page_sections  -}}
+{{ end }}
 
 {{- range $sections -}}
     {{- $page_section := .}}
@@ -15,16 +17,12 @@
     {{ with $page_component }}
       {{- $poppy_component := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
       {{- if (fileExists (printf "%s/%s/layouts/partials/%s.html" $themesDir $theme $poppy_component )) }}
-
           {{- $content := partial "poppy-engine/get_content" (dict "page" $page "section" $page_section "page_component" . ) -}}
           {{- $design := partial "poppy-engine/get_design" . -}}
-
           {{- with $content -}}
             {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
           {{- end -}}
-
           {{- "<!-- {.File.ContentBaseName }} -->" | safeHTML -}}
-
           {{- partial $poppy_component (dict "page" $page "content" $content "design" $design  ) -}}
       {{- end -}}
     {{ end }}

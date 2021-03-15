@@ -4,7 +4,7 @@
 {{- $page := .page -}}
 {{- $content := dict "name" ( .section.name | default .page_component.Name) -}}
 
-{{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size"  -}}
+{{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size" "full_height"  -}}
 
 {{- range $params}}
   {{- $section_value := index $section . -}}
@@ -35,7 +35,17 @@
 
 {{- $content = merge $content (dict "bg_css" (printf "bg_%s_%s" ($page_component.File.UniqueID) ($section.name | anchorize ))) -}}
 
-{{- if .section.image}}
+
+{{/* --------Check if images are used in the section so, the right resourcepage will be chosen */}}
+
+{{- $images_in_items := false -}}
+{{- range .section.items -}}
+    {{- if .image -}}
+        {{- $images_in_items = true -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if or .section.image $images_in_items -}}
     {{- $content = merge $content (dict "fg_resource_page" .page) -}}
 {{- else -}}
     {{- $content = merge $content (dict "fg_resource_page" $page_component) -}}

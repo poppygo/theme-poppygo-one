@@ -5,7 +5,11 @@
 
 {{- $css_class := .css_class -}}
 {{- if .bg_image -}}
+
   {{- $image_path := printf "images/*%s*" .bg_image -}}
+  {{- if .page.IsHome -}}
+      {{- $image_path = printf "*%s*" .bg_image -}}
+  {{- end }}
   {{- $image := (.page.Resources.ByType "image").GetMatch $image_path -}}
   {{- with $image -}}
       {{- $extraSmall := .Resize "500x" -}}

@@ -14,7 +14,11 @@ resources: []
 subpage_sections:
   - name: component
     page_component: component
+  - name: other
+    page_component: gallery1
+    title: Other page sections
+    list: page-components
+    bg_color: poppycolor2
 title: Components
 
 ---
-

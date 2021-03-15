@@ -39,7 +39,7 @@ objects:
   - bg_color: poppycolor6
     border: 2
     inner_space: 10
-    item_bg_color: white
+    item_bg_color: poppycolor1
     name: components
     outer_space: 10
     rounded: 2xl

@@ -351,7 +351,7 @@
              {
                "key": "title",
                "title": "Title",
-               "type": "string"
+               "type": "markdown"
              }
            ],
            "key": "page_sections",
@@ -376,7 +376,7 @@
        "key": "singles",
        "menuItems": [
          {
-           "key": "s___index"
+           "key": "s__homepage"
          },
          {
            "key": "s__page-components"
@@ -804,15 +804,20 @@
        "fields": [
          {
            "content": "Relative link of this page: /",
-           "key": "info-s___index",
+           "key": "info-s__homepage",
            "theme": "gray-bare",
-           "title": "Info s index",
+           "title": "Info s homepage",
            "type": "info"
          },
          {
            "key": "draft",
            "title": "Draft",
            "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
          },
          {
            "extensions": [
@@ -854,7 +859,17 @@
              {
                "key": "bg_image",
                "title": "Bg image",
-               "type": "hidden"
+               "type": "string"
+             },
+             {
+               "key": "full_height",
+               "title": "Full height",
+               "type": "boolean"
+             },
+             {
+               "key": "full_width",
+               "title": "Full width",
+               "type": "boolean"
              },
              {
                "arrayTitle": true,
@@ -865,6 +880,54 @@
              {
                "key": "page_component",
                "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "markdown"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
                "type": "string"
              },
              {
@@ -879,9 +942,9 @@
          }
        ],
        "file": "content/_index.md",
-       "key": "s___index",
+       "key": "s__homepage",
        "previewUrl": "/",
-       "title": "Index"
+       "title": "Homepage"
      },
      {
        "dataformat": "yaml",
@@ -1064,6 +1127,11 @@
            "key": "page_sections",
            "title": "Page sections",
            "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
          },
          {
            "fields": [

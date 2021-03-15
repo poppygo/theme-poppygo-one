@@ -1,17 +1,16 @@
 ---
 bg_image: back
 buttons:
-  - label: bekijk onze lessen
-    link: /cursussen/
-  - label: Meer over ons
-    link: '#'
-  - label: nog elements
+  - label: Check this
+    link: /page-components/
+  - label: More about us
     link: '#'
 draft: false
-image: 
-full-width: false
+image:
+full_height: true
+full_width: true
 iscjklanguage: ''
-name: twbanner
+name: headerbanner
 poppy_type: poppy-banner
 poppy_variant: header-banner
 resources: []

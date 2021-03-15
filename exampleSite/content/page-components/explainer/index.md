@@ -1,8 +1,10 @@
 ---
 bg_image: back
 design:
-  bg_color: poppycolor4
-  item_bg_color: poppycolor6
+  bg_color: white
+  item_bg_color: white
+  rounded: none
+  shadow: none
   buttons:
     space: 4
   typography:
