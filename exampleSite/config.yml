@@ -31,7 +31,8 @@ menu:
       url: /pages/components-ready/
       weight: 0
 params:
-  debug: true
+  poppygo_debug: true
+  poppygo_cms: true
   authorBio: PoppyGo is one year old
   authorbio: ''
   avatar: images/avatar.jpg

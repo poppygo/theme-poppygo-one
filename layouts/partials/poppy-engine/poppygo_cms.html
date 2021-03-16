@@ -1,0 +1,89 @@
+{{- $page := .page -}}
+{{- $content_info := .content_info -}}
+{{- $design_info := .design_info -}}
+{{- $component := .component -}}
+{{- $poppy_component := .poppy_component }}
+
+{{ $button_id := printf "cms_btn-%s-%s" $component.File.ContentBaseName .content_info.content.name -}}
+{{ $window_id := printf "cms_window-%s-%s" $component.File.ContentBaseName .content_info.content.name -}}
+
+<button id="{{$button_id}}" class="float-right bg-poppycolor4 text-white rounded-xl m-5 px-10">
+  PoppyGo CMS
+</button>
+<section id="{{$window_id}}" class="hidden m-4 p-3 pt-8 mx-auto container bg-transparent mb-10">
+
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-poppycolor4">PoppyGo CMS</p>
+    </div>
+
+
+  <form action="POPPYGO" class= "">
+    <h2 class="text-2xl text-poppycolor4 mb-3 mt-3">Content</h2>
+
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 grid grid-row-auto-dense gap-2">
+
+      {{ range $key, $value := $content_info.content }}
+        {{ if $value }}
+          {{- $override := index $design_info.override_debug_info $key -}}
+          <div class = "col-span-1 bg-poppycolor2 {{if $override}} bg-poppycolor3 {{end}}">
+            <p class="text-white">{{- $key -}}</p>
+            {{- if $override }}
+              <p class="text-white"> -> override in Page </p>
+            {{- end -}}
+          </div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            {{ if (reflect.IsSlice $value) }}
+                {{- range $index, $value := $value -}}
+                  <div class="text-white text-center w-1/4">{{ $index}}
+                  <div class= "m-1 border p-1">
+
+                    {{ range $key, $value := $value }}
+                      <div class="bg-poppycolor2 text-white ">
+                        {{ $key }}
+                      </div>
+                      <div>
+                        <input class="w-full text-black" placeholder="{{$value}}"></input>
+                      </div>
+                    {{ end }}
+
+                   </div>
+                </div>
+                {{- end -}}
+            {{ else }}
+                <input class="w-full text-black" placeholder="{{$value}}"></input>
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class= "mt-3 mb-0">
+      <h2 class="text-2xl text-poppycolor4 mb-3">Design</h2>
+      <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-6 grid grid-row-auto-dense gap-2">
+        {{ range $key, $value := $design_info.design }}
+            {{- if $value -}}
+              {{- $override := index $design_info.override_debug_info $key -}}
+
+                <div class = "bg-poppycolor2 {{if $override}} bg-poppycolor3 {{end}} flex">
+                    <p class="text-white">{{- $key -}} </p>
+                  {{- if $override }}
+                    <p class="text-white"> -> override in Component </p>
+                  {{- end -}}
+                </div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="{{$value}}"></input>
+                </div>
+            {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+</form>
+
+</section>
+
+<script>
+    document.getElementById('{{$button_id}}').addEventListener('click', function(){
+            document.getElementById('{{$window_id}}').classList.toggle('hidden');
+        });
+</script>
