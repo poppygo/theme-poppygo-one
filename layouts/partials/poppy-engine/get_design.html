@@ -36,8 +36,15 @@
   {{- $type := "" -}}
   {{- range $key, $value := . -}}
     {{/* Set override */}}
-    {{- if $page_component.Params.design.typography -}}
-      {{- $override := index $page_component.Params.design.typography (printf "%s_%s" $name $key) -}}
+    {{- $typography := dict -}}
+    {{- if $page_component.Params.design.typographies -}}
+      {{- range where $page_component.Params.design.typographies "name" "eq" $name -}}
+        {{- $typogaphy := . }}
+      {{- end -}}
+    {{- end -}}
+
+    {{- with $typography -}}
+      {{- $override := index . $key -}}
       {{- $default := $value -}}
       {{- $value = string ($override | default $default) -}}
     {{- end -}}
@@ -58,24 +65,31 @@
   {{- $button := "" -}}
   {{- range $key, $value := . -}}
     {{/* Set override */}}
+
+    {{- $button := dict -}}
     {{- if $page_component.Params.design.buttons -}}
-      {{- $override := index $page_component.Params.design.buttons (printf "%s_%s" $name $key) -}}
+      {{- range where $page_component.Params.design.buttons "name" "eq" $name -}}
+        {{- $button := . }}
+      {{- end -}}
+    {{- end -}}
+
+    {{- with $button -}}
+      {{- $override := index . $key -}}
       {{- $default := $value -}}
-      {{- $value = $override | default $default -}}
+      {{- $value = string ($override | default $default) -}}
     {{- end -}}
 
-        {{- if in $key "space" -}} {{- $value = printf "px-%s py-%s" (string (mul $value 4)) (string $value)  -}} {{- end -}}
-        {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
-        {{- if in $key "size" -}} {{- $value = printf "text-%s"  (string $value ) -}} {{- end -}}
-        {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
-        {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
-        {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
+    {{- if in $key "space" -}} {{- $value = printf "px-%s py-%s" (string (mul $value 4)) (string $value)  -}} {{- end -}}
+    {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
+    {{- if in $key "size" -}} {{- $value = printf "text-%s"  (string $value ) -}} {{- end -}}
+    {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
+    {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
+    {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
 
-        {{- if eq $key "name" -}} {{- $name = printf "button_%s"  $value  -}} {{- end -}}
-
-      {{- $button = printf "%s %s" $button $value -}}
-    {{- end -}}
-    {{- $design = merge $design (dict $name $button ) -}}
+    {{- if eq $key "name" -}} {{- $name = printf "button_%s"  $value  -}} {{- end -}}
+    {{- $button = printf "%s %s" $button $value -}}
+  {{- end -}}
+  {{- $design = merge $design (dict $name $button ) -}}
 {{- end -}}
 
 {{- return $design -}}

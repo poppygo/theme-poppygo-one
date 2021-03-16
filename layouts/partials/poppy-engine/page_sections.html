@@ -1,6 +1,7 @@
 
 {{- $page := . -}}
 {{- $sections := slice -}}
+
 {{- $themesDir := partial "poppy-engine/get_hugo_config" "themesDir" -}}
 {{- $theme := partial "poppy-engine/get_hugo_config" "theme" }}
 
@@ -19,6 +20,11 @@
       {{- if (fileExists (printf "%s/%s/layouts/partials/%s.html" $themesDir $theme $poppy_component )) }}
           {{- $content := partial "poppy-engine/get_content" (dict "page" $page "section" $page_section "page_component" . ) -}}
           {{- $design := partial "poppy-engine/get_design" . -}}
+
+          {{- if site.Params.debug -}}
+            {{- partial "poppy-engine/debug_component" (dict "page" $page "component" $page_component "content" $content "design" $design ) -}}
+          {{- end -}}
+
           {{- with $content -}}
             {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
           {{- end -}}

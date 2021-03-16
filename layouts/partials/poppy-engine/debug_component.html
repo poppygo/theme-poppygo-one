@@ -1,0 +1,39 @@
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+{{- $component := .component -}}
+
+<section class="m-10 p-3 mx-auto container bg-poppycolor4 mb-20">
+  <div class = "p-10 border-dotted border-2 border-white">
+
+  <h1 class="text-4xl text-white">Poppy debug info</h1>
+  <h2 class="text-xl text-white">Component: {{$component.File.ContentBaseName}} <h2>
+  <h2 class="text-xl text-white">page: {{$page.File.ContentBaseName}}</h2>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Content</h2>
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
+
+      {{ range $key, $value := $content }}
+
+        <div class = "col-span-1 bg-poppycolor2 text-white flex">{{$key}}</div>
+        <div class = "md: col-span-3 text-poppycolor2">{{$value }}</div>
+
+      {{ end }}
+    </div>
+  </div>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Design</h2>
+    <div class ="bg-poppycolor-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
+      {{ range $key, $value := $design }}
+      <div class="col-span-1 text-xs ">
+        <div class = "bg-poppycolor2 text-white flex">{{$key}}</div>
+        <div class = "text-poppycolor2">{{$value }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+</section>
