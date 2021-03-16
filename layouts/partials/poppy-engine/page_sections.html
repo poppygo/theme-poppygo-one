@@ -22,7 +22,7 @@
           {{- $design_info := partial "poppy-engine/get_design" . -}}
 
           {{- if site.Params.debug -}}
-            {{- partial "poppy-engine/debug_component" (dict "page" $page "component" $page_component "content_info" $content_info "design_info" $design_info ) -}}
+            {{- partial "poppy-engine/debug_component" (dict "page" $page "component" $page_component "poppy_component" $poppy_component "content_info" $content_info "design_info" $design_info ) -}}
           {{- end -}}
 
           {{- with $content_info.content -}}

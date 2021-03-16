@@ -2,13 +2,16 @@
 {{- $content_info := .content_info -}}
 {{- $design_info := .design_info -}}
 {{- $component := .component -}}
+{{- $poppy_component := .poppy_component }}
 
-<section class="m-10 p-3 mx-auto container bg-poppycolor4 mb-20">
-  <div class = "p-10 border-dotted border-2 border-white">
-
-  <h1 class="text-4xl text-white">Poppy debug info</h1>
-  <h2 class="text-xl text-white">Component: {{$component.File.ContentBaseName}} <h2>
-  <h2 class="text-xl text-white">page: {{$page.File.ContentBaseName}}</h2>
+<section class="m-4 p-3 pt-8 mx-auto container bg-poppycolor4 mb-10">
+  <div class = "p-10 border-dotted border-4 border-white">
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-poppycolor4">Poppy debug info</p>
+    </div>
+  <h2 class="text-xl text-poppycolor2">Page Component: {{$component.File.ContentBaseName}} <h2>
+  <h2 class="text-xl text-poppycolor2">Poppy component: {{$poppy_component}} <h2>
+  <h2 class="text-xl text-poppycolor2">Page: {{$page.File.ContentBaseName}}</h2>
 
   <div class= "my-10">
     <h2 class="text-2xl text-white mb-3">Content</h2>
@@ -20,16 +23,37 @@
           <div class = "col-span-1 bg-poppycolor2 {{if $override}} bg-poppycolor3 {{end}}">
             <p class="text-white">{{- $key -}}</p>
             {{- if $override }}
-              <p class="text-white"> --override in Page --</p>
+              <p class="text-white"> -> override in Page </p>
             {{- end -}}
           </div>
-          <div class = "md: col-span-3 text-poppycolor2">{{$value }}</div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            {{ if (reflect.IsSlice $value) }}
+                {{- range $index, $value := $value -}}
+                  <div class="text-white text-center">{{ $index}}
+                  <div class= "m-1 border p-1">
+
+                    {{ range $key, $value := $value }}
+                      <div class="bg-poppycolor2 text-white">
+                        {{ $key }}
+                      </div>
+                      <div>
+                        {{ $value }}
+                      </div>
+                    {{ end }}
+
+                   </div>
+                </div>
+                {{- end -}}
+            {{ else }}
+                {{$value }}
+            {{ end }}
+          </div>
         {{ end }}
       {{ end }}
     </div>
   </div>
 
-  <div class= "my-10">
+  <div class= "my-10 mb-0">
     <h2 class="text-2xl text-white mb-3">Design</h2>
     <div class ="bg-poppycolor-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
       {{ range $key, $value := $design_info.design }}
@@ -39,7 +63,7 @@
               <div class = "bg-poppycolor2 {{if $override}} bg-poppycolor3 {{end}}">
                   <p class="text-white">{{- $key -}} </p>
                 {{- if $override }}
-                  <p class="text-white"> --override in Page Component-- </p>
+                  <p class="text-white"> -> override in Component </p>
                 {{- end -}}
               </div>
               <div class = "text-poppycolor2">{{$value }}</div>
