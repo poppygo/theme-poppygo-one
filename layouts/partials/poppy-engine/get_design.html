@@ -8,16 +8,12 @@
 
 {{- range $objectData -}}
   {{- range $key, $value := . -}}
-
-    {{/* Set override */}}
-
     {{- if $page_component.Params.design -}}
       {{- $override := index $page_component.Params.design $key -}}
       {{- $default := $value -}}
       {{- $value = $override | default $default }}
       {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict $key true ) -}} {{- end -}}
     {{- end -}}
-
     {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}
     {{- else if in $key "margin" -}} {{- $value = printf "my-%s" (string $value) -}}
     {{- else if in $key "space" -}} {{- $value = printf "py-%s" (string $value) -}}
@@ -27,40 +23,37 @@
     {{- else if eq $key "shadow" -}} {{- $value = printf "shadow-%s" $value -}}
     {{- else if eq $key "border" -}} {{- $value = printf "border-%s" (string $value) -}}
     {{- end -}}
-
     {{- $design = merge $design (dict $key $value) -}}
-
   {{- end -}}
 {{- end -}}
 
 {{ range $typographyData -}}
   {{- $name := .name -}}
   {{- $type := "" -}}
+
   {{- range $key, $value := . -}}
-    {{/* Set override */}}
     {{- $typography := dict -}}
     {{- if $page_component.Params.design.typographies -}}
       {{- range where $page_component.Params.design.typographies "name" "eq" $name -}}
-        {{- $typogaphy := . }}
+        {{- $typography = . }}
       {{- end -}}
     {{- end -}}
-
     {{- with $typography -}}
       {{- $override := index . $key -}}
       {{- $default := $value -}}
       {{- $value = string ($override | default $default) -}}
+      {{- if $override -}}{{- $override_debug_info = merge $override_debug_info (dict $name true ) -}}{{- end -}}
     {{- end -}}
+
     {{- if $value -}}
         {{- if eq $key "size" -}} {{- $value = (printf "text-%s" $value ) -}} {{- end -}}
         {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
         {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
         {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
         {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
-
         {{- $type = printf "%s %s" $type $value -}}
     {{- end -}}
   {{- end -}}
-
   {{- $design = merge $design (dict $name $type ) -}}
 {{- end -}}
 
@@ -68,13 +61,13 @@
   {{- $name := .name -}}
   {{- $button := "" -}}
   {{- $button_name := "" -}}
-  {{- range $key, $value := . -}}
-    {{/* Set override */}}
+  {{- $overridden := "" -}}
 
-    {{- $button_type := dict -}}
+  {{- range $key, $value := . -}}
+    {{- $button_type := dict  -}}
     {{- if $page_component.Params.design.buttons -}}
       {{- range where $page_component.Params.design.buttons "name" "eq" $name -}}
-        {{- $button_type := . }}
+        {{- $button_type = . }}
       {{- end -}}
     {{- end -}}
 
@@ -82,19 +75,25 @@
       {{- $override := index . $key -}}
       {{- $default := $value -}}
       {{- $value = string ($override | default $default) -}}
+      {{- if $override -}}{{- $overridden = true -}}{{- end -}}
     {{- end -}}
 
     {{- if $value -}}
-        {{- if in $key "space" -}} {{- $value = printf "px-%s py-%s" (string (mul $value 4)) (string $value)  -}} {{- end -}}
+        {{- if in $key "space" -}}
+            {{ $value }}
+            {{- $value = printf "px-%s py-%s" (string (mul (int $value) 4)) (string $value)  -}}
+        {{- end -}}
         {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
         {{- if in $key "size" -}} {{- $value = printf "text-%s"  (string $value ) -}} {{- end -}}
         {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
         {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
         {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
-
         {{- if eq $key "name" -}} {{- $button_name = printf "button_%s"  $value  -}} {{- end -}}
         {{- $button = printf "%s %s" $button $value -}}
     {{- end -}}
+  {{- end -}}
+  {{- if $overridden }}
+      {{- $override_debug_info = merge $override_debug_info (dict $button_name true ) -}}
   {{- end -}}
   {{- $design = merge $design (dict $button_name $button ) -}}
 {{- end -}}

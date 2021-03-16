@@ -7,25 +7,21 @@
 
 {{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size" "full_height"  -}}
 
-{{- range $params}}
+{{- range $key, $value := $params}}
+
   {{- $section_value := index $section . -}}
   {{- $component_value := index $page_component.Params . -}}
   {{- $override := ( $section_value | default $component_value ) -}}
-  {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict . true ) -}} {{- end -}}
+  {{- if $section_value }} {{- $override_debug_info = merge $override_debug_info (dict . true ) -}} {{- end -}}
 
   {{- if eq $override "->frompage" -}}
-    {{- $page_value := index $page.Params . -}}
+    {{- $page_value := index $page.Params $key -}}
     {{- $content = merge $content (dict . $page_value ) -}}
+    {{- $content = merge $content (dict "body" $page.Content) -}}
   {{ else }}
     {{- $content = merge $content (dict . $override ) -}}
+    {{- $content = merge $content (dict "body" $page_component.Content) -}}
   {{ end }}
-{{- end -}}
-
-{{/* only articles get the markdown-content of the page in the body. Others get the markdown-content of the page component */}}
-{{- if eq .page_component.Params.pogo_type "pogo-article" -}}
-    {{- $content = merge $content (dict "body" .page.Content) -}}
-{{- else -}}
-  {{- $content = merge $content (dict "body" .page_component.Content) -}}
 {{- end -}}
 
 {{/* -----------Change resource page when images are set in the page section  -------- */}}

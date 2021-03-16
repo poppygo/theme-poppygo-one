@@ -19,9 +19,8 @@ summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
   descriptions
 title: I am a banner
-
 design:
-  bg_color: poppycolor6
+  bg_color: poppycolor5
   border: 2
   inner_space: 10
   item_bg_color: poppycolor1
@@ -36,43 +35,17 @@ design:
       font: body
       font_weight: bold
       name: primary
-      rounded: none
-      size: xl
+      rounded: full
+      size: 6xl
       space: 4
       text_color: poppycolor2
-    - color: poppycolor4
-      font: display1
-      font_weight: ''
-      name: secondary
-      rounded: null
-      size: sm
-      space: 2
-      text_color: poppycolor1
   typographies:
-    - bg_color: none
-      color: poppycolor2
-      font: display2
-      name: title
-      size: 3xl
-      space: 10
-    - bg_color: none
-      color: poppycolor1
+    - bg_color: poppycolor2
+      color: poppycolor5
       font: display2
       name: subtitle
-      size: 2xl
+      size: 3xl
       space: 6
-    - bg_color: none
-      color: poppycolor1
-      font: body
-      name: body
-      size: lg
-      space: 5
-    - bg_color: poppycolor5
-      color: poppycolor1
-      font: art
-      name: art
-      size: 7xl
-      space: 0
 
 ---
 

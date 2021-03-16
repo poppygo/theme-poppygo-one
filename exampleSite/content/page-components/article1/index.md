@@ -3,13 +3,20 @@ draft: false
 iscjklanguage: ''
 mainContent: ''
 resources: []
-title: The article section
+title: ->Frompage
 poppy_type: poppy-article
 poppy_variant: article-one
-image: foreground
-bg_image:
+image: ->Frompage
+bg_image: ->Frompage
 design:
-  bg_color: poppycolor5
-  item_bg_color: poppycolor3
+  bg_color: white
+  item_bg_color: white
+  border: none
+  rounded: none
+  shadow: none
+  typographies:
+    - name: title
+      bg: poppycolor1
 full_width: false
+
 ---

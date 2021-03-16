@@ -7,7 +7,7 @@ page_sections:
   - bg_image: flexible
     full_height: true
     full_width: true
-    name: header-banner
+    name: home-hero-banner
     page_component: header-banner
     subtitle: The most flexible Hugo theme for all your sites
     title: Experience PoppyGo One!

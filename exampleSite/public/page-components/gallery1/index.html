@@ -65,7 +65,7 @@
 
 
 
-<link rel="stylesheet" href="/css/poppygo-one.min.0d42224edc7629797d24183ee7c68c73.css">
+<link rel="stylesheet" href="/css/poppygo-one.min.d875a97984d2b783c76aa262f3433561.css">
 
 
 
@@ -77,36 +77,41 @@
 
 </head>
 <body class="flex flex-col flex-auto min-h-screen" ><div class="z-10">
+
   <nav class="flex py-3 bg-transparent">
     <div class="flex-none w-16 ">
     </div>
-    <div class="py-5 flex-grow text-center">
-        <a class="uppercase bg-poppycolor4 p-3 text-poppycolor1 text-xl" href="/">PoppyGo One</a>
+    <div class="py-7 flex-grow text-center">
+        <a id="logo" class="mt-20 uppercase bg-poppycolor4 p-3 text-white text-3xl" href="/">PoppyGo One</a>
     </div>
-    <div class="flex-none w-16">
-        <button id="hamburger-open" class="text-xl py-3">
+    <div class="flex-none w-20">
+        <button id="hamburger-open" class="text-4xl py-5">
         &#9776;
       </button>
     </div>
   </nav>
 
-  <div class="bg-poppycolor4 border-poppycolor1 ">
-    <ul id="menu" class="-mt-24 mb-1 px-12 py-5 hidden w-full flex flex-col lg:flex-row justify-end items-end lg:items-center">
+
+  <div class="bg-poppycolor4 border-poppycolor1">
+    <ul id="menu" class="-mt-20 mb-1 px-14 py-5 hidden w-full flex flex-col lg:flex-row justify-end items-end lg:items-center">
+      <div class="py-5 flex-grow text-left">
+          <a id="logo" class="mt-20 uppercase bg-poppycolor4 p-3 text-white text-2xl" href="/">PoppyGo One</a>
+      </div>
       
         <li class="flex my-2 lg:my-2 mx-1 lg:mx-2">
-          <a title="Page Components" class="uppercase font-bold lg:py-2 lg:px-3 rounded text-sm opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/page-components/">Page Components</a>
+          <a title="Page Components" class="uppercase font-bold lg:py-2 lg:px-3 text-white text-xl opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/page-components/">Page Components</a>
         </li>
       
         <li class="flex my-2 lg:my-2 mx-1 lg:mx-2">
-          <a title="Components ready" class="uppercase font-bold lg:py-2 lg:px-3 rounded text-sm opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/pages/components-ready/">Components ready</a>
+          <a title="Components ready" class="uppercase font-bold lg:py-2 lg:px-3 text-white text-xl opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/pages/components-ready/">Components ready</a>
         </li>
       
         <li class="flex my-2 lg:my-2 mx-1 lg:mx-2">
-          <a title="Portfolio" class="uppercase font-bold lg:py-2 lg:px-3 rounded text-sm opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/portfolio/">Portfolio</a>
+          <a title="Portfolio" class="uppercase font-bold lg:py-2 lg:px-3 text-white text-xl opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/portfolio/">Portfolio</a>
         </li>
       
         <li class="flex my-2 lg:my-2 mx-1 lg:mx-2">
-          <a title="Posts" class="uppercase font-bold lg:py-2 lg:px-3 rounded text-sm opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/posts/">Posts</a>
+          <a title="Posts" class="uppercase font-bold lg:py-2 lg:px-3 text-white text-xl opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="/posts/">Posts</a>
         </li>
       
       <button id="hamburger-close" class="">
@@ -114,6 +119,7 @@
     </button>
     </ul>
   </div>
+
 </div>
 
 
@@ -121,31 +127,438 @@
     let hamburger = document.getElementById('hamburger-open');
     let close = document.getElementById('hamburger-close');
     let menu = document.getElementById('menu');
+    let logo = document.getElementById('logo');
 
     hamburger.addEventListener('click', function(){
         menu.classList.toggle('hidden');
         hamburger.classList.toggle('hidden');
+        logo.classList.toggle('hidden');
     });
 
     close.addEventListener('click', function(){
         menu.classList.toggle('hidden');
         hamburger.classList.toggle('hidden');
+        logo.classList.toggle('hidden');
     });
 </script>
 <main class="flex-grow">
   
 
 
+
+<button id="cms_btn-component-component" class="float-right bg-poppycolor4 text-white rounded-xl m-5 px-10">
+  PoppyGo CMS
+</button>
+<section id="cms_window-component-component" class="hidden m-4 p-3 pt-8 mx-auto container bg-transparent mb-10">
+
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-poppycolor4">PoppyGo CMS</p>
+    </div>
+
+
+  <form action="POPPYGO" class= "">
+    <h2 class="text-2xl text-poppycolor4 mb-3 mt-3">Content</h2>
+
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_css</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="bg_271ffaad2b38641f0e3183a7744c5a46_component"></input>
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="Page(/page-components/component/index.md)"></input>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="Page(/page-components/component/index.md)"></input>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">name</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="component"></input>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">title</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="Component"></input>
+            
+          </div>
+        
+      
+    </div>
+
+    <div class= "mt-3 mb-0">
+      <h2 class="text-2xl text-poppycolor4 mb-3">Design</h2>
+      <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-6 grid grid-row-auto-dense gap-2">
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">art</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-poppycolor5 text-poppycolor1 font-art art text-7xl"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">bg_color</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="bg-poppycolor6"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">body</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-none text-poppycolor1 font-body body text-lg py-5"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">border</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="border-2"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">button_primary</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">button_secondary</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-poppycolor4 font-display1 secondary text-sm px-8 py-2 text-poppycolor1"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">inner_space</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="py-10"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">item_bg_color</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="bg-"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">name</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="site"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">outer_space</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="py-10"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">rounded</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="rounded-2xl"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">shadow</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="shadow-lg"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">subtitle</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-none text-poppycolor1 font-display2 subtitle text-2xl py-6"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">text_dark</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="text-poppycolor2"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">text_light</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="text-poppycolor1"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">title</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-none text-poppycolor2 font-display1 title text-7xl py-10"></input>
+                </div>
+            
+        
+      </div>
+    </div>
+
+</form>
+
+</section>
+
+<script>
+    document.getElementById('cms_btn-component-component').addEventListener('click', function(){
+            document.getElementById('cms_window-component-component').classList.toggle('hidden');
+        });
+</script>
+
+
+<button id="btn-component-component" class="float-right bg-poppycolor2 text-white rounded-xl m-5 px-10">
+  Debug
+</button>
+<section id="window-component-component" class="hidden m-4 p-3 pt-8 mx-auto container bg-poppycolor4 mb-10">
+  <div class = "p-10 border-dotted border-4 border-white">
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-poppycolor4">Poppy debug info</p>
+    </div>
+  <h2 class="text-xl text-poppycolor2">Page Component: component <h2>
+  <h2 class="text-xl text-poppycolor2">Poppy component: poppy-components/poppy-other/render-component <h2>
+  <h2 class="text-xl text-poppycolor2">Page: gallery1</h2>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Content</h2>
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_css</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                bg_271ffaad2b38641f0e3183a7744c5a46_component
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                Page(/page-components/component/index.md)
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                Page(/page-components/component/index.md)
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">name</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                component
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">title</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                Component
+            
+          </div>
+        
+      
+    </div>
+  </div>
+
+  <div class= "my-10 mb-0">
+    <h2 class="text-2xl text-white mb-3">Design</h2>
+    <div class ="bg-poppycolor-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">art</p></div>
+              <div class = "text-poppycolor2"> bg-poppycolor5 text-poppycolor1 font-art art text-7xl</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">bg_color</p></div>
+              <div class = "text-poppycolor2">bg-poppycolor6</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">body</p></div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor1 font-body body text-lg py-5</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">border</p></div>
+              <div class = "text-poppycolor2">border-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">button_primary</p></div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">button_secondary</p></div>
+              <div class = "text-poppycolor2"> bg-poppycolor4 font-display1 secondary text-sm px-8 py-2 text-poppycolor1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">inner_space</p></div>
+              <div class = "text-poppycolor2">py-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">item_bg_color</p></div>
+              <div class = "text-poppycolor2">bg-</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">name</p></div>
+              <div class = "text-poppycolor2">site</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">outer_space</p></div>
+              <div class = "text-poppycolor2">py-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">rounded</p></div>
+              <div class = "text-poppycolor2">rounded-2xl</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">shadow</p></div>
+              <div class = "text-poppycolor2">shadow-lg</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">subtitle</p></div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor1 font-display2 subtitle text-2xl py-6</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">text_dark</p></div>
+              <div class = "text-poppycolor2">text-poppycolor2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">text_light</p></div>
+              <div class = "text-poppycolor2">text-poppycolor1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">title</p></div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor2 font-display1 title text-7xl py-10</div>
+            </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+    document.getElementById('btn-component-component').addEventListener('click', function(){
+            document.getElementById('window-component-component').classList.toggle('hidden');
+        });
+</script>
 <!-- {.File.ContentBaseName }} --><!-- {.page.File.ContentBaseName }} --><style>
   .square-grid {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-auto-rows: 450px;
   }
 </style><section class ="text-center py-10 text-poppycolor2  container  mx-auto bg_d26f2a5705abc0b96f7fb5cf34449b6a_ ">
-    <h1 class = " bg-poppycolor text-poppycolor3 font-display1 title text-7xl py-10 ">I am a gallery</h1>
+    <h1 class = " bg-none text-poppycolor2 font-display1 title text-7xl py-10 ">I am a gallery</h1>
     <p class = " bg-none text-poppycolor1 font-display2 subtitle text-2xl py-6">Galleries are great for your products and portfolio</p>
-    <div class = "grid gap-3 square-grid overflow-clip mx-auto"><a class="bg-poppycolor4 text-poppycolor1 gallery1-component rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/component/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">Component</h1>
+    <div class = "grid gap-3 square-grid overflow-clip mx-auto"><a class="bg-poppycolor4 text-poppycolor1 gallery1-article1 rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/article1/>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">-&gt;Frompage</h1>
+          </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-component rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/component/>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">Component</h1>
           </a><style>
 @media (max-width: 667px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_500x0_resize_q75_box.jpg) ;}}
 @media (min-width: 668px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_768x0_resize_q75_box.jpg) ;}}
@@ -153,9 +566,9 @@
 @media (min-width: 1200px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_1200x0_resize_q75_box.jpg) ;}}
 @media (min-width: 1600px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_1920x0_resize_q75_box.jpg) ;}}
       </style><a class="bg-poppycolor4 text-poppycolor1 gallery1-explainer rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/explainer/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">Explainer</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">Explainer</h1>
           </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-header-banner rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/header-banner/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a banner</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">I am a banner</h1>
           </a><style>
 @media (max-width: 667px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_500x0_resize_q75_box.jpg) ;}}
 @media (min-width: 668px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_768x0_resize_q75_box.jpg) ;}}
@@ -163,11 +576,9 @@
 @media (min-width: 1200px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_1200x0_resize_q75_box.jpg) ;}}
 @media (min-width: 1600px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_1920x0_resize_q75_box.jpg) ;}}
       </style><a class="bg-poppycolor4 text-poppycolor1 gallery1-gallery1 rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/gallery1/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a gallery</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">I am a gallery</h1>
           </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-blog-teaser1 rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/blog-teaser1/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a list of items presented as blog teaser</h1>
-          </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-listcards rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/listcards/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a list of items presented as cards</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">I am a list of items presented as blog teaser</h1>
           </a></div>
     <div class = "py-10">
 
@@ -176,16 +587,569 @@
           <button type="button" class=" hover:opacity-80  bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2 ">See all</button>
         </a></div>
 </div>
-  </section><!-- {.File.ContentBaseName }} --><style>
+  </section>
+
+<button id="cms_btn-gallery1-other" class="float-right bg-poppycolor4 text-white rounded-xl m-5 px-10">
+  PoppyGo CMS
+</button>
+<section id="cms_window-gallery1-other" class="hidden m-4 p-3 pt-8 mx-auto container bg-transparent mb-10">
+
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-poppycolor4">PoppyGo CMS</p>
+    </div>
+
+
+  <form action="POPPYGO" class= "">
+    <h2 class="text-2xl text-poppycolor4 mb-3 mt-3">Content</h2>
+
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_css</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="bg_d26f2a5705abc0b96f7fb5cf34449b6a_other"></input>
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="Page(/page-components/gallery1/index.md)"></input>
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">body</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="I am the main content
+Here you have full freedom to add content as much as you want.
+You can add  Images as shortcodes, columns as shortcodes etc.
+"></input>
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">buttons</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            <div class="text-white text-center w-1/4">0
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-poppycolor2 text-white ">
+                        label
+                      </div>
+                      <div>
+                        <input class="w-full text-black" placeholder="See all"></input>
+                      </div>
+                    
+                      <div class="bg-poppycolor2 text-white ">
+                        link
+                      </div>
+                      <div>
+                        <input class="w-full text-black" placeholder="/page-components/"></input>
+                      </div>
+                    
+
+                   </div>
+                </div>
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="Page(/page-components/gallery1/index.md)"></input>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">image</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="fore"></input>
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">list</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="page-components"></input>
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">max_amount</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="6"></input>
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">name</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="other"></input>
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">size</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="450"></input>
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">subtitle</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="Galleries are great for your products and portfolio"></input>
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">title</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <input class="w-full text-black" placeholder="Other page sections"></input>
+            
+          </div>
+        
+      
+    </div>
+
+    <div class= "mt-3 mb-0">
+      <h2 class="text-2xl text-poppycolor4 mb-3">Design</h2>
+      <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-6 grid grid-row-auto-dense gap-2">
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">art</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-poppycolor5 text-poppycolor1 font-art art text-7xl"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  bg-poppycolor3  flex">
+                    <p class="text-white">bg_color</p>
+                    <p class="text-white"> -> override in Component </p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="bg-poppycolor4"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">body</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-none text-poppycolor1 font-body body text-lg py-5"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  bg-poppycolor3  flex">
+                    <p class="text-white">border</p>
+                    <p class="text-white"> -> override in Component </p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="border-none"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">button_primary</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">button_secondary</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-poppycolor4 font-display1 secondary text-sm px-8 py-2 text-poppycolor1"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">inner_space</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="py-10"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">item_bg_color</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="bg-"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">name</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="site"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">outer_space</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="py-10"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  bg-poppycolor3  flex">
+                    <p class="text-white">rounded</p>
+                    <p class="text-white"> -> override in Component </p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="rounded-none"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  bg-poppycolor3  flex">
+                    <p class="text-white">shadow</p>
+                    <p class="text-white"> -> override in Component </p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="shadow-none"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">subtitle</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-none text-poppycolor1 font-display2 subtitle text-2xl py-6"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">text_dark</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="text-poppycolor2"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">text_light</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder="text-poppycolor1"></input>
+                </div>
+            
+        <div class = "bg-poppycolor2  flex">
+                    <p class="text-white">title</p></div>
+                <div class="flex col-span-2">
+                  <input class="w-full text-black" placeholder=" bg-none text-poppycolor2 font-display1 title text-7xl py-10"></input>
+                </div>
+            
+        
+      </div>
+    </div>
+
+</form>
+
+</section>
+
+<script>
+    document.getElementById('cms_btn-gallery1-other').addEventListener('click', function(){
+            document.getElementById('cms_window-gallery1-other').classList.toggle('hidden');
+        });
+</script>
+
+
+<button id="btn-gallery1-other" class="float-right bg-poppycolor2 text-white rounded-xl m-5 px-10">
+  Debug
+</button>
+<section id="window-gallery1-other" class="hidden m-4 p-3 pt-8 mx-auto container bg-poppycolor4 mb-10">
+  <div class = "p-10 border-dotted border-4 border-white">
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-poppycolor4">Poppy debug info</p>
+    </div>
+  <h2 class="text-xl text-poppycolor2">Page Component: gallery1 <h2>
+  <h2 class="text-xl text-poppycolor2">Poppy component: poppy-components/poppy-listing/gallery <h2>
+  <h2 class="text-xl text-poppycolor2">Page: gallery1</h2>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Content</h2>
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_css</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                bg_d26f2a5705abc0b96f7fb5cf34449b6a_other
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                Page(/page-components/gallery1/index.md)
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">body</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                <h3 id="i-am-the-main-content">I am the main content</h3>
+<p>Here you have full freedom to add content as much as you want.
+You can add  Images as shortcodes, columns as shortcodes etc.</p>
+
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">buttons</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            <div class="text-white text-center">0
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-poppycolor2 text-white">
+                        label
+                      </div>
+                      <div>
+                        See all
+                      </div>
+                    
+                      <div class="bg-poppycolor2 text-white">
+                        link
+                      </div>
+                      <div>
+                        /page-components/
+                      </div>
+                    
+
+                   </div>
+                </div>
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                Page(/page-components/gallery1/index.md)
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">image</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                fore
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">list</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                page-components
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">max_amount</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                6
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">name</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                other
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">size</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                450
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">subtitle</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                Galleries are great for your products and portfolio
+            
+          </div>
+        
+      
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">title</p></div>
+          <div class = "md: col-span-3 text-poppycolor2 flex">
+            
+                Other page sections
+            
+          </div>
+        
+      
+    </div>
+  </div>
+
+  <div class= "my-10 mb-0">
+    <h2 class="text-2xl text-white mb-3">Design</h2>
+    <div class ="bg-poppycolor-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">art</p></div>
+              <div class = "text-poppycolor2"> bg-poppycolor5 text-poppycolor1 font-art art text-7xl</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">bg_color</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-poppycolor2">bg-poppycolor4</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">body</p></div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor1 font-body body text-lg py-5</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">border</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-poppycolor2">border-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">button_primary</p></div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">button_secondary</p></div>
+              <div class = "text-poppycolor2"> bg-poppycolor4 font-display1 secondary text-sm px-8 py-2 text-poppycolor1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">inner_space</p></div>
+              <div class = "text-poppycolor2">py-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">item_bg_color</p></div>
+              <div class = "text-poppycolor2">bg-</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">name</p></div>
+              <div class = "text-poppycolor2">site</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">outer_space</p></div>
+              <div class = "text-poppycolor2">py-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">rounded</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-poppycolor2">rounded-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">shadow</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-poppycolor2">shadow-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">subtitle</p></div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor1 font-display2 subtitle text-2xl py-6</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">text_dark</p></div>
+              <div class = "text-poppycolor2">text-poppycolor2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">text_light</p></div>
+              <div class = "text-poppycolor2">text-poppycolor1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">title</p></div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor2 font-display1 title text-7xl py-10</div>
+            </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+    document.getElementById('btn-gallery1-other').addEventListener('click', function(){
+            document.getElementById('window-gallery1-other').classList.toggle('hidden');
+        });
+</script>
+<!-- {.File.ContentBaseName }} --><style>
   .square-grid {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   grid-auto-rows: 450px;
   }
 </style><section class ="text-center py-10 text-poppycolor2  container  mx-auto bg_d26f2a5705abc0b96f7fb5cf34449b6a_other ">
-    <h1 class = " bg-poppycolor text-poppycolor3 font-display1 title text-7xl py-10 ">Other page sections</h1>
+    <h1 class = " bg-none text-poppycolor2 font-display1 title text-7xl py-10 ">Other page sections</h1>
     <p class = " bg-none text-poppycolor1 font-display2 subtitle text-2xl py-6">Galleries are great for your products and portfolio</p>
-    <div class = "grid gap-3 square-grid overflow-clip mx-auto"><a class="bg-poppycolor4 text-poppycolor1 gallery1-component rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/component/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">Component</h1>
+    <div class = "grid gap-3 square-grid overflow-clip mx-auto"><a class="bg-poppycolor4 text-poppycolor1 gallery1-article1 rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/article1/>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">-&gt;Frompage</h1>
+          </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-component rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/component/>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">Component</h1>
           </a><style>
 @media (max-width: 667px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_500x0_resize_q75_box.jpg) ;}}
 @media (min-width: 668px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_768x0_resize_q75_box.jpg) ;}}
@@ -193,9 +1157,9 @@
 @media (min-width: 1200px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_1200x0_resize_q75_box.jpg) ;}}
 @media (min-width: 1600px) {.gallery1-explainer {background-image:url(/page-components/explainer/images/explainer_hu1c4baeb3860f34a2042c18890aa695b6_103912_1920x0_resize_q75_box.jpg) ;}}
       </style><a class="bg-poppycolor4 text-poppycolor1 gallery1-explainer rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/explainer/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">Explainer</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">Explainer</h1>
           </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-header-banner rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/header-banner/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a banner</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">I am a banner</h1>
           </a><style>
 @media (max-width: 667px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_500x0_resize_q75_box.jpg) ;}}
 @media (min-width: 668px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_768x0_resize_q75_box.jpg) ;}}
@@ -203,11 +1167,9 @@
 @media (min-width: 1200px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_1200x0_resize_q75_box.jpg) ;}}
 @media (min-width: 1600px) {.gallery1-gallery1 {background-image:url(/page-components/gallery1/images/foreground-image_hud63751fed0c2c3af4be78b312620ef59_163725_1920x0_resize_q75_box.jpg) ;}}
       </style><a class="bg-poppycolor4 text-poppycolor1 gallery1-gallery1 rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/gallery1/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a gallery</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">I am a gallery</h1>
           </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-blog-teaser1 rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/blog-teaser1/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a list of items presented as blog teaser</h1>
-          </a><a class="bg-poppycolor4 text-poppycolor1 gallery1-listcards rounded-none border-none shadow-none bg-cover bg-center py-10 px-2" href=/page-components/listcards/>
-              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl py-0 ">I am a list of items presented as cards</h1>
+              <h1 class="text-center text-3xl  bg-poppycolor5 text-poppycolor1 font-art art text-7xl ">I am a list of items presented as blog teaser</h1>
           </a></div>
     <div class = "py-10">
 

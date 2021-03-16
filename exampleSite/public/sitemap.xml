@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>/sukoh.json</loc>
+    <loc>/</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -35,6 +35,10 @@
   <url>
     <loc>/tags/theme/</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/page-components/article1/</loc>
   </url>
   
   <url>
@@ -115,10 +119,6 @@
   
   <url>
     <loc>/page-components/small-newsletter/</loc>
-  </url>
-  
-  <url>
-    <loc>/page-components/article1/</loc>
   </url>
   
 </urlset>

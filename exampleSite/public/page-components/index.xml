@@ -6,6 +6,15 @@
     <description>Recent content in Components on PoppyGo One Hugo Theme</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/page-components/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>-&gt;Frompage</title>
+      <link>/page-components/article1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/page-components/article1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Component</title>
       <link>/page-components/component/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -102,15 +111,6 @@
       
       <guid>/page-components/small-newsletter/</guid>
       <description>-| I am the summary of the newsletter element, which is not very relevant</description>
-    </item>
-    
-    <item>
-      <title>The article section</title>
-      <link>/page-components/article1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/page-components/article1/</guid>
-      <description></description>
     </item>
     
   </channel>
