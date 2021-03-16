@@ -3,7 +3,7 @@
 {{- $design := .design -}}
 
 
-{{- $items := partial "process/sortedItems" (dict "type" $content.list ) -}}
+{{- $items := partial "poppy-meta/sortedItems" (dict "type" $content.list ) -}}
 {{- $size := $content.size | default 450 -}}
 {{- $max_amount := $content.max_amount | default (len $items) -}}
 
@@ -21,14 +21,14 @@
     <div class = "grid gap-3 square-grid overflow-clip mx-auto">
         {{- range first $max_amount $items -}}
         {{- $bg_css := printf "%s-%s" $page.File.ContentBaseName .File.ContentBaseName -}}
-        {{- partial "UI-elements/bg_image" (dict "page" . "css_class" $bg_css "bg_image" .Params.image ) -}}
+        {{- partial "poppy-elements/bg_image" (dict "page" . "css_class" $bg_css "bg_image" .Params.image ) -}}
           <a class="{{$design.bg_color}} {{$design.text_light}} {{$bg_css}} {{$design.rounded}} {{$design.border}} {{$design.shadow}} bg-cover bg-center {{$design.inner_space}} px-2" href={{.RelPermalink }}>
               <h1 class="text-center text-3xl {{$design.art}} ">{{.Title}}</h1>
           </a>
         {{- end -}}
     </div>
     <div class = "{{.outer_space}}">
-    {{- partial "UI-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
+    {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
     </div>
   </section>
 {{- end -}}

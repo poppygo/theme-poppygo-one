@@ -15,7 +15,7 @@
             {{- end -}}
 
               <div class= "bg-poppycolor3 col-span-5 md:col-span-3 my-auto {{$switch}} p-5 mb-5" >
-                  {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "{{$design.rounded}} {{$design.shadow}} w-full object-cover") -}}
+                  {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "{{$design.rounded}} {{$design.shadow}} w-full object-cover") -}}
               </div>
 
               <div class="col-span-5 md:col-span-2 {{$design.rounded}} {{$design.shadow}} {{$design.item_bg_color}} my-auto mt-10 lg:m-20 mb-5 ">
@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="px-3 {{.rounded}}  ">
-                    {{- partial "UI-elements/buttons-secondary" (dict "page" $page "buttons" .buttons ) -}}
+                    {{- partial "poppy-elements/buttons-secondary" (dict "page" $page "buttons" .buttons ) -}}
                 </div>
               </div>
 

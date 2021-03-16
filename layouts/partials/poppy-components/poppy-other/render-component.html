@@ -11,7 +11,7 @@
         {{- $design_info := partial "poppy-engine/get_design" .page -}}
 
         {{- with $content_info.content -}}
-          {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
+          {{- partial "poppy-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
         {{- end -}}
 
         {{- "<!-- {.page.File.ContentBaseName }} -->" | safeHTML -}}

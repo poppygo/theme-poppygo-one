@@ -4,7 +4,7 @@
 
 {{- with $design -}}
   {{- if $content.items }}
-      {{- $columns := partial "UI-elements/responsive-columns" (dict "amount" (len $content.items ) "max_columns" $content.max_columns) -}}
+      {{- $columns := partial "poppy-elements/responsive-columns" (dict "amount" (len $content.items ) "max_columns" $content.max_columns) -}}
 
       <div class="{{- if not .full_width -}} container {{- end -}} {{.outer_space}} mx-auto px-4 md:px-12 {{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
         <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
@@ -14,13 +14,13 @@
               <div class="flex flex-auto my-1 px-1 {{$columns}}">
                   <div class=" w-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$design.item_bg_color}}">
                     <div>
-                      {{- partial "UI-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-2/5 object-cover") -}}
+                      {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-2/5 object-cover") -}}
                     </div>
                     <div class="prose p-2 md:p-4">
                         {{.bodytext | markdownify }}
                     </div>
                     <div class="px-3">
-                        {{- partial "UI-elements/buttons" (dict "design" $design "buttons" .buttons ) -}}
+                        {{- partial "poppy-elements/buttons" (dict "design" $design "buttons" .buttons ) -}}
                     </div>
                 </div>
               </div>

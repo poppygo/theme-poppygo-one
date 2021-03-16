@@ -32,7 +32,7 @@
 
 
           {{- with $content_info.content -}}
-            {{- partial "UI-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
+            {{- partial "poppy-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
           {{- end -}}
           {{- "<!-- {.File.ContentBaseName }} -->" | safeHTML -}}
           {{- partial $poppy_component (dict "page" $page "content" $content_info.content "design" $design_info.design  ) -}}

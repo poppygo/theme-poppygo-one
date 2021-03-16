@@ -1,9 +1,9 @@
 <head itemscope itemtype="{{ .Site.BaseURL }}">
 
   {{ hugo.Generator }}
-  {{- partial "process/meta_tags" . -}}
+  {{- partial "poppy-meta/meta_tags" . -}}
   {{- partial "poppy-engine/custom_variables" . -}}
-  {{- partial "process/bundlecss" . -}}
-  {{- partial "process/rss_feed" . -}}
+  {{- partial "poppy-meta/bundlecss" . -}}
+  {{- partial "poppy-meta/rss_feed" . -}}
 
 </head>
