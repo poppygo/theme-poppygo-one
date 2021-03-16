@@ -3,6 +3,7 @@
 {{- $section := .section -}}
 {{- $page := .page -}}
 {{- $content := dict "name" ( .section.name | default .page_component.Name) -}}
+{{- $override_debug_info := dict -}}
 
 {{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size" "full_height"  -}}
 
@@ -10,6 +11,7 @@
   {{- $section_value := index $section . -}}
   {{- $component_value := index $page_component.Params . -}}
   {{- $override := ( $section_value | default $component_value ) -}}
+  {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict . true ) -}} {{- end -}}
 
   {{- if eq $override "->frompage" -}}
     {{- $page_value := index $page.Params . -}}
@@ -51,4 +53,6 @@
     {{- $content = merge $content (dict "fg_resource_page" $page_component) -}}
 {{- end -}}
 
-{{- return $content -}}
+{{- $content_info := dict "override_debug_info" $override_debug_info "content" $content -}}
+
+{{- return $content_info -}}

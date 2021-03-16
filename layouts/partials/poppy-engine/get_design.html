@@ -4,6 +4,7 @@
 {{- $objectData := site.Data.design.objects -}}
 {{- $buttonData := site.Data.design.buttons -}}
 {{- $design := dict -}}
+{{- $override_debug_info := dict -}}
 
 {{- range $objectData -}}
   {{- range $key, $value := . -}}
@@ -14,6 +15,7 @@
       {{- $override := index $page_component.Params.design $key -}}
       {{- $default := $value -}}
       {{- $value = $override | default $default }}
+      {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict $key true ) -}} {{- end -}}
     {{- end -}}
 
     {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}
@@ -48,48 +50,55 @@
       {{- $default := $value -}}
       {{- $value = string ($override | default $default) -}}
     {{- end -}}
+    {{- if $value -}}
+        {{- if eq $key "size" -}} {{- $value = (printf "text-%s" $value ) -}} {{- end -}}
+        {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
+        {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
+        {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
+        {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
 
-    {{- if eq $key "size" -}} {{- $value = (printf "text-%s" $value ) -}} {{- end -}}
-    {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
-    {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  $value ) -}} {{- end -}}
-    {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
-    {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
-
-    {{- $type = printf "%s %s" $type $value -}}
+        {{- $type = printf "%s %s" $type $value -}}
+    {{- end -}}
   {{- end -}}
-  {{- $design = merge $design (dict .name $type ) -}}
+
+  {{- $design = merge $design (dict $name $type ) -}}
 {{- end -}}
 
 {{- range $buttonData -}}
   {{- $name := .name -}}
   {{- $button := "" -}}
+  {{- $button_name := "" -}}
   {{- range $key, $value := . -}}
     {{/* Set override */}}
 
-    {{- $button := dict -}}
+    {{- $button_type := dict -}}
     {{- if $page_component.Params.design.buttons -}}
       {{- range where $page_component.Params.design.buttons "name" "eq" $name -}}
-        {{- $button := . }}
+        {{- $button_type := . }}
       {{- end -}}
     {{- end -}}
 
-    {{- with $button -}}
+    {{- with $button_type -}}
       {{- $override := index . $key -}}
       {{- $default := $value -}}
       {{- $value = string ($override | default $default) -}}
     {{- end -}}
 
-    {{- if in $key "space" -}} {{- $value = printf "px-%s py-%s" (string (mul $value 4)) (string $value)  -}} {{- end -}}
-    {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
-    {{- if in $key "size" -}} {{- $value = printf "text-%s"  (string $value ) -}} {{- end -}}
-    {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
-    {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
-    {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
+    {{- if $value -}}
+        {{- if in $key "space" -}} {{- $value = printf "px-%s py-%s" (string (mul $value 4)) (string $value)  -}} {{- end -}}
+        {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
+        {{- if in $key "size" -}} {{- $value = printf "text-%s"  (string $value ) -}} {{- end -}}
+        {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
+        {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
+        {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
 
-    {{- if eq $key "name" -}} {{- $name = printf "button_%s"  $value  -}} {{- end -}}
-    {{- $button = printf "%s %s" $button $value -}}
+        {{- if eq $key "name" -}} {{- $button_name = printf "button_%s"  $value  -}} {{- end -}}
+        {{- $button = printf "%s %s" $button $value -}}
+    {{- end -}}
   {{- end -}}
-  {{- $design = merge $design (dict $name $button ) -}}
+  {{- $design = merge $design (dict $button_name $button ) -}}
 {{- end -}}
 
-{{- return $design -}}
+{{- $design_info := dict "override_debug_info" $override_debug_info "design" $design -}}
+
+{{- return $design_info -}}

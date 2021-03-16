@@ -1,6 +1,6 @@
 {{- $page := .page -}}
-{{- $content := .content -}}
-{{- $design := .design -}}
+{{- $content_info := .content_info -}}
+{{- $design_info := .design_info -}}
 {{- $component := .component -}}
 
 <section class="m-10 p-3 mx-auto container bg-poppycolor4 mb-20">
@@ -14,11 +14,17 @@
     <h2 class="text-2xl text-white mb-3">Content</h2>
     <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
 
-      {{ range $key, $value := $content }}
-
-        <div class = "col-span-1 bg-poppycolor2 text-white flex">{{$key}}</div>
-        <div class = "md: col-span-3 text-poppycolor2">{{$value }}</div>
-
+      {{ range $key, $value := $content_info.content }}
+        {{ if $value }}
+          {{- $override := index $design_info.override_debug_info $key -}}
+          <div class = "col-span-1 bg-poppycolor2 {{if $override}} bg-poppycolor3 {{end}}">
+            <p class="text-white">{{- $key -}}</p>
+            {{- if $override }}
+              <p class="text-white"> --override in Page --</p>
+            {{- end -}}
+          </div>
+          <div class = "md: col-span-3 text-poppycolor2">{{$value }}</div>
+        {{ end }}
       {{ end }}
     </div>
   </div>
@@ -26,11 +32,19 @@
   <div class= "my-10">
     <h2 class="text-2xl text-white mb-3">Design</h2>
     <div class ="bg-poppycolor-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
-      {{ range $key, $value := $design }}
-      <div class="col-span-1 text-xs ">
-        <div class = "bg-poppycolor2 text-white flex">{{$key}}</div>
-        <div class = "text-poppycolor2">{{$value }}</div>
-      </div>
+      {{ range $key, $value := $design_info.design }}
+          {{- if $value -}}
+            {{- $override := index $design_info.override_debug_info $key -}}
+            <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 {{if $override}} bg-poppycolor3 {{end}}">
+                  <p class="text-white">{{- $key -}} </p>
+                {{- if $override }}
+                  <p class="text-white"> --override in Page Component-- </p>
+                {{- end -}}
+              </div>
+              <div class = "text-poppycolor2">{{$value }}</div>
+            </div>
+          {{ end }}
       {{ end }}
     </div>
   </div>
