@@ -12,6 +12,10 @@
            "visible": true
          },
          {
+           "key": "s__pages",
+           "visible": true
+         },
+         {
            "key": "s__portfolio",
            "visible": true
          },
@@ -62,10 +66,6 @@
        "menuItems": [
          {
            "key": "config",
-           "visible": true
-         },
-         {
-           "key": "menus",
            "visible": true
          }
        ],

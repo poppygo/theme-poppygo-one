@@ -5,30 +5,6 @@ aliases:
   - blog
 title: Demo post
 
-page_sections:
-  - bg_image: none
-    buttons: none
-    name: headerbanner
-    page_component: header-banner
-    subtitle: A post has an article component, which works differently from other components
-    title: Testpost page
-  - name: article
-    page_component: article1
-    image: pageimage
-    title: PageTitle
-    bg_image: back
-  - bg_image: back
-    name: newsletter
-    page_component: small-newsletter
-    subtitle: ''
-    title: Suscribe to the newsletter
-  - bg_image: back
-    name: other posts
-    page_component: gallery1
-    list: posts
-    subtitle: ''
-    title: Other posts
-
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

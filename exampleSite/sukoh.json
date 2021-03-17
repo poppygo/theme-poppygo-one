@@ -72,34 +72,6 @@
            "type": "hidden"
          },
          {
-           "fields": [
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "page_component",
-               "title": "Page component",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
-         },
-         {
            "key": "publishdate",
            "title": "Publishdate",
            "type": "hidden"
@@ -836,6 +808,21 @@
          {
            "fields": [
              {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "full_height",
+               "title": "Full height",
+               "type": "boolean"
+             },
+             {
+               "key": "full_width",
+               "title": "Full width",
+               "type": "boolean"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -847,8 +834,13 @@
                "type": "string"
              },
              {
-               "key": "postition",
-               "title": "Postition",
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "markdown"
+             },
+             {
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -864,6 +856,39 @@
          {
            "fields": [
              {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bg_color",
+                   "title": "Bg color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "full_height",
+                   "title": "Full height",
+                   "type": "boolean"
+                 },
+                 {
+                   "key": "full_width",
+                   "title": "Full width",
+                   "type": "boolean"
+                 }
+               ],
+               "groupdata": true,
+               "key": "design",
+               "title": "Design",
+               "type": "section"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -875,8 +900,13 @@
                "type": "string"
              },
              {
-               "key": "position",
-               "title": "Position",
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -948,6 +978,16 @@
          {
            "fields": [
              {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -959,8 +999,8 @@
                "type": "string"
              },
              {
-               "key": "postition",
-               "title": "Postition",
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -969,7 +1009,22 @@
            "type": "accordion"
          },
          {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
            "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
              {
                "arrayTitle": true,
                "key": "name",
@@ -984,6 +1039,16 @@
              {
                "key": "postition",
                "title": "Postition",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -1055,6 +1120,21 @@
          {
            "fields": [
              {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "key": "max_amount",
+               "title": "Max amount",
+               "type": "number"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -1066,8 +1146,8 @@
                "type": "string"
              },
              {
-               "key": "postition",
-               "title": "Postition",
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -1091,11 +1171,6 @@
              {
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
-             },
-             {
-               "key": "postition",
-               "title": "Postition",
                "type": "string"
              }
            ],
@@ -1167,6 +1242,21 @@
          {
            "fields": [
              {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "key": "max_amount",
+               "title": "Max amount",
+               "type": "number"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -1178,8 +1268,8 @@
                "type": "string"
              },
              {
-               "key": "postition",
-               "title": "Postition",
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -1203,11 +1293,6 @@
              {
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
-             },
-             {
-               "key": "postition",
-               "title": "Postition",
                "type": "string"
              }
            ],
@@ -1279,6 +1364,16 @@
          {
            "fields": [
              {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -1290,8 +1385,8 @@
                "type": "string"
              },
              {
-               "key": "postition",
-               "title": "Postition",
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -1302,6 +1397,16 @@
          {
            "fields": [
              {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -1313,8 +1418,13 @@
                "type": "string"
              },
              {
-               "key": "postition",
-               "title": "Postition",
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],

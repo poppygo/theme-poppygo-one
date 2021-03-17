@@ -10,12 +10,6 @@ subpage_sections:
     page_component: footer
 
 page_sections:
-  - name: navbar
-    page_component: navbar
-    postition: top
-  - name: footer
-    page_component: footer
-    position: bottom
   - bg_image: flexible
     full_height: true
     full_width: true
@@ -60,15 +54,14 @@ page_sections:
     subtitle: ''
     title: Explore all components
     list: page-components
-
-resources: []
-subpage_sections:
   - name: navbar
     page_component: navbar
     position: top
   - name: footer
     page_component: footer
     position: bottom
+resources: []
+subpage_sections:
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
@@ -85,6 +78,12 @@ subpage_sections:
     page_component: gallery1
     subtitle: ''
     title: All items
+  - name: navbar
+    page_component: navbar
+    position: top
+  - name: footer
+    page_component: footer
+    position: bottom
 
 title: Homepage
 
