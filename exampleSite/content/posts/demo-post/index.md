@@ -4,6 +4,7 @@ aliases:
   - articles
   - blog
 title: Demo post
+subtitle: This is a test subtitle
 
 ---
 

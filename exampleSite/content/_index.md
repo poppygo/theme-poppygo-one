@@ -42,7 +42,6 @@ page_sections:
             link: /
         image: aron
         name: item1
-
     name: benefits
     page_component: explainer
     title: What makes PoppyGo One great?

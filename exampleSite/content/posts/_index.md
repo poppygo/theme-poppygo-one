@@ -26,6 +26,7 @@ subpage_sections:
     postition: ''
     subtitle: '->frompage'
     title: '->frompage'
+    full_height: false
   - bg_image: ''
     name: article
     page_component: article1
@@ -37,6 +38,6 @@ subpage_sections:
   - name: footer
     page_component: footer
     position: bottom
-title: Portfolio
+title: Posts
 
 ---

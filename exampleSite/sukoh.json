@@ -1026,6 +1026,11 @@
                "type": "string"
              },
              {
+               "key": "full_height",
+               "title": "Full height",
+               "type": "boolean"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
