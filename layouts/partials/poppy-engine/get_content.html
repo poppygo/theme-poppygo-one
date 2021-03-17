@@ -5,7 +5,7 @@
 {{- $content := dict "name" ( .section.name | default .page_component.Name) -}}
 {{- $override_debug_info := dict -}}
 
-{{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size" "full_height" "menus" -}}
+{{- $params := slice "title" "subtitle" "image" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size" "full_height" "menus" "position" -}}
 
 {{- range $params -}}
 

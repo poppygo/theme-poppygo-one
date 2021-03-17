@@ -3,12 +3,6 @@ author: PoppyGo
 draft: false
 iscjklanguage: ''
 mainContent: ''
-subpage_sections:
-  - name: navbar
-    page_component: navbar
-  - name: footer
-    page_component: footer
-
 page_sections:
   - bg_image: flexible
     full_height: true
@@ -79,10 +73,8 @@ subpage_sections:
     title: All items
   - name: navbar
     page_component: navbar
-    position: top
   - name: footer
     page_component: footer
-    position: bottom
 
 title: Homepage
 

@@ -38,10 +38,6 @@
   </url>
   
   <url>
-    <loc>/page-components/footer/</loc>
-  </url>
-  
-  <url>
     <loc>/page-components/article1/</loc>
   </url>
   
@@ -71,6 +67,10 @@
   
   <url>
     <loc>/page-components/explainer/</loc>
+  </url>
+  
+  <url>
+    <loc>/page-components/footer/</loc>
   </url>
   
   <url>
