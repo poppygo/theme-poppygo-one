@@ -1,5 +1,9 @@
-<div class="z-10">
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
 
+{{- with $design -}}
+<section class="z-10">
   <nav class="flex py-3 bg-transparent">
     <div class="flex-none w-16 ">
     </div>
@@ -13,24 +17,25 @@
     </div>
   </nav>
 
-
-  <div class="bg-poppycolor4 border-poppycolor1">
-    <ul id="menu" class="-mt-20 mb-1 px-14 py-5 hidden w-full flex flex-col lg:flex-row justify-end items-end lg:items-center">
-      <div class="py-5 flex-grow text-left">
-          <a id="logo" class="mt-20 uppercase bg-poppycolor4 p-3 text-white text-2xl" href="/">PoppyGo One</a>
+  <div class="-mt-20 border-poppycolor1">
+    <ul id="menu" class=" hidden flex">
+      <div class="bg-poppycolor4 flex w-full mb-1 px-14 py-5 flex-col lg:flex-row justify-end items-end lg:items-center">
+        <div class="py-5 flex-grow text-left">
+            <a id="logo" class="mt-20 uppercase bg-poppycolor4 p-3 text-white text-2xl" href="/">PoppyGo One</a>
+        </div>
+        {{ range $content.menus.main }}
+          <li class="flex my-2 lg:my-2 mx-1 lg:mx-2 bg-poppycolor4">
+            <a title="{{ .name }}" class="uppercase font-bold lg:py-2 lg:px-3 text-white text-xl opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="{{ .url }}">{{ .name }}</a>
+          </li>
+        {{ end }}
+        <button id="hamburger-close" class="">
+        &#10060;
+        </button>
       </div>
-      {{ range .Site.Menus.main.ByWeight }}
-        <li class="flex my-2 lg:my-2 mx-1 lg:mx-2">
-          <a title="{{ .Name }}" class="uppercase font-bold lg:py-2 lg:px-3 text-white text-xl opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-      {{ end }}
-      <button id="hamburger-close" class="">
-      &#10060;
-    </button>
     </ul>
   </div>
-
-</div>
+</section>
+{{- end -}}
 
 
 <script>

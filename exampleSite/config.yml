@@ -8,31 +8,9 @@ markup:  #See Configure Markup. New in v0.60.0
       unsafe: true
   highlight:
     style: github
-menu:
-  main:
-    - identifier: ''
-      name: Page Components
-      parent: ''
-      url: /page-components/
-      weight: 3
-    - identifier: ''
-      name: Posts
-      parent: ''
-      url: /posts/
-      weight: 0
-    - identifier: ''
-      name: Portfolio
-      parent: ''
-      url: /portfolio/
-      weight: 0
-    - identifier: ''
-      name: Components ready
-      parent: ''
-      url: /pages/components-ready/
-      weight: 0
 params:
   poppygo_debug: true
-  poppygo_cms: true
+  poppygo_cms: false
   authorBio: PoppyGo is one year old
   authorbio: ''
   avatar: images/avatar.jpg

@@ -7,9 +7,12 @@
 {{ $button_id := printf "btn-%s-%s" $component.File.ContentBaseName .content_info.content.name -}}
 {{ $window_id := printf "window-%s-%s" $component.File.ContentBaseName .content_info.content.name -}}
 
-<button id="{{$button_id}}" class="float-right bg-poppycolor2 text-white rounded-xl m-5 px-10">
-  Debug
-</button>
+<div id="{{$button_id}}" class="absolute p-2">
+  <button  class="bg-poppycolor2 text-white rounded-xl px-10">
+    Debug {{$component.File.ContentBaseName}}
+  </button>
+</div>
+
 <section id="{{$window_id}}" class="hidden m-4 p-3 pt-8 mx-auto container bg-poppycolor4 mb-10">
   <div class = "p-10 border-dotted border-4 border-white">
     <div class="-ml-3 -mt-16 w-72 ">

@@ -1,5 +1,5 @@
 {{ $custom := resources.Get "css/custom.css" }}
-{{ $tailwind := resources.Get "css/tailwind.css" | toCSS | postCSS }}
+{{ $tailwind := resources.Get "css/tailwind.css" }}
 {{ $css := slice $custom $tailwind | resources.Concat "css/poppygo-one.css" }}
 
 {{- $css = $css | postCSS (dict "config" "./postcss.config.js") | minify | fingerprint "md5" | resources.PostProcess -}}

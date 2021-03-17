@@ -3,7 +3,19 @@ author: PoppyGo
 draft: false
 iscjklanguage: ''
 mainContent: ''
+subpage_sections:
+  - name: navbar
+    page_component: navbar
+  - name: footer
+    page_component: footer
+
 page_sections:
+  - name: navbar
+    page_component: navbar
+    postition: top
+  - name: footer
+    page_component: footer
+    position: bottom
   - bg_image: flexible
     full_height: true
     full_width: true
@@ -47,8 +59,16 @@ page_sections:
     page_component: gallery1
     subtitle: ''
     title: Explore all components
+    list: page-components
+
 resources: []
 subpage_sections:
+  - name: navbar
+    page_component: navbar
+    position: top
+  - name: footer
+    page_component: footer
+    position: bottom
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
@@ -61,11 +81,11 @@ subpage_sections:
       full_width: false
   - bg_image: ''
     buttons: ''
-    list: '->Frompage'
     name: article
     page_component: gallery1
     subtitle: ''
     title: All items
+
 title: Homepage
 
 ---

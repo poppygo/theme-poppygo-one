@@ -2,6 +2,12 @@
 draft: false
 iscjklanguage: ''
 page_sections:
+  - name: navbar
+    page_component: navbar
+    postition: top
+  - name: footer
+    page_component: footer
+    position: bottom
   - bg_image: ''
     buttons:
       - label: Check all components

@@ -1,17 +1,28 @@
 
 {{- $page := . -}}
-{{- $sections := slice -}}
+{{- $page_sections := slice -}}
+{{- $sorted_sections := slice}}
 
 {{- $themesDir := partial "poppy-engine/get_hugo_config" "themesDir" -}}
-{{- $theme := partial "poppy-engine/get_hugo_config" "theme" }}
+{{- $theme := partial "poppy-engine/get_hugo_config" "theme" -}}
 
-{{ if .Parent}}
-  {{- $sections = .Params.page_sections | default .Parent.Params.subpage_sections -}}
-{{ else }}
-  {{- $sections = .Params.page_sections  -}}
-{{ end }}
+{{- with .Parent -}}
+  {{- $page_sections = $page.Params.page_sections | default .Params.subpage_sections -}}
+{{- else -}}
+  {{- $page_sections = $page.Params.page_sections  -}}
+{{- end -}}
 
-{{- range $sections -}}
+{{- range where $page_sections ".position" "top" -}}
+    {{- $sorted_sections =  $sorted_sections | append . -}}
+{{- end -}}
+{{- range where $page_sections ".position" nil -}}
+    {{- $sorted_sections =  $sorted_sections | append . -}}
+{{- end -}}
+{{- range where $page_sections ".position" "bottom" -}}
+    {{- $sorted_sections =  $sorted_sections | append . -}}
+{{- end -}}
+
+{{- range $sorted_sections -}}
     {{- $page_section := .}}
     {{- $page_component := site.GetPage (printf "page-components/%s" .page_component ) -}}
 
@@ -24,12 +35,10 @@
           {{- if site.Params.poppygo_cms -}}
             {{- partial "poppy-engine/poppygo_cms" (dict "page" $page "component" $page_component "poppy_component" $poppy_component "content_info" $content_info "design_info" $design_info ) -}}
           {{- end -}}
-          
+
           {{- if site.Params.poppygo_debug -}}
             {{- partial "poppy-engine/poppygo_debug" (dict "page" $page "component" $page_component "poppy_component" $poppy_component "content_info" $content_info "design_info" $design_info ) -}}
           {{- end -}}
-
-
 
           {{- with $content_info.content -}}
             {{- partial "poppy-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
