@@ -1086,6 +1086,10 @@ video {
   align-items: center;
 }
 
+.content-end {
+  align-content: flex-end;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1116,6 +1120,10 @@ video {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
 }
 
 .float-right {
@@ -1342,6 +1350,10 @@ video {
   margin-top: -5rem;
 }
 
+.-mt-28 {
+  margin-top: -7rem;
+}
+
 .-mt-32 {
   margin-top: -8rem;
 }
@@ -1542,10 +1554,6 @@ video {
   top: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -1634,6 +1642,10 @@ video {
 
 .text-poppycolor4 {
   color: var(--poppy-color4);
+}
+
+.text-poppycolor5 {
+  color: var(--poppy-color5);
 }
 
 .overflow-clip {

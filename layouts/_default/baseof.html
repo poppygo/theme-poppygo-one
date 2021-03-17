@@ -8,10 +8,8 @@
     {{- partial "poppy-meta/rss_feed" . -}}
   </head>
 
-  <body class="flex flex-auto min-h-screen relative" >
-    <main class="flex-grow">
-      {{- block "main" . -}}{{- end -}}
-    </main>
+  <body class="w-full min-h-screen relative flex-col" >
+    {{- block "main" . -}}{{- end -}}
     {{- partial "poppy-meta/bundlejs" . -}}
   </body>
 
