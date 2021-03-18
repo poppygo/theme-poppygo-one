@@ -65,7 +65,7 @@
 
 
 
-<link rel="stylesheet" href="/css/poppygo-one.min.043b648080f67eabe588b65c687349e9.css">
+<link rel="stylesheet" href="/css/poppygo-one.min.26de50e314d70e321cbb35a9be791636.css">
 
 
 
@@ -77,8 +77,7 @@
 
 </head>
 
-  <body class="flex flex-auto min-h-screen relative" >
-    <main class="flex-grow">
+  <body class="w-full min-h-screen relative flex-col" >
 
 <div id="btn-navbar-navbar" class="absolute p-2">
   <button  class="bg-poppycolor2 text-white rounded-xl px-10">
@@ -230,7 +229,7 @@
       <div class="col-span-1 text-xs  ">
               <div class = "bg-poppycolor2 ">
                   <p class="text-white">button_primary</p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-none text-xl px-16 py-4 text-poppycolor2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -317,8 +316,8 @@
     </div>
   </nav>
 
-  <div class="-mt-20 border-poppycolor1">
-    <ul id="menu" class=" hidden flex">
+  <div class="border-poppycolor1">
+    <ul id="menu" class=" hidden flex -mt-20">
       <div class="bg-poppycolor4 flex w-full mb-1 px-14 py-5 flex-col lg:flex-row justify-end items-end lg:items-center">
         <div class="py-5 flex-grow text-left">
             <a id="logo" class="mt-20 uppercase bg-poppycolor4 p-3 text-white text-2xl" href="/">PoppyGo One</a>
@@ -492,7 +491,7 @@
       <div class="col-span-1 text-xs  ">
               <div class = "bg-poppycolor2 ">
                   <p class="text-white">button_primary</p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-none text-xl px-16 py-4 text-poppycolor2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -763,7 +762,7 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
       <div class="col-span-1 text-xs  ">
               <div class = "bg-poppycolor2 ">
                   <p class="text-white">button_primary</p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-none text-xl px-16 py-4 text-poppycolor2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -871,7 +870,7 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
 
   <div class="my-2 "><a href="/page-components/">
 
-          <button type="button" class=" hover:opacity-80  bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2 ">See all</button>
+          <button type="button" class=" hover:opacity-80  bg-poppycolor1 font-body font-bold primary rounded-none text-xl px-16 py-4 text-poppycolor2 ">See all</button>
         </a></div>
 </div>
   </section>
@@ -1019,7 +1018,7 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
       <div class="col-span-1 text-xs  ">
               <div class = "bg-poppycolor2 ">
                   <p class="text-white">button_primary</p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-none text-xl px-16 py-4 text-poppycolor2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -1092,11 +1091,13 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
             document.getElementById('window-footer-footer').classList.toggle('hidden');
         });
 </script>
-<!-- {.File.ContentBaseName }} --><footer class="text-center mx-auto">
+<!-- {.File.ContentBaseName }} --><div class="flex-shrink">
+  <div class = "text-center mx-auto content-end">
   Made with <a href="https://hugo.io" class="">Hugo</a> by <a href="https://poppygo.io" class="">PoppyGo One</a>.
   
-</footer>
-</main>
+</div>
+</div>
+
 
 <script async defer data-website-id="XXXXX" src="//umami.example.com/umami.js"></script></body>
 

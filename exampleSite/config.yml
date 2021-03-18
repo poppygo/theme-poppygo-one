@@ -9,7 +9,7 @@ markup:  #See Configure Markup. New in v0.60.0
   highlight:
     style: github
 params:
-  poppygo_debug: false
+  poppygo_debug: true
   poppygo_cms: false
   authorBio: PoppyGo is one year old
   authorbio: ''

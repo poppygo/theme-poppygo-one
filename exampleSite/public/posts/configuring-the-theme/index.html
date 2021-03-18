@@ -75,7 +75,7 @@
 
 
 
-<link rel="stylesheet" href="/css/poppygo-one.min.043b648080f67eabe588b65c687349e9.css">
+<link rel="stylesheet" href="/css/poppygo-one.min.26de50e314d70e321cbb35a9be791636.css">
 
 
 
@@ -87,8 +87,7 @@
 
 </head>
 
-  <body class="flex flex-auto min-h-screen relative" >
-    <main class="flex-grow">
+  <body class="w-full min-h-screen relative flex-col" >
 
 <div id="btn-navbar-navbar" class="absolute p-2">
   <button  class="bg-poppycolor2 text-white rounded-xl px-10">
@@ -240,7 +239,7 @@
       <div class="col-span-1 text-xs  ">
               <div class = "bg-poppycolor2 ">
                   <p class="text-white">button_primary</p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-none text-xl px-16 py-4 text-poppycolor2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -327,8 +326,8 @@
     </div>
   </nav>
 
-  <div class="-mt-20 border-poppycolor1">
-    <ul id="menu" class=" hidden flex">
+  <div class="border-poppycolor1">
+    <ul id="menu" class=" hidden flex -mt-20">
       <div class="bg-poppycolor4 flex w-full mb-1 px-14 py-5 flex-col lg:flex-row justify-end items-end lg:items-center">
         <div class="py-5 flex-grow text-left">
             <a id="logo" class="mt-20 uppercase bg-poppycolor4 p-3 text-white text-2xl" href="/">PoppyGo One</a>
@@ -503,7 +502,7 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
                   <p class="text-white">bg_color</p>
                   <p class="text-white"> -> override in Component </p></div>
-              <div class = "text-poppycolor2">bg-poppycolor5</div>
+              <div class = "text-poppycolor2">bg-poppycolor3</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -564,7 +563,7 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
                   <p class="text-white">rounded</p>
                   <p class="text-white"> -> override in Component </p></div>
-              <div class = "text-poppycolor2">rounded-2xl</div>
+              <div class = "text-poppycolor2">rounded-none</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -578,7 +577,7 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
                   <p class="text-white">subtitle</p>
                   <p class="text-white"> -> override in Component </p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor2 text-poppycolor5 font-display2 subtitle text-3xl py-6</div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor5 font-display2 subtitle text-3xl py-6</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -599,9 +598,9 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
             document.getElementById('window-header-banner-banner').classList.toggle('hidden');
         });
 </script>
-<!-- {.File.ContentBaseName }} --><header class="bg-fixed text-center bg-center  bg-cover px-4 -mt-32 pt-32 py-10 py-10 pb-12 bg_5023595ab29faf0e265894b11fa6d029_banner bg-poppycolor5 ">
+<!-- {.File.ContentBaseName }} --><header class="bg-fixed text-center bg-center  bg-cover px-4 -mt-28 pt-32 py-10 py-10 pb-12 bg_5023595ab29faf0e265894b11fa6d029_banner bg-poppycolor3 ">
     <h1 class="text-6xl md:text-7xl lg:text-8xl  uppercase  bg-none text-poppycolor2 font-display1 title text-7xl py-10 ">Configuring the theme</h1>
-    <p class=" bg-poppycolor2 text-poppycolor5 font-display2 subtitle text-3xl py-6"></p>
+    <p class=" bg-none text-poppycolor5 font-display2 subtitle text-3xl py-6"></p>
 
   <div class="my-2 "></div>
 </header>
@@ -675,8 +674,9 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
       
         
       
-        <div class = "col-span-1 bg-poppycolor2 ">
-            <p class="text-white">name</p></div>
+        <div class = "col-span-1 bg-poppycolor2  bg-poppycolor3 ">
+            <p class="text-white">name</p>
+              <p class="text-white"> -> override in Page </p></div>
           <div class = "md: col-span-3 text-poppycolor2 flex">
             
                 article
@@ -690,9 +690,8 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
       
         
       
-        <div class = "col-span-1 bg-poppycolor2  bg-poppycolor3 ">
-            <p class="text-white">title</p>
-              <p class="text-white"> -> override in Page </p></div>
+        <div class = "col-span-1 bg-poppycolor2 ">
+            <p class="text-white">title</p></div>
           <div class = "md: col-span-3 text-poppycolor2 flex">
             
                 Configuring the theme
@@ -716,7 +715,7 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
                   <p class="text-white">bg_color</p>
                   <p class="text-white"> -> override in Component </p></div>
-              <div class = "text-poppycolor2">bg-white</div>
+              <div class = "text-poppycolor2">bg-poppycolor3</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -729,13 +728,14 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
                   <p class="text-white">border</p>
                   <p class="text-white"> -> override in Component </p></div>
-              <div class = "text-poppycolor2">border-none</div>
+              <div class = "text-poppycolor2">border-2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
-              <div class = "bg-poppycolor2 ">
-                  <p class="text-white">button_primary</p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">button_primary</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-poppycolor2"> bg-poppycolor3 font-body font-bold primary rounded-full text-6xl px-16 py-4 text-poppycolor2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -745,8 +745,9 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
             </div>
           
       <div class="col-span-1 text-xs  ">
-              <div class = "bg-poppycolor2 ">
-                  <p class="text-white">inner_space</p></div>
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">inner_space</p>
+                  <p class="text-white"> -> override in Component </p></div>
               <div class = "text-poppycolor2">py-10</div>
             </div>
           
@@ -754,18 +755,20 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
                   <p class="text-white">item_bg_color</p>
                   <p class="text-white"> -> override in Component </p></div>
-              <div class = "text-poppycolor2">bg-white</div>
+              <div class = "text-poppycolor2">bg-poppycolor1</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
-              <div class = "bg-poppycolor2 ">
-                  <p class="text-white">name</p></div>
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">name</p>
+                  <p class="text-white"> -> override in Component </p></div>
               <div class = "text-poppycolor2">components</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
-              <div class = "bg-poppycolor2 ">
-                  <p class="text-white">outer_space</p></div>
+              <div class = "bg-poppycolor2  bg-poppycolor3 ">
+                  <p class="text-white">outer_space</p>
+                  <p class="text-white"> -> override in Component </p></div>
               <div class = "text-poppycolor2">py-10</div>
             </div>
           
@@ -780,19 +783,19 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
                   <p class="text-white">shadow</p>
                   <p class="text-white"> -> override in Component </p></div>
-              <div class = "text-poppycolor2">shadow-none</div>
-            </div>
-          
-      <div class="col-span-1 text-xs  ">
-              <div class = "bg-poppycolor2 ">
-                  <p class="text-white">subtitle</p></div>
-              <div class = "text-poppycolor2"> bg-none text-poppycolor1 font-display2 subtitle text-2xl py-6</div>
+              <div class = "text-poppycolor2">shadow-lg</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
               <div class = "bg-poppycolor2  bg-poppycolor3 ">
-                  <p class="text-white">title</p>
+                  <p class="text-white">subtitle</p>
                   <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-poppycolor2"> bg-none text-poppycolor5 font-display2 subtitle text-3xl py-6</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = "bg-poppycolor2 ">
+                  <p class="text-white">title</p></div>
               <div class = "text-poppycolor2"> bg-none text-poppycolor2 font-display1 title text-7xl py-10</div>
             </div>
           
@@ -808,9 +811,9 @@ You can add  Images as shortcodes, columns as shortcodes etc.</p>
             document.getElementById('window-article1-article').classList.toggle('hidden');
         });
 </script>
-<!-- {.File.ContentBaseName }} --><section class="bg-white bg_3a35329387967b01165d6b6b3c436ba3_article py-10 py-10 bg-cover">
+<!-- {.File.ContentBaseName }} --><section class="bg-poppycolor3 bg_3a35329387967b01165d6b6b3c436ba3_article py-10 py-10 bg-cover">
 
-<article class="prose max-w-5xl mx-auto  bg-none text-poppycolor1 font-body body text-lg py-5 w-full bg-white rounded-none shadow-none border-none px-20">
+<article class="prose max-w-5xl mx-auto  bg-none text-poppycolor1 font-body body text-lg py-5 w-full bg-poppycolor1 rounded-none shadow-lg border-2 px-20">
     
       <header class="text-center pt-10 pb-6">
         <small class="text-center text-sm">
@@ -1090,7 +1093,7 @@ disqusShortname = <span style="color:#d14">&#34;your-disqus-shortname&#34;</span
       <div class="col-span-1 text-xs  ">
               <div class = "bg-poppycolor2 ">
                   <p class="text-white">button_primary</p></div>
-              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-2xl text-xl px-16 py-4 text-poppycolor2</div>
+              <div class = "text-poppycolor2"> bg-poppycolor1 font-body font-bold primary rounded-none text-xl px-16 py-4 text-poppycolor2</div>
             </div>
           
       <div class="col-span-1 text-xs  ">
@@ -1163,11 +1166,13 @@ disqusShortname = <span style="color:#d14">&#34;your-disqus-shortname&#34;</span
             document.getElementById('window-footer-footer').classList.toggle('hidden');
         });
 </script>
-<!-- {.File.ContentBaseName }} --><footer class="text-center mx-auto">
+<!-- {.File.ContentBaseName }} --><div class="flex-shrink">
+  <div class = "text-center mx-auto content-end">
   Made with <a href="https://hugo.io" class="">Hugo</a> by <a href="https://poppygo.io" class="">PoppyGo One</a>.
   
-</footer>
-</main>
+</div>
+</div>
+
 
 <script async defer data-website-id="XXXXX" src="//umami.example.com/umami.js"></script></body>
 

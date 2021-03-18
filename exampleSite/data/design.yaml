@@ -3,7 +3,7 @@ buttons:
     font: body
     font_weight: bold
     name: primary
-    rounded: 2xl
+    rounded: none
     size: xl
     space: 4
     text_color: poppycolor2
@@ -44,14 +44,6 @@ objects:
     outer_space: 10
     rounded: 2xl
     shadow: lg
-  # - bg_color: poppycolor6
-  #   border: 2
-  #   inner_space: 10
-  #   item_bg_color: ''
-  #   name: site
-  #   outer_space: 10
-  #   rounded: 2xl
-  #   shadow: lg
 typographies:
   - bg_color: none
     color: poppycolor2

@@ -31,10 +31,6 @@
        "key": "collections",
        "menuItems": [
          {
-           "key": "c__page-components",
-           "visible": true
-         },
-         {
            "key": "c__pages",
            "visible": true
          },
@@ -66,6 +62,10 @@
        "menuItems": [
          {
            "key": "config",
+           "visible": true
+         },
+         {
+           "key": "c__page-components",
            "visible": true
          }
        ],

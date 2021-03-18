@@ -97,6 +97,11 @@
            "type": "boolean"
          },
          {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
            "extensions": [
              "jpg",
              "png",
@@ -117,6 +122,16 @@
            "type": "bundle-manager"
          },
          {
+           "key": "bg_image",
+           "title": "Bg image",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
            "key": "mainContent",
            "title": "Main content",
            "type": "markdown"
@@ -131,12 +146,75 @@
              {
                "key": "border",
                "title": "Border",
-               "type": "string"
+               "type": "number"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "color",
+                   "title": "Color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "font",
+                   "title": "Font",
+                   "type": "string"
+                 },
+                 {
+                   "key": "font_weight",
+                   "title": "Font weight",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "rounded",
+                   "title": "Rounded",
+                   "type": "string"
+                 },
+                 {
+                   "key": "size",
+                   "title": "Size",
+                   "type": "string"
+                 },
+                 {
+                   "key": "space",
+                   "title": "Space",
+                   "type": "number"
+                 },
+                 {
+                   "key": "text_color",
+                   "title": "Text color",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "inner_space",
+               "title": "Inner space",
+               "type": "number"
              },
              {
                "key": "item_bg_color",
                "title": "Item bg color",
                "type": "string"
+             },
+             {
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "outer_space",
+               "title": "Outer space",
+               "type": "number"
              },
              {
                "key": "rounded",
@@ -156,10 +234,35 @@
                    "type": "string"
                  },
                  {
+                   "key": "bg_color",
+                   "title": "Bg color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "color",
+                   "title": "Color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "font",
+                   "title": "Font",
+                   "type": "string"
+                 },
+                 {
                    "arrayTitle": true,
                    "key": "name",
                    "title": "Name",
                    "type": "string"
+                 },
+                 {
+                   "key": "size",
+                   "title": "Size",
+                   "type": "string"
+                 },
+                 {
+                   "key": "space",
+                   "title": "Space",
+                   "type": "number"
                  }
                ],
                "key": "typographies",
@@ -190,11 +293,6 @@
          {
            "key": "poppy_variant",
            "title": "Poppy variant",
-           "type": "string"
-         },
-         {
-           "key": "position",
-           "title": "Position",
            "type": "string"
          },
          {
@@ -379,9 +477,6 @@
            "key": "s__homepage"
          },
          {
-           "key": "s__page-components"
-         },
-         {
            "key": "s__pages"
          },
          {
@@ -396,9 +491,6 @@
      {
        "key": "collections",
        "menuItems": [
-         {
-           "key": "c__page-components"
-         },
          {
            "key": "c__pages"
          },
@@ -425,6 +517,9 @@
        "menuItems": [
          {
            "key": "config"
+         },
+         {
+           "key": "c__page-components"
          }
        ],
        "title": "Site settings"
@@ -1066,128 +1161,6 @@
        "key": "s__posts",
        "previewUrl": "/posts/",
        "title": "Posts"
-     },
-     {
-       "dataformat": "yaml",
-       "fields": [
-         {
-           "content": "Relative link of this page: /page-components/",
-           "key": "info-s__page-components",
-           "theme": "gray-bare",
-           "title": "Info s page components",
-           "type": "info"
-         },
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "page_related_images",
-           "path": "",
-           "title": "Page related images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "key": "bg_image",
-               "title": "Bg image",
-               "type": "string"
-             },
-             {
-               "key": "list",
-               "title": "List",
-               "type": "string"
-             },
-             {
-               "key": "max_amount",
-               "title": "Max amount",
-               "type": "number"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "page_component",
-               "title": "Page component",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
-         },
-         {
-           "key": "resources",
-           "title": "Resources",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "page_component",
-               "title": "Page component",
-               "type": "string"
-             }
-           ],
-           "key": "subpage_sections",
-           "title": "Subpage sections",
-           "type": "accordion"
-         }
-       ],
-       "file": "content/page-components/_index.md",
-       "key": "s__page-components",
-       "previewUrl": "/page-components/",
-       "title": "Page components"
      },
      {
        "dataformat": "yaml",
