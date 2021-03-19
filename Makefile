@@ -1,4 +1,4 @@
-default: build_css build_hugotheme build_pogosite
+default: build_css
 
 build_css:
 	@echo COMPILING STATIC CSS
