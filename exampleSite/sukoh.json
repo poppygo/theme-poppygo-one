@@ -1,4 +1,9 @@
-{
+
+      
+      
+      
+      
+      {
    "build": [
      {
        "config": "config.yml",
@@ -122,225 +127,6 @@
            "type": "bundle-manager"
          },
          {
-           "key": "bg_image",
-           "title": "Bg image",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "fields": [
-             {
-               "key": "bg_color",
-               "title": "Bg color",
-               "type": "string"
-             },
-             {
-               "key": "border",
-               "title": "Border",
-               "type": "number"
-             },
-             {
-               "fields": [
-                 {
-                   "key": "color",
-                   "title": "Color",
-                   "type": "string"
-                 },
-                 {
-                   "key": "font",
-                   "title": "Font",
-                   "type": "string"
-                 },
-                 {
-                   "key": "font_weight",
-                   "title": "Font weight",
-                   "type": "string"
-                 },
-                 {
-                   "arrayTitle": true,
-                   "key": "name",
-                   "title": "Name",
-                   "type": "string"
-                 },
-                 {
-                   "key": "rounded",
-                   "title": "Rounded",
-                   "type": "string"
-                 },
-                 {
-                   "key": "size",
-                   "title": "Size",
-                   "type": "string"
-                 },
-                 {
-                   "key": "space",
-                   "title": "Space",
-                   "type": "number"
-                 },
-                 {
-                   "key": "text_color",
-                   "title": "Text color",
-                   "type": "string"
-                 }
-               ],
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "accordion"
-             },
-             {
-               "key": "inner_space",
-               "title": "Inner space",
-               "type": "number"
-             },
-             {
-               "key": "item_bg_color",
-               "title": "Item bg color",
-               "type": "string"
-             },
-             {
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "outer_space",
-               "title": "Outer space",
-               "type": "number"
-             },
-             {
-               "key": "rounded",
-               "title": "Rounded",
-               "type": "string"
-             },
-             {
-               "key": "shadow",
-               "title": "Shadow",
-               "type": "string"
-             },
-             {
-               "fields": [
-                 {
-                   "key": "bg",
-                   "title": "Bg",
-                   "type": "string"
-                 },
-                 {
-                   "key": "bg_color",
-                   "title": "Bg color",
-                   "type": "string"
-                 },
-                 {
-                   "key": "color",
-                   "title": "Color",
-                   "type": "string"
-                 },
-                 {
-                   "key": "font",
-                   "title": "Font",
-                   "type": "string"
-                 },
-                 {
-                   "arrayTitle": true,
-                   "key": "name",
-                   "title": "Name",
-                   "type": "string"
-                 },
-                 {
-                   "key": "size",
-                   "title": "Size",
-                   "type": "string"
-                 },
-                 {
-                   "key": "space",
-                   "title": "Space",
-                   "type": "number"
-                 }
-               ],
-               "key": "typographies",
-               "title": "Typographies",
-               "type": "accordion"
-             }
-           ],
-           "groupdata": true,
-           "key": "design",
-           "title": "Design",
-           "type": "section"
-         },
-         {
-           "key": "full_width",
-           "title": "Full width",
-           "type": "boolean"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "key": "poppy_type",
-           "title": "Poppy type",
-           "type": "string"
-         },
-         {
-           "key": "poppy_variant",
-           "title": "Poppy variant",
-           "type": "string"
-         },
-         {
-           "key": "resources",
-           "title": "Resources",
-           "type": "hidden"
-         }
-       ],
-       "folder": "content/page-components/",
-       "itemtitle": "Page component",
-       "key": "c__page-components",
-       "title": "Page components"
-     },
-     {
-       "dataformat": "yaml",
-       "extension": "md",
-       "fields": [
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "images",
-           "path": "images",
-           "title": "Images",
-           "type": "bundle-manager"
-         },
-         {
            "key": "mainContent",
            "title": "Main content",
            "type": "markdown"
@@ -349,112 +135,6 @@
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "page_component",
-               "title": "Page component",
-               "type": "string"
-             },
-             {
-               "key": "postition",
-               "title": "Postition",
-               "type": "string"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
-         },
-         {
-           "key": "resources",
-           "title": "Resources",
-           "type": "hidden"
-         }
-       ],
-       "folder": "content/pages/",
-       "itemtitle": "Page",
-       "key": "c__pages",
-       "title": "Pages"
-     },
-     {
-       "dataformat": "yaml",
-       "extension": "md",
-       "fields": [
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "images",
-           "path": "images",
-           "title": "Images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "key": "bg_image",
-               "title": "Bg image",
-               "type": "hidden"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "page_component",
-               "title": "Page component",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "markdown"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
          },
          {
            "key": "resources",
@@ -492,9 +172,6 @@
        "key": "collections",
        "menuItems": [
          {
-           "key": "c__pages"
-         },
-         {
            "key": "c__portfolio"
          },
          {
@@ -517,9 +194,6 @@
        "menuItems": [
          {
            "key": "config"
-         },
-         {
-           "key": "c__page-components"
          }
        ],
        "title": "Site settings"
