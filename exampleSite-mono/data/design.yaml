@@ -1,0 +1,71 @@
+buttons:
+  - color: poppycolor1
+    font: body
+    font_weight: bold
+    name: primary
+    rounded: none
+    size: xl
+    space: 4
+    text_color: poppycolor2
+  - color: poppycolor4
+    font: display1
+    font_weight: ''
+    name: secondary
+    rounded: null
+    size: sm
+    space: 2
+    text_color: poppycolor1
+colorscheme:
+  poppy_color1: '#434343'
+  poppy_color2: '#D00013'
+  poppy_color3: '#ffffff'
+  poppy_color4: '#C00013'
+  poppy_color5: '#F1F1F1'
+  poppy_color6: '#00ff00'
+fontscheme:
+  - family: Averia Serif Libre
+    name: display1
+    weight: 700
+  - family: Nunito
+    name: body
+    weight: 400
+  - family: Turret Road
+    name: art
+    weight: 700
+  - family: Comfortaa
+    name: display2
+    weight: 400
+objects:
+  - bg_color: poppycolor6
+    border: 2
+    inner_space: 10
+    item_bg_color: poppycolor1
+    name: components
+    outer_space: 10
+    rounded: 2xl
+    shadow: lg
+typographies:
+  - bg_color: none
+    color: poppycolor2
+    font: display1
+    name: title
+    size: 7xl
+    space: 10
+  - bg_color: none
+    color: poppycolor1
+    font: display2
+    name: subtitle
+    size: 2xl
+    space: 6
+  - bg_color: none
+    color: poppycolor1
+    font: body
+    name: body
+    size: lg
+    space: 5
+  - bg_color: poppycolor5
+    color: poppycolor1
+    font: art
+    name: art
+    size: 7xl
+    space: 0
