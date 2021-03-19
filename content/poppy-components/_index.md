@@ -5,30 +5,32 @@ iscjklanguage: ''
 mainContent: ''
 page_sections:
   - bg_image: ''
-    list: page-components
+    list: poppy-components
     max_amount: 100
     name: List of components
-    page_component: poppy-listing/cards1
+    page_component: poppy-listing/gallery1
     title: Have a look at the page components
-  - name: poppy-navigation/navbar
+    buttons:
+
+  - name: navbar
     page_component: poppy-navigation/navbar
     position: top
-  - name: poppy-navigation/footer
+  - name: footer
     page_component: poppy-navigation/footer
     position: bottom
 resources: []
 subpage_sections:
   - name: component
-    page_component: component
+    page_component: poppy-other/component
   - name: other
-    page_component: poppy-listing/cards1
+    page_component: poppy-listing/gallery1
     title: Other page sections
-    list: page-components
+    list: poppy-components
     bg_color: poppycolor2
-  - name: poppy-navigation/navbar
+  - name: navbar
     page_component: poppy-navigation/navbar
     position: top
-  - name: poppy-navigation/footer
+  - name: footer
     page_component: poppy-navigation/footer
     position: bottom
 title: Components

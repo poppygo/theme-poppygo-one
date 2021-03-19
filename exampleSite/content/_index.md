@@ -8,7 +8,7 @@ page_sections:
     full_height: true
     full_width: true
     name: home-hero-banner
-    page_component: header-banner
+    page_component: poppy-banner/header-banner
     subtitle: The most flexible Hugo theme for all your sites
     title: Experience PoppyGo One!
   - bg_image: none
@@ -37,28 +37,28 @@ page_sections:
         image: aron
         name: item1
     name: benefits
-    page_component: explainer
+    page_component: poppy-shortlist/explainer
     title: What makes PoppyGo One great?
   - bg_image: ''
     full_height: false
     full_width: false
     name: Explore components
-    page_component: gallery1
+    page_component: poppy-listing/gallery1
     subtitle: ''
     title: Explore all components
-    list: page-components
-  - name: navbar
-    page_component: navbar
+    list: poppy-components
+  - name: Navbar
+    page_component: poppy-navigation/navbar
     position: top
-  - name: footer
-    page_component: footer
+  - name: Footer
+    page_component: poppy-navigation/footer
     position: bottom
 resources: []
 subpage_sections:
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
-    page_component: header-banner
+    page_component: poppy-banner/header-banner
     subtitle: '->frompage'
     title: '->frompage'
     design:
@@ -67,14 +67,14 @@ subpage_sections:
       full_width: false
   - bg_image: ''
     buttons: ''
-    name: article
-    page_component: gallery1
+    name: Cards list
+    page_component: poppy-shortlist/cards1
     subtitle: ''
     title: All items
-  - name: navbar
-    page_component: navbar
-  - name: footer
-    page_component: footer
+  - name: Navbar
+    page_component: poppy-navigation/navbar
+  - name: Footer
+    page_component: poppy-navigation/footer
 
 title: Homepage
 

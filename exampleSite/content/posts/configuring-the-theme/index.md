@@ -36,7 +36,7 @@ disqusShortname = "your-disqus-shortname"
   headline = "This is a headline"
   description = "A minimalist theme for Hugo, build with Tailwind CSS."
 
-  # Copyright note in the footer
+  # Copyright note in the poppy-navigation/footer
   copyright = "Copyright © 2020 Someone"
 
   # Image in the homepage. You can setup a different image for social media

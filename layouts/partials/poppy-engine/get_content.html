@@ -12,8 +12,6 @@
   {{- $params = $params | append (string $key) -}}
 {{ end }}
 
-{{/* {{- $params := slice "title" "subtitle" "image" "imagesvg" "bg_image" "full_width" "max_columns" "buttons" "items" "list" "max_amount" "size" "full_height" "menus" "position" -}} */}}
-
 {{/* ----------- Set overrides of content in the page over the component -------- */}}
 {{- range $params -}}
 

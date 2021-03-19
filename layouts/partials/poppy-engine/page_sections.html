@@ -23,7 +23,7 @@
 
 {{- range $sorted_sections -}}
     {{- $page_section := .}}
-    {{- $page_component := site.GetPage (printf "page-components/%s" .page_component ) -}}
+    {{- $page_component := site.GetPage (printf "poppy-components/%s" .page_component ) -}}
 
     {{ with $page_component }}
       {{- $poppy_component := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
