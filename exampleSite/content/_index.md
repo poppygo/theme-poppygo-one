@@ -8,7 +8,9 @@ page_sections:
     full_height: true
     full_width: true
     name: home-hero-banner
-    page_component: poppy-banner/header-banner
+    page_component:
+      type: poppy-banner
+      variant: header-banner
     subtitle: The most flexible Hugo theme for all your sites
     title: Experience PoppyGo One!
   - bg_image: none
@@ -37,28 +39,38 @@ page_sections:
         image: aron
         name: item1
     name: benefits
-    page_component: poppy-shortlist/explainer
+    page_component:
+      type: poppy-shortlist
+      variant: explainer
     title: What makes PoppyGo One great?
   - bg_image: ''
     full_height: false
     full_width: false
     name: Explore components
-    page_component: poppy-listing/gallery1
+    page_component:
+      type: poppy-listing
+      variant: gallery1
     subtitle: ''
     title: Explore all components
     list: poppy-components
   - name: Navbar
-    page_component: poppy-navigation/navbar
+    page_component:
+      type: poppy-navigation
+      variant: navbar
     position: top
   - name: Footer
-    page_component: poppy-navigation/footer
+    page_component:
+      type: poppy-navigation
+      variant: footer
     position: bottom
 resources: []
 subpage_sections:
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
-    page_component: poppy-banner/header-banner
+    page_component: 
+      type: poppy-banner
+      variant: header-banner
     subtitle: '->frompage'
     title: '->frompage'
     design:
@@ -68,13 +80,19 @@ subpage_sections:
   - bg_image: ''
     buttons: ''
     name: Cards list
-    page_component: poppy-shortlist/cards1
+    page_component:
+      type: poppy-shortlist
+      variant: cards1
     subtitle: ''
     title: All items
   - name: Navbar
-    page_component: poppy-navigation/navbar
+    page_component:
+      type: poppy-navigation
+      variant: navbar
   - name: Footer
-    page_component: poppy-navigation/footer
+    page_component:
+      type: poppy-navigation
+      variant: footer
 
 title: Homepage
 

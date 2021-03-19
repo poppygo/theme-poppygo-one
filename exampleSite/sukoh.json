@@ -1,9 +1,4 @@
-
-      
-      
-      
-      
-      {
+{
    "build": [
      {
        "config": "config.yml",
@@ -598,9 +593,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              },
              {
                "key": "subtitle",
@@ -664,9 +672,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              },
              {
                "key": "subtitle",
@@ -763,9 +784,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              },
              {
                "key": "title",
@@ -806,9 +840,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              },
              {
                "key": "postition",
@@ -915,9 +962,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              },
              {
                "key": "title",
@@ -943,9 +1003,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              }
            ],
            "key": "subpage_sections",
@@ -1032,9 +1105,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              },
              {
                "key": "title",
@@ -1065,9 +1151,22 @@
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "variant",
+                   "title": "Variant",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
                "key": "page_component",
                "title": "Page component",
-               "type": "string"
+               "type": "section"
              },
              {
                "key": "subtitle",

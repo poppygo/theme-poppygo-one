@@ -4,33 +4,47 @@ aliases:
   - product
 title: Portfolio
 subpage_sections:
-  - page_component: poppy-banner/header-banner
+  - page_component:
+      type: poppy-banner
+      variant: header-banner
     name: Hero banner
     title: '->frompage'
     subtitle: '->frompage'
     buttons: '->frompage'
     bg_image: '->frompage'
   - bg_image: ''
-    page_component: poppy-article/article1
+    page_component:
+      type: poppy-article
+      variant: article1
     name: article
     title: ''
   - name: Navbar
-    page_component: poppy-navigation/navbar
+    page_component:
+      type: poppy-navigation
+      variant: navbar
     position: top
   - name: Footer
-    page_component: poppy-navigation/footer
+    page_component:
+      type: poppy-navigation
+      variant: footer
     position: bottom
 page_sections:
   - bg_image: ''
-    page_component: poppy-listing/gallery1
+    page_component:
+      type: poppy-listing
+      variant: gallery1
     list: portfolio
-    name: testlist4
+    name: Portfolio listing
     title: 'Have a look at the portfolio'
   - name: Navbar
-    page_component: poppy-navigation/navbar
+    page_component:
+      type: poppy-navigation
+      variant: navbar
     position: top
-  - name: poppy-navigation/footer
-    page_component: poppy-navigation/footer
+  - name: Footer
+    page_component: 
+      type: poppy-navigation
+      variant: footer
     position: bottom
 
 ---
