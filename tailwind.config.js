@@ -1,7 +1,13 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./layouts/**/*.html','./exampleSite/public/**/*.html' ,'./exampleSite/public/*.html' ,'./public/page-components/*.html'],
+    content: [
+      './layouts/**/*.html',
+      './exampleSite/public/**/*.html',
+      './exampleSite/public/*.html',
+      './exampleSite-mono/public/**/*.html',
+      './exampleSite-mono/public/*.html',
+      './public/page-components/*.html'],
   },
   theme: {
     extend: {
