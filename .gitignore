@@ -10,3 +10,4 @@ exampleSite-mono/.sukoh
 node_modules
 build
 dist
+assets/css/tailwind.css
