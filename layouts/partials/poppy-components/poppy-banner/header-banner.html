@@ -3,10 +3,22 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <header class="bg-fixed text-center bg-center {{if $content.full_height}}h-screen{{end}} bg-cover px-4 -mt-28 pt-32 {{.outer_space}} {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
-    <h1 class="uppercase {{.title}} ">{{$content.title}}</h1>
-    <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
+  <header class="flex bg-fixed bg-center {{if $content.full_height}}h-screen{{end}} bg-cover px-4 -mt-28 pt-42 {{.outer_space}} {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
+    {{/* HALLO
+    <div class="flex h-screen justify-center items-center">
+      <div class="text-center bg-blue-400"> <!-- ⬅️ THIS DIV WILL BE CENTERED -->
+          <h1 class="text-3xl">HEADING</h1>
+          <p class="text-xl">Sub text</p>
+      </div>
+    </div> */}}
+
+    <div class= "flex flex-col justify-center mx-auto">
+      <div class = "text-center">
+      <h1 class="uppercase {{.title}} text-center ">{{$content.title}}</h1>
+      <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
+      {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
+    </div>
+    </div>
     {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "link" $content.link "class" "w-full") -}}
-    {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
   </header>
 {{- end -}}
