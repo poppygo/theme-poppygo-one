@@ -3,6 +3,10 @@
 themes/poppygo-one/node_modules/
 exampleSite/resources
 exampleSite/public
+exampleSite/.sukoh
+exampleSite-mono/resources
+exampleSite-mono/public
+exampleSite-mono/.sukoh
 node_modules
 build
 dist
