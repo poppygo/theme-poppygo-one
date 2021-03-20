@@ -1,0 +1,1420 @@
+{
+   "build": [
+     {
+       "config": "config.yml",
+       "key": "default"
+     }
+   ],
+   "collections": [
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "description",
+           "title": "Description",
+           "type": "markdown"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "author",
+           "title": "Author",
+           "type": "string"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "tags",
+           "title": "Tags",
+           "type": "chips"
+         }
+       ],
+       "folder": "content/posts/",
+       "itemtitle": "Post",
+       "key": "c__posts",
+       "title": "Posts"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "bg_image",
+           "title": "Bg image",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "border",
+               "title": "Border",
+               "type": "number"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "color",
+                   "title": "Color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "font",
+                   "title": "Font",
+                   "type": "string"
+                 },
+                 {
+                   "key": "font_weight",
+                   "title": "Font weight",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "rounded",
+                   "title": "Rounded",
+                   "type": "string"
+                 },
+                 {
+                   "key": "size",
+                   "title": "Size",
+                   "type": "string"
+                 },
+                 {
+                   "key": "space",
+                   "title": "Space",
+                   "type": "number"
+                 },
+                 {
+                   "key": "text_color",
+                   "title": "Text color",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "inner_space",
+               "title": "Inner space",
+               "type": "number"
+             },
+             {
+               "key": "item_bg_color",
+               "title": "Item bg color",
+               "type": "string"
+             },
+             {
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "outer_space",
+               "title": "Outer space",
+               "type": "number"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "shadow",
+               "title": "Shadow",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bg",
+                   "title": "Bg",
+                   "type": "string"
+                 },
+                 {
+                   "key": "bg_color",
+                   "title": "Bg color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "color",
+                   "title": "Color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "font",
+                   "title": "Font",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "size",
+                   "title": "Size",
+                   "type": "string"
+                 },
+                 {
+                   "key": "space",
+                   "title": "Space",
+                   "type": "number"
+                 }
+               ],
+               "key": "typographies",
+               "title": "Typographies",
+               "type": "accordion"
+             }
+           ],
+           "groupdata": true,
+           "key": "design",
+           "title": "Design",
+           "type": "section"
+         },
+         {
+           "key": "full_width",
+           "title": "Full width",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "poppy_type",
+           "title": "Poppy type",
+           "type": "string"
+         },
+         {
+           "key": "poppy_variant",
+           "title": "Poppy variant",
+           "type": "string"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "folder": "content/page-components/",
+       "itemtitle": "Page component",
+       "key": "c__page-components",
+       "title": "Page components"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "postition",
+               "title": "Postition",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "folder": "content/pages/",
+       "itemtitle": "Page",
+       "key": "c__pages",
+       "title": "Pages"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "hidden"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "markdown"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "folder": "content/portfolio/",
+       "itemtitle": "Portfolio",
+       "key": "c__portfolio",
+       "title": "Portfolio"
+     }
+   ],
+   "hugover": "extended_0.80.0",
+   "menu": [
+     {
+       "key": "singles",
+       "menuItems": [
+         {
+           "key": "s__homepage"
+         },
+         {
+           "key": "s__pages"
+         },
+         {
+           "key": "s__portfolio"
+         },
+         {
+           "key": "s__posts"
+         }
+       ],
+       "title": "Single pages"
+     },
+     {
+       "key": "collections",
+       "menuItems": [
+         {
+           "key": "c__pages"
+         },
+         {
+           "key": "c__portfolio"
+         },
+         {
+           "key": "c__posts"
+         }
+       ],
+       "title": "Collections of pages"
+     },
+     {
+       "key": "data",
+       "menuItems": [
+         {
+           "key": "ds_data_design"
+         }
+       ],
+       "title": "Data files"
+     },
+     {
+       "key": "general",
+       "menuItems": [
+         {
+           "key": "config"
+         },
+         {
+           "key": "c__page-components"
+         }
+       ],
+       "title": "Site settings"
+     }
+   ],
+   "serve": [
+     {
+       "config": "config.yml",
+       "key": "default"
+     }
+   ],
+   "singles": [
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "fields": [
+             {
+               "key": "color",
+               "title": "Color",
+               "type": "string"
+             },
+             {
+               "key": "font",
+               "title": "Font",
+               "type": "string"
+             },
+             {
+               "key": "font_weight",
+               "title": "Font weight",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "size",
+               "title": "Size",
+               "type": "string"
+             },
+             {
+               "key": "space",
+               "title": "Space",
+               "type": "number"
+             },
+             {
+               "key": "text_color",
+               "title": "Text color",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "poppy_color1",
+               "title": "Poppy color1",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color2",
+               "title": "Poppy color2",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color3",
+               "title": "Poppy color3",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color4",
+               "title": "Poppy color4",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color5",
+               "title": "Poppy color5",
+               "type": "string"
+             },
+             {
+               "key": "poppy_color6",
+               "title": "Poppy color6",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "colorscheme",
+           "title": "Colorscheme",
+           "type": "section"
+         },
+         {
+           "fields": [
+             {
+               "key": "family",
+               "title": "Family",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "weight",
+               "title": "Weight",
+               "type": "number"
+             }
+           ],
+           "key": "fontscheme",
+           "title": "Fontscheme",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "border",
+               "title": "Border",
+               "type": "number"
+             },
+             {
+               "key": "inner_space",
+               "title": "Inner space",
+               "type": "number"
+             },
+             {
+               "key": "item_bg_color",
+               "title": "Item bg color",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "outer_space",
+               "title": "Outer space",
+               "type": "number"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "shadow",
+               "title": "Shadow",
+               "type": "string"
+             }
+           ],
+           "key": "objects",
+           "title": "Objects",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "color",
+               "title": "Color",
+               "type": "string"
+             },
+             {
+               "key": "font",
+               "title": "Font",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "size",
+               "title": "Size",
+               "type": "string"
+             },
+             {
+               "key": "space",
+               "title": "Space",
+               "type": "number"
+             }
+           ],
+           "key": "typographies",
+           "title": "Typographies",
+           "type": "accordion"
+         }
+       ],
+       "file": "/data/design.yaml",
+       "key": "ds_data_design",
+       "previewUrl": "/",
+       "title": "Design"
+     },
+     {
+       "dataformat": "yml",
+       "fields": [
+         {
+           "key": "description",
+           "title": "Description",
+           "type": "string"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "authorbio",
+               "title": "Authorbio",
+               "type": "string"
+             },
+             {
+               "key": "avatar",
+               "title": "Avatar",
+               "type": "string"
+             },
+             {
+               "key": "copyright",
+               "title": "Copyright",
+               "type": "string"
+             },
+             {
+               "key": "cover",
+               "title": "Cover",
+               "type": "string"
+             },
+             {
+               "key": "description",
+               "title": "Description",
+               "type": "markdown"
+             },
+             {
+               "key": "email",
+               "title": "Email",
+               "type": "string"
+             },
+             {
+               "key": "github",
+               "title": "Github",
+               "type": "string"
+             },
+             {
+               "key": "headline",
+               "title": "Headline",
+               "type": "string"
+             },
+             {
+               "key": "linkedin",
+               "title": "Linkedin",
+               "type": "string"
+             },
+             {
+               "key": "ogimage",
+               "title": "Ogimage",
+               "type": "string"
+             },
+             {
+               "key": "poppygo_cms",
+               "title": "Poppygo cms",
+               "type": "boolean"
+             },
+             {
+               "key": "poppygo_debug",
+               "title": "Poppygo debug",
+               "type": "boolean"
+             },
+             {
+               "key": "twitter",
+               "title": "Twitter",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "siteid",
+                   "title": "Siteid",
+                   "type": "string"
+                 },
+                 {
+                   "key": "trackerscript",
+                   "title": "Trackerscript",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "umami",
+               "title": "Umami",
+               "type": "section"
+             }
+           ],
+           "groupdata": true,
+           "key": "params",
+           "title": "Params",
+           "type": "section"
+         }
+       ],
+       "file": "config.yml",
+       "key": "config",
+       "title": "Settings"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /",
+           "key": "info-s__homepage",
+           "theme": "gray-bare",
+           "title": "Info s homepage",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "author",
+           "title": "Author",
+           "type": "string"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "full_height",
+               "title": "Full height",
+               "type": "boolean"
+             },
+             {
+               "key": "full_width",
+               "title": "Full width",
+               "type": "boolean"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "markdown"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bg_color",
+                   "title": "Bg color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "full_height",
+                   "title": "Full height",
+                   "type": "boolean"
+                 },
+                 {
+                   "key": "full_width",
+                   "title": "Full width",
+                   "type": "boolean"
+                 }
+               ],
+               "groupdata": true,
+               "key": "design",
+               "title": "Design",
+               "type": "section"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
+         }
+       ],
+       "file": "content/_index.md",
+       "key": "s__homepage",
+       "previewUrl": "/",
+       "title": "Homepage"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /posts/",
+           "key": "info-s__posts",
+           "theme": "gray-bare",
+           "title": "Info s posts",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "aliases",
+           "title": "Aliases",
+           "type": "chips"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
+             {
+               "key": "full_height",
+               "title": "Full height",
+               "type": "boolean"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "postition",
+               "title": "Postition",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
+         }
+       ],
+       "file": "content/posts/_index.md",
+       "key": "s__posts",
+       "previewUrl": "/posts/",
+       "title": "Posts"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /pages/",
+           "key": "info-s__pages",
+           "theme": "gray-bare",
+           "title": "Info s pages",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "key": "max_amount",
+               "title": "Max amount",
+               "type": "number"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
+         }
+       ],
+       "file": "content/pages/_index.md",
+       "key": "s__pages",
+       "previewUrl": "/pages/",
+       "title": "Pages"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /portfolio/",
+           "key": "info-s__portfolio",
+           "theme": "gray-bare",
+           "title": "Info s portfolio",
+           "type": "info"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "aliases",
+           "title": "Aliases",
+           "type": "chips"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "list",
+               "title": "List",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "page_component",
+               "title": "Page component",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
+         }
+       ],
+       "file": "content/portfolio/_index.md",
+       "key": "s__portfolio",
+       "previewUrl": "/portfolio/",
+       "title": "Portfolio"
+     }
+   ]
+ }

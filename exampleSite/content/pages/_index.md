@@ -9,40 +9,40 @@ page_sections:
     max_amount: 100
     name: List of components
     page_component:
-      type: poppy-listing
-      variant: cards1
+      poppy_type: poppy-listing
+      variant: gallery1
     title: Have a look at the page components
   - name: Navbar
     page_component:
-      type: poppy-navigation
+      poppy_type: poppy-navigation
       variant: navbar
     position: top
   - name: Footer
     page_component:
-      type: poppy-navigation
+      poppy_type: poppy-footer
       variant: footer
     position: bottom
 resources: []
 subpage_sections:
   - name: component
     page_component:
-      type: poppy-other
+      poppy_type: poppy-other
       variant: component
   - name: other Components
     page_component:
-      type: poppy-listing
-      variant: cards1
+      poppy_type: poppy-listing
+      variant: gallery1
     title: Other page sections
     list: page-components
     bg_color: poppycolor2
   - name: Navbar
     page_component:
-      type: poppy-navigation
+      poppy_type: poppy-navigation
       variant: navbar
     position: top
   - name: Footer
     page_component:
-      type: poppy-navigation
+      poppy_type: poppy-footer
       variant: footer
     position: bottom
 title: Components
