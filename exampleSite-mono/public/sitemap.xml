@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/poppy-components/poppy-article/article1/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-other/component/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-shortlist/explainer/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-navigation/footer/</loc>
+  </url>
+  
+  <url>
+    <loc>/sukoh.json</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-banner/header-banner/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-listing/gallery1/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-listing/blog-teaser1/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-listing/listcards/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-form/newsletter/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-banner/inpage-banner/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-shortlist/cards1/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-shortlist/mediaobject1/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-banner/header-banner-mono/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-navigation/navbar-mono/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-navigation/navbar/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-form/small-newsletter/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+</urlset>

@@ -55,8 +55,8 @@ page_sections:
     list: page-components
   - name: navbar
     page_component:
-    poppy_type: poppy-navigation
-    variant: navbar-mono
+      poppy_type: poppy-navigation
+      variant: navbar-mono
     position: top
   - name: footer
     page_component:
