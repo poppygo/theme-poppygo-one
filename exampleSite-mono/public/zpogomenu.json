@@ -6,40 +6,9 @@
          {
            "key": "s__homepage",
            "visible": true
-         },
-         {
-           "key": "s__pages",
-           "visible": true
-         },
-         {
-           "key": "s__portfolio",
-           "visible": true
-         },
-         {
-           "key": "s__posts",
-           "visible": true
          }
        ],
        "title": "Single pages",
-       "visible": true
-     },
-     {
-       "key": "collections",
-       "menuItems": [
-         {
-           "key": "c__pages",
-           "visible": true
-         },
-         {
-           "key": "c__portfolio",
-           "visible": true
-         },
-         {
-           "key": "c__posts",
-           "visible": true
-         }
-       ],
-       "title": "Collections of pages",
        "visible": true
      },
      {
@@ -58,10 +27,6 @@
        "menuItems": [
          {
            "key": "config",
-           "visible": true
-         },
-         {
-           "key": "c__page-components",
            "visible": true
          }
        ],

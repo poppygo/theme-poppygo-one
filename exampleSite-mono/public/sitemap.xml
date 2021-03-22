@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>/poppy-components/poppy-navigation/footer/</loc>
+    <loc>/poppy-components/poppy-footer/footer/</loc>
   </url>
   
   <url>
@@ -72,6 +72,10 @@
   
   <url>
     <loc>/poppy-components/poppy-navigation/navbar/</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-footer/3-column-footer/</loc>
   </url>
   
   <url>
