@@ -64,7 +64,7 @@ params:
   ogImage: images/og_image.jpg
   ogimage: ''
   poppygo_cms: false
-  poppygo_debug: false
+  poppygo_debug: true
   twitter: XXXX
   umami:
     siteID: XXXXX

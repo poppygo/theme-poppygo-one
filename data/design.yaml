@@ -15,14 +15,6 @@ buttons:
     size: sm
     space: 2
     text_color: poppycolor1
-  - color: none
-    font: body
-    font_weight: bold
-    name: link
-    rounded: null
-    size: sm
-    space: 2
-    text_color: poppycolor1
 colorscheme:
   poppy_color1: '#996633'
   poppy_color2: '#5205ad'

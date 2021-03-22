@@ -41,7 +41,7 @@
           <a id="logo" class=" uppercase {{.bg_color}} p-3 text-white flex-left text-3xl" href="/">{{$content.title}}</a>
         </div>
         {{ end }}
-        {{ range $content.menus.main }}
+        {{ range $content.menus.main}}
           <li class="flex my-2 lg:my-2 mx-1 lg:mx-2 ">
             <a title="{{ .name }}" class="uppercase font-bold lg:py-2 lg:px-3 text-white text-xl opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="{{ .url }}">{{ .name }}</a>
           </li>

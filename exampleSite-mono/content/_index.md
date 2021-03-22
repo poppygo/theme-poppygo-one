@@ -8,9 +8,8 @@ page_sections:
     full_height: true
     full_width: true
     name: home-hero-banner
-    page_component:
-      poppy_type: poppy-banner
-      variant: header-banner-mono
+    poppy_type: poppy-banner
+    poppy_variant: header-banner-mono
     subtitle: The most flexible Hugo theme for all your sites
     title: Experience mono
   - bg_image: none
@@ -39,61 +38,47 @@ page_sections:
         image: aron
         name: item1
     name: benefits
-    page_component:
-      poppy_type: poppy-shortlist
-      variant: explainer
+    poppy_type: poppy-shortlist
+    poppy_variant: explainer
     title: What makes PoppyGo One great?
   - bg_image: ''
     full_height: false
     full_width: false
     name: Explore components
-    page_component:
-      poppy_type: poppy-listing
-      variant: gallery1
+    poppy_type: poppy-listing
+    poppy_variant: gallery1
     subtitle: ''
     title: Explore all components
     list: page-components
   - name: navbar
-    page_component:
-      poppy_type: poppy-navigation
-      variant: navbar-mono
+    poppy_type: poppy-navigation
+    poppy_variant: navbar-mono
     position: top
   - name: footer
-    page_component:
-      poppy_type: poppy-footer
-      variant: footer
+    poppy_type: poppy-footer
+    poppy_variant: footer
     position: bottom
 resources: []
 subpage_sections:
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
-    page_component:
-      poppy_type: poppy-banner
-      variant: header-banner
+    poppy_type: poppy-banner
+    poppy_variant: header-banner
     subtitle: '->frompage'
     title: '->frompage'
-    design:
-      bg_color: poppycolor4
-      full_height: false
-      full_width: false
   - bg_image: ''
     buttons: ''
     name: article
-    page_component:
-      poppy_type: poppy-listing
-      variant: gallery1
+    poppy_type: poppy-listing
+    poppy_variant: gallery1
     subtitle: ''
     title: All items
   - name: navbar
-    page_component:
-      poppy_type: poppy-navigation
-      variant: navbar
+    poppy_type: poppy-navigation
+    poppy_variant: navbar
   - name: footer
-    page_component:
-      poppy_type: poppy-footer
-      variant: footer
-
+    poppy_type: poppy-footer
+    poppy_variant: footer
 title: Homepage
-
 ---

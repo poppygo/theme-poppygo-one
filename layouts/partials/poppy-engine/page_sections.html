@@ -11,29 +11,21 @@
   {{- $page_sections = $page.Params.page_sections  -}}
 {{- end -}}
 
-{{- range where $page_sections ".position" "top" -}}
-    {{- $sorted_sections =  $sorted_sections | append . -}}
-{{- end -}}
-{{- range where $page_sections ".position" nil -}}
-    {{- $sorted_sections =  $sorted_sections | append . -}}
-{{- end -}}
-{{- range where $page_sections ".position" "bottom" -}}
-    {{- $sorted_sections =  $sorted_sections | append . -}}
-{{- end -}}
+{{ if $page_sections }}
+  {{- range where $page_sections ".position" "top" -}}
+      {{- $sorted_sections =  $sorted_sections | append . -}}
+  {{- end -}}
+  {{- range where $page_sections ".position" nil -}}
+      {{- $sorted_sections =  $sorted_sections | append . -}}
+  {{- end -}}
+  {{- range where $page_sections ".position" "bottom" -}}
+      {{- $sorted_sections =  $sorted_sections | append . -}}
+  {{- end -}}
+{{ end }}
 
 {{- range $sorted_sections -}}
     {{- $page_section := .}}
-    {{- $page_component := "" -}}
-    {{- with .page_component -}}
-      {{- if not (in . "poppy") }}
-      {{- $page_component = site.GetPage (printf "poppy-components/%s/%s" .poppy_type .variant) -}}
-      {{ else }}
-        poppy_component must be defined as a map of poppy_type and variant
-      {{ end }}
-    {{- end -}}
-
-
-
+    {{- $page_component := site.GetPage (printf "poppy-components/%s/%s" .poppy_type .poppy_variant) -}}
     {{ with $page_component }}
       {{- $poppy_component := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
       {{- if (fileExists (printf "%s/%s/layouts/partials/%s.html" $themesDir $theme $poppy_component )) }}

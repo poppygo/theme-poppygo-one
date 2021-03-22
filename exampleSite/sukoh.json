@@ -605,7 +605,7 @@
                    "type": "string"
                  }
                ],
-               "groupdata": true,
+               "groupdata": false,
                "key": "page_component",
                "title": "Page component",
                "type": "section"
@@ -663,7 +663,7 @@
                "groupdata": true,
                "key": "design",
                "title": "Design",
-               "type": "section"
+               "type": "nest"
              },
              {
                "arrayTitle": true,
@@ -684,7 +684,7 @@
                    "type": "string"
                  }
                ],
-               "groupdata": true,
+               "groupdata": false,
                "key": "page_component",
                "title": "Page component",
                "type": "section"
