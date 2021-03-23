@@ -1,12 +1,12 @@
 buttons:
-  - color: poppycolor1
-    font: body
+  - color: poppycolor4
+    font: display2
     font_weight: bold
     name: primary
-    rounded: none
+    rounded: 2xl
     size: xl
     space: 4
-    text_color: poppycolor2
+    text_color: poppycolor1
   - color: poppycolor4
     font: display1
     font_weight: ''
@@ -44,8 +44,8 @@ fontscheme:
     name: display2
     weight: 400
 objects:
-  - bg_color: poppycolor6
-    border: 2
+  - bg_color: poppycolor4
+    border: 0
     inner_space: 10
     item_bg_color: poppycolor1
     name: components

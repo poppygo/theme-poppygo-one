@@ -5,8 +5,8 @@ iscjklanguage: ''
 mainContent: ''
 page_sections:
   - bg_image: flexible
-    full_height: true
-    full_width: true
+    full_height: false
+    full_width: false
     name: home-hero-banner
     poppy_type: poppy-banner
     poppy_variant: header-banner
@@ -28,9 +28,8 @@ page_sections:
           Unlike other themes, customizing is in the DNA of the theme.
         image: john
         name: design
-      - bodytext: >
+      - bodytext: |
           ## Build your site in a matter of hours
-
           We made it simple, clear and fast for you.
         buttons:
           - label: read more
@@ -40,24 +39,35 @@ page_sections:
     name: benefits
     poppy_type: poppy-shortlist
     poppy_variant: explainer
+    subtitle: ''
     title: What makes PoppyGo One great?
   - bg_image: ''
     full_height: false
     full_width: false
+    list: poppy-components
     name: Explore components
     poppy_type: poppy-listing
     poppy_variant: gallery1
     subtitle: ''
     title: Explore all components
-    list: poppy-components
-  - name: Navbar
+  - bg_image: ''
+    full_height: false
+    full_width: false
+    name: Navbar
     poppy_type: poppy-navigation
     poppy_variant: navbar
     position: top
-  - name: Footer
+    subtitle: ''
+    title: ''
+  - bg_image: ''
+    full_height: false
+    full_width: false
+    name: Footer
     poppy_type: poppy-footer
-    poppy_variant: footer
+    poppy_variant: 3-column-footer
     position: bottom
+    subtitle: ''
+    title: ''
 resources: []
 subpage_sections:
   - bg_image: '->frompage'
@@ -67,13 +77,21 @@ subpage_sections:
     poppy_variant: header-banner
     subtitle: '->frompage'
     title: '->frompage'
-  - name: Navbar
+  - bg_image: ''
+    buttons: ''
+    name: Navbar
     poppy_type: poppy-navigation
     poppy_variant: navbar
-  - name: Footer
+    subtitle: ''
+    title: ''
+  - bg_image: ''
+    buttons: ''
+    name: Footer
     poppy_type: poppy-footer
     poppy_variant: footer
-
+    subtitle: ''
+    title: ''
 title: Homepage
 
 ---
+
