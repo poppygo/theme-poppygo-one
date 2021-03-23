@@ -139,8 +139,20 @@
            "multiple": false,
            "options": [
              {
-               "text": "poppy-navigation",
-               "value": "poppy-navigation"
+               "text": "my-component",
+               "value": ""
+             },
+             {
+               "text": "poppy-article",
+               "value": "poppy-article"
+             },
+             {
+               "text": "poppy-other",
+               "value": "poppy-other"
+             },
+             {
+               "text": "poppy-shortlist",
+               "value": "poppy-shortlist"
              },
              {
                "text": "poppy-footer",
@@ -151,20 +163,16 @@
                "value": "poppy-banner"
              },
              {
-               "text": "poppy-shortlist",
-               "value": "poppy-shortlist"
-             },
-             {
                "text": "poppy-listing",
                "value": "poppy-listing"
              },
              {
-               "text": "poppy-article",
-               "value": "poppy-article"
-             },
-             {
                "text": "poppy-form",
                "value": "poppy-form"
+             },
+             {
+               "text": "poppy-navigation",
+               "value": "poppy-navigation"
              }
            ],
            "title": "Poppy type",
@@ -175,64 +183,80 @@
            "multiple": false,
            "options": [
              {
+               "text": "mono-footer",
+               "value": "mono-footer"
+             },
+             {
+               "text": "mono-navbar",
+               "value": "mono-navbar"
+             },
+             {
                "text": "article1",
                "value": "article1"
              },
              {
-               "text": "cards1",
-               "value": "cards1"
+               "text": "component",
+               "value": "component"
              },
              {
                "text": "explainer",
                "value": "explainer"
              },
              {
+               "text": "footer",
+               "value": "footer"
+             },
+             {
                "text": "header-banner",
                "value": "header-banner"
-             },
-             {
-               "text": "in-page-banner",
-               "value": "in-page-banner"
-             },
-             {
-               "text": "header-banner-mono",
-               "value": "header-banner-mono"
              },
              {
                "text": "gallery1",
                "value": "gallery1"
              },
              {
-               "text": "footer",
-               "value": "footer"
-             },
-             {
-               "text": "navbar",
-               "value": "navbar"
-             },
-             {
-               "text": "navbar-mono",
-               "value": "navbar-mono"
-             },
-             {
-               "text": "3-column-footer",
-               "value": "3-column-footer"
-             },
-             {
-               "text": "newsletter",
-               "value": "newsletter"
-             },
-             {
-               "text": "small-newsletter",
-               "value": "small-newsletter"
+               "text": "blog-teaser1",
+               "value": "blog-teaser1"
              },
              {
                "text": "listcards",
                "value": "listcards"
              },
              {
-               "text": "blog-teaser1",
-               "value": "blog-teaser1"
+               "text": "newsletter",
+               "value": "newsletter"
+             },
+             {
+               "text": "inpage-banner",
+               "value": "inpage-banner"
+             },
+             {
+               "text": "cards1",
+               "value": "cards1"
+             },
+             {
+               "text": "mediaobject1",
+               "value": "mediaobject1"
+             },
+             {
+               "text": "header-banner-mono",
+               "value": "header-banner-mono"
+             },
+             {
+               "text": "navbar-mono",
+               "value": "navbar-mono"
+             },
+             {
+               "text": "navbar",
+               "value": "navbar"
+             },
+             {
+               "text": "3-column-footer",
+               "value": "3-column-footer"
+             },
+             {
+               "text": "small-newsletter",
+               "value": "small-newsletter"
              }
            ],
            "title": "Poppy variant",
@@ -262,21 +286,9 @@
        "menuItems": [
          {
            "key": "s__homepage"
-         },
-         {
-           "key": "s__my-components"
          }
        ],
        "title": "Main pages"
-     },
-     {
-       "key": "collections",
-       "menuItems": [
-         {
-           "key": "c__my-components"
-         }
-       ],
-       "title": "Detail pages"
      },
      {
        "key": "general",
@@ -286,6 +298,9 @@
          },
          {
            "key": "config"
+         },
+         {
+           "key": "c__my-components"
          }
        ],
        "title": "Site settings"
@@ -1145,8 +1160,20 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
+                   "text": "my-component",
+                   "value": ""
+                 },
+                 {
+                   "text": "poppy-article",
+                   "value": "poppy-article"
+                 },
+                 {
+                   "text": "poppy-other",
+                   "value": "poppy-other"
+                 },
+                 {
+                   "text": "poppy-shortlist",
+                   "value": "poppy-shortlist"
                  },
                  {
                    "text": "poppy-footer",
@@ -1157,20 +1184,16 @@
                    "value": "poppy-banner"
                  },
                  {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
                    "text": "poppy-listing",
                    "value": "poppy-listing"
                  },
                  {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
                    "text": "poppy-form",
                    "value": "poppy-form"
+                 },
+                 {
+                   "text": "poppy-navigation",
+                   "value": "poppy-navigation"
                  }
                ],
                "title": "Poppy type",
@@ -1181,64 +1204,80 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "mono-footer",
+                   "value": "mono-footer"
+                 },
+                 {
+                   "text": "mono-navbar",
+                   "value": "mono-navbar"
+                 },
+                 {
                    "text": "article1",
                    "value": "article1"
                  },
                  {
-                   "text": "cards1",
-                   "value": "cards1"
+                   "text": "component",
+                   "value": "component"
                  },
                  {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
+                   "text": "footer",
+                   "value": "footer"
+                 },
+                 {
                    "text": "header-banner",
                    "value": "header-banner"
-                 },
-                 {
-                   "text": "in-page-banner",
-                   "value": "in-page-banner"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
                  },
                  {
                    "text": "gallery1",
                    "value": "gallery1"
                  },
                  {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
+                   "text": "blog-teaser1",
+                   "value": "blog-teaser1"
                  },
                  {
                    "text": "listcards",
                    "value": "listcards"
                  },
                  {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
+                   "text": "newsletter",
+                   "value": "newsletter"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "cards1",
+                   "value": "cards1"
+                 },
+                 {
+                   "text": "mediaobject1",
+                   "value": "mediaobject1"
+                 },
+                 {
+                   "text": "header-banner-mono",
+                   "value": "header-banner-mono"
+                 },
+                 {
+                   "text": "navbar-mono",
+                   "value": "navbar-mono"
+                 },
+                 {
+                   "text": "navbar",
+                   "value": "navbar"
+                 },
+                 {
+                   "text": "3-column-footer",
+                   "value": "3-column-footer"
+                 },
+                 {
+                   "text": "small-newsletter",
+                   "value": "small-newsletter"
                  }
                ],
                "title": "Poppy variant",
@@ -1287,8 +1326,20 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
+                   "text": "my-component",
+                   "value": ""
+                 },
+                 {
+                   "text": "poppy-article",
+                   "value": "poppy-article"
+                 },
+                 {
+                   "text": "poppy-other",
+                   "value": "poppy-other"
+                 },
+                 {
+                   "text": "poppy-shortlist",
+                   "value": "poppy-shortlist"
                  },
                  {
                    "text": "poppy-footer",
@@ -1299,20 +1350,16 @@
                    "value": "poppy-banner"
                  },
                  {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
                    "text": "poppy-listing",
                    "value": "poppy-listing"
                  },
                  {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
                    "text": "poppy-form",
                    "value": "poppy-form"
+                 },
+                 {
+                   "text": "poppy-navigation",
+                   "value": "poppy-navigation"
                  }
                ],
                "title": "Poppy type",
@@ -1323,64 +1370,80 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "mono-footer",
+                   "value": "mono-footer"
+                 },
+                 {
+                   "text": "mono-navbar",
+                   "value": "mono-navbar"
+                 },
+                 {
                    "text": "article1",
                    "value": "article1"
                  },
                  {
-                   "text": "cards1",
-                   "value": "cards1"
+                   "text": "component",
+                   "value": "component"
                  },
                  {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
+                   "text": "footer",
+                   "value": "footer"
+                 },
+                 {
                    "text": "header-banner",
                    "value": "header-banner"
-                 },
-                 {
-                   "text": "in-page-banner",
-                   "value": "in-page-banner"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
                  },
                  {
                    "text": "gallery1",
                    "value": "gallery1"
                  },
                  {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
+                   "text": "blog-teaser1",
+                   "value": "blog-teaser1"
                  },
                  {
                    "text": "listcards",
                    "value": "listcards"
                  },
                  {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
+                   "text": "newsletter",
+                   "value": "newsletter"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "cards1",
+                   "value": "cards1"
+                 },
+                 {
+                   "text": "mediaobject1",
+                   "value": "mediaobject1"
+                 },
+                 {
+                   "text": "header-banner-mono",
+                   "value": "header-banner-mono"
+                 },
+                 {
+                   "text": "navbar-mono",
+                   "value": "navbar-mono"
+                 },
+                 {
+                   "text": "navbar",
+                   "value": "navbar"
+                 },
+                 {
+                   "text": "3-column-footer",
+                   "value": "3-column-footer"
+                 },
+                 {
+                   "text": "small-newsletter",
+                   "value": "small-newsletter"
                  }
                ],
                "title": "Poppy variant",
@@ -1406,321 +1469,6 @@
        "key": "s__homepage",
        "previewUrl": "/",
        "title": "Homepage"
-     },
-     {
-       "dataformat": "yaml",
-       "fields": [
-         {
-           "content": "Relative link of this page: /my-components/",
-           "key": "info-s__my-components",
-           "theme": "gray-bare",
-           "title": "Info s my components",
-           "type": "info"
-         },
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "page_related_images",
-           "path": "",
-           "title": "Page related images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "key": "bg_image",
-               "title": "Bg image",
-               "type": "string"
-             },
-             {
-               "key": "list",
-               "title": "List",
-               "type": "string"
-             },
-             {
-               "key": "max_amount",
-               "title": "Max amount",
-               "type": "number"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "poppy_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
-                 },
-                 {
-                   "text": "poppy-footer",
-                   "value": "poppy-footer"
-                 },
-                 {
-                   "text": "poppy-banner",
-                   "value": "poppy-banner"
-                 },
-                 {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
-                   "text": "poppy-listing",
-                   "value": "poppy-listing"
-                 },
-                 {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
-                   "text": "poppy-form",
-                   "value": "poppy-form"
-                 }
-               ],
-               "title": "Poppy type",
-               "type": "select"
-             },
-             {
-               "key": "poppy_variant",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "article1",
-                   "value": "article1"
-                 },
-                 {
-                   "text": "cards1",
-                   "value": "cards1"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "header-banner",
-                   "value": "header-banner"
-                 },
-                 {
-                   "text": "in-page-banner",
-                   "value": "in-page-banner"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
-                 },
-                 {
-                   "text": "gallery1",
-                   "value": "gallery1"
-                 },
-                 {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
-                 },
-                 {
-                   "text": "listcards",
-                   "value": "listcards"
-                 },
-                 {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
-                 }
-               ],
-               "title": "Poppy variant",
-               "type": "select"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "poppy_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
-                 },
-                 {
-                   "text": "poppy-footer",
-                   "value": "poppy-footer"
-                 },
-                 {
-                   "text": "poppy-banner",
-                   "value": "poppy-banner"
-                 },
-                 {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
-                   "text": "poppy-listing",
-                   "value": "poppy-listing"
-                 },
-                 {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
-                   "text": "poppy-form",
-                   "value": "poppy-form"
-                 }
-               ],
-               "title": "Poppy type",
-               "type": "select"
-             },
-             {
-               "key": "poppy_variant",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "article1",
-                   "value": "article1"
-                 },
-                 {
-                   "text": "cards1",
-                   "value": "cards1"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "header-banner",
-                   "value": "header-banner"
-                 },
-                 {
-                   "text": "in-page-banner",
-                   "value": "in-page-banner"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
-                 },
-                 {
-                   "text": "gallery1",
-                   "value": "gallery1"
-                 },
-                 {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
-                 },
-                 {
-                   "text": "listcards",
-                   "value": "listcards"
-                 },
-                 {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
-                 }
-               ],
-               "title": "Poppy variant",
-               "type": "select"
-             }
-           ],
-           "key": "subpage_sections",
-           "title": "Subpage sections",
-           "type": "accordion"
-         }
-       ],
-       "file": "content/my-components/_index.md",
-       "key": "s__my-components",
-       "previewUrl": "/my-components/",
-       "title": "My components listpage"
      }
    ]
  }
