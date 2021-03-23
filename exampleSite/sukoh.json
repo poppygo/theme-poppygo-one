@@ -161,7 +161,7 @@
            "key": "s__posts"
          }
        ],
-       "title": "Single pages"
+       "title": "Main pages"
      },
      {
        "key": "collections",
@@ -173,20 +173,14 @@
            "key": "c__posts"
          }
        ],
-       "title": "Collections of pages"
-     },
-     {
-       "key": "data",
-       "menuItems": [
-         {
-           "key": "ds_data_design"
-         }
-       ],
-       "title": "Data files"
+       "title": "Detail pages"
      },
      {
        "key": "general",
        "menuItems": [
+         {
+           "key": "ds_data_design"
+         },
          {
            "key": "config"
          }
@@ -766,145 +760,54 @@
          {
            "fields": [
              {
-               "key": "authorbio",
-               "title": "Authorbio",
-               "type": "string"
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "chips"
              },
              {
-               "key": "avatar",
-               "title": "Avatar",
-               "type": "string"
+               "key": "color",
+               "title": "Color",
+               "type": "chips"
              },
              {
-               "key": "copyright",
-               "title": "Copyright",
-               "type": "string"
+               "key": "font",
+               "title": "Font",
+               "type": "chips"
              },
              {
-               "key": "cover",
-               "title": "Cover",
-               "type": "string"
+               "key": "item_bg_color",
+               "title": "Item bg color",
+               "type": "chips"
              },
              {
-               "key": "description",
-               "title": "Description",
-               "type": "markdown"
+               "key": "list",
+               "title": "List",
+               "type": "chips"
              },
              {
-               "key": "email",
-               "title": "Email",
-               "type": "string"
+               "key": "poppy_type",
+               "title": "Poppy type",
+               "type": "chips"
              },
              {
-               "key": "github",
-               "title": "Github",
-               "type": "string"
+               "key": "poppy_variant",
+               "title": "Poppy variant",
+               "type": "chips"
              },
              {
-               "key": "headline",
-               "title": "Headline",
-               "type": "string"
+               "key": "shadow",
+               "title": "Shadow",
+               "type": "chips"
              },
              {
-               "key": "linkedin",
-               "title": "Linkedin",
-               "type": "string"
+               "key": "size",
+               "title": "Size",
+               "type": "chips"
              },
              {
-               "key": "ogimage",
-               "title": "Ogimage",
-               "type": "string"
-             },
-             {
-               "fields": [
-                 {
-                   "key": "bg_color",
-                   "title": "Bg color",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "color",
-                   "title": "Color",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "font",
-                   "title": "Font",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "item_bg_color",
-                   "title": "Item bg color",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "list",
-                   "title": "List",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "poppy_type",
-                   "title": "Poppy type",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "poppy_variant",
-                   "title": "Poppy variant",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "shadow",
-                   "title": "Shadow",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "size",
-                   "title": "Size",
-                   "type": "chips"
-                 },
-                 {
-                   "key": "text_color",
-                   "title": "Text color",
-                   "type": "chips"
-                 }
-               ],
-               "groupdata": true,
-               "key": "pogoselect",
-               "title": "Pogoselect",
-               "type": "section"
-             },
-             {
-               "key": "poppygo_cms",
-               "title": "Poppygo cms",
-               "type": "boolean"
-             },
-             {
-               "key": "poppygo_debug",
-               "title": "Poppygo debug",
-               "type": "boolean"
-             },
-             {
-               "key": "twitter",
-               "title": "Twitter",
-               "type": "string"
-             },
-             {
-               "fields": [
-                 {
-                   "key": "siteid",
-                   "title": "Siteid",
-                   "type": "string"
-                 },
-                 {
-                   "key": "trackerscript",
-                   "title": "Trackerscript",
-                   "type": "string"
-                 }
-               ],
-               "groupdata": true,
-               "key": "umami",
-               "title": "Umami",
-               "type": "section"
+               "key": "text_color",
+               "title": "Text color",
+               "type": "chips"
              }
            ],
            "groupdata": true,
@@ -1620,7 +1523,7 @@
        "file": "content/posts/_index.md",
        "key": "s__posts",
        "previewUrl": "/posts/",
-       "title": "Posts"
+       "title": "Posts listpage"
      },
      {
        "dataformat": "yaml",
@@ -2300,7 +2203,7 @@
        "file": "content/portfolio/_index.md",
        "key": "s__portfolio",
        "previewUrl": "/portfolio/",
-       "title": "Portfolio"
+       "title": "Portfolio listpage"
      }
    ]
  }
