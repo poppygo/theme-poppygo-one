@@ -7,6 +7,8 @@ color:
   - poppycolor4
   - poppycolor5
   - poppycolor6
+  - poppycolorlight
+  - poppycolordark
 bg_color:
   - transparent
   - white
@@ -16,6 +18,8 @@ bg_color:
   - poppycolor4
   - poppycolor5
   - poppycolor6
+  - poppycolorlight
+  - poppycolordark
 text_color:
   - transparent
   - white
@@ -25,6 +29,8 @@ text_color:
   - poppycolor4
   - poppycolor5
   - poppycolor6
+  - poppycolorlight
+  - poppycolordark
 item_bg_color:
   - transparent
   - white
@@ -34,6 +40,8 @@ item_bg_color:
   - poppycolor4
   - poppycolor5
   - poppycolor6
+  - poppycolorlight
+  - poppycolordark
 poppy_type:
   - poppy-navigation
   - poppy-footer

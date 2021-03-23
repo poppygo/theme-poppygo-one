@@ -15,6 +15,10 @@
   </url>
   
   <url>
+    <loc>/my-components/</loc>
+  </url>
+  
+  <url>
     <loc>/poppy-components/</loc>
   </url>
   
@@ -72,6 +76,14 @@
   
   <url>
     <loc>/poppy-components/poppy-navigation/navbar/</loc>
+  </url>
+  
+  <url>
+    <loc>/my-components/mono-footer/</loc>
+  </url>
+  
+  <url>
+    <loc>/my-components/mono-navbar/</loc>
   </url>
   
   <url>

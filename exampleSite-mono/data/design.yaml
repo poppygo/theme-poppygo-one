@@ -22,6 +22,8 @@ colorscheme:
   poppy_color4: '#C00013'
   poppy_color5: '#F1F1F1'
   poppy_color6: '#00ff00'
+  poppy_colorlight: '#eee'
+  poppy_colordark: '#333'
 fontscheme:
   - family: Averia Serif Libre
     name: display1

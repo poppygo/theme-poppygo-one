@@ -127,6 +127,211 @@
            "type": "markdown"
          },
          {
+           "key": "full_width",
+           "title": "Full width",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "fields": [
+                 {
+                   "key": "identifier",
+                   "title": "Identifier",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "parent",
+                   "title": "Parent",
+                   "type": "string"
+                 },
+                 {
+                   "key": "url",
+                   "title": "Url",
+                   "type": "string"
+                 },
+                 {
+                   "key": "weight",
+                   "title": "Weight",
+                   "type": "number"
+                 }
+               ],
+               "key": "main",
+               "title": "Main",
+               "type": "accordion"
+             }
+           ],
+           "groupdata": true,
+           "key": "menus",
+           "title": "Menus",
+           "type": "section"
+         },
+         {
+           "key": "poppy_type",
+           "multiple": false,
+           "options": [
+             {
+               "text": "poppy-navigation",
+               "value": "poppy-navigation"
+             },
+             {
+               "text": "poppy-footer",
+               "value": "poppy-footer"
+             },
+             {
+               "text": "poppy-banner",
+               "value": "poppy-banner"
+             },
+             {
+               "text": "poppy-shortlist",
+               "value": "poppy-shortlist"
+             },
+             {
+               "text": "poppy-listing",
+               "value": "poppy-listing"
+             },
+             {
+               "text": "poppy-article",
+               "value": "poppy-article"
+             },
+             {
+               "text": "poppy-form",
+               "value": "poppy-form"
+             }
+           ],
+           "title": "Poppy type",
+           "type": "select"
+         },
+         {
+           "key": "poppy_variant",
+           "multiple": false,
+           "options": [
+             {
+               "text": "article1",
+               "value": "article1"
+             },
+             {
+               "text": "cards1",
+               "value": "cards1"
+             },
+             {
+               "text": "explainer",
+               "value": "explainer"
+             },
+             {
+               "text": "header-banner",
+               "value": "header-banner"
+             },
+             {
+               "text": "in-page-banner",
+               "value": "in-page-banner"
+             },
+             {
+               "text": "header-banner-mono",
+               "value": "header-banner-mono"
+             },
+             {
+               "text": "gallery1",
+               "value": "gallery1"
+             },
+             {
+               "text": "footer",
+               "value": "footer"
+             },
+             {
+               "text": "navbar",
+               "value": "navbar"
+             },
+             {
+               "text": "navbar-mono",
+               "value": "navbar-mono"
+             },
+             {
+               "text": "3-column-footer",
+               "value": "3-column-footer"
+             },
+             {
+               "text": "newsletter",
+               "value": "newsletter"
+             },
+             {
+               "text": "small-newsletter",
+               "value": "small-newsletter"
+             },
+             {
+               "text": "listcards",
+               "value": "listcards"
+             },
+             {
+               "text": "blog-teaser1",
+               "value": "blog-teaser1"
+             }
+           ],
+           "title": "Poppy variant",
+           "type": "select"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "folder": "content/my-components/",
+       "itemtitle": "My component",
+       "key": "c__my-components",
+       "title": "My components"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
@@ -166,6 +371,9 @@
      {
        "key": "collections",
        "menuItems": [
+         {
+           "key": "c__my-components"
+         },
          {
            "key": "c__portfolio"
          },
@@ -235,6 +443,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Color",
@@ -372,6 +588,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Text color",
@@ -412,6 +636,16 @@
              {
                "key": "poppy_color6",
                "title": "Poppy color6",
+               "type": "string"
+             },
+             {
+               "key": "poppy_colordark",
+               "title": "Poppy colordark",
+               "type": "string"
+             },
+             {
+               "key": "poppy_colorlight",
+               "title": "Poppy colorlight",
                "type": "string"
              }
            ],
@@ -480,6 +714,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Bg color",
@@ -530,6 +772,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Item bg color",
@@ -649,6 +899,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Bg color",
@@ -689,6 +947,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Color",

@@ -54,7 +54,7 @@ page_sections:
     full_height: false
     full_width: false
     name: Navbar
-    poppy_type: poppy-navigation
+    poppy_type: ''
     poppy_variant: navbar
     position: top
     subtitle: ''
@@ -94,4 +94,3 @@ subpage_sections:
 title: Homepage
 
 ---
-

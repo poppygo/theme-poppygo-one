@@ -51,12 +51,12 @@ page_sections:
     title: Explore all components
     list: page-components
   - name: navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar-mono
+    poppy_type: ''
+    poppy_variant: mono-navbar
     position: top
   - name: footer
-    poppy_type: poppy-footer
-    poppy_variant: footer
+    poppy_type: ''
+    poppy_variant: mono-footer
     position: bottom
 resources: []
 subpage_sections:
