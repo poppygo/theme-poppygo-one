@@ -1,4 +1,6 @@
 color:
+  - transparent
+  - white
   - poppycolor1
   - poppycolor2
   - poppycolor3
@@ -6,6 +8,8 @@ color:
   - poppycolor5
   - poppycolor6
 bg_color:
+  - transparent
+  - white
   - poppycolor1
   - poppycolor2
   - poppycolor3
@@ -13,6 +17,8 @@ bg_color:
   - poppycolor5
   - poppycolor6
 text_color:
+  - transparent
+  - white
   - poppycolor1
   - poppycolor2
   - poppycolor3
@@ -20,6 +26,8 @@ text_color:
   - poppycolor5
   - poppycolor6
 item_bg_color:
+  - transparent
+  - white
   - poppycolor1
   - poppycolor2
   - poppycolor3
@@ -80,7 +88,3 @@ shadow:
   - 7xl
   - 8xl
   - 9xl
-list:
-  - posts
-  - portfolio
-  - poppy-components

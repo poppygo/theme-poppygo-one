@@ -47,6 +47,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -176,6 +184,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -276,6 +292,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -317,6 +341,14 @@
                "key": "item_bg_color",
                "multiple": false,
                "options": [
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
                  {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
@@ -429,6 +461,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -460,6 +500,14 @@
                "key": "color",
                "multiple": false,
                "options": [
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
                  {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
@@ -602,54 +650,87 @@
          {
            "fields": [
              {
-               "key": "bg_color",
-               "title": "Bg color",
-               "type": "chips"
+               "key": "authorbio",
+               "title": "Authorbio",
+               "type": "string"
              },
              {
-               "key": "color",
-               "title": "Color",
-               "type": "chips"
+               "key": "avatar",
+               "title": "Avatar",
+               "type": "string"
              },
              {
-               "key": "font",
-               "title": "Font",
-               "type": "chips"
+               "key": "copyright",
+               "title": "Copyright",
+               "type": "string"
              },
              {
-               "key": "item_bg_color",
-               "title": "Item bg color",
-               "type": "chips"
+               "key": "cover",
+               "title": "Cover",
+               "type": "string"
              },
              {
-               "key": "list",
-               "title": "List",
-               "type": "chips"
+               "key": "description",
+               "title": "Description",
+               "type": "markdown"
              },
              {
-               "key": "poppy_type",
-               "title": "Poppy type",
-               "type": "chips"
+               "key": "email",
+               "title": "Email",
+               "type": "string"
              },
              {
-               "key": "poppy_variant",
-               "title": "Poppy variant",
-               "type": "chips"
+               "key": "github",
+               "title": "Github",
+               "type": "string"
              },
              {
-               "key": "shadow",
-               "title": "Shadow",
-               "type": "chips"
+               "key": "headline",
+               "title": "Headline",
+               "type": "string"
              },
              {
-               "key": "size",
-               "title": "Size",
-               "type": "chips"
+               "key": "linkedin",
+               "title": "Linkedin",
+               "type": "string"
              },
              {
-               "key": "text_color",
-               "title": "Text color",
-               "type": "chips"
+               "key": "ogimage",
+               "title": "Ogimage",
+               "type": "string"
+             },
+             {
+               "key": "poppygo_cms",
+               "title": "Poppygo cms",
+               "type": "boolean"
+             },
+             {
+               "key": "poppygo_debug",
+               "title": "Poppygo debug",
+               "type": "boolean"
+             },
+             {
+               "key": "twitter",
+               "title": "Twitter",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "siteid",
+                   "title": "Siteid",
+                   "type": "string"
+                 },
+                 {
+                   "key": "trackerscript",
+                   "title": "Trackerscript",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "umami",
+               "title": "Umami",
+               "type": "section"
              }
            ],
            "groupdata": true,

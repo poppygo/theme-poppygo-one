@@ -8,23 +8,16 @@
            "visible": true
          }
        ],
-       "title": "Single pages",
-       "visible": true
-     },
-     {
-       "key": "data",
-       "menuItems": [
-         {
-           "key": "ds_data_design",
-           "visible": true
-         }
-       ],
-       "title": "Data files",
+       "title": "Main pages",
        "visible": true
      },
      {
        "key": "general",
        "menuItems": [
+         {
+           "key": "ds_data_design",
+           "visible": true
+         },
          {
            "key": "config",
            "visible": true
