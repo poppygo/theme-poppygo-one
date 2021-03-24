@@ -8,12 +8,11 @@ poppy_type: poppy-listing
 poppy_variant: gallery
 list: poppy-components
 image: fore
-
 max_amount: 6
 size: 450
 buttons:
   - label: See all
-    link: /poppy-components/
+    link: /
 ---
 ### I am the main content
 

@@ -8,7 +8,8 @@
     {{- partial "poppy-meta/rss_feed" . -}}
   </head>
 
-  <body class="w-full min-h-screen relative flex-col" >
+  {{- $bg_color := printf "bg-%s" site.Data.design.site.bg_color -}}
+  <body class="w-full min-h-screen relative flex-col {{$bg_color}}">
     {{- block "main" . -}}{{- end -}}
     {{- partial "poppy-meta/bundlejs" . -}}
   </body>

@@ -1,17 +1,13 @@
 ---
 draft: false
-
+iscjklanguage: ''
 mainContent: ''
-resources: []
-title: PoppyGo One
-poppy_type: poppy-navigation
-poppy_variant: navbar
 menus:
   main:
     - identifier: ''
-      name: Page Components
+      name: Poppy Components
       parent: ''
-      url: /page-components/
+      url: /poppy-components/
       weight: 3
     - identifier: ''
       name: Posts
@@ -28,6 +24,9 @@ menus:
       parent: ''
       url: /pages/components-ready/
       weight: 0
-
+poppy_type: poppy-navigation
+poppy_variant: navbar
+resources: []
+title: PoppyGo One
 
 ---

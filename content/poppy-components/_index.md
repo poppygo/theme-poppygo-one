@@ -1,6 +1,5 @@
 ---
-
-headless: false
+headless: true
 mainContent: ''
 page_sections:
   - name: navbar

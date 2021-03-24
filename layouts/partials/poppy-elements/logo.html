@@ -1,0 +1,16 @@
+{{- $design := .design -}}
+{{- $content := .content -}}
+
+<div class="flex-1 flex justify-between items-center">
+    {{- if and $content.imagesvg (fileExists (printf "%simages/%s" $content.fg_resource_page.Dir $content.imagesvg )) -}}
+      <a href="/" class = "py-2 flex flex-initial w-64 lg:w-80">
+          {{ readFile (printf "%s/images/%s" $content.fg_resource_page.Dir $content.imagesvg ) | safeHTML }}
+      </a>
+    {{ else if $content.image }}
+        {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "link" "/" "class" "mx-auto") -}}
+    {{ else }}
+      <div class="p-6">
+          <a id="logo" class="uppercase bg-poppycolordark p-3 text-white text-3xl" href="/">{{$content.textlogo}}</a>
+      </div>
+    {{ end }}
+</div>

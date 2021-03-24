@@ -1,3 +1,6 @@
+site:
+  bg_color: poppycolorlight
+
 buttons:
   - color: poppycolor1
     font: body

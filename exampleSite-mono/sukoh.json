@@ -414,12 +414,16 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "xs",
+                   "value": "xs"
+                 },
+                 {
                    "text": "sm",
                    "value": "sm"
                  },
                  {
-                   "text": "md",
-                   "value": "md"
+                   "text": "base",
+                   "value": "base"
                  },
                  {
                    "text": "lg",
@@ -432,6 +436,10 @@
                  {
                    "text": "2xl",
                    "value": "2xl"
+                 },
+                 {
+                   "text": "3xl",
+                   "value": "3xl"
                  },
                  {
                    "text": "4xl",
@@ -918,12 +926,16 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "xs",
+                   "value": "xs"
+                 },
+                 {
                    "text": "sm",
                    "value": "sm"
                  },
                  {
-                   "text": "md",
-                   "value": "md"
+                   "text": "base",
+                   "value": "base"
                  },
                  {
                    "text": "lg",
@@ -936,6 +948,10 @@
                  {
                    "text": "2xl",
                    "value": "2xl"
+                 },
+                 {
+                   "text": "3xl",
+                   "value": "3xl"
                  },
                  {
                    "text": "4xl",

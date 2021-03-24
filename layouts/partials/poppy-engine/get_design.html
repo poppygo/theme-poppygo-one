@@ -47,12 +47,28 @@
     {{- end -}}
 
     {{- if $value -}}
-        {{- if eq $key "size" -}} {{- $value = (printf "text-%s" $value ) -}} {{- end -}}
+
         {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
         {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
         {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
         {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
         {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
+
+
+        {{- if eq $key "size" -}}
+          {{- $sizeIndex := 0 -}}
+          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
+          {{- $md := "" -}} {{- $lg := "" -}} {{- $xl := "" -}}
+          {{- range $index, $size := $sizes -}}
+            {{- if eq $size $value -}}
+              {{- if le $index (sub (len $sizes) 2 ) }} {{- $md = index $sizes (add $index 1) -}}  {{- end -}}
+              {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 2) -}}  {{- end -}}
+              {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 3) -}}  {{- end -}}
+            {{- end -}}
+          {{- end -}}
+          {{- $value = (printf "text-%s md:text-%s lg:text-%s xl:text-%s" $value $md $lg $xl) -}}
+        {{- end -}}
+
         {{- $type = printf "%s %s" $type $value -}}
     {{- end -}}
   {{- end -}}

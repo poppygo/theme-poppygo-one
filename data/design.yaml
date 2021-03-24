@@ -1,3 +1,6 @@
+site:
+  bg_color: poppycolorlight
+
 buttons:
   - color: poppycolor1
     font: body
@@ -23,7 +26,7 @@ colorscheme:
   poppy_color5: '#F7F7FF '
   poppy_color6: '#324a61'
   poppy_colordark: '#324a61'
-  poppy_colorlight: '#fff'
+  poppy_colorlight: '#F7F7FF'
 fontscheme:
   - family: Nunito
     name: display1
@@ -41,22 +44,22 @@ fontscheme:
     name: display2
     weight: 400
 objects:
-  - bg_color: white
+  - bg_color:
     border: none
     gridgap: 10
     inner_space: 10
     item_bg_color: white
     name: components
     outer_space: 10
-    rounded: 2xl
+    rounded: lg
     shadow: lg
 typographies:
   - align: center
-    bg_color: poppycolor3
+    bg_color: transparent
     color: poppycolor6
     font: display1
     name: banner
-    size: 7xl
+    size: 5xl
     space: 3
     transform: uppercase
   - align: center
@@ -64,7 +67,7 @@ typographies:
     color: poppycolor6
     font: display1
     name: title
-    size: 4xl
+    size: 2xl
     space: 2
     transform: ''
   - align: ''
@@ -88,7 +91,7 @@ typographies:
     color: poppycolor1
     font: art
     name: art
-    size: 7xl
+    size: 5xl
     space: 0
     transform: ''
   - align: ''
@@ -96,7 +99,7 @@ typographies:
     color: poppycolor2
     font: menu
     name: menu
-    size: xl
+    size: base
     space: 0
     transform: uppercase
   - align: ''
@@ -104,6 +107,6 @@ typographies:
     color: poppycolor2
     font: display2
     name: itemtitle
-    size: 2xl
+    size: xl
     space: 2
     transform: uppercase

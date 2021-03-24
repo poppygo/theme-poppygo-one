@@ -16,6 +16,9 @@
          },
          {
            "key": "ds_data_poppyselect"
+         },
+         {
+           "key": "config-menus"
          }
        ],
        "title": "Site settings"
@@ -37,6 +40,14 @@
                "key": "color",
                "multiple": false,
                "options": [
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
                  {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
@@ -60,6 +71,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Color",
@@ -110,12 +129,16 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "xs",
+                   "value": "xs"
+                 },
+                 {
                    "text": "sm",
                    "value": "sm"
                  },
                  {
-                   "text": "md",
-                   "value": "md"
+                   "text": "base",
+                   "value": "base"
                  },
                  {
                    "text": "lg",
@@ -128,6 +151,10 @@
                  {
                    "text": "2xl",
                    "value": "2xl"
+                 },
+                 {
+                   "text": "3xl",
+                   "value": "3xl"
                  },
                  {
                    "text": "4xl",
@@ -167,6 +194,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -189,6 +224,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Text color",
@@ -230,6 +273,16 @@
                "key": "poppy_color6",
                "title": "Poppy color6",
                "type": "string"
+             },
+             {
+               "key": "poppy_colordark",
+               "title": "Poppy colordark",
+               "type": "string"
+             },
+             {
+               "key": "poppy_colorlight",
+               "title": "Poppy colorlight",
+               "type": "string"
              }
            ],
            "groupdata": true,
@@ -267,6 +320,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -289,6 +350,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Bg color",
@@ -297,6 +366,11 @@
              {
                "key": "border",
                "title": "Border",
+               "type": "string"
+             },
+             {
+               "key": "gridgap",
+               "title": "Gridgap",
                "type": "number"
              },
              {
@@ -309,6 +383,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -331,6 +413,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Item bg color",
@@ -416,9 +506,22 @@
          {
            "fields": [
              {
+               "key": "align",
+               "title": "Align",
+               "type": "string"
+             },
+             {
                "key": "bg_color",
                "multiple": false,
                "options": [
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
                  {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
@@ -442,6 +545,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Bg color",
@@ -452,6 +563,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
                    "text": "poppycolor1",
                    "value": "poppycolor1"
                  },
@@ -474,6 +593,14 @@
                  {
                    "text": "poppycolor6",
                    "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
                  }
                ],
                "title": "Color",
@@ -514,12 +641,16 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "xs",
+                   "value": "xs"
+                 },
+                 {
                    "text": "sm",
                    "value": "sm"
                  },
                  {
-                   "text": "md",
-                   "value": "md"
+                   "text": "base",
+                   "value": "base"
                  },
                  {
                    "text": "lg",
@@ -532,6 +663,10 @@
                  {
                    "text": "2xl",
                    "value": "2xl"
+                 },
+                 {
+                   "text": "3xl",
+                   "value": "3xl"
                  },
                  {
                    "text": "4xl",
@@ -565,6 +700,11 @@
                "key": "space",
                "title": "Space",
                "type": "number"
+             },
+             {
+               "key": "transform",
+               "title": "Transform",
+               "type": "string"
              }
            ],
            "key": "typographies",
@@ -601,21 +741,6 @@
            "type": "chips"
          },
          {
-           "key": "list",
-           "title": "List",
-           "type": "chips"
-         },
-         {
-           "key": "poppy_type",
-           "title": "Poppy type",
-           "type": "chips"
-         },
-         {
-           "key": "poppy_variant",
-           "title": "Poppy variant",
-           "type": "chips"
-         },
-         {
            "key": "shadow",
            "title": "Shadow",
            "type": "chips"
@@ -635,6 +760,21 @@
        "key": "ds_data_poppyselect",
        "previewUrl": "/",
        "title": "Poppyselect"
+     },
+     {
+       "dataformat": "js",
+       "fields": [
+         {
+           "fields": [],
+           "groupdata": true,
+           "key": "menu",
+           "title": "Menu",
+           "type": "section"
+         }
+       ],
+       "file": "/tailwind.config.js",
+       "key": "config-menus",
+       "title": "config | Menus"
      }
    ]
  }
