@@ -1,6 +1,6 @@
 ---
-draft: false
-iscjklanguage: ''
+
+
 mainContent: ''
 resources: []
 title: navbar
@@ -33,5 +33,5 @@ menus:
       parent: ''
       url: '/#Support'
       weight: 0
-full_width: true
+
 ---

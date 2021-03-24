@@ -1,9 +1,10 @@
 ---
 draft: false
-headless: true
-iscjklanguage: ''
 mainContent: ''
 page_sections:
+  - name: Navbar
+    poppy_type: poppy-navigation
+    poppy_variant: navbar
   - bg_image: ''
     list: page-components
     max_amount: 100
@@ -11,16 +12,14 @@ page_sections:
     poppy_type: poppy-listing
     poppy_variant: gallery1
     title: Have a look at the page components
-  - name: Navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar
-    position: top
   - name: Footer
     poppy_type: poppy-footer
     poppy_variant: footer
-    position: bottom
 resources: []
 subpage_sections:
+  - name: Navbar
+    poppy_type: poppy-navigation
+    poppy_variant: navbar
   - name: component
     poppy_type: poppy-other
     poppy_variant: component
@@ -30,14 +29,9 @@ subpage_sections:
     title: Other page sections
     list: page-components
     bg_color: poppycolor2
-  - name: Navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar
-    position: top
   - name: Footer
     poppy_type: poppy-footer
     poppy_variant: footer
-    position: bottom
 title: Components
 
 ---

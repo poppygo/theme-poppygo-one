@@ -51,11 +51,6 @@
            "type": "markdown"
          },
          {
-           "key": "full_width",
-           "title": "Full width",
-           "type": "boolean"
-         },
-         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
@@ -199,12 +194,20 @@
                "value": "component"
              },
              {
+               "text": "explainer-big-images",
+               "value": "explainer-big-images"
+             },
+             {
                "text": "explainer",
                "value": "explainer"
              },
              {
                "text": "footer",
                "value": "footer"
+             },
+             {
+               "text": "header-banner-full-height",
+               "value": "header-banner-full-height"
              },
              {
                "text": "header-banner",
@@ -640,6 +643,11 @@
              {
                "key": "border",
                "title": "Border",
+               "type": "string"
+             },
+             {
+               "key": "gridgap",
+               "title": "Gridgap",
                "type": "number"
              },
              {
@@ -774,6 +782,11 @@
          },
          {
            "fields": [
+             {
+               "key": "align",
+               "title": "Align",
+               "type": "string"
+             },
              {
                "key": "bg_color",
                "multiple": false,
@@ -956,6 +969,11 @@
                "key": "space",
                "title": "Space",
                "type": "number"
+             },
+             {
+               "key": "transform",
+               "title": "Transform",
+               "type": "string"
              }
            ],
            "key": "typographies",
@@ -1135,21 +1153,6 @@
          {
            "fields": [
              {
-               "key": "bg_image",
-               "title": "Bg image",
-               "type": "string"
-             },
-             {
-               "key": "full_height",
-               "title": "Full height",
-               "type": "boolean"
-             },
-             {
-               "key": "full_width",
-               "title": "Full width",
-               "type": "boolean"
-             },
-             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -1220,12 +1223,20 @@
                    "value": "component"
                  },
                  {
+                   "text": "explainer-big-images",
+                   "value": "explainer-big-images"
+                 },
+                 {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
                    "text": "footer",
                    "value": "footer"
+                 },
+                 {
+                   "text": "header-banner-full-height",
+                   "value": "header-banner-full-height"
                  },
                  {
                    "text": "header-banner",
@@ -1282,16 +1293,6 @@
                ],
                "title": "Poppy variant",
                "type": "select"
-             },
-             {
-               "key": "subtitle",
-               "title": "Subtitle",
-               "type": "markdown"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
              }
            ],
            "key": "page_sections",
@@ -1306,16 +1307,6 @@
          {
            "fields": [
              {
-               "key": "bg_image",
-               "title": "Bg image",
-               "type": "string"
-             },
-             {
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "string"
-             },
-             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -1386,12 +1377,20 @@
                    "value": "component"
                  },
                  {
+                   "text": "explainer-big-images",
+                   "value": "explainer-big-images"
+                 },
+                 {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
                    "text": "footer",
                    "value": "footer"
+                 },
+                 {
+                   "text": "header-banner-full-height",
+                   "value": "header-banner-full-height"
                  },
                  {
                    "text": "header-banner",
@@ -1448,16 +1447,6 @@
                ],
                "title": "Poppy variant",
                "type": "select"
-             },
-             {
-               "key": "subtitle",
-               "title": "Subtitle",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
              }
            ],
            "key": "subpage_sections",

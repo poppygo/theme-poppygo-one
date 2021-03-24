@@ -1,6 +1,6 @@
 ---
-draft: false
-iscjklanguage: ''
+
+
 mainContent: ''
 resources: []
 title: I am an shortlist with media objects
@@ -12,8 +12,8 @@ poppy_variant: media-object
 images:
  - foreground
 bg_image: background
-full-width: false
-enabled: true
+
+
 items:
   - name: item1
     title: I am an item title

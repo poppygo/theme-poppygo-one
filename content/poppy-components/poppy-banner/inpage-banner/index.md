@@ -1,6 +1,6 @@
 ---
-draft: false
-iscjklanguage: ''
+
+
 mainContent: ''
 resources: []
 title: I am an in-page banner for telling your story
@@ -11,7 +11,6 @@ poppy_type: poppy-banner
 poppy_variant: inpage-banner
 image:
 bg_image: for
-full-width: false
 name: inpage-banner
 
 ---

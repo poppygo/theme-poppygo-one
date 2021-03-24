@@ -1,6 +1,11 @@
-<div class="flex flex-col md:flex-row border-b border-gray-400">
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+
+
+<section id="{{$content.name}}" class="flex flex-col md:flex-row border-b border-gray-400">
   <h2 class="text-3xl font-bold mb-2 md:w-32 flex-shrink-0 flex-grow-0">{{ .Key }}</h2>
-  
+
   <ol class="mb-4 list-none w-full">
     {{ range where .Pages "Type" "ne" "page" -}}
     <li class="mb-8 flex flex-col no-underline rounded-md hover:bg-white transition duration-300 ease-in-out">
@@ -22,4 +27,4 @@
     </li>
     {{- end }}
   </ol>
-</div>
+</section>

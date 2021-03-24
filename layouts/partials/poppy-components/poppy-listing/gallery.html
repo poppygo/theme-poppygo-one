@@ -15,7 +15,7 @@
 </style>
 
 {{- with $design -}}
-  <section class ="text-center {{.outer_space}} {{.text_dark}} {{ if not $content.full_width }} container {{ end }} mx-auto {{$content.bg_css}} ">
+  <section id="{{$content.name}}" class ="text-center mx-auto {{.outer_space}} {{.text_dark}}  {{$content.bg_css}} ">
     <h1 class = "{{.title }} ">{{ $content.title }}</h1>
     <p class = "{{.subtitle }}">{{ $content.subtitle }}</p>
     <div class = "grid gap-3 square-grid overflow-clip mx-auto">
@@ -23,7 +23,7 @@
         {{- $bg_css := printf "%s-%s" $page.File.ContentBaseName .File.ContentBaseName -}}
         {{- partial "poppy-elements/bg_image" (dict "page" . "css_class" $bg_css "bg_image" .Params.image ) -}}
           <a class="{{$design.bg_color}} {{$design.text_light}} {{$bg_css}} {{$design.rounded}} {{$design.border}} {{$design.shadow}} bg-cover bg-center {{$design.inner_space}} px-2" href={{.RelPermalink }}>
-              <h1 class="text-center text-3xl {{$design.art}} ">{{.Title}}</h1>
+              <h1 class="text-center text-3xl {{$design.itemtitle}} ">{{.Title}}</h1>
           </a>
         {{- end -}}
     </div>

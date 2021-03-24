@@ -4,7 +4,7 @@
 
 {{- with $design -}}
 
-<section class="{{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} bg-cover">
+<section id="{{$content.name}}" class="{{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} bg-cover">
 
 <article class="prose max-w-5xl mx-auto {{.body }} w-full {{.item_bg_color}} {{.rounded}} {{.shadow}} {{.border}} px-20">
     {{if not $page.Params.hideMetadata }}

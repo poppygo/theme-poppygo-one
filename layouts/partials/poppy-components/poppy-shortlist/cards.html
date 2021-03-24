@@ -8,18 +8,20 @@
 {{ end }}
 
 {{- with $design -}}
-{{- $columns := partial "poppy-elements/responsive-columns" (dict "amount" $amount "max_columns" $content.max_columns) -}}
-    <div class="{{- if not .full_width -}} container {{- end -}} {{.outer_space}} mx-auto px-4 md:px-12 bg_cover {{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
+
+  {{- $columns := partial "poppy-elements/responsive-columns" (dict "amount" $amount "max_columns" $content.max_columns) -}}
+  <section id="{{$content.name}}" class="mx-auto px-4 md:px-12 bg_cover {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
+    <div class="container mx-auto">
       <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
       <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
         <div class="flex">
             {{- range $content.items -}}
-            <div class="flex flex-auto my-1 px-1 {{$columns}}">
+            <div class="flex flex-auto p-5 {{$columns}}">
                 <div class=" w-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$design.item_bg_color}}">
                   <div>
                     {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-2/5 object-cover") -}}
                   </div>
-                  <div class="prose p-2 md:p-4 ">
+                  <div class="prose p-4 md:p-6 ">
                       {{.bodytext | markdownify }}
                   </div>
                   <div class="px-3 ">
@@ -27,8 +29,8 @@
                   </div>
               </div>
             </div>
-
             {{- end -}}
         </div>
-    </div>
+      </div>
+  </section>
 {{- end -}}

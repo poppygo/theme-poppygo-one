@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>/poppy-components/poppy-shortlist/explainer-big-images/</loc>
+  </url>
+  
+  <url>
     <loc>/poppy-components/poppy-shortlist/explainer/</loc>
   </url>
   
@@ -32,6 +36,10 @@
   
   <url>
     <loc>/sukoh.json</loc>
+  </url>
+  
+  <url>
+    <loc>/poppy-components/poppy-banner/header-banner-full-height/</loc>
   </url>
   
   <url>

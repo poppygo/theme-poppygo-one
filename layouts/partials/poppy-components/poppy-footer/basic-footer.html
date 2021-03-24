@@ -1,0 +1,12 @@
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+
+{{- with $design -}}
+<div class="flex-shrink">
+  <div id="{{$content.name}}" class = "text-center mx-auto content-end">
+  Made with <a href="https://hugo.io" class="">Hugo</a> by <a href="https://poppygo.io" class="">PoppyGo One</a>.
+  {{ .Site.Params.copyright }}
+</div>
+</div>
+{{- end -}}

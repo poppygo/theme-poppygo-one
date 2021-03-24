@@ -1,6 +1,6 @@
 ---
-draft: false
-iscjklanguage: ''
+
+
 resources: []
 title: I am a reusable newsletter compontent
 subtitle: Mostly this component is used at the bottom of landing pages and the homepage
@@ -10,7 +10,6 @@ poppy_type: poppy-form
 poppy_variant: newsletter
 image: foreground
 bg_image: background
-full-width: false
 
 ---
 ### I am additional content that you could add to the newsletter component

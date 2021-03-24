@@ -6,24 +6,9 @@
          {
            "key": "s__homepage",
            "visible": true
-         },
-         {
-           "key": "s__my-components",
-           "visible": true
          }
        ],
        "title": "Main pages",
-       "visible": true
-     },
-     {
-       "key": "collections",
-       "menuItems": [
-         {
-           "key": "c__my-components",
-           "visible": true
-         }
-       ],
-       "title": "Detail pages",
        "visible": true
      },
      {
@@ -35,6 +20,10 @@
          },
          {
            "key": "config",
+           "visible": true
+         },
+         {
+           "key": "c__my-components",
            "visible": true
          }
        ],

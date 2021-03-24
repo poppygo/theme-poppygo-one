@@ -2,6 +2,12 @@
 {{- $page_sections := slice -}}
 {{- $sorted_sections := slice}}
 
+<style>
+html {
+	scroll-behavior: smooth;
+}
+</style>
+
 {{- $themesDir := partial "poppy-engine/get_hugo_config" "themesDir" -}}
 {{- $theme := partial "poppy-engine/get_hugo_config" "theme" -}}
 

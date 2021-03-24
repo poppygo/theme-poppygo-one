@@ -22,6 +22,7 @@
     {{- else if eq $key "rounded" -}} {{- $value = printf "rounded-%s" $value -}}
     {{- else if eq $key "shadow" -}} {{- $value = printf "shadow-%s" $value -}}
     {{- else if eq $key "border" -}} {{- $value = printf "border-%s" (string $value) -}}
+    {{- else if eq $key "gridgap" -}} {{- $value = printf "gap-%s" (string $value) -}}
     {{- end -}}
     {{- $design = merge $design (dict $key $value) -}}
   {{- end -}}
@@ -50,6 +51,7 @@
         {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
         {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
         {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
+        {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
         {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
         {{- $type = printf "%s %s" $type $value -}}
     {{- end -}}

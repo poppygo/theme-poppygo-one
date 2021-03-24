@@ -64,7 +64,7 @@ frontmatter: #See Front matter Configuration.
 footnoteAnchorPrefix: #(default "") Prefix for footnote anchors.
 footnoteReturnLinkContents: # ("") Text to display for footnote return links.
 googleAnalytics: #(default "")Google Analytics tracking ID.
-hasCJKLanguage: #(default false) If true, auto-detect Chinese/Japanese/Korean Languages in the content. This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: false # If true, auto-detect Chinese/Japanese/Korean Languages in the content. This will make .Summary and .WordCount behave correctly for CJK languages.
 imaging: #See Image Processing Config.
 languages: #See Configure Languages.
 languageCode: #(default "")The site’s language code. It is used in the default RSS template and can be useful for multi-lingual sites.

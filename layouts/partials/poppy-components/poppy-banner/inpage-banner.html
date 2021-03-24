@@ -3,7 +3,7 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <header class="bg-fixed text-center bg-cover px-4 pt-32 {{.text_dark}} {{.outer_space}} {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
+  <header id="{{$content.name}}" class="bg-fixed text-center bg-cover px-4 pt-32 {{.text_dark}} {{.outer_space}} {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
     <h1 class="text-6xl md:text-7xl lg:text-8xl  uppercase {{.title}} {{.text_dark}}">{{$content.title}}</h1>
     <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
     {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}

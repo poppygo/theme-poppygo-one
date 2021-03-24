@@ -3,10 +3,10 @@ buttons:
     font: body
     font_weight: bold
     name: primary
-    rounded: none
+    rounded: 2xl
     size: xl
     space: 4
-    text_color: poppycolor2
+    text_color: white
   - color: poppycolor4
     font: display1
     font_weight: ''
@@ -25,12 +25,15 @@ colorscheme:
   poppy_colorlight: '#eee'
   poppy_colordark: '#333'
 fontscheme:
-  - family: Averia Serif Libre
+  - family: Nunito
     name: display1
     weight: 700
   - family: Nunito
     name: body
     weight: 400
+  - family: Nunito
+    name: menu
+    weight: 700
   - family: Turret Road
     name: art
     weight: 700
@@ -38,36 +41,69 @@ fontscheme:
     name: display2
     weight: 400
 objects:
-  - bg_color: poppycolor6
-    border: 2
+  - bg_color: white
+    border: none
+    gridgap: 10
     inner_space: 10
-    item_bg_color: poppycolor1
+    item_bg_color: white
     name: components
     outer_space: 10
     rounded: 2xl
     shadow: lg
 typographies:
-  - bg_color: none
-    color: poppycolor2
+  - align: center
+    bg_color: poppycolor3
+    color: poppycolor1
+    font: display1
+    name: banner
+    size: 7xl
+    space: 3
+    transform: uppercase
+  - align: center
+    bg_color: none
+    color: poppycolor1
     font: display1
     name: title
-    size: 7xl
-    space: 10
-  - bg_color: none
-    color: poppycolor1
-    font: display2
-    name: subtitle
-    size: 2xl
-    space: 6
-  - bg_color: none
+    size: 4xl
+    space: 2
+    transform: ''
+  - align: ''
+    bg_color: none
     color: poppycolor1
     font: body
     name: body
+    size: md
+    space: 1
+    transform: ''
+  - align: ''
+    bg_color: none
+    color: poppycolor2
+    font: body
+    name: subtitle
     size: lg
     space: 5
-  - bg_color: poppycolor5
+    transform: ''
+  - align: ''
+    bg_color: poppycolor5
     color: poppycolor1
     font: art
     name: art
     size: 7xl
     space: 0
+    transform: ''
+  - align: ''
+    bg_color: none
+    color: poppycolor2
+    font: menu
+    name: menu
+    size: xl
+    space: 0
+    transform: uppercase
+  - align: ''
+    bg_color: poppycolor3
+    color: poppycolor2
+    font: display2
+    name: itemtitle
+    size: 2xl
+    space: 2
+    transform: uppercase

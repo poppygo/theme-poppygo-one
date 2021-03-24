@@ -1,10 +1,10 @@
 ---
 bg_image: ''
 draft: false
-full_width: true
+
 image: logo
 imagesvg: logo.svg
-iscjklanguage: ''
+
 mainContent: ''
 menus:
   main:

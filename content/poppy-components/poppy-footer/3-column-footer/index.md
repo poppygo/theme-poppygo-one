@@ -1,6 +1,5 @@
 ---
-draft: false
-iscjklanguage: ''
+
 mainContent: ''
 resources: []
 poppy_type: poppy-footer
@@ -8,7 +7,6 @@ poppy_variant: 3-column-footer
 position: bottom
 title: PoppyGo One Theme
 subtitle: One theme for all your websites
-full_width: true
 menus:
   footer1:
     - identifier: ''

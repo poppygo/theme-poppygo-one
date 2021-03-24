@@ -1,6 +1,6 @@
 ---
-draft: false
-iscjklanguage: ''
+
+
 resources: []
 poppy_type: poppy-other
 poppy_variant: render-component

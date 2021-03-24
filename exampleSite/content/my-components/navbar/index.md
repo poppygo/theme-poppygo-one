@@ -1,6 +1,6 @@
 ---
 draft: false
-iscjklanguage: ''
+
 mainContent: ''
 resources: []
 title: PoppyGo One
@@ -28,6 +28,6 @@ menus:
       parent: ''
       url: /pages/components-ready/
       weight: 0
-full_width: true
+
 
 ---

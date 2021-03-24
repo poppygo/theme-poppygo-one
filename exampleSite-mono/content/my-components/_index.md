@@ -1,7 +1,7 @@
 ---
 draft: false
 headless: false
-iscjklanguage: ''
+
 mainContent: ''
 page_sections:
   - bg_image: ''
@@ -14,11 +14,11 @@ page_sections:
   - name: navbar
     poppy_type: poppy-navigation
     poppy_variant: navbar
-    position: top
+  
   - name: footer
     poppy_type: poppy-navigation
     poppy_variant: footer
-    position: bottom
+  
 subpage_sections:
   - name: component
     poppy_type: poppy-other
@@ -32,11 +32,11 @@ subpage_sections:
   - name: navbar
     poppy_type: ''
     poppy_variant: mono-navbar
-    position: top
+  
   - name: footer
     poppy_type: ''
     poppy_variant: mono-footer
-    position: bottom
+  
 title: Components
 
 ---

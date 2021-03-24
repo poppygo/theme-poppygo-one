@@ -1,20 +1,19 @@
 ---
 author: PoppyGo
 draft: false
-iscjklanguage: ''
+
 mainContent: ''
 page_sections:
+  - name: navbar
+    poppy_type: ''
+    poppy_variant: mono-navbar
   - bg_image: flexible
-    full_height: true
-    full_width: true
     name: home-hero-banner
     poppy_type: poppy-banner
     poppy_variant: header-banner-mono
     subtitle: The most flexible Hugo theme for all your sites
     title: Experience mono
   - bg_image: none
-    full_height: true
-    full_width: true
     items:
       - bodytext: >
           ## Full flexibility for any poppy_type of site
@@ -42,24 +41,21 @@ page_sections:
     poppy_variant: explainer
     title: What makes PoppyGo One great?
   - bg_image: ''
-    full_height: false
-    full_width: false
     name: Explore components
     poppy_type: poppy-listing
     poppy_variant: gallery1
     subtitle: ''
     title: Explore all components
     list: page-components
-  - name: navbar
-    poppy_type: ''
-    poppy_variant: mono-navbar
-    position: top
   - name: footer
     poppy_type: ''
     poppy_variant: mono-footer
-    position: bottom
+
 resources: []
 subpage_sections:
+  - name: navbar
+    poppy_type: poppy-navigation
+    poppy_variant: navbar
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
@@ -74,9 +70,6 @@ subpage_sections:
     poppy_variant: gallery1
     subtitle: ''
     title: All items
-  - name: navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar
   - name: footer
     poppy_type: poppy-footer
     poppy_variant: footer

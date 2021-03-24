@@ -1,10 +1,10 @@
 ---
 bg_image: back
-draft: false
-full-width: false
+
+
 image: explainer
 poppy_type: poppy-shortlist
-poppy_variant: switch-rows
+poppy_variant: explainer
 subtitle: ''
 summary: '-| I am the summary of the newsletter element, which is not very relevant'
 title: Explainer

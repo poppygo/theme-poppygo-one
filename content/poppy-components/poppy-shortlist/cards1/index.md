@@ -1,6 +1,6 @@
 ---
-draft: false
-iscjklanguage: ''
+
+
 mainContent: ''
 resources: []
 title: I am an shortlist in the form of cards
@@ -10,7 +10,7 @@ summary: -|
 poppy_type: poppy-shortlist
 poppy_variant: cards
 bg_image: background
-full_width: false
+
 max_columns: 6
 items:
   - name: item1

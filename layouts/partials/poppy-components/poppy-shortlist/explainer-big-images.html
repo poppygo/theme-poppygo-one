@@ -1,0 +1,32 @@
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+
+{{- with $design -}}
+    <section id="{{$content.name}}" class="px-4 md:px-12 bg-cover {{.text_dark}} {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} ">
+      <div class = "container mx-auto">
+        <h3 class=" {{.title }} m-2">{{ $content.title }}</h3>
+        <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
+          <div class="grid grid-cols-5 {{ .gridgap }} grid-flow-row-dense ">
+            {{- range $index, $value := $content.items -}}
+              {{- $switch := "" -}}
+              {{-  if not (modBool $index 2) -}}
+                {{ $switch = "col-start-1 md:col-start-3" -}}
+              {{- end -}}
+              <div class= "{{$design.item_bg_color}} {{$design.rounded}} {{$design.shadow}} col-span-5 md:col-span-3 my-auto {{$switch}} {{$design.border}}" >
+                  {{- $class := printf "%s %s w-full" $design.rounded $design.shadow -}}
+                  {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" $class ) -}}
+              </div>
+              <div class="col-span-5 md:col-span-2 {{$design.rounded}} {{$design.item_bg_color}} my-auto mt-20 mb-5 ">
+                <div class=" prose p-2 md:p-4 {{.rounded}} ">
+                    {{.bodytext | markdownify }}
+                </div>
+                <div class="px-3 {{.rounded}}  ">
+                    {{- partial "poppy-elements/buttons-secondary" (dict "page" $page "buttons" .buttons ) -}}
+                </div>
+              </div>
+            {{- end -}}
+          </div>
+        </div>
+    </section>
+{{- end -}}

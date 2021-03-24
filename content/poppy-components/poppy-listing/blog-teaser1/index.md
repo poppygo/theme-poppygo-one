@@ -1,6 +1,5 @@
 ---
-draft: false
-iscjklanguage: ''
+
 mainContent: ''
 resources: []
 title: I am a list of items presented as blog teaser
@@ -9,8 +8,6 @@ poppy_type: poppy-listing
 poppy_variant: blog-teaser
 image: foreground
 bg_image: background
-full_width: false
-enabled: true
 list_section: ''
 list_taxonomy:
   taxonomy: 'tags'

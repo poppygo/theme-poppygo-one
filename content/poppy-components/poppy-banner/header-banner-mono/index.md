@@ -5,11 +5,8 @@ buttons:
     link: /page-components/
   - label: More about us
     link: '#'
-draft: false
-full_height: true
-full_width: true
 image: null
-iscjklanguage: ''
+
 name: headerbanner
 poppy_type: poppy-banner
 poppy_variant: header-banner-mono
