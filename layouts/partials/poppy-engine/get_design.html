@@ -15,14 +15,13 @@
       {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict $key true ) -}} {{- end -}}
     {{- end -}}
     {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}
-    {{- else if in $key "margin" -}} {{- $value = printf "my-%s" (string $value) -}}
-    {{- else if in $key "space" -}} {{- $value = printf "py-%s" (string $value) -}}
+    {{- else if in $key "inner_space" -}} {{- $value = printf "py-%s sm:py-%s md:py-%s lg:py-%s xl:py-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
     {{- else if in $key "bg" -}} {{- $value = printf "bg-%s" $value -}}
     {{- else if in $key "text" -}} {{- $value = printf "text-%s" $value -}}
-    {{- else if eq $key "rounded" -}} {{- $value = printf "rounded-%s" $value -}}
-    {{- else if eq $key "shadow" -}} {{- $value = printf "shadow-%s" $value -}}
+    {{- else if eq $key "rounded" -}} {{- $value = printf "sm:rounded-%s" $value -}}
+    {{- else if eq $key "shadow" -}} {{- $value = printf "sm:shadow-%s" $value -}}
     {{- else if eq $key "border" -}} {{- $value = printf "border-%s" (string $value) -}}
-    {{- else if eq $key "gridgap" -}} {{- $value = printf "gap-%s" (string $value) -}}
+    {{- else if eq $key "gridgap" -}} {{- $value = printf "sm:gap-%s" (string $value) -}}
     {{- end -}}
     {{- $design = merge $design (dict $key $value) -}}
   {{- end -}}
@@ -57,16 +56,15 @@
 
         {{- if eq $key "size" -}}
           {{- $sizeIndex := 0 -}}
-          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
-          {{- $md := "" -}} {{- $lg := "" -}} {{- $xl := "" -}}
+          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
+          {{- $lg := "" -}} {{- $xl := "" -}}
           {{- range $index, $size := $sizes -}}
             {{- if eq $size $value -}}
-              {{- if le $index (sub (len $sizes) 2 ) }} {{- $md = index $sizes (add $index 1) -}}  {{- end -}}
-              {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 2) -}}  {{- end -}}
-              {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 3) -}}  {{- end -}}
+              {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
+              {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
             {{- end -}}
           {{- end -}}
-          {{- $value = (printf "text-%s md:text-%s lg:text-%s xl:text-%s" $value $md $lg $xl) -}}
+          {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
         {{- end -}}
 
         {{- $type = printf "%s %s" $type $value -}}
@@ -102,11 +100,28 @@
             {{- $value = printf "px-%s py-%s" (string (mul (int $value) 4)) (string $value)  -}}
         {{- end -}}
         {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
-        {{- if in $key "size" -}} {{- $value = printf "text-%s"  (string $value ) -}} {{- end -}}
         {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
         {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
         {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
         {{- if eq $key "name" -}} {{- $button_name = printf "button_%s"  $value  -}} {{- end -}}
+
+
+
+        {{- if in $key "size" -}}
+          {{- $sizeIndex := 0 -}}
+          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
+          {{- $lg := "" -}} {{- $xl := "" -}}
+          {{- range $index, $size := $sizes -}}
+            {{- if eq $size $value -}}
+              {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
+              {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
+            {{- end -}}
+          {{- end -}}
+          {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
+        {{- end -}}
+
+
+
         {{- $button = printf "%s %s" $button $value -}}
     {{- end -}}
   {{- end -}}

@@ -1,5 +1,6 @@
 ---
-bg_image:
+bg_image: ''
+bg_color: poppycolor2
 image: explainer
 poppy_type: poppy-shortlist
 poppy_variant: explainer

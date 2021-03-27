@@ -1,0 +1,59 @@
+<div class="post-card relative p-0 rounded overflow-hidden">
+    <a href="{{ .Permalink }}">
+        {{/* Show banner image or default header image */}}
+        {{ .Scratch.Set "set_img_link" false}}
+        {{ .Scratch.Set "set_img_caption" false}}
+        {{ .Scratch.Set "get_large" false }}
+        {{ .Scratch.Set "darken" true }}
+        <div class="block relative overflow-hidden w-full rounded" style="max-height: 16rem;">
+            {{ partial "post-featured-image" . }}
+
+            {{/* featured */}}
+            {{ if .Params.featured }}
+            <i data-feather="star" class="absolute right-0 top-0 pr-4 pt-4 w-10 h-10 text-ne-primary-dark" fill="#FCD34D"></i>
+            {{ end }}
+
+            {{/* Page categories */}}
+            {{ if .Params.categories }}
+            <div class="absolute left-0 top-0 pl-4 pt-4 content-center tracking-tighter  text-ne-on-background-dark flex flex-shrink items-center font-sans font-bold text-base">
+                <i data-feather="bookmark" class=" inline-block mr-1 w-4 h-4"></i>
+                {{- range $index, $value := (.GetTerms "categories") -}}
+                {{- if gt $index 0 }} | {{ end -}}
+                {{- humanize .LinkTitle -}}
+                {{- end -}}
+            </div>
+            {{ end }}
+
+            {{/* Date and category */}}
+            <div class="absolute left-0 bottom-0 pl-4 pb-2 content-center tracking-tighter  text-ne-on-background-dark flex flex-shrink items-center font-sans font-bold text-base">
+                {{ with .PublishDate }}
+                    {{ dateFormat "Jan 2, 2006" .Local }} |
+                {{ end }}
+                {{ with .ReadingTime }}
+                    {{ . }} min read
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="px-2 sm:px-4">
+
+
+            {{/* Title */}}
+            <p class="font-sans text-2xl font-bold tracking-tight pb-1 pt-4">{{- .Title -}}</p>
+
+            {{/* Summary */}}
+            <p class="text-base leading-relaxed">
+                {{ .Params.summary | default ( .Content | plainify | emojify | truncate 150 ) }}
+            </p>
+        </div>
+    </a>
+    {{/* Tags */}}
+    <div class="flex flex-wrap justify-left px-2 sm:px-4 my-2 space-x-2">
+        {{ range (.GetTerms "tags") }}
+        <a href="{{ .Permalink }}"
+            class="gray-tag inline-block px-3 py-1 my-1 rounded-full text-sm no-underline tracking-tight leading-tight font-semibold">
+            #{{ .LinkTitle }}
+        </a>
+        {{ end }}
+    </div>
+</div>

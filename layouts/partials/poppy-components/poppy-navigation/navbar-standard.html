@@ -3,13 +3,13 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-<section id="{{$content.name}}" class="{{if $page.IsHome}} absolute z-10 {{end}} w-full antialiased rounded p-2">
+<section id="{{$content.name}}" class="{{if $page.IsHome}} absolute z-10 {{end}} w-full antialiased rounded sm:p-2">
   <div class="container mx-auto">
-    <div class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 {{.rounded}}">
+    <div class="lg:px-16 px-6 {{.bg_color}} flex flex-wrap items-center lg:py-0 py-2 {{.rounded}}">
       <div class="flex-1 flex justify-between items-center">
           {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
       </div>
-      <div class="pointer-cursor text-poppycolor2 lg:hidden block flex-none w-20">
+      <div class="pointer-cursor text-poppycolor2 lg:hidden block text-right w-20">
           <button id="hamburger" class="text-4xl py-5">
           &#9776;
         </button>
@@ -18,8 +18,8 @@
       <nav>
         <ul class="lg:flex items-center justify-between {{$design.menu}} pt-4 lg:pt-0">
           {{ range $content.menus.main}}
-            <li class="flex my-2 lg:my-2 mx-1 lg:mx-2 ">
-              <a title="{{ .name }}" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-poppycolor2 " href="{{ .url }}">{{ .name }}</a>
+            <li class="flex my-1 lg:my-1 mx-1 lg:mx-1 ">
+              <a title="{{ .name }}" class="lg:px-2 py-1 px-0 block border-b-2 border-transparent hover:border-poppycolor2 " href="{{ .url }}">{{ .name }}</a>
             </li>
           {{ end }}
         </ul>

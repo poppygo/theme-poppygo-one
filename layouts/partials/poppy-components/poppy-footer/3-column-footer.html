@@ -3,10 +3,8 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-<footer id="{{$content.name}}" class="relative {{.bg_color}} pt-8 pb-6">
-  <div
-    class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20">
-  </div>
+
+<footer id="{{$content.name}}" class="relative {{.bg_color}} pt-8 pb-6  ">
   <div class="container mx-auto px-4">
 
     <div class="flex flex-wrap">
@@ -15,7 +13,7 @@
         {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
 
         <h4 class="{{.title}}">{{$content.title}}</h4>
-        <h5 class="{{.subtitle}}">{{$content.subtitle}}</h5>
+        <h5 class="{{.subtitle}} md:mr-40">{{$content.subtitle}}</h5>
       </div>
       <div class="w-full lg:w-6/12 px-4">
         <div class="flex flex-wrap items-top mb-6">

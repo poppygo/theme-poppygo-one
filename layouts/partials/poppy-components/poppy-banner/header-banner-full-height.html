@@ -3,9 +3,9 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <div id="{{$content.name}}" class="w-full top-0 flex bg-fixed bg-center h-screen bg-cover px-4 {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
-    <div class= "flex flex-col justify-center mx-auto my-28">
-      <div class = "text-center">
+  <div id="{{$content.name}}" class="w-full top-0 flex bg-fixed bg-center h-screen bg-cover sm:px-4 {{.inner_space}} md:pb-12 {{ $content.bg_css }} {{.bg_color}} ">
+    <div class= "flex flex-col justify-center mx-auto mt-48">
+      <div class = "text-center mx-2 md:mx-10 lg:mx-20 xl:mx-48">
       <h1 class="{{.banner}}">{{$content.title}}</h1>
       <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
       {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}

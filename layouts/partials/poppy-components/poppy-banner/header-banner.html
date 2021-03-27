@@ -3,8 +3,8 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <div id="{{$content.name}}" class="w-full top-0 flex bg-fixed bg-center bg-cover px-4 {{.outer_space}} {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
-    <div class= "flex flex-col justify-center mx-auto my-28">
+  <div id="{{$content.name}}" class="w-full top-0 flex bg-fixed bg-center bg-cover sm:px-4 {{.outer_space}} {{.inner_space}} pb-12 {{ $content.bg_css }} {{.bg_color}} ">
+    <div class= "flex flex-col justify-end align-bottom mx-auto mt-48">
       <div class = "text-center">
       <h1 class="{{.banner}}">{{$content.title}}</h1>
       <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>

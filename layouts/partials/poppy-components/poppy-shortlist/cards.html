@@ -9,28 +9,46 @@
 
 {{- with $design -}}
 
-  {{- $columns := partial "poppy-elements/responsive-columns" (dict "amount" $amount "max_columns" $content.max_columns) -}}
-  <section id="{{$content.name}}" class="mx-auto px-4 md:px-12 bg_cover {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
+  <section id="{{$content.name}}" class="w-full mx-auto sm:px-4 bg_cover {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
     <div class="container mx-auto">
-      <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
-      <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
-        <div class="flex">
-            {{- range $content.items -}}
-            <div class="flex flex-auto p-5 {{$columns}}">
-                <div class=" w-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$design.item_bg_color}}">
+        <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
+        <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
+        <div class=" grid grid-flow-row-dense grid-cols-12 {{.gridgap}}">
+            {{- range $index, $item := $content.items -}}
+                {{- $md_start := "" -}}
+                {{- $lg_start := "" -}}
+                {{- $span := "col-span-12 md:col-span-6 lg:col-span-4" -}}
+                {{-  if and (not (modBool $amount 2)) (eq $index (sub $amount 1)) -}}
+                  {{ $md_start = "md:col-start-4" -}}
+                {{- end -}}
+                {{-  if eq $amount 1 -}}{{ $lg_start = "lg:col-start-5" -}}
+                {{-  else if and (eq $index 0) (eq $amount 2) -}}{{ $lg_start = "lg:col-start-3" -}}
+                {{-  else if and (eq $index (sub $amount 2)) (eq $amount 5) -}}{{ $lg_start = "lg:col-start-3" -}}
+                {{-  else if and (not (modBool $amount 2)) (not (modBool $amount 3)) (eq $index (sub $amount 3)) (gt $amount 6) -}}
+                  {{ $lg_start = "lg:col-start-3" -}}
+                {{- end -}}
+
+                {{- if or (in (slice 4 7 8 10) $amount ) (gt $amount 10) -}}
+                    {{- $span = "col-span-12 md:col-span-6 lg:col-span-3" -}}
+                {{- end -}}
+
+                <div class="{{$md_start}} {{$lg_start}} {{$span}} flex flex-col w-full h-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$design.item_bg_color}}">
                   <div>
-                    {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-2/5 object-cover") -}}
+                    {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-60 object-cover") -}}
                   </div>
-                  <div class="prose p-4 md:p-6 ">
+                  <div class=" {{$design.itemtitle}} p-4 md:p-6 ">
+                      {{.title  }}
+                  </div>
+                  <div class="flex-grow prose p-4 md:p-6 {{$design.itembody}}">
                       {{.bodytext | markdownify }}
                   </div>
-                  <div class="px-3 ">
+                  <div class="p-3 text-center  justify-end">
                       {{- partial "poppy-elements/buttons" (dict "design" $design "buttons" .buttons ) -}}
                   </div>
               </div>
-            </div>
+
             {{- end -}}
         </div>
-      </div>
+    </div>
   </section>
 {{- end -}}

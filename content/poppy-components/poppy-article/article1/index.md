@@ -4,7 +4,7 @@ mainContent: ''
 resources: []
 title: ->frompage
 poppy_type: poppy-article
-poppy_variant: article-one
+poppy_variant: blog-post
 image: ->frompage
 bg_image: ->frompage
 ---

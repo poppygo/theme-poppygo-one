@@ -20,7 +20,16 @@
   {{- $override := ( $section_value | default $component_value ) -}}
   {{- if $section_value }} {{- $override_debug_info = merge $override_debug_info (dict . true ) -}} {{- end -}}
 
-  {{- if eq $override "->frompage" -}}
+  {{- if (eq $override "none") -}}
+      {{/* Dont add to content */}}
+  {{- else if reflect.IsSlice $section_value -}}
+      {{- if (eq (len $section_value) 0 ) -}}
+        {{/* Dont add to content */}}
+      {{- else -}}
+        {{- $content = merge $content (dict . $override ) -}}
+        {{- $content = merge $content (dict "body" $page_component.Content) -}}
+      {{- end -}}
+  {{- else if eq $override "->frompage" -}}
     {{- $page_value := index $page.Params . -}}
     {{- $content = merge $content (dict . $page_value ) -}}
     {{- $content = merge $content (dict "body" $page.Content) -}}
