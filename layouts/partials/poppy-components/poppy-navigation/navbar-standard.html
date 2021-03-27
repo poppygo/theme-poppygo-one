@@ -4,7 +4,7 @@
 
 {{- with $design -}}
 <section id="{{$content.name}}" class="{{if $page.IsHome}} lg:absolute lg:z-10 {{end}} w-full antialiased rounded sm:p-2">
-  <div class="container mx-auto px-2">
+  <div class="container mx-auto">
     <div class="md:px-16 px-6 {{$content.bg_color}} flex flex-wrap items-center md:py-0 py-2 {{.rounded}}">
       <div class="flex-1 flex justify-between items-center">
           {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
