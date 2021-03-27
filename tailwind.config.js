@@ -1,10 +1,47 @@
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: false,
     content: ['./layouts/**/*.html','./exampleSite/public/**/*.html' ,'./exampleSite/public/*.html' ,'./public/page-components/*.html'],
   },
   theme: {
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: 'inherit',
+            h1: {
+              color: 'inherit',
+            },
+            h2: {
+              color: 'inherit',
+            },
+            h3: {
+              color: 'inherit',
+            },
+            h4: {
+              color: 'inherit',
+            },
+            h5: {
+              color: 'inherit',
+            },
+            code: {
+              color: 'inherit',
+            },
+            pre: {
+              backgroundColor: 'var(--poppy-colordark)',
+            },
+            strong: {
+              color: 'inherit',
+            },
+            a: {
+              color: 'var(--poppy-color1)',
+              '&:hover': {
+                color: 'var(--poppy-color2)',
+              },
+            },
+          },
+        },
+      }),
       colors: {
         poppycolor1: 'var(--poppy-color1)',
         poppycolor2: 'var(--poppy-color2)',
@@ -31,6 +68,7 @@ module.exports = {
       menu: "var(--font-weight-menu)",
     },
   },
+
   variants: {},
   plugins: [
     require('@tailwindcss/typography'),
