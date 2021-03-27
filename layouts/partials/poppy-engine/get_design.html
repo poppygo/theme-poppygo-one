@@ -1,12 +1,12 @@
 
 {{- $page_component := . -}}
 {{- $typographyData := site.Data.design.typographies -}}
-{{- $objectData := site.Data.design.objects -}}
+{{- $componentData := site.Data.design.components -}}
 {{- $buttonData := site.Data.design.buttons -}}
 {{- $design := dict -}}
 {{- $override_debug_info := dict -}}
 
-{{- range $objectData -}}
+{{- range $componentData -}}
   {{- range $key, $value := . -}}
     {{- if $page_component.Params.design -}}
       {{- $override := index $page_component.Params.design $key -}}
@@ -15,7 +15,7 @@
       {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict $key true ) -}} {{- end -}}
     {{- end -}}
     {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}
-    {{- else if in $key "inner_space" -}} {{- $value = printf "py-%s sm:py-%s md:py-%s lg:py-%s xl:py-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
+    {{- else if in $key "vertical_space" -}} {{- $value = printf "py-%s sm:py-%s md:py-%s lg:py-%s xl:py-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
     {{- else if in $key "bg" -}} {{- $value = printf "bg-%s" $value -}}
     {{- else if in $key "text" -}} {{- $value = printf "text-%s" $value -}}
     {{- else if eq $key "rounded" -}} {{- $value = printf "sm:rounded-%s" $value -}}
@@ -46,15 +46,13 @@
     {{- end -}}
 
     {{- if $value -}}
-
-        {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
-        {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
-        {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
-        {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
-        {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
-
-
-        {{- if eq $key "size" -}}
+      {{- if eq $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
+      {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
+      {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
+      {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
+      {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
+      {{- if eq $key "size" -}}
+        {{- if not (in $name "menu") -}}
           {{- $sizeIndex := 0 -}}
           {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
           {{- $lg := "" -}} {{- $xl := "" -}}
@@ -65,9 +63,12 @@
             {{- end -}}
           {{- end -}}
           {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
+        {{- else -}}
+          {{- $value = (printf "text-%s"  $value ) -}}
         {{- end -}}
+      {{- end -}}
 
-        {{- $type = printf "%s %s" $type $value -}}
+      {{- $type = printf "%s %s" $type $value -}}
     {{- end -}}
   {{- end -}}
   {{- $design = merge $design (dict $name $type ) -}}
@@ -95,34 +96,29 @@
     {{- end -}}
 
     {{- if $value -}}
-        {{- if in $key "space" -}}
-            {{ $value }}
-            {{- $value = printf "px-%s py-%s" (string (mul (int $value) 4)) (string $value)  -}}
-        {{- end -}}
-        {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
-        {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
-        {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
-        {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
-        {{- if eq $key "name" -}} {{- $button_name = printf "button_%s"  $value  -}} {{- end -}}
+      {{- if in $key "space" -}}
+          {{ $value }}
+          {{- $value = printf "px-%s py-%s" (string (mul (int $value) 4)) (string $value)  -}}
+      {{- end -}}
+      {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
+      {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
+      {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
+      {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
+      {{- if eq $key "name" -}} {{- $button_name = printf "button_%s"  $value  -}} {{- end -}}
 
-
-
-        {{- if in $key "size" -}}
-          {{- $sizeIndex := 0 -}}
-          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
-          {{- $lg := "" -}} {{- $xl := "" -}}
-          {{- range $index, $size := $sizes -}}
-            {{- if eq $size $value -}}
-              {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
-              {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
-            {{- end -}}
+      {{- if in $key "size" -}}
+        {{- $sizeIndex := 0 -}}
+        {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
+        {{- $lg := "" -}} {{- $xl := "" -}}
+        {{- range $index, $size := $sizes -}}
+          {{- if eq $size $value -}}
+            {{- if le $index (sub (len $sizes) 2 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
+            {{- if le $index (sub (len $sizes) 3 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
           {{- end -}}
-          {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
         {{- end -}}
-
-
-
-        {{- $button = printf "%s %s" $button $value -}}
+        {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
+      {{- end -}}
+      {{- $button = printf "%s %s" $button $value -}}
     {{- end -}}
   {{- end -}}
   {{- if $overridden }}

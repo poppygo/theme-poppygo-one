@@ -3,7 +3,7 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <div id="{{$content.name}}" class="{{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} bg-cover px-6 lg:px-32">
+  <div id="{{$content.name}}" class="{{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}} bg-cover px-6 lg:px-32">
 
       <div class="lg:flex">
           <div class="lg:w-2/3">
@@ -12,7 +12,7 @@
           </div>
           <form action="POGOFORM" class="mt-2 w-full self-end">
               <div class="flex ">
-                  <input type="email" class="w-full h-16 px-2 py-4 {{.item_bg_color}} {{.rounded}} rounded-r-none {{.border}} focus:ring-4 focus:outline-none" required>
+                  <input type="email" class="w-full h-16 px-2 py-4 {{$content.item_bg_color}} {{.rounded}} rounded-r-none {{.border}} focus:ring-4 focus:outline-none" required>
                   <button class="h-16 {{.button_primary}} rounded-l-none flex-none hover:opacity-70">Sign Up</button>
               </div>
           </form>

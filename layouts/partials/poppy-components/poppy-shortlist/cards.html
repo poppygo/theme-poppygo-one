@@ -9,8 +9,8 @@
 
 {{- with $design -}}
 
-  <section id="{{$content.name}}" class="w-full mx-auto sm:px-4 bg_cover {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
-    <div class="container mx-auto">
+  <section id="{{$content.name}}" class="w-full mx-auto sm:px-4 bg_cover {{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}}">
+    <div class="container mx-auto px-2">
         <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
         <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
         <div class=" grid grid-flow-row-dense grid-cols-12 {{.gridgap}}">
@@ -32,7 +32,7 @@
                     {{- $span = "col-span-12 md:col-span-6 lg:col-span-3" -}}
                 {{- end -}}
 
-                <div class="{{$md_start}} {{$lg_start}} {{$span}} flex flex-col w-full h-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$design.item_bg_color}}">
+                <div class="{{$md_start}} {{$lg_start}} {{$span}} flex flex-col w-full h-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$content.item_bg_color}}">
                   <div>
                     {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-60 object-cover") -}}
                   </div>

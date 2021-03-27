@@ -3,7 +3,7 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <section id="{{$content.name}}" class="bg-fixed text-center bg-cover sm:px-4 pt-32 {{.outer_space}} {{.inner_space}}  {{ $content.bg_css }} {{.bg_color}} ">
+  <section id="{{$content.name}}" class="bg-fixed text-center bg-cover sm:px-4 pt-32 {{.outer_space}} {{.vertical_space}}  {{ $content.bg_css }} {{$content.bg_color}} ">
     <div class= "md:mx-32 lg:mx-60 pb-12">
       <h1 class="{{ .title }}">{{$content.title}}</h1>
       <p class="prose mx-auto {{ .subtitle }}">{{ $content.subtitle | markdownify }}</p>

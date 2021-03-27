@@ -43,14 +43,12 @@ fontscheme:
   - family: Comfortaa
     name: display2
     weight: 400
-objects:
+components:
   - bg_color: white
     border: none
     gridgap: 10
-    inner_space: 10
-    item_bg_color: white
-    name: components
-    outer_space: 10
+    vertical_space: 10
+    name: all
     rounded: 2xl
     shadow: lg
 typographies:
@@ -87,14 +85,6 @@ typographies:
     space: 5
     transform: ''
   - align: ''
-    bg_color: poppycolor5
-    color: poppycolor1
-    font: art
-    name: art
-    size: 7xl
-    space: 0
-    transform: ''
-  - align: ''
     bg_color: none
     color: poppycolor2
     font: menu
@@ -110,3 +100,29 @@ typographies:
     size: 2xl
     space: 2
     transform: uppercase
+  - bg_color: none
+    color: poppycolor4
+    font: display1
+    name: footer_title
+    size: xl
+    space: 0
+    align: left
+  - bg_color: none
+    color: poppycolor4
+    font: display2
+    name: footer_subtitle
+    size: lg
+    space: 0
+  - bg_color: none
+    color: poppycolor4
+    font: body
+    name: footer_body
+    size: base
+    space: 0
+  - bg_color: none
+    color: poppycolor4
+    font: body
+    name: footer_menu
+    size: sm
+    space: 0
+    transform: lowercase

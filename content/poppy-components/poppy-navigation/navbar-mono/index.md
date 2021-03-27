@@ -1,9 +1,9 @@
 ---
-
-
 mainContent: ''
 resources: []
 title: navbar
+item_bg_color: poppycolorlight
+bg_color: poppycolorlight
 poppy_type: poppy-navigation
 poppy_variant: navigation-mono
 menus:

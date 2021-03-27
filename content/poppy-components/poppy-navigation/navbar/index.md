@@ -1,7 +1,6 @@
 ---
-
-
-mainContent: ''
+item_bg_color: poppycolorlight
+bg_color: poppycolorlight
 resources: []
 title: navbar
 poppy_type: poppy-navigation
@@ -29,5 +28,5 @@ menus:
       url: /pages/components-ready/
       weight: 0
 
-
 ---
+## main content not in use

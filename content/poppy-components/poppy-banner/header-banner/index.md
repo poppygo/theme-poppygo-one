@@ -1,15 +1,13 @@
 ---
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 bg_image: back
 buttons:
   - label: Check this
     link: /page-components/
   - label: More about us
     link: '#'
-
-
-
 image: null
-
 name: headerbanner
 poppy_type: poppy-banner
 poppy_variant: header-banner

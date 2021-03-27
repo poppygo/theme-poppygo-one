@@ -10,7 +10,7 @@
 </style>
 
 {{- with $design -}}
-  <section id="{{$content.name}}" class="{{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} bg-cover">
+  <section id="{{$content.name}}" class="{{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}} bg-cover">
     <div class = "grid newsletter-grid grid-flow-row block ">
 
       <div class ="col-start-1 row-start-2 col-span-2 w-full overflow-hidden ">
@@ -22,7 +22,7 @@
           <span class="prose lg:prose-xl text-left {{.body}}">{{$content.body | markdownify }}</span>
           <form action="#" class="mt-2  ">
               <div class="flex items-center">
-                  <input type="email" action="POGOFORM" class="w-full h-16 px-2 py-4 {{.item_bg_color}} {{.rounded}} rounded-r-none {{.border}} focus:ring-4 focus:outline-none" required>
+                  <input type="email" action="POGOFORM" class="w-full h-16 px-2 py-4 {{$content.item_bg_color}} {{.rounded}} rounded-r-none {{.border}} focus:ring-4 focus:outline-none" required>
                   <button class="h-16 {{.button_primary}} rounded-l-none flex-none hover:opacity-70">Sign Up</button>
               </div>
           </form>

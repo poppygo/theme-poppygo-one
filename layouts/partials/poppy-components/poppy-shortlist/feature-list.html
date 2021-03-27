@@ -3,8 +3,8 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <section id="{{$content.name}}"  class="px-4 md:px-12 bg-cover {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="{{$content.name}}"  class="px-4 md:px-12 bg-cover {{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}}">
+    <div class="container mx-auto px-2 px-4 sm:px-6 lg:px-8">
       <h3 class=" {{.title }} m-2">{{ $content.title }}</h3>
       <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
 

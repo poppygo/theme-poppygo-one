@@ -1,14 +1,13 @@
 ---
 bg_image: ''
-bg_color: poppycolor2
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 image: explainer
 poppy_type: poppy-shortlist
 poppy_variant: explainer
 subtitle: ''
 summary: '-| I am the summary of the newsletter element, which is not very relevant'
 title: Explainer
-design:
-  item_bg_color: transparent
 items:
   - name: item1
     image: explain

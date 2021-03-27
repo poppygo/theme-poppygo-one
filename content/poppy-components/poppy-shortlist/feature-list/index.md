@@ -1,6 +1,6 @@
 ---
-
-
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 mainContent: ''
 resources: []
 title: I am an shortlist in the form of cards
@@ -10,7 +10,6 @@ summary: -|
 poppy_type: poppy-shortlist
 poppy_variant: feature-list
 bg_image: background
-max_columns: 6
 items:
   - name: item1
     image: foreground

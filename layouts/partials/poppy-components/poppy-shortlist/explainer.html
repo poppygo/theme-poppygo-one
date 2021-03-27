@@ -3,8 +3,8 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-    <section id="{{$content.name}}" class="w-full sm:px-4 md:px-12 bg-cover sm:{{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}} ">
-      <div class = "container mx-auto">
+    <section id="{{$content.name}}" class="w-full sm:px-4 md:px-12 bg-cover sm:{{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}} ">
+      <div class = "container mx-auto px-2">
         <h3 class=" {{.title }} m-2">{{ $content.title }}</h3>
         <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
           <div class="grid grid-cols-10 {{ .gridgap }} grid-flow-row-dense ">
@@ -22,12 +22,12 @@
 
               {{ $row := printf "md:row-start-%s" (string (add $index 1)) -}}
 
-              <div class= "{{$design.item_bg_color}} {{$row}} {{$design.rounded}} {{$design.shadow}} col-span-10 md:col-span-5 my-auto {{$switchImg}} {{$design.border}}" >
+              <div class= "{{$content.item_bg_color}} {{$row}} {{$design.rounded}} {{$design.shadow}} col-span-10 md:col-span-5 my-auto {{$switchImg}} {{$design.border}}" >
                   {{- $class := printf "%s %s w-full" $design.rounded $design.shadow -}}
                   {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" $class ) -}}
               </div>
 
-              <div class="col-span-10 md:col-span-8 {{$row}} {{$design.rounded}} {{$design.item_bg_color}} {{$switchBody}} my-auto md:mt-20 pt-10 mb-5 ">
+              <div class="col-span-10 md:col-span-8 {{$row}} {{$design.rounded}} {{$content.item_bg_color}} {{$switchBody}} my-auto md:mt-20 pt-10 mb-5 ">
                 <div class = {{$design.itemtitle}}>{{.title}}</div>
                 <div class=" prose p-2 md:p-4 mx-auto {{$design.rounded}} {{$design.itembody}} ">
                     {{.bodytext | markdownify }}

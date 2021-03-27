@@ -1,6 +1,6 @@
 ---
-
-
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 mainContent: ''
 resources: []
 title: I am an in-page banner for telling your story

@@ -6,13 +6,13 @@
   {{- if $content.items }}
       {{- $columns := partial "poppy-elements/responsive-columns" (dict "amount" (len $content.items ) "max_columns" $content.max_columns) -}}
 
-      <section id="{{$content.name}}" class="mx-auto px-4 md:px-12 {{.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.inner_space}}">
+      <section id="{{$content.name}}" class="mx-auto px-4 md:px-12 {{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}}">
         <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
         <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
           <div class="flex">
               {{- range $content.items -}}
               <div class="flex flex-auto my-1 px-1 {{$columns}}">
-                  <div class=" w-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$design.item_bg_color}}">
+                  <div class=" w-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$content.item_bg_color}}">
                     <div>
                       {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-2/5 object-cover") -}}
                     </div>

@@ -1,5 +1,6 @@
 ---
-
+item_bg_color: poppycolorlight
+bg_color: poppycolorlight
 mainContent: ''
 resources: []
 title: I am a list of items presented as blog teaser

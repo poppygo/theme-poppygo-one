@@ -10,6 +10,7 @@ poppy_type: poppy-form
 poppy_variant: newsletter-simple
 image: none
 bg_image: back
-
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 
 ---

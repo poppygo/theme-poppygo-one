@@ -1,7 +1,7 @@
 ---
 bg_image: back
-
-
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 image: explainer
 poppy_type: poppy-shortlist
 poppy_variant: explainer-big-images

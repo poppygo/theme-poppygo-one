@@ -1,4 +1,6 @@
 ---
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 bg_image: back
 buttons:
   - label: Check this

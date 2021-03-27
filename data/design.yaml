@@ -1,21 +1,18 @@
-site:
-  bg_color: poppycolorlight
-
 buttons:
   - color: poppycolor1
     font: body
     font_weight: bold
     name: primary
-    rounded: 2xl
-    size: xl
+    rounded: xl
+    size: lg
     space: 4
     text_color: white
   - color: poppycolor4
     font: display1
-    font_weight: ''
+    font_weight: 'bold'
     name: secondary
-    rounded: null
-    size: sm
+    rounded: xl
+    size: base
     space: 2
     text_color: poppycolor1
 colorscheme:
@@ -43,16 +40,16 @@ fontscheme:
   - family: Comfortaa
     name: display2
     weight: 400
-objects:
-  - bg_color:
+components:
+  - bg_color: poppycolorlight
     border: none
     gridgap: 10
-    inner_space: 10
-    item_bg_color: white
-    name: components
-    outer_space: 10
+    vertical_space: 10
+    name: all
     rounded: lg
     shadow: lg
+site:
+  bg_color: poppycolorlight
 typographies:
   - align: center
     bg_color: transparent
@@ -99,7 +96,7 @@ typographies:
     color: poppycolor2
     font: menu
     name: menu
-    size: base
+    size: lg
     space: 0
     transform: uppercase
   - align: ''
@@ -110,3 +107,29 @@ typographies:
     size: xl
     space: 2
     transform: uppercase
+  - bg_color: none
+    color: poppycolor4
+    font: display1
+    name: footer_title
+    size: xl
+    space: 0
+    align: left
+  - bg_color: none
+    color: poppycolor4
+    font: display2
+    name: footer_subtitle
+    size: xl
+    space: 0
+  - bg_color: none
+    color: poppycolor4
+    font: body
+    name: footer_body
+    size: base
+    space: 0
+  - bg_color: none
+    color: poppycolor4
+    font: body
+    name: footer_menu
+    size: xl
+    space: 0
+    transform: lowercase

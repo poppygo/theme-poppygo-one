@@ -1,5 +1,6 @@
 ---
-
+item_bg_color: poppycolorlight
+bg_color: poppycolorlight
 title: I am a gallery
 subtitle: Galleries are great for your products and portfolio
 summary: -|
@@ -8,8 +9,6 @@ poppy_type: poppy-listing
 poppy_variant: gallery
 list: poppy-components
 image: fore
-max_amount: 6
-size: 450
 buttons:
   - label: See all
     link: /

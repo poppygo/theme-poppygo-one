@@ -1,6 +1,6 @@
 ---
-
-
+bg_color: poppycolorlight
+item_bg_color: poppycolorlight
 resources: []
 title: I am a reusable newsletter compontent
 subtitle: Mostly this component is used at the bottom of landing pages and the homepage

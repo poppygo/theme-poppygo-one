@@ -1,6 +1,6 @@
 ---
-
-
+item_bg_color: poppycolorlight
+bg_color: poppycolorlight
 mainContent: ''
 resources: []
 title: I am a list of items presented as cards
@@ -12,8 +12,6 @@ poppy_variant: cards
 images:
  - foreground
 bg_image: background
-
-
 list-section: ''
 list-taxonomy:
   taxonomy: 'tags'
