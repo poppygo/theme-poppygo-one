@@ -238,8 +238,8 @@
                "value": "cards1"
              },
              {
-               "text": "mediaobject1",
-               "value": "mediaobject1"
+               "text": "feature-list",
+               "value": "feature-list"
              },
              {
                "text": "header-banner-mono",
@@ -395,7 +395,51 @@
              },
              {
                "key": "font_weight",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "thin",
+                   "value": "thin"
+                 },
+                 {
+                   "text": "extralight",
+                   "value": "extralight"
+                 },
+                 {
+                   "text": "light",
+                   "value": "light"
+                 },
+                 {
+                   "text": "normal",
+                   "value": "normal"
+                 },
+                 {
+                   "text": "medium",
+                   "value": "medium"
+                 },
+                 {
+                   "text": "semibold",
+                   "value": "semibold"
+                 },
+                 {
+                   "text": "bold",
+                   "value": "bold"
+                 },
+                 {
+                   "text": "extrabold",
+                   "value": "extrabold"
+                 },
+                 {
+                   "text": "black",
+                   "value": "black"
+                 }
+               ],
                "title": "Font weight",
+               "type": "select"
+             },
+             {
+               "key": "hover_color",
+               "title": "Hover color",
                "type": "string"
              },
              {
@@ -468,11 +512,6 @@
                ],
                "title": "Size",
                "type": "select"
-             },
-             {
-               "key": "space",
-               "title": "Space",
-               "type": "number"
              },
              {
                "key": "text_color",
@@ -578,29 +617,6 @@
          {
            "fields": [
              {
-               "key": "family",
-               "title": "Family",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "weight",
-               "title": "Weight",
-               "type": "number"
-             }
-           ],
-           "key": "fontscheme",
-           "title": "Fontscheme",
-           "type": "accordion"
-         },
-         {
-           "fields": [
-             {
                "key": "bg_color",
                "multiple": false,
                "options": [
@@ -659,68 +675,10 @@
                "type": "number"
              },
              {
-               "key": "inner_space",
-               "title": "Inner space",
-               "type": "number"
-             },
-             {
-               "key": "item_bg_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "poppycolor1",
-                   "value": "poppycolor1"
-                 },
-                 {
-                   "text": "poppycolor2",
-                   "value": "poppycolor2"
-                 },
-                 {
-                   "text": "poppycolor3",
-                   "value": "poppycolor3"
-                 },
-                 {
-                   "text": "poppycolor4",
-                   "value": "poppycolor4"
-                 },
-                 {
-                   "text": "poppycolor5",
-                   "value": "poppycolor5"
-                 },
-                 {
-                   "text": "poppycolor6",
-                   "value": "poppycolor6"
-                 },
-                 {
-                   "text": "poppycolorlight",
-                   "value": "poppycolorlight"
-                 },
-                 {
-                   "text": "poppycolordark",
-                   "value": "poppycolordark"
-                 }
-               ],
-               "title": "Item bg color",
-               "type": "select"
-             },
-             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
                "type": "string"
-             },
-             {
-               "key": "outer_space",
-               "title": "Outer space",
-               "type": "number"
              },
              {
                "key": "rounded",
@@ -782,11 +740,128 @@
                ],
                "title": "Shadow",
                "type": "select"
+             },
+             {
+               "key": "vertical_space",
+               "title": "Vertical space",
+               "type": "number"
              }
            ],
-           "key": "objects",
-           "title": "Objects",
+           "key": "components",
+           "title": "Components",
            "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "family",
+               "title": "Family",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "fontscheme",
+           "title": "Fontscheme",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "poppycolor1",
+                   "value": "poppycolor1"
+                 },
+                 {
+                   "text": "poppycolor2",
+                   "value": "poppycolor2"
+                 },
+                 {
+                   "text": "poppycolor3",
+                   "value": "poppycolor3"
+                 },
+                 {
+                   "text": "poppycolor4",
+                   "value": "poppycolor4"
+                 },
+                 {
+                   "text": "poppycolor5",
+                   "value": "poppycolor5"
+                 },
+                 {
+                   "text": "poppycolor6",
+                   "value": "poppycolor6"
+                 },
+                 {
+                   "text": "poppycolorlight",
+                   "value": "poppycolorlight"
+                 },
+                 {
+                   "text": "poppycolordark",
+                   "value": "poppycolordark"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "2xl",
+                   "title": "2xl",
+                   "type": "string"
+                 },
+                 {
+                   "key": "DEFAULT",
+                   "title": "D e f a u l t",
+                   "type": "string"
+                 },
+                 {
+                   "key": "lg",
+                   "title": "Lg",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "sm",
+                   "title": "Sm",
+                   "type": "string"
+                 },
+                 {
+                   "key": "xl",
+                   "title": "Xl",
+                   "type": "string"
+                 }
+               ],
+               "key": "container",
+               "title": "Container",
+               "type": "accordion"
+             }
+           ],
+           "groupdata": true,
+           "key": "site",
+           "title": "Site",
+           "type": "section"
          },
          {
            "fields": [
@@ -916,6 +991,50 @@
                "type": "select"
              },
              {
+               "key": "font_weight",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "thin",
+                   "value": "thin"
+                 },
+                 {
+                   "text": "extralight",
+                   "value": "extralight"
+                 },
+                 {
+                   "text": "light",
+                   "value": "light"
+                 },
+                 {
+                   "text": "normal",
+                   "value": "normal"
+                 },
+                 {
+                   "text": "medium",
+                   "value": "medium"
+                 },
+                 {
+                   "text": "semibold",
+                   "value": "semibold"
+                 },
+                 {
+                   "text": "bold",
+                   "value": "bold"
+                 },
+                 {
+                   "text": "extrabold",
+                   "value": "extrabold"
+                 },
+                 {
+                   "text": "black",
+                   "value": "black"
+                 }
+               ],
+               "title": "Font weight",
+               "type": "select"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -980,11 +1099,6 @@
                ],
                "title": "Size",
                "type": "select"
-             },
-             {
-               "key": "space",
-               "title": "Space",
-               "type": "number"
              },
              {
                "key": "transform",
@@ -1283,8 +1397,8 @@
                    "value": "cards1"
                  },
                  {
-                   "text": "mediaobject1",
-                   "value": "mediaobject1"
+                   "text": "feature-list",
+                   "value": "feature-list"
                  },
                  {
                    "text": "header-banner-mono",
@@ -1437,8 +1551,8 @@
                    "value": "cards1"
                  },
                  {
-                   "text": "mediaobject1",
-                   "value": "mediaobject1"
+                   "text": "feature-list",
+                   "value": "feature-list"
                  },
                  {
                    "text": "header-banner-mono",

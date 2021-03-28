@@ -74,3 +74,13 @@ shadow:
   - 7xl
   - 8xl
   - 9xl
+font_weight:
+  - thin
+  - extralight
+  - light
+  - normal
+  - medium
+  - semibold
+  - bold
+  - extrabold
+  - black

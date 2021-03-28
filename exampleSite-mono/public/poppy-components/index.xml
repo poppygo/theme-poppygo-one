@@ -123,11 +123,11 @@
     </item>
     
     <item>
-      <title>I am an shortlist with media objects</title>
-      <link>/poppy-components/poppy-shortlist/mediaobject1/</link>
+      <title>I am an shortlist in the form of cards</title>
+      <link>/poppy-components/poppy-shortlist/feature-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/poppy-components/poppy-shortlist/mediaobject1/</guid>
+      <guid>/poppy-components/poppy-shortlist/feature-list/</guid>
       <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
     </item>
     
@@ -155,7 +155,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/poppy-components/poppy-navigation/navbar/</guid>
-      <description></description>
+      <description>main content not in use </description>
     </item>
     
     <item>

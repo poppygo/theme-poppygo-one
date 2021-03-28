@@ -17,6 +17,24 @@ summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
   descriptions
 title: I am a banner
+design:
+  typographies:
+    - align: center
+      bg_color: transparent
+      color: poppycolor6
+      font: display1
+      font_weight: bold
+      name: title
+      size: 5xl
+      transform: uppercase
+    - align: center
+      bg_color: transparent
+      color: white
+      font: display1
+      font_weight: normal
+      name: subtitle
+      size: xl
+      transform: uppercase
 
 ---
 

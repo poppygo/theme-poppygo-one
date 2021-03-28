@@ -9,10 +9,10 @@
 
 {{- with $design -}}
 
-  <section id="{{$content.name}}" class="w-full mx-auto sm:px-4 bg_cover {{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}}">
+  <section id="{{$content.name}}" class="w-full bg_cover {{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}}">
     <div class="container mx-auto">
-        <h3 class=" {{.title }}  text-center m-2">{{ $content.title }}</h3>
-        <p class=" {{.subtitle}} text-center">{{ $content.subtitle }}</p>
+        <h3 class=" {{.title }}">{{ $content.title }}</h3>
+        <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
         <div class=" grid grid-flow-row-dense grid-cols-12 {{.gridgap}}">
             {{- range $index, $item := $content.items -}}
                 {{- $md_start := "" -}}

@@ -18,13 +18,7 @@ html {
 {{- end -}}
 
 {{ if $page_sections }}
-  {{- range where $page_sections ".position" "top" -}}
-      {{- $sorted_sections =  $sorted_sections | append . -}}
-  {{- end -}}
-  {{- range where $page_sections ".position" nil -}}
-      {{- $sorted_sections =  $sorted_sections | append . -}}
-  {{- end -}}
-  {{- range where $page_sections ".position" "bottom" -}}
+  {{- range $page_sections -}}
       {{- $sorted_sections =  $sorted_sections | append . -}}
   {{- end -}}
 {{ end }}
@@ -37,10 +31,6 @@ html {
       {{- if (fileExists (printf "%s/%s/layouts/partials/%s.html" $themesDir $theme $poppy_component )) }}
           {{- $content_info := partial "poppy-engine/get_content" (dict "page" $page "section" $page_section "page_component" . ) -}}
           {{- $design_info := partial "poppy-engine/get_design" . -}}
-
-          {{- if site.Params.poppygo_cms -}}
-            {{- partial "poppy-engine/poppygo_cms" (dict "page" $page "component" $page_component "poppy_component" $poppy_component "content_info" $content_info "design_info" $design_info ) -}}
-          {{- end -}}
 
           {{- if site.Params.poppygo_debug -}}
             {{- partial "poppy-engine/poppygo_debug" (dict "page" $page "component" $page_component "poppy_component" $poppy_component "content_info" $content_info "design_info" $design_info ) -}}

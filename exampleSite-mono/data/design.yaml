@@ -1,128 +1,152 @@
-site:
-  bg_color: poppycolorlight
-
 buttons:
   - color: poppycolor1
     font: body
     font_weight: bold
     name: primary
-    rounded: 2xl
-    size: xl
-    space: 4
+    rounded: xl
+    size: base
     text_color: white
+    hover_color: poppycolor2
   - color: poppycolor4
     font: display1
-    font_weight: ''
+    font_weight: bold
     name: secondary
-    rounded: null
+    rounded: xl
     size: sm
-    space: 2
     text_color: poppycolor1
+    hover_color: poppycolor2
 colorscheme:
-  poppy_color1: '#434343'
-  poppy_color2: '#D00013'
-  poppy_color3: '#ffffff'
-  poppy_color4: '#C00013'
-  poppy_color5: '#F1F1F1'
-  poppy_color6: '#00ff00'
-  poppy_colorlight: '#eee'
-  poppy_colordark: '#333'
+  poppy_color1: '#FF8000 '
+  poppy_color2: '#2490EB'
+  poppy_color3: '#9BCCF4'
+  poppy_color4: '#C6EDE2'
+  poppy_color5: '#F7F7FF '
+  poppy_color6: '#324a61'
+  poppy_colordark: '#324a61'
+  poppy_colorlight: '#F7F7FF'
+components:
+  - bg_color: poppycolorlight
+    border: none
+    gridgap: 7
+    name: all
+    rounded: lg
+    shadow: lg
+    vertical_space: 10
 fontscheme:
   - family: Nunito
     name: display1
-    weight: 700
   - family: Nunito
     name: body
-    weight: 400
   - family: Nunito
     name: menu
-    weight: 700
   - family: Turret Road
     name: art
-    weight: 700
   - family: Comfortaa
     name: display2
-    weight: 400
-components:
-  - bg_color: white
-    border: none
-    gridgap: 10
-    vertical_space: 10
-    name: all
-    rounded: 2xl
-    shadow: lg
+site:
+  bg_color: poppycolorlight
+  container:
+    - name: padding
+      DEFAULT: "1rem"
+      sm: "2rem"
+      lg: "3rem"
+      xl: "4rem"
+      2xl: "6rem"
 typographies:
   - align: center
-    bg_color: poppycolor3
-    color: poppycolor1
+    bg_color: transparent
+    color: poppycolor6
     font: display1
+    font_weight: bold
     name: banner
-    size: 7xl
-    space: 3
+    size: 5xl
+    transform: uppercase
+  - align: center
+    bg_color: transparent
+    color: white
+    font: display1
+    font_weight: normal
+    name: banner_subtitle
+    size: xl
     transform: uppercase
   - align: center
     bg_color: none
-    color: poppycolor1
+    color: poppycolor6
     font: display1
+    font_weight: semibold
     name: title
-    size: 4xl
-    space: 2
+    size: 2xl
     transform: ''
   - align: ''
     bg_color: none
-    color: poppycolor1
+    color: poppycolordark
     font: body
+    font_weight: ''
     name: body
     size: md
-    space: 1
     transform: ''
   - align: ''
     bg_color: none
     color: poppycolor2
-    font: body
+    font: display2
+    font_weight: medium
     name: subtitle
     size: lg
-    space: 5
+    transform: ''
+  - align: left
+    bg_color: none
+    color: poppycolordark
+    font: body
+    font_weight: light
+    name: itembody
+    size: lg
     transform: ''
   - align: ''
     bg_color: none
-    color: poppycolor2
-    font: menu
+    color: poppycolordark
+    font: body
+    font_weight: semibold
     name: menu
-    size: xl
-    space: 0
+    size: lg
     transform: uppercase
   - align: ''
-    bg_color: poppycolor3
-    color: poppycolor2
+    bg_color: none
+    color: poppycolordark
     font: display2
+    font_weight: semibold
     name: itemtitle
-    size: 2xl
-    space: 2
-    transform: uppercase
-  - bg_color: none
+    size: xl
+    transform: ''
+  - align: left
+    bg_color: none
     color: poppycolor4
     font: display1
+    font_weight: ''
     name: footer_title
     size: xl
-    space: 0
-    align: left
-  - bg_color: none
+    transform: ''
+  - align: ''
+    bg_color: none
     color: poppycolor4
     font: display2
+    font_weight: ''
     name: footer_subtitle
-    size: lg
-    space: 0
-  - bg_color: none
+    size: xl
+    transform: ''
+  - align: ''
+    bg_color: none
     color: poppycolor4
     font: body
+    font_weight: ''
     name: footer_body
     size: base
-    space: 0
-  - bg_color: none
+    transform: ''
+  - align: ''
+    bg_color: none
     color: poppycolor4
     font: body
+    font_weight: ''
     name: footer_menu
-    size: sm
+    size: xl
     space: 0
     transform: lowercase

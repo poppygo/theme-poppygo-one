@@ -8,6 +8,41 @@ poppy_variant: 3-column-footer
 position: bottom
 title: PoppyGo One Theme
 subtitle: One theme for all your websites
+design:
+  typographies:
+    - align: left
+      bg_color: none
+      color: poppycolorlight
+      font: display1
+      font_weight: ''
+      name: title
+      size: xl
+      transform: ''
+    - align: ''
+      bg_color: none
+      color: poppycolorlight
+      font: display2
+      font_weight: ''
+      name: subtitle
+      size: xl
+      transform: ''
+    - align: ''
+      bg_color: none
+      color: poppycolorlight
+      font: body
+      font_weight: ''
+      name: body
+      size: base
+      transform: ''
+    - align: ''
+      bg_color: none
+      color: poppycolorlight
+      font: body
+      font_weight: ''
+      name: menu
+      size: xl
+      space: 0
+      transform: lowercase
 menus:
   footer1:
     - identifier: ''

@@ -12,6 +12,24 @@ poppy_variant: inpage-banner
 image:
 bg_image: for
 name: inpage-banner
+design:
+  typographies:
+    - align: center
+      bg_color: transparent
+      color: poppycolor6
+      font: display1
+      font_weight: bold
+      name: title
+      size: 5xl
+      transform: uppercase
+    - align: center
+      bg_color: transparent
+      color: white
+      font: display1
+      font_weight: normal
+      name: subtitle
+      size: xl
+      transform: uppercase
 
 ---
 ### I am the main content

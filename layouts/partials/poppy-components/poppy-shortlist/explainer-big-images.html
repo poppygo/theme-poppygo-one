@@ -3,9 +3,9 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-    <section id="{{$content.name}}" class="px-4 md:px-12 bg-cover {{.text_dark}} {{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}} ">
+    <section id="{{$content.name}}" class="bg-cover {{$content.bg_color}} {{$content.bg_css}} {{.vertical_space}} ">
       <div class = "container mx-auto">
-        <h3 class=" {{.title }} m-2">{{ $content.title }}</h3>
+        <h3 class=" {{.title }}">{{ $content.title }}</h3>
         <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
           <div class="grid grid-cols-5 {{ .gridgap }} grid-flow-row-dense ">
             {{- range $index, $value := $content.items -}}

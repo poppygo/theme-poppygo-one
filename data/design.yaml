@@ -4,17 +4,17 @@ buttons:
     font_weight: bold
     name: primary
     rounded: xl
-    size: lg
-    space: 4
+    size: base
     text_color: white
+    hover_color: poppycolor2
   - color: poppycolor4
     font: display1
-    font_weight: 'bold'
+    font_weight: bold
     name: secondary
     rounded: xl
-    size: base
-    space: 2
+    size: sm
     text_color: poppycolor1
+    hover_color: poppycolor2
 colorscheme:
   poppy_color1: '#FF8000 '
   poppy_color2: '#2490EB'
@@ -24,111 +24,128 @@ colorscheme:
   poppy_color6: '#324a61'
   poppy_colordark: '#324a61'
   poppy_colorlight: '#F7F7FF'
-fontscheme:
-  - family: Nunito
-    name: display1
-    weight: 700
-  - family: Nunito
-    name: body
-    weight: 400
-  - family: Nunito
-    name: menu
-    weight: 700
-  - family: Turret Road
-    name: art
-    weight: 700
-  - family: Comfortaa
-    name: display2
-    weight: 400
 components:
   - bg_color: poppycolorlight
     border: none
-    gridgap: 10
-    vertical_space: 10
+    gridgap: 7
     name: all
     rounded: lg
     shadow: lg
+    vertical_space: 10
+fontscheme:
+  - family: Nunito
+    name: display1
+  - family: Nunito
+    name: body
+  - family: Nunito
+    name: menu
+  - family: Turret Road
+    name: art
+  - family: Comfortaa
+    name: display2
 site:
   bg_color: poppycolorlight
+  container:
+    - name: padding
+      DEFAULT: "1rem"
+      sm: "2rem"
+      lg: "3rem"
+      xl: "4rem"
+      2xl: "6rem"
 typographies:
   - align: center
     bg_color: transparent
     color: poppycolor6
     font: display1
+    font_weight: bold
     name: banner
     size: 5xl
-    space: 3
+    transform: uppercase
+  - align: center
+    bg_color: transparent
+    color: white
+    font: display1
+    font_weight: normal
+    name: banner_subtitle
+    size: xl
     transform: uppercase
   - align: center
     bg_color: none
     color: poppycolor6
     font: display1
+    font_weight: semibold
     name: title
     size: 2xl
-    space: 2
     transform: ''
   - align: ''
     bg_color: none
-    color: poppycolor1
+    color: poppycolordark
     font: body
+    font_weight: ''
     name: body
     size: md
-    space: 1
     transform: ''
   - align: ''
     bg_color: none
     color: poppycolor2
-    font: body
+    font: display2
+    font_weight: medium
     name: subtitle
     size: lg
-    space: 5
     transform: ''
-  - align: ''
-    bg_color: poppycolor5
-    color: poppycolor1
-    font: art
-    name: art
-    size: 5xl
-    space: 0
+  - align: left
+    bg_color: none
+    color: poppycolordark
+    font: body
+    font_weight: light
+    name: itembody
+    size: lg
     transform: ''
   - align: ''
     bg_color: none
-    color: poppycolor2
-    font: menu
+    color: poppycolordark
+    font: body
+    font_weight: semibold
     name: menu
     size: lg
-    space: 0
     transform: uppercase
   - align: ''
-    bg_color: poppycolor3
-    color: poppycolor2
+    bg_color: none
+    color: poppycolordark
     font: display2
+    font_weight: semibold
     name: itemtitle
     size: xl
-    space: 2
-    transform: uppercase
-  - bg_color: none
+    transform: ''
+  - align: left
+    bg_color: none
     color: poppycolor4
     font: display1
+    font_weight: ''
     name: footer_title
     size: xl
-    space: 0
-    align: left
-  - bg_color: none
+    transform: ''
+  - align: ''
+    bg_color: none
     color: poppycolor4
     font: display2
+    font_weight: ''
     name: footer_subtitle
     size: xl
-    space: 0
-  - bg_color: none
+    transform: ''
+  - align: ''
+    bg_color: none
     color: poppycolor4
     font: body
+    font_weight: ''
     name: footer_body
     size: base
-    space: 0
-  - bg_color: none
+    transform: ''
+  - align: ''
+    bg_color: none
     color: poppycolor4
     font: body
+    font_weight: ''
     name: footer_menu
     size: xl
     space: 0

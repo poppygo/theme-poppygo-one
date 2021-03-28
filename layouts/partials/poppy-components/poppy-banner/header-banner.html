@@ -5,8 +5,8 @@
 {{- with $design -}}
   <div id="{{$content.name}}" class="w-full top-0 flex bg-fixed bg-center bg-cover sm:px-4 {{.outer_space}} {{.vertical_space}} pb-12 {{ $content.bg_css }} {{$content.bg_color}} ">
     <div class= "flex flex-col justify-end align-bottom mx-auto mt-48">
-      <div class = "text-center">
-      <h1 class="{{.banner}}">{{$content.title}}</h1>
+      <div class = "">
+      <h1 class="{{.title}}">{{$content.title}}</h1>
       <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
       {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
     </div>
