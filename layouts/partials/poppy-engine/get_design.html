@@ -18,8 +18,8 @@
     {{- else if in $key "vertical_space" -}} {{- $value = printf "py-%s sm:py-%s md:py-%s lg:py-%s xl:py-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
     {{- else if in $key "bg" -}} {{- $value = printf "bg-%s" $value -}}
     {{- else if in $key "text" -}} {{- $value = printf "text-%s" $value -}}
-    {{- else if eq $key "rounded" -}} {{- $value = printf "sm:rounded-%s" $value -}}
-    {{- else if eq $key "shadow" -}} {{- $value = printf "sm:shadow-%s" $value -}}
+    {{- else if eq $key "rounded" -}} {{- $value = printf "rounded-%s" $value -}}
+    {{- else if eq $key "shadow" -}} {{- $value = printf "shadow-%s" $value -}}
     {{- else if eq $key "border" -}} {{- $value = printf "border-%s" (string $value) -}}
     {{- else if eq $key "gridgap" -}} {{- $value = printf "sm:gap-%s" (string $value) -}}
     {{- end -}}
@@ -96,10 +96,6 @@
     {{- end -}}
 
     {{- if $value -}}
-      {{- if in $key "space" -}}
-          {{ $value }}
-          {{- $value = printf "px-%s py-%s" (string (mul (int $value) 4)) (string $value)  -}}
-      {{- end -}}
       {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
       {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
       {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
@@ -109,14 +105,30 @@
       {{- if in $key "size" -}}
         {{- $sizeIndex := 0 -}}
         {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
-        {{- $lg := "" -}} {{- $xl := "" -}}
+        {{- $spaces := slice 1 1 2 2 3 3 4 4 5 5 6 6 7 -}}
+        {{- $lg := "" -}} {{- $xl := "" -}} {{- $lg_spacex := "" -}} {{- $lg_spacey := "" -}} {{- $xl_spacex := "" -}} {{- $xl_spacey := "" -}}
+        {{- $base_spacey := "" -}}
+        {{- $base_spacex := "" -}}
+
         {{- range $index, $size := $sizes -}}
           {{- if eq $size $value -}}
-            {{- if le $index (sub (len $sizes) 2 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
-            {{- if le $index (sub (len $sizes) 3 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
+            {{- $base_spacey = (string (index $spaces $index)) -}}
+            {{- $base_spacex = string ( mul (index $spaces $index) 4) -}}
+            {{- if le $index (sub (len $sizes) 2 ) }}
+              {{- $lg = index $sizes (add $index 1) -}}
+              {{- $lg_spacey = index $spaces (add $index 1) -}}
+              {{- $lg_spacex = index $spaces ( mul (add $index 1) 4) -}}
+            {{- end -}}
+            {{- if le $index (sub (len $sizes) 3 ) }}
+              {{- $xl = index $sizes (add $index 2) -}}
+              {{- $lg_spacey = index $spaces (add $index 2) -}}
+              {{- $lg_spacex = index $spaces ( mul (add $index 2) 4 ) -}}
+            {{- end -}}
           {{- end -}}
         {{- end -}}
-        {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
+        {{- $value = printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl -}}
+        {{- $value = printf "%s py-%s lg:py-%s xl:py-%s" $value $base_spacey (string $lg_spacey) (string $xl_spacey) -}}
+        {{- $value = printf "%s px-%s lg:px-%s xl:px-%s" $value $base_spacex (string $lg_spacex) (string $xl_spacex) -}}
       {{- end -}}
       {{- $button = printf "%s %s" $button $value -}}
     {{- end -}}

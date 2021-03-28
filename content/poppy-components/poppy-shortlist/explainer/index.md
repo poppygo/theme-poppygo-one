@@ -1,7 +1,7 @@
 ---
 bg_image: ''
 bg_color: poppycolorlight
-item_bg_color: poppycolorlight
+item_bg_color: white
 image: explainer
 poppy_type: poppy-shortlist
 poppy_variant: explainer
@@ -17,6 +17,7 @@ items:
     buttons:
       - link: /
         label: read more
+    icon: check-circle
   - name: item2
     image: explain
     bodytext: |
@@ -30,6 +31,7 @@ items:
     buttons:
       - link: /
         label: read more
+    icon: check-circle
   - name: item1
     image: explain
     bodytext: |
@@ -38,6 +40,7 @@ items:
     buttons:
       - link: /
         label: read more
+    icon: check-circle
   - name: item1
     image: explain
     bodytext: |
@@ -46,7 +49,7 @@ items:
     buttons:
       - link: /
         label: read more
-
+    icon: check-circle
   - name: item1
     image: explain
     bodytext: |
