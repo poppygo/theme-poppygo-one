@@ -84,3 +84,9 @@ font_weight:
   - bold
   - extrabold
   - black
+transform:
+  - none
+  - uppercase
+  - lowercase
+  - capitalize
+  - normal-case

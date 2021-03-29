@@ -21,7 +21,7 @@ design:
   typographies:
     - align: center
       bg_color: transparent
-      color: poppycolor6
+      color: poppycolorlight
       font: display1
       font_weight: bold
       name: title
@@ -29,7 +29,7 @@ design:
       transform: uppercase
     - align: center
       bg_color: transparent
-      color: white
+      color: poppycolorlight
       font: display1
       font_weight: normal
       name: subtitle

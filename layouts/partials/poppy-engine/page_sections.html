@@ -25,7 +25,7 @@ html {
 
 {{- range $sorted_sections -}}
     {{- $page_section := .}}
-    {{- $page_component := site.GetPage (printf "my-components/%s/%s" .poppy_type .poppy_variant) | default (site.GetPage (printf "poppy-components/%s/%s" .poppy_type .poppy_variant)) -}}
+    {{- $page_component := site.GetPage (printf "my-components/%s/%s" .component_type .component_variant) | default (site.GetPage (printf "poppy-components/%s/%s" .component_type .component_variant)) -}}
     {{ with $page_component }}
       {{- $poppy_component := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}
       {{- if (fileExists (printf "%s/%s/layouts/partials/%s.html" $themesDir $theme $poppy_component )) }}

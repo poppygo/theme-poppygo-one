@@ -6,20 +6,20 @@ mainContent: ''
 page_sections:
   - bg_image: ''
     name: Navbar
-    poppy_type: ''
-    poppy_variant: navbar
+    component_type: ''
+    component_variant: navbar
     subtitle: ''
     title: ''
   - bg_image: flexible
     name: home-hero-banner
-    poppy_type: poppy-banner
-    poppy_variant: header-banner
+    component_type: poppy-banner
+    component_variant: header-banner
     subtitle: The most flexible Hugo theme for all your sites
     title: Experience PoppyGo One!
   - bg_image: none
     items:
       - bodytext: >
-          ## Full flexibility for any poppy_type of site
+          ## Full flexibility for any component_type of site
 
           Blog, creative portfolio, eCommerce, documentation, any site you can
           imagine is possible
@@ -39,21 +39,21 @@ page_sections:
         image: aron
         name: item1
     name: benefits
-    poppy_type: poppy-shortlist
-    poppy_variant: explainer
+    component_type: poppy-shortlist
+    component_variant: explainer
     subtitle: ''
     title: What makes PoppyGo One great?
   - bg_image: ''
     list: poppy-components
     name: Explore components
-    poppy_type: poppy-listing
-    poppy_variant: gallery1
+    component_type: poppy-listing
+    component_variant: gallery1
     subtitle: ''
     title: Explore all components
   - bg_image: ''
     name: Footer
-    poppy_type: poppy-footer
-    poppy_variant: 3-column-footer
+    component_type: poppy-footer
+    component_variant: 3-column-footer
     subtitle: ''
     title: ''
 resources: []
@@ -61,22 +61,22 @@ subpage_sections:
   - bg_image: ''
     buttons: ''
     name: Navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar
+    component_type: poppy-navigation
+    component_variant: navbar
     subtitle: ''
     title: ''
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
-    poppy_type: poppy-banner
-    poppy_variant: header-banner
+    component_type: poppy-banner
+    component_variant: header-banner
     subtitle: '->frompage'
     title: '->frompage'
   - bg_image: ''
     buttons: ''
     name: Footer
-    poppy_type: poppy-footer
-    poppy_variant: footer
+    component_type: poppy-footer
+    component_variant: footer
     subtitle: ''
     title: ''
 title: Homepage

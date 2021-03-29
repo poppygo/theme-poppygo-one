@@ -5,18 +5,18 @@ draft: false
 mainContent: ''
 page_sections:
   - name: navbar
-    poppy_type: ''
-    poppy_variant: mono-navbar
+    component_type: ''
+    component_variant: mono-navbar
   - bg_image: flexible
     name: home-hero-banner
-    poppy_type: poppy-banner
-    poppy_variant: header-banner-mono
+    component_type: poppy-banner
+    component_variant: header-banner-mono
     subtitle: The most flexible Hugo theme for all your sites
     title: Experience mono
   - bg_image: none
     items:
       - bodytext: >
-          ## Full flexibility for any poppy_type of site
+          ## Full flexibility for any component_type of site
 
           Blog, creative portfolio, eCommerce, documentation, any site you can
           imagine is possible
@@ -37,41 +37,41 @@ page_sections:
         image: aron
         name: item1
     name: benefits
-    poppy_type: poppy-shortlist
-    poppy_variant: explainer
+    component_type: poppy-shortlist
+    component_variant: explainer
     title: What makes PoppyGo One great?
   - bg_image: ''
     name: Explore components
-    poppy_type: poppy-listing
-    poppy_variant: gallery1
+    component_type: poppy-listing
+    component_variant: gallery1
     subtitle: ''
     title: Explore all components
     list: page-components
   - name: footer
-    poppy_type: ''
-    poppy_variant: mono-footer
+    component_type: ''
+    component_variant: mono-footer
 
 resources: []
 subpage_sections:
   - name: navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar
+    component_type: poppy-navigation
+    component_variant: navbar
   - bg_image: '->frompage'
     buttons: '->frompage'
     name: banner
-    poppy_type: poppy-banner
-    poppy_variant: header-banner
+    component_type: poppy-banner
+    component_variant: header-banner
     subtitle: '->frompage'
     title: '->frompage'
   - bg_image: ''
     buttons: ''
     name: article
-    poppy_type: poppy-listing
-    poppy_variant: gallery1
+    component_type: poppy-listing
+    component_variant: gallery1
     subtitle: ''
     title: All items
   - name: footer
-    poppy_type: poppy-footer
-    poppy_variant: footer
+    component_type: poppy-footer
+    component_variant: footer
 title: Homepage
 ---

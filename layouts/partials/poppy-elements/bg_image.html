@@ -12,17 +12,22 @@
   {{- end }}
   {{- $image := (.page.Resources.ByType "image").GetMatch $image_path -}}
   {{- with $image -}}
-      {{- $extraSmall := .Resize "500x" -}}
-      {{- $small := .Resize "768x" -}}
-      {{- $medium := .Resize "992x" -}}
-      {{- $large := .Resize "1200x" -}}
-      {{- $extralarge := .Resize "1920x" -}}
-      <style>
-@media (max-width: 667px) {.{{$css_class}} {background-image:url({{$extraSmall.RelPermalink | safeCSS }}) ;}}
-@media (min-width: 668px) {.{{$css_class}} {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}
-@media (min-width: 992px) {.{{$css_class}} {background-image:url( {{$medium.RelPermalink | safeCSS }}) ;}}
-@media (min-width: 1200px) {.{{$css_class}} {background-image:url({{$large.RelPermalink | safeCSS }}) ;}}
-@media (min-width: 1600px) {.{{$css_class}} {background-image:url({{$extralarge.RelPermalink | safeCSS }}) ;}}
-      </style>
+    {{- $filename := path.Base .Name -}}
+    {{- if eq (path.Ext $filename) ".webp" -}}
+      <style>.{{$css_class}} {background-image:url({{.RelPermalink | safeCSS }}</style>
+    {{- else -}}
+        {{- $extraSmall := .Resize "500x" -}}
+        {{- $small := .Resize "768x" -}}
+        {{- $medium := .Resize "992x" -}}
+        {{- $large := .Resize "1200x" -}}
+        {{- $extralarge := .Resize "1920x" -}}
+        <style>
+  @media (max-width: 667px) {.{{$css_class}} {background-image:url({{$extraSmall.RelPermalink | safeCSS }}) ;}}
+  @media (min-width: 668px) {.{{$css_class}} {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}
+  @media (min-width: 992px) {.{{$css_class}} {background-image:url( {{$medium.RelPermalink | safeCSS }}) ;}}
+  @media (min-width: 1200px) {.{{$css_class}} {background-image:url({{$large.RelPermalink | safeCSS }}) ;}}
+  @media (min-width: 1600px) {.{{$css_class}} {background-image:url({{$extralarge.RelPermalink | safeCSS }}) ;}}
+        </style>
+      {{- end -}}
   {{- end -}}
 {{- end -}}

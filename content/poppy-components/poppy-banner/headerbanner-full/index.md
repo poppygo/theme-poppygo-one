@@ -5,24 +5,26 @@ bg_image: back
 buttons:
   - label: Check this
     link: /page-components/
+    type: primary
   - label: More about us
     link: '#'
+    type: secondary
 image: null
 
 name: headerbanner
 poppy_type: poppy-banner
-poppy_variant: header-banner-mono
+poppy_variant: header-banner-full-height
 resources: []
 subtitle: Banners can be used for selling your proposition
 summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
   descriptions
-title: Mono header banner
+title: I am a banner
 design:
   typographies:
     - align: center
       bg_color: transparent
-      color: poppycolor6
+      color: poppycolordark
       font: display1
       font_weight: bold
       name: title
@@ -30,7 +32,7 @@ design:
       transform: uppercase
     - align: center
       bg_color: transparent
-      color: white
+      color: poppycolorlight
       font: display1
       font_weight: normal
       name: subtitle
