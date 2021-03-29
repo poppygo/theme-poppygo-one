@@ -15,13 +15,13 @@
       {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict $key true ) -}} {{- end -}}
     {{- end -}}
     {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}
-    {{- else if in $key "vertical_space" -}} {{- $value = printf "py-%s sm:py-%s md:py-%s lg:py-%s xl:py-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
+    {{- else if in $key "vertical_space" -}} {{- $value = printf "py-%s sm:pt-%s md:pt-%s lg:pt-%s xl:pt-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
     {{- else if in $key "bg" -}} {{- $value = printf "bg-%s" $value -}}
     {{- else if in $key "text" -}} {{- $value = printf "text-%s" $value -}}
     {{- else if eq $key "rounded" -}} {{- $value = printf "rounded-%s" $value -}}
     {{- else if eq $key "shadow" -}} {{- $value = printf "shadow-%s" $value -}}
     {{- else if eq $key "border" -}} {{- $value = printf "border-%s" (string $value) -}}
-    {{- else if eq $key "gridgap" -}} {{- $value = printf "sm:gap-%s" (string $value) -}}
+    {{- else if eq $key "gridgap" -}} {{- $value = printf "gap-%s" (string $value) -}}
     {{- end -}}
     {{- $design = merge $design (dict $key $value) -}}
   {{- end -}}

@@ -2,29 +2,58 @@
 {{- $content := .content -}}
 {{- $design := .design -}}
 
+{{- $items := partial "poppy-meta/sortedItems" (dict "type" $content.list ) -}}
 
-<section id="{{$content.name}}" class="flex flex-col md:flex-row border-b border-gray-400">
-  <h2 class="text-3xl font-bold mb-2 md:w-32 flex-shrink-0 flex-grow-0">{{ .Key }}</h2>
+{{- with $design -}}
+  <section id="{{$content.name}}" class ="w-full bg_cover {{$content.bg_color}} {{$content.bg_css}} {{.vertical_space}}">
+    <div class="container mx-auto">
+      <h1 class = "{{.title }} ">{{ $content.title }}</h1>
+      <p class = "{{.subtitle }}">{{ $content.subtitle }}</p>
+      <div class = "flex flex-col md:flex-row">
+        <ol class="mb-4 list-none w-full">
+          {{- range $items -}}
 
-  <ol class="mb-4 list-none w-full">
-    {{ range where .Pages "Type" "ne" "page" -}}
-    <li class="mb-8 flex flex-col no-underline rounded-md hover:bg-white transition duration-300 ease-in-out">
-      <a href="{{ .RelPermalink }}" class="tracking-tight no-underline text-blue-600 m-2 mb-0">
-        {{ .Title }}
-      </a>
+            <li class="{{$design.rounded}} {{$design.shadow}} hover:bg-white transition duration-300 ease-in-out">
+              <div class = "flex items-top mb-4">
+                {{ $itempage := . }}
+                {{- $bg_css := printf "%s%s" $content.bg_css .Params.image}}
+                {{- partial "poppy-elements/bg_image" (dict "page" $itempage "css_class" $bg_css "bg_image" $content.image ) }}
+                <div class = "hidden md:block w-1/4 h-full bg-cover {{$bg_css}} {{$design.rounded}} m-2">
+                  <div class= "h-full w-full pb-60"></div>
+                </div>
+                <div class = "p-4 ">
+                  <a href="{{ .RelPermalink }}" class="{{$design.itemtitle}}">
+                    {{ .Title }}
+                  </a>
 
-      <small class="m-2 text-sm">
-        <time class="text-gray-500" datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
-          {{ dateFormat "Jan 2" (default .Date (.PublishDate)) }}
-        </time>
+                  <small class="m-2 text-sm">
+                    <time class="text-gray-500" datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
+                      {{ dateFormat "Jan 2" (default .Date (.PublishDate)) }}
+                    </time>
 
-        {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}" class="inline-flex items-center px-4 py-1 rounded-full no-underline bg-orange-100 text-orange-800 hover:bg-orange-300 ml-4">
-            {{ .LinkTitle }}
-          </a>
-        {{ end }}
-      </small>
-    </li>
-    {{- end }}
-  </ol>
-</section>
+                    {{ range (.GetTerms "tags") }}
+                      <a href="{{ .Permalink }}" class="inline-flex items-center px-4 py-1 rounded-full no-underline bg-orange-100 text-orange-800 hover:bg-orange-300 ml-4">
+                        {{ .LinkTitle }}
+                      </a>
+                    {{ end }}
+                  </small>
+
+                  <div class = "prose {{$design.body}} overflow-clip">
+                    {{.Summary}}
+                  </div>
+
+                  <div class = "">
+                  {{- partial "poppy-elements/buttons" (dict "design" $design "buttons" $content.buttons ) -}}
+                  </div>
+                </div>
+              </div>
+            </li>
+          {{- end -}}
+        </ol>
+      </div>
+      <div class = "{{.vertical_space}}">
+      {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
+      </div>
+    </div>
+  </section>
+{{- end -}}

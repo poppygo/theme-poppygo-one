@@ -39,11 +39,22 @@ log: null
 logFile: null
 markup:
   goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      autoHeadingID: true
+      autoHeadingIDType: github
     renderer:
-      unsafe: true
-  highlight:
-    style: github
-minify: null
+      hardWraps: true
+      unsafe: false
+      xhtml: false
+minify: true
 module: null
 newContentEditor: null
 noChmod: null

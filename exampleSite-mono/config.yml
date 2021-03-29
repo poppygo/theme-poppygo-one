@@ -2,12 +2,23 @@ author: PoppyGo
 baseURL: / #Hostname (and path) to the root, e.g. https://poppygo.io/
 description: ''
 #lastmod : [":fileModTime", “:default”]
-markup:  #See Configure Markup. New in v0.60.0
+markup:
   goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      autoHeadingID: true
+      autoHeadingIDType: github
     renderer:
-      unsafe: true
-  highlight:
-    style: github
+      hardWraps: true
+      unsafe: false
+      xhtml: false
 params:
   poppygo_debug: false
   poppygo_cms: false

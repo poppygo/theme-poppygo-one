@@ -27,14 +27,6 @@
         {{- $page.Content | markdownify -}}
     </div>
 
-    <hr class="mt-16" />
-    <div class="mx-auto max-w-screen-md xl:max-w-screen-lg">
-        {{partial "poppy-elements/post-prev-next" $page }}
-    </div>
-    <div class="mt-8 mb-4 mx-auto max-w-screen-md xl:max-w-screen-lg">
-        {{/* {{partial "poppy-elements/post-suggestions" . }} */}}
-    </div>
-
     {{/* Buttons at the bottom-right */}}
     <div class="fixed bottom-0 right-0 pb-5 pr-5">
         {{partial "poppy-elements/back-to-top-button" }} {{partial "poppy-elements/toc-button" . }}
