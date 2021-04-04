@@ -8,57 +8,54 @@
 {{ end }}
 
 {{- with $design -}}
+<div class="{{.vertical_space}} ">
+  <h3 class=" {{.title }}">{{ $content.title }}</h3>
+  <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
+  <div class=" grid grid-flow-row-dense grid-cols-12 {{.gridgap}}">
+      {{- range $index, $item := $content.items -}}
+          {{- $md_start := "" -}}
+          {{- $lg_start := "" -}}
+          {{- $span := "col-span-12 md:col-span-6 lg:col-span-4" -}}
+          {{-  if and (not (modBool $amount 2)) (eq $index (sub $amount 1)) -}}
+            {{ $md_start = "md:col-start-4" -}}
+          {{- end -}}
+          {{-  if eq $amount 1 -}}{{ $lg_start = "lg:col-start-5" -}}
+          {{-  else if and (eq $index 0) (eq $amount 2) -}}{{ $lg_start = "lg:col-start-3" -}}
+          {{-  else if and (eq $index (sub $amount 2)) (eq $amount 5) -}}{{ $lg_start = "lg:col-start-3" -}}
+          {{-  else if and (not (modBool $amount 2)) (not (modBool $amount 3)) (eq $index (sub $amount 3)) (gt $amount 6) -}}
+            {{ $lg_start = "lg:col-start-3" -}}
+          {{- end -}}
 
-  <section id="{{$content.name}}" class="w-full bg_cover {{$content.bg_color}} {{$content.bg_css}} {{.vertical_space}}">
-    <div class="container mx-auto">
-        <h3 class=" {{.title }}">{{ $content.title }}</h3>
-        <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
-        <div class=" grid grid-flow-row-dense grid-cols-12 {{.gridgap}}">
-            {{- range $index, $item := $content.items -}}
-                {{- $md_start := "" -}}
-                {{- $lg_start := "" -}}
-                {{- $span := "col-span-12 md:col-span-6 lg:col-span-4" -}}
-                {{-  if and (not (modBool $amount 2)) (eq $index (sub $amount 1)) -}}
-                  {{ $md_start = "md:col-start-4" -}}
-                {{- end -}}
-                {{-  if eq $amount 1 -}}{{ $lg_start = "lg:col-start-5" -}}
-                {{-  else if and (eq $index 0) (eq $amount 2) -}}{{ $lg_start = "lg:col-start-3" -}}
-                {{-  else if and (eq $index (sub $amount 2)) (eq $amount 5) -}}{{ $lg_start = "lg:col-start-3" -}}
-                {{-  else if and (not (modBool $amount 2)) (not (modBool $amount 3)) (eq $index (sub $amount 3)) (gt $amount 6) -}}
-                  {{ $lg_start = "lg:col-start-3" -}}
-                {{- end -}}
+          {{- if or (in (slice 4 7 8 10) $amount ) (gt $amount 10) -}}
+              {{- $span = "col-span-12 md:col-span-6 lg:col-span-3" -}}
+          {{- end -}}
 
-                {{- if or (in (slice 4 7 8 10) $amount ) (gt $amount 10) -}}
-                    {{- $span = "col-span-12 md:col-span-6 lg:col-span-3" -}}
-                {{- end -}}
+          <div class="{{$md_start}} {{$lg_start}} {{$span}} flex flex-col w-full h-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$content.item_bg_color}}">
+            <div>
+              {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-60 object-cover") -}}
+            </div>
 
-                <div class="{{$md_start}} {{$lg_start}} {{$span}} flex flex-col w-full h-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$content.item_bg_color}}">
-                  <div>
-                    {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-60 object-cover") -}}
+            <div class="flex flex-col p-4 h-full">
+
+              {{- with .icon -}}
+                {{- if not (eq . "none") -}}
+                  <div class="relative w-8 md:w-12 {{$design.itemtitle}} py-0 -mt-1 md:-mt-2 mr-5">
+                    {{- partial "poppy-elements/icon_outline" (dict "icon" . ) -}}
                   </div>
+                {{- end -}}
+              {{- end -}}
 
-                  <div class="flex flex-auto items-start p-4">
-
-                    {{- with .icon -}}
-                      <div class="relative w-8 md:w-12 {{$design.itemtitle}} py-0 -mt-1 md:-mt-2 mr-5">
-                        {{- partial "poppy-elements/icon_outline" (dict "icon" . ) -}}
-                      </div>
-                    {{- end -}}
-
-                    <div>
-                      <div class = {{$design.itemtitle}}>{{.title}}</div>
-                      <div class=" prose mx-auto {{$design.rounded}} {{$design.itembody}} ">
-                          {{.bodytext | markdownify }}
-                      </div>
-                      <div class="{{$design.itembody}} justify-end">
-                          {{- partial "poppy-elements/buttons" (dict "design" $design "buttons" .buttons ) -}}
-                      </div>
-                    </div>
-                  </div>
+              <div class="flex flex-col h-full">
+                <div class = "{{$design.itemtitle}}" >{{.title}}</div>
+                <div class=" prose mx-auto {{$design.rounded}} {{$design.itembody}} flex-1">{{.bodytext | markdownify }}</div>
+                <div class="{{$design.itembody}}">
+                    {{- partial "poppy-elements/buttons" (dict "design" $design "buttons" .buttons ) -}}
+                </div>
               </div>
-
-            {{- end -}}
+            </div>
         </div>
-    </div>
-  </section>
+
+      {{- end -}}
+  </div>
+</div>
 {{- end -}}

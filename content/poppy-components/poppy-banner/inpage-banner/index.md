@@ -12,6 +12,7 @@ poppy_variant: inpage-banner
 image:
 bg_image: for
 name: inpage-banner
+texture: paper
 design:
   typographies:
     - align: center

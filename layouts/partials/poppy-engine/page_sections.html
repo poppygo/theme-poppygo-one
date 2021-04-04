@@ -39,8 +39,19 @@ html {
           {{- with $content_info.content -}}
             {{- partial "poppy-elements/bg_image" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .bg_image ) }}
           {{- end -}}
+
+					{{- with $content_info.content -}}
+						{{- partial "poppy-elements/texture_overlay" (dict "page" .bg_resource_page "css_class" .bg_css "bg_image" .texture ) }}
+					{{- end -}}
+
           {{- "<!-- {.File.ContentBaseName }} -->" | safeHTML -}}
-          {{- partial $poppy_component (dict "page" $page "content" $content_info.content "design" $design_info.design  ) -}}
+					<section id="{{$content_info.content.name}}" class="{{$content_info.content.bg_color}} ">
+						<div class = "relative {{ $content_info.content.bg_css }} bg-fixed bg-cover ">
+							<div class = "{{if $.Site.Data.design.site.container}} container {{end}} mx-auto">
+          			{{- partial $poppy_component (dict "page" $page "content" $content_info.content "design" $design_info.design  ) -}}
+							</div>
+						<div>
+					</section>
       {{- end -}}
     {{ end }}
 {{- end -}}

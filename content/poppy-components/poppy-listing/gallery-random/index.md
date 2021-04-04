@@ -6,7 +6,7 @@ subtitle: Galleries are great for your products and portfolio
 summary: -|
     I am the summary of the gallery, which can be used for opengraph and SEO descriptions
 poppy_type: poppy-listing
-poppy_variant: gallery-square
+poppy_variant: gallery-random
 list: poppy-components
 image: fore
 buttons:

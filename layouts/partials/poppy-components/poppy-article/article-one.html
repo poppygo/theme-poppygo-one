@@ -4,9 +4,7 @@
 
 {{- with $design -}}
 
-<section id="{{$content.name}}" class="{{$content.bg_color}} {{$content.bg_css}} {{.outer_space}} {{.vertical_space}} bg-cover">
-
-<article class="prose max-w-5xl mx-auto {{.body }} w-full {{$content.item_bg_color}} {{.rounded}} {{.shadow}} {{.border}} px-20 pb-10">
+<div class="{{.vertical_space}} prose max-w-5xl mx-auto {{.body }} w-full {{$content.item_bg_color}} {{.rounded}} {{.shadow}} {{.border}} px-20 pb-10">
     {{if not $page.Params.hideMetadata }}
       <header class="text-center pt-10 pb-6">
         <small class="text-center text-sm">
@@ -19,13 +17,6 @@
           {{ end }}
 
         </small>
-
-        <h1 class="leading-9 text-center">
-          <a href="{{.Permalink}}" class="no-underline inline-block text-black relative">
-            <div class="dots" aria-hidden="true"></div>
-            {{$page.Title }}
-          </a>
-        </h1>
       </header>
 
     {{ else }}
@@ -38,7 +29,6 @@
       {{$page.Content }}
     </div>
 
-</article>
+</div>
 
-</section>
 {{- end -}}

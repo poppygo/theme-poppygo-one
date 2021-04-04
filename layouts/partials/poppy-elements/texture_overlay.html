@@ -4,8 +4,8 @@
 */}}
 
 {{- $css_class := .css_class -}}
-{{- if .bg_image -}}
 
+{{- if .bg_image -}}
   {{- $image_path := printf "images/*%s*" .bg_image -}}
   {{- if or .page.IsHome .page.IsSection -}}
       {{- $image_path = printf "*%s*" .bg_image -}}
@@ -22,11 +22,29 @@
         {{- $large := .Resize "1200x" -}}
         {{- $extralarge := .Resize "1920x" -}}
         <style>
-  @media (max-width: 667px) {.{{$css_class}} {background-image:url({{$extraSmall.RelPermalink | safeCSS }}) ;}}
-  @media (min-width: 668px) {.{{$css_class}} {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}
-  @media (min-width: 992px) {.{{$css_class}} {background-image:url( {{$medium.RelPermalink | safeCSS }}) ;}}
-  @media (min-width: 1200px) {.{{$css_class}} {background-image:url({{$large.RelPermalink | safeCSS }}) ;}}
-  @media (min-width: 1600px) {.{{$css_class}} {background-image:url({{$extralarge.RelPermalink | safeCSS }}) ;}}
+
+        .{{$css_class}}::after {
+          content: "";
+          opacity:0.03;
+          mix-blend-mode: soft-light;
+          position: absolute;
+          width:100%;
+          height:100%;
+          top:0;
+          z-index: 0;
+          pointer-events: none;
+          background-size:cover;
+           }})
+        }
+
+
+  @media (max-width: 667px) {.{{$css_class}}:after {background-image:url({{$extraSmall.RelPermalink | safeCSS }});}}
+  @media (min-width: 668px) {.{{$css_class}}:after {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}
+  @media (min-width: 992px) {.{{$css_class}}:after {background-image:url( {{$medium.RelPermalink | safeCSS }}) ;}}
+  @media (min-width: 1200px) {.{{$css_class}}:after {background-image:url({{$large.RelPermalink | safeCSS }}); }}
+  @media (min-width: 1600px) {.{{$css_class}}:after {background-image:url({{$extralarge.RelPermalink | safeCSS }}) blendmo ;}}
+
+
         </style>
       {{- end -}}
   {{- end -}}

@@ -59,10 +59,10 @@
             {{- if eq $size $value -}}
               {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
               {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
-              {{- $space = string (add (div $index 2) 1) -}}
+              {{- $space = string (add (div $index 2) 0) -}}
             {{- end -}}
           {{- end -}}
-          {{- $value = (printf "text-%s lg:text-%s xl:text-%s py-%s" $value $lg $xl $space) -}}
+          {{- $value = (printf "text-%s lg:text-%s xl:text-%s p-%s" $value $lg $xl $space) -}}
         {{- else -}}
           {{- $value = (printf "text-%s"  $value ) -}}
         {{- end -}}

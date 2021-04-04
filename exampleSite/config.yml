@@ -1,42 +1,7 @@
-archetypeDir: null
-assetDir: null
+
 author: PoppyGo
 baseURL: /
-blackfriday: null
-build: null
-buildDrafts: null
-buildExpired: null
-buildFuture: null
-caches: null
-canonifyURLs: null
-contentDir: null
-dataDir: null
-defaultContentLanguage: null
-defaultContentLanguageInSubdir: null
-description: ''
-disableAliases: null
-disableHugoGeneratorInject: null
-disableKinds: null
-disableLanguages: null
-disableLiveReload: null
-disablePathToLower: null
-enableEmoji: null
-enableGitInfo: null
-enableInlineShortcodes: null
-enableMissingTranslationPlaceholders: null
-enableRobotsTXT: null
-footnoteAnchorPrefix: null
-footnoteReturnLinkContents: null
-frontmatter: null
-googleAnalytics: null
 hasCJKLanguage: false
-imaging: null
-languageCode: null
-languageName: null
-languages: null
-layoutDir: null
-log: null
-logFile: null
 markup:
   goldmark:
     extensions:
@@ -55,12 +20,7 @@ markup:
       unsafe: false
       xhtml: false
 minify: true
-module: null
-newContentEditor: null
-noChmod: null
-noTimes: null
 paginate: 18
-paginatePath: null
 params:
   authorBio: PoppyGo is one year old
   authorbio: ''
@@ -82,27 +42,10 @@ params:
     siteid: ''
     trackerScript: //umami.example.com/umami.js
     trackerscript: ''
-permalinks: null
-pluralizeListTitles: null
-publishDir: null
-refLinksErrorLevel: null
-refLinksNotFoundURL: null
-related: null
-relativeURLs: null
-rssLimit: null
-sectionPagesMenu: null
-sitemap: null
-staticDir: null
 summaryLength: 50
 taxonomies:
   category: categories
   tag: tags
 theme: theme-poppygo-one
 themesDir: themes
-timeout: null
 title: PoppyGo One Hugo Theme
-titleCaseStyle: null
-uglyURLs: null
-verbose: null
-verboseLog: null
-watch: null

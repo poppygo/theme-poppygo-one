@@ -12,15 +12,12 @@
     {{- $fontweights := printf "%s %s" $fontweights (printf "--font-weight-%s: %s;" (replace .name "_" "-" ) (string .weight) )  }}
 {{- end -}}
 
-{{- range $.Site.Data.design.site.container -}}
-  {{- if eq .name "padding" -}}
-    {{- range $key, $value := . -}}
-      {{- if not (eq $key "name") -}}
-        {{- $container = printf "%s %s" $container (printf "--container-%s: %s;" $key $value ) -}}
-      {{- end -}}
-    {{- end -}}
+{{- range $key, $value := $.Site.Data.design.site.container_padding -}}
+  {{- if not (eq $key "name") -}}
+    {{- $container = printf "%s %s" $container (printf "--container-%s: %s;" $key $value ) -}}
   {{- end -}}
-{{- end }}
+{{- end -}}
+
 
 <style>
   :root {

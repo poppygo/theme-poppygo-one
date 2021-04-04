@@ -6,8 +6,11 @@
 {{- $class := .class -}}
 {{- $sizes := (slice "480" "800" "1500") -}}
 
+
 {{- $image_path := printf "images/*%s*" .name -}}
-{{- if .resource_page.IsHome -}}
+
+
+{{- if or (.resource_page.IsHome) (.resource_page.IsSection) -}}
     {{- $image_path = printf "*%s*" .name -}}
 {{- end }}
 
@@ -19,11 +22,8 @@
     {{- $caption := "" -}}
 
     {{- if eq (path.Ext $filename) ".webp" -}}
-      <a href="{{$link}}" {{ with $caption }}data-caption="{{.|markdownify|emojify|safeHTMLAttr}}"{{ end }}>
           <img href = "{{$link}}" src="{{.RelPermalink}}" class="lazyload {{$class}}" alt="{{$filename}}">
-      </a>
     {{- else -}}
-      <a href="{{$link}}" {{ with $caption }}data-caption="{{.|markdownify|emojify|safeHTMLAttr}}"{{ end }}>
       <img href = "{{$link}}" sizes="(min-width: 992px) 25vw, 55vw"
       srcset='
       {{- range $sizes -}}
@@ -32,6 +32,5 @@
       src="{{- ($image.Resize "800x").Permalink -}}"
       class="lazyload {{$class}}"
       alt="{{- $filename -}}">
-      </a>
   {{- end -}}
 {{- end -}}
