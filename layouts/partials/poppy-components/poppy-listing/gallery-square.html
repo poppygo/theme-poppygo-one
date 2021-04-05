@@ -4,7 +4,6 @@
 
 {{- $items := partial "poppy-engine/sortedItems" (dict "list" $content.list ) -}}
 {{- $size := $content.size | default 450 -}}
-{{- $max_amount := $content.max_amount | default (len $items) -}}
 
 <style>
   .square-grid {

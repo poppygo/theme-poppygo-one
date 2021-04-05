@@ -6,6 +6,7 @@
 {{ if $content.items }}
     {{ $amount = len $content.items }}
 {{ end }}
+image
 
 {{- with $design -}}
 <div class="{{.vertical_space}} ">
@@ -13,15 +14,13 @@
   <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
   <div class=" grid grid-flow-row-dense grid-cols-12 {{.gridgap}}">
       {{- range $index, $item := $content.items -}}
-
           {{- $span := partial "poppy-elements/standard-columns" (dict "amount" $amount "index" $index) -}}
-
-          <a href="{{.link }}" class="{{$span}} flex flex-col w-full h-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$content.item_bg_color}}">
+          <a href="{{.link }}" class="{{$span}} flex flex-col w-full h-full ">
             <div>
-              {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-60 object-cover") -}}
+              {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full") -}}
             </div>
 
-            {{- if or .title .buttons (gt (len .bodytext) 2 ) -}}
+            {{/* {{- if or .title .buttons (gt (len .bodytext) 2 ) -}}
               <div class="flex flex-col p-4 h-full">
 
                 {{- with .icon -}}
@@ -40,9 +39,8 @@
                   </div>
                 </div>
               </div>
-            {{- end -}}
+            {{- end -}} */}}
           </a>
-
       {{- end -}}
   </div>
 </div>
