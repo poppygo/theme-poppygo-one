@@ -1,0 +1,6 @@
+{{ $label := .Get 0 }}
+{{ $link := .Get 1 }}
+
+<button class="cta-btns">
+  <a href="{{ $link | safeURL }}" class="btn btn-secondary btn-lg umami--click--{{$label | anchorize}}">{{ $label }}</a>
+</button>

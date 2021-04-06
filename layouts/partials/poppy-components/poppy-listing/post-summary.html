@@ -17,13 +17,15 @@
 
             {{ $itempage := . }}
             {{- $bg_css := printf "%s%s%s" $content.bg_css .Params.image (string $index) -}}
-            {{- partial "poppy-elements/bg_image" (dict "page" $itempage "css_class" $bg_css "bg_image" $content.image ) }}
+            {{- partial "poppy-elements/bg_image" (dict "page" $itempage "css_class" $bg_css "bg_image" .Params.image ) }}
             <div class = "hidden md:block w-1/4 h-full bg-cover {{$bg_css}} {{$design.rounded}} m-2">
               <div class= "h-full w-full pb-60"></div>
             </div>
             <div class = "p-4 ">
-              <a href="{{ .RelPermalink }}" class="{{$design.itemtitle}}">
-                {{ .Title }}
+              <a href="{{ .RelPermalink }}">
+                <div class="{{$design.itemtitle}}">
+                  {{.Title }}
+                </div>
                 <small class="m-2 text-sm">
                   <time class="text-gray-500" datetime="{{ dateFormat "2006-01-02T15:04:05-07:00" (default .Date (.PublishDate)) }}">
                     {{ dateFormat "Jan 2" (default .Date (.PublishDate)) }}

@@ -3,14 +3,16 @@
 {{- $design := .design -}}
 
 {{- with $design -}}
-  <div class= "{{.vertical_space}} flex flex-col justify-end align-bottom mx-auto mt-48">
-    <div class = "">
-    <h1 class="{{.title}}">{{$content.title}}</h1>
-    <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
-    <div class = {{.subtitle}}>
-      {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
+  <div class="flex pt-48 pb-32">
+    <div class= "flex flex-col justify-center mx-auto">
+      <div class = "text-center mx-2 md:mx-10 lg:mx-20 xl:mx-48">
+      <h1 class="{{.title}}">{{$content.title}}</h1>
+      <p class="{{ .subtitle }}">{{ $content.subtitle }}</p>
+      <div class="{{.subtitle}}">
+        {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
+      </div>
     </div>
+    </div>
+    {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "link" $content.link "class" "w-full") -}}
   </div>
-  </div>
-  {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "link" $content.link "class" "w-full") -}}
 {{- end -}}

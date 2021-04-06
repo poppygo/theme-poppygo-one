@@ -23,6 +23,8 @@
 
     {{- if eq (path.Ext $filename) ".webp" -}}
           <img href = "{{$link}}" src="{{.RelPermalink}}" class="lazyload {{$class}}" alt="{{$filename}}">
+    {{- else if eq (path.Ext $filename) ".svg" -}}
+      This image is an svg
     {{- else -}}
       <img href = "{{$link}}" sizes="(min-width: 992px) 25vw, 55vw"
       srcset='

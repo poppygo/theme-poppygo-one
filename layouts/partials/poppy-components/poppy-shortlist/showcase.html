@@ -12,10 +12,10 @@
         {{- $switchBody := "" -}}
 
         {{-  if not (modBool $index 2) -}}
-          {{ $switchBody = "col-start-1 md:col-start-7 col-span-10 md:col-span-6" -}}
+          {{ $switchBody = "col-start-1 md:col-start-7 col-span-10 md:col-span-4" -}}
           {{ $switchImg = "col-start-1 md:col-start-1 col-span-10 md:col-span-7" -}}
         {{- else -}}
-          {{ $switchBody = "col-start-1 md:col-start-1 lg:col-start-2 col-span-10 md:col-span-6" -}}
+          {{ $switchBody = "col-start-1 md:col-start-1 lg:col-start-2 col-span-10 md:col-span-4" -}}
           {{ $switchImg = "col-start-1 md:col-start-4 col-span-10 md:col-span-7" -}}
         {{- end -}}
 
@@ -28,7 +28,7 @@
           </div>
         {{- end -}}
 
-        <div class="md:my-28 {{$row}} {{$design.rounded}} {{$design.shadow}} {{$content.item_bg_color}} {{$switchBody}}">
+        <div class="md:my-28 p-4 {{$row}} {{$design.rounded}} {{$design.shadow}} {{$content.item_bg_color}} {{$switchBody}}">
           <div class="flex flex-auto items-start">
 
             {{- with .icon -}}

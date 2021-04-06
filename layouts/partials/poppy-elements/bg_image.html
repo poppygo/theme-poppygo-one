@@ -16,10 +16,10 @@
     {{- if eq (path.Ext $filename) ".webp" -}}
       <style>.{{$css_class}} {background-image:url({{.RelPermalink | safeCSS }}</style>
     {{- else -}}
-        {{- $extraSmall := .Resize "500x" -}}
-        {{- $small := .Resize "768x" -}}
-        {{- $medium := .Resize "992x" -}}
-        {{- $large := .Resize "1200x" -}}
+        {{- $extraSmall := .Resize "700x" -}}
+        {{- $small := .Resize "900x" -}}
+        {{- $medium := .Resize "1100x" -}}
+        {{- $large := .Resize "1500x" -}}
         {{- $extralarge := .Resize "1920x" -}}
         <style>
   @media (max-width: 667px) {.{{$css_class}} {background-image:url({{$extraSmall.RelPermalink | safeCSS }}) ;}}
