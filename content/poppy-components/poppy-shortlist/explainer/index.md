@@ -1,6 +1,6 @@
 ---
 bg_image: ''
-bg_color: poppycolorlight
+bg_color: white
 item_bg_color: white
 image: explainer
 poppy_type: poppy-shortlist

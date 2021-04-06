@@ -1,6 +1,6 @@
 ---
-bg_color: poppycolordark
-item_bg_color: poppycolorlight
+bg_color: charcoal
+item_bg_color: white
 mainContent: ''
 resources: []
 poppy_type: poppy-footer
@@ -8,11 +8,12 @@ poppy_variant: 3-column-footer
 position: bottom
 title: PoppyGo One Theme
 subtitle: One theme for all your websites
+texture: ''
 design:
   typographies:
     - align: left
       bg_color: none
-      color: poppycolorlight
+      color: white
       font: display1
       font_weight: ''
       name: title
@@ -20,7 +21,7 @@ design:
       transform: ''
     - align: ''
       bg_color: none
-      color: poppycolorlight
+      color: white
       font: display2
       font_weight: ''
       name: subtitle
@@ -28,7 +29,7 @@ design:
       transform: ''
     - align: ''
       bg_color: none
-      color: poppycolorlight
+      color: white
       font: body
       font_weight: ''
       name: body
@@ -36,7 +37,7 @@ design:
       transform: ''
     - align: ''
       bg_color: none
-      color: poppycolorlight
+      color: white
       font: body
       font_weight: ''
       name: menu

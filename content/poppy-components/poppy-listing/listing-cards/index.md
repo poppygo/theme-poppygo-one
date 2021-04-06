@@ -1,6 +1,6 @@
 ---
-bg_color: poppycolorlight
-item_bg_color: poppycolorlight
+bg_color: white
+item_bg_color: white
 mainContent: ''
 resources: []
 title: I am an shortlist in the form of cards
@@ -10,7 +10,9 @@ summary: -|
 poppy_type: poppy-listing
 poppy_variant: listing-cards
 bg_image: background
+texture: ''
 list: ''
+count: ''
 ---
 ### I am the main content of the shortlist pagecomponents
 

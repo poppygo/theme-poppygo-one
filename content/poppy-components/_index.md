@@ -28,7 +28,7 @@ subpage_sections:
     poppy_variant: gallery1
     title: Other page sections
     list: poppy-components
-    bg_color: poppycolor2
+    bg_color: tufts-blue
   - name: footer
     poppy_type: poppy-navigation
     poppy_variant: footer

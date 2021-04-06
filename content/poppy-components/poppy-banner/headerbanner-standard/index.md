@@ -1,7 +1,8 @@
 ---
-bg_color: poppycolorlight
-item_bg_color: poppycolorlight
+bg_color: white
+item_bg_color: white
 bg_image: back
+texture: ''
 buttons:
   - label: Check this
     link: /page-components/
@@ -21,7 +22,7 @@ design:
   typographies:
     - align: center
       bg_color: transparent
-      color: poppycolorlight
+      color: white
       font: display1
       font_weight: bold
       name: title
@@ -29,7 +30,7 @@ design:
       transform: uppercase
     - align: center
       bg_color: transparent
-      color: poppycolorlight
+      color: white
       font: display1
       font_weight: normal
       name: subtitle

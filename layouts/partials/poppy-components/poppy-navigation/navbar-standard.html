@@ -14,13 +14,13 @@
             {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
         </div>
       </div>
-      <div class="items-center pointer-cursor text-poppycolor2 lg:hidden block text-right w-20">
-          <button id="hamburger" class="text-4xl py-5">
+      <div class="items-center pointer-cursor {{.menu}} lg:hidden block text-right w-20">
+          <button id="hamburger" class="text-4xl py-5 focus:outline-none">
           &#9776;
         </button>
       </div>
 
-      <div class="items-center hidden lg:flex lg:items-right px-3">
+      <div class="items-center hidden lg:flex lg:items-right px-3 ">
         <div>
           <ul class="lg:flex {{$design.menu}} pt-4 md:pt-0 ">
             {{ range $content.menus.main}}
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="items-center hidden lg:hidden lg:flex lg:items-right px-3" id="menu">
+    <div class="p-3 items-center hidden lg:hidden lg:flex lg:items-right px-3 bg_opacity-50 {{$content.item_bg_color}} {{.rounded}} {{.shadow}}" id="menu">
       <div>
         <ul class="lg:flex {{$design.menu}} pt-4 md:pt-0 ">
           {{ range $content.menus.main}}

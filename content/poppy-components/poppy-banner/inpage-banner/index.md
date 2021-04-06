@@ -1,6 +1,6 @@
 ---
-bg_color: poppycolorlight
-item_bg_color: poppycolorlight
+bg_color: white
+item_bg_color: white
 mainContent: ''
 resources: []
 title: I am an in-page banner for telling your story
@@ -17,7 +17,7 @@ design:
   typographies:
     - align: center
       bg_color: transparent
-      color: poppycolor6
+      color: ghost-white
       font: display1
       font_weight: bold
       name: title

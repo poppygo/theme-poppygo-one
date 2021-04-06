@@ -1,7 +1,8 @@
 ---
-bg_color: poppycolorlight
-item_bg_color: poppycolorlight
+bg_color: white
+item_bg_color: white
 bg_image: back
+texture: ''
 buttons:
   - label: Check this
     link: /page-components/

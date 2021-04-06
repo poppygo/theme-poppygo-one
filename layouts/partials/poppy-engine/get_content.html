@@ -19,7 +19,7 @@
   {{- $component_value := index $page_component.Params . -}}
   {{- $override := ( $section_value | default $component_value ) -}}
 
-  {{- if in . "bg_color" -}}{{- $override = printf "bg-%s" $override -}}{{- end -}}
+  {{- if in . "bg_color" -}}{{- $override = printf "bg-%s" (partial "poppy-engine/colors" $override) -}}{{- end -}}
   {{- if $section_value }} {{- $override_debug_info = merge $override_debug_info (dict . true ) -}} {{- end -}}
 
   {{- if (eq $override "none") -}}

@@ -22,11 +22,10 @@
         {{- $large := .Resize "1200x" -}}
         {{- $extralarge := .Resize "1920x" -}}
         <style>
-
         .{{$css_class}}::after {
           content: "";
-          opacity:0.03;
-          mix-blend-mode: soft-light;
+          opacity:{{- site.Data.design.site.texture.opacity -}};
+          mix-blend-mode: {{- site.Data.design.site.texture.blendmode -}};
           position: absolute;
           width:100%;
           height:100%;
@@ -36,15 +35,11 @@
           background-size:cover;
            }})
         }
-
-
   @media (max-width: 667px) {.{{$css_class}}:after {background-image:url({{$extraSmall.RelPermalink | safeCSS }});}}
   @media (min-width: 668px) {.{{$css_class}}:after {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}
   @media (min-width: 992px) {.{{$css_class}}:after {background-image:url( {{$medium.RelPermalink | safeCSS }}) ;}}
   @media (min-width: 1200px) {.{{$css_class}}:after {background-image:url({{$large.RelPermalink | safeCSS }}); }}
   @media (min-width: 1600px) {.{{$css_class}}:after {background-image:url({{$extralarge.RelPermalink | safeCSS }}) blendmo ;}}
-
-
         </style>
       {{- end -}}
   {{- end -}}

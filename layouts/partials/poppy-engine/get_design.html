@@ -14,10 +14,7 @@
       {{- $value = $override | default $default }}
       {{- if $override }} {{- $override_debug_info = merge $override_debug_info (dict $key true ) -}} {{- end -}}
     {{- end -}}
-    {{- if in $key "size" -}} {{- $value = printf "text-%s" $value -}}
-    {{- else if in $key "vertical_space" -}} {{- $value = printf "py-%s sm:pt-%s md:pt-%s lg:pt-%s xl:pt-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
-    {{- else if in $key "bg" -}} {{- $value = printf "bg-%s" $value -}}
-    {{- else if in $key "text" -}} {{- $value = printf "text-%s" $value -}}
+    {{- if in $key "vertical_space" -}} {{- $value = printf "py-%s sm:pt-%s md:pt-%s lg:pt-%s xl:pt-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
     {{- else if eq $key "rounded" -}} {{- $value = printf "rounded-%s" $value -}}
     {{- else if eq $key "shadow" -}} {{- $value = printf "shadow-%s" $value -}}
     {{- else if eq $key "border" -}} {{- $value = printf "border-%s" (string $value) -}}
@@ -47,9 +44,9 @@
 
     {{- if $value -}}
       {{- if in $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
-      {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  $value ) -}} {{- end -}}
+      {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
       {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
-      {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  $value ) -}} {{- end -}}
+      {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
       {{- if eq $key "size" -}}
         {{- if not (in $name "menu") -}}
           {{- $sizeIndex := 0 -}}
@@ -98,8 +95,8 @@
     {{- if $value -}}
       {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
       {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
-      {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  $value  -}} {{- end -}}
-      {{- if in $key "text" -}} {{- $value = printf "text-%s"  $value  -}} {{- end -}}
+      {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  (partial "poppy-engine/colors" $value)  -}} {{- end -}}
+      {{- if in $key "text" -}} {{- $value = printf "text-%s"  (partial "poppy-engine/colors" $value)  -}} {{- end -}}
       {{- if eq $key "name" -}} {{- $button_name = printf "button_%s"  $value  -}} {{- end -}}
 
       {{- if in $key "size" -}}

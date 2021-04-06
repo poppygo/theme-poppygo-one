@@ -4,7 +4,7 @@
 {{- $container := "" -}}
 
 {{- range $key,$value := $.Site.Data.design.colorscheme -}}
-    {{- $colors = printf "%s %s" $colors (printf "--%s: %s;" (replace $key "_" "-" ) $value ) -}}
+    {{- $colors = printf "%s %s" $colors (printf "--%s: %s;" (replace $key "_" "-" ) $value.colorcode ) -}}
 {{- end -}}
 
 {{- range $.Site.Data.design.fontscheme -}}

@@ -1,6 +1,6 @@
 ---
-item_bg_color: poppycolorlight
-bg_color: poppycolorlight
+item_bg_color: white
+bg_color: white
 mainContent: ''
 resources: []
 title: I am a list of items presented as blog teaser
@@ -9,10 +9,12 @@ poppy_type: poppy-listing
 poppy_variant: post-summary
 image: foreground
 bg_image: background
+texture: ''
 list: news
 list_taxonomy:
   taxonomy: 'tags'
   term: ''
+count: ''
 ---
 ### I am the main content of the form pagecomponents
 

@@ -1,10 +1,11 @@
 ---
-item_bg_color: poppycolorlight
-bg_color: poppycolorlight
+item_bg_color: white
+bg_color: white
 resources: []
 title: navbar
 poppy_type: poppy-navigation
 poppy_variant: navbar
+texture: ''
 menus:
   main:
     - identifier: ''

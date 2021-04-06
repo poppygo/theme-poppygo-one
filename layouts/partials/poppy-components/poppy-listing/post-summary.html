@@ -1,8 +1,7 @@
 {{- $page := .page -}}
 {{- $content := .content -}}
 {{- $design := .design -}}
-
-{{- $items := partial "poppy-engine/sortedItems" (dict "list" $content.list ) -}}
+{{- $items := partial "poppy-engine/sortedItems" (dict "list" $content.list "count" $content.count ) -}}
 
 {{- with $design -}}
 <div class="{{.vertical_space}} ">
@@ -21,7 +20,7 @@
             <div class = "hidden md:block w-1/4 h-full bg-cover {{$bg_css}} {{$design.rounded}} m-2">
               <div class= "h-full w-full pb-60"></div>
             </div>
-            <div class = "p-4 ">
+            <div class = "p-4 w-full md:w-3/4">
               <a href="{{ .RelPermalink }}">
                 <div class="{{$design.itemtitle}}">
                   {{.Title }}

@@ -9,4 +9,5 @@ image: ->frompage
 bg_image: ->frompage
 bg_color: transparent
 item_bg_color: transparent
+texture: ''
 ---

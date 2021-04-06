@@ -1,6 +1,7 @@
 {{- $items_sort := "desc" -}}
-{{- $items := where site.RegularPages "Section" "eq" .list -}}
+{{- $items :=  (where site.RegularPages "Section" "eq" .list)  -}}
 {{- $list := .list -}}
+{{- $count := .count | default 1000 -}}
 
 {{ range $key, $value := site.Taxonomies }}
   {{- $taxonomy := printf "Params.%s" $key -}}
@@ -11,4 +12,4 @@
 
 {{- $sort_by := .weight -}}
 {{- $items = sort $items $sort_by $items_sort -}}
-{{- return $items -}}
+{{- return first $count $items -}}
