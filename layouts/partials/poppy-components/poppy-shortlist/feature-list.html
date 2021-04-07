@@ -16,7 +16,7 @@
           <div class="absolute flex items-center justify-center h-48 w-48 bg_transparent text-poppycolor2">
             <div class= "poppycolor1 {{$design.rounded}} stroke-current col-span-5 md:col-span-2 my-auto {{$design.border}}" >
 
-                {{- partial "poppy-elements/icon_outline" (dict "icon" .icon) -}}
+                {{- partial "poppy-elements/icon" (dict "icon" .icon "icontype" "outline") -}}
             </div>
           </div>
           <p class="ml-16 {{$design.subtitle}}">{{.title}}</p>

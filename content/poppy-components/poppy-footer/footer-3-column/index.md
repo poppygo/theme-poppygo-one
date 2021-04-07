@@ -9,6 +9,16 @@ position: bottom
 title: PoppyGo One Theme
 subtitle: One theme for all your websites
 texture: ''
+social_icons:
+  - icon: linkedin
+    link: https://linkedin.com
+    name: linkedIn
+  - icon: instagram
+    link: https://www.instagram.com
+    name: instagram
+  - icon: mail
+    link: mailto:joe@example.com?subject=feedback
+    name: email
 design:
   typographies:
     - align: left

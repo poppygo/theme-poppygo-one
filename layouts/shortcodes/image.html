@@ -102,6 +102,13 @@
 
         {{ with $image }}
           {{ $filename := path.Base .Name }}
+
+          {{- if eq (path.Ext $filename) ".webp" -}}
+                <img src="{{.RelPermalink}}" class="lazyload {{$class}}" alt="{{$filename}}">
+          {{- else if eq (path.Ext $filename) ".svg" -}}
+            This image is an svg
+          {{- else -}}
+
             <img class="pogoimage" sizes="{{ printf "%svw" (string (div 60 $numberOfCols) ) }}"
               {{/* only srcset images smaller than or equal to the image size, as Hugo will upscale small images */}}
               srcset='
@@ -114,6 +121,7 @@
               class="lazyload image"
               alt="{{ printf "%s %s %s" $page.Title $page.Type $page.Summary }}"
             >
+          {{- end -}}
         {{end}}
 
     </div>

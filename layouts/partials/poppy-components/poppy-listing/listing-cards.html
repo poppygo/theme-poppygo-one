@@ -28,7 +28,7 @@
                 {{- with .Params.icon -}}
                   {{- if not (eq . "none") -}}
                     <div class="relative w-8 md:w-12 {{$design.itemtitle}} py-0 -mt-1 md:-mt-2 mr-5">
-                      {{- partial "poppy-elements/icon_outline" (dict "icon" . ) -}}
+                      {{- partial "poppy-elements/icon" (dict "icon" . "icontype" "outline" ) -}}
                     </div>
                   {{- end -}}
                 {{- end -}}

@@ -14,7 +14,7 @@
     </div>
     <div class="flex flex-col justify-center pr-14">
         <button id="hamburger-open" class="{{.menu}} h-12 w-12">
-          {{- partial "poppy-elements/icon_solid" (dict "icon" "menu") -}}
+          {{- partial "poppy-elements/icon" (dict "icon" "menu" "icontype" "solid") -}}
       </button>
     </div>
   </nav>
@@ -30,7 +30,7 @@
         </li>
       {{ end }}
       <button id="hamburger-close" class="{{.menu}} h-12 w-36">
-        {{- partial "poppy-elements/icon_solid" (dict "icon" "x") -}}
+        {{- partial "poppy-elements/icon" (dict "icon" "x" "icontype" "solid") -}}
       </button>
     </div>
   </ul>

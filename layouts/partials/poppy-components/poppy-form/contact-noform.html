@@ -1,0 +1,18 @@
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+
+{{- with $design -}}
+<div class="{{.vertical_space}}">
+  <div class="prose max-w-5xl mx-auto {{.body}} {{$content.item_bg_color}} {{.rounded}} {{.shadow}} {{.border}} p-10">
+      <div class="">
+        {{$content.title }}
+        {{ $content.items}}
+        {{- range $content.items -}}
+          {{ . }}
+        {{- end -}}
+      </div>
+  </div>
+</div>
+
+{{- end -}}
