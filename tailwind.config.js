@@ -2,6 +2,11 @@ module.exports = {
   purge: {
     enabled: false,
     content: ['./layouts/**/*.html','./exampleSite/public/**/*.html' ,'./exampleSite/public/*.html' ,'./public/page-components/*.html'],
+    options: {
+      safelist: {
+        greedy: [/p-/,/px-/,/py-/,/m-/,/mx-/,/my-/,/w-/,/h-/,/z-/,/grid-/,/bg-/,/text-/,/border-/,/shadow-/]
+      },
+    },
   },
   theme: {
     container: {
@@ -12,6 +17,18 @@ module.exports = {
         xl: 'var(--container-xl)',
         '2xl': 'var(--container-2xl)',
       },
+    },
+    colors: {
+      poppycolor1: 'var(--poppy-color1)',
+      poppycolor2: 'var(--poppy-color2)',
+      poppycolor3: 'var(--poppy-color3)',
+      poppycolor4: 'var(--poppy-color4)',
+      poppycolor5: 'var(--poppy-color5)',
+      poppycolor6: 'var(--poppy-color6)',
+      white: '#fff',
+      black: '#000',
+      gray: '#ADACB5',
+      transparent: 'transparent',
     },
     extend: {
       typography: (theme) => ({
@@ -51,16 +68,16 @@ module.exports = {
           },
         },
       }),
-      colors: {
-        poppycolor1: 'var(--poppy-color1)',
-        poppycolor2: 'var(--poppy-color2)',
-        poppycolor3: 'var(--poppy-color3)',
-        poppycolor4: 'var(--poppy-color4)',
-        poppycolor5: 'var(--poppy-color5)',
-        poppycolor6: 'var(--poppy-color6)',
-        poppycolorlight: 'var(--poppy-colorlight)',
-        poppycolordark: 'var(--poppy-colordark)',
-      },
+      // colors: {
+      //   poppycolor1: 'var(--poppy-color1)',
+      //   poppycolor2: 'var(--poppy-color2)',
+      //   poppycolor3: 'var(--poppy-color3)',
+      //   poppycolor4: 'var(--poppy-color4)',
+      //   poppycolor5: 'var(--poppy-color5)',
+      //   poppycolor6: 'var(--poppy-color6)',
+      //   poppycolorlight: 'var(--poppy-colorlight)',
+      //   poppycolordark: 'var(--poppy-colordark)',
+      // },
     },
     fontFamily: {
       display1: "var(--font-display1)",

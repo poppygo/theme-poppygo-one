@@ -1,7 +1,10 @@
-
 author: PoppyGo
 baseURL: /
-hasCJKLanguage: false
+description: ''
+imaging:
+  anchor: smart
+  quality: 70
+  resampleFilter: lanczos
 markup:
   goldmark:
     extensions:
@@ -19,8 +22,7 @@ markup:
       hardWraps: true
       unsafe: false
       xhtml: false
-minify: true
-paginate: 18
+paginate: 20
 params:
   authorBio: PoppyGo is one year old
   authorbio: ''
@@ -34,7 +36,6 @@ params:
   linkedin: 'https://linkedin.com/in/XXXX'
   ogImage: images/og_image.jpg
   ogimage: ''
-  poppygo_cms: false
   poppygo_debug: false
   twitter: XXXX
   umami:
@@ -42,7 +43,7 @@ params:
     siteid: ''
     trackerScript: //umami.example.com/umami.js
     trackerscript: ''
-summaryLength: 50
+summaryLength: 40
 taxonomies:
   category: categories
   tag: tags

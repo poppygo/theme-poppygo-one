@@ -45,13 +45,15 @@ html {
 					{{- end -}}
 
           {{- "<!-- {.File.ContentBaseName }} -->" | safeHTML -}}
-					<section id="{{$content_info.content.name}}" class="{{$content_info.content.bg_color}} ">
-						<div class = "relative {{ $content_info.content.bg_css }} bg-fixed bg-cover ">
-							<div class = "{{if $.Site.Data.design.site.container}} container {{end}} mx-auto">
-          			{{- partial $poppy_component (dict "page" $page "content" $content_info.content "design" $design_info.design  ) -}}
-							</div>
-						<div>
-					</section>
+					{{- with $content_info.content -}}
+						<section id="{{.name}}" class="{{.bg_color}} ">
+							<div class = "relative {{.bg_css}} {{if .parallax}} bg-fixed {{end}} bg-cover ">
+								<div class = "{{if $.Site.Data.design.site.container}} container {{end}} mx-auto">
+	          			{{- partial $poppy_component (dict "page" $page "content" $content_info.content "design" $design_info.design  ) -}}
+								</div>
+							<div>
+						</section>
+					{{- end -}}
       {{- end -}}
     {{ end }}
 {{- end -}}

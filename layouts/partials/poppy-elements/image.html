@@ -1,15 +1,10 @@
 {{/* Usage:
-{{ partial "image" (dict "page" . "name" .Params.image "path" "images/" "link" .RelPermalink "scale" "w-100")  }}
+{{ partial "image" (dict "page" . "name" .Params.image "path" "images/" "scale" "w-100")  }}
 */}}
 
-{{- $link := .link -}}
 {{- $class := .class -}}
 {{- $sizes := (slice "480" "800" "1500") -}}
-
-
 {{- $image_path := printf "images/*%s*" .name -}}
-
-
 {{- if or (.resource_page.IsHome) (.resource_page.IsSection) -}}
     {{- $image_path = printf "*%s*" .name -}}
 {{- end }}
@@ -22,11 +17,11 @@
     {{- $caption := "" -}}
 
     {{- if eq (path.Ext $filename) ".webp" -}}
-          <img href = "{{$link}}" src="{{.RelPermalink}}" class="lazyload {{$class}}" alt="{{$filename}}">
+          <img src="{{.RelPermalink}}" class="lazyload {{$class}}" alt="{{$filename}}">
     {{- else if eq (path.Ext $filename) ".svg" -}}
       This image is an svg
     {{- else -}}
-      <img href = "{{$link}}" sizes="(min-width: 992px) 25vw, 55vw"
+      <img sizes="(min-width: 992px) 25vw, 55vw"
       srcset='
       {{- range $sizes -}}
         {{- ($image.Resize (printf "%sx" .)).RelPermalink }} {{ (printf "%sw" .) -}},

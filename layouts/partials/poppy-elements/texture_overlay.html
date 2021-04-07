@@ -14,7 +14,7 @@
   {{- with $image -}}
     {{- $filename := path.Base .Name -}}
     {{- if eq (path.Ext $filename) ".webp" -}}
-      <style>.{{$css_class}} {background-image:url({{.RelPermalink | safeCSS }}</style>
+      <style>.{{$css_class}} {background-image:url({{.RelPermalink | safeCSS }})}</style>
     {{- else -}}
         {{- $extraSmall := .Resize "500x" -}}
         {{- $small := .Resize "768x" -}}
@@ -33,7 +33,6 @@
           z-index: 0;
           pointer-events: none;
           background-size:cover;
-           }})
         }
   @media (max-width: 667px) {.{{$css_class}}:after {background-image:url({{$extraSmall.RelPermalink | safeCSS }});}}
   @media (min-width: 668px) {.{{$css_class}}:after {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}

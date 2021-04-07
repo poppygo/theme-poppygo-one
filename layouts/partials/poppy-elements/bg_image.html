@@ -14,7 +14,7 @@
   {{- with $image -}}
     {{- $filename := path.Base .Name -}}
     {{- if eq (path.Ext $filename) ".webp" -}}
-      <style>.{{$css_class}} {background-image:url({{.RelPermalink | safeCSS }}</style>
+      <style>.{{$css_class}} {background-image:url({{.RelPermalink | safeCSS }}) ; background-position: center; </style>
     {{- else -}}
         {{- $extraSmall := .Resize "700x" -}}
         {{- $small := .Resize "900x" -}}
@@ -22,6 +22,9 @@
         {{- $large := .Resize "1500x" -}}
         {{- $extralarge := .Resize "1920x" -}}
         <style>
+        .{{$css_class}} {
+          background-position: center;
+        }
   @media (max-width: 667px) {.{{$css_class}} {background-image:url({{$extraSmall.RelPermalink | safeCSS }}) ;}}
   @media (min-width: 668px) {.{{$css_class}} {background-image:url({{$small.RelPermalink | safeCSS }}) ;}}
   @media (min-width: 992px) {.{{$css_class}} {background-image:url( {{$medium.RelPermalink | safeCSS }}) ;}}

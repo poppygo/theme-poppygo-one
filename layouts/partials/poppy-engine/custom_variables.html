@@ -41,9 +41,4 @@
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css2?%sdisplay=swap\"" $googlefonts | safeHTMLAttr }}>
-
-{{/*}}
-<link rel="preload" {{ printf "href=\"https://fonts.googleapis.com/css2?%sdisplay=swap\"" .  | safeHTMLAttr }} as="css" >
-*/}}

@@ -7,6 +7,7 @@
 {{- $override_debug_info := dict -}}
 
 {{- range $componentData -}}
+  {{- $border := "" -}}
   {{- range $key, $value := . -}}
     {{- if $page_component.Params.design -}}
       {{- $override := index $page_component.Params.design $key -}}
@@ -17,11 +18,20 @@
     {{- if in $key "vertical_space" -}} {{- $value = printf "py-%s sm:pt-%s md:pt-%s lg:pt-%s xl:pt-%s" (string $value) (string (add $value 3)) (string (add $value 6)) (string (add $value 9)) (string (add $value 12)) -}}
     {{- else if eq $key "rounded" -}} {{- $value = printf "rounded-%s" $value -}}
     {{- else if eq $key "shadow" -}} {{- $value = printf "shadow-%s" $value -}}
+    {{- else if eq $key "border" -}}
+      {{- if eq $value "1" -}}
+        {{- $border = printf "%s %s" $border "border" -}}
+      {{- else -}}
+        {{- $border = printf "%s border-%s" $border (string $value) -}}
+      {{- end -}}
+    {{- else if eq $key "border_color" -}} {{- $border = printf "%s border-%s" $border (partial "poppy-engine/colors" $value) -}}
+    {{- else if eq $key "border_opacity" -}} {{- $border = printf "%s border-opacity-%s" $border (string $value) -}}
     {{- else if eq $key "border" -}} {{- $value = printf "border-%s" (string $value) -}}
-    {{- else if eq $key "gridgap" -}} {{- $value = printf "gap-%s" (string $value) -}}
+    {{- else if eq $key "gridgap" -}} {{- $value = printf "gap-x-0 gap-y-%s sm:gap-%s" (string $value) (string $value) -}}
     {{- end -}}
     {{- $design = merge $design (dict $key $value) -}}
   {{- end -}}
+  {{- $design = merge $design (dict "border" $border) -}}
 {{- end -}}
 
 {{ range $typographyData -}}
@@ -50,7 +60,7 @@
       {{- if eq $key "size" -}}
         {{- if not (in $name "menu") -}}
           {{- $sizeIndex := 0 -}}
-          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
+          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
           {{- $lg := "" -}} {{- $xl := "" -}} {{- $space := "" -}}
           {{- range $index, $size := $sizes -}}
             {{- if eq $size $value -}}
@@ -59,7 +69,7 @@
               {{- $space = string (add (div $index 2) 0) -}}
             {{- end -}}
           {{- end -}}
-          {{- $value = (printf "text-%s lg:text-%s xl:text-%s p-%s" $value $lg $xl $space) -}}
+          {{- $value = (printf "text-%s lg:text-%s xl:text-%s py-%s" $value $lg $xl $space) -}}
         {{- else -}}
           {{- $value = (printf "text-%s"  $value ) -}}
         {{- end -}}

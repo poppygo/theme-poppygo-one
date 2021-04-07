@@ -8,7 +8,8 @@ buttons:
     link: /page-components/
   - label: More about us
     link: '#'
-image: null
+image: ''
+parallax: false
 name: headerbanner
 poppy_type: poppy-banner
 poppy_variant: header-banner

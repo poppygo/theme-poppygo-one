@@ -10,6 +10,7 @@ buttons:
     link: '#'
     type: secondary
 image: 'for'
+parallax: false
 texture: ''
 name: headerbanner
 poppy_type: poppy-banner

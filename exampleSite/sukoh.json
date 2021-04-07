@@ -11,10 +11,248 @@
        "extension": "md",
        "fields": [
          {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "key": "bg_image",
+           "title": "Bg image",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
            "key": "draft",
            "title": "Draft",
            "type": "boolean"
          },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "key": "weight",
+           "title": "Weight",
+           "type": "number"
+         }
+       ],
+       "folder": "content/news/",
+       "itemtitle": "New",
+       "key": "c__news",
+       "title": "News"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "bg_image",
+           "title": "Bg image",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "aliases",
+           "title": "Aliases",
+           "type": "chips"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "key": "weight",
+           "title": "Weight",
+           "type": "number"
+         }
+       ],
+       "folder": "content/about/",
+       "itemtitle": "About",
+       "key": "c__about",
+       "title": "About"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
+           "key": "weight",
+           "title": "Weight",
+           "type": "number"
+         }
+       ],
+       "folder": "content/pages/",
+       "itemtitle": "Page",
+       "key": "c__pages",
+       "title": "Pages"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
          {
            "key": "title",
            "title": "Title",
@@ -51,15 +289,15 @@
            "type": "markdown"
          },
          {
-           "key": "author",
-           "title": "Author",
-           "type": "string"
-         },
-         {
            "default": "now",
            "key": "date",
            "title": "Date",
            "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
          },
          {
            "key": "iscjklanguage",
@@ -77,25 +315,30 @@
            "type": "hidden"
          },
          {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         },
+         {
            "key": "tags",
            "title": "Tags",
            "type": "chips"
+         },
+         {
+           "key": "weight",
+           "title": "Weight",
+           "type": "number"
          }
        ],
-       "folder": "content/posts/",
-       "itemtitle": "Post",
-       "key": "c__posts",
-       "title": "Posts"
+       "folder": "content/technology/",
+       "itemtitle": "Technology",
+       "key": "c__technology",
+       "title": "Technology"
      },
      {
        "dataformat": "yaml",
        "extension": "md",
        "fields": [
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
          {
            "key": "title",
            "title": "Title",
@@ -122,14 +365,114 @@
            "type": "bundle-manager"
          },
          {
+           "key": "bg_image",
+           "title": "Bg image",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "key": "imagesvg",
+           "title": "Imagesvg",
+           "type": "string"
+         },
+         {
            "key": "mainContent",
            "title": "Main content",
            "type": "markdown"
          },
          {
+           "key": "bg_color",
+           "multiple": false,
+           "options": [
+             {
+               "text": "orange",
+               "value": "orange"
+             },
+             {
+               "text": "tufts-blue",
+               "value": "tufts-blue"
+             },
+             {
+               "text": "baby-blue-eyes",
+               "value": "baby-blue-eyes"
+             },
+             {
+               "text": "aero-blue",
+               "value": "aero-blue"
+             },
+             {
+               "text": "charcoal",
+               "value": "charcoal"
+             },
+             {
+               "text": "ghost-white",
+               "value": "ghost-white"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
+             }
+           ],
+           "title": "Bg color",
+           "type": "select"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
+         },
+         {
+           "key": "item_bg_color",
+           "multiple": false,
+           "options": [
+             {
+               "text": "orange",
+               "value": "orange"
+             },
+             {
+               "text": "tufts-blue",
+               "value": "tufts-blue"
+             },
+             {
+               "text": "baby-blue-eyes",
+               "value": "baby-blue-eyes"
+             },
+             {
+               "text": "aero-blue",
+               "value": "aero-blue"
+             },
+             {
+               "text": "charcoal",
+               "value": "charcoal"
+             },
+             {
+               "text": "ghost-white",
+               "value": "ghost-white"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
+             }
+           ],
+           "title": "Item bg color",
+           "type": "select"
          },
          {
            "fields": [
@@ -170,135 +513,17 @@
            "groupdata": true,
            "key": "menus",
            "title": "Menus",
-           "type": "section"
+           "type": "nest"
          },
          {
            "key": "poppy_type",
-           "multiple": false,
-           "options": [
-             {
-               "text": "my-component",
-               "value": ""
-             },
-             {
-               "text": "poppy-article",
-               "value": "poppy-article"
-             },
-             {
-               "text": "poppy-other",
-               "value": "poppy-other"
-             },
-             {
-               "text": "poppy-shortlist",
-               "value": "poppy-shortlist"
-             },
-             {
-               "text": "poppy-footer",
-               "value": "poppy-footer"
-             },
-             {
-               "text": "poppy-banner",
-               "value": "poppy-banner"
-             },
-             {
-               "text": "poppy-listing",
-               "value": "poppy-listing"
-             },
-             {
-               "text": "poppy-form",
-               "value": "poppy-form"
-             },
-             {
-               "text": "poppy-navigation",
-               "value": "poppy-navigation"
-             }
-           ],
            "title": "Poppy type",
-           "type": "select"
+           "type": "string"
          },
          {
            "key": "poppy_variant",
-           "multiple": false,
-           "options": [
-             {
-               "text": "navbar",
-               "value": "navbar"
-             },
-             {
-               "text": "3-column-footer",
-               "value": "3-column-footer"
-             },
-             {
-               "text": "article1",
-               "value": "article1"
-             },
-             {
-               "text": "component",
-               "value": "component"
-             },
-             {
-               "text": "explainer-big-images",
-               "value": "explainer-big-images"
-             },
-             {
-               "text": "explainer",
-               "value": "explainer"
-             },
-             {
-               "text": "footer",
-               "value": "footer"
-             },
-             {
-               "text": "header-banner-full-height",
-               "value": "header-banner-full-height"
-             },
-             {
-               "text": "header-banner",
-               "value": "header-banner"
-             },
-             {
-               "text": "gallery1",
-               "value": "gallery1"
-             },
-             {
-               "text": "blog-teaser1",
-               "value": "blog-teaser1"
-             },
-             {
-               "text": "listcards",
-               "value": "listcards"
-             },
-             {
-               "text": "newsletter",
-               "value": "newsletter"
-             },
-             {
-               "text": "inpage-banner",
-               "value": "inpage-banner"
-             },
-             {
-               "text": "cards1",
-               "value": "cards1"
-             },
-             {
-               "text": "feature-list",
-               "value": "feature-list"
-             },
-             {
-               "text": "header-banner-mono",
-               "value": "header-banner-mono"
-             },
-             {
-               "text": "navbar-mono",
-               "value": "navbar-mono"
-             },
-             {
-               "text": "small-newsletter",
-               "value": "small-newsletter"
-             }
-           ],
            "title": "Poppy variant",
-           "type": "select"
+           "type": "string"
          },
          {
            "key": "resources",
@@ -310,61 +535,6 @@
        "itemtitle": "My component",
        "key": "c__my-components",
        "title": "My components"
-     },
-     {
-       "dataformat": "yaml",
-       "extension": "md",
-       "fields": [
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "images",
-           "path": "images",
-           "title": "Images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "key": "resources",
-           "title": "Resources",
-           "type": "hidden"
-         }
-       ],
-       "folder": "content/portfolio/",
-       "itemtitle": "Portfolio",
-       "key": "c__portfolio",
-       "title": "Portfolio"
      }
    ],
    "hugover": "extended_0.80.0",
@@ -373,16 +543,19 @@
        "key": "singles",
        "menuItems": [
          {
+           "key": "s__about"
+         },
+         {
            "key": "s__homepage"
+         },
+         {
+           "key": "s__news"
          },
          {
            "key": "s__pages"
          },
          {
-           "key": "s__portfolio"
-         },
-         {
-           "key": "s__posts"
+           "key": "s__technology"
          }
        ],
        "title": "Main pages"
@@ -391,10 +564,16 @@
        "key": "collections",
        "menuItems": [
          {
-           "key": "c__portfolio"
+           "key": "c__about"
          },
          {
-           "key": "c__posts"
+           "key": "c__news"
+         },
+         {
+           "key": "c__pages"
+         },
+         {
+           "key": "c__technology"
          }
        ],
        "title": "Detail pages"
@@ -402,6 +581,9 @@
      {
        "key": "general",
        "menuItems": [
+         {
+           "key": "ds_data_design"
+         },
          {
            "key": "config"
          },
@@ -419,6 +601,891 @@
      }
    ],
    "singles": [
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "fields": [
+             {
+               "key": "color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Color",
+               "type": "select"
+             },
+             {
+               "key": "font",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "display1",
+                   "value": "display1"
+                 },
+                 {
+                   "text": "display2",
+                   "value": "display2"
+                 },
+                 {
+                   "text": "body",
+                   "value": "body"
+                 },
+                 {
+                   "text": "art",
+                   "value": "art"
+                 }
+               ],
+               "title": "Font",
+               "type": "select"
+             },
+             {
+               "key": "font_weight",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "thin",
+                   "value": "thin"
+                 },
+                 {
+                   "text": "extralight",
+                   "value": "extralight"
+                 },
+                 {
+                   "text": "light",
+                   "value": "light"
+                 },
+                 {
+                   "text": "normal",
+                   "value": "normal"
+                 },
+                 {
+                   "text": "medium",
+                   "value": "medium"
+                 },
+                 {
+                   "text": "semibold",
+                   "value": "semibold"
+                 },
+                 {
+                   "text": "bold",
+                   "value": "bold"
+                 },
+                 {
+                   "text": "extrabold",
+                   "value": "extrabold"
+                 },
+                 {
+                   "text": "black",
+                   "value": "black"
+                 }
+               ],
+               "title": "Font weight",
+               "type": "select"
+             },
+             {
+               "key": "hover_color",
+               "title": "Hover color",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "size",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "xs",
+                   "value": "xs"
+                 },
+                 {
+                   "text": "sm",
+                   "value": "sm"
+                 },
+                 {
+                   "text": "base",
+                   "value": "base"
+                 },
+                 {
+                   "text": "lg",
+                   "value": "lg"
+                 },
+                 {
+                   "text": "xl",
+                   "value": "xl"
+                 },
+                 {
+                   "text": "2xl",
+                   "value": "2xl"
+                 },
+                 {
+                   "text": "3xl",
+                   "value": "3xl"
+                 },
+                 {
+                   "text": "4xl",
+                   "value": "4xl"
+                 },
+                 {
+                   "text": "5xl",
+                   "value": "5xl"
+                 },
+                 {
+                   "text": "6xl",
+                   "value": "6xl"
+                 },
+                 {
+                   "text": "7xl",
+                   "value": "7xl"
+                 },
+                 {
+                   "text": "8xl",
+                   "value": "8xl"
+                 },
+                 {
+                   "text": "9xl",
+                   "value": "9xl"
+                 }
+               ],
+               "title": "Size",
+               "type": "select"
+             },
+             {
+               "key": "text_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Text color",
+               "type": "select"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "fields": [
+                 {
+                   "key": "colorcode",
+                   "title": "Colorcode",
+                   "type": "string"
+                 },
+                 {
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "poppy_color1",
+               "title": "Poppy color1",
+               "type": "nest"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "colorcode",
+                   "title": "Colorcode",
+                   "type": "string"
+                 },
+                 {
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "poppy_color2",
+               "title": "Poppy color2",
+               "type": "nest"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "colorcode",
+                   "title": "Colorcode",
+                   "type": "string"
+                 },
+                 {
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "poppy_color3",
+               "title": "Poppy color3",
+               "type": "nest"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "colorcode",
+                   "title": "Colorcode",
+                   "type": "string"
+                 },
+                 {
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "poppy_color4",
+               "title": "Poppy color4",
+               "type": "nest"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "colorcode",
+                   "title": "Colorcode",
+                   "type": "string"
+                 },
+                 {
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "poppy_color5",
+               "title": "Poppy color5",
+               "type": "nest"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "colorcode",
+                   "title": "Colorcode",
+                   "type": "string"
+                 },
+                 {
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "poppy_color6",
+               "title": "Poppy color6",
+               "type": "nest"
+             }
+           ],
+           "groupdata": true,
+           "key": "colorscheme",
+           "title": "Colorscheme",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "key": "border",
+               "title": "Border",
+               "type": "string"
+             },
+             {
+               "key": "gridgap",
+               "title": "Gridgap",
+               "type": "number"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "rounded",
+               "title": "Rounded",
+               "type": "string"
+             },
+             {
+               "key": "shadow",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "none",
+                   "value": "none"
+                 },
+                 {
+                   "text": "sm",
+                   "value": "sm"
+                 },
+                 {
+                   "text": "md",
+                   "value": "md"
+                 },
+                 {
+                   "text": "lg",
+                   "value": "lg"
+                 },
+                 {
+                   "text": "xl",
+                   "value": "xl"
+                 },
+                 {
+                   "text": "2xl",
+                   "value": "2xl"
+                 },
+                 {
+                   "text": "4xl",
+                   "value": "4xl"
+                 },
+                 {
+                   "text": "5xl",
+                   "value": "5xl"
+                 },
+                 {
+                   "text": "6xl",
+                   "value": "6xl"
+                 },
+                 {
+                   "text": "7xl",
+                   "value": "7xl"
+                 },
+                 {
+                   "text": "8xl",
+                   "value": "8xl"
+                 },
+                 {
+                   "text": "9xl",
+                   "value": "9xl"
+                 }
+               ],
+               "title": "Shadow",
+               "type": "select"
+             },
+             {
+               "key": "vertical_space",
+               "title": "Vertical space",
+               "type": "number"
+             }
+           ],
+           "key": "components",
+           "title": "Components",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "family",
+               "title": "Family",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "fontscheme",
+           "title": "Fontscheme",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "container",
+               "title": "Container",
+               "type": "boolean"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "2xl",
+                   "title": "2xl",
+                   "type": "string"
+                 },
+                 {
+                   "key": "DEFAULT",
+                   "title": "D e f a u l t",
+                   "type": "string"
+                 },
+                 {
+                   "key": "lg",
+                   "title": "Lg",
+                   "type": "string"
+                 },
+                 {
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "sm",
+                   "title": "Sm",
+                   "type": "string"
+                 },
+                 {
+                   "key": "xl",
+                   "title": "Xl",
+                   "type": "string"
+                 }
+               ],
+               "groupdata": true,
+               "key": "container_padding",
+               "title": "Container padding",
+               "type": "nest"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "blendmode",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "normal",
+                       "value": "normal"
+                     },
+                     {
+                       "text": "multiply",
+                       "value": "multiply"
+                     },
+                     {
+                       "text": "screen",
+                       "value": "screen"
+                     },
+                     {
+                       "text": "overlay",
+                       "value": "overlay"
+                     },
+                     {
+                       "text": "darken",
+                       "value": "darken"
+                     },
+                     {
+                       "text": "lighten",
+                       "value": "lighten"
+                     },
+                     {
+                       "text": "color-dodge",
+                       "value": "color-dodge"
+                     },
+                     {
+                       "text": "color-burn",
+                       "value": "color-burn"
+                     },
+                     {
+                       "text": "difference",
+                       "value": "difference"
+                     },
+                     {
+                       "text": "exclusion",
+                       "value": "exclusion"
+                     },
+                     {
+                       "text": "hue",
+                       "value": "hue"
+                     },
+                     {
+                       "text": "saturation",
+                       "value": "saturation"
+                     },
+                     {
+                       "text": "color",
+                       "value": "color"
+                     },
+                     {
+                       "text": "luminosity",
+                       "value": "luminosity"
+                     }
+                   ],
+                   "title": "Blendmode",
+                   "type": "select"
+                 },
+                 {
+                   "key": "opacity",
+                   "title": "Opacity",
+                   "type": "number"
+                 }
+               ],
+               "groupdata": true,
+               "key": "texture",
+               "title": "Texture",
+               "type": "nest"
+             }
+           ],
+           "groupdata": true,
+           "key": "site",
+           "title": "Site",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "key": "align",
+               "title": "Align",
+               "type": "string"
+             },
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Color",
+               "type": "select"
+             },
+             {
+               "key": "font",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "display1",
+                   "value": "display1"
+                 },
+                 {
+                   "text": "display2",
+                   "value": "display2"
+                 },
+                 {
+                   "text": "body",
+                   "value": "body"
+                 },
+                 {
+                   "text": "art",
+                   "value": "art"
+                 }
+               ],
+               "title": "Font",
+               "type": "select"
+             },
+             {
+               "key": "font_weight",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "thin",
+                   "value": "thin"
+                 },
+                 {
+                   "text": "extralight",
+                   "value": "extralight"
+                 },
+                 {
+                   "text": "light",
+                   "value": "light"
+                 },
+                 {
+                   "text": "normal",
+                   "value": "normal"
+                 },
+                 {
+                   "text": "medium",
+                   "value": "medium"
+                 },
+                 {
+                   "text": "semibold",
+                   "value": "semibold"
+                 },
+                 {
+                   "text": "bold",
+                   "value": "bold"
+                 },
+                 {
+                   "text": "extrabold",
+                   "value": "extrabold"
+                 },
+                 {
+                   "text": "black",
+                   "value": "black"
+                 }
+               ],
+               "title": "Font weight",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "size",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "xs",
+                   "value": "xs"
+                 },
+                 {
+                   "text": "sm",
+                   "value": "sm"
+                 },
+                 {
+                   "text": "base",
+                   "value": "base"
+                 },
+                 {
+                   "text": "lg",
+                   "value": "lg"
+                 },
+                 {
+                   "text": "xl",
+                   "value": "xl"
+                 },
+                 {
+                   "text": "2xl",
+                   "value": "2xl"
+                 },
+                 {
+                   "text": "3xl",
+                   "value": "3xl"
+                 },
+                 {
+                   "text": "4xl",
+                   "value": "4xl"
+                 },
+                 {
+                   "text": "5xl",
+                   "value": "5xl"
+                 },
+                 {
+                   "text": "6xl",
+                   "value": "6xl"
+                 },
+                 {
+                   "text": "7xl",
+                   "value": "7xl"
+                 },
+                 {
+                   "text": "8xl",
+                   "value": "8xl"
+                 },
+                 {
+                   "text": "9xl",
+                   "value": "9xl"
+                 }
+               ],
+               "title": "Size",
+               "type": "select"
+             },
+             {
+               "key": "transform",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "none",
+                   "value": "none"
+                 },
+                 {
+                   "text": "uppercase",
+                   "value": "uppercase"
+                 },
+                 {
+                   "text": "lowercase",
+                   "value": "lowercase"
+                 },
+                 {
+                   "text": "capitalize",
+                   "value": "capitalize"
+                 },
+                 {
+                   "text": "normal-case",
+                   "value": "normal-case"
+                 }
+               ],
+               "title": "Transform",
+               "type": "select"
+             }
+           ],
+           "key": "typographies",
+           "title": "Typographies",
+           "type": "accordion"
+         }
+       ],
+       "file": "/data/design.yaml",
+       "key": "ds_data_design",
+       "previewUrl": "/",
+       "title": "Design"
+     },
      {
        "dataformat": "yml",
        "fields": [
@@ -485,11 +1552,6 @@
                "type": "string"
              },
              {
-               "key": "poppygo_cms",
-               "title": "Poppygo cms",
-               "type": "boolean"
-             },
-             {
                "key": "poppygo_debug",
                "title": "Poppygo debug",
                "type": "boolean"
@@ -515,13 +1577,13 @@
                "groupdata": true,
                "key": "umami",
                "title": "Umami",
-               "type": "section"
+               "type": "nest"
              }
            ],
            "groupdata": true,
            "key": "params",
            "title": "Params",
-           "type": "section"
+           "type": "nest"
          }
        ],
        "file": "config.yml",
@@ -539,14 +1601,384 @@
            "type": "info"
          },
          {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
            "key": "title",
            "title": "Title",
            "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "btn_type",
+                   "title": "Btn type",
+                   "type": "string"
+                 },
+                 {
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "component_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "my-component",
+                   "value": ""
+                 },
+                 {
+                   "text": "poppy-article",
+                   "value": "poppy-article"
+                 },
+                 {
+                   "text": "poppy-other",
+                   "value": "poppy-other"
+                 },
+                 {
+                   "text": "poppy-shortlist",
+                   "value": "poppy-shortlist"
+                 },
+                 {
+                   "text": "poppy-footer",
+                   "value": "poppy-footer"
+                 },
+                 {
+                   "text": "poppy-banner",
+                   "value": "poppy-banner"
+                 },
+                 {
+                   "text": "poppy-listing",
+                   "value": "poppy-listing"
+                 },
+                 {
+                   "text": "poppy-form",
+                   "value": "poppy-form"
+                 },
+                 {
+                   "text": "poppy-navigation",
+                   "value": "poppy-navigation"
+                 }
+               ],
+               "title": "Component type",
+               "type": "select"
+             },
+             {
+               "key": "component_variant",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
+                 },
+                 {
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
+                 },
+                 {
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
+                 },
+                 {
+                   "text": "component",
+                   "value": "component"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 }
+               ],
+               "title": "Component variant",
+               "type": "select"
+             },
+             {
+               "key": "count",
+               "title": "Count",
+               "type": "string"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
          },
          {
            "extensions": [
@@ -579,25 +2011,124 @@
            "type": "string"
          },
          {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
          },
          {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "file": "content/_index.md",
+       "key": "s__homepage",
+       "previewUrl": "/",
+       "title": "Homepage"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /news/",
+           "key": "info-s__news",
+           "theme": "gray-bare",
+           "title": "Info s news",
+           "type": "info"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
            "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
              {
                "key": "bg_image",
                "title": "Bg image",
                "type": "string"
              },
              {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
              },
              {
-               "key": "poppy_type",
+               "key": "component_type",
                "multiple": false,
                "options": [
                  {
@@ -637,96 +2168,258 @@
                    "value": "poppy-navigation"
                  }
                ],
-               "title": "Poppy type",
+               "title": "Component type",
                "type": "select"
              },
              {
-               "key": "poppy_variant",
+               "key": "component_variant",
                "multiple": false,
                "options": [
                  {
-                   "text": "navbar",
-                   "value": "navbar"
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
                  },
                  {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
                  },
                  {
-                   "text": "article1",
-                   "value": "article1"
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
                  },
                  {
                    "text": "component",
                    "value": "component"
                  },
                  {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
-                   "text": "footer",
-                   "value": "footer"
+                   "text": "showcase",
+                   "value": "showcase"
                  },
                  {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
+                   "text": "footer-simple",
+                   "value": "footer-simple"
                  },
                  {
-                   "text": "header-banner",
-                   "value": "header-banner"
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
                  },
                  {
-                   "text": "gallery1",
-                   "value": "gallery1"
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
                  },
                  {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
+                   "text": "introbanner",
+                   "value": "introbanner"
                  },
                  {
-                   "text": "listcards",
-                   "value": "listcards"
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
                  },
                  {
-                   "text": "newsletter",
-                   "value": "newsletter"
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
                  },
                  {
                    "text": "inpage-banner",
                    "value": "inpage-banner"
                  },
                  {
-                   "text": "cards1",
-                   "value": "cards1"
+                   "text": "listing-cards",
+                   "value": "listing-cards"
                  },
                  {
-                   "text": "feature-list",
-                   "value": "feature-list"
+                   "text": "cards-standard",
+                   "value": "cards-standard"
                  },
                  {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
+                   "text": "image-cards",
+                   "value": "image-cards"
                  },
                  {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
                  },
                  {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
                  }
                ],
-               "title": "Poppy variant",
+               "title": "Component variant",
                "type": "select"
+             },
+             {
+               "key": "count",
+               "title": "Count",
+               "type": "number"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
              },
              {
                "key": "subtitle",
                "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
                "type": "string"
              },
              {
@@ -740,30 +2433,72 @@
            "type": "accordion"
          },
          {
-           "key": "resources",
-           "title": "Resources",
-           "type": "hidden"
-         },
-         {
            "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
              {
                "key": "bg_image",
                "title": "Bg image",
                "type": "string"
              },
              {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
                "key": "buttons",
                "title": "Buttons",
-               "type": "string"
+               "type": "accordion"
              },
              {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "poppy_type",
+               "key": "component_type",
                "multiple": false,
                "options": [
                  {
@@ -803,92 +2538,239 @@
                    "value": "poppy-navigation"
                  }
                ],
-               "title": "Poppy type",
+               "title": "Component type",
                "type": "select"
              },
              {
-               "key": "poppy_variant",
+               "key": "component_variant",
                "multiple": false,
                "options": [
                  {
-                   "text": "navbar",
-                   "value": "navbar"
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
                  },
                  {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
                  },
                  {
-                   "text": "article1",
-                   "value": "article1"
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
                  },
                  {
                    "text": "component",
                    "value": "component"
                  },
                  {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
-                   "text": "footer",
-                   "value": "footer"
+                   "text": "showcase",
+                   "value": "showcase"
                  },
                  {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
+                   "text": "footer-simple",
+                   "value": "footer-simple"
                  },
                  {
-                   "text": "header-banner",
-                   "value": "header-banner"
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
                  },
                  {
-                   "text": "gallery1",
-                   "value": "gallery1"
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
                  },
                  {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
+                   "text": "introbanner",
+                   "value": "introbanner"
                  },
                  {
-                   "text": "listcards",
-                   "value": "listcards"
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
                  },
                  {
-                   "text": "newsletter",
-                   "value": "newsletter"
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
                  },
                  {
                    "text": "inpage-banner",
                    "value": "inpage-banner"
                  },
                  {
-                   "text": "cards1",
-                   "value": "cards1"
+                   "text": "listing-cards",
+                   "value": "listing-cards"
                  },
                  {
-                   "text": "feature-list",
-                   "value": "feature-list"
+                   "text": "cards-standard",
+                   "value": "cards-standard"
                  },
                  {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
+                   "text": "image-cards",
+                   "value": "image-cards"
                  },
                  {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
                  },
                  {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
                  }
                ],
-               "title": "Poppy variant",
+               "title": "Component variant",
                "type": "select"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
              },
              {
                "key": "subtitle",
@@ -904,32 +2786,6 @@
            "key": "subpage_sections",
            "title": "Subpage sections",
            "type": "accordion"
-         }
-       ],
-       "file": "content/_index.md",
-       "key": "s__homepage",
-       "previewUrl": "/",
-       "title": "Homepage"
-     },
-     {
-       "dataformat": "yaml",
-       "fields": [
-         {
-           "content": "Relative link of this page: /posts/",
-           "key": "info-s__posts",
-           "theme": "gray-bare",
-           "title": "Info s posts",
-           "type": "info"
-         },
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
          },
          {
            "extensions": [
@@ -962,20 +2818,95 @@
            "type": "chips"
          },
          {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
          },
          {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "file": "content/news/_index.md",
+       "key": "s__news",
+       "previewUrl": "/news/",
+       "title": "News listpage"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /about/",
+           "key": "info-s__about",
+           "theme": "gray-bare",
+           "title": "Info s about",
+           "type": "info"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
            "fields": [
              {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "bg_image",
+               "title": "Bg image",
                "type": "string"
              },
              {
-               "key": "poppy_type",
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "chips"
+             },
+             {
+               "key": "component_type",
                "multiple": false,
                "options": [
                  {
@@ -1015,92 +2946,208 @@
                    "value": "poppy-navigation"
                  }
                ],
-               "title": "Poppy type",
+               "title": "Component type",
                "type": "select"
              },
              {
-               "key": "poppy_variant",
+               "key": "component_variant",
                "multiple": false,
                "options": [
                  {
-                   "text": "navbar",
-                   "value": "navbar"
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
                  },
                  {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
                  },
                  {
-                   "text": "article1",
-                   "value": "article1"
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
                  },
                  {
                    "text": "component",
                    "value": "component"
                  },
                  {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
-                   "text": "footer",
-                   "value": "footer"
+                   "text": "showcase",
+                   "value": "showcase"
                  },
                  {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
+                   "text": "footer-simple",
+                   "value": "footer-simple"
                  },
                  {
-                   "text": "header-banner",
-                   "value": "header-banner"
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
                  },
                  {
-                   "text": "gallery1",
-                   "value": "gallery1"
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
                  },
                  {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
+                   "text": "introbanner",
+                   "value": "introbanner"
                  },
                  {
-                   "text": "listcards",
-                   "value": "listcards"
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
                  },
                  {
-                   "text": "newsletter",
-                   "value": "newsletter"
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
                  },
                  {
                    "text": "inpage-banner",
                    "value": "inpage-banner"
                  },
                  {
-                   "text": "cards1",
-                   "value": "cards1"
+                   "text": "listing-cards",
+                   "value": "listing-cards"
                  },
                  {
-                   "text": "feature-list",
-                   "value": "feature-list"
+                   "text": "cards-standard",
+                   "value": "cards-standard"
                  },
                  {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
+                   "text": "image-cards",
+                   "value": "image-cards"
                  },
                  {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
                  },
                  {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
                  }
                ],
-               "title": "Poppy variant",
+               "title": "Component variant",
                "type": "select"
+             },
+             {
+               "key": "count",
+               "title": "Count",
+               "type": "number"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "key": "items",
+               "title": "Items",
+               "type": "chips"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
              }
            ],
            "key": "page_sections",
@@ -1108,20 +3155,72 @@
            "type": "accordion"
          },
          {
-           "key": "resources",
-           "title": "Resources",
-           "type": "hidden"
-         },
-         {
            "fields": [
              {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "bg_image",
+               "title": "Bg image",
                "type": "string"
              },
              {
-               "key": "poppy_type",
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "component_type",
                "multiple": false,
                "options": [
                  {
@@ -1161,103 +3260,316 @@
                    "value": "poppy-navigation"
                  }
                ],
-               "title": "Poppy type",
+               "title": "Component type",
                "type": "select"
              },
              {
-               "key": "poppy_variant",
+               "key": "component_variant",
                "multiple": false,
                "options": [
                  {
-                   "text": "navbar",
-                   "value": "navbar"
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
                  },
                  {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
                  },
                  {
-                   "text": "article1",
-                   "value": "article1"
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
                  },
                  {
                    "text": "component",
                    "value": "component"
                  },
                  {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
                    "text": "explainer",
                    "value": "explainer"
                  },
                  {
-                   "text": "footer",
-                   "value": "footer"
+                   "text": "showcase",
+                   "value": "showcase"
                  },
                  {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
+                   "text": "footer-simple",
+                   "value": "footer-simple"
                  },
                  {
-                   "text": "header-banner",
-                   "value": "header-banner"
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
                  },
                  {
-                   "text": "gallery1",
-                   "value": "gallery1"
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
                  },
                  {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
+                   "text": "introbanner",
+                   "value": "introbanner"
                  },
                  {
-                   "text": "listcards",
-                   "value": "listcards"
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
                  },
                  {
-                   "text": "newsletter",
-                   "value": "newsletter"
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
                  },
                  {
                    "text": "inpage-banner",
                    "value": "inpage-banner"
                  },
                  {
-                   "text": "cards1",
-                   "value": "cards1"
+                   "text": "listing-cards",
+                   "value": "listing-cards"
                  },
                  {
-                   "text": "feature-list",
-                   "value": "feature-list"
+                   "text": "cards-standard",
+                   "value": "cards-standard"
                  },
                  {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
+                   "text": "image-cards",
+                   "value": "image-cards"
                  },
                  {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
                  },
                  {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
                  }
                ],
-               "title": "Poppy variant",
+               "title": "Component variant",
                "type": "select"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
              }
            ],
            "key": "subpage_sections",
            "title": "Subpage sections",
            "type": "accordion"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "aliases",
+           "title": "Aliases",
+           "type": "chips"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
          }
        ],
-       "file": "content/posts/_index.md",
-       "key": "s__posts",
-       "previewUrl": "/posts/",
-       "title": "Posts listpage"
+       "file": "content/about/_index.md",
+       "key": "s__about",
+       "previewUrl": "/about/",
+       "title": "About listpage"
      },
      {
        "dataformat": "yaml",
@@ -1270,14 +3582,734 @@
            "type": "info"
          },
          {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
-         },
-         {
            "key": "title",
            "title": "Title",
            "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "component_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "my-component",
+                   "value": ""
+                 },
+                 {
+                   "text": "poppy-article",
+                   "value": "poppy-article"
+                 },
+                 {
+                   "text": "poppy-other",
+                   "value": "poppy-other"
+                 },
+                 {
+                   "text": "poppy-shortlist",
+                   "value": "poppy-shortlist"
+                 },
+                 {
+                   "text": "poppy-footer",
+                   "value": "poppy-footer"
+                 },
+                 {
+                   "text": "poppy-banner",
+                   "value": "poppy-banner"
+                 },
+                 {
+                   "text": "poppy-listing",
+                   "value": "poppy-listing"
+                 },
+                 {
+                   "text": "poppy-form",
+                   "value": "poppy-form"
+                 },
+                 {
+                   "text": "poppy-navigation",
+                   "value": "poppy-navigation"
+                 }
+               ],
+               "title": "Component type",
+               "type": "select"
+             },
+             {
+               "key": "component_variant",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
+                 },
+                 {
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
+                 },
+                 {
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
+                 },
+                 {
+                   "text": "component",
+                   "value": "component"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 }
+               ],
+               "title": "Component variant",
+               "type": "select"
+             },
+             {
+               "key": "count",
+               "title": "Count",
+               "type": "number"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "component_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "my-component",
+                   "value": ""
+                 },
+                 {
+                   "text": "poppy-article",
+                   "value": "poppy-article"
+                 },
+                 {
+                   "text": "poppy-other",
+                   "value": "poppy-other"
+                 },
+                 {
+                   "text": "poppy-shortlist",
+                   "value": "poppy-shortlist"
+                 },
+                 {
+                   "text": "poppy-footer",
+                   "value": "poppy-footer"
+                 },
+                 {
+                   "text": "poppy-banner",
+                   "value": "poppy-banner"
+                 },
+                 {
+                   "text": "poppy-listing",
+                   "value": "poppy-listing"
+                 },
+                 {
+                   "text": "poppy-form",
+                   "value": "poppy-form"
+                 },
+                 {
+                   "text": "poppy-navigation",
+                   "value": "poppy-navigation"
+                 }
+               ],
+               "title": "Component type",
+               "type": "select"
+             },
+             {
+               "key": "component_variant",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
+                 },
+                 {
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
+                 },
+                 {
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
+                 },
+                 {
+                   "text": "component",
+                   "value": "component"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 }
+               ],
+               "title": "Component variant",
+               "type": "select"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
          },
          {
            "extensions": [
@@ -1305,312 +4337,10 @@
            "type": "markdown"
          },
          {
-           "key": "iscjklanguage",
-           "title": "Iscjklanguage",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "poppy_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "my-component",
-                   "value": ""
-                 },
-                 {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
-                   "text": "poppy-other",
-                   "value": "poppy-other"
-                 },
-                 {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
-                   "text": "poppy-footer",
-                   "value": "poppy-footer"
-                 },
-                 {
-                   "text": "poppy-banner",
-                   "value": "poppy-banner"
-                 },
-                 {
-                   "text": "poppy-listing",
-                   "value": "poppy-listing"
-                 },
-                 {
-                   "text": "poppy-form",
-                   "value": "poppy-form"
-                 },
-                 {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
-                 }
-               ],
-               "title": "Poppy type",
-               "type": "select"
-             },
-             {
-               "key": "poppy_variant",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "article1",
-                   "value": "article1"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
-                 },
-                 {
-                   "text": "header-banner",
-                   "value": "header-banner"
-                 },
-                 {
-                   "text": "gallery1",
-                   "value": "gallery1"
-                 },
-                 {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
-                 },
-                 {
-                   "text": "listcards",
-                   "value": "listcards"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
-                   "text": "cards1",
-                   "value": "cards1"
-                 },
-                 {
-                   "text": "feature-list",
-                   "value": "feature-list"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
-                 }
-               ],
-               "title": "Poppy variant",
-               "type": "select"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
-         },
-         {
-           "key": "resources",
-           "title": "Resources",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "poppy_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "my-component",
-                   "value": ""
-                 },
-                 {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
-                   "text": "poppy-other",
-                   "value": "poppy-other"
-                 },
-                 {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
-                   "text": "poppy-footer",
-                   "value": "poppy-footer"
-                 },
-                 {
-                   "text": "poppy-banner",
-                   "value": "poppy-banner"
-                 },
-                 {
-                   "text": "poppy-listing",
-                   "value": "poppy-listing"
-                 },
-                 {
-                   "text": "poppy-form",
-                   "value": "poppy-form"
-                 },
-                 {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
-                 }
-               ],
-               "title": "Poppy type",
-               "type": "select"
-             },
-             {
-               "key": "poppy_variant",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "article1",
-                   "value": "article1"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
-                 },
-                 {
-                   "text": "header-banner",
-                   "value": "header-banner"
-                 },
-                 {
-                   "text": "gallery1",
-                   "value": "gallery1"
-                 },
-                 {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
-                 },
-                 {
-                   "text": "listcards",
-                   "value": "listcards"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
-                   "text": "cards1",
-                   "value": "cards1"
-                 },
-                 {
-                   "text": "feature-list",
-                   "value": "feature-list"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
-                 }
-               ],
-               "title": "Poppy variant",
-               "type": "select"
-             }
-           ],
-           "key": "subpage_sections",
-           "title": "Subpage sections",
-           "type": "accordion"
-         }
-       ],
-       "file": "content/pages/_index.md",
-       "key": "s__pages",
-       "previewUrl": "/pages/",
-       "title": "Pages"
-     },
-     {
-       "dataformat": "yaml",
-       "fields": [
-         {
-           "content": "Relative link of this page: /portfolio/",
-           "key": "info-s__portfolio",
-           "theme": "gray-bare",
-           "title": "Info s portfolio",
-           "type": "info"
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
          },
          {
            "key": "draft",
@@ -1618,9 +4348,765 @@
            "type": "boolean"
          },
          {
+           "key": "iscjklanguage",
+           "title": "Iscjklanguage",
+           "type": "hidden"
+         },
+         {
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
+         },
+         {
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
+         }
+       ],
+       "file": "content/pages/_index.md",
+       "key": "s__pages",
+       "previewUrl": "/pages/",
+       "title": "Pages listpage"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
+           "content": "Relative link of this page: /technology/",
+           "key": "info-s__technology",
+           "theme": "gray-bare",
+           "title": "Info s technology",
+           "type": "info"
+         },
+         {
            "key": "title",
            "title": "Title",
            "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "component_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "my-component",
+                   "value": ""
+                 },
+                 {
+                   "text": "poppy-article",
+                   "value": "poppy-article"
+                 },
+                 {
+                   "text": "poppy-other",
+                   "value": "poppy-other"
+                 },
+                 {
+                   "text": "poppy-shortlist",
+                   "value": "poppy-shortlist"
+                 },
+                 {
+                   "text": "poppy-footer",
+                   "value": "poppy-footer"
+                 },
+                 {
+                   "text": "poppy-banner",
+                   "value": "poppy-banner"
+                 },
+                 {
+                   "text": "poppy-listing",
+                   "value": "poppy-listing"
+                 },
+                 {
+                   "text": "poppy-form",
+                   "value": "poppy-form"
+                 },
+                 {
+                   "text": "poppy-navigation",
+                   "value": "poppy-navigation"
+                 }
+               ],
+               "title": "Component type",
+               "type": "select"
+             },
+             {
+               "key": "component_variant",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
+                 },
+                 {
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
+                 },
+                 {
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
+                 },
+                 {
+                   "text": "component",
+                   "value": "component"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 }
+               ],
+               "title": "Component variant",
+               "type": "select"
+             },
+             {
+               "key": "count",
+               "title": "Count",
+               "type": "number"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Bg color",
+               "type": "select"
+             },
+             {
+               "key": "bg_image",
+               "title": "Bg image",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "component_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "my-component",
+                   "value": ""
+                 },
+                 {
+                   "text": "poppy-article",
+                   "value": "poppy-article"
+                 },
+                 {
+                   "text": "poppy-other",
+                   "value": "poppy-other"
+                 },
+                 {
+                   "text": "poppy-shortlist",
+                   "value": "poppy-shortlist"
+                 },
+                 {
+                   "text": "poppy-footer",
+                   "value": "poppy-footer"
+                 },
+                 {
+                   "text": "poppy-banner",
+                   "value": "poppy-banner"
+                 },
+                 {
+                   "text": "poppy-listing",
+                   "value": "poppy-listing"
+                 },
+                 {
+                   "text": "poppy-form",
+                   "value": "poppy-form"
+                 },
+                 {
+                   "text": "poppy-navigation",
+                   "value": "poppy-navigation"
+                 }
+               ],
+               "title": "Component type",
+               "type": "select"
+             },
+             {
+               "key": "component_variant",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "dwp-navbar",
+                   "value": "dwp-navbar"
+                 },
+                 {
+                   "text": "dwp-inpage-banner",
+                   "value": "dwp-inpage-banner"
+                 },
+                 {
+                   "text": "dwp-footer",
+                   "value": "dwp-footer"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
+                 },
+                 {
+                   "text": "component",
+                   "value": "component"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 }
+               ],
+               "title": "Component variant",
+               "type": "select"
+             },
+             {
+               "key": "item_bg_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "orange",
+                   "value": "orange"
+                 },
+                 {
+                   "text": "tufts-blue",
+                   "value": "tufts-blue"
+                 },
+                 {
+                   "text": "baby-blue-eyes",
+                   "value": "baby-blue-eyes"
+                 },
+                 {
+                   "text": "aero-blue",
+                   "value": "aero-blue"
+                 },
+                 {
+                   "text": "charcoal",
+                   "value": "charcoal"
+                 },
+                 {
+                   "text": "ghost-white",
+                   "value": "ghost-white"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item bg color",
+               "type": "select"
+             },
+             {
+               "fields": [
+                 {
+                   "key": "bodytext",
+                   "title": "Bodytext",
+                   "type": "markdown"
+                 },
+                 {
+                   "fields": [
+                     {
+                       "arrayTitle": true,
+                       "key": "icon",
+                       "title": "Icon",
+                       "type": "string"
+                     },
+                     {
+                       "key": "label",
+                       "title": "Label",
+                       "type": "string"
+                     },
+                     {
+                       "key": "link",
+                       "title": "Link",
+                       "type": "string"
+                     }
+                   ],
+                   "key": "buttons",
+                   "title": "Buttons",
+                   "type": "accordion"
+                 },
+                 {
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "image",
+                   "title": "Image",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "title",
+                   "title": "Title",
+                   "type": "string"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "key": "list",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "news",
+                   "value": "news"
+                 },
+                 {
+                   "text": "about",
+                   "value": "about"
+                 },
+                 {
+                   "text": "pages",
+                   "value": "pages"
+                 },
+                 {
+                   "text": "technology",
+                   "value": "technology"
+                 }
+               ],
+               "title": "List",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "subtitle",
+               "title": "Subtitle",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "subpage_sections",
+           "title": "Subpage sections",
+           "type": "accordion"
          },
          {
            "extensions": [
@@ -1653,297 +5139,41 @@
            "type": "chips"
          },
          {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
            "key": "iscjklanguage",
            "title": "Iscjklanguage",
            "type": "hidden"
          },
          {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "poppy_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "my-component",
-                   "value": ""
-                 },
-                 {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
-                   "text": "poppy-other",
-                   "value": "poppy-other"
-                 },
-                 {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
-                   "text": "poppy-footer",
-                   "value": "poppy-footer"
-                 },
-                 {
-                   "text": "poppy-banner",
-                   "value": "poppy-banner"
-                 },
-                 {
-                   "text": "poppy-listing",
-                   "value": "poppy-listing"
-                 },
-                 {
-                   "text": "poppy-form",
-                   "value": "poppy-form"
-                 },
-                 {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
-                 }
-               ],
-               "title": "Poppy type",
-               "type": "select"
-             },
-             {
-               "key": "poppy_variant",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "article1",
-                   "value": "article1"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
-                 },
-                 {
-                   "text": "header-banner",
-                   "value": "header-banner"
-                 },
-                 {
-                   "text": "gallery1",
-                   "value": "gallery1"
-                 },
-                 {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
-                 },
-                 {
-                   "text": "listcards",
-                   "value": "listcards"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
-                   "text": "cards1",
-                   "value": "cards1"
-                 },
-                 {
-                   "text": "feature-list",
-                   "value": "feature-list"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
-                 }
-               ],
-               "title": "Poppy variant",
-               "type": "select"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
+           "key": "lastmod",
+           "title": "Lastmod",
+           "type": "hidden"
          },
          {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "poppy_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "my-component",
-                   "value": ""
-                 },
-                 {
-                   "text": "poppy-article",
-                   "value": "poppy-article"
-                 },
-                 {
-                   "text": "poppy-other",
-                   "value": "poppy-other"
-                 },
-                 {
-                   "text": "poppy-shortlist",
-                   "value": "poppy-shortlist"
-                 },
-                 {
-                   "text": "poppy-footer",
-                   "value": "poppy-footer"
-                 },
-                 {
-                   "text": "poppy-banner",
-                   "value": "poppy-banner"
-                 },
-                 {
-                   "text": "poppy-listing",
-                   "value": "poppy-listing"
-                 },
-                 {
-                   "text": "poppy-form",
-                   "value": "poppy-form"
-                 },
-                 {
-                   "text": "poppy-navigation",
-                   "value": "poppy-navigation"
-                 }
-               ],
-               "title": "Poppy type",
-               "type": "select"
-             },
-             {
-               "key": "poppy_variant",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "navbar",
-                   "value": "navbar"
-                 },
-                 {
-                   "text": "3-column-footer",
-                   "value": "3-column-footer"
-                 },
-                 {
-                   "text": "article1",
-                   "value": "article1"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer-big-images",
-                   "value": "explainer-big-images"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer",
-                   "value": "footer"
-                 },
-                 {
-                   "text": "header-banner-full-height",
-                   "value": "header-banner-full-height"
-                 },
-                 {
-                   "text": "header-banner",
-                   "value": "header-banner"
-                 },
-                 {
-                   "text": "gallery1",
-                   "value": "gallery1"
-                 },
-                 {
-                   "text": "blog-teaser1",
-                   "value": "blog-teaser1"
-                 },
-                 {
-                   "text": "listcards",
-                   "value": "listcards"
-                 },
-                 {
-                   "text": "newsletter",
-                   "value": "newsletter"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
-                   "text": "cards1",
-                   "value": "cards1"
-                 },
-                 {
-                   "text": "feature-list",
-                   "value": "feature-list"
-                 },
-                 {
-                   "text": "header-banner-mono",
-                   "value": "header-banner-mono"
-                 },
-                 {
-                   "text": "navbar-mono",
-                   "value": "navbar-mono"
-                 },
-                 {
-                   "text": "small-newsletter",
-                   "value": "small-newsletter"
-                 }
-               ],
-               "title": "Poppy variant",
-               "type": "select"
-             }
-           ],
-           "key": "subpage_sections",
-           "title": "Subpage sections",
-           "type": "accordion"
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "hidden"
+         },
+         {
+           "key": "resources",
+           "title": "Resources",
+           "type": "hidden"
          }
        ],
-       "file": "content/portfolio/_index.md",
-       "key": "s__portfolio",
-       "previewUrl": "/portfolio/",
-       "title": "Portfolio listpage"
+       "file": "content/technology/_index.md",
+       "key": "s__technology",
+       "previewUrl": "/technology/",
+       "title": "Technology listpage"
      }
    ]
  }
