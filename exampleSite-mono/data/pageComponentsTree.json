@@ -4,9 +4,12 @@
       "key": "comp1",
       "poppy_variant": "header-banner-mono",
       "poppy_type": "poppy-banner",
+      "type": "section",
+      "groupdata": true,
       "fields": [
         {
           "key": "poppy_variant",
+          "type": "select",
           "multiple": false,
           "options": [
             {
@@ -50,8 +53,11 @@
       "key": "comp2",
       "poppy_variant": "header-banner-mono",
       "poppy_type": "poppy-shortlist",
+      "type": "section",
+      "groupdata": true,
       "fields": [
         {
+          "type": "select",
           "key": "poppy_variant",
           "multiple": false,
           "options": [

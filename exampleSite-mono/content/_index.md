@@ -4,16 +4,16 @@ draft: false
 iscjklanguage: ''
 mainContent: ''
 page_sections:
-  - name: navbar
-    poppy_type: ''
-    poppy_variant: mono-navbar
   - bg_image: flexible
+    buttons: xxx3
     name: home-hero-banner
     poppy_type: poppy-banner
     poppy_variant: header-banner-mono
     subtitle: The most flexible Hugo theme for all your sites
     title: PDF Letterhead for macOS
   - bg_image: none
+    bg_image2: img2
+    buttons2: dd
     items:
       - bodytext: >
           ## Full flexibility for any poppy_type of site
@@ -39,22 +39,14 @@ page_sections:
     poppy_type: poppy-shortlist
     poppy_variant: explainer
     title: What makes PoppyGo One great?
-  - bg_image: ''
-    list: page-components
-    name: Explore components
-    poppy_type: poppy-listing
-    poppy_variant: gallery1
-    subtitle: ''
-    title: Explore all components
-  - name: footer
+  - bg_image2: ''
+    buttons2: ''
+    name: new comp
     poppy_type: ''
-    poppy_variant: mono-footer
-  - name: test
-    poppy_type: poppy-banner
-    poppy_variant: header-banner-full-height
-  - name: ''
-    poppy_type: ''
-    poppy_variant: ''
+    poppy_variant: article1
+  - name: rterter
+    poppy_type: poppy-other
+    poppy_variant: cards1
 resources: []
 subpage_sections:
   - name: navbar
