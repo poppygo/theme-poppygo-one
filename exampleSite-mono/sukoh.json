@@ -1313,7 +1313,10 @@
            ],
            "key": "page_sections",
            "title": "Page sections",
-           "type": "accordion"
+           "type": "accordion",
+           "dynFormSearchObjectFile": "data/pageComponentsTree",
+           "dynFormSearchRoot": "components",
+           "dynFormSearchKeyLevel0": "poppy_type"
          },
          {
            "key": "resources",

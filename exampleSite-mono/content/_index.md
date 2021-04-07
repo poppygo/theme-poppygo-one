@@ -1,7 +1,7 @@
 ---
 author: PoppyGo
 draft: false
-
+iscjklanguage: ''
 mainContent: ''
 page_sections:
   - name: navbar
@@ -12,7 +12,7 @@ page_sections:
     poppy_type: poppy-banner
     poppy_variant: header-banner-mono
     subtitle: The most flexible Hugo theme for all your sites
-    title: Experience mono
+    title: PDF Letterhead for macOS
   - bg_image: none
     items:
       - bodytext: >
@@ -27,9 +27,8 @@ page_sections:
           Unlike other themes, customizing is in the DNA of the theme.
         image: john
         name: design
-      - bodytext: >
+      - bodytext: |
           ## Build your site in a matter of hours
-
           We made it simple, clear and fast for you.
         buttons:
           - label: read more
@@ -41,16 +40,21 @@ page_sections:
     poppy_variant: explainer
     title: What makes PoppyGo One great?
   - bg_image: ''
+    list: page-components
     name: Explore components
     poppy_type: poppy-listing
     poppy_variant: gallery1
     subtitle: ''
     title: Explore all components
-    list: page-components
   - name: footer
     poppy_type: ''
     poppy_variant: mono-footer
-
+  - name: test
+    poppy_type: poppy-banner
+    poppy_variant: header-banner-full-height
+  - name: ''
+    poppy_type: ''
+    poppy_variant: ''
 resources: []
 subpage_sections:
   - name: navbar
@@ -74,4 +78,6 @@ subpage_sections:
     poppy_type: poppy-footer
     poppy_variant: footer
 title: Homepage
+
 ---
+

@@ -1,0 +1,77 @@
+{
+  "components": [
+    {
+      "key": "comp1",
+      "poppy_variant": "header-banner-mono",
+      "poppy_type": "poppy-banner",
+      "fields": [
+        {
+          "key": "poppy_variant",
+          "multiple": false,
+          "options": [
+            {
+              "text": "header-banner-full-height",
+              "value": "header-banner-full-height"
+            },
+            {
+              "text": "header-banner",
+              "value": "header-banner"
+            }
+          ]
+        },
+        {
+          "key": "bg_image",
+          "title": "Bg image",
+          "type": "string"
+        },
+        {
+          "key": "buttons",
+          "title": "Buttons",
+          "type": "string"
+        },
+        {
+          "key": "name",
+          "title": "Name",
+          "type": "string"
+        },
+        {
+          "key": "subtitle",
+          "title": "Subtitle",
+          "type": "string"
+        },
+        {
+          "key": "title",
+          "title": "Title",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "key": "comp2",
+      "poppy_variant": "header-banner-mono",
+      "poppy_type": "poppy-shortlist",
+      "fields": [
+        {
+          "key": "poppy_variant",
+          "multiple": false,
+          "options": [
+            {
+              "text": "explainer",
+              "value": "explainer"
+            }
+          ]
+        },
+        {
+          "key": "bg_image2",
+          "title": "Bg image2",
+          "type": "string"
+        },
+        {
+          "key": "buttons2",
+          "title": "Buttons2",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
