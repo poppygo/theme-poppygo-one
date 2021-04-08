@@ -1,8 +1,5 @@
 ---
 draft: false
-headless: false
-iscjklanguage: ''
-mainContent: ''
 page_sections:
   - bg_image: ''
     list: poppy-components

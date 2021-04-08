@@ -36,7 +36,7 @@ params:
   linkedin: 'https://linkedin.com/in/XXXX'
   ogImage: images/og_image.jpg
   ogimage: ''
-  poppygo_debug: false
+  poppygo_debug: true
   twitter: XXXX
   umami:
     siteID: XXXXX

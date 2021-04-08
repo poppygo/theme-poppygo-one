@@ -14,6 +14,12 @@ parallax: true
 bg_image: for
 name: inpage-banner
 texture: paper
+buttons:
+  - label: 'Join us'
+    link: '/join/'
+    button_type: ''
+    icon: ''
+    icon_type: ''
 design:
   typographies:
     - align: center

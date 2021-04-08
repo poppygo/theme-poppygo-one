@@ -3,20 +3,21 @@ aliases:
   - showcase
   - product
 draft: false
-iscjklanguage: ''
-date: 06-04-2021
+mainContent: ''
 page_sections:
-  - bg_color: ''
+  - bg_color: transparent
     bg_image: ''
     buttons:
-      - label: ''
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: ''
         link: ''
     component_type: ''
     component_variant: dwp-navbar
-    item_bg_color: ''
-    texture: ''
+    count: ''
     image: ''
-    count: 3
+    item_bg_color: orange
     items:
       - bodytext: |-
           ### This is a  title
@@ -24,72 +25,83 @@ page_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: outline
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
         title: ''
     list: ''
     name: navbar
+    parallax: true
     subtitle: ''
-    title: ''
+    texture: ''
+    title: none
   - bg_color: baby-blue-eyes
-    bg_image: shot
+    bg_image: news_banner
     buttons: []
     component_type: poppy-banner
     component_variant: headerbanner-standard
+    count: ''
+    image: none
     item_bg_color: ''
     items: []
     list: ''
     name: banner
-    subtitle: Dutch Wave Power News
-    title: Dutch Wave Power News
+    parallax: false
+    subtitle: none
+    texture: ''
+    title: News
   - bg_color: ''
     bg_image: ''
     buttons: []
     component_type: poppy-listing
     component_variant: list-articles-standard
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: news
     name: news list
-    subtitle: ''
-    title: Our news items
-  - bg_color: aero-blue
-    bg_image: none
-    buttons: []
-    component_type: poppy-form
-    component_variant: small-newsletter
-    item_bg_color: transparent
-    items: []
-    list: ''
-    name: signup for the newsletter
-    subtitle: signup for the newsletter
+    parallax: false
+    subtitle: none
+    texture: ''
     title: none
   - bg_color: ''
     bg_image: ''
     buttons: []
     component_type: ''
     component_variant: dwp-footer
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: footer
+    parallax: false
     subtitle: ''
+    texture: ''
     title: ''
 resources: []
 subpage_sections:
-  - bg_color: ''
+  - bg_color: ghost-white
     bg_image: ''
     buttons:
-      - label: ''
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: ''
         link: ''
     component_type: ''
     component_variant: dwp-navbar
-    item_bg_color: ''
+    count: ''
+    image: ''
+    item_bg_color: orange
     items:
       - bodytext: |-
           ### This is a  title
@@ -97,73 +109,99 @@ subpage_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: outline
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
         title: ''
     list: ''
     name: navbar
+    parallax: true
     subtitle: ''
+    texture: ''
     title: ''
   - bg_color: ghost-white
     bg_image: none
     buttons: []
     component_type: ''
     component_variant: dwp-inpage-banner
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: headerpage
+    parallax: false
     subtitle: '->frompage'
+    texture: ''
     title: '->frompage'
-  - bg_color: ''
+  - bg_color: ghost-white
     bg_image: none
     buttons: []
     component_type: poppy-article
     component_variant: article-standard
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: article
+    parallax: false
     subtitle: none
+    texture: ''
     title: none
-  - bg_color: aero-blue
+  - bg_color: ghost-white
     bg_image: none
     buttons: []
-    component_type: poppy-banner
-    component_variant: inpage-banner
+    component_type: ''
+    component_variant: dwp-inpage-banner
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: banner
+    parallax: false
     subtitle: REALISING REVOLUTIONARY COST-EFFECTIVE TECHNOLOGY
+    texture: ''
     title: Profitable Wave Energy
   - bg_color: baby-blue-eyes
     bg_image: none
     buttons: []
     component_type: poppy-form
     component_variant: small-newsletter
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: signup for the newsletter
+    parallax: false
     subtitle: signup for the newsletter
+    texture: ''
     title: none
   - bg_color: ''
     bg_image: ''
     buttons: []
     component_type: ''
     component_variant: dwp-footer
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: footer
+    parallax: false
     subtitle: ''
-    title: ''
+    texture: ''
+    title: none
 title: News
 
 ---
+

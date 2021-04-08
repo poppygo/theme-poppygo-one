@@ -23,11 +23,13 @@
       <div class="items-center hidden lg:flex lg:items-right px-3 ">
         <div>
           <ul class="lg:flex {{$design.menu}} pt-4 md:pt-0 ">
-            {{ range $content.menus.main}}
-              <li class="justify-end flex my-1 lg:my-1 mx-1 lg:mx-1 ">
-                <a title="{{ .name }}" class="lg:px-2 py-1 px-0 block border-b-2 border-transparent hover:border-poppycolor2 " href="{{ .url }}">{{ .name }}</a>
-              </li>
-            {{ end }}
+            {{- range first 1 $content.menus -}}
+                {{- range .items -}}
+                  <li class="justify-end flex my-1 lg:my-1 mx-1 lg:mx-1 ">
+                    <a title="{{ .name }}" class="lg:px-2 py-1 px-0 block border-b-2 border-transparent hover:border-poppycolor2 " href="{{ .url }}">{{ .name }}</a>
+                  </li>
+                {{- end -}}
+            {{- end -}}
           </ul>
         </div>
       </div>
@@ -36,11 +38,13 @@
     <div class="p-3 items-center hidden lg:hidden lg:flex lg:items-right px-3 bg_opacity-50 {{$content.item_bg_color}} {{.rounded}} {{.shadow}}" id="menu">
       <div>
         <ul class="lg:flex {{$design.menu}} pt-4 md:pt-0 ">
-          {{ range $content.menus.main}}
-            <li class="justify-end flex my-1 lg:my-1 mx-1 lg:mx-1 ">
-              <a title="{{ .name }}" class="lg:px-2 py-1 px-0 block border-b-2 border-transparent hover:border-poppycolor2 " href="{{ .url }}">{{ .name }}</a>
-            </li>
-          {{ end }}
+          {{- range first 1 $content.menus -}}
+              {{- range .items -}}
+                <li class="justify-end flex my-1 lg:my-1 mx-1 lg:mx-1 ">
+                  <a title="{{ .name }}" class="lg:px-2 py-1 px-0 block border-b-2 border-transparent hover:border-poppycolor2 " href="{{ .url }}">{{ .name }}</a>
+                </li>
+              {{- end -}}
+          {{- end -}}
         </ul>
       </div>
     </div>

@@ -1,10 +1,9 @@
 ---
 draft: false
-iscjklanguage: ''
-resources: []
+
+
 title: Almost Finished components
-date: '2021-04-04'
-weight: ''
+
 ---
 
 

@@ -1,20 +1,23 @@
 ---
 author: Dutch Wave Power
-date: '2021-04-04'
+date: 2021-4-6
 draft: false
+lastmod: ''
+mainContent: ''
 page_sections:
   - bg_color: transparent
     bg_image: ''
     buttons:
-      - label: ''
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: ''
         link: ''
-        btn_type: ''
     component_type: ''
     component_variant: dwp-navbar
     count: ''
     image: ''
-    item_bg_color: ghost-white
-    parallax: true
+    item_bg_color: orange
     items:
       - bodytext: |-
           ### This is a  title
@@ -22,29 +25,36 @@ page_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: outline
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
         title: ''
     list: ''
     name: navbar
+    parallax: true
     subtitle: ''
     texture: ''
     title: ''
   - bg_color: white
     bg_image: hero_banner
     buttons:
-      - label: Support us
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: Support us
         link: '#support'
     component_type: poppy-banner
     component_variant: headerbanner-full
+    count: ''
     image: none
     item_bg_color: ''
-    parallax: true
     items:
       - bodytext: |-
 
@@ -54,39 +64,46 @@ page_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: ''
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
         title: ''
     list: ''
     name: home-hero-banner
+    parallax: true
     subtitle: Securing the future
-    texture: texture
+    texture: ''
     title: Profitable wave energy
   - bg_color: baby-blue-eyes
     bg_image: none
     buttons: []
     component_type: ''
     component_variant: dwp-inpage-banner
+    count: ''
     image: ''
     item_bg_color: ''
     items: []
     list: ''
-    name: socialstatement
+    name: social-statement
+    parallax: false
     poppy_type: ''
     poppy_variant: dwp-inpage-banner
     subtitle: Unlocking world's greatest untapped sustainable energy source
-    texture: ''
-    title: '"We act now to keep our planet healthy for us all!"'
+    texture: crist
+    title: '"We act now to keep our planet save for us all!"'
   - bg_color: charcoal
     bg_image: none
     buttons: []
-    component_type: poppy-shortlist
-    component_variant: showcase
+    component_type: ''
+    component_variant: dwp-showcase
+    count: ''
     image: ''
     item_bg_color: white
     items:
@@ -97,77 +114,93 @@ page_sections:
           - consistent
           - complementary
         buttons:
-          - icon: ''
-            label: wave energy explained
-            link: waveenergyexplained
+          - button_type: ''
+            icon: information-circle
+            icon_type: ''
+            label: more
+            link: wave-energy-explained
         icon: ''
+        icon_type: ''
         image: wave
         link: ''
         name: Why
         title: Why Wave Energy?
     list: ''
-    name: explainer
+    name: why wave energy
+    parallax: false
     subtitle: ''
     texture: ''
-    title: 'none'
+    title: Durable energy from Wave Power
   - bg_color: baby-blue-eyes
     bg_image: none
     buttons: []
     component_type: poppy-shortlist
     component_variant: cards-standard
+    count: ''
     image: ''
     item_bg_color: ghost-white
     items:
       - bodytext: |-
           - simple and unique design
-          - medium sized
           - drop & connect installation
           - off-the-shelf components
           - low maintenaince
-        buttons:
-          - icon: ''
-            label: economics
-            link: economics
+        buttons: []
         icon: ''
-        image: none
-        link: ''
+        icon_type: ''
+        image: costeffective1
+        link: economics
         name: costeffective
-        title: Cost-Effective
-      - bodytext: |-
-          - use rotation and wave front
+        title: ''
+      - bodytext: |
+          - follows wave rotation
+          - uses wave front
           - full range resonance
-          - use tide adaption
-          - shielding sensitive parts
-          - submerge in extremes
-        buttons:
-          - icon: ''
-            label: technology
-            link: technology
+          - automatic tide adaption
+        buttons: []
         icon: ''
-        image: none
+        icon_type: ''
+        image: efficient1
         link: ''
-        name: efficientrobust
-        title: Efficiënt & Robust
+        name: efficient
+        title: ''
+      - bodytext: |
+          - all sensitive parts inside
+          - submerge in extremes
+          - no end-stops
+          - load steering
+        buttons: []
+        icon: ''
+        icon_type: ''
+        image: robust1
+        link: ''
+        name: robust
+        title: ''
     list: ''
-    name: design philosophy
+    name: design-philosophy
+    parallax: false
     poppy_type: poppy-shortlist
     poppy_variant: cards-standard
-    subtitle: To unlock wave energy succesfully we need to be
-    texture: texture
-    title: Our Design Philosophy
+    subtitle: to unlock wave energy succesfully we need to be
+    texture: crist
+    title: Design Philosophy
   - bg_color: ghost-white
     bg_image: ''
     buttons:
-      - label: Contact
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: Contact
         link: /pages/contact/
     component_type: poppy-listing
     component_variant: list-articles-standard
+    count: ''
     image: ''
     item_bg_color: transparent
     items: []
-    count: 3
     list: news
     name: news
+    parallax: false
     poppy_type: poppy-listing
     poppy_variant: news-list
     subtitle: none
@@ -176,145 +209,134 @@ page_sections:
   - bg_color: baby-blue-eyes
     bg_image: none
     buttons:
-      - label: Invest
-        link: invest
-      - label: Join our team
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: Join
         link: join
-      - label: Ambassador
-        link: ambassador
     component_type: poppy-banner
     component_variant: inpage-banner
+    count: ''
     image: ''
     item_bg_color: transparent
     items: []
     list: ''
     name: support
+    parallax: false
     poppy_type: poppy-banner
     poppy_variant: inpage-banner
-    subtitle: 'Become an investor, ambassador or join our team'
-    texture: ''
+    subtitle: 'Become an investor, ambassador or teammember'
+    texture: crist
     title: '"We need your support!"'
   - bg_color: ghost-white
     bg_image: none
     buttons: []
     component_type: poppy-shortlist
     component_variant: image-cards
+    count: ''
     image: ''
     item_bg_color: ''
     items:
       - bodytext: ''
         buttons: []
         icon: ''
-        image: martens
-        link: ''
+        icon_type: ''
+        image: logo_martens
+        link: 'https://martensgroep.eu/'
         name: martens
         title: ''
       - bodytext: ''
         buttons: []
         icon: ''
-        image: dls
-        link: ''
+        icon_type: ''
+        image: logo_dls
+        link: 'https://www.dlsbv.nl/'
         name: dls
         title: ''
       - bodytext: ''
         buttons: []
         icon: ''
-        image: metsupport
+        icon_type: ''
+        image: logo_marin
+        link: 'https://www.marin.nl/'
+        name: marin
+        title: ''
+      - bodytext: ''
+        buttons: []
+        icon: ''
+        icon_type: ''
+        image: logo_batterylabs
+        link: 'https://batterylabs.nl/'
+        name: batterylabs
+        title: ''
+      - bodytext: ''
+        buttons: []
+        icon: ''
+        icon_type: ''
+        image: none
         link: ''
         name: metsupport
         title: ''
       - bodytext: ''
         buttons: []
         icon: ''
-        image: dmec
-        link: ''
-        name: dmec
-        title: ''
-      - bodytext: ''
-        buttons: []
-        icon: ''
-        image: marin
-        link: ''
-        name: marin
-        title: ''
-      - bodytext: ''
-        buttons: []
-        icon: ''
-        image: deltares
+        icon_type: ''
+        image: none
         link: ''
         name: deltares
         title: ''
       - bodytext: ''
         buttons: []
         icon: ''
-        image: tudelft
+        icon_type: ''
+        image: none
         link: ''
         name: tudelft
         title: ''
       - bodytext: ''
         buttons: []
         icon: ''
-        image: hydronenergy
+        icon_type: ''
+        image: none
         link: ''
         name: hydronenergy
         title: ''
       - bodytext: ''
         buttons: []
         icon: ''
-        image: batterylabs
+        icon_type: ''
+        image: none
         link: ''
-        name: batterylabs
+        name: dmec
         title: ''
     list: ''
     name: partnerslist
+    parallax: false
     poppy_type: poppy-shortlist
     poppy_variant: image-cards
     subtitle: >-
       With the great support from our partners we are securing a sustainable
       future!
     texture: ''
-    title: Our partners
-  - bg_color: transparent
-    bg_image: none
-    buttons: []
-    component_type: poppy-form
-    component_variant: newsletter-simple
-    image: ''
-    item_bg_color: ''
-    items: []
-    list: ''
-    name: signup for the newsletter
-    subtitle: none
-    texture: moroc
-    title: Sign up for the newsletter
+    title: Partners
   - bg_color: ''
     bg_image: ''
     buttons: []
     component_type: ''
     component_variant: dwp-footer
+    count: ''
     image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: footer
+    parallax: false
     subtitle: none
     texture: ''
     title: none
-  - bg_color: ''
-    bg_image: ''
-    buttons: []
-    component_type: poppy-banner
-    component_variant: introbanner
-    image: ''
-    item_bg_color: ''
-    items: []
-    list: ''
-    name: introbanner
-    subtitle: ''
-    texture: ''
-    title: ''
 publishdate: ''
 resources: []
 title: Homepage
 
 ---
+

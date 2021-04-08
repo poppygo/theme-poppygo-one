@@ -7,7 +7,7 @@ buttons:
     rounded: xl
     size: base
     text_color: white
-  - color: poppycolor4
+  - color: aero-blue
     font: display1
     font_weight: bold
     hover_color: tufts-blue
@@ -105,12 +105,12 @@ typographies:
     font_weight: semibold
     name: menu
     size: lg
-    transform: uppercase
+    transform: normal-case
   - align: ''
-    bg_color: baby-blue-eyes
-    color: charcoal
-    font: display2
-    font_weight: bold
+    bg_color: transparent
+    color: orange
+    font: display1
+    font_weight: semibold
     name: itemtitle
     size: lg
     transform: uppercase

@@ -2,20 +2,24 @@
 aliases:
   - showcase
   - product
+date: 2021-4-6
 draft: false
-iscjklanguage: ''
-date: '2021-04-04'
+lastmod: ''
+mainContent: ''
 page_sections:
   - bg_color: transparent
     bg_image: ''
     buttons:
-      - label: ''
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: ''
         link: ''
     component_type: ''
     component_variant: dwp-navbar
+    count: ''
+    image: ''
     item_bg_color: ''
-    texture: ''
-    count: 3
     items:
       - bodytext: |-
           ### This is a  title
@@ -23,69 +27,109 @@ page_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: null
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
         title: ''
     list: ''
     name: navbar
+    parallax: true
     subtitle: ''
+    texture: ''
     title: ''
   - bg_color: ''
     bg_image: tech
     buttons: []
     component_type: poppy-banner
     component_variant: headerbanner-standard
+    count: ''
+    image: none
     item_bg_color: ''
     items: []
     list: ''
-    name: Tech banner
+    name: banner
+    parallax: false
     subtitle: none
-    title: Our Technology
+    texture: ''
+    title: Technology
+  - bg_color: ''
+    bg_image: ''
+    buttons: []
+    component_type: poppy-shortlist
+    component_variant: explainer
+    count: ''
+    image: ''
+    item_bg_color: ''
+    items: []
+    list: ''
+    name: core-technology
+    parallax: false
+    subtitle: ''
+    texture: ''
+    title: Core Technology
   - bg_color: ''
     bg_image: none
     buttons: []
     component_type: poppy-listing
     component_variant: listing-cards
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: solutions
-    name: Solutionlist
+    name: technologylist
+    parallax: false
     subtitle: ''
-    title: Our solutions
-  - bg_color: ''
-    bg_image: none
-    buttons: []
-    component_type: poppy-banner
-    component_variant: inpage-banner
-    item_bg_color: ''
-    items: []
-    list: ''
-    name: banner
-    subtitle: null
+    texture: ''
     title: Our solutions
   - bg_color: ''
     bg_image: ''
     buttons: []
     component_type: ''
     component_variant: dwp-footer
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: footer
+    parallax: false
     position: bottom
+    subtitle: none
+    texture: ''
+    title: none
+  - bg_color: ''
+    bg_image: ''
+    buttons: []
+    component_type: poppy-article
+    component_variant: article-standard
+    count: ''
+    image: ''
+    item_bg_color: ''
+    items: []
+    list: ''
+    name: test
+    parallax: false
     subtitle: ''
-    title: ''
+    texture: ''
+    title: test
+publishdate: ''
 resources: []
 subpage_sections:
   - bg_color: ''
     bg_image: ''
     buttons:
-      - label: ''
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: ''
         link: ''
     component_type: ''
     component_variant: dwp-navbar
@@ -97,10 +141,13 @@ subpage_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: ''
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
@@ -108,6 +155,7 @@ subpage_sections:
     list: ''
     name: navbar
     subtitle: ''
+    texture: ''
     title: ''
   - bg_color: ''
     bg_image: '->frompage'
@@ -119,6 +167,7 @@ subpage_sections:
     list: ''
     name: banner
     subtitle: '->frompage'
+    texture: ''
     title: '->frompage'
   - bg_color: ''
     bg_image: '->frompage'
@@ -130,6 +179,7 @@ subpage_sections:
     list: ''
     name: article
     subtitle: '->frompage'
+    texture: ''
     title: '->frompage'
   - bg_color: ''
     bg_image: ''
@@ -140,8 +190,10 @@ subpage_sections:
     items: []
     list: ''
     name: footer
-    subtitle: ''
+    subtitle: none
+    texture: ''
     title: ''
-title: Solutions
+title: Technology
 
 ---
+

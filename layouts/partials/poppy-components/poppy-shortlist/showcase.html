@@ -22,8 +22,8 @@
         {{ $row := printf "md:row-start-%s" (string (add $index 1)) -}}
 
         {{- with .image -}}
-          <div class= "{{$content.item_bg_color}} {{$row}} {{$design.rounded}} {{$design.shadow}} {{$switchImg}} {{$design.border}}" >
-              {{- $class := printf "%s %s h-full object-cover" $design.rounded $design.shadow -}}
+          <div class= "{{$row}} {{$switchImg}}" >
+              {{- $class := printf "%s %s w-full h-full object-cover" $design.rounded $design.shadow $design.border -}}
               {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" . "class" $class ) -}}
           </div>
         {{- end -}}

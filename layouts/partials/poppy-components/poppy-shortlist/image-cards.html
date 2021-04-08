@@ -3,9 +3,11 @@
 {{- $design := .design -}}
 
 {{- $amount := 0 -}}
-{{ if $content.items }}
-    {{ $amount = len $content.items }}
-{{ end }}
+{{- range $content.items -}}
+  {{ if and .image (not (eq .image "none")) -}}
+    {{- $amount = add $amount 1 -}}
+  {{- end -}}
+{{- end -}}
 
 {{- with $design -}}
 <div class="{{.vertical_space}} ">
@@ -18,27 +20,6 @@
             <div>
               {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full") -}}
             </div>
-
-            {{/* {{- if or .title .buttons (gt (len .bodytext) 2 ) -}}
-              <div class="flex flex-col p-4 h-full">
-
-                {{- with .icon -}}
-                  {{- if not (eq . "none") -}}
-                    <div class="relative w-8 md:w-12 {{$design.itemtitle}} py-0 -mt-1 md:-mt-2 mr-5">
-                      {{- partial "poppy-elements/icon" (dict "icon" . "icontype" "outline" ) -}}
-                    </div>
-                  {{- end -}}
-                {{- end -}}
-
-                <div class="flex flex-col h-full">
-                  <div class = "{{$design.itemtitle}}" >{{.title}}</div>
-                  <div class=" prose mx-auto {{$design.rounded}} {{$design.itembody}} flex-1">{{.bodytext | markdownify }}</div>
-                  <div class="{{$design.itembody}}">
-                      {{- partial "poppy-elements/buttons" (dict "design" $design "buttons" .buttons ) -}}
-                  </div>
-                </div>
-              </div>
-            {{- end -}} */}}
           </a>
       {{- end -}}
   </div>

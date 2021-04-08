@@ -1,8 +1,6 @@
 ---
 bg_color: charcoal
 item_bg_color: white
-mainContent: ''
-resources: []
 poppy_type: poppy-footer
 poppy_variant: 3-column-footer
 position: bottom
@@ -55,47 +53,41 @@ design:
       space: 0
       transform: lowercase
 menus:
-  footer1:
-    - identifier: ''
-      name: Page Components
-      parent: ''
-      url: /page-components/
-      weight: 3
-    - identifier: ''
-      name: Posts
-      parent: ''
-      url: /posts/
-      weight: 0
-    - identifier: ''
-      name: Portfolio
-      parent: ''
-      url: /portfolio/
-      weight: 0
-    - identifier: ''
-      name: Components ready
-      parent: ''
-      url: /pages/components-ready/
-      weight: 0
-  footer1:
-    - identifier: ''
-      name: Page Components
-      parent: ''
-      url: /page-components/
-      weight: 3
-    - identifier: ''
-      name: Posts
-      parent: ''
-      url: /posts/
-      weight: 0
-    - identifier: ''
-      name: Portfolio
-      parent: ''
-      url: /portfolio/
-      weight: 0
-    - identifier: ''
-      name: Components ready
-      parent: ''
-      url: /pages/components-ready/
-      weight: 0
+  - name: main
+    title: Information
+    items:
+      - identifier: ''
+        name: Solutions
+        parent: ''
+        url: /solutions/
+        weight: 3
+      - identifier: ''
+        name: News
+        parent: ''
+        url: /news/
+        weight: 0
+      - identifier: ''
+        name: Portfolio
+        parent: ''
+        url: /portfolio/
+        weight: 0
+  - name: menu2
+    title: My brand
+    items:
+      - identifier: ''
+        name: About
+        parent: ''
+        url: /about/
+        weight: 3
+      - identifier: ''
+        name: Roadmap
+        parent: ''
+        url: /roadmap/
+        weight: 0
+      - identifier: ''
+        name: Join
+        parent: ''
+        url: /join/
+        weight: 0
 
 ---

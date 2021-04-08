@@ -1,20 +1,20 @@
 ---
-date: '2021-04-04'
 draft: false
-iscjklanguage: ''
-lastmod: ''
 mainContent: ''
 page_sections:
-  - bg_color: charcoal
+  - bg_color: transparent
     bg_image: ''
     buttons:
-      - label: ''
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: ''
         link: ''
     component_type: ''
     component_variant: dwp-navbar
-    count: 3
+    count: ''
     image: ''
-    item_bg_color: tufts-blue
+    item_bg_color: orange
     items:
       - bodytext: |-
           ### This is a  title
@@ -22,45 +22,54 @@ page_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: outline
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
         title: ''
     list: ''
     name: navbar
-    subtitle: ''
+    parallax: true
+    subtitle: none
     texture: ''
-    title: ''
+    title: none
   - bg_color: ''
     bg_image: ''
     buttons: []
     component_type: ''
     component_variant: dwp-footer
-    count: 0
+    count: ''
     image: ''
     item_bg_color: ''
     items: []
     list: ''
     max_amount: 0
     name: footer
+    parallax: false
     subtitle: ''
     texture: ''
     title: ''
-publishdate: ''
 resources: []
 subpage_sections:
-  - bg_color: ''
+  - bg_color: transparent
     bg_image: ''
     buttons:
-      - label: ''
+      - button_type: ''
+        icon: ''
+        icon_type: ''
+        label: ''
         link: ''
     component_type: ''
     component_variant: dwp-navbar
-    item_bg_color: ''
+    count: ''
+    image: ''
+    item_bg_color: orange
     items:
       - bodytext: |-
           ### This is a  title
@@ -68,40 +77,53 @@ subpage_sections:
           <br>
           askdlfk
         buttons:
-          - icon: information-circle
+          - button_type: ''
+            icon: information-circle
+            icon_type: outline
             label: ''
             link: ''
         icon: ''
+        icon_type: ''
         image: ''
         link: ''
         name: ''
         title: ''
     list: ''
     name: navbar
+    parallax: true
     subtitle: ''
+    texture: ''
     title: ''
-  - bg_color: aero-blue
+  - bg_color: '->frompage'
     bg_image: ''
     buttons: []
     component_type: poppy-article
     component_variant: article-standard
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
-    name: Article
+    name: article
+    parallax: false
     subtitle: '->frompage'
+    texture: ''
     title: '->frompage'
   - bg_color: ''
     bg_image: ''
     buttons: []
     component_type: ''
     component_variant: dwp-footer
+    count: ''
+    image: ''
     item_bg_color: ''
     items: []
     list: ''
     name: footer
-    subtitle: ''
-    title: ''
+    parallax: false
+    subtitle: none
+    texture: ''
+    title: none
 title: Pages
 
 ---

@@ -6,8 +6,8 @@ image: explainer
 poppy_type: poppy-shortlist
 poppy_variant: showcase
 subtitle: ''
-summary: '-| I am the summary of the newsletter element, which is not very relevant'
-title: Explainer
+summary: '-| I am the summary of the showcase element, which is not very relevant'
+title: Showcase
 texture: ''
 items:
   - name: item1

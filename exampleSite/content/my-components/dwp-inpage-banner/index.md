@@ -1,18 +1,22 @@
 ---
 bg_color: ghost-white
 item_bg_color: ghost-white
-mainContent: ''
-resources: []
 title: I am an in-page banner for telling your story
 subtitle: Banners can be used for selling your proposition
-parallax: false
 summary: -|
     I am the summary of the banner, which can be used for opengraph and SEO descriptions
 poppy_type: poppy-banner
 poppy_variant: inpage-banner
+texture: ''
 image:
 bg_image: for
 name: inpage-banner
+buttons:
+  - label: 'Join us'
+    link: '/join/'
+    button_type: ''
+    icon: ''
+    icon_type: ''
 design:
   typographies:
     - align: center
@@ -25,7 +29,7 @@ design:
       transform: uppercase
     - align: center
       bg_color: transparent
-      color: white
+      color: orange
       font: display1
       font_weight: normal
       name: subtitle

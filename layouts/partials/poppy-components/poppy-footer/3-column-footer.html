@@ -10,15 +10,15 @@
       </div>
       <div class="w-full md:w-6/12">
         <div class="flex flex-wrap items-top">
-          {{- range $name, $menu := $content.menus -}}
+          {{- range $content.menus -}}
           <div class="w-full lg:w-6/12 lg:px-4 ml-auto mb-10">
-              <span class=" block {{$design.subtitle }} mb-2">{{ $name | humanize }}</span>
+              <span class=" block {{$design.subtitle }} mb-2">{{ .title | humanize }}</span>
               <ul class="">
-              {{ range $menu }}
+              {{- range .items -}}
                 <li>
-                  <a title="{{ .name }}" class="{{ $design.menu }} hover:text-gray-900 block pb-2" href="{{ .url }}">{{ .name }}</a>
+                  <a title="{{ .title }}" class="{{ $design.menu }} hover:text-gray-900 block pb-2" href="{{ .url }}">{{ .name }}</a>
                 </li>
-              {{ end }}
+              {{- end -}}
               </ul>
           </div>
           {{- end -}}
@@ -28,15 +28,7 @@
     <h4 class="{{.title}}">{{$content.title}}</h4>
     <h5 class="{{.subtitle}} md:mr-40">{{$content.subtitle}}</h5>
 
-    <div class="flex flex-wrap">
-      <div class="w-full md:w-1/4 px-4 mx-auto justify-center flex flex-row">
-        {{- range $content.social_icons -}}
-          <a href="{{.link}}" class="{{ $design.menu }} h-8">
-            {{- partial "poppy-elements/icon" (dict "icon" .icon "icontype" "social" ) -}}
-          </a>
-        {{- end -}}
-      </div>
-    </div>
+    {{- partial "poppy-elements/social-icons" (dict "content" $content "design" $design) -}}
   </div>
 
   <div class="flex flex-wrap items-center md:justify-between justify-center">
