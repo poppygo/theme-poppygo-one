@@ -7,27 +7,34 @@ poppy_type: poppy-navigation
 poppy_variant: navbar
 texture: ''
 menus:
-  main:
-    - identifier: ''
-      name: Page Components
-      parent: ''
-      url: /page-components/
-      weight: 3
-    - identifier: ''
-      name: Posts
-      parent: ''
-      url: /posts/
-      weight: 0
-    - identifier: ''
-      name: Portfolio
-      parent: ''
-      url: /portfolio/
-      weight: 0
-    - identifier: ''
-      name: Components ready
-      parent: ''
-      url: /pages/components-ready/
-      weight: 0
+  - name: main
+    title: Information
+    items:
+      - identifier: ''
+        name: Technology
+        parent: ''
+        url: /technology/
+        weight: 3
+      - identifier: ''
+        name: Roadmap
+        parent: ''
+        url: /roadmap/
+        weight: 0
+      - identifier: ''
+        name: About Us
+        parent: ''
+        url: /about/
+        weight: 3
+      - identifier: ''
+        name: Join
+        parent: ''
+        url: /join/
+        weight: 0
+      - identifier: ''
+        name: News
+        parent: ''
+        url: /news/
+        weight: 0
 
 ---
 ## main content not in use

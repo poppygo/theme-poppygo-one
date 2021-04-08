@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Components on PoppyGo One Hugo Theme</title>
+    <link>/my-components/</link>
+    <description>Recent content in Components on PoppyGo One Hugo Theme</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/my-components/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/my-components/md-footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/my-components/md-footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I am a banner</title>
+      <link>/my-components/md-header-banner-full-height/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/my-components/md-header-banner-full-height/</guid>
+      <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
+    </item>
+    
+    <item>
+      <title>I am an in-page banner for telling your story</title>
+      <link>/my-components/md-spreuk-banner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/my-components/md-spreuk-banner/</guid>
+      <description>-| I am the summary of the banner, which can be used for opengraph and SEO descriptions</description>
+    </item>
+    
+    <item>
+      <title>MindDive</title>
+      <link>/my-components/md-navbar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/my-components/md-navbar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Schijf je in voor mijn nieuwsbrief</title>
+      <link>/my-components/md-newsletter-simple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/my-components/md-newsletter-simple/</guid>
+      <description>-| I am the summary of the newsletter element, which is not very relevant</description>
+    </item>
+    
+    <item>
+      <title>~Je bent van harte welkom~</title>
+      <link>/my-components/md-contact-noform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/my-components/md-contact-noform/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
