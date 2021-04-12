@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="prose {{.body}} article-container max-w-screen-md xl:max-w-screen-lg mx-auto">
+    <div class="prose {{.body}} article-container max-w-screen-md xl:max-w-screen-lg mx-auto overflow-auto">
       <div class="overflow-hidden h-96 object-center">
       {{- partial "poppy-elements/image" (dict "resource_page" $page "name" $content.image "link" $content.link "class" "w-full") -}}
     </div>

@@ -1,36 +1,34 @@
 {{/* for automatical columns, apply like this <image img1 img2 img3> .You can add an infinite amount of images */}}
-{{/* If you want to determine columns yourself, add an integer between 1 6 somewhere in the shortcode, e.g. for two columns <image 2 img1 img2 img3 img4> */}}
-
-
+{{/* provide a width in percentage of the grid container */}}
 {{ $page := .Page }}
 {{ $images := slice }}
 {{ $class := "" }}
-{{ $numberOfCols := 1 }}
+{{ $grid_width := "100%" }}
+{{ $float :=  "" }}
+{{ $margin := "" }}
 {{ $cols := slice "oneCol" "twoCols" "threeCols" "fourCols" "fourCols" "sixCols" "sixCols"}}
-
 {{ range $index, $value := .Params }}
-      {{if eq (printf "%T" $value) "string" }}
+      {{if and (eq (printf "%T" $value) "string") (not (eq $value "left")) (not (eq $value "right")) }}
           {{ $images = $images | append $value }}
       {{ end }}
       {{if eq (printf "%T" $value) "int" }}
-          {{ $numberOfCols = $value }}
-          {{ $class = index $cols (sub $numberOfCols 1) }}
+          {{ $grid_width = printf "%s%s" (string $value) "%" }}
+      {{ end }}
+      {{if eq $value "left" }}
+          {{ $float = "left" }}
+          {{ $margin = "0 10px 0 0" }}
+      {{ end }}
+      {{if eq $value "right" }}
+          {{ $float = "right" }}
+          {{ $margin = "0 0 0 10px" }}
       {{ end }}
 {{ end }}
 
-{{ if eq $class "" }}
-  {{ if le (len $images) 3 }}
-    {{ $numberOfCols = len $images }}
-    {{ $class = index $cols (sub $numberOfCols 1) }}
-  {{ else }}
-    {{ $numberOfCols = 3 }}
-    {{ $class = "threeCols" }}
-  {{ end }}
-{{ end }}
+{{ $class = index $cols (sub (len $images) 1) }}
 
 <style>
-    .grid {
-      width: 100%;
+    .imagegrid {
+      width: 100% ;
       display: grid;
       grid-auto-flow: row;
       justify-items: stretch;
@@ -49,6 +47,12 @@
 
 
       @media (min-width: 768px) {
+
+        .imagegrid{
+          margin: {{$margin}};
+          float: {{$float}};
+          width: {{ $grid_width }};
+        }
         .twoCols, .threeCols {
           grid-column: span 6;
         }
@@ -75,10 +79,7 @@
     }
 
 </style>
-
-
-<div class="grid mt-4">
-
+<div class="imagegrid mt-4">
 {{ range $images}}
     {{ $image_name := .}}
     {{ $image_path := "" }}
@@ -104,13 +105,12 @@
           {{ $filename := path.Base .Name }}
 
           {{- if eq (path.Ext $filename) ".webp" -}}
-                <img src="{{.RelPermalink}}" class="lazyload {{$class}}" alt="{{$filename}}">
+                <img src="{{.RelPermalink}}" class="lazyload {{$class}}" alt="{{$filename}}" style="margin: 0px">
           {{- else if eq (path.Ext $filename) ".svg" -}}
             This image is an svg
           {{- else -}}
 
-            <img class="pogoimage" sizes="{{ printf "%svw" (string (div 60 $numberOfCols) ) }}"
-              {{/* only srcset images smaller than or equal to the image size, as Hugo will upscale small images */}}
+            <img class="pogoimage" sizes="{{ printf "%svw" (string (div 60 (len $images)) ) }}" style="margin: 0px"
               srcset='
               {{ range $sizes }}
                 {{ ($image.Resize (printf "%sx" .)).RelPermalink }} {{ (printf "%sw" .) }},

@@ -7,7 +7,7 @@
     <div class = "flex justify-center h-full w-full" >
       {{- partial "poppy-elements/image" (dict "resource_page" $page "name" $content.image "link" $content.link "class" "w-4/5") -}}
     </div>
-    <div class="prose {{.vertical_space}} {{.body}} text-center article-container max-w-screen-md xl:max-w-screen-lg mx-auto">
+    <div class="prose {{.vertical_space}} {{.body}} text-center article-container max-w-screen-md xl:max-w-screen-lg mx-auto overflow-auto">
         {{- $page.Content | markdownify -}}
     </div>
 {{- end -}}

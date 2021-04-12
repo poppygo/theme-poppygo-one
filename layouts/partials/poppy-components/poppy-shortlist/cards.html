@@ -15,6 +15,7 @@
       {{- range $index, $item := $content.items -}}
           {{- $span := partial "poppy-elements/standard-columns" (dict "amount" $amount "index" $index) -}}
           <div  class="{{$span}} flex flex-col w-full h-full overflow-hidden {{ $design.rounded }} {{$design.shadow}} {{$design.border}} {{$content.item_bg_color}}">
+            {{/* <div class = "{{$design.itemtitle}}" >{{.title}}</div> */}}
             <a href="{{.link }}">
               {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" .image "class" "w-full h-60 object-cover") -}}
             </a>
