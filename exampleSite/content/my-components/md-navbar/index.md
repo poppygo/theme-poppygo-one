@@ -38,7 +38,6 @@ menus:
 poppy_type: poppy-navigation
 poppy_variant: navbar-standard
 subtitle: ''
-summary: ''
 textlogo: ''
 title: MindDive
 

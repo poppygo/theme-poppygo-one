@@ -9,9 +9,13 @@ buttons:
   - label: Check this
     link: /page-components/
     type: primary
+    icon: ''
+    icon_type: ''
   - label: More about us
     link: '#'
     type: secondary
+    icon: ''
+    icon_type: ''
 image: wendy
 name: intro
 poppy_type: poppy-banner

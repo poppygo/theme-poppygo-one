@@ -12,6 +12,12 @@ poppy_type: poppy-listing
 poppy_variant: listing-cards
 list: ''
 count: ''
+buttons:
+  - label: See all
+    link: /
+    type: primary
+    icon: ''
+    icon_type: ''
 ---
 ### I am the main content of the shortlist pagecomponents
 

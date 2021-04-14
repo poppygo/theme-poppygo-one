@@ -22,7 +22,7 @@ items:
         icon_type: outline
         label: ''
         link: ''
-        button_type: primary
+        type: primary
     icon: phone
     icon_type: outline
     image: ''
@@ -40,6 +40,7 @@ items:
         icon_type: outline
         label: ''
         link: ''
+        type: primary
     icon: ''
     icon_type: outline
     image: ''
@@ -53,6 +54,7 @@ items:
         icon_type: outline
         label: ''
         link: ''
+        type: primary
     icon: mail
     icon_type: outline
     image: ''

@@ -44,7 +44,7 @@ page_sections:
           persoonlijke ontwikkeling
           en effectieve communicatie.
         buttons:
-          - button_type: null
+          - type: primary
             icon: information-circle
             icon_type: ''
             label: Meer over NLP training
@@ -62,6 +62,7 @@ page_sections:
             icon_type: ''
             label: Meer over mBIT training
             link: /pages/mbit-training/
+            type: primary
         icon: none
         image: mbit
         link: /pages/mbit-training/
@@ -72,6 +73,7 @@ page_sections:
             icon_type: ''
             label: Meer over coaching
             link: /pages/meer-over-coaching/
+            type: primary
         icon: none
         image: coach
         link: /pages/coaching/
@@ -95,12 +97,16 @@ page_sections:
       gaan zullen we de parels vinden die diep verborgen liggen. Dit resulteert
       in meer rust, vertrouwen en verbeterde communicatie.
     buttons:
-      - button_type: primary
+      - type: primary
         label: Over Mind Dive
         link: /pages/over-mind-dive
-      - button_type: secondary
+        icon: ''
+        icon_type: ''
+      - type: secondary
         label: Contact
         link: /pages/contact/
+        icon: ''
+        icon_type: ''
     component: introbanner
     image: wendy
     name: Mind Dive Master Wendy

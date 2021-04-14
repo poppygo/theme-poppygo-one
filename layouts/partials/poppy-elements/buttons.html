@@ -1,11 +1,12 @@
 {{ $design := .design }}
 
-{{- $btnclasses := slice $design.button_primary $design.button_secondary $design.button_secondary -}}
+
 {{- if reflect.IsSlice .buttons -}}
   {{- range $index, $value := .buttons -}}
     {{- $button := . -}}
+    {{- $btnclass := index $design ((printf "button_%s" .type) | default "button_primary") -}}
     <a href="{{.link }}">
-      <button type="button" class=" hover:opacity-80 {{ index $btnclasses $index }}">
+      <button type="button" class=" hover:opacity-80 {{$btnclass}}">
         <div class="flex">
           {{- with .icon -}}
             <div class="flex-col w-8 p-0 my-auto mr-2 -ml-4">

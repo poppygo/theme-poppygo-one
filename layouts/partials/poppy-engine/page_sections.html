@@ -41,8 +41,6 @@ html {
 				{{- $page_component = . -}}
 			{{- end -}}
 		{{- end -}}
-    {{/* {{- $page_component := site.GetPage (printf "%ss/%s" .component_type .component_variant) | default (site.GetPage (printf "poppy-components/%s/%s" .component_type .component_variant)) -}} */}}
-
 
 		{{ with $page_component }}
       {{- $poppy_component := printf "poppy-components/%s/%s" .Params.poppy_type .Params.poppy_variant -}}

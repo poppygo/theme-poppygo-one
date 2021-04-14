@@ -16,6 +16,9 @@ image: fore
 buttons:
   - label: See all
     link: /
+    type: primary
+    icon: ''
+    icon_type: ''
 count: ''
 ---
 ### I am the main content

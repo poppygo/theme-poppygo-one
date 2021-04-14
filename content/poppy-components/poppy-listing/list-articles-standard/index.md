@@ -15,6 +15,12 @@ list_taxonomy:
   taxonomy: 'tags'
   term: ''
 count: ''
+buttons:
+  - label: See all
+    link: /
+    type: primary
+    icon: ''
+    icon_type: ''
 ---
 ### I am the main content of the form pagecomponents
 

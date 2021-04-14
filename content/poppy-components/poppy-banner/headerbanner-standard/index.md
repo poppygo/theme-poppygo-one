@@ -8,13 +8,18 @@ appearance:
 buttons:
   - label: Check this
     link: /page-components/
+    type: primary
+    icon: ''
+    icon_type: ''
   - label: More about us
     link: '#'
+    type: secondary
+    icon: ''
+    icon_type: ''
 image: ''
 name: headerbanner
 poppy_type: poppy-banner
 poppy_variant: header-banner
-resources: []
 subtitle: Banners can be used for selling your proposition
 summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO

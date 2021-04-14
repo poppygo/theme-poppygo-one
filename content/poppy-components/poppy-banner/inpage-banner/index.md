@@ -16,7 +16,7 @@ name: inpage-banner
 buttons:
   - label: 'Join us'
     link: '/join/'
-    button_type: ''
+    type: ''
     icon: ''
     icon_type: ''
 design:

@@ -17,6 +17,7 @@ items:
         icon_type: outline
         label: ''
         link: ''
+        type: ''
     icon: phone
     icon_type: outline
     image: ''
@@ -34,6 +35,7 @@ items:
         icon_type: outline
         label: ''
         link: ''
+        type: ''
     icon: ''
     icon_type: outline
     image: ''
@@ -47,6 +49,7 @@ items:
         icon_type: outline
         label: ''
         link: ''
+        type: ''
     icon: mail
     icon_type: outline
     image: ''

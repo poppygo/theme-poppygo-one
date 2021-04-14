@@ -20,6 +20,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     icon: check-circle
   - name: item2
     image: explain
@@ -34,6 +37,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     icon: check-circle
   - name: item1
     image: explain
@@ -43,6 +49,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     icon: check-circle
   - name: item1
     image: explain
@@ -52,6 +61,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     icon: check-circle
   - name: item1
     image: explain
@@ -61,6 +73,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
 ---
 
 ### I am additional content that you could add to the newsletter component

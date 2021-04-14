@@ -20,6 +20,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     link: /news/
   - name: item2
     image: foreground
@@ -35,6 +38,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     link: /news/
   - name: item1
     image: foreground
@@ -44,6 +50,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     link: /news/
   - name: item1
     image: foreground
@@ -54,6 +63,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     link: /news/
   - name: item1
     image: foreground
@@ -63,6 +75,9 @@ items:
     buttons:
       - link: /
         label: read more
+        type: ''
+        icon: ''
+        icon_type: ''
     link: /news/
 ---
 ### I am the main content of the shortlist pagecomponents

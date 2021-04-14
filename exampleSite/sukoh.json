@@ -746,6 +746,16 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "icon_type",
+                   "title": "Icon type",
+                   "type": "string"
+                 },
+                 {
                    "key": "label",
                    "title": "Label",
                    "type": "string"
@@ -753,6 +763,11 @@
                  {
                    "key": "link",
                    "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -883,6 +898,16 @@
            "fields": [
              {
                "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
                "key": "label",
                "title": "Label",
                "type": "string"
@@ -965,6 +990,16 @@
            "fields": [
              {
                "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
                "key": "label",
                "title": "Label",
                "type": "string"
@@ -972,6 +1007,11 @@
              {
                "key": "link",
                "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
                "type": "string"
              }
            ],
@@ -1047,6 +1087,16 @@
            "fields": [
              {
                "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
                "key": "label",
                "title": "Label",
                "type": "string"
@@ -1129,6 +1179,16 @@
            "fields": [
              {
                "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
                "key": "label",
                "title": "Label",
                "type": "string"
@@ -1136,6 +1196,11 @@
              {
                "key": "link",
                "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
                "type": "string"
              }
            ],
@@ -1223,6 +1288,16 @@
            "fields": [
              {
                "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
                "key": "label",
                "title": "Label",
                "type": "string"
@@ -1230,6 +1305,11 @@
              {
                "key": "link",
                "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
                "type": "string"
              }
            ],
@@ -1312,6 +1392,39 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
          },
          {
            "key": "count",
@@ -1465,11 +1578,6 @@
            "fields": [
              {
                "arrayTitle": true,
-               "key": "button_type",
-               "title": "Button type",
-               "type": "string"
-             },
-             {
                "key": "icon",
                "title": "Icon",
                "type": "string"
@@ -1487,6 +1595,11 @@
              {
                "key": "link",
                "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
                "type": "string"
              }
            ],
@@ -1542,6 +1655,39 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
          },
          {
            "key": "count",
@@ -1625,6 +1771,16 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "icon_type",
+                   "title": "Icon type",
+                   "type": "string"
+                 },
+                 {
                    "key": "label",
                    "title": "Label",
                    "type": "string"
@@ -1632,6 +1788,11 @@
                  {
                    "key": "link",
                    "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -1725,6 +1886,16 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "icon_type",
+                   "title": "Icon type",
+                   "type": "string"
+                 },
+                 {
                    "key": "label",
                    "title": "Label",
                    "type": "string"
@@ -1732,6 +1903,11 @@
                  {
                    "key": "link",
                    "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -2048,6 +2224,16 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "icon_type",
+                   "title": "Icon type",
+                   "type": "string"
+                 },
+                 {
                    "key": "label",
                    "title": "Label",
                    "type": "string"
@@ -2055,6 +2241,11 @@
                  {
                    "key": "link",
                    "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -2224,6 +2415,11 @@
                  {
                    "key": "link",
                    "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -2453,6 +2649,16 @@
            "fields": [
              {
                "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
                "key": "label",
                "title": "Label",
                "type": "string"
@@ -2460,6 +2666,11 @@
              {
                "key": "link",
                "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
                "type": "string"
              }
            ],
@@ -2637,11 +2848,6 @@
            "type": "accordion"
          },
          {
-           "key": "summary",
-           "title": "Summary",
-           "type": "string"
-         },
-         {
            "key": "textlogo",
            "title": "Textlogo",
            "type": "string"
@@ -2765,11 +2971,6 @@
                "fields": [
                  {
                    "arrayTitle": true,
-                   "key": "button_type",
-                   "title": "Button type",
-                   "type": "string"
-                 },
-                 {
                    "key": "icon",
                    "title": "Icon",
                    "type": "string"
@@ -2787,6 +2988,11 @@
                  {
                    "key": "link",
                    "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
                    "type": "string"
                  }
                ],
