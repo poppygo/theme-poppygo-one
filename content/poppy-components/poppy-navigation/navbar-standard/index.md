@@ -1,11 +1,13 @@
 ---
-item_bg_color: white
-bg_color: white
-resources: []
+appearance:
+  item_background_color: white
+  background_color: white
+  texture: ''
+  background_image: ''
+  parallax: false
 title: navbar
 poppy_type: poppy-navigation
 poppy_variant: navbar
-texture: ''
 menus:
   - name: main
     title: Information
@@ -35,6 +37,5 @@ menus:
         parent: ''
         url: /news/
         weight: 0
-
 ---
 ## main content not in use

@@ -1,5 +1,10 @@
 ---
-resources: []
+appearance:
+  background_image: back
+  background_color: white
+  item_background_color: white
+  texture: ''
+  parallax: false
 title: Suscribe to our newsletter
 subtitle: We will reward you with beautiful new components
 summary: -|
@@ -7,8 +12,4 @@ summary: -|
 poppy_type: poppy-form
 poppy_variant: newsletter-simple
 image: none
-bg_image: back
-bg_color: white
-item_bg_color: white
-texture: ''
 ---

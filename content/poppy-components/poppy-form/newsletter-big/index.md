@@ -1,7 +1,10 @@
 ---
-bg_color: white
-item_bg_color: white
-resources: []
+appearance:
+  background_color: white
+  item_background_color: white
+  texture: ''
+  background_image: background
+  parallax: false
 title: I am a reusable newsletter compontent
 subtitle: Mostly this component is used at the bottom of landing pages and the homepage
 summary: -|
@@ -9,8 +12,6 @@ summary: -|
 poppy_type: poppy-form
 poppy_variant: newsletter
 image: foreground
-bg_image: background
-texture: ''
 ---
 ### I am additional content that you could add to the newsletter component
 

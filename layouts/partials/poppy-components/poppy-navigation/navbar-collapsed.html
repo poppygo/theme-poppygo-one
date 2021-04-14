@@ -2,11 +2,11 @@
 {{- $content := .content -}}
 {{- $design := .design -}}
 {{- $transparent := "" -}}
-{{- if eq $content.bg_color "transparent" -}} {{- $transparent = "absolute" -}} {{- end -}}
+{{- if eq $content.background_color "transparent" -}} {{- $transparent = "absolute" -}} {{- end -}}
 
 {{- with $design -}}
 <div class ="{{$transparent}}">
-  <nav class="flex py-3 {{$content.bg_color}}">
+  <nav class="flex py-3 {{$content.background_color}}">
     <div class="flex flex-grow justify-left w-full">
       <a href="/" class="flex-1 flex justify-between items-center h-32 lg:h-40">
           {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
@@ -20,7 +20,7 @@
   </nav>
 
   <ul id="menu" class="hidden flex -mt-40 md:-mt-48 z-10">
-    <div class="{{$content.bg_color}} flex w-full px-14 py-4 flex-col lg:flex-row justify-end items-end lg:items-center">
+    <div class="{{$content.background_color}} flex w-full px-14 py-4 flex-col lg:flex-row justify-end items-end lg:items-center">
       <a href="/" class="h-32 lg:h-40 justify-left w-full">
           {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
       </a>

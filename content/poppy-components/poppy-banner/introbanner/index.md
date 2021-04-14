@@ -1,8 +1,10 @@
 ---
-bg_color: white
-item_bg_color: white
-bg_image: back
-texture: ''
+appearance:
+  background_color: white
+  item_background_color: white
+  background_image: back
+  texture: ''
+  parallax: false
 buttons:
   - label: Check this
     link: /page-components/

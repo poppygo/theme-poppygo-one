@@ -1,6 +1,6 @@
 {{ $design := .design }}
 
-{{- $btnclasses := slice $design.button_primary $design.button_seconday $design.button_secondary -}}
+{{- $btnclasses := slice $design.button_primary $design.button_secondary $design.button_secondary -}}
 {{- if reflect.IsSlice .buttons -}}
   {{- range $index, $value := .buttons -}}
     {{- $button := . -}}

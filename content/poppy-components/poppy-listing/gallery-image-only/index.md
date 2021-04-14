@@ -1,6 +1,10 @@
 ---
-item_bg_color: white
-bg_color: white
+appearance:
+  item_background_color: white
+  background_color: white
+  texture: ''
+  background_image: ''
+  parallax: false
 title: I am a gallery
 subtitle: Galleries are great for your products and portfolio
 summary: -|
@@ -9,7 +13,6 @@ poppy_type: poppy-listing
 poppy_variant: gallery-image-only
 list: poppy-components
 image: fore
-texture: ''
 buttons:
   - label: See all
     link: /

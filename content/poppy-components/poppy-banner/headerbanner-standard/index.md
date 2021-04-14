@@ -1,15 +1,16 @@
 ---
-bg_color: white
-item_bg_color: white
-bg_image: back
-texture: ''
+appearance:
+  background_color: white
+  item_background_color: white
+  background_image: back
+  texture: ''
+  parallax: false
 buttons:
   - label: Check this
     link: /page-components/
   - label: More about us
     link: '#'
 image: ''
-parallax: false
 name: headerbanner
 poppy_type: poppy-banner
 poppy_variant: header-banner
@@ -22,7 +23,7 @@ title: I am a banner
 design:
   typographies:
     - align: center
-      bg_color: transparent
+      background_color: transparent
       color: white
       font: display1
       font_weight: bold
@@ -30,7 +31,7 @@ design:
       size: 5xl
       transform: uppercase
     - align: center
-      bg_color: transparent
+      background_color: transparent
       color: white
       font: display1
       font_weight: normal

@@ -1,14 +1,16 @@
 ---
-bg_image: ''
-bg_color: white
-item_bg_color: white
+appearance:
+  background_image: ''
+  background_color: white
+  item_background_color: white
+  texture: ''
+  parallax: false
 image: explainer
 poppy_type: poppy-shortlist
 poppy_variant: showcase
 subtitle: ''
 summary: '-| I am the summary of the showcase element, which is not very relevant'
 title: Showcase
-texture: ''
 items:
   - name: item1
     image: explain

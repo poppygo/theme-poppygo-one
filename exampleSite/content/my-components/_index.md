@@ -1,7 +1,8 @@
 ---
 draft: false
+headless: false
 page_sections:
-  - bg_image: ''
+  - background_image: ''
     list: poppy-components
     max_amount: 100
     name: List of components
@@ -25,7 +26,7 @@ subpage_sections:
     poppy_variant: gallery1
     title: Other page sections
     list: poppy-components
-    bg_color: tufts-blue
+    background_color: resolution-blue
   - name: navbar
     poppy_type: poppy-navigation
     poppy_variant: navbar

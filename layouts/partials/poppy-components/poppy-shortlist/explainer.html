@@ -22,13 +22,13 @@
         {{ $row := printf "md:row-start-%s" (string (add $index 1)) -}}
 
         {{- with .image -}}
-          <div class= "z-10 mt-10 my-auto {{$content.item_bg_color}} {{$row}} {{$design.rounded}} {{$design.shadow}} {{$switchImg}} {{$design.border}}" >
+          <div class= "z-10 mt-10 my-auto {{$content.item_background_color}} {{$row}} {{$design.rounded}} {{$design.shadow}} {{$switchImg}} {{$design.border}}" >
               {{- $class := printf "%s %s w-full" $design.rounded $design.shadow -}}
               {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" . "class" $class ) -}}
           </div>
         {{- end -}}
 
-        <div class="pt-10 my-auto mb-10 {{$row}} {{$design.rounded}} {{$design.shadow}} {{$content.item_bg_color}} {{$switchBody}}">
+        <div class="pt-10 my-auto mb-10 {{$row}} {{$design.rounded}} {{$design.shadow}} {{$content.item_background_color}} {{$switchBody}}">
           <div class="flex flex-auto items-start">
 
             {{- with .icon -}}

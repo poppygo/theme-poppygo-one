@@ -1,12 +1,14 @@
 ---
-bg_color: charcoal
-item_bg_color: white
+appearance:
+  background_color: charcoal
+  item_background_color: white
+  texture: ''
+  background_image: ''
+  parallax: false
 poppy_type: poppy-footer
 poppy_variant: 3-column-footer
-position: bottom
 title: PoppyGo One Theme
 subtitle: One theme for all your websites
-texture: ''
 social_icons:
   - icon: linkedin
     link: https://linkedin.com
@@ -20,7 +22,7 @@ social_icons:
 design:
   typographies:
     - align: left
-      bg_color: none
+      background_color: none
       color: white
       font: display1
       font_weight: ''
@@ -28,7 +30,7 @@ design:
       size: xl
       transform: ''
     - align: ''
-      bg_color: none
+      background_color: none
       color: white
       font: display2
       font_weight: ''
@@ -36,7 +38,7 @@ design:
       size: xl
       transform: ''
     - align: ''
-      bg_color: none
+      background_color: none
       color: white
       font: body
       font_weight: ''
@@ -44,7 +46,7 @@ design:
       size: base
       transform: ''
     - align: ''
-      bg_color: none
+      background_color: none
       color: white
       font: body
       font_weight: ''

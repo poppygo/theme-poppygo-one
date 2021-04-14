@@ -1,8 +1,10 @@
 ---
-bg_color: white
-item_bg_color: white
-mainContent: ''
-resources: []
+appearance:
+  background_color: white
+  item_background_color: white
+  parallax: true
+  background_image: for
+  texture: paper
 title: I am an in-page banner for telling your story
 subtitle: Banners can be used for selling your proposition
 summary: -|
@@ -10,10 +12,7 @@ summary: -|
 poppy_type: poppy-banner
 poppy_variant: inpage-banner
 image: ''
-parallax: true
-bg_image: for
 name: inpage-banner
-texture: paper
 buttons:
   - label: 'Join us'
     link: '/join/'
@@ -23,7 +22,7 @@ buttons:
 design:
   typographies:
     - align: center
-      bg_color: transparent
+      background_color: transparent
       color: ghost-white
       font: display1
       font_weight: bold
@@ -31,7 +30,7 @@ design:
       size: 5xl
       transform: uppercase
     - align: center
-      bg_color: transparent
+      background_color: transparent
       color: white
       font: display1
       font_weight: normal

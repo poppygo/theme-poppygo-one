@@ -1,10 +1,6 @@
 author: PoppyGo
 baseURL: /
 description: ''
-imaging:
-  anchor: smart
-  quality: 70
-  resampleFilter: lanczos
 markup:
   goldmark:
     extensions:
@@ -22,7 +18,7 @@ markup:
       hardWraps: true
       unsafe: false
       xhtml: false
-paginate: 20
+paginate: 18
 params:
   authorBio: PoppyGo is one year old
   authorbio: ''

@@ -21,7 +21,7 @@
       {{- range $items -}}
       {{- $bg_css := printf "%s-%s" $page.File.ContentBaseName .File.ContentBaseName -}}
       {{- partial "poppy-elements/bg_image" (dict "page" . "css_class" $bg_css "bg_image" .Params.image ) -}}
-        <a class="{{$content.item_bg_color}} {{$bg_css}} {{$design.rounded}} {{$design.border}} {{$design.shadow}} bg-cover bg-center {{$design.vertical_space}} px-2" href={{.RelPermalink }}>
+        <a class="{{$content.item_background_color}} {{$bg_css}} {{$design.rounded}} {{$design.border}} {{$design.shadow}} bg-cover bg-center {{$design.vertical_space}} px-2" href={{.RelPermalink }}>
 
         </a>
       {{- end -}}

@@ -54,7 +54,7 @@
 
     {{- if $value -}}
       {{- if in $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}
-      {{- if eq $key "bg_color" -}} {{- $value = (printf "bg-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
+      {{- if eq $key "background_color" -}} {{- $value = (printf "bg-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
       {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
       {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
       {{- if eq $key "size" -}}

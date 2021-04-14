@@ -1,7 +1,10 @@
 ---
-bg_color: white
-item_bg_color: white
-bg_image: back
+appearance:
+  background_color: white
+  item_background_color: white
+  background_image: back
+  texture: ''
+  parallax: false
 buttons:
   - label: Check this
     link: /page-components/
@@ -10,12 +13,9 @@ buttons:
     link: '#'
     type: secondary
 image: 'for'
-parallax: false
-texture: ''
 name: headerbanner
 poppy_type: poppy-banner
 poppy_variant: header-banner-full-height
-resources: []
 subtitle: Banners can be used for selling your proposition
 summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
@@ -24,7 +24,7 @@ title: I am a banner
 design:
   typographies:
     - align: center
-      bg_color: transparent
+      background_color: transparent
       color: charcoal
       font: display1
       font_weight: bold
@@ -32,14 +32,13 @@ design:
       size: 5xl
       transform: uppercase
     - align: center
-      bg_color: transparent
+      background_color: transparent
       color: white
       font: display1
       font_weight: normal
       name: subtitle
       size: xl
       transform: uppercase
-
 ---
 
 ### I am the main content
