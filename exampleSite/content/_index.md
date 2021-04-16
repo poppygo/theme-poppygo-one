@@ -31,6 +31,19 @@ page_sections:
     title: Universal
     title2: and flexible
   - appearance:
+      background_color: resolution-blue
+      background_image: tub
+      item_background_color: white
+      parallax: false
+      texture: grain
+    bodytext: ''
+    buttons: []
+    component: headerbanner-height
+    image: none
+    name: headerbanner
+    subtitle: none
+    title: none
+  - appearance:
       background_color: ghost-white
       background_image: none
       item_background_color: ghost-white

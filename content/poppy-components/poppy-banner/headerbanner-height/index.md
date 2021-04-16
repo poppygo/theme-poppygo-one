@@ -5,6 +5,7 @@ appearance:
   background_image: back
   texture: ''
   parallax: false
+  height: 70
 buttons:
   - label: Check this
     link: /page-components/
@@ -14,46 +15,27 @@ buttons:
   - label: More about us
     link: '#'
     type: secondary
-    icon: ''
+    icon:
     icon_type: ''
-image: tub
+image: 'for'
 name: headerbanner
 poppy_type: poppy-banner
-poppy_variant: header-banner-poster
+poppy_variant: header-banner-height
 subtitle: Banners can be used for selling your proposition
 summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
   descriptions
 title: I am a banner
-title2: Second title
 design:
   typographies:
-    - align: left
+    - align: center
       background_color: transparent
-      color: ghost-white
+      color: charcoal
       font: display1
       font_weight: bold
-      name: titlelight
-      size: 8xl
-      transform: lowercase
-      space: 0
-    - align: left
-      background_color: transparent
-      color: gun-metal
-      font: display1
-      font_weight: bold
-      name: titledark
-      size: 8xl
-      transform: lowercase
-      space: 0
-    - align: left
-      background_color: transparent
-      color: ghost-white
-      font: art
-      font_weight: bold
-      name: title3
-      size: 6xl
-      transform:
+      name: title
+      size: 5xl
+      transform: uppercase
     - align: center
       background_color: transparent
       color: white
@@ -62,7 +44,6 @@ design:
       name: subtitle
       size: xl
       transform: uppercase
-
 ---
 
 ### I am the main content

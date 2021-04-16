@@ -11,7 +11,7 @@
     {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "class" "%s mx-auto {{$size}}" ) -}}
   </a>
 {{ else }}
-  <div class="p-6">
-      <a id="logo" class="p-3 {{$design.logo}}" href="/">{{$content.textlogo}}</a>
+  <div class="py-6">
+      <a id="logo" class="{{$design.logo}}" href="/">{{$content.textlogo}}</a>
   </div>
 {{ end }}

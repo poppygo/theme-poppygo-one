@@ -55,6 +55,7 @@
 {{ range $typographyData -}}
   {{- $name := .name -}}
   {{- $type := "" -}}
+  {{- $space_from_size := "" -}}
 
   {{- range $key, $value := . -}}
     {{- $override := "" -}}
@@ -74,19 +75,20 @@
       {{- if eq $key "background_color" -}} {{- $value = (printf "bg-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
       {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
       {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
+      {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
       {{- if eq $key "size" -}}
         {{- if not (in $name "menu") -}}
           {{- $sizeIndex := 0 -}}
           {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
-          {{- $lg := "" -}} {{- $xl := "" -}} {{- $space := "" -}}
+          {{- $lg := "" -}} {{- $xl := "" -}}
           {{- range $index, $size := $sizes -}}
             {{- if eq $size $value -}}
               {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
               {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
-              {{- $space = string (add (div $index 2) 0) -}}
+              {{- $space_from_size = string (add (div $index 2) 0) -}}
             {{- end -}}
           {{- end -}}
-          {{- $value = (printf "text-%s lg:text-%s xl:text-%s py-%s" $value $lg $xl $space) -}}
+          {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
         {{- else -}}
           {{- $value = (printf "text-%s"  $value ) -}}
         {{- end -}}
@@ -94,6 +96,11 @@
 
       {{- $type = printf "%s %s" $type $value -}}
     {{- end -}}
+  {{- end -}}
+  {{- if in $type "py-" }}
+    {{ warnf "space"}}
+  {{- else -}}
+    {{ $type = printf "%s %s" $type (printf "py-%s" $space_from_size) -}}
   {{- end -}}
   {{- $design = merge $design (dict $name $type ) -}}
 {{- end -}}

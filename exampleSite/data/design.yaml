@@ -143,5 +143,5 @@ typographies:
     font: display1
     font_weight: bold
     name: logo
-    size: 4xl
+    size: 3xl
     transform: ''

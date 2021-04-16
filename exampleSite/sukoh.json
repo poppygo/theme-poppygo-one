@@ -936,6 +936,200 @@
        "key": "headerbanner-full"
      },
      {
+       "component": "headerbanner-height",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "height",
+               "title": "Height",
+               "type": "number"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "key": "headerbanner-height"
+     },
+     {
+       "component": "headerbanner-poster",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "title": "Icon type",
+               "type": "string"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         },
+         {
+           "key": "title2",
+           "title": "Title2",
+           "type": "string"
+         }
+       ],
+       "key": "headerbanner-poster"
+     },
+     {
        "component": "headerbanner-standard",
        "fields": [
          {
@@ -3840,6 +4034,14 @@
                    "value": "headerbanner-full"
                  },
                  {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
                    "text": "headerbanner-standard",
                    "value": "headerbanner-standard"
                  },
@@ -4026,6 +4228,14 @@
                    "value": "headerbanner-full"
                  },
                  {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
                    "text": "headerbanner-standard",
                    "value": "headerbanner-standard"
                  },
@@ -4195,6 +4405,14 @@
                    "value": "headerbanner-full"
                  },
                  {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
                    "text": "headerbanner-standard",
                    "value": "headerbanner-standard"
                  },
@@ -4311,6 +4529,14 @@
                  {
                    "text": "headerbanner-full",
                    "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
                  },
                  {
                    "text": "headerbanner-standard",
