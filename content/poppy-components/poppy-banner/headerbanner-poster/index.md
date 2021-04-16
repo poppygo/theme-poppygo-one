@@ -16,15 +16,16 @@ buttons:
     type: secondary
     icon: ''
     icon_type: ''
-image: ''
+image: tub
 name: headerbanner
 poppy_type: poppy-banner
-poppy_variant: header-banner
+poppy_variant: header-banner-poster
 subtitle: Banners can be used for selling your proposition
 summary: >-
   -| I am the summary of the banner, which can be used for opengraph and SEO
   descriptions
 title: I am a banner
+title2: Second title
 design:
   typographies:
     - align: left
@@ -33,7 +34,23 @@ design:
       font: display1
       font_weight: bold
       name: title
-      size: 4xl
+      size: 3xl
+      transform:
+    - align: left
+      background_color: transparent
+      color: gun-metal
+      font: display1
+      font_weight: bold
+      name: title2
+      size: 3xl
+      transform:
+    - align: left
+      background_color: transparent
+      color: ghost-white
+      font: art
+      font_weight: bold
+      name: title3
+      size: 6xl
       transform:
     - align: center
       background_color: transparent

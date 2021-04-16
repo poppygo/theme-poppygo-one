@@ -2,32 +2,31 @@
 {{- $content := .content -}}
 {{- $design := .design -}}
 {{- $transparent := "" -}}
-{{- if eq $content.background_color "transparent" -}} {{- $transparent = "absolute" -}} {{- end -}}
+{{- if eq $content.background_color "bg-transparent" -}}{{- $transparent = "absolute z-10 top-0 left-0 w-full" -}} {{- end -}}
 
 {{- with $design -}}
 <div class ="{{$transparent}}">
-  <nav class="flex py-3 {{$content.background_color}}">
-    <div class="flex flex-grow justify-left w-full">
-      <a href="/" class="flex-1 flex justify-between items-center h-32 lg:h-40">
-          {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
-      </a>
-    </div>
-    <div class="flex flex-col justify-center pr-14">
-        <button id="hamburger-open" class="{{.menu}} h-12 w-12">
-          {{- partial "poppy-elements/icon" (dict "icon" "menu" "icontype" "solid") -}}
+  <div id="hamburger-open" class= "{{$content.background_color}} w-full {{.rounded}} px-3 container flex justify-between mx-auto">
+      <div class="flex items-center justify-center w-full">
+        <div class="flex-auto flex items-center w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
+        </div>
+      </div>
+    <div class="flex items-center justify-end w-80 {{.menu }} m-5 ">
+        <button id="" class="text-4xl focus:outline-none">
+          <div>menu</div>
       </button>
     </div>
-  </nav>
+  </div>
 
-  <ul id="menu" class="hidden flex -mt-40 md:-mt-48 z-10">
+  <ul id="menu" class="hidden flex z-10 p-3">
     <div class="{{$content.background_color}} flex w-full px-14 py-4 flex-col lg:flex-row justify-end items-end lg:items-center">
-      <a href="/" class="h-32 lg:h-40 justify-left w-full">
-          {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
-      </a>
-      {{ range $content.menus.main}}
+      {{ range $content.menus}}
+        {{- range .items -}}
         <li class="flex my-2 lg:my-2 mx-1 lg:mx-2 w-4/5">
-          <a title="{{ .name }}" class="{{$design.menu}} opacity-75 hover:opacity-100 transition duration-300 ease-in-out" href="{{ .url }}">{{ .name }}</a>
+          <a title="{{ .name }}" class="{{$design.menu}} px-5" href="{{ .url }}">{{ .name }}</a>
         </li>
+        {{- end -}}
       {{ end }}
       <button id="hamburger-close" class="{{.menu}} h-12 w-36">
         {{- partial "poppy-elements/icon" (dict "icon" "x" "icontype" "solid") -}}
@@ -36,7 +35,6 @@
   </ul>
 </div>
 {{- end -}}
-
 
 <script>
     let hamburger = document.getElementById('hamburger-open');

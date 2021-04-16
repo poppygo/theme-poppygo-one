@@ -34,23 +34,40 @@
   {{- $design = merge $design (dict "border" $border) -}}
 {{- end -}}
 
+
+
+
+{{- if $page_component.Params.design.typographies -}}
+  {{- range $page_component.Params.design.typographies -}}
+    {{- $name := .name -}}
+    {{- $typography := . -}}
+    {{- range $key, $value := . -}}
+        {{- range where $typographyData "name" "eq" $name -}}
+          {{/* This is a non component specific typography and will later override the default design */}}
+        {{- else -}}
+          {{/* Add component specific typogaphy */}}
+          {{- $typographyData = $typographyData | append $typography -}}
+        {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 {{ range $typographyData -}}
   {{- $name := .name -}}
   {{- $type := "" -}}
 
   {{- range $key, $value := . -}}
+    {{- $override := "" -}}
+    {{- $default := $value -}}
     {{- $typography := dict -}}
     {{- if $page_component.Params.design.typographies -}}
       {{- range where $page_component.Params.design.typographies "name" "eq" $name -}}
-        {{- $typography = . }}
+        {{- $override = index . $key -}}
       {{- end -}}
     {{- end -}}
-    {{- with $typography -}}
-      {{- $override := index . $key -}}
-      {{- $default := $value -}}
-      {{- $value = string ($override | default $default) -}}
-      {{- if $override -}}{{- $override_debug_info = merge $override_debug_info (dict $name true ) -}}{{- end -}}
-    {{- end -}}
+
+    {{- $value = string ($override | default $default) -}}
+    {{- if $override -}}{{- $override_debug_info = merge $override_debug_info (dict $name true ) -}}{{- end -}}
 
     {{- if $value -}}
       {{- if in $key "font" -}} {{- $value = (printf "font-%s" $value ) -}} {{- end -}}

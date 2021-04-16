@@ -5,7 +5,7 @@ appearance:
   item_background_color: ghost-white
   texture: ''
   parallax: false
-image: dive2
+image:
 menus:
   - name: main
     title: main
@@ -36,9 +36,9 @@ menus:
         url: /contact/
         weight: 0
 poppy_type: poppy-navigation
-poppy_variant: navbar-standard
+poppy_variant: navbar-collapsed
 subtitle: ''
-textlogo: ''
+textlogo: 'PoppyGo One'
 title: MindDive
 
 ---

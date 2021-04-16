@@ -2,36 +2,36 @@ buttons:
   - color: copper-rose
     font: body
     font_weight: extralight
+    icon: information-circle
+    icon_type: outline
     name: primary
     rounded: lg
     size: base
     text_color: ghost-white
-    icon: information-circle
-    icon_type: outline
   - color: unbleached-silk
     font: display1
     font_weight: ''
+    icon: ''
+    icon_type: outline
     name: secondary
     rounded: ''
     size: base
     text_color: ghost-white
-    icon: ''
-    icon_type: outline
   - color: none
     font: body
     font_weight: ''
+    icon: ''
+    icon_type: outline
     name: link
     rounded: ''
     size: base
     text_color: gun-metal
-    icon: ''
-    icon_type: outline
 colorscheme:
   poppy_color1:
-    colorcode: '#2c3741'
+    colorcode: '#1b1b1b'
     name: gun-metal
   poppy_color2:
-    colorcode: '#15217C'
+    colorcode: '#4379c0'
     name: resolution-blue
   poppy_color3:
     colorcode: '#6A8D92'
@@ -43,32 +43,32 @@ colorscheme:
     colorcode: '#9B6A6C'
     name: copper-rose
   poppy_color6:
-    colorcode: '#F7F7FF'
+    colorcode: '#fdfdfd'
     name: ghost-white
 components:
-  - bg_color: ghost-white
+  - background_color: ghost-white
     border: '1'
     border_color: unbleached-silk
     border_opacity: 30
     gridgap: 10
-    item_bg_color: white
+    item_background_color: white
     name: components
     rounded: lg
     shadow: none
     vertical_space: 12
 fontscheme:
-  - family: Playfair Display
+  - family: Domine
     name: display1
   - family: Nunito
     name: body
-  - family: Nunito
+  - family: Staatliches
     name: menu
   - family: Megrim
     name: art
   - family: Playfair Display
     name: display2
 site:
-  bg_color: ghost-white
+  background_color: ghost-white
   container: true
   container_padding:
     2xl: 6rem
@@ -81,8 +81,8 @@ site:
     blendmode: overlay
     opacity: 0.2
 typographies:
-  - align: center
-    bg_color: none
+  - align: left
+    background_color: none
     color: gun-metal
     font: display1
     font_weight: extralight
@@ -90,7 +90,7 @@ typographies:
     size: 3xl
     transform: ''
   - align: ''
-    bg_color: none
+    background_color: none
     color: gun-metal
     font: body
     font_weight: normal
@@ -98,7 +98,7 @@ typographies:
     size: base
     transform: ''
   - align: center
-    bg_color: none
+    background_color: none
     color: steal-teal
     font: display2
     font_weight: medium
@@ -106,15 +106,15 @@ typographies:
     size: lg
     transform: ''
   - align: ''
-    bg_color: none
-    color: gun-metal
+    background_color: gun-metal
+    color: resolution-blue
     font: menu
     font_weight: normal
     name: menu
     size: xl
     transform: ''
   - align: center
-    bg_color: transparent
+    background_color: transparent
     color: gun-metal
     font: body
     font_weight: light
@@ -122,7 +122,7 @@ typographies:
     size: 2xl
     transform: ''
   - align: center
-    bg_color: transparent
+    background_color: transparent
     color: gun-metal
     font: display1
     font_weight: normal
@@ -130,11 +130,18 @@ typographies:
     size: 2xl
     transform: ''
   - align: center
-    bg_color: transparent
+    background_color: transparent
     color: gun-metal
     font: body
     font_weight: normal
     name: itembody
     size: base
-    space: ''
+    transform: ''
+  - align: center
+    background_color: transparent
+    color: ghost-white
+    font: display1
+    font_weight: bold
+    name: logo
+    size: 4xl
     transform: ''

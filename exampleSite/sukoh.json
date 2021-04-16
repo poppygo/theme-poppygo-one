@@ -1945,6 +1945,101 @@
        "key": "image-cards"
      },
      {
+       "component": "navbar-collapsed",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "fields": [
+                 {
+                   "key": "identifier",
+                   "title": "Identifier",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "parent",
+                   "title": "Parent",
+                   "type": "string"
+                 },
+                 {
+                   "key": "url",
+                   "title": "Url",
+                   "type": "string"
+                 },
+                 {
+                   "key": "weight",
+                   "title": "Weight",
+                   "type": "number"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "menus",
+           "title": "Menus",
+           "type": "accordion"
+         }
+       ],
+       "key": "navbar-collapsed"
+     },
+     {
        "component": "navbar-standard",
        "fields": [
          {
@@ -2595,157 +2690,6 @@
        "key": "md-footer"
      },
      {
-       "component": "md-header-banner-full-height",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "markdown"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "icon",
-               "title": "Icon",
-               "type": "string"
-             },
-             {
-               "key": "icon_type",
-               "title": "Icon type",
-               "type": "string"
-             },
-             {
-               "key": "label",
-               "title": "Label",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "string"
-             },
-             {
-               "key": "type",
-               "title": "Type",
-               "type": "string"
-             }
-           ],
-           "key": "buttons",
-           "title": "Buttons",
-           "type": "accordion"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "md-header-banner-full-height"
-     },
-     {
-       "component": "md-spreuk-banner",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "markdown"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "markdown"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "md-spreuk-banner"
-     },
-     {
        "component": "md-navbar",
        "fields": [
          {
@@ -2761,7 +2705,7 @@
          {
            "key": "image",
            "title": "Image",
-           "type": "string"
+           "type": "hidden"
          },
          {
            "fields": [
@@ -2854,185 +2798,6 @@
          }
        ],
        "key": "md-navbar"
-     },
-     {
-       "component": "md-newsletter-simple",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "md-newsletter-simple"
-     },
-     {
-       "component": "md-contact-noform",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "key": "bodytext",
-               "title": "Bodytext",
-               "type": "markdown"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "icon",
-                   "title": "Icon",
-                   "type": "string"
-                 },
-                 {
-                   "key": "icon_type",
-                   "title": "Icon type",
-                   "type": "string"
-                 },
-                 {
-                   "key": "label",
-                   "title": "Label",
-                   "type": "string"
-                 },
-                 {
-                   "key": "link",
-                   "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
-                   "type": "string"
-                 }
-               ],
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "accordion"
-             },
-             {
-               "key": "icon",
-               "title": "Icon",
-               "type": "string"
-             },
-             {
-               "key": "icon_type",
-               "title": "Icon type",
-               "type": "string"
-             },
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "items",
-           "title": "Items",
-           "type": "accordion"
-         }
-       ],
-       "key": "md-contact-noform"
      }
    ],
    "serve": [
@@ -3400,44 +3165,9 @@
          {
            "fields": [
              {
-               "key": "bg_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
-               "title": "Bg color",
-               "type": "select"
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
              },
              {
                "key": "border",
@@ -3495,44 +3225,9 @@
                "type": "number"
              },
              {
-               "key": "item_bg_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
-               "title": "Item bg color",
-               "type": "select"
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
              },
              {
                "arrayTitle": true,
@@ -3632,44 +3327,9 @@
          {
            "fields": [
              {
-               "key": "bg_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
-               "title": "Bg color",
-               "type": "select"
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
              },
              {
                "key": "container",
@@ -3805,44 +3465,9 @@
                "type": "string"
              },
              {
-               "key": "bg_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
-               "title": "Bg color",
-               "type": "select"
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
              },
              {
                "key": "color",
@@ -4255,6 +3880,10 @@
                    "value": "image-cards"
                  },
                  {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
                    "text": "navbar-standard",
                    "value": "navbar-standard"
                  },
@@ -4279,24 +3908,8 @@
                    "value": "md-footer"
                  },
                  {
-                   "text": "md-header-banner-full-height",
-                   "value": "md-header-banner-full-height"
-                 },
-                 {
-                   "text": "md-spreuk-banner",
-                   "value": "md-spreuk-banner"
-                 },
-                 {
                    "text": "md-navbar",
                    "value": "md-navbar"
-                 },
-                 {
-                   "text": "md-newsletter-simple",
-                   "value": "md-newsletter-simple"
-                 },
-                 {
-                   "text": "md-contact-noform",
-                   "value": "md-contact-noform"
                  }
                ],
                "title": "Component",
@@ -4453,6 +4066,10 @@
                    "value": "image-cards"
                  },
                  {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
                    "text": "navbar-standard",
                    "value": "navbar-standard"
                  },
@@ -4477,24 +4094,8 @@
                    "value": "md-footer"
                  },
                  {
-                   "text": "md-header-banner-full-height",
-                   "value": "md-header-banner-full-height"
-                 },
-                 {
-                   "text": "md-spreuk-banner",
-                   "value": "md-spreuk-banner"
-                 },
-                 {
                    "text": "md-navbar",
                    "value": "md-navbar"
-                 },
-                 {
-                   "text": "md-newsletter-simple",
-                   "value": "md-newsletter-simple"
-                 },
-                 {
-                   "text": "md-contact-noform",
-                   "value": "md-contact-noform"
                  }
                ],
                "title": "Component",
@@ -4634,6 +4235,10 @@
                    "value": "image-cards"
                  },
                  {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
                    "text": "navbar-standard",
                    "value": "navbar-standard"
                  },
@@ -4658,24 +4263,8 @@
                    "value": "md-footer"
                  },
                  {
-                   "text": "md-header-banner-full-height",
-                   "value": "md-header-banner-full-height"
-                 },
-                 {
-                   "text": "md-spreuk-banner",
-                   "value": "md-spreuk-banner"
-                 },
-                 {
                    "text": "md-navbar",
                    "value": "md-navbar"
-                 },
-                 {
-                   "text": "md-newsletter-simple",
-                   "value": "md-newsletter-simple"
-                 },
-                 {
-                   "text": "md-contact-noform",
-                   "value": "md-contact-noform"
                  }
                ],
                "title": "Component",
@@ -4764,6 +4353,10 @@
                    "value": "image-cards"
                  },
                  {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
                    "text": "navbar-standard",
                    "value": "navbar-standard"
                  },
@@ -4788,24 +4381,8 @@
                    "value": "md-footer"
                  },
                  {
-                   "text": "md-header-banner-full-height",
-                   "value": "md-header-banner-full-height"
-                 },
-                 {
-                   "text": "md-spreuk-banner",
-                   "value": "md-spreuk-banner"
-                 },
-                 {
                    "text": "md-navbar",
                    "value": "md-navbar"
-                 },
-                 {
-                   "text": "md-newsletter-simple",
-                   "value": "md-newsletter-simple"
-                 },
-                 {
-                   "text": "md-contact-noform",
-                   "value": "md-contact-noform"
                  }
                ],
                "title": "Component",

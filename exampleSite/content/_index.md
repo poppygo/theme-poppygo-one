@@ -3,37 +3,39 @@ author: Minddive
 date: '2021-04-04'
 draft: false
 lastmod: ''
+mainContent: ''
 page_sections:
   - appearance:
-      background_color: ''
+      background_color: null
       background_image: ''
-      item_background_color: white
-      texture: ''
+      item_background_color: null
       parallax: false
+      texture: ''
     component: md-navbar
     image: ''
-    name: navbar
+    name: md-navbar
     subtitle: ''
     title: ''
   - appearance:
-      background_color: ''
-      background_image: bg2
+      background_color: resolution-blue
+      background_image: none
       item_background_color: white
-      texture: ''
       parallax: false
+      texture: grain
     bodytext: ''
     buttons: []
-    component: md-header-banner-full-height
-    image: ''
+    component: headerbanner-poster
+    image: tub
     name: headerbanner
     subtitle: none
-    title: '"When you dive into your mind you will discover your full potential"'
+    title: Universal
+    title2: and flexible
   - appearance:
       background_color: ghost-white
       background_image: none
       item_background_color: ghost-white
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
     component: cards-standard
@@ -44,11 +46,11 @@ page_sections:
           persoonlijke ontwikkeling
           en effectieve communicatie.
         buttons:
-          - type: primary
-            icon: information-circle
+          - icon: information-circle
             icon_type: ''
             label: Meer over NLP training
             link: /pages/nlp-training/
+            type: primary
         icon: none
         image: nlp
         link: /pages/nlp-training/
@@ -85,8 +87,8 @@ page_sections:
       background_color: unbleached-silk
       background_image: none
       item_background_color: ghost-white
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: >-
       Ik ben een bevlogen en betrokken trainer & coach met ruim 20 jaar ervaring
       in het bedrijfsleven, waarvan 10 jaar als leidinggevende & coach. Met mijn
@@ -97,16 +99,16 @@ page_sections:
       gaan zullen we de parels vinden die diep verborgen liggen. Dit resulteert
       in meer rust, vertrouwen en verbeterde communicatie.
     buttons:
-      - type: primary
+      - icon: ''
+        icon_type: ''
         label: Over Mind Dive
         link: /pages/over-mind-dive
-        icon: ''
+        type: primary
+      - icon: ''
         icon_type: ''
-      - type: secondary
         label: Contact
         link: /pages/contact/
-        icon: ''
-        icon_type: ''
+        type: secondary
     component: introbanner
     image: wendy
     name: Mind Dive Master Wendy
@@ -115,9 +117,9 @@ page_sections:
   - appearance:
       background_color: ghost-white
       background_image: none
-      texture: ''
       item_background_color: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
     component: md-spreuk-banner
@@ -131,8 +133,8 @@ page_sections:
       background_color: ''
       background_image: ''
       item_background_color: ''
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     component: md-footer
     image: ''
@@ -140,6 +142,7 @@ page_sections:
     subtitle: ''
     title: ''
 publishdate: ''
+resources: []
 title: Homepage
 
 ---
