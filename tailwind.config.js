@@ -30,6 +30,7 @@ module.exports = {
       gray: '#ADACB5',
       transparent: 'transparent',
     },
+    textStrokeWidth: { xs: '1px', sm: '2px', md: '4px', lg: '8px' },
     extend: {
       typography: (theme) => ({
         DEFAULT: {
@@ -54,7 +55,7 @@ module.exports = {
               color: 'inherit',
             },
             pre: {
-              backgroundColor: 'var(--poppy-colordark)',
+              backgroundColor: 'var(--poppy-color1)',
             },
             strong: {
               color: 'inherit',
@@ -68,16 +69,6 @@ module.exports = {
           },
         },
       }),
-      // colors: {
-      //   poppycolor1: 'var(--poppy-color1)',
-      //   poppycolor2: 'var(--poppy-color2)',
-      //   poppycolor3: 'var(--poppy-color3)',
-      //   poppycolor4: 'var(--poppy-color4)',
-      //   poppycolor5: 'var(--poppy-color5)',
-      //   poppycolor6: 'var(--poppy-color6)',
-      //   poppycolorlight: 'var(--poppy-colorlight)',
-      //   poppycolordark: 'var(--poppy-colordark)',
-      // },
     },
     fontFamily: {
       display1: "var(--font-display1)",
@@ -98,6 +89,37 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-text-fill-stroke')(),
     // ...
   ],
 };
+
+
+
+// // tailwind.config.js
+// {
+//   theme: { // defaults to these values
+//     textFillColor: theme => theme('borderColor'),
+//     textStrokeColor: theme => theme('borderColor'),
+//     textStrokeWidth: theme => theme('borderWidth'),
+//     paintOrder: {
+//       'fsm': { paintOrder: 'fill stroke markers' },
+//       'fms': { paintOrder: 'fill markers stroke' },
+//       'sfm': { paintOrder: 'stroke fill markers' },
+//       'smf': { paintOrder: 'stroke markers fill' },
+//       'mfs': { paintOrder: 'markers fill stroke' },
+//       'msf': { paintOrder: 'markers stroke fill' },
+//     },
+//   },
+//
+//   variants: { // all the following default to ['responsive']
+//     textFillColor: ['responsive'],
+//     textStrokeColor: ['responsive'],
+//     textStrokeWidth: ['responsive'],
+//     paintOrder: ['responsive'],
+//   },
+//
+//   plugins: [
+//     require('tailwindcss-text-fill-stroke')(), // no options to configure
+//   ],
+// }

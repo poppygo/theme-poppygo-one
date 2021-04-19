@@ -76,15 +76,17 @@
       {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
       {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
       {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
+      {{- if eq $key "outline_width" -}}{{- $value = (printf "text-stroke-%s"  (string $value) ) -}}{{- end -}}
+      {{- if eq $key "outline_color" -}}{{- $value = (printf "text-stroke-%s" (partial "poppy-engine/colors" $value) ) -}}{{- end -}}
       {{- if eq $key "size" -}}
         {{- if not (in $name "menu") -}}
           {{- $sizeIndex := 0 -}}
-          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" -}}
+          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" "9xl" "9xl" -}}
           {{- $lg := "" -}} {{- $xl := "" -}}
           {{- range $index, $size := $sizes -}}
             {{- if eq $size $value -}}
-              {{- if le $index (sub (len $sizes) 3 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
-              {{- if le $index (sub (len $sizes) 4 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
+              {{- if le $index (sub (len $sizes) 1 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
+              {{- if le $index (sub (len $sizes) 2 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
               {{- $space_from_size = string (add (div $index 2) 0) -}}
             {{- end -}}
           {{- end -}}
@@ -98,7 +100,6 @@
     {{- end -}}
   {{- end -}}
   {{- if in $type "py-" }}
-    {{ warnf "space"}}
   {{- else -}}
     {{ $type = printf "%s %s" $type (printf "py-%s" $space_from_size) -}}
   {{- end -}}
@@ -130,7 +131,9 @@
       {{- if in $key "font" -}} {{- $value = printf "font-%s"  $value  -}} {{- end -}}
       {{- if in $key "rounded" -}} {{- $value = printf "rounded-%s"  $value  -}} {{- end -}}
       {{- if eq $key "color" -}} {{- $value = printf "bg-%s"  (partial "poppy-engine/colors" $value)  -}} {{- end -}}
-      {{- if in $key "text" -}} {{- $value = printf "text-%s"  (partial "poppy-engine/colors" $value)  -}} {{- end -}}
+      {{- if eq $key "text_color" -}} {{- $value = printf "text-%s"  (partial "poppy-engine/colors" $value)  -}} {{- end -}}
+      {{- if eq $key "text_outline_width" -}}{{- $value = (printf "text-stroke-%s"  (string $value) ) -}}{{- end -}}
+      {{- if eq $key "text_outline_color" -}}{{- $value = (printf "text-stroke-%s" (partial "poppy-engine/colors" $value) ) -}}{{- end -}}
       {{- if eq $key "name" -}} {{- $button_name = printf "button_%s"  $value  -}} {{- end -}}
 
       {{- if in $key "size" -}}
@@ -144,17 +147,10 @@
         {{- range $index, $size := $sizes -}}
           {{- if eq $size $value -}}
             {{- $base_spacey = (string (index $spaces $index)) -}}
-            {{- $base_spacex = string ( mul (index $spaces $index) 4) -}}
-            {{- if le $index (sub (len $sizes) 2 ) }}
-              {{- $lg = index $sizes (add $index 1) -}}
-              {{- $lg_spacey = index $spaces (add $index 1) -}}
-              {{- $lg_spacex = index $spaces ( mul (add $index 1) 4) -}}
-            {{- end -}}
-            {{- if le $index (sub (len $sizes) 3 ) }}
-              {{- $xl = index $sizes (add $index 2) -}}
-              {{- $lg_spacey = index $spaces (add $index 2) -}}
-              {{- $lg_spacex = index $spaces ( mul (add $index 2) 4 ) -}}
-            {{- end -}}
+            {{- $base_spacex = string ( mul (index $spaces $index) 3) -}}
+            {{- $xl = index $sizes (add $index 1) -}}
+            {{- $lg_spacey = index $spaces (add $index 1) -}}
+            {{- $lg_spacex = index $spaces ( mul (add $index 1) 3 ) -}}
           {{- end -}}
         {{- end -}}
         {{- $value = printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl -}}
@@ -164,6 +160,7 @@
       {{- $button = printf "%s %s" $button $value -}}
     {{- end -}}
   {{- end -}}
+  {{- $button = printf "%s %s" $button "mb-1 mr-1" -}}
   {{- if $overridden }}
       {{- $override_debug_info = merge $override_debug_info (dict $button_name true ) -}}
   {{- end -}}

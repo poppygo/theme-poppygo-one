@@ -8,12 +8,12 @@ appearance:
 buttons:
   - label: Check this
     link: /page-components/
-    type: primary
+    button_type: primary
     icon: ''
     icon_type: ''
   - label: More about us
     link: '#'
-    type: secondary
+    button_type: secondary
     icon:
     icon_type: ''
 image: 'for'

@@ -1,14 +1,16 @@
 ---
 appearance:
-  background_color: ghost-white
+  background_color: gun-metal
   background_image: coach
   item_background_color: ghost-white
-  texture: ''
   parallax: false
+  texture: ''
 draft: false
 image: none
-title: Coaching
+resources: []
 subtitle: ''
+title: Coaching
+
 ---
 
 

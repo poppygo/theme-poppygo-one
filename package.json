@@ -13,7 +13,8 @@
     "postcss-cli": "^8.3.1",
     "postcss-loader": "^5.1.0",
     "style-loader": "^0.19.0",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.3",
+    "tailwindcss-text-fill-stroke": "^1.1.2"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",

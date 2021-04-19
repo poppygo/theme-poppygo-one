@@ -78,7 +78,7 @@
 {{- end -}}
 
 {{/* -----------Change resource page when images are set in the page section  -------- */}}
-{{- if .section.appearance.background_image}}
+{{- if or .section.appearance.background_image .section.appearance.texture -}}
     {{- $content = merge $content (dict "bg_resource_page" .page) -}}
 {{- else -}}
     {{- $content = merge $content (dict "bg_resource_page" $page_component ) -}}

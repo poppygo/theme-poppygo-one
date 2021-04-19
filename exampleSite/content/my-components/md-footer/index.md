@@ -1,8 +1,8 @@
 ---
 appearance:
-  background_color: gun-metal
+  background_color: resolution-blue
   item_background_color: transparent
-  texture: cris
+  texture: 'grain'
   background_image: ''
   parallax: false
 design:
@@ -40,7 +40,7 @@ design:
       size: lg
       space: 0
       transform: lowercase
-image: footer
+image:
 menus:
   - name: menu1
     title: Mind Dive
@@ -86,6 +86,6 @@ social_icons:
     link: 'mailto:wendyvandenbeld@gmail.com?subject=websitefooter'
     name: email
 subtitle: none
-textlogo: Mind Dive
+textlogo: PoppyGo One
 title: ''
 ---

@@ -4,7 +4,6 @@
 */}}
 
 {{- $css_class := .css_class -}}
-
 {{- if .bg_image -}}
   {{- $image_path := printf "images/*%s*" .bg_image -}}
   {{- if or .page.IsHome .page.IsSection -}}

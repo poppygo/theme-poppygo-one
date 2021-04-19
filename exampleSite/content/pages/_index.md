@@ -26,7 +26,7 @@ page_sections:
     title: ''
 subpage_sections:
   - appearance:
-      background_color: ghost-white
+      background_color: resolution-blue
       background_image: ''
       item_background_color: white
       texture: ''

@@ -6,10 +6,10 @@ lastmod: ''
 mainContent: ''
 page_sections:
   - appearance:
-      background_color: null
+      background_color: ''
       background_image: ''
-      item_background_color: null
-      parallax: false
+      item_background_color: ''
+      parallax: ''
       texture: ''
     component: md-navbar
     image: ''
@@ -27,7 +27,7 @@ page_sections:
     component: headerbanner-poster
     image: tub
     name: headerbanner
-    subtitle: none
+    subtitle: Hugo theme
     title: Universal
     title2: and flexible
   - appearance:
@@ -44,64 +44,62 @@ page_sections:
     subtitle: none
     title: none
   - appearance:
-      background_color: ghost-white
+      background_color: resolution-blue
       background_image: none
-      item_background_color: ghost-white
+      item_background_color: gun-metal
       parallax: false
-      texture: ''
+      texture: grain
     bodytext: ''
     buttons: []
     component: cards-standard
     image: ''
     items:
       - bodytext: |-
-          Ga voor leiderschap,
-          persoonlijke ontwikkeling
-          en effectieve communicatie.
+          Build any page with a rich selection of page components
         buttons:
-          - icon: information-circle
+          - button_type: primary
+            icon: information-circle
             icon_type: ''
-            label: Meer over NLP training
-            link: /pages/nlp-training/
-            type: primary
+            label: See all components
+            link: /components/
         icon: none
-        image: nlp
-        link: /pages/nlp-training/
-        title: NLP training
+        image: pew
+        link: /components/
+        title: Component based
       - bodytext: |-
-          Verbind je met hoofd,
-          hart en buik
-          & vind rust.
+          Manage lay-out, design and content all from within PoppyGo CMS. No code needed
         buttons:
-          - icon: ''
+          - button_type: primary
+            icon: ''
             icon_type: ''
-            label: Meer over mBIT training
-            link: /pages/mbit-training/
-            type: primary
+            label: About PoppyGo
+            link: /pages/poppygo/
         icon: none
-        image: mbit
+        image: felic
         link: /pages/mbit-training/
-        title: mBIT training
-      - bodytext: Kies voor persoonlijk begeleiding & inspiratie
+        title: "100% Manageable"
+      - bodytext: |-
+          Built on tailwind,
+          combined with purgeCSS you have an utlrsmall CSS footprint.
         buttons:
-          - icon: ''
+          - button_type: primary
+            icon: ''
             icon_type: ''
-            label: Meer over coaching
-            link: /pages/meer-over-coaching/
-            type: primary
+            label: About dynamic classes
+            link: /pages/dynamic-classes/
         icon: none
-        image: coach
-        link: /pages/coaching/
-        title: Coaching
+        image: shocked
+        link: /pages/dynamic-classes/
+        title: "100% Tailwind"
     name: Services
     subtitle: none
-    title: Training & Coaching
+    title: Flexible Hugo theme for graphic lovers
   - appearance:
-      background_color: unbleached-silk
+      background_color: gun-metal
       background_image: none
-      item_background_color: ghost-white
+      item_background_color: resolution-blue
       parallax: false
-      texture: ''
+      texture: grain
     bodytext: >-
       Ik ben een bevlogen en betrokken trainer & coach met ruim 20 jaar ervaring
       in het bedrijfsleven, waarvan 10 jaar als leidinggevende & coach. Met mijn
@@ -112,21 +110,21 @@ page_sections:
       gaan zullen we de parels vinden die diep verborgen liggen. Dit resulteert
       in meer rust, vertrouwen en verbeterde communicatie.
     buttons:
-      - icon: ''
+      - button_type: primary
+        icon: ''
         icon_type: ''
-        label: Over Mind Dive
-        link: /pages/over-mind-dive
-        type: primary
-      - icon: ''
+        label: Read more
+        link: /pages/poppygo-one
+      - button_type: secondary
+        icon: ''
         icon_type: ''
         label: Contact
         link: /pages/contact/
-        type: secondary
     component: introbanner
     image: wendy
-    name: Mind Dive Master Wendy
-    subtitle: Ervaren Trainer & Coach
-    title: Mind Dive Master Wendy
+    name: About this theme
+    subtitle: Most flexible, most manageable
+    title: About this theme
   - appearance:
       background_color: ghost-white
       background_image: none
@@ -147,7 +145,7 @@ page_sections:
       background_image: ''
       item_background_color: ''
       parallax: false
-      texture: ''
+      texture: grain
     bodytext: ''
     component: md-footer
     image: ''

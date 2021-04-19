@@ -15,7 +15,7 @@ count: ''
 buttons:
   - label: See all
     link: /
-    type: primary
+    button_type: primary
     icon: ''
     icon_type: ''
 ---

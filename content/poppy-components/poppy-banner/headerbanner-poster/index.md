@@ -8,12 +8,12 @@ appearance:
 buttons:
   - label: Check this
     link: /page-components/
-    type: primary
+    button_type: primary
     icon: ''
     icon_type: ''
   - label: More about us
     link: '#'
-    type: secondary
+    button_type: secondary
     icon: ''
     icon_type: ''
 image: tub
@@ -34,26 +34,32 @@ design:
       font: display1
       font_weight: bold
       name: titlelight
-      size: 8xl
+      size: 6xl
       transform: lowercase
       space: 0
+      outline_color: ''
+      outline_width: ''
     - align: left
       background_color: transparent
       color: gun-metal
       font: display1
       font_weight: bold
       name: titledark
-      size: 8xl
+      size: 6xl
       transform: lowercase
       space: 0
-    - align: left
+      outline_color: ''
+      outline_width: ''
+    - align: right
       background_color: transparent
-      color: ghost-white
+      color: transparent
       font: art
       font_weight: bold
-      name: title3
-      size: 6xl
-      transform:
+      name: titleoutline
+      size: 7xl
+      transform: uppercase
+      outline_color: ghost-white
+      outline_width: sm
     - align: center
       background_color: transparent
       color: white
@@ -62,6 +68,8 @@ design:
       name: subtitle
       size: xl
       transform: uppercase
+      outline_color: ''
+      outline_width: ''
 
 ---
 
