@@ -21,12 +21,12 @@ page_sections:
       background_image: none
       item_background_color: white
       parallax: false
-      texture: grain
+      texture: grain2
     bodytext: ''
     buttons: []
     component: headerbanner-poster
     image: tub
-    name: headerbanner
+    name: headerbanner poster
     subtitle: Hugo theme
     title: Universal
     title2: and flexible
@@ -40,7 +40,7 @@ page_sections:
     buttons: []
     component: headerbanner-height
     image: none
-    name: headerbanner
+    name: headerbanner height
     subtitle: none
     title: none
   - appearance:
@@ -51,11 +51,10 @@ page_sections:
       texture: grain
     bodytext: ''
     buttons: []
-    component: cards-standard
+    component: showcase
     image: ''
     items:
-      - bodytext: |-
-          Build any page with a rich selection of page components
+      - bodytext: Build any page with a rich selection of page components
         buttons:
           - button_type: primary
             icon: information-circle
@@ -66,8 +65,9 @@ page_sections:
         image: pew
         link: /components/
         title: Component based
-      - bodytext: |-
-          Manage lay-out, design and content all from within PoppyGo CMS. No code needed
+      - bodytext: >-
+          Manage lay-out, design and content all from within PoppyGo CMS. No
+          code needed
         buttons:
           - button_type: primary
             icon: ''
@@ -77,7 +77,7 @@ page_sections:
         icon: none
         image: felic
         link: /pages/mbit-training/
-        title: "100% Manageable"
+        title: 100% Manageable
       - bodytext: |-
           Built on tailwind,
           combined with purgeCSS you have an utlrsmall CSS footprint.
@@ -90,8 +90,8 @@ page_sections:
         icon: none
         image: shocked
         link: /pages/dynamic-classes/
-        title: "100% Tailwind"
-    name: Services
+        title: 100% Tailwind
+    name: Benefits
     subtitle: none
     title: Flexible Hugo theme for graphic lovers
   - appearance:
@@ -123,7 +123,7 @@ page_sections:
     component: introbanner
     image: wendy
     name: About this theme
-    subtitle: Most flexible, most manageable
+    subtitle: 'Most flexible, most manageable'
     title: About this theme
   - appearance:
       background_color: ghost-white
@@ -157,3 +157,4 @@ resources: []
 title: Homepage
 
 ---
+

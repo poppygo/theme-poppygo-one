@@ -1,10 +1,10 @@
 ---
 appearance:
   background_color: resolution-blue
-  item_background_color: transparent
-  texture: 'grain'
   background_image: ''
+  item_background_color: transparent
   parallax: false
+  texture: grain
 design:
   typographies:
     - align: left
@@ -40,41 +40,44 @@ design:
       size: lg
       space: 0
       transform: lowercase
-image:
+draft: false
+image: null
+mainContent: ''
 menus:
-  - name: menu1
-    title: Mind Dive
-    items:
+  - items:
       - identifier: ''
-        name: NLP training
+        name: Components
         parent: ''
-        url: /pages/nlp-training/
+        url: /poppy-components/
         weight: 3
       - identifier: ''
-        name: mBIT training
+        name: Customisable design
         parent: ''
-        url: /pages/mbit-training/
+        url: /pages/customisable-design/
         weight: 0
       - identifier: ''
-        name: Coaching
+        name: Content manageable
         parent: ''
-        url: /pages/coaching/
+        url: /pages/CMS/
         weight: 0
-  - name: menu2
-    title: Trainingen_&_coaching
-    items:
+    name: menu1
+    title: PoppyGo One
+  - items:
       - identifier: ''
-        name: Over Mind Dive
+        name: about PoppyGo
         parent: ''
-        url: /pages/over-mind-dive/
+        url: /pages/poppygo/
         weight: 3
       - identifier: ''
         name: Contact
         parent: ''
-        url: /contact/
+        url: 'https://poppygo.io'
         weight: 0
+    name: menu2
+    title: PoppyGo
 poppy_type: poppy-footer
 poppy_variant: 3-column-footer
+resources: []
 social_icons:
   - icon: linkedin
     link: 'https://nl.linkedin.com/in/wendy-van-den-beld-3519263'
@@ -88,4 +91,6 @@ social_icons:
 subtitle: none
 textlogo: PoppyGo One
 title: ''
+
 ---
+

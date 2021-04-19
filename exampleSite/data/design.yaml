@@ -95,16 +95,18 @@ typographies:
     color: transparent
     font: art
     font_weight: bold
+    line_height: none
     name: title
     outline_color: ghost-white
-    outline_width: xs
-    size: 7xl
+    outline_width: sm
+    size: 8xl
     transform: uppercase
   - align: ''
     background_color: none
     color: gun-metal
     font: body
     font_weight: normal
+    line_height: relaxed
     name: body
     outline_color: gun-metal
     outline_width: '2'
@@ -115,6 +117,7 @@ typographies:
     color: steal-teal
     font: display2
     font_weight: medium
+    line_height: ''
     name: subtitle
     outline_color: gun-metal
     outline_width: '2'
@@ -125,36 +128,40 @@ typographies:
     color: resolution-blue
     font: menu
     font_weight: normal
+    line_height: ''
     name: menu
     outline_color: transparent
     outline_width: ''
     size: xl
     transform: ''
-  - align: center
+  - align: left
     background_color: transparent
     color: resolution-blue
     font: art
     font_weight: black
+    line_height: ''
     name: itemtitle
     outline_color: ghost-white
     outline_width: ''
     size: xl
     transform: uppercase
-  - align: center
+  - align: left
     background_color: transparent
     color: gun-metal
     font: display1
     font_weight: normal
+    line_height: ''
     name: itemsubtitle
     outline_color: gun-metal
     outline_width: '2'
     size: 2xl
     transform: ''
-  - align: center
+  - align: left
     background_color: transparent
     color: ghost-white
     font: body
     font_weight: medium
+    line_height: loose
     name: itembody
     outline_color: gun-metal
     outline_width: '2'
@@ -165,6 +172,7 @@ typographies:
     color: transparent
     font: art
     font_weight: bold
+    line_height: ''
     name: logo
     outline_color: ghost-white
     outline_width: xs

@@ -43,7 +43,7 @@
          {
            "key": "image",
            "title": "Image",
-           "type": "string"
+           "type": "hidden"
          },
          {
            "key": "mainContent",
@@ -375,6 +375,22 @@
                      {
                        "text": "9xl",
                        "value": "9xl"
+                     },
+                     {
+                       "text": "10xl",
+                       "value": "10xl"
+                     },
+                     {
+                       "text": "11xl",
+                       "value": "11xl"
+                     },
+                     {
+                       "text": "12xl",
+                       "value": "12xl"
+                     },
+                     {
+                       "text": "13xl",
+                       "value": "13xl"
                      }
                    ],
                    "title": "Size",
@@ -4985,7 +5001,7 @@
          {
            "key": "image",
            "title": "Image",
-           "type": "string"
+           "type": "hidden"
          },
          {
            "fields": [
@@ -5619,6 +5635,22 @@
                  {
                    "text": "9xl",
                    "value": "9xl"
+                 },
+                 {
+                   "text": "10xl",
+                   "value": "10xl"
+                 },
+                 {
+                   "text": "11xl",
+                   "value": "11xl"
+                 },
+                 {
+                   "text": "12xl",
+                   "value": "12xl"
+                 },
+                 {
+                   "text": "13xl",
+                   "value": "13xl"
                  }
                ],
                "title": "Size",
@@ -6469,6 +6501,70 @@
                "type": "select"
              },
              {
+               "key": "line_height",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "3",
+                   "value": "3"
+                 },
+                 {
+                   "text": "4",
+                   "value": "4"
+                 },
+                 {
+                   "text": "5",
+                   "value": "5"
+                 },
+                 {
+                   "text": "6",
+                   "value": "6"
+                 },
+                 {
+                   "text": "7",
+                   "value": "7"
+                 },
+                 {
+                   "text": "8",
+                   "value": "8"
+                 },
+                 {
+                   "text": "9",
+                   "value": "9"
+                 },
+                 {
+                   "text": "10",
+                   "value": "10"
+                 },
+                 {
+                   "text": "none",
+                   "value": "none"
+                 },
+                 {
+                   "text": "tight",
+                   "value": "tight"
+                 },
+                 {
+                   "text": "snug",
+                   "value": "snug"
+                 },
+                 {
+                   "text": "normal",
+                   "value": "normal"
+                 },
+                 {
+                   "text": "relaxed",
+                   "value": "relaxed"
+                 },
+                 {
+                   "text": "loose",
+                   "value": "loose"
+                 }
+               ],
+               "title": "Line height",
+               "type": "select"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
@@ -6597,6 +6693,22 @@
                  {
                    "text": "9xl",
                    "value": "9xl"
+                 },
+                 {
+                   "text": "10xl",
+                   "value": "10xl"
+                 },
+                 {
+                   "text": "11xl",
+                   "value": "11xl"
+                 },
+                 {
+                   "text": "12xl",
+                   "value": "12xl"
+                 },
+                 {
+                   "text": "13xl",
+                   "value": "13xl"
                  }
                ],
                "title": "Size",

@@ -3,29 +3,40 @@ headless: true
 mainContent: ''
 page_sections:
   - name: navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar
-  - background_image: ''
+    component: md-navbar
+    appearance:
+      background_color: resolution-blue
+  - appearance:
+      background_color: resolution-blue
+      texture: grain
+      item_background_color: gun-metal
     list: poppy-components
-    max_amount: 100
+    count: 10
     name: List of components
-    poppy_type: poppy-listing
-    poppy_variant: gallery1
+    component: gallery-standard
     title: Have a look at the page components
   - name: footer
-    poppy_type: poppy-navigation
-    poppy_variant: footer
-
+    component: md-footer
+    appearance:
+      background_color: gun-metal
+      texture: grain
 subpage_sections:
   - name: navbar
-    poppy_type: poppy-navigation
-    poppy_variant: navbar
+    component: md-navbar
+    appearance:
+      background_color: resolution-blue
+      texture: grain
   - name: component
-    poppy_type: poppy-other
-    poppy_variant: component
+    component: component
+    appearance:
+      background_color: white
+      item_background_color: resolution-blue
+
   - name: other
-    poppy_type: poppy-listing
-    poppy_variant: gallery1
+    appearance:
+      background_color: resolution-blue
+      item_background_color: gun-metal
+    component: gallery-standard
     title: Other page sections
     list: poppy-components
     background_color: tufts-blue

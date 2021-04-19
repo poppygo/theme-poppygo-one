@@ -2,43 +2,50 @@
 appearance:
   background_color: transparent
   background_image: ''
-  item_background_color: ghost-white
-  texture: ''
+  item_background_color: resolution-blue
   parallax: false
-image:
+  texture: grain
+design:
+  typographies: []
+draft: false
+image: null
+mainContent: ''
 menus:
-  - name: main
-    title: main
-    items:
+  - items:
       - identifier: ''
-        name: NLP training
+        name: Customisable design
         parent: ''
-        url: /pages/nlp-training
+        url: /pages/customisable-design
         weight: 3
       - identifier: ''
-        name: mBIT training
+        name: components
         parent: ''
-        url: /pages/mbit-training/
+        url: /poppy-components/
         weight: 0
       - identifier: ''
-        name: Coaching
+        name: CMS
         parent: ''
-        url: /pages/coaching/
+        url: /pages/cms/
         weight: 0
       - identifier: ''
-        name: Over Mind Dive
+        name: About PoppyGo
         parent: ''
-        url: /pages/over-mind-dive/
+        url: /pages/poppygo/
         weight: 0
       - identifier: ''
         name: Contact
         parent: ''
-        url: /contact/
+        url: 'https://poppygo.io'
         weight: 0
+    name: main
+    title: main
 poppy_type: poppy-navigation
 poppy_variant: navbar-collapsed
+resources: []
+social_icons: []
 subtitle: ''
-textlogo: 'PoppyGo One'
+textlogo: PoppyGo One
 title: MindDive
 
 ---
+

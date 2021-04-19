@@ -26,8 +26,12 @@
   {{- $component_value := "" -}}
   {{- $override := "" -}}
 
-  {{- if reflect.IsMap . -}}
-    {{- $section_value = index $section.appearance .appearance -}}
+  {{- if (reflect.IsMap .)  -}}
+    {{ if $section.appearance}}
+      {{- $section_value = index $section.appearance .appearance -}}
+    {{- else -}}
+      {{- $section_value = "" -}}
+    {{- end -}}
     {{- $component_value = index $page_component.Params.appearance .appearance -}}
     {{- $override = ( $section_value | default $component_value ) -}}
 

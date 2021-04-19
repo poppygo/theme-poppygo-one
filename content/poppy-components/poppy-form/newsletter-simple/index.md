@@ -12,4 +12,5 @@ summary: -|
 poppy_type: poppy-form
 poppy_variant: newsletter-simple
 image: none
+border_color: gun-metal
 ---

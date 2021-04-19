@@ -76,18 +76,19 @@
       {{- if in $key "align" -}} {{- $value = printf "text-%s" $value -}} {{- end -}}
       {{- if eq $key "color" -}} {{- $value = (printf "text-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
       {{- if eq $key "space" -}} {{- $value = (printf "py-%s"  (string $value) ) -}} {{- end -}}
+      {{- if eq $key "line_height" -}} {{- $value = printf "leading-%s" $value -}} {{- end -}}
       {{- if eq $key "outline_width" -}}{{- $value = (printf "text-stroke-%s"  (string $value) ) -}}{{- end -}}
       {{- if eq $key "outline_color" -}}{{- $value = (printf "text-stroke-%s" (partial "poppy-engine/colors" $value) ) -}}{{- end -}}
       {{- if eq $key "size" -}}
         {{- if not (in $name "menu") -}}
           {{- $sizeIndex := 0 -}}
-          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" "9xl" "9xl" -}}
+          {{- $sizes := slice "xs" "sm" "base" "lg" "xl" "xl" "2xl" "2xl" "3xl" "4xl" "5xl" "6xl" "7xl" "8xl" "9xl" "10xl" "11xl" "12xl" "13xl" -}}
           {{- $lg := "" -}} {{- $xl := "" -}}
           {{- range $index, $size := $sizes -}}
             {{- if eq $size $value -}}
               {{- if le $index (sub (len $sizes) 1 ) }} {{- $lg = index $sizes (add $index 1) -}}  {{- end -}}
               {{- if le $index (sub (len $sizes) 2 ) }} {{- $xl = index $sizes (add $index 2) -}}  {{- end -}}
-              {{- $space_from_size = string (add (div $index 2) 0) -}}
+              {{- $space_from_size = string (add (div $index 4) 1) -}}
             {{- end -}}
           {{- end -}}
           {{- $value = (printf "text-%s lg:text-%s xl:text-%s" $value $lg $xl) -}}
