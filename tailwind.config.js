@@ -31,11 +31,21 @@ module.exports = {
       transparent: 'transparent',
     },
     textStrokeWidth: { xs: '1px', sm: '2px', md: '4px', lg: '8px' },
+    columnWidth: {
+      sm: '120px',
+      md: '240px',
+      lg: '360px',
+    },
+    columnGap: {
+      sm: '1rem',
+      md: '1.5rem',
+      lg: '2rem',
+    },
     extend: {
       fontSize: {
         '10xl': '10rem',
         '11xl': '12rem',
-        '12xl': '14rem',      
+        '12xl': '14rem',
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -95,36 +105,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('tailwindcss-text-fill-stroke')(),
+    require('tailwindcss-multi-column')(),
     // ...
   ],
 };
-
-
-
-// // tailwind.config.js
-// {
-//   theme: { // defaults to these values
-//     textFillColor: theme => theme('borderColor'),
-//     textStrokeColor: theme => theme('borderColor'),
-//     textStrokeWidth: theme => theme('borderWidth'),
-//     paintOrder: {
-//       'fsm': { paintOrder: 'fill stroke markers' },
-//       'fms': { paintOrder: 'fill markers stroke' },
-//       'sfm': { paintOrder: 'stroke fill markers' },
-//       'smf': { paintOrder: 'stroke markers fill' },
-//       'mfs': { paintOrder: 'markers fill stroke' },
-//       'msf': { paintOrder: 'markers stroke fill' },
-//     },
-//   },
-//
-//   variants: { // all the following default to ['responsive']
-//     textFillColor: ['responsive'],
-//     textStrokeColor: ['responsive'],
-//     textStrokeWidth: ['responsive'],
-//     paintOrder: ['responsive'],
-//   },
-//
-//   plugins: [
-//     require('tailwindcss-text-fill-stroke')(), // no options to configure
-//   ],
-// }

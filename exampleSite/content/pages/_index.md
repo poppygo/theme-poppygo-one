@@ -58,7 +58,7 @@ subpage_sections:
       parallax: false
     bodytext: ''
     buttons: []
-    component: article-standard
+    component: article-multi-column
     image: ''
     name: article
     subtitle: '->frompage'

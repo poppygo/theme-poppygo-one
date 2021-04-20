@@ -78,7 +78,7 @@ fontscheme:
     name: display2
 site:
   background_color: resolution-blue
-  container: true
+  container: false
   container_padding:
     2xl: 6rem
     DEFAULT: 1rem

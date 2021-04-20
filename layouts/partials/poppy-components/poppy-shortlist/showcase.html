@@ -6,7 +6,7 @@
 <div class="{{.vertical_space}} ">
   <h3 class=" {{.title }}">{{ $content.title }}</h3>
   <p class=" {{.subtitle}}">{{ $content.subtitle }}</p>
-    <div class="md:gap-y-12 grid grid-cols-10 {{ .gridgap }} grid-flow-row-dense ">
+    <div class="gap-0 md:gap-y-12 grid grid-cols-10 grid-flow-row-dense ">
       {{- range $index, $value := $content.items -}}
         {{- $switchImg := "" -}}
         {{- $switchBody := "" -}}
