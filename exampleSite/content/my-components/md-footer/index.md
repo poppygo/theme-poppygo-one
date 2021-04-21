@@ -17,7 +17,7 @@ design:
       transform: ''
     - align: left
       background_color: none
-      color: ghost-white
+      color: gun-metal
       font: display1
       font_weight: normal
       name: subtitle

@@ -147,7 +147,7 @@ typographies:
     size: 2xl
     transform: ''
   - align: left
-    background_color: transparent
+    background_color: gun-metal
     color: resolution-blue
     font: art
     font_weight: black

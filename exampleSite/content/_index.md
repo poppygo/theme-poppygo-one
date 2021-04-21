@@ -96,6 +96,37 @@ page_sections:
     title: Flexible Hugo theme for graphic lovers
   - appearance:
       background_color: gun-metal
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: grain3
+    component: gallery-standard
+    count: '6'
+    image: ''
+    list: poppy-components
+    menus: []
+    name: components
+    social_icons: []
+    subtitle: Mix and match as you like!
+    textlogo: ''
+    title: 'Components '
+  - appearance:
+      background_color: ghost-white
+      background_image: none
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    bodytext: ''
+    buttons: []
+    component: md-spreuk-banner
+    image: ''
+    name: welkom banner
+    subtitle: Mark Twain
+    title: >-
+      Moed is weerstand tegen angst, beheersing van angst, niet afwezigheid van
+      angst
+  - appearance:
+      background_color: gun-metal
       background_image: none
       item_background_color: resolution-blue
       parallax: false
@@ -126,21 +157,6 @@ page_sections:
     subtitle: 'Most flexible, most manageable'
     title: About this theme
   - appearance:
-      background_color: ghost-white
-      background_image: none
-      item_background_color: ''
-      parallax: false
-      texture: ''
-    bodytext: ''
-    buttons: []
-    component: md-spreuk-banner
-    image: ''
-    name: welkom banner
-    subtitle: Mark Twain
-    title: >-
-      Moed is weerstand tegen angst, beheersing van angst, niet afwezigheid van
-      angst
-  - appearance:
       background_color: ''
       background_image: ''
       item_background_color: ''
@@ -157,3 +173,4 @@ resources: []
 title: Homepage
 
 ---
+

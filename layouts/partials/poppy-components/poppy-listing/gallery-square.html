@@ -1,7 +1,7 @@
 {{- $page := .page -}}
 {{- $content := .content -}}
 {{- $design := .design -}}
-
+{{- $count := 100 -}}
 {{- $items := partial "poppy-engine/sortedItems" (dict "list" $content.list ) -}}
 {{- $size := $content.size | default 450 -}}
 
@@ -17,7 +17,8 @@
   <h1 class = "{{.title }} ">{{ $content.title }}</h1>
   <p class = "{{.subtitle }}">{{ $content.subtitle }}</p>
   <div class = "grid gap-3 square-grid overflow-clip mx-auto">
-      {{- range $items -}}
+      {{- with $content.count -}} {{- $count = . -}} {{- end -}}
+      {{- range first $count $items -}}
       {{- $bg_css := printf "%s-%s" $page.File.ContentBaseName .File.ContentBaseName -}}
       {{- partial "poppy-elements/bg_image" (dict "page" . "css_class" $bg_css "bg_image" .Params.image ) -}}
         <a class="{{$content.item_background_color}} {{$design.text_light}} {{$bg_css}} {{$design.rounded}} {{$design.border}} {{$design.shadow}} bg-cover bg-center {{$design.vertical_space}} px-2" href={{.RelPermalink }}>
