@@ -1,12 +1,13 @@
 ---
 draft: false
+mainContent: ''
 page_sections:
   - appearance:
       background_color: ''
       background_image: ''
       item_background_color: white
-      texture: ''
       parallax: false
+      texture: ''
     component: md-navbar
     image: ''
     name: navbar
@@ -24,13 +25,14 @@ page_sections:
     name: footer
     subtitle: ''
     title: ''
+resources: []
 subpage_sections:
   - appearance:
-      background_color: resolution-blue
+      background_color: transparent
       background_image: ''
       item_background_color: white
-      texture: ''
       parallax: false
+      texture: grain
     component: md-navbar
     image: ''
     name: navbar
@@ -38,24 +40,40 @@ subpage_sections:
     texture: ''
     title: ''
   - appearance:
-      background_color: '->frompage'
-      background_image: '->frompage'
+      background_color: ''
+      background_image: ''
       item_background_color: ''
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
-    component: headerbanner-standard
+    component: headerbanner-poster
     image: none
     name: banner
     subtitle: '->frompage'
     title: '->frompage'
+    title2: '->frompage'
+  - appearance:
+      background_color: resolution-blue
+      background_image: '->frompage'
+      height: 30
+      item_background_color: ''
+      parallax: false
+      texture: grain
+    component: headerbanner-height
+    image: none
+    menus: []
+    name: banner
+    social_icons: []
+    subtitle: none
+    textlogo: ''
+    title: none
   - appearance:
       background_color: '->frompage'
       background_image: ''
       item_background_color: ''
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
     component: article-multi-column
@@ -64,29 +82,29 @@ subpage_sections:
     subtitle: '->frompage'
     title: '->frompage'
   - appearance:
-      background_color: unbleached-silk
-      background_image: ''
-      item_background_color: ''
-      texture: ''
-      parallax: false
-    bodytext: ''
-    buttons: []
-    component: md-spreuk-banner
-    image: ''
-    name: spreuk
-    subtitle: ''
-    title: ''
-  - appearance:
       background_color: ''
       background_image: ''
       item_background_color: ''
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
     component: md-footer
     image: ''
     name: footer
+    subtitle: ''
+    title: ''
+  - appearance:
+      background_color: unbleached-silk
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    bodytext: ''
+    buttons: []
+    component: md-spreuk-banner
+    image: ''
+    name: spreuk
     subtitle: ''
     title: ''
 title: Pages

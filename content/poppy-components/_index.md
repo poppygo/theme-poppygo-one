@@ -4,8 +4,6 @@ mainContent: ''
 page_sections:
   - name: navbar
     component: md-navbar
-    appearance:
-      background_color: resolution-blue
   - appearance:
       background_color: resolution-blue
       texture: grain

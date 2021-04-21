@@ -1,15 +1,15 @@
 ---
 appearance:
   background_color: ''
-  background_image: neuron
+  background_image: par
   item_background_color: ''
   parallax: false
   texture: ''
 draft: false
-image: mbit
+image: par
 resources: []
-subtitle: ''
-title: mBIT training
+subtitle: 'CMS, hosting and Hugo'
+title: About PoppyGo
 
 ---
 

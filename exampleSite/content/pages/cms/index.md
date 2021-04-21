@@ -1,7 +1,9 @@
 ---
 draft: false
 resources: []
-title: NLP training
+title: Content Management
+title2: in PoppyGo
+subtitle: fully free
 image: nlp
 appearance:
   background_image: nlp

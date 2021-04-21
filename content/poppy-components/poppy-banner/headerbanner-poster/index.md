@@ -1,9 +1,9 @@
 ---
 appearance:
-  background_color: white
-  item_background_color: white
-  background_image: back
-  texture: ''
+  background_color: resolution-blue
+  item_background_color:
+  background_image: none
+  texture: grain
   parallax: false
 buttons:
   - label: Check this

@@ -1,10 +1,22 @@
 buttons:
-  - color: resolution-blue
+  - color: gun-metal
     font: art
     font_weight: normal
     icon: information-circle
     icon_type: outline
     name: primary
+    rounded: none
+    size: lg
+    text_color: resolution-blue
+    text_outline_color: ghost-white
+    text_outline_width: ''
+    text_transform: uppercase
+  - color: resolution-blue
+    font: art
+    font_weight: normal
+    icon: information-circle
+    icon_type: outline
+    name: itembutton
     rounded: none
     size: lg
     text_color: gun-metal
@@ -78,14 +90,14 @@ fontscheme:
     name: display2
 site:
   background_color: resolution-blue
-  container: false
+  container: true
   container_padding:
-    2xl: 6rem
-    DEFAULT: 1rem
+    2xl: 0rem
+    DEFAULT: 0rem
     lg: 0rem
     name: padding
     sm: 0rem
-    xl: 3rem
+    xl: 0rem
   texture:
     blendmode: overlay
     opacity: 0.2
@@ -132,7 +144,7 @@ typographies:
     name: menu
     outline_color: transparent
     outline_width: ''
-    size: xl
+    size: 2xl
     transform: ''
   - align: left
     background_color: transparent

@@ -21,7 +21,7 @@ page_sections:
       background_image: none
       item_background_color: white
       parallax: false
-      texture: grain2
+      texture: grain1
     bodytext: ''
     buttons: []
     component: headerbanner-poster
@@ -29,7 +29,7 @@ page_sections:
     name: headerbanner poster
     subtitle: Hugo theme
     title: Universal
-    title2: and flexible
+    title2: fully flexible
   - appearance:
       background_color: resolution-blue
       background_image: tub
@@ -48,7 +48,7 @@ page_sections:
       background_image: none
       item_background_color: gun-metal
       parallax: false
-      texture: grain
+      texture: grain3
     bodytext: ''
     buttons: []
     component: showcase
@@ -56,7 +56,7 @@ page_sections:
     items:
       - bodytext: Build any page with a rich selection of page components
         buttons:
-          - button_type: primary
+          - button_type: itembutton
             icon: information-circle
             icon_type: ''
             label: See all components
@@ -69,7 +69,7 @@ page_sections:
           Manage lay-out, design and content all from within PoppyGo CMS. No
           code needed
         buttons:
-          - button_type: primary
+          - button_type: itembutton
             icon: ''
             icon_type: ''
             label: About PoppyGo
@@ -82,7 +82,7 @@ page_sections:
           Built on tailwind,
           combined with purgeCSS you have an utlrsmall CSS footprint.
         buttons:
-          - button_type: primary
+          - button_type: itembutton
             icon: ''
             icon_type: ''
             label: About dynamic classes
@@ -157,4 +157,3 @@ resources: []
 title: Homepage
 
 ---
-

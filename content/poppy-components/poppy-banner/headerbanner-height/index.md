@@ -12,11 +12,6 @@ buttons:
     button_type: primary
     icon: ''
     icon_type: ''
-  - label: More about us
-    link: '#'
-    button_type: secondary
-    icon:
-    icon_type: ''
 image: 'for'
 name: headerbanner
 poppy_type: poppy-banner

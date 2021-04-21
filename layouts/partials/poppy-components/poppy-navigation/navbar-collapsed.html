@@ -2,37 +2,38 @@
 {{- $content := .content -}}
 {{- $design := .design -}}
 {{- $transparent := "" -}}
-{{- if eq $content.background_color "bg-transparent" -}}{{- $transparent = "absolute z-10 top-0 left-0 w-full" -}} {{- end -}}
+{{- if eq $content.background_color "bg-transparent" -}}{{- $transparent = "absolute z-50 top-0 mx-auto container" -}} {{- end -}}
 
 {{- with $design -}}
 <div class ="{{$transparent}}">
-  <div id="hamburger-open" class= "{{$content.background_color}} w-full {{.rounded}} container flex justify-between mx-auto">
-      <div class="flex items-center justify-center w-full">
-        <div class="flex-auto flex items-center w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5">
+  <div class= "{{$content.background_color}} w-full {{.rounded}} container mx-auto flex justify-between">
+      <div class="flex flex-none lg:items-center justify-center">
+        <div class="flex-auto lg:items-center w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5">
             {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
         </div>
       </div>
-    <div class="flex items-center justify-end w-80 {{.menu }} my-5 ">
-        <button id="" class="text-4xl focus:outline-none">
+    <div id="hamburger-open" class="flex items-center justify-end w-40 {{.menu }} my-5 ">
+        <button  class="text-4xl focus:outline-none">
           <div>menu</div>
       </button>
     </div>
+    <ul id="menu" class="hidden flex z-50 justify-end container flex-grow flex">
+      <div class="{{$content.background_color}} flex flex0-grow flex-col lg:flex-row justify-end items-end lg:items-center">
+        {{ range $content.menus}}
+          {{- range .items -}}
+          <li class="flex lg:my-2 mx-1 lg:mx-2 h-full py-1 lg:py-5">
+            <div class="justify-end md:justify-center flex flex-col px-5 py-5 lg:py-0 lg:h-full {{$design.menu}}">
+              <a title="{{ .name }}" href="{{ .url }}">{{ .name }}</a>
+            </div>
+          </li>
+          {{- end -}}
+        {{ end }}
+        <button id="hamburger-close" class="{{.menu}} order-first lg:order-none h-14 w-14 my-5">
+          {{- partial "poppy-elements/icon" (dict "icon" "x" "icontype" "solid") -}}
+        </button>
+      </div>
+    </ul>
   </div>
-
-  <ul id="menu" class="hidden flex z-10 p-3">
-    <div class="{{$content.background_color}} flex w-full px-14 py-4 flex-col lg:flex-row justify-end items-end lg:items-center">
-      {{ range $content.menus}}
-        {{- range .items -}}
-        <li class="flex my-2 lg:my-2 mx-1 lg:mx-2 w-4/5">
-          <a title="{{ .name }}" class="{{$design.menu}} px-5" href="{{ .url }}">{{ .name }}</a>
-        </li>
-        {{- end -}}
-      {{ end }}
-      <button id="hamburger-close" class="{{.menu}} h-12 w-36">
-        {{- partial "poppy-elements/icon" (dict "icon" "x" "icontype" "solid") -}}
-      </button>
-    </div>
-  </ul>
 </div>
 {{- end -}}
 
@@ -45,12 +46,12 @@
     hamburger.addEventListener('click', function(){
         menu.classList.toggle('hidden');
         hamburger.classList.toggle('hidden');
-        logo.classList.toggle('hidden');
+        // logo.classList.toggle('hidden');
     });
 
     close.addEventListener('click', function(){
         menu.classList.toggle('hidden');
         hamburger.classList.toggle('hidden');
-        logo.classList.toggle('hidden');
+        // logo.classList.toggle('hidden');
     });
 </script>
