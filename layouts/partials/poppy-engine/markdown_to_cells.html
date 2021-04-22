@@ -1,0 +1,40 @@
+{{- $cells := slice -}}
+{{- $lines := slice -}}
+{{- $brokenlines := split (.content) "<" -}}
+{{- $line := "" -}}
+{{- $level := 0 -}}
+{{- range $brokenlines -}}
+    {{- $line_start := (substr $line 0 6 ) -}}
+    {{- $line_end := (substr (trim . "/") 0 2) -}}
+    {{- $match := false -}}
+    {{- if and . (in $line_start $line_end)  -}}
+        {{- if in . "/" -}}
+          {{- $match = true -}}
+          {{- if gt $level 0 -}}
+            {{- $level = sub $level 1 -}}
+          {{- end -}}
+        {{- else -}}
+          {{- $level = add $level 2 -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if and (eq $level 0) $match -}}
+      {{- $line = printf "%s<%s" $line . -}}
+      {{- $lines = $lines | append $line -}}
+      {{- $line = "" -}}
+    {{- else if . -}}
+      {{- $line = printf "%s<%s" $line . -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $cell := "" -}}
+{{- range $lines -}}
+  {{- if in . "<style>" -}}
+      {{- $cell = . -}}
+  {{- else -}}
+      {{- $cell = printf "%s%s" $cell . -}}
+      {{- $cells = $cells | append $cell -}}
+      {{- $cell = "" -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $cells -}}

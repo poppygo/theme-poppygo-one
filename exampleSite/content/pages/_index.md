@@ -76,7 +76,7 @@ subpage_sections:
       texture: ''
     bodytext: ''
     buttons: []
-    component: article-multi-column
+    component: poster-standard
     image: ''
     name: article
     subtitle: '->frompage'

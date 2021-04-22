@@ -1,0 +1,33 @@
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+
+{{- $cells := partial "poppy-engine/markdown_to_cells" (dict "content" $page.Content) -}}
+
+{{- with $design -}}
+  <div class="{{.vertical_space}} {{.gridgap}} w-full grid grid-cols-9 grid-flow-row-dense">
+
+    {{- range $cells -}}
+    {{- $span := "" -}}
+    {{- $rotate := "" -}}
+      {{- if in . "<h3" -}}
+        {{- $span = "col-span-3" -}}
+      {{- end -}}
+      {{- if in . "<h2" -}}
+        {{- $rotate = "transform -rotate-90" -}}
+        {{- $span = "col-span-2 row-span-2"}}
+      {{- end -}}
+      {{- if in . "<img" -}}
+        {{- $span = "col-span-4 row-span-4"}}
+      {{- end -}}
+      {{- if in . "<p" -}}
+        {{- $span = "col-span-2 row-span-1"}}
+      {{- end -}}
+      <div class = "prose {{$span}}">
+        <div class = "{{$rotate}}">
+          {{- . | safeHTML  -}}
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}
