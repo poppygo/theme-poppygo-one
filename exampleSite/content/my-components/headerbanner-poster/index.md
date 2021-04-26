@@ -1,8 +1,9 @@
 ---
+headless: false
 appearance:
   background_color: resolution-blue
   item_background_color: white
-  background_image: 
+  background_image:
   texture: 'grain'
   parallax: false
 buttons:

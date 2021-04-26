@@ -1,25 +1,37 @@
 {
    "menu": [
      {
-       "key": "poppygo",
+       "key": "singles",
        "menuItems": [
          {
-           "key": "pogocms",
+           "key": "s__components",
+           "visible": true
+         },
+         {
+           "key": "s__contact",
+           "visible": true
+         },
+         {
+           "key": "s__homepage",
            "visible": true
          }
        ],
-       "title": "PoppyGo",
+       "title": "Main pages",
        "visible": true
      },
      {
        "key": "collections",
        "menuItems": [
          {
+           "key": "c__components",
+           "visible": true
+         },
+         {
            "key": "c__pages",
            "visible": true
          }
        ],
-       "title": "collections",
+       "title": "Detail pages",
        "visible": true
      },
      {
@@ -39,25 +51,6 @@
          }
        ],
        "title": "Site settings",
-       "visible": true
-     },
-     {
-       "key": "singles",
-       "menuItems": [
-         {
-           "key": "s__contact",
-           "visible": true
-         },
-         {
-           "key": "s__homepage",
-           "visible": true
-         },
-         {
-           "key": "s__pages",
-           "visible": true
-         }
-       ],
-       "title": "Main pages",
        "visible": true
      }
    ]

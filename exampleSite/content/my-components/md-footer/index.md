@@ -1,4 +1,5 @@
 ---
+headless: true
 appearance:
   background_color: resolution-blue
   background_image: ''
@@ -93,4 +94,3 @@ textlogo: PoppyGo One
 title: ''
 
 ---
-

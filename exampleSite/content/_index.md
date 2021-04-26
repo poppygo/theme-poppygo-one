@@ -1,5 +1,5 @@
 ---
-author: Minddive
+author: PoppyGo
 date: '2021-04-04'
 draft: false
 lastmod: ''
@@ -168,23 +168,8 @@ page_sections:
     name: footer
     subtitle: ''
     title: ''
-  - appearance:
-      background_color: ''
-      background_image: ''
-      item_background_color: ''
-      parallax: false
-      texture: ''
-    component: article-standard
-    image: ''
-    menus: []
-    name: ''
-    social_icons: []
-    subtitle: ''
-    textlogo: ''
-    title: ''
 publishdate: ''
 resources: []
 title: Homepage
 
 ---
-

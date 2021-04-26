@@ -1,4 +1,5 @@
 ---
+headless: true
 appearance:
   background_image: ''
   background_color: white

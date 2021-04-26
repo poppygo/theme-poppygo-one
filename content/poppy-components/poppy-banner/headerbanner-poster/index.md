@@ -1,4 +1,5 @@
 ---
+headless: true
 appearance:
   background_color: resolution-blue
   item_background_color:

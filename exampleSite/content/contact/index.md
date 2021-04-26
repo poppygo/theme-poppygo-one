@@ -5,16 +5,16 @@ page_sections:
       background_color: ghost-white
       background_image: ''
       item_background_color: white
-      texture: ''
       parallax: true
+      texture: ''
     component: md-navbar
     name: navbar
   - appearance:
       background_color: '->frompage'
       background_image: contact
       item_background_color: ''
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
     component: headerbanner-standard
@@ -26,16 +26,14 @@ page_sections:
       background_color: '->frompage'
       background_image: ''
       item_background_color: ''
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
     component: md-contact-noform
     image: wendy
     items:
-      - bodytext: |-
-          ## +31 (0) 6 22566036
-
+      - bodytext: '## +31 (0) 6 22566036'
         buttons:
           - icon: information-circle
             icon_type: outline
@@ -50,7 +48,6 @@ page_sections:
           **MIND DIVE**
           Graaf Zeppelinlaan 9
           Amstelveen
-
         buttons:
           - icon: information-circle
             icon_type: outline
@@ -61,9 +58,7 @@ page_sections:
         image: ''
         link: ''
         title: Adres
-      - bodytext: |-
-          wendy@minddive.nl
-
+      - bodytext: wendy@minddive.nl
         buttons:
           - icon: information-circle
             icon_type: outline
@@ -80,9 +75,9 @@ page_sections:
   - appearance:
       background_color: unbleached-silk
       background_image: ''
-      texture: ''
       item_background_color: ''
       parallax: false
+      texture: ''
     bodytext: ''
     buttons: []
     component: md-spreuk-banner
@@ -94,14 +89,15 @@ page_sections:
       background_color: ''
       background_image: ''
       item_background_color: ''
-      texture: ''
       parallax: false
+      texture: ''
     bodytext: ''
     component: md-footer
     image: ''
     name: footer
     subtitle: ''
     title: ''
+resources: []
 title: Contact
 
 ---

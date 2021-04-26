@@ -1,4 +1,5 @@
 ---
+headless: true
 appearance:
   background_color: transparent
   background_image: ''
@@ -20,7 +21,7 @@ menus:
       - identifier: ''
         name: components
         parent: ''
-        url: /poppy-components/
+        url: /components/
         weight: 0
       - identifier: ''
         name: CMS
@@ -45,7 +46,6 @@ resources: []
 social_icons: []
 subtitle: ''
 textlogo: PoppyGo One
-title: MindDive
+title: PoppyGo
 
 ---
-

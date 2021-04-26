@@ -1,4 +1,35 @@
-{
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+  
+  
+  
+  
+  {
    "build": [
      {
        "config": "config.yml",
@@ -19,6 +50,144 @@
            "key": "subtitle",
            "title": "Subtitle",
            "type": "string"
+         },
+         {
+           "dynFormSearchKey": "component",
+           "fields": [
+             {
+               "key": "component",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "article-multi-column",
+                   "value": "article-multi-column"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "contact-noform",
+                   "value": "contact-noform"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "_index.md",
+                   "value": "_indexmd"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "md-footer",
+                   "value": "md-footer"
+                 },
+                 {
+                   "text": "md-navbar",
+                   "value": "md-navbar"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 }
+               ],
+               "title": "Component",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
          },
          {
            "extensions": [
@@ -43,7 +212,7 @@
          {
            "key": "image",
            "title": "Image",
-           "type": "hidden"
+           "type": "string"
          },
          {
            "key": "mainContent",
@@ -82,6 +251,142 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         }
+       ],
+       "folder": "content/components/",
+       "itemtitle": "Component",
+       "key": "c__components",
+       "title": "Components"
+     },
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "hidden"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "button_type",
+               "title": "Button type",
+               "type": "string"
+             },
+             {
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "outline",
+                   "value": "outline"
+                 },
+                 {
+                   "text": "solid",
+                   "value": "solid"
+                 },
+                 {
+                   "text": "social",
+                   "value": "social"
+                 }
+               ],
+               "title": "Icon type",
+               "type": "select"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
          },
          {
            "fields": [
@@ -193,6 +498,39 @@
                    "type": "string"
                  },
                  {
+                   "key": "outline_color",
+                   "title": "Outline color",
+                   "type": "string"
+                 },
+                 {
+                   "key": "outline_width",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "",
+                       "value": ""
+                     },
+                     {
+                       "text": "xs",
+                       "value": "xs"
+                     },
+                     {
+                       "text": "sm",
+                       "value": "sm"
+                     },
+                     {
+                       "text": "md",
+                       "value": "md"
+                     },
+                     {
+                       "text": "lg",
+                       "value": "lg"
+                     }
+                   ],
+                   "title": "Outline width",
+                   "type": "select"
+                 },
+                 {
                    "key": "size",
                    "multiple": false,
                    "options": [
@@ -269,6 +607,11 @@
                    "type": "select"
                  },
                  {
+                   "key": "space",
+                   "title": "Space",
+                   "type": "number"
+                 },
+                 {
                    "key": "transform",
                    "multiple": false,
                    "options": [
@@ -313,55 +656,14 @@
            "type": "boolean"
          },
          {
-           "fields": [
-             {
-               "fields": [
-                 {
-                   "key": "identifier",
-                   "title": "Identifier",
-                   "type": "string"
-                 },
-                 {
-                   "arrayTitle": true,
-                   "key": "name",
-                   "title": "Name",
-                   "type": "string"
-                 },
-                 {
-                   "key": "parent",
-                   "title": "Parent",
-                   "type": "string"
-                 },
-                 {
-                   "key": "url",
-                   "title": "Url",
-                   "type": "string"
-                 },
-                 {
-                   "key": "weight",
-                   "title": "Weight",
-                   "type": "number"
-                 }
-               ],
-               "key": "items",
-               "title": "Items",
-               "type": "accordion"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "menus",
-           "title": "Menus",
-           "type": "accordion"
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "name",
+           "title": "Name",
+           "type": "string"
          },
          {
            "key": "poppy_type",
@@ -374,31 +676,13 @@
            "type": "string"
          },
          {
-           "fields": [
-             {
-               "key": "icon",
-               "title": "Icon",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "markdown"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             }
-           ],
-           "key": "social_icons",
-           "title": "Social icons",
-           "type": "accordion"
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
          },
          {
-           "key": "textlogo",
-           "title": "Textlogo",
+           "key": "title2",
+           "title": "Title2",
            "type": "string"
          }
        ],
@@ -429,32 +713,12 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "poster-standard",
-                   "value": "poster-standard"
-                 },
-                 {
                    "text": "article-multi-column",
                    "value": "article-multi-column"
                  },
                  {
                    "text": "article-standard",
                    "value": "article-standard"
-                 },
-                 {
-                   "text": "portfolio-item",
-                   "value": "portfolio-item"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer-simple",
-                   "value": "footer-simple"
                  },
                  {
                    "text": "headerbanner-full",
@@ -473,8 +737,32 @@
                    "value": "headerbanner-standard"
                  },
                  {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
                    "text": "introbanner",
                    "value": "introbanner"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "contact-noform",
+                   "value": "contact-noform"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
                  },
                  {
                    "text": "gallery-image-only",
@@ -489,24 +777,8 @@
                    "value": "list-articles-standard"
                  },
                  {
-                   "text": "newsletter-big",
-                   "value": "newsletter-big"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
                    "text": "listing-cards",
                    "value": "listing-cards"
-                 },
-                 {
-                   "text": "cards-standard",
-                   "value": "cards-standard"
-                 },
-                 {
-                   "text": "image-cards",
-                   "value": "image-cards"
                  },
                  {
                    "text": "navbar-collapsed",
@@ -517,32 +789,44 @@
                    "value": "navbar-standard"
                  },
                  {
-                   "text": "footer-3-column",
-                   "value": "footer-3-column"
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
                  },
                  {
                    "text": "showcase",
                    "value": "showcase"
                  },
                  {
-                   "text": "newsletter-simple",
-                   "value": "newsletter-simple"
-                 },
-                 {
-                   "text": "contact-noform",
-                   "value": "contact-noform"
-                 },
-                 {
-                   "text": "md-footer",
-                   "value": "md-footer"
+                   "text": "_index.md",
+                   "value": "_indexmd"
                  },
                  {
                    "text": "headerbanner-poster",
                    "value": "headerbanner-poster"
                  },
                  {
+                   "text": "md-footer",
+                   "value": "md-footer"
+                 },
+                 {
                    "text": "md-navbar",
                    "value": "md-navbar"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
                  }
                ],
                "title": "Component",
@@ -637,22 +921,31 @@
    "hugover": "extended_0.80.0",
    "menu": [
      {
-       "key": "poppygo",
+       "key": "singles",
        "menuItems": [
          {
-           "key": "pogocms"
+           "key": "s__components"
+         },
+         {
+           "key": "s__contact"
+         },
+         {
+           "key": "s__homepage"
          }
        ],
-       "title": "PoppyGo"
+       "title": "Main pages"
      },
      {
        "key": "collections",
        "menuItems": [
          {
+           "key": "c__components"
+         },
+         {
            "key": "c__pages"
          }
        ],
-       "title": "collections"
+       "title": "Detail pages"
      },
      {
        "key": "general",
@@ -670,76 +963,16 @@
        "title": "Site settings"
      },
      {
-       "key": "singles",
+       "key": "poppygo",
        "menuItems": [
          {
-           "key": "s__contact"
-         },
-         {
-           "key": "s__homepage"
-         },
-         {
-           "key": "s__pages"
+           "key": "pogocms"
          }
        ],
-       "title": "Main pages"
+       "title": "PoppyGo"
      }
    ],
    "partials": [
-     {
-       "component": "poster-standard",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "string"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "key": "test",
-           "title": "Test",
-           "type": "string"
-         }
-       ],
-       "key": "poster-standard"
-     },
      {
        "component": "article-multi-column",
        "fields": [
@@ -785,6 +1018,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          }
        ],
        "key": "article-multi-column"
@@ -834,276 +1072,14 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          }
        ],
        "key": "article-standard"
-     },
-     {
-       "component": "portfolio-item",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         }
-       ],
-       "key": "portfolio-item"
-     },
-     {
-       "component": "component",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         }
-       ],
-       "key": "component"
-     },
-     {
-       "component": "explainer",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "key": "bodytext",
-               "title": "Bodytext",
-               "type": "markdown"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "icon",
-                   "title": "Icon",
-                   "type": "string"
-                 },
-                 {
-                   "key": "icon_type",
-                   "multiple": false,
-                   "options": [
-                     {
-                       "text": "outline",
-                       "value": "outline"
-                     },
-                     {
-                       "text": "solid",
-                       "value": "solid"
-                     },
-                     {
-                       "text": "social",
-                       "value": "social"
-                     }
-                   ],
-                   "title": "Icon type",
-                   "type": "select"
-                 },
-                 {
-                   "key": "label",
-                   "title": "Label",
-                   "type": "string"
-                 },
-                 {
-                   "key": "link",
-                   "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
-                   "type": "string"
-                 }
-               ],
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "accordion"
-             },
-             {
-               "key": "icon",
-               "title": "Icon",
-               "type": "string"
-             },
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             }
-           ],
-           "key": "items",
-           "title": "Items",
-           "type": "accordion"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "explainer"
-     },
-     {
-       "component": "footer-simple",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "key": "position",
-           "title": "Position",
-           "type": "string"
-         }
-       ],
-       "key": "footer-simple"
      },
      {
        "component": "headerbanner-full",
@@ -1203,6 +1179,11 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -1317,6 +1298,11 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
@@ -1422,6 +1408,11 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -1536,12 +1527,129 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
          }
        ],
        "key": "headerbanner-standard"
+     },
+     {
+       "component": "inpage-banner",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "markdown"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "outline",
+                   "value": "outline"
+                 },
+                 {
+                   "text": "solid",
+                   "value": "solid"
+                 },
+                 {
+                   "text": "social",
+                   "value": "social"
+                 }
+               ],
+               "title": "Icon type",
+               "type": "select"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "key": "type",
+               "title": "Type",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "key": "inpage-banner"
      },
      {
        "component": "introbanner",
@@ -1648,12 +1756,512 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
          }
        ],
        "key": "introbanner"
+     },
+     {
+       "component": "footer-3-column",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "fields": [
+             {
+               "fields": [
+                 {
+                   "key": "identifier",
+                   "title": "Identifier",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "parent",
+                   "title": "Parent",
+                   "type": "string"
+                 },
+                 {
+                   "key": "url",
+                   "title": "Url",
+                   "type": "string"
+                 },
+                 {
+                   "key": "weight",
+                   "title": "Weight",
+                   "type": "number"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "menus",
+           "title": "Menus",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "social_icons",
+           "title": "Social icons",
+           "type": "accordion"
+         }
+       ],
+       "key": "footer-3-column"
+     },
+     {
+       "component": "footer-simple",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "position",
+           "title": "Position",
+           "type": "string"
+         }
+       ],
+       "key": "footer-simple"
+     },
+     {
+       "component": "contact-noform",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "fields": [
+             {
+               "key": "bodytext",
+               "title": "Bodytext",
+               "type": "string"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "icon_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "outline",
+                       "value": "outline"
+                     },
+                     {
+                       "text": "solid",
+                       "value": "solid"
+                     },
+                     {
+                       "text": "social",
+                       "value": "social"
+                     }
+                   ],
+                   "title": "Icon type",
+                   "type": "select"
+                 },
+                 {
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "outline",
+                   "value": "outline"
+                 },
+                 {
+                   "text": "solid",
+                   "value": "solid"
+                 },
+                 {
+                   "text": "social",
+                   "value": "social"
+                 }
+               ],
+               "title": "Icon type",
+               "type": "select"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "items",
+           "title": "Items",
+           "type": "accordion"
+         }
+       ],
+       "key": "contact-noform"
+     },
+     {
+       "component": "newsletter-big",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "key": "newsletter-big"
+     },
+     {
+       "component": "newsletter-simple",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "border_color",
+           "multiple": false,
+           "options": [
+             {
+               "text": "gun-metal",
+               "value": "gun-metal"
+             },
+             {
+               "text": "resolution-blue",
+               "value": "resolution-blue"
+             },
+             {
+               "text": "steal-teal",
+               "value": "steal-teal"
+             },
+             {
+               "text": "unbleached-silk",
+               "value": "unbleached-silk"
+             },
+             {
+               "text": "copper-rose",
+               "value": "copper-rose"
+             },
+             {
+               "text": "ghost-white",
+               "value": "ghost-white"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
+             }
+           ],
+           "title": "Border color",
+           "type": "select"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "key": "newsletter-simple"
      },
      {
        "component": "gallery-image-only",
@@ -1760,9 +2368,18 @@
            "type": "string"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "components",
+               "value": "components"
+             },
              {
                "text": "pages",
                "value": "pages"
@@ -1884,9 +2501,18 @@
            "type": "string"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "components",
+               "value": "components"
+             },
              {
                "text": "pages",
                "value": "pages"
@@ -2008,9 +2634,18 @@
            "type": "string"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "components",
+               "value": "components"
+             },
              {
                "text": "pages",
                "value": "pages"
@@ -2039,172 +2674,6 @@
          }
        ],
        "key": "list-articles-standard"
-     },
-     {
-       "component": "newsletter-big",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "markdown"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "newsletter-big"
-     },
-     {
-       "component": "inpage-banner",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "markdown"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "markdown"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "arrayTitle": true,
-               "key": "icon",
-               "title": "Icon",
-               "type": "string"
-             },
-             {
-               "key": "icon_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "outline",
-                   "value": "outline"
-                 },
-                 {
-                   "text": "solid",
-                   "value": "solid"
-                 },
-                 {
-                   "text": "social",
-                   "value": "social"
-                 }
-               ],
-               "title": "Icon type",
-               "type": "select"
-             },
-             {
-               "key": "label",
-               "title": "Label",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "string"
-             },
-             {
-               "key": "type",
-               "title": "Type",
-               "type": "string"
-             }
-           ],
-           "key": "buttons",
-           "title": "Buttons",
-           "type": "accordion"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "inpage-banner"
      },
      {
        "component": "listing-cards",
@@ -2301,9 +2770,18 @@
            "type": "string"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "components",
+               "value": "components"
+             },
              {
                "text": "pages",
                "value": "pages"
@@ -2319,266 +2797,6 @@
          }
        ],
        "key": "listing-cards"
-     },
-     {
-       "component": "cards-standard",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "markdown"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "key": "bodytext",
-               "title": "Bodytext",
-               "type": "markdown"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "icon",
-                   "title": "Icon",
-                   "type": "string"
-                 },
-                 {
-                   "key": "icon_type",
-                   "multiple": false,
-                   "options": [
-                     {
-                       "text": "outline",
-                       "value": "outline"
-                     },
-                     {
-                       "text": "solid",
-                       "value": "solid"
-                     },
-                     {
-                       "text": "social",
-                       "value": "social"
-                     }
-                   ],
-                   "title": "Icon type",
-                   "type": "select"
-                 },
-                 {
-                   "key": "label",
-                   "title": "Label",
-                   "type": "string"
-                 },
-                 {
-                   "key": "link",
-                   "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
-                   "type": "string"
-                 }
-               ],
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "accordion"
-             },
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             }
-           ],
-           "key": "items",
-           "title": "Items",
-           "type": "accordion"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "cards-standard"
-     },
-     {
-       "component": "image-cards",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "markdown"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "key": "bodytext",
-               "title": "Bodytext",
-               "type": "markdown"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "icon",
-                   "title": "Icon",
-                   "type": "string"
-                 },
-                 {
-                   "key": "icon_type",
-                   "multiple": false,
-                   "options": [
-                     {
-                       "text": "outline",
-                       "value": "outline"
-                     },
-                     {
-                       "text": "solid",
-                       "value": "solid"
-                     },
-                     {
-                       "text": "social",
-                       "value": "social"
-                     }
-                   ],
-                   "title": "Icon type",
-                   "type": "select"
-                 },
-                 {
-                   "key": "label",
-                   "title": "Label",
-                   "type": "string"
-                 },
-                 {
-                   "key": "link",
-                   "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
-                   "type": "string"
-                 }
-               ],
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "accordion"
-             },
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             }
-           ],
-           "key": "items",
-           "title": "Items",
-           "type": "accordion"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
-         }
-       ],
-       "key": "image-cards"
      },
      {
        "component": "navbar-collapsed",
@@ -2620,6 +2838,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -2717,6 +2940,11 @@
            "type": "nest"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "fields": [
              {
                "fields": [
@@ -2771,7 +2999,61 @@
        "key": "navbar-standard"
      },
      {
-       "component": "footer-3-column",
+       "component": "poster-standard",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         }
+       ],
+       "key": "poster-standard"
+     },
+     {
+       "component": "cards-standard",
        "fields": [
          {
            "key": "title",
@@ -2781,6 +3063,146 @@
          {
            "key": "subtitle",
            "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "fields": [
+             {
+               "key": "bodytext",
+               "title": "Bodytext",
+               "type": "markdown"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "icon_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "outline",
+                       "value": "outline"
+                     },
+                     {
+                       "text": "solid",
+                       "value": "solid"
+                     },
+                     {
+                       "text": "social",
+                       "value": "social"
+                     }
+                   ],
+                   "title": "Icon type",
+                   "type": "select"
+                 },
+                 {
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "items",
+           "title": "Items",
+           "type": "accordion"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "key": "cards-standard"
+     },
+     {
+       "component": "explainer",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
            "type": "string"
          },
          {
@@ -2817,61 +3239,203 @@
            "type": "nest"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "fields": [
+             {
+               "key": "bodytext",
+               "title": "Bodytext",
+               "type": "markdown"
+             },
              {
                "fields": [
                  {
-                   "key": "identifier",
-                   "title": "Identifier",
-                   "type": "string"
-                 },
-                 {
                    "arrayTitle": true,
-                   "key": "name",
-                   "title": "Name",
+                   "key": "icon",
+                   "title": "Icon",
                    "type": "string"
                  },
                  {
-                   "key": "parent",
-                   "title": "Parent",
+                   "key": "icon_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "outline",
+                       "value": "outline"
+                     },
+                     {
+                       "text": "solid",
+                       "value": "solid"
+                     },
+                     {
+                       "text": "social",
+                       "value": "social"
+                     }
+                   ],
+                   "title": "Icon type",
+                   "type": "select"
+                 },
+                 {
+                   "key": "label",
+                   "title": "Label",
                    "type": "string"
                  },
                  {
-                   "key": "url",
-                   "title": "Url",
+                   "key": "link",
+                   "title": "Link",
                    "type": "string"
                  },
                  {
-                   "key": "weight",
-                   "title": "Weight",
-                   "type": "number"
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
                  }
                ],
-               "key": "items",
-               "title": "Items",
+               "key": "buttons",
+               "title": "Buttons",
                "type": "accordion"
+             },
+             {
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "image",
+               "title": "Image",
+               "type": "string"
              },
              {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
                "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
              }
            ],
-           "key": "menus",
-           "title": "Menus",
+           "key": "items",
+           "title": "Items",
            "type": "accordion"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "key": "explainer"
+     },
+     {
+       "component": "image-cards",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
          },
          {
            "fields": [
              {
-               "key": "icon",
-               "title": "Icon",
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "fields": [
+             {
+               "key": "bodytext",
+               "title": "Bodytext",
+               "type": "markdown"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "icon",
+                   "title": "Icon",
+                   "type": "string"
+                 },
+                 {
+                   "key": "icon_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "outline",
+                       "value": "outline"
+                     },
+                     {
+                       "text": "solid",
+                       "value": "solid"
+                     },
+                     {
+                       "text": "social",
+                       "value": "social"
+                     }
+                   ],
+                   "title": "Icon type",
+                   "type": "select"
+                 },
+                 {
+                   "key": "label",
+                   "title": "Label",
+                   "type": "string"
+                 },
+                 {
+                   "key": "link",
+                   "title": "Link",
+                   "type": "string"
+                 },
+                 {
+                   "key": "type",
+                   "title": "Type",
+                   "type": "string"
+                 }
+               ],
+               "key": "buttons",
+               "title": "Buttons",
+               "type": "accordion"
+             },
+             {
+               "key": "image",
+               "title": "Image",
                "type": "string"
              },
              {
@@ -2886,12 +3450,17 @@
                "type": "string"
              }
            ],
-           "key": "social_icons",
-           "title": "Social icons",
+           "key": "items",
+           "title": "Items",
            "type": "accordion"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
          }
        ],
-       "key": "footer-3-column"
+       "key": "image-cards"
      },
      {
        "component": "showcase",
@@ -2943,6 +3512,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -3029,386 +3603,15 @@
        "key": "showcase"
      },
      {
-       "component": "newsletter-simple",
+       "component": "_index.md",
        "fields": [
          {
            "key": "title",
            "title": "Title",
            "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "markdown"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "key": "border_color",
-           "multiple": false,
-           "options": [
-             {
-               "text": "gun-metal",
-               "value": "gun-metal"
-             },
-             {
-               "text": "resolution-blue",
-               "value": "resolution-blue"
-             },
-             {
-               "text": "steal-teal",
-               "value": "steal-teal"
-             },
-             {
-               "text": "unbleached-silk",
-               "value": "unbleached-silk"
-             },
-             {
-               "text": "copper-rose",
-               "value": "copper-rose"
-             },
-             {
-               "text": "ghost-white",
-               "value": "ghost-white"
-             },
-             {
-               "text": "white",
-               "value": "white"
-             },
-             {
-               "text": "transparent",
-               "value": "transparent"
-             }
-           ],
-           "title": "Border color",
-           "type": "select"
-         },
-         {
-           "key": "summary",
-           "title": "Summary",
-           "type": "markdown"
          }
        ],
-       "key": "newsletter-simple"
-     },
-     {
-       "component": "contact-noform",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "string"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "key": "bodytext",
-               "title": "Bodytext",
-               "type": "string"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "icon",
-                   "title": "Icon",
-                   "type": "string"
-                 },
-                 {
-                   "key": "icon_type",
-                   "multiple": false,
-                   "options": [
-                     {
-                       "text": "outline",
-                       "value": "outline"
-                     },
-                     {
-                       "text": "solid",
-                       "value": "solid"
-                     },
-                     {
-                       "text": "social",
-                       "value": "social"
-                     }
-                   ],
-                   "title": "Icon type",
-                   "type": "select"
-                 },
-                 {
-                   "key": "label",
-                   "title": "Label",
-                   "type": "string"
-                 },
-                 {
-                   "key": "link",
-                   "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
-                   "type": "string"
-                 }
-               ],
-               "key": "buttons",
-               "title": "Buttons",
-               "type": "accordion"
-             },
-             {
-               "key": "icon",
-               "title": "Icon",
-               "type": "string"
-             },
-             {
-               "key": "icon_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "outline",
-                   "value": "outline"
-                 },
-                 {
-                   "text": "solid",
-                   "value": "solid"
-                 },
-                 {
-                   "text": "social",
-                   "value": "social"
-                 }
-               ],
-               "title": "Icon type",
-               "type": "select"
-             },
-             {
-               "key": "image",
-               "title": "Image",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "string"
-             },
-             {
-               "arrayTitle": true,
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "items",
-           "title": "Items",
-           "type": "accordion"
-         }
-       ],
-       "key": "contact-noform"
-     },
-     {
-       "component": "md-footer",
-       "fields": [
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "key": "subtitle",
-           "title": "Subtitle",
-           "type": "string"
-         },
-         {
-           "key": "image",
-           "title": "Image",
-           "type": "hidden"
-         },
-         {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
-           "fields": [
-             {
-               "fields": [
-                 {
-                   "key": "identifier",
-                   "title": "Identifier",
-                   "type": "string"
-                 },
-                 {
-                   "arrayTitle": true,
-                   "key": "name",
-                   "title": "Name",
-                   "type": "string"
-                 },
-                 {
-                   "key": "parent",
-                   "title": "Parent",
-                   "type": "string"
-                 },
-                 {
-                   "key": "url",
-                   "title": "Url",
-                   "type": "string"
-                 },
-                 {
-                   "key": "weight",
-                   "title": "Weight",
-                   "type": "number"
-                 }
-               ],
-               "key": "items",
-               "title": "Items",
-               "type": "accordion"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             },
-             {
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             }
-           ],
-           "key": "menus",
-           "title": "Menus",
-           "type": "accordion"
-         },
-         {
-           "fields": [
-             {
-               "key": "icon",
-               "title": "Icon",
-               "type": "string"
-             },
-             {
-               "key": "link",
-               "title": "Link",
-               "type": "markdown"
-             },
-             {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
-             }
-           ],
-           "key": "social_icons",
-           "title": "Social icons",
-           "type": "accordion"
-         },
-         {
-           "key": "textlogo",
-           "title": "Textlogo",
-           "type": "string"
-         }
-       ],
-       "key": "md-footer"
+       "key": "_index.md"
      },
      {
        "component": "headerbanner-poster",
@@ -3510,6 +3713,11 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
@@ -3521,6 +3729,144 @@
          }
        ],
        "key": "headerbanner-poster"
+     },
+     {
+       "component": "md-footer",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "hidden"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "fields": [
+             {
+               "fields": [
+                 {
+                   "key": "identifier",
+                   "title": "Identifier",
+                   "type": "string"
+                 },
+                 {
+                   "arrayTitle": true,
+                   "key": "name",
+                   "title": "Name",
+                   "type": "string"
+                 },
+                 {
+                   "key": "parent",
+                   "title": "Parent",
+                   "type": "string"
+                 },
+                 {
+                   "key": "url",
+                   "title": "Url",
+                   "type": "string"
+                 },
+                 {
+                   "key": "weight",
+                   "title": "Weight",
+                   "type": "number"
+                 }
+               ],
+               "key": "items",
+               "title": "Items",
+               "type": "accordion"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             }
+           ],
+           "key": "menus",
+           "title": "Menus",
+           "type": "accordion"
+         },
+         {
+           "fields": [
+             {
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "markdown"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "social_icons",
+           "title": "Social icons",
+           "type": "accordion"
+         },
+         {
+           "key": "textlogo",
+           "title": "Textlogo",
+           "type": "string"
+         }
+       ],
+       "key": "md-footer"
      },
      {
        "component": "md-navbar",
@@ -3572,6 +3918,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -3636,6 +3987,60 @@
          }
        ],
        "key": "md-navbar"
+     },
+     {
+       "component": "poster-standard",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         }
+       ],
+       "key": "poster-standard"
      }
    ],
    "serve": [
@@ -4900,32 +5305,12 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "poster-standard",
-                   "value": "poster-standard"
-                 },
-                 {
                    "text": "article-multi-column",
                    "value": "article-multi-column"
                  },
                  {
                    "text": "article-standard",
                    "value": "article-standard"
-                 },
-                 {
-                   "text": "portfolio-item",
-                   "value": "portfolio-item"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer-simple",
-                   "value": "footer-simple"
                  },
                  {
                    "text": "headerbanner-full",
@@ -4944,8 +5329,32 @@
                    "value": "headerbanner-standard"
                  },
                  {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
                    "text": "introbanner",
                    "value": "introbanner"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "contact-noform",
+                   "value": "contact-noform"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
                  },
                  {
                    "text": "gallery-image-only",
@@ -4960,24 +5369,8 @@
                    "value": "list-articles-standard"
                  },
                  {
-                   "text": "newsletter-big",
-                   "value": "newsletter-big"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
                    "text": "listing-cards",
                    "value": "listing-cards"
-                 },
-                 {
-                   "text": "cards-standard",
-                   "value": "cards-standard"
-                 },
-                 {
-                   "text": "image-cards",
-                   "value": "image-cards"
                  },
                  {
                    "text": "navbar-collapsed",
@@ -4988,32 +5381,44 @@
                    "value": "navbar-standard"
                  },
                  {
-                   "text": "footer-3-column",
-                   "value": "footer-3-column"
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
                  },
                  {
                    "text": "showcase",
                    "value": "showcase"
                  },
                  {
-                   "text": "newsletter-simple",
-                   "value": "newsletter-simple"
-                 },
-                 {
-                   "text": "contact-noform",
-                   "value": "contact-noform"
-                 },
-                 {
-                   "text": "md-footer",
-                   "value": "md-footer"
+                   "text": "_index.md",
+                   "value": "_indexmd"
                  },
                  {
                    "text": "headerbanner-poster",
                    "value": "headerbanner-poster"
                  },
                  {
+                   "text": "md-footer",
+                   "value": "md-footer"
+                 },
+                 {
                    "text": "md-navbar",
                    "value": "md-navbar"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
                  }
                ],
                "title": "Component",
@@ -5087,6 +5492,219 @@
        "dataformat": "yaml",
        "fields": [
          {
+           "content": "Relative link of this page: /components/",
+           "key": "info-s__components",
+           "theme": "gray-bare",
+           "title": "Info s components",
+           "type": "info"
+         },
+         {
+           "content": "2021-04-04T00:00:00Z",
+           "key": "lastmod",
+           "theme": "gray-bare",
+           "title": "Lastmod",
+           "type": "info"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "dynFormSearchKey": "component",
+           "fields": [
+             {
+               "key": "component",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "article-multi-column",
+                   "value": "article-multi-column"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "contact-noform",
+                   "value": "contact-noform"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "_index.md",
+                   "value": "_indexmd"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "md-footer",
+                   "value": "md-footer"
+                 },
+                 {
+                   "text": "md-navbar",
+                   "value": "md-navbar"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 }
+               ],
+               "title": "Component",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "page_related_images",
+           "path": "",
+           "title": "Page related images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "key": "author",
+           "title": "Author",
+           "type": "string"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "default": "now",
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "date"
+         }
+       ],
+       "file": "content/components/_index.md",
+       "key": "s__components",
+       "previewUrl": "/components/",
+       "title": "Components listpage"
+     },
+     {
+       "dataformat": "yaml",
+       "fields": [
+         {
            "content": "Relative link of this page: /contact/",
            "key": "info-s__contact",
            "theme": "gray-bare",
@@ -5106,32 +5724,12 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "poster-standard",
-                   "value": "poster-standard"
-                 },
-                 {
                    "text": "article-multi-column",
                    "value": "article-multi-column"
                  },
                  {
                    "text": "article-standard",
                    "value": "article-standard"
-                 },
-                 {
-                   "text": "portfolio-item",
-                   "value": "portfolio-item"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer-simple",
-                   "value": "footer-simple"
                  },
                  {
                    "text": "headerbanner-full",
@@ -5150,8 +5748,32 @@
                    "value": "headerbanner-standard"
                  },
                  {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
                    "text": "introbanner",
                    "value": "introbanner"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "contact-noform",
+                   "value": "contact-noform"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
                  },
                  {
                    "text": "gallery-image-only",
@@ -5166,24 +5788,8 @@
                    "value": "list-articles-standard"
                  },
                  {
-                   "text": "newsletter-big",
-                   "value": "newsletter-big"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
                    "text": "listing-cards",
                    "value": "listing-cards"
-                 },
-                 {
-                   "text": "cards-standard",
-                   "value": "cards-standard"
-                 },
-                 {
-                   "text": "image-cards",
-                   "value": "image-cards"
                  },
                  {
                    "text": "navbar-collapsed",
@@ -5194,32 +5800,44 @@
                    "value": "navbar-standard"
                  },
                  {
-                   "text": "footer-3-column",
-                   "value": "footer-3-column"
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
                  },
                  {
                    "text": "showcase",
                    "value": "showcase"
                  },
                  {
-                   "text": "newsletter-simple",
-                   "value": "newsletter-simple"
-                 },
-                 {
-                   "text": "contact-noform",
-                   "value": "contact-noform"
-                 },
-                 {
-                   "text": "md-footer",
-                   "value": "md-footer"
+                   "text": "_index.md",
+                   "value": "_indexmd"
                  },
                  {
                    "text": "headerbanner-poster",
                    "value": "headerbanner-poster"
                  },
                  {
+                   "text": "md-footer",
+                   "value": "md-footer"
+                 },
+                 {
                    "text": "md-navbar",
                    "value": "md-navbar"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
                  }
                ],
                "title": "Component",

@@ -1,4 +1,5 @@
 ---
+headless: true
 resources: []
 title: ->frompage
 poppy_type: poppy-article

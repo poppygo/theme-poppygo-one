@@ -1,4 +1,5 @@
 ---
+headless: true
 appearance:
   background_color: white
   item_background_color: white

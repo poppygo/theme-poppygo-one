@@ -1,4 +1,5 @@
 ---
+headless: true
 resources: []
 title: ''
 poppy_type: poppy-poster

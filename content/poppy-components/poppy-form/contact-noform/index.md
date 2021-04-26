@@ -1,4 +1,5 @@
 ---
+headless: true
 appearance:
   background_image: ->frompage
   background_color: white
