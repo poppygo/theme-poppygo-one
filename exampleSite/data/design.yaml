@@ -20,8 +20,8 @@ buttons:
     rounded: none
     size: lg
     text_color: gun-metal
-    text_outline_color: ghost-white
-    text_outline_width: ''
+    outline_color: ghost-white
+    outline_width: sm
     text_transform: uppercase
   - color: ghost-white
     font: menu
@@ -32,8 +32,8 @@ buttons:
     rounded: ''
     size: base
     text_color: resolution-blue
-    text_outline_color: ghost-white
-    text_outline_width: xs
+    outline_color: ghost-white
+    outline_width: sm
     text_transform: uppercase
   - color: none
     font: body
@@ -44,8 +44,8 @@ buttons:
     rounded: ''
     size: base
     text_color: gun-metal
-    text_outline_color: ghost-white
-    text_outline_width: xs
+    outline_color: ghost-white
+    outline_width: sm
     text_transform: uppercase
 colorscheme:
   poppy_color1:

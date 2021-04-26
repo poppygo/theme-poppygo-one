@@ -168,6 +168,20 @@ page_sections:
     name: footer
     subtitle: ''
     title: ''
+  - appearance:
+      background_color: ''
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    component: article-standard
+    image: ''
+    menus: []
+    name: ''
+    social_icons: []
+    subtitle: ''
+    textlogo: ''
+    title: ''
 publishdate: ''
 resources: []
 title: Homepage

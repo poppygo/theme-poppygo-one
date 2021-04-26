@@ -15,7 +15,8 @@
     "style-loader": "^0.19.0",
     "tailwindcss": "^2.0.3",
     "tailwindcss-multi-column": "^1.0.2",
-    "tailwindcss-text-fill-stroke": "^1.1.2"
+    "tailwindcss-text-fill-stroke": "^1.1.2",
+    "tailwindcss-writing-mode": "^1.0.0"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",

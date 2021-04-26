@@ -62,10 +62,17 @@
 
     {{- if $section_value }} {{- $override_debug_info = merge $override_debug_info (dict . true ) -}} {{- end -}}
 
-    {{- if (eq $override "none") -}}
+    {{- if eq $override "none" -}}
         {{/* Dont add to content */}}
+    {{- else if eq . "buttons" -}}
+        {{- if not $section_value -}}
+            {{/* Dont add to content */}}
+        {{- else -}}
+          {{- $content = merge $content (dict . $override ) -}}
+          {{- $content = merge $content (dict "body" $page_component.Content) -}}
+        {{- end -}}
     {{- else if reflect.IsSlice $section_value -}}
-        {{- if (eq (len $section_value) 0 ) -}}
+        {{- if or (eq (len $section_value) 0 ) -}}
           {{/* Dont add to content */}}
         {{- else -}}
           {{- $content = merge $content (dict . $override ) -}}

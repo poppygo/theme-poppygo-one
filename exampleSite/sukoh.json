@@ -54,43 +54,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -99,43 +64,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -164,43 +94,8 @@
                  },
                  {
                    "key": "background_color",
-                   "multiple": false,
-                   "options": [
-                     {
-                       "text": "gun-metal",
-                       "value": "gun-metal"
-                     },
-                     {
-                       "text": "resolution-blue",
-                       "value": "resolution-blue"
-                     },
-                     {
-                       "text": "steal-teal",
-                       "value": "steal-teal"
-                     },
-                     {
-                       "text": "unbleached-silk",
-                       "value": "unbleached-silk"
-                     },
-                     {
-                       "text": "copper-rose",
-                       "value": "copper-rose"
-                     },
-                     {
-                       "text": "ghost-white",
-                       "value": "ghost-white"
-                     },
-                     {
-                       "text": "white",
-                       "value": "white"
-                     },
-                     {
-                       "text": "transparent",
-                       "value": "transparent"
-                     }
-                   ],
                    "title": "Background color",
-                   "type": "select"
+                   "type": "string"
                  },
                  {
                    "key": "color",
@@ -244,31 +139,8 @@
                  },
                  {
                    "key": "font",
-                   "multiple": false,
-                   "options": [
-                     {
-                       "text": "display1",
-                       "value": "display1"
-                     },
-                     {
-                       "text": "body",
-                       "value": "body"
-                     },
-                     {
-                       "text": "menu",
-                       "value": "menu"
-                     },
-                     {
-                       "text": "art",
-                       "value": "art"
-                     },
-                     {
-                       "text": "display2",
-                       "value": "display2"
-                     }
-                   ],
                    "title": "Font",
-                   "type": "select"
+                   "type": "string"
                  },
                  {
                    "key": "font_weight",
@@ -550,6 +422,144 @@
            "type": "string"
          },
          {
+           "dynFormSearchKey": "component",
+           "fields": [
+             {
+               "key": "component",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "article-multi-column",
+                   "value": "article-multi-column"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "portfolio-item",
+                   "value": "portfolio-item"
+                 },
+                 {
+                   "text": "component",
+                   "value": "component"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 },
+                 {
+                   "text": "contact-noform",
+                   "value": "contact-noform"
+                 },
+                 {
+                   "text": "md-footer",
+                   "value": "md-footer"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "md-navbar",
+                   "value": "md-navbar"
+                 }
+               ],
+               "title": "Component",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
            "extensions": [
              "jpg",
              "png",
@@ -583,43 +593,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -628,43 +603,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -697,19 +637,13 @@
    "hugover": "extended_0.80.0",
    "menu": [
      {
-       "key": "singles",
+       "key": "poppygo",
        "menuItems": [
          {
-           "key": "s__contact"
-         },
-         {
-           "key": "s__homepage"
-         },
-         {
-           "key": "s__pages"
+           "key": "pogocms"
          }
        ],
-       "title": "Main pages"
+       "title": "PoppyGo"
      },
      {
        "key": "collections",
@@ -718,7 +652,7 @@
            "key": "c__pages"
          }
        ],
-       "title": "Detail pages"
+       "title": "collections"
      },
      {
        "key": "general",
@@ -734,9 +668,127 @@
          }
        ],
        "title": "Site settings"
+     },
+     {
+       "key": "singles",
+       "menuItems": [
+         {
+           "key": "s__contact"
+         },
+         {
+           "key": "s__homepage"
+         },
+         {
+           "key": "s__pages"
+         }
+       ],
+       "title": "Main pages"
      }
    ],
    "partials": [
+     {
+       "component": "poster-standard",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "string"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "test",
+           "title": "Test",
+           "type": "string"
+         }
+       ],
+       "key": "poster-standard"
+     },
+     {
+       "component": "article-multi-column",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         }
+       ],
+       "key": "article-multi-column"
+     },
      {
        "component": "article-standard",
        "fields": [
@@ -754,43 +806,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -799,43 +816,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -873,43 +855,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -918,43 +865,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -987,43 +899,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -1032,43 +909,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -1111,43 +953,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -1156,43 +963,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -1306,83 +1078,13 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "texture",
@@ -1425,43 +1127,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -1470,43 +1137,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -1529,23 +1161,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -1617,43 +1234,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -1667,43 +1249,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -1726,23 +1273,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -1814,43 +1346,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -1859,43 +1356,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "hidden"
              },
              {
                "key": "parallax",
@@ -1918,23 +1380,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -2011,43 +1458,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -2056,43 +1468,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -2115,23 +1492,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -2203,43 +1565,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -2248,43 +1575,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -2312,23 +1604,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -2400,43 +1677,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -2445,43 +1687,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -2594,43 +1801,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -2639,43 +1811,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -2698,23 +1835,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -2803,43 +1925,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -2848,43 +1935,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -2907,23 +1959,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -3025,43 +2062,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -3070,43 +2072,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -3154,43 +2121,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -3199,43 +2131,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -3326,43 +2223,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -3371,43 +2233,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "texture",
@@ -3425,23 +2252,8 @@
              {
                "arrayTitle": true,
                "key": "button_type",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "primary",
-                   "value": "primary"
-                 },
-                 {
-                   "text": "secondary",
-                   "value": "secondary"
-                 },
-                 {
-                   "text": "link",
-                   "value": "link"
-                 }
-               ],
                "title": "Button type",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "icon",
@@ -3525,43 +2337,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -3570,43 +2347,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -3725,43 +2467,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -3770,43 +2477,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -3920,43 +2592,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -3965,43 +2602,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -4085,43 +2687,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -4130,43 +2697,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -4255,43 +2787,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -4300,43 +2797,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -4453,43 +2915,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -4498,43 +2925,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -4658,43 +3050,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -4703,43 +3060,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -4756,6 +3078,46 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "border_color",
+           "multiple": false,
+           "options": [
+             {
+               "text": "gun-metal",
+               "value": "gun-metal"
+             },
+             {
+               "text": "resolution-blue",
+               "value": "resolution-blue"
+             },
+             {
+               "text": "steal-teal",
+               "value": "steal-teal"
+             },
+             {
+               "text": "unbleached-silk",
+               "value": "unbleached-silk"
+             },
+             {
+               "text": "copper-rose",
+               "value": "copper-rose"
+             },
+             {
+               "text": "ghost-white",
+               "value": "ghost-white"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
+             }
+           ],
+           "title": "Border color",
+           "type": "select"
          },
          {
            "key": "summary",
@@ -4782,43 +3144,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -4827,43 +3154,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -5007,43 +3299,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -5052,43 +3309,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -5189,6 +3411,118 @@
        "key": "md-footer"
      },
      {
+       "component": "headerbanner-poster",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "title": "Background color",
+               "type": "string"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "hidden"
+             },
+             {
+               "key": "item_background_color",
+               "title": "Item background color",
+               "type": "string"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "arrayTitle": true,
+               "key": "button_type",
+               "title": "Button type",
+               "type": "string"
+             },
+             {
+               "key": "icon",
+               "title": "Icon",
+               "type": "string"
+             },
+             {
+               "key": "icon_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "outline",
+                   "value": "outline"
+                 },
+                 {
+                   "text": "solid",
+                   "value": "solid"
+                 },
+                 {
+                   "text": "social",
+                   "value": "social"
+                 }
+               ],
+               "title": "Icon type",
+               "type": "select"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             }
+           ],
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "accordion"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         },
+         {
+           "key": "title2",
+           "title": "Title2",
+           "type": "string"
+         }
+       ],
+       "key": "headerbanner-poster"
+     },
+     {
        "component": "md-navbar",
        "fields": [
          {
@@ -5210,43 +3544,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "background_image",
@@ -5255,43 +3554,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "parallax",
@@ -5361,6 +3625,11 @@
            "type": "accordion"
          },
          {
+           "key": "social_icons",
+           "title": "Social icons",
+           "type": "chips"
+         },
+         {
            "key": "textlogo",
            "title": "Textlogo",
            "type": "string"
@@ -5423,31 +3692,8 @@
              },
              {
                "key": "font",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "display1",
-                   "value": "display1"
-                 },
-                 {
-                   "text": "body",
-                   "value": "body"
-                 },
-                 {
-                   "text": "menu",
-                   "value": "menu"
-                 },
-                 {
-                   "text": "art",
-                   "value": "art"
-                 },
-                 {
-                   "text": "display2",
-                   "value": "display2"
-                 }
-               ],
                "title": "Font",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "font_weight",
@@ -5698,43 +3944,8 @@
              },
              {
                "key": "text_outline_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Text outline color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "text_outline_width",
@@ -5894,43 +4105,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "border",
@@ -5989,43 +4165,8 @@
              },
              {
                "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Item background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "arrayTitle": true,
@@ -6177,43 +4318,8 @@
            "fields": [
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "container",
@@ -6350,43 +4456,8 @@
              },
              {
                "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Background color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "color",
@@ -6430,31 +4501,8 @@
              },
              {
                "key": "font",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "display1",
-                   "value": "display1"
-                 },
-                 {
-                   "text": "body",
-                   "value": "body"
-                 },
-                 {
-                   "text": "menu",
-                   "value": "menu"
-                 },
-                 {
-                   "text": "art",
-                   "value": "art"
-                 },
-                 {
-                   "text": "display2",
-                   "value": "display2"
-                 }
-               ],
                "title": "Font",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "font_weight",
@@ -6572,43 +4620,8 @@
              },
              {
                "key": "outline_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
-                 },
-                 {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
-                 },
-                 {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
-                 },
-                 {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
-                 },
-                 {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
-                 },
-                 {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
                "title": "Outline color",
-               "type": "select"
+               "type": "string"
              },
              {
                "key": "outline_width",
@@ -6887,6 +4900,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "article-multi-column",
+                   "value": "article-multi-column"
+                 },
+                 {
                    "text": "article-standard",
                    "value": "article-standard"
                  },
@@ -6985,6 +5006,10 @@
                  {
                    "text": "md-footer",
                    "value": "md-footer"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
                  },
                  {
                    "text": "md-navbar",
@@ -7081,6 +5106,14 @@
                "multiple": false,
                "options": [
                  {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "article-multi-column",
+                   "value": "article-multi-column"
+                 },
+                 {
                    "text": "article-standard",
                    "value": "article-standard"
                  },
@@ -7179,6 +5212,10 @@
                  {
                    "text": "md-footer",
                    "value": "md-footer"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
                  },
                  {
                    "text": "md-navbar",
@@ -7236,307 +5273,54 @@
        "title": "Contact"
      },
      {
-       "dataformat": "yaml",
+       "dataformat": "json",
        "fields": [
          {
-           "content": "Relative link of this page: /pages/",
-           "key": "info-s__pages",
-           "theme": "gray-bare",
-           "title": "Info s pages",
-           "type": "info"
-         },
-         {
-           "key": "title",
-           "title": "Title",
-           "type": "string"
-         },
-         {
-           "dynFormSearchKey": "component",
            "fields": [
              {
-               "key": "component",
-               "multiple": false,
-               "options": [
+               "key": "key",
+               "title": "Key",
+               "type": "readonly"
+             },
+             {
+               "fields": [
                  {
-                   "text": "article-standard",
-                   "value": "article-standard"
+                   "arrayTitle": true,
+                   "key": "key",
+                   "title": "Key",
+                   "type": "readonly"
                  },
                  {
-                   "text": "portfolio-item",
-                   "value": "portfolio-item"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer-simple",
-                   "value": "footer-simple"
-                 },
-                 {
-                   "text": "headerbanner-full",
-                   "value": "headerbanner-full"
-                 },
-                 {
-                   "text": "headerbanner-height",
-                   "value": "headerbanner-height"
-                 },
-                 {
-                   "text": "headerbanner-poster",
-                   "value": "headerbanner-poster"
-                 },
-                 {
-                   "text": "headerbanner-standard",
-                   "value": "headerbanner-standard"
-                 },
-                 {
-                   "text": "introbanner",
-                   "value": "introbanner"
-                 },
-                 {
-                   "text": "gallery-image-only",
-                   "value": "gallery-image-only"
-                 },
-                 {
-                   "text": "gallery-standard",
-                   "value": "gallery-standard"
-                 },
-                 {
-                   "text": "list-articles-standard",
-                   "value": "list-articles-standard"
-                 },
-                 {
-                   "text": "newsletter-big",
-                   "value": "newsletter-big"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
-                   "text": "listing-cards",
-                   "value": "listing-cards"
-                 },
-                 {
-                   "text": "cards-standard",
-                   "value": "cards-standard"
-                 },
-                 {
-                   "text": "image-cards",
-                   "value": "image-cards"
-                 },
-                 {
-                   "text": "navbar-collapsed",
-                   "value": "navbar-collapsed"
-                 },
-                 {
-                   "text": "navbar-standard",
-                   "value": "navbar-standard"
-                 },
-                 {
-                   "text": "footer-3-column",
-                   "value": "footer-3-column"
-                 },
-                 {
-                   "text": "showcase",
-                   "value": "showcase"
-                 },
-                 {
-                   "text": "newsletter-simple",
-                   "value": "newsletter-simple"
-                 },
-                 {
-                   "text": "contact-noform",
-                   "value": "contact-noform"
-                 },
-                 {
-                   "text": "md-footer",
-                   "value": "md-footer"
-                 },
-                 {
-                   "text": "md-navbar",
-                   "value": "md-navbar"
+                   "key": "visible",
+                   "title": "Visible",
+                   "type": "boolean"
                  }
                ],
-               "title": "Component",
-               "type": "select"
+               "key": "menuItems",
+               "title": "Menu items",
+               "type": "accordion"
              },
              {
                "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
+               "key": "title",
+               "title": "Title",
                "type": "string"
-             }
-           ],
-           "key": "page_sections",
-           "title": "Page sections",
-           "type": "accordion"
-         },
-         {
-           "dynFormSearchKey": "component",
-           "fields": [
-             {
-               "key": "component",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "article-standard",
-                   "value": "article-standard"
-                 },
-                 {
-                   "text": "portfolio-item",
-                   "value": "portfolio-item"
-                 },
-                 {
-                   "text": "component",
-                   "value": "component"
-                 },
-                 {
-                   "text": "explainer",
-                   "value": "explainer"
-                 },
-                 {
-                   "text": "footer-simple",
-                   "value": "footer-simple"
-                 },
-                 {
-                   "text": "headerbanner-full",
-                   "value": "headerbanner-full"
-                 },
-                 {
-                   "text": "headerbanner-height",
-                   "value": "headerbanner-height"
-                 },
-                 {
-                   "text": "headerbanner-poster",
-                   "value": "headerbanner-poster"
-                 },
-                 {
-                   "text": "headerbanner-standard",
-                   "value": "headerbanner-standard"
-                 },
-                 {
-                   "text": "introbanner",
-                   "value": "introbanner"
-                 },
-                 {
-                   "text": "gallery-image-only",
-                   "value": "gallery-image-only"
-                 },
-                 {
-                   "text": "gallery-standard",
-                   "value": "gallery-standard"
-                 },
-                 {
-                   "text": "list-articles-standard",
-                   "value": "list-articles-standard"
-                 },
-                 {
-                   "text": "newsletter-big",
-                   "value": "newsletter-big"
-                 },
-                 {
-                   "text": "inpage-banner",
-                   "value": "inpage-banner"
-                 },
-                 {
-                   "text": "listing-cards",
-                   "value": "listing-cards"
-                 },
-                 {
-                   "text": "cards-standard",
-                   "value": "cards-standard"
-                 },
-                 {
-                   "text": "image-cards",
-                   "value": "image-cards"
-                 },
-                 {
-                   "text": "navbar-collapsed",
-                   "value": "navbar-collapsed"
-                 },
-                 {
-                   "text": "navbar-standard",
-                   "value": "navbar-standard"
-                 },
-                 {
-                   "text": "footer-3-column",
-                   "value": "footer-3-column"
-                 },
-                 {
-                   "text": "showcase",
-                   "value": "showcase"
-                 },
-                 {
-                   "text": "newsletter-simple",
-                   "value": "newsletter-simple"
-                 },
-                 {
-                   "text": "contact-noform",
-                   "value": "contact-noform"
-                 },
-                 {
-                   "text": "md-footer",
-                   "value": "md-footer"
-                 },
-                 {
-                   "text": "md-navbar",
-                   "value": "md-navbar"
-                 }
-               ],
-               "title": "Component",
-               "type": "select"
              },
              {
-               "arrayTitle": true,
-               "key": "name",
-               "title": "Name",
-               "type": "string"
+               "key": "visible",
+               "title": "Visible",
+               "type": "boolean"
              }
            ],
-           "key": "subpage_sections",
-           "title": "Subpage sections",
+           "key": "menu",
+           "title": "Menu",
            "type": "accordion"
-         },
-         {
-           "extensions": [
-             "jpg",
-             "png",
-             "jpeg",
-             "pdf",
-             "svg"
-           ],
-           "fields": [
-             {
-               "key": "thumb",
-               "title": "Thumb",
-               "type": "bundle-image-thumbnail"
-             }
-           ],
-           "key": "page_related_images",
-           "path": "",
-           "title": "Page related images",
-           "type": "bundle-manager"
-         },
-         {
-           "key": "mainContent",
-           "title": "Main content",
-           "type": "markdown"
-         },
-         {
-           "key": "draft",
-           "title": "Draft",
-           "type": "boolean"
          }
        ],
-       "file": "content/pages/_index.md",
-       "key": "s__pages",
-       "previewUrl": "/pages/",
-       "title": "Pages listpage"
+       "file": "/zpogomenu.json",
+       "key": "pogocms",
+       "previewUrl": "/",
+       "title": "CMS"
      }
    ]
  }

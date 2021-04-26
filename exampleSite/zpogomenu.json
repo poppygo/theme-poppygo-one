@@ -1,0 +1,64 @@
+{
+   "menu": [
+     {
+       "key": "poppygo",
+       "menuItems": [
+         {
+           "key": "pogocms",
+           "visible": true
+         }
+       ],
+       "title": "PoppyGo",
+       "visible": true
+     },
+     {
+       "key": "collections",
+       "menuItems": [
+         {
+           "key": "c__pages",
+           "visible": true
+         }
+       ],
+       "title": "collections",
+       "visible": true
+     },
+     {
+       "key": "general",
+       "menuItems": [
+         {
+           "key": "ds_data_design",
+           "visible": true
+         },
+         {
+           "key": "config",
+           "visible": true
+         },
+         {
+           "key": "c__my-components",
+           "visible": true
+         }
+       ],
+       "title": "Site settings",
+       "visible": true
+     },
+     {
+       "key": "singles",
+       "menuItems": [
+         {
+           "key": "s__contact",
+           "visible": true
+         },
+         {
+           "key": "s__homepage",
+           "visible": true
+         },
+         {
+           "key": "s__pages",
+           "visible": true
+         }
+       ],
+       "title": "Main pages",
+       "visible": true
+     }
+   ]
+ }

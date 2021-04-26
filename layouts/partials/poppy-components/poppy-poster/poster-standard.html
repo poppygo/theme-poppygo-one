@@ -1,32 +1,38 @@
 {{- $page := .page -}}
 {{- $content := .content -}}
 {{- $design := .design -}}
-
 {{- $cells := partial "poppy-engine/markdown_to_cells" (dict "content" $page.Content) -}}
 
 {{- with $design -}}
-  <div class="{{.vertical_space}} {{.gridgap}} w-full grid grid-cols-9 grid-flow-row-dense">
-
+  <div class="{{.vertical_space}} w-full grid grid-cols-4 md:grid-cols-7 grid-flow-row min-h-screen">
     {{- range $cells -}}
-    {{- $span := "" -}}
-    {{- $rotate := "" -}}
-      {{- if in . "<h3" -}}
-        {{- $span = "col-span-3" -}}
+      {{- $class := "" -}}
+      {{- $type := "" -}}
+      {{- if in . "<h1" -}}
+        {{- $class = "p-2 flex items-center max-h-screen" -}}
+        {{- $type = $design.h1 }}
       {{- end -}}
       {{- if in . "<h2" -}}
-        {{- $rotate = "transform -rotate-90" -}}
-        {{- $span = "col-span-2 row-span-2"}}
+        {{- $class = "p-2 flex items-center max-h-screen"}}
+        {{- $type = $design.h2 }}
+      {{- end -}}
+      {{- if in . "<h3" -}}
+        {{- $class = "col-span-3 p-2 flex items-center"}}
+        {{- $type = $design.h3 }}
+      {{- end -}}
+      {{- if in . "<h4" -}}
+        {{- $class = "col-span-3 row-span-1 p-2"}}
+        {{- $type = "prose" }}
       {{- end -}}
       {{- if in . "<img" -}}
-        {{- $span = "col-span-4 row-span-4"}}
+        {{- $class = "col-span-3 row-span-2"}}
       {{- end -}}
       {{- if in . "<p" -}}
-        {{- $span = "col-span-2 row-span-1"}}
+        {{- $class = "col-span-3 row-span-1 p-2 "}}
+        {{- $type = "prose"}}
       {{- end -}}
-      <div class = "prose {{$span}}">
-        <div class = "{{$rotate}}">
-          {{- . | safeHTML  -}}
-        </div>
+      <div class = "{{$class}} {{$type}} w-full h-full ">
+            {{- . | safeHTML  -}}
       </div>
     {{- end -}}
   </div>

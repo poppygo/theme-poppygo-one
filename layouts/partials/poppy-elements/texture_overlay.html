@@ -5,11 +5,24 @@
 
 {{- $css_class := .css_class -}}
 {{- if .bg_image -}}
+  {{ $bg_image := .bg_image}}
   {{- $image_path := printf "images/*%s*" .bg_image -}}
   {{- if or .page.IsHome .page.IsSection -}}
       {{- $image_path = printf "*%s*" .bg_image -}}
   {{- end }}
   {{- $image := (.page.Resources.ByType "image").GetMatch $image_path -}}
+
+  {{- if not $image -}}
+    {{ with .page.Parent}}
+      {{- $image = (.Resources.ByType "image").GetMatch (printf "*%s*" $bg_image) -}}
+      {{- if not $image -}}
+        {{- with .Parent -}}
+          {{- $image = (.Resources.ByType "image").GetMatch (printf "*%s*" $bg_image) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
   {{- with $image -}}
     {{- $filename := path.Base .Name -}}
     {{- if eq (path.Ext $filename) ".webp" -}}

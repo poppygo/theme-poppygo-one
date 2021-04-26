@@ -19631,6 +19631,21 @@ video {
        column-span: all;
 }
 
+.writing-mode-horizontal {
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
+}
+
+.writing-mode-vertical {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
+.writing-mode-vertical-lr {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -38631,6 +38646,21 @@ video {
   .sm\:col-span-all {
     -moz-column-span: all;
          column-span: all;
+  }
+
+  .sm\:writing-mode-horizontal {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+  }
+
+  .sm\:writing-mode-vertical {
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+
+  .sm\:writing-mode-vertical-lr {
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
   }
 }
 
@@ -57635,6 +57665,21 @@ video {
     -moz-column-span: all;
          column-span: all;
   }
+
+  .md\:writing-mode-horizontal {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+  }
+
+  .md\:writing-mode-vertical {
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+
+  .md\:writing-mode-vertical-lr {
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -76637,6 +76682,21 @@ video {
   .lg\:col-span-all {
     -moz-column-span: all;
          column-span: all;
+  }
+
+  .lg\:writing-mode-horizontal {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+  }
+
+  .lg\:writing-mode-vertical {
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+
+  .lg\:writing-mode-vertical-lr {
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
   }
 }
 
@@ -95641,6 +95701,21 @@ video {
     -moz-column-span: all;
          column-span: all;
   }
+
+  .xl\:writing-mode-horizontal {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+  }
+
+  .xl\:writing-mode-vertical {
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+
+  .xl\:writing-mode-vertical-lr {
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -114643,5 +114718,20 @@ video {
   .\32xl\:col-span-all {
     -moz-column-span: all;
          column-span: all;
+  }
+
+  .\32xl\:writing-mode-horizontal {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+  }
+
+  .\32xl\:writing-mode-vertical {
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+  }
+
+  .\32xl\:writing-mode-vertical-lr {
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
   }
 }
