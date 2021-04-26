@@ -2,7 +2,7 @@
 draft: false
 page_sections:
   - appearance:
-      background_color: ghost-white
+      background_color: isabelline
       background_image: ''
       item_background_color: white
       parallax: true
@@ -73,7 +73,7 @@ page_sections:
     subtitle: none
     title: ~ Je bent van harte welkom ~
   - appearance:
-      background_color: unbleached-silk
+      background_color: liver-chestnut
       background_image: ''
       item_background_color: ''
       parallax: false

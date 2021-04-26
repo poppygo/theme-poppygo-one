@@ -1,5 +1,5 @@
 buttons:
-  - color: gun-metal
+  - color: erie-black
     font: art
     font_weight: normal
     icon: information-circle
@@ -7,11 +7,11 @@ buttons:
     name: primary
     rounded: none
     size: lg
-    text_color: resolution-blue
-    text_outline_color: ghost-white
+    text_color: bright-navy-blue
+    text_outline_color: isabelline
     text_outline_width: ''
     text_transform: uppercase
-  - color: resolution-blue
+  - color: bright-navy-blue
     font: art
     font_weight: normal
     icon: information-circle
@@ -19,11 +19,11 @@ buttons:
     name: itembutton
     rounded: none
     size: lg
-    text_color: gun-metal
-    outline_color: ghost-white
+    text_color: erie-black
+    outline_color: isabelline
     outline_width: sm
     text_transform: uppercase
-  - color: ghost-white
+  - color: isabelline
     font: menu
     font_weight: ''
     icon: ''
@@ -31,8 +31,8 @@ buttons:
     name: secondary
     rounded: ''
     size: base
-    text_color: resolution-blue
-    outline_color: ghost-white
+    text_color: bright-navy-blue
+    outline_color: isabelline
     outline_width: sm
     text_transform: uppercase
   - color: none
@@ -43,33 +43,33 @@ buttons:
     name: link
     rounded: ''
     size: base
-    text_color: gun-metal
-    outline_color: ghost-white
+    text_color: erie-black
+    outline_color: isabelline
     outline_width: sm
     text_transform: uppercase
 colorscheme:
   poppy_color1:
     colorcode: '#1b1b1b'
-    name: gun-metal
+    name: erie-black
   poppy_color2:
     colorcode: '#4379c0'
-    name: resolution-blue
+    name: bright-navy-blue
   poppy_color3:
-    colorcode: '#6A8D92'
-    name: steal-teal
+    colorcode: '#54514D'
+    name: davys-grey
   poppy_color4:
-    colorcode: '#F6D8CC'
-    name: unbleached-silk
+    colorcode: '#91785D'
+    name: liver-chestnut
   poppy_color5:
-    colorcode: '#9B6A6C'
-    name: copper-rose
+    colorcode: '#B98389'
+    name: old-rose
   poppy_color6:
-    colorcode: '#fdfdfd'
-    name: ghost-white
+    colorcode: '#F5F1ED'
+    name: isabelline
 components:
-  - background_color: ghost-white
+  - background_color: isabelline
     border: none
-    border_color: resolution-blue
+    border_color: bright-navy-blue
     border_opacity: 30
     gridgap: 10
     item_background_color: white
@@ -89,7 +89,7 @@ fontscheme:
   - family: Domine
     name: display2
 site:
-  background_color: resolution-blue
+  background_color: bright-navy-blue
   container: true
   container_padding:
     2xl: 0rem
@@ -109,18 +109,18 @@ typographies:
     font_weight: bold
     line_height: none
     name: title
-    outline_color: ghost-white
+    outline_color: isabelline
     outline_width: sm
     size: 8xl
     transform: uppercase
   - align: ''
     background_color: none
-    color: gun-metal
+    color: erie-black
     font: body
     font_weight: normal
     line_height: relaxed
     name: body
-    outline_color: gun-metal
+    outline_color: erie-black
     outline_width: '2'
     size: base
     transform: ''
@@ -131,13 +131,13 @@ typographies:
     font_weight: medium
     line_height: ''
     name: subtitle
-    outline_color: gun-metal
+    outline_color: erie-black
     outline_width: '2'
     size: lg
     transform: ''
   - align: ''
-    background_color: gun-metal
-    color: resolution-blue
+    background_color: erie-black
+    color: bright-navy-blue
     font: menu
     font_weight: normal
     line_height: ''
@@ -147,35 +147,35 @@ typographies:
     size: 2xl
     transform: ''
   - align: left
-    background_color: gun-metal
-    color: resolution-blue
+    background_color: erie-black
+    color: bright-navy-blue
     font: art
     font_weight: black
     line_height: ''
     name: itemtitle
-    outline_color: ghost-white
+    outline_color: isabelline
     outline_width: ''
     size: xl
     transform: uppercase
   - align: left
     background_color: transparent
-    color: gun-metal
+    color: erie-black
     font: display1
     font_weight: normal
     line_height: ''
     name: itemsubtitle
-    outline_color: gun-metal
+    outline_color: erie-black
     outline_width: '2'
     size: 2xl
     transform: ''
   - align: left
     background_color: transparent
-    color: ghost-white
+    color: isabelline
     font: body
     font_weight: medium
     line_height: loose
     name: itembody
-    outline_color: gun-metal
+    outline_color: erie-black
     outline_width: '2'
     size: base
     transform: ''
@@ -186,7 +186,7 @@ typographies:
     font_weight: bold
     line_height: ''
     name: logo
-    outline_color: ghost-white
+    outline_color: isabelline
     outline_width: xs
     size: 3xl
     transform: uppercase

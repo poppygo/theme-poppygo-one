@@ -3,7 +3,6 @@ author: PoppyGo
 date: '2021-04-04'
 draft: false
 lastmod: ''
-mainContent: ''
 page_sections:
   - appearance:
       background_color: ''
@@ -17,7 +16,7 @@ page_sections:
     subtitle: ''
     title: ''
   - appearance:
-      background_color: resolution-blue
+      background_color: bright-navy-blue
       background_image: none
       item_background_color: white
       parallax: false
@@ -31,7 +30,7 @@ page_sections:
     title: Universal
     title2: fully flexible
   - appearance:
-      background_color: resolution-blue
+      background_color: bright-navy-blue
       background_image: tub
       item_background_color: white
       parallax: false
@@ -44,9 +43,9 @@ page_sections:
     subtitle: none
     title: none
   - appearance:
-      background_color: resolution-blue
+      background_color: bright-navy-blue
       background_image: none
-      item_background_color: gun-metal
+      item_background_color: erie-black
       parallax: false
       texture: grain3
     bodytext: ''
@@ -95,7 +94,7 @@ page_sections:
     subtitle: none
     title: Flexible Hugo theme for graphic lovers
   - appearance:
-      background_color: gun-metal
+      background_color: erie-black
       background_image: ''
       item_background_color: ''
       parallax: false
@@ -111,7 +110,7 @@ page_sections:
     textlogo: ''
     title: 'Components '
   - appearance:
-      background_color: ghost-white
+      background_color: isabelline
       background_image: none
       item_background_color: ''
       parallax: false
@@ -126,9 +125,9 @@ page_sections:
       Moed is weerstand tegen angst, beheersing van angst, niet afwezigheid van
       angst
   - appearance:
-      background_color: gun-metal
+      background_color: erie-black
       background_image: none
-      item_background_color: resolution-blue
+      item_background_color: bright-navy-blue
       parallax: false
       texture: grain
     bodytext: >-

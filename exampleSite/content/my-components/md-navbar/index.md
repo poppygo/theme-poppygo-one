@@ -3,7 +3,7 @@ headless: true
 appearance:
   background_color: transparent
   background_image: ''
-  item_background_color: resolution-blue
+  item_background_color: bright-navy-blue
   parallax: false
   texture: grain
 design:

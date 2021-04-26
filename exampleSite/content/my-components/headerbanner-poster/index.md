@@ -1,7 +1,7 @@
 ---
 headless: false
 appearance:
-  background_color: resolution-blue
+  background_color: bright-navy-blue
   item_background_color: white
   background_image:
   texture: 'grain'
@@ -31,7 +31,7 @@ design:
   typographies:
     - align: left
       background_color: transparent
-      color: ghost-white
+      color: isabelline
       font: display1
       font_weight: bold
       name: titlelight
@@ -42,7 +42,7 @@ design:
       outline_width: ''
     - align: left
       background_color: transparent
-      color: gun-metal
+      color: erie-black
       font: display1
       font_weight: bold
       name: titledark
@@ -59,7 +59,7 @@ design:
       name: titleoutline
       size: 7xl
       transform: uppercase
-      outline_color: ghost-white
+      outline_color: isabelline
       outline_width: sm
     - align: center
       background_color: transparent

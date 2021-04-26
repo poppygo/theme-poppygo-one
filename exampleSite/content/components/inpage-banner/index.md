@@ -1,10 +1,4 @@
 ---
-appearance:
-  background_color: ''
-  background_image: par
-  item_background_color: ''
-  parallax: false
-  texture: ''
 draft: false
 image: par
 page_sections:
@@ -35,7 +29,7 @@ page_sections:
     title: Dit is de titel
     title2: '->frompage'
   - appearance:
-      background_color: resolution-blue
+      background_color: bright-navy-blue
       background_image: '->frompage'
       height: 30
       item_background_color: ''
@@ -50,7 +44,7 @@ page_sections:
     textlogo: ''
     title: none
   - appearance:
-      background_color: copper-rose
+      background_color: old-rose
       background_image: none
       item_background_color: transparent
       parallax: false

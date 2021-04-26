@@ -1,10 +1,4 @@
 ---
-appearance:
-  background_color: resolution-blue
-  background_image: cansado
-  item_background_color: ghost-white
-  parallax: false
-  texture: grain
 draft: false
 image: none
 page_sections:
@@ -32,27 +26,28 @@ page_sections:
     image: none
     name: banner
     subtitle: '->frompage'
-    title: Dit is de titel
-    title2: '->frompage'
+    title: '->frompage'
+    title2: max control
   - appearance:
-      background_color: resolution-blue
-      background_image: '->frompage'
-      height: 30
+      background_color: erie-black
+      background_image: none
+      height: 20
       item_background_color: ''
       parallax: false
-      texture: grain
+      texture: ''
     component: headerbanner-height
+    headless: false
     image: none
     menus: []
-    name: banner
+    name: Bar
     social_icons: []
     subtitle: none
     textlogo: ''
     title: none
   - appearance:
-      background_color: ghost-white
+      background_color: davys-grey
       background_image: none
-      item_background_color: transparent
+      item_background_color: liver-chestnut
       parallax: false
       texture: grain3
     bodytext: ''
@@ -81,9 +76,9 @@ title: Customisable
 
 ---
 
-##  EEN Begeleiding & inspiratie
 
-### Rebelle moet zo naar school
+ ##  How to modify
+{{< image uten >}}
 
 #### paragraaf 1
 sgodfkjgslkdfjg
@@ -93,28 +88,23 @@ dfgksdjfklgjsd
 fgsd
 fg
 
-#### TWEE Deze dienst is de favoriet van veel van mijn klanten, 
+#### Paragraaf 2
 want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.
 
-### Rebelle moet zo naar school
+### Control lay-out, design and content without a single line of code
 
-#### Pim ook
+#### Paragraaf 3
 sdfgsdfg
 sdf
 gs
 dfg
 sdfg
 sdfgsdfgsdfg
-
-spasea
-
-
-asd
+spaseaasd
 
 {{< image socket >}}
-### Rebelle moet zo naar school
 
-#### VIER Na een aantal sessies 
+#### VIER Na een aantal sessies
 zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
 Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
 
@@ -126,5 +116,5 @@ Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen di
 Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
 Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
 
-#### ZES 
+#### ZES
 Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.

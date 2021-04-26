@@ -1,7 +1,7 @@
 ---
 headless: true
 appearance:
-  background_color: resolution-blue
+  background_color: bright-navy-blue
   background_image: ''
   item_background_color: transparent
   parallax: false
@@ -10,7 +10,7 @@ design:
   typographies:
     - align: left
       background_color: none
-      color: ghost-white
+      color: isabelline
       font: display1
       font_weight: normal
       name: title
@@ -18,7 +18,7 @@ design:
       transform: ''
     - align: left
       background_color: none
-      color: gun-metal
+      color: erie-black
       font: display1
       font_weight: normal
       name: subtitle
@@ -26,7 +26,7 @@ design:
       transform: ''
     - align: left
       background_color: none
-      color: ghost-white
+      color: isabelline
       font: body
       font_weight: thin
       name: body
@@ -34,7 +34,7 @@ design:
       transform: ''
     - align: left
       background_color: none
-      color: ghost-white
+      color: isabelline
       font: body
       font_weight: thin
       name: menu

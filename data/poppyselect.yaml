@@ -128,3 +128,7 @@ line_height:
   - "normal"
   - "relaxed"
   - "loose"
+align:
+  - center
+  - left
+  - right

@@ -1,10 +1,4 @@
 ---
-appearance:
-  background_color: ''
-  background_image: cristian
-  item_background_color: ''
-  texture: ''
-  parallax: false
 draft: false
 image: over
 title: Over Mind Dive
@@ -36,7 +30,7 @@ page_sections:
     title: Dit is de titel
     title2: '->frompage'
   - appearance:
-      background_color: resolution-blue
+      background_color: bright-navy-blue
       background_image: '->frompage'
       height: 30
       item_background_color: ''
@@ -51,7 +45,7 @@ page_sections:
     textlogo: ''
     title: none
   - appearance:
-      background_color: copper-rose
+      background_color: old-rose
       background_image: none
       item_background_color: transparent
       parallax: false

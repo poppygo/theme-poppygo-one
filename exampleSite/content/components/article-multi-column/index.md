@@ -1,10 +1,4 @@
 ---
-appearance:
-  background_color: ''
-  background_image: nlp
-  item_background_color: ''
-  parallax: ''
-  texture: ''
 draft: false
 image: nlp
 page_sections:
@@ -35,7 +29,7 @@ page_sections:
     title: '->frompage'
     title2: none
   - appearance:
-      background_color: ghost-white
+      background_color: isabelline
       background_image: none
       item_background_color: transparent
       parallax: false
@@ -74,5 +68,3 @@ This component takes the main page content and presents it for reading purposes.
 Like all components, you can customize the appearance, setting background color, background image, overlay texture, parallax effect and item background color.
 
 Because it presents the Main Content, you can use markdown with our shortcodes to present your content as you like.
-
-

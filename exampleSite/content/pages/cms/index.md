@@ -1,10 +1,4 @@
 ---
-appearance:
-  background_color: ''
-  background_image: nlp
-  item_background_color: ''
-  parallax: ''
-  texture: ''
 draft: false
 image: nlp
 page_sections:
@@ -35,22 +29,7 @@ page_sections:
     title: Dit is de titel
     title2: '->frompage'
   - appearance:
-      background_color: resolution-blue
-      background_image: '->frompage'
-      height: 30
-      item_background_color: ''
-      parallax: false
-      texture: grain
-    component: headerbanner-height
-    image: none
-    menus: []
-    name: banner
-    social_icons: []
-    subtitle: none
-    textlogo: ''
-    title: none
-  - appearance:
-      background_color: copper-rose
+      background_color: old-rose
       background_image: none
       item_background_color: transparent
       parallax: false

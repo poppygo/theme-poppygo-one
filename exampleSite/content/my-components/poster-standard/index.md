@@ -1,52 +1,66 @@
 ---
-headless: true
-resources: []
-title: ''
-poppy_type: poppy-poster
-poppy_variant: poster-standard
-image: ''
 appearance:
-  background_image: gun-metal
   background_color: ''
+  background_image: erie-black
   item_background_color: ''
-  texture: ''
   parallax: ''
+  texture: ''
+buttons: []
 design:
   typographies:
     - align: left
-      background_color: copper-rose
+      background_color: old-rose
+      cell_height: 6
+      cell_width: 1
       color: transparent
+      direction: vertical
       font: art
       font_weight: bold
       name: h1
-      size: 7xl
-      transform: ''
-      direction: vertical
-      outline_color: ghost-white
+      outline_color: isabelline
       outline_width: sm
-      cell_width: 1
-      cell_height: 6
+      size: 7xl
+      space: 0
+      transform: ''
     - align: left
-      background_color: copper-rose
+      background_color: davys-grey
+      cell_height: 6
+      cell_width: 1
       color: transparent
+      direction: vertical
       font: art
       font_weight: normal
       name: h2
-      size: 6xl
-      transform: uppercase
-      outline_color: ghost-white
+      outline_color: isabelline
       outline_width: sm
-      direction: vertical
-      cell_width: 1
-      cell_height: 6
+      size: 6xl
+      space: 0
+      transform: uppercase
     - align: center
-      background_color: resolution-blue
-      color: ghost-white
+      background_color: bright-navy-blue
+      cell_height: 1
+      cell_width: 6
+      color: isabelline
       font: display2
       font_weight: normal
       name: h3
+      outline_color: ''
+      outline_width: ''
       size: 4xl
+      space: 0
       transform: ''
-      cell_width: 6
-      cell_height: 1
+draft: false
+headless: true
+image: ''
+mainContent: ''
+name: ''
+poppy_type: poppy-poster
+poppy_variant: poster-standard
+resources: []
+subtitle: ''
+summary: ''
+title: ''
+title2: ''
+
 ---
+

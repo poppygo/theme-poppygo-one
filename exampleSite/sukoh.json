@@ -220,39 +220,6 @@
            "type": "markdown"
          },
          {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
            "key": "draft",
            "title": "Draft",
            "type": "boolean"
@@ -311,8 +278,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -321,8 +323,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -394,41 +431,91 @@
                "fields": [
                  {
                    "key": "align",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "center",
+                       "value": "center"
+                     },
+                     {
+                       "text": "left",
+                       "value": "left"
+                     },
+                     {
+                       "text": "right",
+                       "value": "right"
+                     }
+                   ],
                    "title": "Align",
-                   "type": "string"
+                   "type": "select"
                  },
                  {
                    "key": "background_color",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "erie-black",
+                       "value": "erie-black"
+                     },
+                     {
+                       "text": "bright-navy-blue",
+                       "value": "bright-navy-blue"
+                     },
+                     {
+                       "text": "davys-grey",
+                       "value": "davys-grey"
+                     },
+                     {
+                       "text": "liver-chestnut",
+                       "value": "liver-chestnut"
+                     },
+                     {
+                       "text": "old-rose",
+                       "value": "old-rose"
+                     },
+                     {
+                       "text": "isabelline",
+                       "value": "isabelline"
+                     },
+                     {
+                       "text": "white",
+                       "value": "white"
+                     },
+                     {
+                       "text": "transparent",
+                       "value": "transparent"
+                     }
+                   ],
                    "title": "Background color",
-                   "type": "string"
+                   "type": "select"
                  },
                  {
                    "key": "color",
                    "multiple": false,
                    "options": [
                      {
-                       "text": "gun-metal",
-                       "value": "gun-metal"
+                       "text": "erie-black",
+                       "value": "erie-black"
                      },
                      {
-                       "text": "resolution-blue",
-                       "value": "resolution-blue"
+                       "text": "bright-navy-blue",
+                       "value": "bright-navy-blue"
                      },
                      {
-                       "text": "steal-teal",
-                       "value": "steal-teal"
+                       "text": "davys-grey",
+                       "value": "davys-grey"
                      },
                      {
-                       "text": "unbleached-silk",
-                       "value": "unbleached-silk"
+                       "text": "liver-chestnut",
+                       "value": "liver-chestnut"
                      },
                      {
-                       "text": "copper-rose",
-                       "value": "copper-rose"
+                       "text": "old-rose",
+                       "value": "old-rose"
                      },
                      {
-                       "text": "ghost-white",
-                       "value": "ghost-white"
+                       "text": "isabelline",
+                       "value": "isabelline"
                      },
                      {
                        "text": "white",
@@ -444,8 +531,31 @@
                  },
                  {
                    "key": "font",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "display1",
+                       "value": "display1"
+                     },
+                     {
+                       "text": "body",
+                       "value": "body"
+                     },
+                     {
+                       "text": "menu",
+                       "value": "menu"
+                     },
+                     {
+                       "text": "art",
+                       "value": "art"
+                     },
+                     {
+                       "text": "display2",
+                       "value": "display2"
+                     }
+                   ],
                    "title": "Font",
-                   "type": "string"
+                   "type": "select"
                  },
                  {
                    "key": "font_weight",
@@ -499,8 +609,43 @@
                  },
                  {
                    "key": "outline_color",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "erie-black",
+                       "value": "erie-black"
+                     },
+                     {
+                       "text": "bright-navy-blue",
+                       "value": "bright-navy-blue"
+                     },
+                     {
+                       "text": "davys-grey",
+                       "value": "davys-grey"
+                     },
+                     {
+                       "text": "liver-chestnut",
+                       "value": "liver-chestnut"
+                     },
+                     {
+                       "text": "old-rose",
+                       "value": "old-rose"
+                     },
+                     {
+                       "text": "isabelline",
+                       "value": "isabelline"
+                     },
+                     {
+                       "text": "white",
+                       "value": "white"
+                     },
+                     {
+                       "text": "transparent",
+                       "value": "transparent"
+                     }
+                   ],
                    "title": "Outline color",
-                   "type": "string"
+                   "type": "select"
                  },
                  {
                    "key": "outline_width",
@@ -874,39 +1019,6 @@
            "type": "markdown"
          },
          {
-           "fields": [
-             {
-               "key": "background_color",
-               "title": "Background color",
-               "type": "string"
-             },
-             {
-               "key": "background_image",
-               "title": "Background image",
-               "type": "string"
-             },
-             {
-               "key": "item_background_color",
-               "title": "Item background color",
-               "type": "string"
-             },
-             {
-               "key": "parallax",
-               "title": "Parallax",
-               "type": "boolean"
-             },
-             {
-               "key": "texture",
-               "title": "Texture",
-               "type": "string"
-             }
-           ],
-           "groupdata": true,
-           "key": "appearance",
-           "title": "Appearance",
-           "type": "nest"
-         },
-         {
            "key": "draft",
            "title": "Draft",
            "type": "boolean"
@@ -990,8 +1102,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1000,8 +1147,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1044,8 +1226,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1054,8 +1271,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1103,8 +1355,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1113,8 +1400,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1215,8 +1537,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1230,8 +1587,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1332,8 +1724,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1449,8 +1876,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1459,8 +1921,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1561,8 +2058,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1571,8 +2103,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1673,8 +2240,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1683,8 +2285,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1785,8 +2422,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1795,8 +2467,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1908,13 +2615,83 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "texture",
@@ -1957,8 +2734,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -1967,8 +2779,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -2117,8 +2964,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2127,8 +3009,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -2181,8 +3098,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2191,8 +3143,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -2215,28 +3202,28 @@
            "multiple": false,
            "options": [
              {
-               "text": "gun-metal",
-               "value": "gun-metal"
+               "text": "erie-black",
+               "value": "erie-black"
              },
              {
-               "text": "resolution-blue",
-               "value": "resolution-blue"
+               "text": "bright-navy-blue",
+               "value": "bright-navy-blue"
              },
              {
-               "text": "steal-teal",
-               "value": "steal-teal"
+               "text": "davys-grey",
+               "value": "davys-grey"
              },
              {
-               "text": "unbleached-silk",
-               "value": "unbleached-silk"
+               "text": "liver-chestnut",
+               "value": "liver-chestnut"
              },
              {
-               "text": "copper-rose",
-               "value": "copper-rose"
+               "text": "old-rose",
+               "value": "old-rose"
              },
              {
-               "text": "ghost-white",
-               "value": "ghost-white"
+               "text": "isabelline",
+               "value": "isabelline"
              },
              {
                "text": "white",
@@ -2285,8 +3272,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2295,8 +3317,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -2418,8 +3475,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2428,8 +3520,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -2551,8 +3678,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2561,8 +3723,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -2692,8 +3889,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2702,8 +3934,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "texture",
@@ -2810,8 +4077,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2820,8 +4122,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -2910,8 +4247,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -2920,8 +4292,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3015,8 +4422,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3025,8 +4467,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3069,8 +4546,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3079,8 +4591,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3209,8 +4756,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3219,8 +4801,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3344,8 +4961,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3354,8 +5006,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3484,8 +5171,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3494,8 +5216,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3635,8 +5392,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3645,8 +5437,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3752,8 +5579,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3762,8 +5624,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -3890,8 +5787,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -3900,8 +5832,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -4005,8 +5972,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_image",
@@ -4015,8 +6017,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -4060,28 +6097,28 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
+                   "text": "erie-black",
+                   "value": "erie-black"
                  },
                  {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
                  },
                  {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
+                   "text": "davys-grey",
+                   "value": "davys-grey"
                  },
                  {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
                  },
                  {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
+                   "text": "old-rose",
+                   "value": "old-rose"
                  },
                  {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
+                   "text": "isabelline",
+                   "value": "isabelline"
                  },
                  {
                    "text": "white",
@@ -4097,8 +6134,31 @@
              },
              {
                "key": "font",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "display1",
+                   "value": "display1"
+                 },
+                 {
+                   "text": "body",
+                   "value": "body"
+                 },
+                 {
+                   "text": "menu",
+                   "value": "menu"
+                 },
+                 {
+                   "text": "art",
+                   "value": "art"
+                 },
+                 {
+                   "text": "display2",
+                   "value": "display2"
+                 }
+               ],
                "title": "Font",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "font_weight",
@@ -4312,28 +6372,28 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
+                   "text": "erie-black",
+                   "value": "erie-black"
                  },
                  {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
                  },
                  {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
+                   "text": "davys-grey",
+                   "value": "davys-grey"
                  },
                  {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
                  },
                  {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
+                   "text": "old-rose",
+                   "value": "old-rose"
                  },
                  {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
+                   "text": "isabelline",
+                   "value": "isabelline"
                  },
                  {
                    "text": "white",
@@ -4510,8 +6570,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "border",
@@ -4523,28 +6618,28 @@
                "multiple": false,
                "options": [
                  {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
+                   "text": "erie-black",
+                   "value": "erie-black"
                  },
                  {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
                  },
                  {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
+                   "text": "davys-grey",
+                   "value": "davys-grey"
                  },
                  {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
                  },
                  {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
+                   "text": "old-rose",
+                   "value": "old-rose"
                  },
                  {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
+                   "text": "isabelline",
+                   "value": "isabelline"
                  },
                  {
                    "text": "white",
@@ -4570,8 +6665,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "arrayTitle": true,
@@ -4723,8 +6853,43 @@
            "fields": [
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "container",
@@ -4856,41 +7021,91 @@
            "fields": [
              {
                "key": "align",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "center",
+                   "value": "center"
+                 },
+                 {
+                   "text": "left",
+                   "value": "left"
+                 },
+                 {
+                   "text": "right",
+                   "value": "right"
+                 }
+               ],
                "title": "Align",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Background color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "color",
                "multiple": false,
                "options": [
                  {
-                   "text": "gun-metal",
-                   "value": "gun-metal"
+                   "text": "erie-black",
+                   "value": "erie-black"
                  },
                  {
-                   "text": "resolution-blue",
-                   "value": "resolution-blue"
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
                  },
                  {
-                   "text": "steal-teal",
-                   "value": "steal-teal"
+                   "text": "davys-grey",
+                   "value": "davys-grey"
                  },
                  {
-                   "text": "unbleached-silk",
-                   "value": "unbleached-silk"
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
                  },
                  {
-                   "text": "copper-rose",
-                   "value": "copper-rose"
+                   "text": "old-rose",
+                   "value": "old-rose"
                  },
                  {
-                   "text": "ghost-white",
-                   "value": "ghost-white"
+                   "text": "isabelline",
+                   "value": "isabelline"
                  },
                  {
                    "text": "white",
@@ -4906,8 +7121,31 @@
              },
              {
                "key": "font",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "display1",
+                   "value": "display1"
+                 },
+                 {
+                   "text": "body",
+                   "value": "body"
+                 },
+                 {
+                   "text": "menu",
+                   "value": "menu"
+                 },
+                 {
+                   "text": "art",
+                   "value": "art"
+                 },
+                 {
+                   "text": "display2",
+                   "value": "display2"
+                 }
+               ],
                "title": "Font",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "font_weight",
@@ -5025,8 +7263,43 @@
              },
              {
                "key": "outline_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Outline color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "outline_width",
