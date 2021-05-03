@@ -1,38 +1,51 @@
 {{- $page := .page -}}
 {{- $content := .content -}}
 {{- $design := .design -}}
-{{- $cells := partial "poppy-engine/markdown_to_cells" (dict "content" $page.Content) -}}
+{{- $cells := partial "poppy-engine/markdown_to_cells" (dict "content" $page.Content "design" $design) -}}
+
 
 {{- with $design -}}
-  <div class="{{.vertical_space}} min-h-screen">
-    <div class="{{$content.item_background_color}} {{.rounded}} {{.shadow}} {{.border}} w-full grid grid-cols-4 md:grid-cols-7 grid-flow-row ">
+  <div class="min-h-screen {{.vertical_space}}">
+    <div class=" {{$content.item_background_color}} {{.rounded}} {{.shadow}} {{.border}} w-full grid grid-cols-4 md:grid-cols-7 grid-flow-row ">
       {{- range $cells -}}
+        {{- $grid_span := "" -}}
         {{- $class := "" -}}
         {{- $type := "" -}}
         {{- if in . "<h1" -}}
-          {{- $class = "p-2 flex items-center max-h-screen" -}}
-          {{- $type = $design.h1 }}
+          {{- $class = "p-2 flex items-center max-h-screen writing-mode-horizontal p-2" -}}
+          {{- $type = . }}
         {{- end -}}
         {{- if in . "<h2" -}}
-          {{- $class = "p-2 flex items-center max-h-screen"}}
-          {{- $type = $design.h2 }}
+          {{- $class = "col-span-4 flex items-center max-h-screen writing-mode-horizontal p-2"}}
+          {{- $type = "h2" }}
         {{- end -}}
         {{- if in . "<h3" -}}
-          {{- $class = "col-span-3 p-2 flex items-center"}}
-          {{- $type = $design.h3 }}
+          {{- $class = "col-span-4 flex items-center writing-mode-horizontal p-2"}}
+          {{- $type = "h3" }}
         {{- end -}}
         {{- if in . "<h4" -}}
-          {{- $class = "col-span-3 row-span-1 p-2"}}
-          {{- $type = "prose" }}
+          {{- $class = "col-span-4 md:col-span-3 row-span-1 p-2"}}
+          {{- $type = "h4" }}
         {{- end -}}
         {{- if in . "<img" -}}
-          {{- $class = "col-span-3 row-span-2"}}
+          {{- $class = "col-span-4 md:col-span-3 row-span-2"}}
+          {{- $type = "img" -}}
         {{- end -}}
         {{- if in . "<p" -}}
-          {{- $class = "col-span-3 row-span-1 p-2 "}}
-          {{- $type = "prose"}}
+          {{- $class = "col-span-4 md:col-span-3 row-span-1 p-2"}}
+          {{- $type = "p"}}
         {{- end -}}
-        <div class = "{{$class}} {{$type}} w-full h-full ">
+
+        {{- with (index $design $type) -}}
+          {{- range (split . " ") -}}
+            {{- if or (in . "col") (in . "row") (in . "bg") -}}
+              {{ $grid_span = printf "%s %s" $grid_span . -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+
+
+        <div class = "{{$class}} {{$grid_span}} w-full h-full ">
               {{- . | safeHTML  -}}
         </div>
       {{- end -}}

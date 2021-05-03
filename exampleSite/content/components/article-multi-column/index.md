@@ -1,6 +1,6 @@
 ---
 draft: false
-image: nlp
+image: chair
 page_sections:
   - appearance:
       background_color: transparent
@@ -29,6 +29,34 @@ page_sections:
     title: '->frompage'
     title2: none
   - appearance:
+      background_color: ''
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    component: article-standard
+    image: ''
+    menus: []
+    name: explanation
+    social_icons: []
+    subtitle: ''
+    textlogo: ''
+    title: ''
+  - appearance:
+      background_color: bright-navy-blue
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: grain
+    component: inpage-banner
+    image: ''
+    menus: []
+    name: Check below
+    social_icons: []
+    subtitle: none
+    textlogo: ''
+    title: See the example in the section below.
+  - appearance:
       background_color: isabelline
       background_image: none
       item_background_color: transparent
@@ -41,6 +69,22 @@ page_sections:
     name: article
     subtitle: '->frompage'
     title: '->frompage'
+  - appearance:
+      background_color: erie-black
+      background_image: none
+      item_background_color: bright-navy-blue
+      parallax: false
+      texture: grain3
+    component: listing-cards
+    count: '6'
+    image: ''
+    list: components
+    menus: []
+    name: Other components
+    social_icons: []
+    subtitle: ''
+    textlogo: ''
+    title: Other components
   - appearance:
       background_color: ''
       background_image: ''
@@ -63,8 +107,11 @@ title2: in PoppyGo
 
 ## What does it do?
 This component takes the main page content and presents it for reading purposes.
+This will be presented in fix width columns, so the wider the screen the more columns.
+
 
 ## What can you customize?
 Like all components, you can customize the appearance, setting background color, background image, overlay texture, parallax effect and item background color.
 
 Because it presents the Main Content, you can use markdown with our shortcodes to present your content as you like.
+

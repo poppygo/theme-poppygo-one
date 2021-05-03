@@ -67,12 +67,10 @@ colorscheme:
     colorcode: '#F5F1ED'
     name: isabelline
 components:
-  - background_color: isabelline
-    border: none
+  - border: none
     border_color: bright-navy-blue
     border_opacity: 30
     gridgap: 10
-    item_background_color: white
     name: components
     rounded: none
     shadow: none

@@ -12,7 +12,7 @@
           {{- partial "poppy-elements/buttons" (dict "design" . "buttons" $content.buttons ) -}}
         </div>
       </div>
-      <div class = "col-start-1 col-span-3 md:col-span-1 md:col-start-3 z-10 relative">
+      <div class = "col-start-1 col-span-3 md:col-span-1 md:col-start-3 z-10 relative hidden md:block">
         <p class="absolute outline {{ .titleoutline }}">{{ $content.title2 }}</p>
       </div>
     </div>

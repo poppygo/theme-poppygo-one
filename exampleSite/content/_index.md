@@ -3,6 +3,7 @@ author: PoppyGo
 date: '2021-04-04'
 draft: false
 lastmod: ''
+mainContent: ''
 page_sections:
   - appearance:
       background_color: ''
@@ -94,7 +95,25 @@ page_sections:
     subtitle: none
     title: Flexible Hugo theme for graphic lovers
   - appearance:
-      background_color: erie-black
+      background_color: liver-chestnut
+      background_image: ''
+      item_background_color: bright-navy-blue
+      parallax: false
+      texture: grain3
+    component: list-articles-standard
+    count: '6'
+    headless: false
+    image: ''
+    list: news
+    list_taxonomy: {}
+    menus: []
+    name: News
+    social_icons: []
+    subtitle: News about PoppyGo
+    textlogo: ''
+    title: News
+  - appearance:
+      background_color: bright-navy-blue
       background_image: ''
       item_background_color: ''
       parallax: false
@@ -102,28 +121,14 @@ page_sections:
     component: gallery-standard
     count: '6'
     image: ''
-    list: poppy-components
+    list: components
+    list_taxonomy: {}
     menus: []
     name: components
     social_icons: []
     subtitle: Mix and match as you like!
     textlogo: ''
     title: 'Components '
-  - appearance:
-      background_color: isabelline
-      background_image: none
-      item_background_color: ''
-      parallax: false
-      texture: ''
-    bodytext: ''
-    buttons: []
-    component: md-spreuk-banner
-    image: ''
-    name: welkom banner
-    subtitle: Mark Twain
-    title: >-
-      Moed is weerstand tegen angst, beheersing van angst, niet afwezigheid van
-      angst
   - appearance:
       background_color: erie-black
       background_image: none
@@ -172,3 +177,4 @@ resources: []
 title: Homepage
 
 ---
+

@@ -2,7 +2,7 @@
 headless: true
 appearance:
   background_color: resolution-blue
-  item_background_color:
+  item_background_color: none
   background_image: none
   texture: grain
   parallax: false
@@ -71,7 +71,6 @@ design:
       transform: uppercase
       outline_color: ''
       outline_width: ''
-
 ---
 
 ### I am the main content

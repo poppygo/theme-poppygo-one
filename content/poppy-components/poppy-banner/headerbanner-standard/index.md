@@ -28,14 +28,16 @@ summary: >-
 title: I am a banner
 design:
   typographies:
-    - align: left
+    - align: center
       background_color: transparent
-      color: ghost-white
+      color: isabelline
       font: display1
       font_weight: bold
       name: title
       size: 4xl
-      transform:
+      transform: normal
+      outline_color: transparent
+      outline_width: 0
     - align: center
       background_color: transparent
       color: white
@@ -44,6 +46,8 @@ design:
       name: subtitle
       size: xl
       transform: uppercase
+      outline_color: transparent
+      outline_width: 0
 
 ---
 

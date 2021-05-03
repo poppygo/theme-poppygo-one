@@ -24,12 +24,14 @@ design:
   typographies:
     - align: center
       background_color: transparent
-      color: ghost-white
+      color: isabelline
       font: display1
       font_weight: bold
       name: title
       size: 5xl
-      transform: uppercase
+      transform: 'normal'
+      outline_color: transparent
+      outline_width: 0
     - align: center
       background_color: transparent
       color: white
@@ -37,7 +39,9 @@ design:
       font_weight: normal
       name: subtitle
       size: xl
-      transform: uppercase
+      transform: 'normal'
+      outline_color: transparent
+      outline_width: 0
 
 ---
 ### I am the main content

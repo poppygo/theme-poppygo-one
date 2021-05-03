@@ -15,9 +15,9 @@ page_sections:
     texture: ''
     title: ''
   - appearance:
-      background_color: ''
+      background_color: old-rose
       background_image: ''
-      item_background_color: ''
+      item_background_color: old-rose
       parallax: false
       texture: ''
     bodytext: ''
@@ -29,26 +29,10 @@ page_sections:
     title: '->frompage'
     title2: max control
   - appearance:
-      background_color: erie-black
-      background_image: none
-      height: 20
-      item_background_color: ''
-      parallax: false
-      texture: ''
-    component: headerbanner-height
-    headless: false
-    image: none
-    menus: []
-    name: Bar
-    social_icons: []
-    subtitle: none
-    textlogo: ''
-    title: none
-  - appearance:
       background_color: davys-grey
       background_image: none
-      item_background_color: liver-chestnut
-      parallax: false
+      item_background_color: old-rose
+      parallax: true
       texture: grain3
     bodytext: ''
     buttons: []
@@ -58,7 +42,7 @@ page_sections:
     subtitle: '->frompage'
     title: '->frompage'
   - appearance:
-      background_color: ''
+      background_color: old-rose
       background_image: ''
       item_background_color: ''
       parallax: false
@@ -77,44 +61,54 @@ title: Customisable
 ---
 
 
- ##  How to modify
+##  Components
+
+### Full control over layout
+
+#### All pages are built with components
+See it as a kind of Lego with which you control the layout of every page.
+we have banner components, list components, article components and so on.
+
+#### Each component comes with example content.
+For making is easy, the components come with some example content. So, when you add a component to your page, you immediately get to see the layout. Simply add your content to the page section and the default content will be overridden.
+
+#### You can make reusable components
+If you want some components to show the same content on all pages, for example the navbar, footer or newletter signup, you can make a copy into my-components and modify the content.
+Then you can add that component to all pages, where it makes sense.
+
 {{< image uten >}}
 
-#### paragraaf 1
-sgodfkjgslkdfjg
-skdjflkgjsldfg
-s
-dfgksdjfklgjsd
-fgsd
-fg
 
-#### Paragraaf 2
-want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.
+### Control apearrance of every component
 
-### Control lay-out, design and content without a single line of code
+##  Appearance
 
-#### Paragraaf 3
-sdfgsdfg
-sdf
-gs
-dfg
-sdfg
-sdfgsdfgsdfg
-spaseaasd
+#### Background colors
+For every component you define the background color and the item background color.
+Itembackground color is used for background colors of individual cards or articles
 
-{{< image socket >}}
+#### Background image
+Also every component can be given a background image. This image will be automatically processed and optimized for all screensizes. Background images will be covering the whole container.
 
-#### VIER Na een aantal sessies
-zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
+#### Overlay texture
+A nice addition to the appearance set, is the possibility to add a texture overlay. In this theme, we use a film-grain overlay to give the vintage-look. In the design settings, you can choose which blendmode and opacity you want your textures to be. Again, full control.
 
-#### TWEE Deze dienst is de favoriet
-van veel van mijn klanten, want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.
+#### Override the design for a component 
+Sometimes you want to have different buttons and typographies for a specific component than the generic site design. When you copy a component in my-components and when you modify the design there, then the general design with be overruled for that specific component.
 
-#### VIJF
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
+##  Design
 
-#### ZES
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
+### Tweak your design in the design configuration.
+
+#### Typography
+In the design you can define multiple typographies, like title, menu and body.
+You can choose from the fonts in your fontscheme.
+
+#### Fontscheme
+It's easy to create beautiful fonts sets. Just add the name of the google font and the theme will do the rest.
+
+#### Buttons
+You can define as many buttons as you want in terms of roundings, colors, textsize and font. The buttons that you define can be used from within components and shortcode. 
+
+#### Colourscheme
+One of the most important aspects of design are of-course colors. In the colorscheme configurator you add your colors and give them names. In the all page you now can control colors of text, borders and backgrounds with these names.

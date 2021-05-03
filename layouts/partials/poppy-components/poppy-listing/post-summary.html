@@ -10,7 +10,7 @@
   <div class = "flex flex-col md:flex-row">
     <ol class="mb-4 list-none w-full">
       {{- range $index, $item := $items -}}
-        <div class="{{$design.rounded}} {{$design.shadow}} hover:bg-white transition duration-300 ease-in-out">
+        <div class="{{$design.rounded}} {{$design.shadow}} {{$content.item_background_color}} hover:bg-white transition duration-300 ease-in-out">
 
           <div class = "flex items-top mb-4">
 

@@ -1,8 +1,8 @@
 ---
 appearance:
-  background_color: ''
-  background_image: erie-black
-  item_background_color: ''
+  background_color: blue
+  background_image: ''
+  item_background_color: white
   parallax: ''
   texture: ''
 buttons: []
@@ -24,7 +24,7 @@ design:
       transform: ''
     - align: left
       background_color: davys-grey
-      cell_height: 6
+      cell_height: 4
       cell_width: 1
       color: transparent
       direction: vertical
@@ -34,19 +34,32 @@ design:
       outline_color: isabelline
       outline_width: sm
       size: 6xl
-      space: 0
+      space: 4
       transform: uppercase
-    - align: center
-      background_color: bright-navy-blue
+    - align: left
+      background_color: transparent
       cell_height: 1
       cell_width: 6
-      color: isabelline
+      color: erie-black
       font: display2
       font_weight: normal
       name: h3
       outline_color: ''
       outline_width: ''
-      size: 4xl
+      size: 2xl
+      space: 0
+      transform: 'normal'
+    - align: left
+      background_color: transparent
+      cell_height: 1
+      cell_width: 6
+      color: isabelline
+      font: display2
+      font_weight: normal
+      name: h4
+      outline_color: ''
+      outline_width: ''
+      size: xl
       space: 0
       transform: ''
 draft: false
@@ -63,4 +76,3 @@ title: ''
 title2: ''
 
 ---
-

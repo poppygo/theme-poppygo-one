@@ -1,35 +1,4 @@
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-  
-  
-  
-  
-  {
+{
    "build": [
      {
        "config": "config.yml",
@@ -37,6 +6,223 @@
      }
    ],
    "collections": [
+     {
+       "dataformat": "yaml",
+       "extension": "md",
+       "fields": [
+         {
+           "content": "2021-04-21T00:00:00Z",
+           "key": "lastmod",
+           "theme": "gray-bare",
+           "title": "Lastmod",
+           "type": "info"
+         },
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "string"
+         },
+         {
+           "dynFormSearchKey": "component",
+           "fields": [
+             {
+               "key": "component",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "article-multi-column",
+                   "value": "article-multi-column"
+                 },
+                 {
+                   "text": "article-standard",
+                   "value": "article-standard"
+                 },
+                 {
+                   "text": "headerbanner-full",
+                   "value": "headerbanner-full"
+                 },
+                 {
+                   "text": "headerbanner-height",
+                   "value": "headerbanner-height"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "headerbanner-standard",
+                   "value": "headerbanner-standard"
+                 },
+                 {
+                   "text": "inpage-banner",
+                   "value": "inpage-banner"
+                 },
+                 {
+                   "text": "introbanner",
+                   "value": "introbanner"
+                 },
+                 {
+                   "text": "footer-3-column",
+                   "value": "footer-3-column"
+                 },
+                 {
+                   "text": "footer-simple",
+                   "value": "footer-simple"
+                 },
+                 {
+                   "text": "contact-noform",
+                   "value": "contact-noform"
+                 },
+                 {
+                   "text": "newsletter-big",
+                   "value": "newsletter-big"
+                 },
+                 {
+                   "text": "newsletter-simple",
+                   "value": "newsletter-simple"
+                 },
+                 {
+                   "text": "gallery-image-only",
+                   "value": "gallery-image-only"
+                 },
+                 {
+                   "text": "gallery-standard",
+                   "value": "gallery-standard"
+                 },
+                 {
+                   "text": "list-articles-standard",
+                   "value": "list-articles-standard"
+                 },
+                 {
+                   "text": "listing-cards",
+                   "value": "listing-cards"
+                 },
+                 {
+                   "text": "navbar-collapsed",
+                   "value": "navbar-collapsed"
+                 },
+                 {
+                   "text": "navbar-standard",
+                   "value": "navbar-standard"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 },
+                 {
+                   "text": "cards-standard",
+                   "value": "cards-standard"
+                 },
+                 {
+                   "text": "explainer",
+                   "value": "explainer"
+                 },
+                 {
+                   "text": "image-cards",
+                   "value": "image-cards"
+                 },
+                 {
+                   "text": "showcase",
+                   "value": "showcase"
+                 },
+                 {
+                   "text": "_index.md",
+                   "value": "_indexmd"
+                 },
+                 {
+                   "text": "headerbanner-poster",
+                   "value": "headerbanner-poster"
+                 },
+                 {
+                   "text": "md-footer",
+                   "value": "md-footer"
+                 },
+                 {
+                   "text": "md-navbar",
+                   "value": "md-navbar"
+                 },
+                 {
+                   "text": "poster-standard",
+                   "value": "poster-standard"
+                 }
+               ],
+               "title": "Component",
+               "type": "select"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             }
+           ],
+           "key": "page_sections",
+           "title": "Page sections",
+           "type": "accordion"
+         },
+         {
+           "extensions": [
+             "jpg",
+             "png",
+             "jpeg",
+             "pdf",
+             "svg"
+           ],
+           "fields": [
+             {
+               "key": "thumb",
+               "title": "Thumb",
+               "type": "bundle-image-thumbnail"
+             }
+           ],
+           "key": "images",
+           "path": "images",
+           "title": "Images",
+           "type": "bundle-manager"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "key": "mainContent",
+           "title": "Main content",
+           "type": "markdown"
+         },
+         {
+           "default": "now",
+           "key": "date",
+           "title": "Date",
+           "type": "date"
+         },
+         {
+           "key": "draft",
+           "title": "Draft",
+           "type": "boolean"
+         },
+         {
+           "default": "now",
+           "key": "publishdate",
+           "title": "Publishdate",
+           "type": "date"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "markdown"
+         }
+       ],
+       "folder": "content/news/",
+       "itemtitle": "New",
+       "key": "c__news",
+       "title": "News"
+     },
      {
        "dataformat": "yaml",
        "extension": "md",
@@ -382,8 +568,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -801,9 +1006,44 @@
            "type": "boolean"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
+           "key": "item_background_color",
+           "multiple": false,
+           "options": [
+             {
+               "text": "erie-black",
+               "value": "erie-black"
+             },
+             {
+               "text": "bright-navy-blue",
+               "value": "bright-navy-blue"
+             },
+             {
+               "text": "davys-grey",
+               "value": "davys-grey"
+             },
+             {
+               "text": "liver-chestnut",
+               "value": "liver-chestnut"
+             },
+             {
+               "text": "old-rose",
+               "value": "old-rose"
+             },
+             {
+               "text": "isabelline",
+               "value": "isabelline"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
+             }
+           ],
+           "title": "Item background color",
+           "type": "select"
          },
          {
            "key": "name",
@@ -1054,6 +1294,9 @@
            "key": "c__components"
          },
          {
+           "key": "c__news"
+         },
+         {
            "key": "c__pages"
          }
        ],
@@ -1073,15 +1316,6 @@
          }
        ],
        "title": "Site settings"
-     },
-     {
-       "key": "poppygo",
-       "menuItems": [
-         {
-           "key": "pogocms"
-         }
-       ],
-       "title": "PoppyGo"
      }
    ],
    "partials": [
@@ -1200,11 +1434,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          }
        ],
        "key": "article-multi-column"
@@ -1324,11 +1553,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          }
        ],
        "key": "article-standard"
@@ -1459,8 +1683,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -1501,11 +1744,6 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "key": "summary",
@@ -1646,8 +1884,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -1688,11 +1945,6 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "key": "summary",
@@ -1769,8 +2021,43 @@
              },
              {
                "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Item background color",
-               "type": "hidden"
+               "type": "select"
              },
              {
                "key": "parallax",
@@ -1793,8 +2080,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -1835,11 +2141,6 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "key": "summary",
@@ -1980,8 +2281,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -2022,11 +2342,6 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "key": "summary",
@@ -2206,11 +2521,6 @@
            "type": "accordion"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
@@ -2349,8 +2659,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -2391,11 +2720,6 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "key": "summary",
@@ -2520,11 +2844,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -2705,11 +3024,6 @@
            "type": "nest"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "key": "position",
            "title": "Position",
            "type": "string"
@@ -2832,11 +3146,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -3064,11 +3373,6 @@
            "type": "nest"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
@@ -3236,11 +3540,6 @@
            ],
            "title": "Border color",
            "type": "select"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "key": "summary",
@@ -3425,14 +3724,13 @@
            "type": "string"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "news",
+               "value": "news"
+             },
              {
                "text": "components",
                "value": "components"
@@ -3579,8 +3877,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -3628,14 +3945,13 @@
            "type": "string"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "news",
+               "value": "news"
+             },
              {
                "text": "components",
                "value": "components"
@@ -3782,8 +4098,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -3831,14 +4166,13 @@
            "type": "string"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "news",
+               "value": "news"
+             },
              {
                "text": "components",
                "value": "components"
@@ -3988,8 +4322,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -4037,14 +4390,13 @@
            "type": "string"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "key": "list",
            "multiple": false,
            "options": [
+             {
+               "text": "news",
+               "value": "news"
+             },
              {
                "text": "components",
                "value": "components"
@@ -4175,11 +4527,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -4345,11 +4692,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -4520,11 +4862,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          }
        ],
        "key": "poster-standard"
@@ -4644,11 +4981,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -4856,11 +5188,6 @@
            "type": "nest"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "fields": [
              {
                "key": "bodytext",
@@ -5059,11 +5386,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -5269,11 +5591,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -5496,8 +5813,27 @@
              {
                "arrayTitle": true,
                "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
                "title": "Button type",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "icon",
@@ -5540,9 +5876,44 @@
            "type": "accordion"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
+           "key": "item_background_color",
+           "multiple": false,
+           "options": [
+             {
+               "text": "erie-black",
+               "value": "erie-black"
+             },
+             {
+               "text": "bright-navy-blue",
+               "value": "bright-navy-blue"
+             },
+             {
+               "text": "davys-grey",
+               "value": "davys-grey"
+             },
+             {
+               "text": "liver-chestnut",
+               "value": "liver-chestnut"
+             },
+             {
+               "text": "old-rose",
+               "value": "old-rose"
+             },
+             {
+               "text": "isabelline",
+               "value": "isabelline"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
+             }
+           ],
+           "title": "Item background color",
+           "type": "select"
          },
          {
            "key": "summary",
@@ -5677,11 +6048,6 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
-         },
-         {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
          },
          {
            "fields": [
@@ -5887,11 +6253,6 @@
            "type": "nest"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
-         },
-         {
            "fields": [
              {
                "fields": [
@@ -5961,6 +6322,11 @@
          {
            "key": "title",
            "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
            "type": "string"
          },
          {
@@ -6072,9 +6438,19 @@
            "type": "nest"
          },
          {
-           "key": "headless",
-           "title": "Headless",
-           "type": "boolean"
+           "key": "buttons",
+           "title": "Buttons",
+           "type": "chips"
+         },
+         {
+           "key": "summary",
+           "title": "Summary",
+           "type": "string"
+         },
+         {
+           "key": "title2",
+           "title": "Title2",
+           "type": "string"
          }
        ],
        "key": "poster-standard"
@@ -6409,8 +6785,43 @@
              },
              {
                "key": "text_outline_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
                "title": "Text outline color",
-               "type": "string"
+               "type": "select"
              },
              {
                "key": "text_outline_width",
@@ -6569,46 +6980,6 @@
          {
            "fields": [
              {
-               "key": "background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "erie-black",
-                   "value": "erie-black"
-                 },
-                 {
-                   "text": "bright-navy-blue",
-                   "value": "bright-navy-blue"
-                 },
-                 {
-                   "text": "davys-grey",
-                   "value": "davys-grey"
-                 },
-                 {
-                   "text": "liver-chestnut",
-                   "value": "liver-chestnut"
-                 },
-                 {
-                   "text": "old-rose",
-                   "value": "old-rose"
-                 },
-                 {
-                   "text": "isabelline",
-                   "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
-               "title": "Background color",
-               "type": "select"
-             },
-             {
                "key": "border",
                "title": "Border",
                "type": "string"
@@ -6662,46 +7033,6 @@
                "key": "gridgap",
                "title": "Gridgap",
                "type": "number"
-             },
-             {
-               "key": "item_background_color",
-               "multiple": false,
-               "options": [
-                 {
-                   "text": "erie-black",
-                   "value": "erie-black"
-                 },
-                 {
-                   "text": "bright-navy-blue",
-                   "value": "bright-navy-blue"
-                 },
-                 {
-                   "text": "davys-grey",
-                   "value": "davys-grey"
-                 },
-                 {
-                   "text": "liver-chestnut",
-                   "value": "liver-chestnut"
-                 },
-                 {
-                   "text": "old-rose",
-                   "value": "old-rose"
-                 },
-                 {
-                   "text": "isabelline",
-                   "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
-                 }
-               ],
-               "title": "Item background color",
-               "type": "select"
              },
              {
                "arrayTitle": true,
@@ -8162,56 +8493,6 @@
        "key": "s__contact",
        "previewUrl": "/contact/",
        "title": "Contact"
-     },
-     {
-       "dataformat": "json",
-       "fields": [
-         {
-           "fields": [
-             {
-               "key": "key",
-               "title": "Key",
-               "type": "readonly"
-             },
-             {
-               "fields": [
-                 {
-                   "arrayTitle": true,
-                   "key": "key",
-                   "title": "Key",
-                   "type": "readonly"
-                 },
-                 {
-                   "key": "visible",
-                   "title": "Visible",
-                   "type": "boolean"
-                 }
-               ],
-               "key": "menuItems",
-               "title": "Menu items",
-               "type": "accordion"
-             },
-             {
-               "arrayTitle": true,
-               "key": "title",
-               "title": "Title",
-               "type": "string"
-             },
-             {
-               "key": "visible",
-               "title": "Visible",
-               "type": "boolean"
-             }
-           ],
-           "key": "menu",
-           "title": "Menu",
-           "type": "accordion"
-         }
-       ],
-       "file": "/zpogomenu.json",
-       "key": "pogocms",
-       "previewUrl": "/",
-       "title": "CMS"
      }
    ]
  }

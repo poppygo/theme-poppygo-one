@@ -35,7 +35,7 @@
     {{- $component_value = index $page_component.Params.appearance .appearance -}}
     {{- $override = ( $section_value | default $component_value ) -}}
 
-    {{- if and (in .appearance "background_color")  -}}
+    {{- if in .appearance "background_color" -}}
       {{- if $override -}}
         {{- $override = printf "bg-%s" (partial "poppy-engine/colors" $override) -}}
       {{- end -}}

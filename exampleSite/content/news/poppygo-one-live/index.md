@@ -58,7 +58,10 @@ resources: []
 subtitle: fully free
 title: Content Management
 title2: in PoppyGo
-
+date: '2021-04-21'
+test: 'dit is een test'
+summary: |-
+  Our first users share their experiences with working with PoppyGo One and component based design.
 ---
 
 ### NLP Training
