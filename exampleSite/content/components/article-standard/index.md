@@ -1,6 +1,6 @@
 ---
 draft: false
-image: none
+image: tim
 page_sections:
   - appearance:
       background_color: transparent
@@ -25,22 +25,53 @@ page_sections:
     component: headerbanner-poster
     image: none
     name: banner
-    subtitle: '->frompage'
-    title: Dit is de titel
-    title2: '->frompage'
+    subtitle: Standard
+    title: Article
+    title2: none
   - appearance:
-      background_color: isabelline
+      background_color: ''
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    component: article-standard
+    image: ''
+    menus: []
+    name: explanation
+    social_icons: []
+    subtitle: ''
+    textlogo: ''
+    title: ''
+  - appearance:
+      background_color: bright-navy-blue
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: grain
+    component: inpage-banner
+    image: ''
+    menus: []
+    name: Check above
+    social_icons: []
+    subtitle: It is made with the article standard component
+    textlogo: ''
+    title: The example is the explanation itself.
+  - appearance:
+      background_color: erie-black
       background_image: none
-      item_background_color: transparent
+      item_background_color: bright-navy-blue
       parallax: false
       texture: grain3
-    bodytext: ''
-    buttons: []
-    component: poster-standard
+    component: listing-cards
+    count: '6'
     image: ''
-    name: article
-    subtitle: '->frompage'
-    title: '->frompage'
+    list: components
+    menus: []
+    name: Other components
+    social_icons: []
+    subtitle: none
+    textlogo: ''
+    title: Other components
   - appearance:
       background_color: ''
       background_image: ''
@@ -55,55 +86,18 @@ page_sections:
     subtitle: ''
     title: ''
 resources: []
-subtitle: Design
-title: Customisable
+subtitle: For Magazine-like presentation of your content
+title: Article Standard
+title2: in PoppyGo
 
 ---
 
-##  EEN Begeleiding & inspiratie
+## What does it do?
+This component takes the page content and presents it for reading purposes.
+This will be presented in a standard single column with a maximum width.
 
-### Rebelle moet zo naar school
+## What can you customize?
+Like all components, you can customize the appearance, setting background color, background image, overlay texture, parallax effect and item background color.
 
-#### paragraaf 1
-sgodfkjgslkdfjg
-skdjflkgjsldfg
-s
-dfgksdjfklgjsd
-fgsd
-fg
-
-#### TWEE Deze dienst is de favoriet van veel van mijn klanten,
-want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.
-
-### Rebelle moet zo naar school
-
-#### Pim ook
-sdfgsdfg
-sdf
-gs
-dfg
-sdfg
-sdfgsdfgsdfg
-
-spasea
-
-
-asd
-
-{{< image socket >}}
-### Rebelle moet zo naar school
-
-#### VIER Na een aantal sessies
-zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-
-#### TWEE Deze dienst is de favoriet
-van veel van mijn klanten, want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.
-
-#### VIJF
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
-
-#### ZES
-Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.
+Because it presents the Main Content, you can use markdown with our shortcodes to present your content as you like.
+We ship Poppygo One with some advanced shortcodes. Take for example the "image" shortcode. This shortcode takes care of all image formats and processes them into optimized images for all screens. Next to this you can determine the width, alignment and let the text flow next to the image.

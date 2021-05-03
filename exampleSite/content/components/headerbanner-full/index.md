@@ -1,7 +1,6 @@
 ---
 draft: false
-image: over
-title: Over Mind Dive
+image: '6667'
 page_sections:
   - appearance:
       background_color: transparent
@@ -26,37 +25,66 @@ page_sections:
     component: headerbanner-poster
     image: none
     name: banner
-    subtitle: '->frompage'
-    title: Dit is de titel
-    title2: '->frompage'
+    subtitle: fullheight
+    title: Headerbanner
+    title2: none
+  - appearance:
+      background_color: ''
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    component: article-standard
+    image: ''
+    menus: []
+    name: explanation
+    social_icons: []
+    subtitle: ''
+    textlogo: ''
+    title: ''
   - appearance:
       background_color: bright-navy-blue
-      background_image: '->frompage'
-      height: 30
+      background_image: ''
       item_background_color: ''
       parallax: false
       texture: grain
-    component: headerbanner-height
-    image: none
+    component: inpage-banner
+    image: ''
     menus: []
-    name: banner
+    name: Check below
     social_icons: []
     subtitle: none
     textlogo: ''
-    title: none
+    title: See the example in the section below.
   - appearance:
-      background_color: old-rose
-      background_image: none
+      background_color: isabelline
+      background_image: '666'
       item_background_color: transparent
       parallax: false
-      texture: grain
+      texture: grain3
     bodytext: ''
     buttons: []
-    component: poster-standard
-    image: ''
+    component: headerbanner-full
+    image: none
     name: article
     subtitle: '->frompage'
-    title: '->frompage'
+    title: ''
+  - appearance:
+      background_color: erie-black
+      background_image: none
+      item_background_color: bright-navy-blue
+      parallax: false
+      texture: grain3
+    component: listing-cards
+    count: '6'
+    image: ''
+    list: components
+    menus: []
+    name: Other components
+    social_icons: []
+    subtitle: none
+    textlogo: ''
+    title: Other components
   - appearance:
       background_color: ''
       background_image: ''
@@ -70,13 +98,19 @@ page_sections:
     name: footer
     subtitle: ''
     title: ''
+resources: []
+subtitle: For banners with mindblowing background images.
+title: Header banner full height
+title2: in PoppyGo
+
 ---
 
-### Een gids voor jouw doelen
+## What does it do?
+This component shows a bacground image with a title and subtitle and buttons at the full height of the screen.
 
+## When to use it?
+This component works well for homepages, some portfolio detail pages and landing pages with a simple call-to-action.
 
-Sinds 2000 ben ik aan de slag als gecertificeerde Professionele coach en ben ik gespecialiseerd in mensen helpen om te gaan met problemen. Ik coach mijn klanten op een manier die gebruikt maakt van zowel hun mentale als emotionele ideeën. Zelf maakte ik voor het eerst kennis met coaching toen ik op een obstakel botste in mijn eigen leven en moeite had om dit te overwinnen.
+## What can you customize?
+Like all components, you can customize the appearance, setting background color, background image, overlay texture, parallax effect and item background color.
 
-{{<image space over space >}}
-
-De technieken die ik voor mezelf had ontwikkeld, bleken zo'n succes dat vrienden en familie mij verzochten om hen ook te helpen met hun eigen uitdagingen. Dit heeft me gemotiveerd om mijn nieuwe passie om te zetten in een fulltime baan. Indien je vragen hebt over mijn methodes of je wilt een consultatie inplannen, neem dan contact met me op.

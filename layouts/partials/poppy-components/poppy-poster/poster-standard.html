@@ -13,7 +13,7 @@
         {{- $type := "" -}}
         {{- if in . "<h1" -}}
           {{- $class = "p-2 flex items-center max-h-screen writing-mode-horizontal p-2" -}}
-          {{- $type = . }}
+          {{- $type = "h1" -}}
         {{- end -}}
         {{- if in . "<h2" -}}
           {{- $class = "col-span-4 flex items-center max-h-screen writing-mode-horizontal p-2"}}

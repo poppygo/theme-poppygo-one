@@ -24,14 +24,14 @@ menus:
         url: /components/
         weight: 0
       - identifier: ''
-        name: CMS
+        name: with CMS
         parent: ''
         url: /pages/cms/
         weight: 0
       - identifier: ''
-        name: About PoppyGo
+        name: News
         parent: ''
-        url: /pages/poppygo/
+        url: /#news
         weight: 0
       - identifier: ''
         name: Contact

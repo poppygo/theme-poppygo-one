@@ -78,6 +78,7 @@ Then you can add that component to all pages, where it makes sense.
 
 {{< image uten >}}
 
+#    It's very important to see the secret message!
 
 ### Control apearrance of every component
 

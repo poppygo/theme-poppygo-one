@@ -1,6 +1,6 @@
 ---
 draft: false
-image: chair
+image: harry
 page_sections:
   - appearance:
       background_color: transparent
@@ -25,8 +25,8 @@ page_sections:
     component: headerbanner-poster
     image: none
     name: banner
-    subtitle: none
-    title: '->frompage'
+    subtitle: multi column
+    title: article
     title2: none
   - appearance:
       background_color: ''
@@ -82,7 +82,7 @@ page_sections:
     menus: []
     name: Other components
     social_icons: []
-    subtitle: ''
+    subtitle: none
     textlogo: ''
     title: Other components
   - appearance:

@@ -17,11 +17,13 @@ buttons:
     icon: information-circle
     icon_type: outline
     name: itembutton
+    outline_color: isabelline
+    outline_width: sm
     rounded: none
     size: lg
     text_color: erie-black
-    outline_color: isabelline
-    outline_width: sm
+    text_outline_color: ''
+    text_outline_width: ''
     text_transform: uppercase
   - color: isabelline
     font: menu
@@ -29,11 +31,13 @@ buttons:
     icon: ''
     icon_type: outline
     name: secondary
+    outline_color: isabelline
+    outline_width: sm
     rounded: ''
     size: base
     text_color: bright-navy-blue
-    outline_color: isabelline
-    outline_width: sm
+    text_outline_color: ''
+    text_outline_width: ''
     text_transform: uppercase
   - color: none
     font: body
@@ -41,11 +45,13 @@ buttons:
     icon: ''
     icon_type: outline
     name: link
+    outline_color: isabelline
+    outline_width: sm
     rounded: ''
     size: base
     text_color: erie-black
-    outline_color: isabelline
-    outline_width: sm
+    text_outline_color: ''
+    text_outline_width: ''
     text_transform: uppercase
 colorscheme:
   poppy_color1:
@@ -109,7 +115,7 @@ typographies:
     name: title
     outline_color: isabelline
     outline_width: sm
-    size: 8xl
+    size: 7xl
     transform: uppercase
   - align: ''
     background_color: none

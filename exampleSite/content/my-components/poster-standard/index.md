@@ -9,17 +9,17 @@ buttons: []
 design:
   typographies:
     - align: left
-      background_color: old-rose
-      cell_height: 6
-      cell_width: 1
+      background_color: davys-grey
+      cell_height: 1
+      cell_width: 7
       color: transparent
-      direction: vertical
+      direction: horizontal
       font: art
       font_weight: bold
       name: h1
       outline_color: isabelline
-      outline_width: sm
-      size: 7xl
+      outline_width: 0
+      size: lg
       space: 0
       transform: ''
     - align: left

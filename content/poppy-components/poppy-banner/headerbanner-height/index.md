@@ -26,14 +26,6 @@ design:
   typographies:
     - align: center
       background_color: transparent
-      color: charcoal
-      font: display1
-      font_weight: bold
-      name: title
-      size: 5xl
-      transform: uppercase
-    - align: center
-      background_color: transparent
       color: white
       font: display1
       font_weight: normal

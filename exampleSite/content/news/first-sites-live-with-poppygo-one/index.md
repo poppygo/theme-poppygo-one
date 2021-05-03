@@ -20,7 +20,7 @@ page_sections:
       background_image: nasa
       item_background_color: old-rose
       parallax: false
-      texture: ''
+      texture: grain
     bodytext: ''
     buttons: []
     component: headerbanner-standard
