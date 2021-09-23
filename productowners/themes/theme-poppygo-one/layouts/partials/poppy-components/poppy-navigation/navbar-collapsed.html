@@ -1,0 +1,57 @@
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+{{- $transparent := "" -}}
+{{- if eq $content.background_color "bg-transparent" -}}{{- $transparent = "absolute z-50 top-0 mx-auto container" -}} {{- end -}}
+
+{{- with $design -}}
+<div class ="{{$transparent}}">
+  <div class= "{{$content.background_color}} w-full {{.rounded}} container mx-auto flex justify-between">
+      <div class="flex flex-none lg:items-center justify-center">
+        <div class="flex-auto lg:items-center w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            {{- partial "poppy-elements/logo" (dict "content" $content "design" $design) -}}
+        </div>
+      </div>
+    <div id="hamburger-open" class="flex items-center justify-end w-40 {{.menu }} my-5 ">
+        <button  class="text-4xl focus:outline-none">
+          <div>menu</div>
+      </button>
+    </div>
+    <ul id="menu" class="hidden flex z-50 justify-end container flex-grow flex">
+      <div class="{{$content.background_color}} flex flex0-grow flex-col lg:flex-row justify-end items-end lg:items-center">
+        {{ range $content.menus}}
+          {{- range .items -}}
+          <li class="flex lg:my-2 mx-1 lg:mx-2 h-full py-1 lg:py-5">
+            <div class="justify-end md:justify-center flex flex-col px-5 py-5 lg:py-0 lg:h-full {{$design.menu}}">
+              <a title="{{ .name }}" href="{{ .url }}">{{ .name }}</a>
+            </div>
+          </li>
+          {{- end -}}
+        {{ end }}
+        <button id="hamburger-close" class="{{.menu}} order-first lg:order-none h-14 w-14 my-5">
+          {{- partial "poppy-elements/icon" (dict "icon" "x" "icontype" "solid") -}}
+        </button>
+      </div>
+    </ul>
+  </div>
+</div>
+{{- end -}}
+
+<script>
+    let hamburger = document.getElementById('hamburger-open');
+    let close = document.getElementById('hamburger-close');
+    let menu = document.getElementById('menu');
+    let logo = document.getElementById('logo');
+
+    hamburger.addEventListener('click', function(){
+        menu.classList.toggle('hidden');
+        hamburger.classList.toggle('hidden');
+        // logo.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', function(){
+        menu.classList.toggle('hidden');
+        hamburger.classList.toggle('hidden');
+        // logo.classList.toggle('hidden');
+    });
+</script>

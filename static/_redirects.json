@@ -1,0 +1,15 @@
+{
+  "rules":[
+    {
+        "from": "/example",
+        "to": "/new/example/",
+        "code": 301
+    }
+  ],
+  "options":{
+    "mainDomain": "poppygo.io",
+    "mainProtocol": "https",
+    "redirectAllToMainDomain": false,
+    "redirectCode": 301
+  }
+}

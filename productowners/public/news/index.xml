@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on PoppyGo One Hugo Theme</title>
+    <link>/news/</link>
+    <description>Recent content in News on PoppyGo One Hugo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About PoppyGo</title>
+      <link>/news/poppygo-starts-with-poppygo-one/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/poppygo-starts-with-poppygo-one/</guid>
+      <description>Our first users share their experiences with working with PoppyGo One and component based design.</description>
+    </item>
+    
+    <item>
+      <title>Content Management</title>
+      <link>/news/poppygo-one-live/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/poppygo-one-live/</guid>
+      <description>Our first users share their experiences with working with PoppyGo One and component based design.</description>
+    </item>
+    
+    <item>
+      <title>First sites live with PoppyGo One!</title>
+      <link>/news/first-sites-live-with-poppygo-one/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/first-sites-live-with-poppygo-one/</guid>
+      <description>Our first users share their experiences with working with PoppyGo One and component based design.</description>
+    </item>
+    
+  </channel>
+</rss>

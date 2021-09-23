@@ -1,0 +1,74 @@
+{{- $cells := slice -}}
+{{- $lines := slice -}}
+{{- $brokenlines := split (.content) "<" -}}
+{{- $line := "" -}}
+{{- $level := 0 -}}
+{{- $design := .design -}}
+
+{{- range $brokenlines -}}
+    {{- $line_start := (substr $line 0 6 ) -}}
+    {{- $line_end := (trim . "/") -}}
+    {{- $line_end = split $line_end ">" -}}
+    {{- $line_end = index $line_end 0 -}}
+    {{- $line_end = split $line_end " " -}}
+    {{- $line_end = index $line_end 0 -}}
+    {{- $match := false -}}
+    {{- if and . (in $line_start $line_end)  -}}
+        {{- if in . "/" -}}
+          {{- $match = true -}}
+          {{- if gt $level 0 -}}
+            {{- $level = sub $level 1 -}}
+          {{- end -}}
+        {{- else -}}
+          {{- $level = add $level 2 -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if and (eq $level 0) $match -}}
+      {{- $line = printf "%s<%s" $line . -}}
+      {{- $lines = $lines | append $line -}}
+      <br>{{$line}}<br><br>
+      {{- $line = "" -}}
+    {{- else if . -}}
+      {{- $line = printf "%s<%s" $line . -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $cell := "" -}}
+{{- range $index, $line := $lines -}}
+  {{- range $index, $part := (split $line " " ) -}}
+    {{- if eq $index 0 -}}
+      {{- $line = $part -}}
+      {{- range (slice "h1" "h2" "h3" "h4" "h5") -}}
+        {{- if in $part . -}}
+          {{- with (index $design .) -}}
+            {{- $line = printf "%s class='%s'" $part . -}}
+          {{- else -}}
+            {{- $line = printf "%s class='prose'" $part  -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if in $part "<p>" -}}
+        {{- warnf (printf "Paragraph: %s" (index (split $part "<p>") 1 )) -}}
+        {{- $line = printf "<p class='prose'>%s" (index (split $part "<p>") 1) -}}
+      {{- end -}}
+    {{- else -}}
+        {{- $line = printf "%s %s" $line $part -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if in $line "<style>" -}}
+      {{- $cell = printf "%s%s" $cell $line -}}
+  {{- else if in $line "<h4" -}}
+      {{- $cell = printf "%s%s" $cell $line -}}
+  {{- else if in (index $lines (add $index 1)) "<button" -}}
+      {{- $cell = printf "%s%s" $cell $line -}}
+  {{- else if and (in $line "<button") (in (index $lines (add $index 1)) "<p") -}}
+      {{- $cell = printf "%s%s" $cell $line -}}
+  {{- else -}}
+      {{- $cell = printf "%s%s" $cell $line -}}
+      {{- $cells = $cells | append $cell -}}
+      {{- $cell = "" -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $cells -}}

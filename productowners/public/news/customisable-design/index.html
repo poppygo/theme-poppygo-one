@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="">
+  <head itemscope itemtype="/">
+    <meta name="generator" content="Hugo 0.80.0" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+<meta property="og:locale" content="en">
+<meta name="language" content="en">
+
+<title itemprop="name">Customisable &middot; PoppyGo One Hugo Theme</title>
+<meta property="og:title" content="Customisable &middot; PoppyGo One Hugo Theme" />
+<meta name="twitter:title" content="Customisable &middot; PoppyGo One Hugo Theme" />
+<meta itemprop="name" content="Customisable &middot; PoppyGo One Hugo Theme" />
+<meta name="application-name" content="PoppyGo One Hugo Theme" />
+<meta property="og:site_name" content="PoppyGo One Hugo Theme" />
+
+<base href="/news/customisable-design/">
+<link rel="canonical" href="/news/customisable-design/" itemprop="url" />
+<meta name="url" content="/news/customisable-design/" />
+<meta name="twitter:url" content="/news/customisable-design/" />
+<meta property="og:url" content="/news/customisable-design/" />
+
+
+  
+    <meta itemprop="image" content="/images/og_image.jpg" />
+    <meta property="og:image" content="/images/og_image.jpg" />
+    <meta name="twitter:image" content="/images/og_image.jpg" />
+    <meta name="twitter:image:src" content="/images/og_image.jpg" />
+  
+
+<meta name="twitter:card" content="summary_large_image" />
+
+
+  <meta property="og:type" content="article" />
+  <meta itemprop="description" content="How components work Control your page layout with the flexibility of components PoppyGo One is built around the concept of components. The theme comes with a re" />
+  <meta property="og:description" content="How components work Control your page layout with the flexibility of components PoppyGo One is built around the concept of components. The theme comes with a re" />
+  <meta name="description" content="How components work Control your page layout with the flexibility of components PoppyGo One is built around the concept of components. The theme comes with a re" />
+  <meta name="twitter:description" content="How components work Control your page layout with the flexibility of components PoppyGo One is built around the concept of components. The theme comes with a re" />
+  <meta property="article:published_time" content="0001-01-01T00:00:00Z" />
+  <meta name="twitter:label1" value="Reading time" />
+  
+    <meta name="twitter:data1" value="3 minutes" />
+  
+  <meta name="twitter:label2" value="Published" />
+  <meta name="twitter:data2" value="January 1, 0001" />
+  
+
+
+<meta property="og:updated_time" content=0001-01-01T00:00:00Z />
+
+
+
+
+
+
+<style>
+  :root { --poppy-color1: #1b1b1b; --poppy-color2: #4379c0; --poppy-color3: #54514D; --poppy-color4: #91785D; --poppy-color5: #B98389; --poppy-color6: #F5F1ED; --font-display1: Domine; --font-body: Domine; --font-menu: Staatliches; --font-art: Oswald; --font-display2: Domine; --container-2xl: 0rem; --container-DEFAULT: 0rem; --container-lg: 0rem; --container-sm: 0rem; --container-xl: 0rem;}
+</style>
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Domine:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Oswald:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Domine:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+
+
+<link rel="stylesheet" href="/css/poppygo-one.min.c1ec7b900b250b9bf5914ea99dc04360.css">
+
+
+
+</head><body class="w-full min-h-screen relative flex-col flex justify-between bg-%!s(&lt;nil&gt;)"><style>
+html {
+	scroll-behavior: smooth;
+}
+</style>
+
+
+		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+		
+			
+			
+			
+			
+			
+
+
+		
+
+		
+
+<div id="btn-md-navbar-navbar" class="z-10 relative h-0">
+  <div class="absolute p-2">
+  <button  class="bg-gray text-white rounded-xl px-10">
+    Debug md-navbar
+  </button>
+</div>
+</div>
+
+<section id="window-md-navbar-navbar" class="hidden m-4 p-3 pt-8 mx-auto container bg-gray mb-10">
+  <div class = "p-10 border-dotted border-4 border-white">
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-gray">Poppy debug info</p>
+    </div>
+  <h2 class="text-xl text-white">Page Component: md-navbar <h2>
+  <h2 class="text-xl text-white">Poppy component: poppy-components/poppy-navigation/navbar-collapsed <h2>
+  <h2 class="text-xl text-white">Page: customisable-design</h2>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Content</h2>
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">background_color</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg-transparent
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_css</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg_2c58ef89f8909af346c0ac9ad4681015_navbar
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/news/customisable-design/index.md)
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">design</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                map[typographies:[]]
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/my-components/md-navbar/index.md)
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">headless</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                true
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">item_background_color</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg-white
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">menus</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            <div class="text-gray text-center">0
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-white text-gray">
+                        items
+                      </div>
+                      <div>
+                        [map[identifier: name:Customisable design parent: url:/pages/customisable-design weight:3] map[identifier: name:components parent: url:/components/ weight:0] map[identifier: name:CMS parent: url:/pages/cms/ weight:0] map[identifier: name:About PoppyGo parent: url:/pages/poppygo/ weight:0] map[identifier: name:Contact parent: url:https://poppygo.io weight:0]]
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        name
+                      </div>
+                      <div>
+                        main
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        title
+                      </div>
+                      <div>
+                        main
+                      </div>
+                    
+
+                   </div>
+                </div>
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">name</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                navbar
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_type</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                poppy-navigation
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_variant</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                navbar-collapsed
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">textlogo</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                PoppyGo One
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">texture</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                grain
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">title</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                PoppyGo
+            
+          </div>
+        
+      
+    </div>
+  </div>
+
+  <div class= "my-10 mb-0">
+    <h2 class="text-2xl text-white mb-3">Design</h2>
+    <div class ="bg-gray grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">body</p></div>
+              <div class = "text-white"> bg- text-poppycolor1 font-body font-normal leading-relaxed body text-stroke-poppycolor1 text-stroke-2 text-base lg:text-lg xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border</p></div>
+              <div class = "text-white"> border-none border-poppycolor2 border-opacity-30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_color</p></div>
+              <div class = "text-white">bright-navy-blue</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_opacity</p></div>
+              <div class = "text-white">30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_itembutton</p></div>
+              <div class = "text-white"> bg-poppycolor2 font-art font-normal information-circle outline itembutton isabelline sm rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_link</p></div>
+              <div class = "text-white"> bg- font-body outline link isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_primary</p></div>
+              <div class = "text-white"> bg-poppycolor1 font-art font-normal information-circle outline primary rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor2 text-stroke-poppycolor6 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_secondary</p></div>
+              <div class = "text-white"> bg-poppycolor6 font-menu outline secondary isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor2 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">gridgap</p></div>
+              <div class = "text-white">gap-x-0 gap-y-10 sm:gap-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itembody</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor6 font-body font-medium leading-loose itembody text-stroke-poppycolor1 text-stroke-2 text-base lg:text-lg xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemsubtitle</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor1 font-display1 font-normal itemsubtitle text-stroke-poppycolor1 text-stroke-2 text-2xl lg:text-3xl xl:text-4xl py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemtitle</p></div>
+              <div class = "text-white"> text-left bg-poppycolor1 text-poppycolor2 font-art font-black itemtitle text-stroke-poppycolor6 text-xl lg:text-2xl xl:text-2xl uppercase py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">logo</p></div>
+              <div class = "text-white"> text-center bg-transparent text-transparent font-art font-bold logo text-stroke-poppycolor6 text-stroke-xs text-3xl lg:text-4xl xl:text-5xl uppercase py-3</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">menu</p></div>
+              <div class = "text-white"> bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">name</p></div>
+              <div class = "text-white">components</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">rounded</p></div>
+              <div class = "text-white">rounded-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">shadow</p></div>
+              <div class = "text-white">shadow-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">subtitle</p></div>
+              <div class = "text-white"> text-center bg- text- font-display2 font-medium subtitle text-stroke-poppycolor1 text-stroke-2 text-lg lg:text-xl xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">title</p></div>
+              <div class = "text-white"> text-center bg- text-transparent font-art font-bold leading-none title text-stroke-poppycolor6 text-stroke-sm text-8xl lg:text-9xl xl:text-10xl uppercase py-4</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">vertical_space</p></div>
+              <div class = "text-white">py-12 sm:pt-15 md:pt-18 lg:pt-21 xl:pt-24</div>
+            </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+    document.getElementById('btn-md-navbar-navbar').addEventListener('click', function(){
+            document.getElementById('window-md-navbar-navbar').classList.toggle('hidden');
+        });
+</script>
+<style>
+        .bg_2c58ef89f8909af346c0ac9ad4681015_navbar::after {
+          content: "";
+          opacity:0.2;
+          mix-blend-mode:overlay;
+          position: absolute;
+          width:100%;
+          height:100%;
+          top:0;
+          z-index: 0;
+          pointer-events: none;
+          background-size:cover;
+        }
+  @media (max-width: 667px) {.bg_2c58ef89f8909af346c0ac9ad4681015_navbar:after {background-image:url(/grain1_hu7f631035eca52ccce508cd495308be79_1766650_500x0_resize_box_2.png);}}
+  @media (min-width: 668px) {.bg_2c58ef89f8909af346c0ac9ad4681015_navbar:after {background-image:url(/grain1_hu7f631035eca52ccce508cd495308be79_1766650_768x0_resize_box_2.png) ;}}
+  @media (min-width: 992px) {.bg_2c58ef89f8909af346c0ac9ad4681015_navbar:after {background-image:url( /grain1_hu7f631035eca52ccce508cd495308be79_1766650_992x0_resize_box_2.png) ;}}
+  @media (min-width: 1200px) {.bg_2c58ef89f8909af346c0ac9ad4681015_navbar:after {background-image:url(/grain1_hu7f631035eca52ccce508cd495308be79_1766650_1200x0_resize_box_2.png); }}
+  @media (min-width: 1600px) {.bg_2c58ef89f8909af346c0ac9ad4681015_navbar:after {background-image:url(/grain1_hu7f631035eca52ccce508cd495308be79_1766650_1920x0_resize_box_2.png) blendmo ;}}
+        </style><section id="navbar" class=" bg-transparent ">
+							<div class = "relative bg_2c58ef89f8909af346c0ac9ad4681015_navbar  bg-cover ">
+								<div class = " container  mx-auto"><div class ="absolute z-50 top-0 mx-auto container">
+  <div class= "bg-transparent w-full rounded-none container mx-auto flex justify-between">
+      <div class="flex flex-none lg:items-center justify-center">
+        <div class="flex-auto lg:items-center w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5">
+  <div class="py-6">
+      <a id="logo" class=" text-center bg-transparent text-transparent font-art font-bold logo text-stroke-poppycolor6 text-stroke-xs text-3xl lg:text-4xl xl:text-5xl uppercase py-3" href="/">PoppyGo One</a>
+  </div>
+
+</div>
+      </div>
+    <div id="hamburger-open" class="flex items-center justify-end w-40  bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py- my-5 ">
+        <button  class="text-4xl focus:outline-none">
+          <div>menu</div>
+      </button>
+    </div>
+    <ul id="menu" class="hidden flex z-50 justify-end container flex-grow flex">
+      <div class="bg-transparent flex flex0-grow flex-col lg:flex-row justify-end items-end lg:items-center">
+        <li class="flex lg:my-2 mx-1 lg:mx-2 h-full py-1 lg:py-5">
+            <div class="justify-end md:justify-center flex flex-col px-5 py-5 lg:py-0 lg:h-full  bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-">
+              <a title="Customisable design" href="/pages/customisable-design">Customisable design</a>
+            </div>
+          </li><li class="flex lg:my-2 mx-1 lg:mx-2 h-full py-1 lg:py-5">
+            <div class="justify-end md:justify-center flex flex-col px-5 py-5 lg:py-0 lg:h-full  bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-">
+              <a title="components" href="/components/">components</a>
+            </div>
+          </li><li class="flex lg:my-2 mx-1 lg:mx-2 h-full py-1 lg:py-5">
+            <div class="justify-end md:justify-center flex flex-col px-5 py-5 lg:py-0 lg:h-full  bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-">
+              <a title="CMS" href="/pages/cms/">CMS</a>
+            </div>
+          </li><li class="flex lg:my-2 mx-1 lg:mx-2 h-full py-1 lg:py-5">
+            <div class="justify-end md:justify-center flex flex-col px-5 py-5 lg:py-0 lg:h-full  bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-">
+              <a title="About PoppyGo" href="/pages/poppygo/">About PoppyGo</a>
+            </div>
+          </li><li class="flex lg:my-2 mx-1 lg:mx-2 h-full py-1 lg:py-5">
+            <div class="justify-end md:justify-center flex flex-col px-5 py-5 lg:py-0 lg:h-full  bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-">
+              <a title="Contact" href="https://poppygo.io">Contact</a>
+            </div>
+          </li>
+        <button id="hamburger-close" class=" bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py- order-first lg:order-none h-14 w-14 my-5"><svg width="100%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="fill-current">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L10 8.58579L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L11.4142 10L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L10 11.4142L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L8.58579 10L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289Z"/>
+</svg>
+</button>
+      </div>
+    </ul>
+  </div>
+</div><script>
+    let hamburger = document.getElementById('hamburger-open');
+    let close = document.getElementById('hamburger-close');
+    let menu = document.getElementById('menu');
+    let logo = document.getElementById('logo');
+
+    hamburger.addEventListener('click', function(){
+        menu.classList.toggle('hidden');
+        hamburger.classList.toggle('hidden');
+        
+    });
+
+    close.addEventListener('click', function(){
+        menu.classList.toggle('hidden');
+        hamburger.classList.toggle('hidden');
+        
+    });
+</script>
+</div>
+							<div>
+						</section>
+
+
+		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+		
+			
+			
+			
+			
+			
+
+
+		
+
+		
+
+<div id="btn-headerbanner-poster-banner" class="z-10 relative h-0">
+  <div class="absolute p-2">
+  <button  class="bg-gray text-white rounded-xl px-10">
+    Debug headerbanner-poster
+  </button>
+</div>
+</div>
+
+<section id="window-headerbanner-poster-banner" class="hidden m-4 p-3 pt-8 mx-auto container bg-gray mb-10">
+  <div class = "p-10 border-dotted border-4 border-white">
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-gray">Poppy debug info</p>
+    </div>
+  <h2 class="text-xl text-white">Page Component: headerbanner-poster <h2>
+  <h2 class="text-xl text-white">Poppy component: poppy-components/poppy-banner/header-banner-poster <h2>
+  <h2 class="text-xl text-white">Page: customisable-design</h2>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Content</h2>
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">background_color</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg-poppycolor5
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_css</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg_bde57d6ed4522e92f1bddb404f1161bb_banner
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/my-components/headerbanner-poster/index.md)
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">body</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                <h2 id="how-components-work">How components work</h2>
+<h3 id="control-your-page-layout-with-the-flexibility-of-components">Control your page layout with the flexibility of components</h3>
+<h4 id="poppygo-one-is-built-around-the-concept-of-components">PoppyGo One is built around the concept of components.</h4>
+<p>The theme comes with a relative small set of components. We will continue adding more components to the theme. If you want to help us with developing more components, you&rsquo;re more than welcome! Please visit our <a href="https://poppygo.github.io/poppygo-book/">referenceguide</a>.<br>
+<a href="/components/" class="umami--click--all-available-components ">
+  <button class=" bg-poppycolor1 font-art font-normal information-circle outline primary rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor2 text-stroke-poppycolor6 uppercase mb-1 mr-1 ">
+    all available components
+  </button>
+</a>
+<br>
+Components come as layout with default content from the PoppyGo One theme.<br>
+When you add a page section to your page the define which component should be used.<br>
+When the component is defined,  the default content is shown, so you get a visual overview of what content variable goes where.<br>
+In that particular page section you define your own content and the appearance of the page section.<br>
+You can add as many components to your page as you like. This works for the homepage, listpages or sections and detailpages.</p>
+
+<style>
+      .imagegrid-uten {
+        width: 100% ;
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: stretch;
+        justify-content: stretch;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .oneCol, .twoCols, .threeCols {
+        grid-column: span 12;
+      }
+      .fourCols, .sixCols {
+        grid-column: span 6;
+      }
+      @media (min-width: 768px) {
+        .imagegrid-uten{
+          margin: ;
+          float: ;
+          width: 100%;
+        }
+        .twoCols, .threeCols {
+          grid-column: span 6;
+        }
+
+        .fourCols, .sixCols {
+          grid-column: span 3;
+        }
+      }
+      @media (min-width: 992px) {
+        .twoCols {
+          grid-column: span 6;
+        }
+        .threeCols {
+          grid-column: span 4;
+        }
+        .sixCols {
+          grid-column: span 2;
+        }
+      }
+      .pogoimage {
+        width: 100%;
+      }
+    </style>
+
+    <div class="imagegrid-uten"><div class= "oneCol">
+          <img class="pogoimage" sizes="60vw" style="margin: 0px"
+                srcset='/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_200x0_resize_q75_box.jpg 200w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_360x0_resize_q75_box.jpg 360w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_480x0_resize_q75_box.jpg 480w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_800x0_resize_q75_box.jpg 800w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_1200x0_resize_q75_box.jpg 1200w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_1500x0_resize_q75_box.jpg 1500w,'
+                src="/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_640x0_resize_q75_box.jpg"
+                class="lazyload image"
+                alt="Customisable news "></div>
+    </div>
+<h3 id="control-apearrance-of-every-component">Control apearrance of every component</h3>
+<h4 id="colors-images-and-texture">Colors, images and texture</h4>
+<p>In every component you control the appearance in terms of colors, texture and background images, so that next to the layout, you get the desired feel for every component.</p>
+<h4 id="override-the-design-for-a-component">Override the design for a component</h4>
+<p>You can have buttons, typographies, roundings and outlines overridden in your own components. They are in my-components.</p>
+<h3 id="create-your-own-reusable-components-as-content-snippets">Create your own reusable components as content snippets.</h3>
+<h2 id="how-to-control-typographies">How to control typographies</h2>
+<h4 id="control-typographies">Control typographies</h4>
+<p>You can defined</p>
+
+<style>
+      .imagegrid-socket {
+        width: 100% ;
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: stretch;
+        justify-content: stretch;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .oneCol, .twoCols, .threeCols {
+        grid-column: span 12;
+      }
+      .fourCols, .sixCols {
+        grid-column: span 6;
+      }
+      @media (min-width: 768px) {
+        .imagegrid-socket{
+          margin: ;
+          float: ;
+          width: 100%;
+        }
+        .twoCols, .threeCols {
+          grid-column: span 6;
+        }
+
+        .fourCols, .sixCols {
+          grid-column: span 3;
+        }
+      }
+      @media (min-width: 992px) {
+        .twoCols {
+          grid-column: span 6;
+        }
+        .threeCols {
+          grid-column: span 4;
+        }
+        .sixCols {
+          grid-column: span 2;
+        }
+      }
+      .pogoimage {
+        width: 100%;
+      }
+    </style>
+
+    <div class="imagegrid-socket"><div class= "oneCol">
+          <img class="pogoimage" sizes="60vw" style="margin: 0px"
+                srcset='/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_200x0_resize_q75_box.jpg 200w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_360x0_resize_q75_box.jpg 360w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_480x0_resize_q75_box.jpg 480w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_800x0_resize_q75_box.jpg 800w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_1200x0_resize_q75_box.jpg 1200w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_1500x0_resize_q75_box.jpg 1500w,'
+                src="/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_640x0_resize_q75_box.jpg"
+                class="lazyload image"
+                alt="Customisable news "></div>
+    </div>
+<h2 id="how-to-control-buttons">How to control buttons</h2>
+<h4 id="paragraaf-3">Paragraaf 3</h4>
+<p>sdfgsdfg<br>
+sdf<br>
+gs<br>
+dfg<br>
+sdfg<br>
+sdfgsdfgsdfg<br>
+spaseaasd</p>
+<h4 id="vier-na-een-aantal-sessies">VIER Na een aantal sessies</h4>
+<p>zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+<h4 id="twee-deze-dienst-is-de-favoriet">TWEE Deze dienst is de favoriet</h4>
+<p>van veel van mijn klanten, want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.</p>
+<h4 id="vijf">VIJF</h4>
+<p>Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+<h4 id="zes">ZES</h4>
+<p>Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">design</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                map[typographies:[map[align:left background_color:transparent color:isabelline font:display1 font_weight:bold name:titlelight outline_color: outline_width: size:6xl space:0 transform:lowercase] map[align:left background_color:transparent color:erie-black font:display1 font_weight:bold name:titledark outline_color: outline_width: size:6xl space:0 transform:lowercase] map[align:right background_color:transparent color:transparent font:art font_weight:bold name:titleoutline outline_color:isabelline outline_width:sm size:7xl space:0 transform:uppercase] map[align:center background_color:transparent color:white font:display1 font_weight:normal name:subtitle outline_color: outline_width: size:xl space:0 transform:uppercase]]]
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/news/customisable-design/index.md)
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">name</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                banner
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_type</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                poppy-banner
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_variant</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                header-banner-poster
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-poppycolor1 ">
+            <p class="text-gray">subtitle</p>
+              <p class="text-white"> -> override in Page </p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Design
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">summary</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                -| I am the summary of the banner, which can be used for opengraph and SEO descriptions
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">texture</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                grain
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">title</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Customisable
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">title2</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                max control
+            
+          </div>
+        
+      
+    </div>
+  </div>
+
+  <div class= "my-10 mb-0">
+    <h2 class="text-2xl text-white mb-3">Design</h2>
+    <div class ="bg-gray grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">body</p></div>
+              <div class = "text-white"> bg- text-poppycolor1 font-body font-normal leading-relaxed body text-stroke-poppycolor1 text-stroke-2 text-base lg:text-lg xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border</p></div>
+              <div class = "text-white"> border-none border-poppycolor2 border-opacity-30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_color</p></div>
+              <div class = "text-white">bright-navy-blue</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_opacity</p></div>
+              <div class = "text-white">30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_itembutton</p></div>
+              <div class = "text-white"> bg-poppycolor2 font-art font-normal information-circle outline itembutton isabelline sm rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_link</p></div>
+              <div class = "text-white"> bg- font-body outline link isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_primary</p></div>
+              <div class = "text-white"> bg-poppycolor1 font-art font-normal information-circle outline primary rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor2 text-stroke-poppycolor6 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_secondary</p></div>
+              <div class = "text-white"> bg-poppycolor6 font-menu outline secondary isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor2 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">gridgap</p></div>
+              <div class = "text-white">gap-x-0 gap-y-10 sm:gap-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itembody</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor6 font-body font-medium leading-loose itembody text-stroke-poppycolor1 text-stroke-2 text-base lg:text-lg xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemsubtitle</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor1 font-display1 font-normal itemsubtitle text-stroke-poppycolor1 text-stroke-2 text-2xl lg:text-3xl xl:text-4xl py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemtitle</p></div>
+              <div class = "text-white"> text-left bg-poppycolor1 text-poppycolor2 font-art font-black itemtitle text-stroke-poppycolor6 text-xl lg:text-2xl xl:text-2xl uppercase py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">logo</p></div>
+              <div class = "text-white"> text-center bg-transparent text-transparent font-art font-bold logo text-stroke-poppycolor6 text-stroke-xs text-3xl lg:text-4xl xl:text-5xl uppercase py-3</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">menu</p></div>
+              <div class = "text-white"> bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">name</p></div>
+              <div class = "text-white">components</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">rounded</p></div>
+              <div class = "text-white">rounded-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">shadow</p></div>
+              <div class = "text-white">shadow-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">subtitle</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-center bg-transparent text-white font-display1 font-normal subtitle text-stroke-poppycolor1 text-stroke-2 text-xl lg:text-2xl xl:text-2xl uppercase py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">title</p></div>
+              <div class = "text-white"> text-center bg- text-transparent font-art font-bold leading-none title text-stroke-poppycolor6 text-stroke-sm text-8xl lg:text-9xl xl:text-10xl uppercase py-4</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">titledark</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor1 font-display1 font-bold titledark text-6xl lg:text-7xl xl:text-8xl py-0 lowercase</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">titlelight</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor6 font-display1 font-bold titlelight text-6xl lg:text-7xl xl:text-8xl py-0 lowercase</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">titleoutline</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-right bg-transparent text-transparent font-art font-bold titleoutline text-stroke-poppycolor6 text-stroke-sm text-7xl lg:text-8xl xl:text-9xl py-0 uppercase</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">vertical_space</p></div>
+              <div class = "text-white">py-12 sm:pt-15 md:pt-18 lg:pt-21 xl:pt-24</div>
+            </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+    document.getElementById('btn-headerbanner-poster-banner').addEventListener('click', function(){
+            document.getElementById('window-headerbanner-poster-banner').classList.toggle('hidden');
+        });
+</script>
+<style>
+        .bg_bde57d6ed4522e92f1bddb404f1161bb_banner::after {
+          content: "";
+          opacity:0.2;
+          mix-blend-mode:overlay;
+          position: absolute;
+          width:100%;
+          height:100%;
+          top:0;
+          z-index: 0;
+          pointer-events: none;
+          background-size:cover;
+        }
+  @media (max-width: 667px) {.bg_bde57d6ed4522e92f1bddb404f1161bb_banner:after {background-image:url(/my-components/headerbanner-poster/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_500x0_resize_box_2.png);}}
+  @media (min-width: 668px) {.bg_bde57d6ed4522e92f1bddb404f1161bb_banner:after {background-image:url(/my-components/headerbanner-poster/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_768x0_resize_box_2.png) ;}}
+  @media (min-width: 992px) {.bg_bde57d6ed4522e92f1bddb404f1161bb_banner:after {background-image:url( /my-components/headerbanner-poster/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_992x0_resize_box_2.png) ;}}
+  @media (min-width: 1200px) {.bg_bde57d6ed4522e92f1bddb404f1161bb_banner:after {background-image:url(/my-components/headerbanner-poster/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_1200x0_resize_box_2.png); }}
+  @media (min-width: 1600px) {.bg_bde57d6ed4522e92f1bddb404f1161bb_banner:after {background-image:url(/my-components/headerbanner-poster/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_1920x0_resize_box_2.png) blendmo ;}}
+        </style><section id="banner" class=" bg-poppycolor5 ">
+							<div class = "relative bg_bde57d6ed4522e92f1bddb404f1161bb_banner  bg-cover ">
+								<div class = " container  mx-auto"><div class="flex pt-32 top-0 flex flex-col w-full">
+    <div class= "grid grid-cols-3 w-full">
+      <div class = "flex flex-col col-span-2">
+        <p class= " text-left bg-transparent text-poppycolor6 font-display1 font-bold titlelight text-6xl lg:text-7xl xl:text-8xl py-0 lowercase ">Customisable</p>
+        <p class=" text-left bg-transparent text-poppycolor1 font-display1 font-bold titledark text-6xl lg:text-7xl xl:text-8xl py-0 lowercase"> Design</p>
+        <div class=" text-center bg-transparent text-white font-display1 font-normal subtitle text-stroke-poppycolor1 text-stroke-2 text-xl lg:text-2xl xl:text-2xl uppercase py-2"></div>
+      </div>
+      <div class = "col-start-1 col-span-3 md:col-span-1 md:col-start-3 z-10 relative hidden md:block">
+        <p class="absolute outline  text-right bg-transparent text-transparent font-art font-bold titleoutline text-stroke-poppycolor6 text-stroke-sm text-7xl lg:text-8xl xl:text-9xl py-0 uppercase">max control</p>
+      </div>
+    </div>
+  </div></div>
+							<div>
+						</section>
+
+
+		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+		
+			
+			
+			
+			
+			
+
+
+		
+
+		
+
+<div id="btn-poster-standard-article" class="z-10 relative h-0">
+  <div class="absolute p-2">
+  <button  class="bg-gray text-white rounded-xl px-10">
+    Debug poster-standard
+  </button>
+</div>
+</div>
+
+<section id="window-poster-standard-article" class="hidden m-4 p-3 pt-8 mx-auto container bg-gray mb-10">
+  <div class = "p-10 border-dotted border-4 border-white">
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-gray">Poppy debug info</p>
+    </div>
+  <h2 class="text-xl text-white">Page Component: poster-standard <h2>
+  <h2 class="text-xl text-white">Poppy component: poppy-components/poppy-poster/poster-standard <h2>
+  <h2 class="text-xl text-white">Page: customisable-design</h2>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Content</h2>
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">background_color</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg-poppycolor3
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_css</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg_c723757169e72badd343af9ed7201906_article
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/news/customisable-design/index.md)
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">body</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                <h2 id="how-components-work">How components work</h2>
+<h3 id="control-your-page-layout-with-the-flexibility-of-components">Control your page layout with the flexibility of components</h3>
+<h4 id="poppygo-one-is-built-around-the-concept-of-components">PoppyGo One is built around the concept of components.</h4>
+<p>The theme comes with a relative small set of components. We will continue adding more components to the theme. If you want to help us with developing more components, you&rsquo;re more than welcome! Please visit our <a href="https://poppygo.github.io/poppygo-book/">referenceguide</a>.<br>
+<a href="/components/" class="umami--click--all-available-components ">
+  <button class=" bg-poppycolor1 font-art font-normal information-circle outline primary rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor2 text-stroke-poppycolor6 uppercase mb-1 mr-1 ">
+    all available components
+  </button>
+</a>
+<br>
+Components come as layout with default content from the PoppyGo One theme.<br>
+When you add a page section to your page the define which component should be used.<br>
+When the component is defined,  the default content is shown, so you get a visual overview of what content variable goes where.<br>
+In that particular page section you define your own content and the appearance of the page section.<br>
+You can add as many components to your page as you like. This works for the homepage, listpages or sections and detailpages.</p>
+
+<style>
+      .imagegrid-uten {
+        width: 100% ;
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: stretch;
+        justify-content: stretch;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .oneCol, .twoCols, .threeCols {
+        grid-column: span 12;
+      }
+      .fourCols, .sixCols {
+        grid-column: span 6;
+      }
+      @media (min-width: 768px) {
+        .imagegrid-uten{
+          margin: ;
+          float: ;
+          width: 100%;
+        }
+        .twoCols, .threeCols {
+          grid-column: span 6;
+        }
+
+        .fourCols, .sixCols {
+          grid-column: span 3;
+        }
+      }
+      @media (min-width: 992px) {
+        .twoCols {
+          grid-column: span 6;
+        }
+        .threeCols {
+          grid-column: span 4;
+        }
+        .sixCols {
+          grid-column: span 2;
+        }
+      }
+      .pogoimage {
+        width: 100%;
+      }
+    </style>
+
+    <div class="imagegrid-uten"><div class= "oneCol">
+          <img class="pogoimage" sizes="60vw" style="margin: 0px"
+                srcset='/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_200x0_resize_q75_box.jpg 200w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_360x0_resize_q75_box.jpg 360w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_480x0_resize_q75_box.jpg 480w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_800x0_resize_q75_box.jpg 800w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_1200x0_resize_q75_box.jpg 1200w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_1500x0_resize_q75_box.jpg 1500w,'
+                src="/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_640x0_resize_q75_box.jpg"
+                class="lazyload image"
+                alt="Customisable news "></div>
+    </div>
+<h3 id="control-apearrance-of-every-component">Control apearrance of every component</h3>
+<h4 id="colors-images-and-texture">Colors, images and texture</h4>
+<p>In every component you control the appearance in terms of colors, texture and background images, so that next to the layout, you get the desired feel for every component.</p>
+<h4 id="override-the-design-for-a-component">Override the design for a component</h4>
+<p>You can have buttons, typographies, roundings and outlines overridden in your own components. They are in my-components.</p>
+<h3 id="create-your-own-reusable-components-as-content-snippets">Create your own reusable components as content snippets.</h3>
+<h2 id="how-to-control-typographies">How to control typographies</h2>
+<h4 id="control-typographies">Control typographies</h4>
+<p>You can defined</p>
+
+<style>
+      .imagegrid-socket {
+        width: 100% ;
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: stretch;
+        justify-content: stretch;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .oneCol, .twoCols, .threeCols {
+        grid-column: span 12;
+      }
+      .fourCols, .sixCols {
+        grid-column: span 6;
+      }
+      @media (min-width: 768px) {
+        .imagegrid-socket{
+          margin: ;
+          float: ;
+          width: 100%;
+        }
+        .twoCols, .threeCols {
+          grid-column: span 6;
+        }
+
+        .fourCols, .sixCols {
+          grid-column: span 3;
+        }
+      }
+      @media (min-width: 992px) {
+        .twoCols {
+          grid-column: span 6;
+        }
+        .threeCols {
+          grid-column: span 4;
+        }
+        .sixCols {
+          grid-column: span 2;
+        }
+      }
+      .pogoimage {
+        width: 100%;
+      }
+    </style>
+
+    <div class="imagegrid-socket"><div class= "oneCol">
+          <img class="pogoimage" sizes="60vw" style="margin: 0px"
+                srcset='/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_200x0_resize_q75_box.jpg 200w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_360x0_resize_q75_box.jpg 360w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_480x0_resize_q75_box.jpg 480w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_800x0_resize_q75_box.jpg 800w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_1200x0_resize_q75_box.jpg 1200w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_1500x0_resize_q75_box.jpg 1500w,'
+                src="/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_640x0_resize_q75_box.jpg"
+                class="lazyload image"
+                alt="Customisable news "></div>
+    </div>
+<h2 id="how-to-control-buttons">How to control buttons</h2>
+<h4 id="paragraaf-3">Paragraaf 3</h4>
+<p>sdfgsdfg<br>
+sdf<br>
+gs<br>
+dfg<br>
+sdfg<br>
+sdfgsdfgsdfg<br>
+spaseaasd</p>
+<h4 id="vier-na-een-aantal-sessies">VIER Na een aantal sessies</h4>
+<p>zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+<h4 id="twee-deze-dienst-is-de-favoriet">TWEE Deze dienst is de favoriet</h4>
+<p>van veel van mijn klanten, want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.</p>
+<h4 id="vijf">VIJF</h4>
+<p>Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+<h4 id="zes">ZES</h4>
+<p>Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">design</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                map[typographies:[map[align:left background_color:old-rose cell_height:6 cell_width:1 color:transparent direction:vertical font:art font_weight:bold name:h1 outline_color:isabelline outline_width:sm size:7xl space:0 transform:] map[align:left background_color:davys-grey cell_height:5 cell_width:1 color:transparent direction:vertical font:art font_weight:normal name:h2 outline_color:isabelline outline_width:sm size:6xl space:4 transform:uppercase] map[align:left background_color:davys-grey cell_height:1 cell_width:6 color:isabelline font:display2 font_weight:normal name:h3 outline_color: outline_width: size:2xl space:0 transform:]]]
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/my-components/poster-standard/index.md)
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">headless</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                true
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">item_background_color</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg-poppycolor5
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">name</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                article
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">parallax</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                true
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_type</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                poppy-poster
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_variant</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                poster-standard
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">subtitle</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Design
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">texture</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                grain3
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">title</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Customisable
+            
+          </div>
+        
+      
+        
+      
+    </div>
+  </div>
+
+  <div class= "my-10 mb-0">
+    <h2 class="text-2xl text-white mb-3">Design</h2>
+    <div class ="bg-gray grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">body</p></div>
+              <div class = "text-white"> bg- text-poppycolor1 font-body font-normal leading-relaxed body text-stroke-poppycolor1 text-stroke-2 text-base lg:text-lg xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border</p></div>
+              <div class = "text-white"> border-none border-poppycolor2 border-opacity-30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_color</p></div>
+              <div class = "text-white">bright-navy-blue</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_opacity</p></div>
+              <div class = "text-white">30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_itembutton</p></div>
+              <div class = "text-white"> bg-poppycolor2 font-art font-normal information-circle outline itembutton isabelline sm rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_link</p></div>
+              <div class = "text-white"> bg- font-body outline link isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_primary</p></div>
+              <div class = "text-white"> bg-poppycolor1 font-art font-normal information-circle outline primary rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor2 text-stroke-poppycolor6 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_secondary</p></div>
+              <div class = "text-white"> bg-poppycolor6 font-menu outline secondary isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor2 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">gridgap</p></div>
+              <div class = "text-white">gap-x-0 gap-y-10 sm:gap-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">h1</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg-poppycolor5 md:row-span-6 md:col-span-1 text-transparent md:writing-mode-vertical font-art font-bold h1 text-stroke-poppycolor6 text-stroke-sm text-7xl lg:text-8xl xl:text-9xl py-0</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">h2</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg-poppycolor3 md:row-span-5 md:col-span-1 text-transparent md:writing-mode-vertical font-art font-normal h2 text-stroke-poppycolor6 text-stroke-sm text-6xl lg:text-7xl xl:text-8xl py-4 uppercase</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">h3</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg-poppycolor3 md:row-span-1 md:col-span-6 text-poppycolor6 font-display2 font-normal h3 text-2xl lg:text-3xl xl:text-4xl py-0</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itembody</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor6 font-body font-medium leading-loose itembody text-stroke-poppycolor1 text-stroke-2 text-base lg:text-lg xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemsubtitle</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor1 font-display1 font-normal itemsubtitle text-stroke-poppycolor1 text-stroke-2 text-2xl lg:text-3xl xl:text-4xl py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemtitle</p></div>
+              <div class = "text-white"> text-left bg-poppycolor1 text-poppycolor2 font-art font-black itemtitle text-stroke-poppycolor6 text-xl lg:text-2xl xl:text-2xl uppercase py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">logo</p></div>
+              <div class = "text-white"> text-center bg-transparent text-transparent font-art font-bold logo text-stroke-poppycolor6 text-stroke-xs text-3xl lg:text-4xl xl:text-5xl uppercase py-3</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">menu</p></div>
+              <div class = "text-white"> bg-poppycolor1 text-poppycolor2 font-menu font-normal menu text-stroke-transparent text-2xl py-</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">name</p></div>
+              <div class = "text-white">components</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">rounded</p></div>
+              <div class = "text-white">rounded-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">shadow</p></div>
+              <div class = "text-white">shadow-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">subtitle</p></div>
+              <div class = "text-white"> text-center bg- text- font-display2 font-medium subtitle text-stroke-poppycolor1 text-stroke-2 text-lg lg:text-xl xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">title</p></div>
+              <div class = "text-white"> text-center bg- text-transparent font-art font-bold leading-none title text-stroke-poppycolor6 text-stroke-sm text-8xl lg:text-9xl xl:text-10xl uppercase py-4</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">vertical_space</p></div>
+              <div class = "text-white">py-12 sm:pt-15 md:pt-18 lg:pt-21 xl:pt-24</div>
+            </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+    document.getElementById('btn-poster-standard-article').addEventListener('click', function(){
+            document.getElementById('window-poster-standard-article').classList.toggle('hidden');
+        });
+</script>
+<style>
+        .bg_c723757169e72badd343af9ed7201906_article::after {
+          content: "";
+          opacity:0.2;
+          mix-blend-mode:overlay;
+          position: absolute;
+          width:100%;
+          height:100%;
+          top:0;
+          z-index: 0;
+          pointer-events: none;
+          background-size:cover;
+        }
+  @media (max-width: 667px) {.bg_c723757169e72badd343af9ed7201906_article:after {background-image:url(/grain3_hud768035d1ab51ac3ed7e516fcf64393e_6562028_500x0_resize_box_2.png);}}
+  @media (min-width: 668px) {.bg_c723757169e72badd343af9ed7201906_article:after {background-image:url(/grain3_hud768035d1ab51ac3ed7e516fcf64393e_6562028_768x0_resize_box_2.png) ;}}
+  @media (min-width: 992px) {.bg_c723757169e72badd343af9ed7201906_article:after {background-image:url( /grain3_hud768035d1ab51ac3ed7e516fcf64393e_6562028_992x0_resize_box_2.png) ;}}
+  @media (min-width: 1200px) {.bg_c723757169e72badd343af9ed7201906_article:after {background-image:url(/grain3_hud768035d1ab51ac3ed7e516fcf64393e_6562028_1200x0_resize_box_2.png); }}
+  @media (min-width: 1600px) {.bg_c723757169e72badd343af9ed7201906_article:after {background-image:url(/grain3_hud768035d1ab51ac3ed7e516fcf64393e_6562028_1920x0_resize_box_2.png) blendmo ;}}
+        </style><section id="article" class=" bg-poppycolor3 ">
+							<div class = "relative bg_c723757169e72badd343af9ed7201906_article  bg-fixed  bg-cover ">
+								<div class = " container  mx-auto"><div class="min-h-screen py-12 sm:pt-15 md:pt-18 lg:pt-21 xl:pt-24">
+    <div class=" bg-poppycolor5 rounded-none shadow-none  border-none border-poppycolor2 border-opacity-30 w-full grid grid-cols-4 md:grid-cols-7 grid-flow-row "><div class = "col-span-4 p-2 flex items-center max-h-screen writing-mode-horizontal  text-left bg-poppycolor3 md:row-span-5 md:col-span-1 text-transparent md:writing-mode-vertical font-art font-normal h2 text-stroke-poppycolor6 text-stroke-sm text-6xl lg:text-7xl xl:text-8xl py-4 uppercase w-full h-full "><h2 id="how-components-work">How components work</h2>
+</div><div class = "col-span-4 p-2 flex items-center writing-mode-horizontal  text-left bg-poppycolor3 md:row-span-1 md:col-span-6 text-poppycolor6 font-display2 font-normal h3 text-2xl lg:text-3xl xl:text-4xl py-0 w-full h-full "><h3 id="control-your-page-layout-with-the-flexibility-of-components">Control your page layout with the flexibility of components</h3>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="poppygo-one-is-built-around-the-concept-of-components">PoppyGo One is built around the concept of components.</h4>
+<p>The theme comes with a relative small set of components. We will continue adding more components to the theme. If you want to help us with developing more components, you&rsquo;re more than welcome! Please visit our <a href="https://poppygo.github.io/poppygo-book/">referenceguide</a>.<br>
+<a href="/components/" class="umami--click--all-available-components ">
+  <button class=" bg-poppycolor1 font-art font-normal information-circle outline primary rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor2 text-stroke-poppycolor6 uppercase mb-1 mr-1 ">
+    all available components
+  </button>
+</a>
+<br>
+Components come as layout with default content from the PoppyGo One theme.<br>
+When you add a page section to your page the define which component should be used.<br>
+When the component is defined,  the default content is shown, so you get a visual overview of what content variable goes where.<br>
+In that particular page section you define your own content and the appearance of the page section.<br>
+You can add as many components to your page as you like. This works for the homepage, listpages or sections and detailpages.</p>
+
+</div><div class = "col-span-4 md:col-span-3 row-span-2  w-full h-full "><style>
+      .imagegrid-uten {
+        width: 100% ;
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: stretch;
+        justify-content: stretch;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .oneCol, .twoCols, .threeCols {
+        grid-column: span 12;
+      }
+      .fourCols, .sixCols {
+        grid-column: span 6;
+      }
+      @media (min-width: 768px) {
+        .imagegrid-uten{
+          margin: ;
+          float: ;
+          width: 100%;
+        }
+        .twoCols, .threeCols {
+          grid-column: span 6;
+        }
+
+        .fourCols, .sixCols {
+          grid-column: span 3;
+        }
+      }
+      @media (min-width: 992px) {
+        .twoCols {
+          grid-column: span 6;
+        }
+        .threeCols {
+          grid-column: span 4;
+        }
+        .sixCols {
+          grid-column: span 2;
+        }
+      }
+      .pogoimage {
+        width: 100%;
+      }
+    </style>
+
+    <div class="imagegrid-uten"><div class= "oneCol">
+          <img class="pogoimage" sizes="60vw" style="margin: 0px"
+                srcset='/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_200x0_resize_q75_box.jpg 200w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_360x0_resize_q75_box.jpg 360w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_480x0_resize_q75_box.jpg 480w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_800x0_resize_q75_box.jpg 800w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_1200x0_resize_q75_box.jpg 1200w,/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_1500x0_resize_q75_box.jpg 1500w,'
+                src="/news/customisable-design/images/utensilio-cansado_hue6a67f5546e2f9ae6da2a198d7becf25_41251_640x0_resize_q75_box.jpg"
+                class="lazyload image"
+                alt="Customisable news "></div>
+    </div>
+</div><div class = "col-span-4 p-2 flex items-center writing-mode-horizontal  text-left bg-poppycolor3 md:row-span-1 md:col-span-6 text-poppycolor6 font-display2 font-normal h3 text-2xl lg:text-3xl xl:text-4xl py-0 w-full h-full "><h3 id="control-apearrance-of-every-component">Control apearrance of every component</h3>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="colors-images-and-texture">Colors, images and texture</h4>
+<p>In every component you control the appearance in terms of colors, texture and background images, so that next to the layout, you get the desired feel for every component.</p>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="override-the-design-for-a-component">Override the design for a component</h4>
+<p>You can have buttons, typographies, roundings and outlines overridden in your own components. They are in my-components.</p>
+</div><div class = "col-span-4 p-2 flex items-center writing-mode-horizontal  text-left bg-poppycolor3 md:row-span-1 md:col-span-6 text-poppycolor6 font-display2 font-normal h3 text-2xl lg:text-3xl xl:text-4xl py-0 w-full h-full "><h3 id="create-your-own-reusable-components-as-content-snippets">Create your own reusable components as content snippets.</h3>
+</div><div class = "col-span-4 p-2 flex items-center max-h-screen writing-mode-horizontal  text-left bg-poppycolor3 md:row-span-5 md:col-span-1 text-transparent md:writing-mode-vertical font-art font-normal h2 text-stroke-poppycolor6 text-stroke-sm text-6xl lg:text-7xl xl:text-8xl py-4 uppercase w-full h-full "><h2 id="how-to-control-typographies">How to control typographies</h2>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="control-typographies">Control typographies</h4>
+<p>You can defined</p>
+
+</div><div class = "col-span-4 md:col-span-3 row-span-2  w-full h-full "><style>
+      .imagegrid-socket {
+        width: 100% ;
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: stretch;
+        justify-content: stretch;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .oneCol, .twoCols, .threeCols {
+        grid-column: span 12;
+      }
+      .fourCols, .sixCols {
+        grid-column: span 6;
+      }
+      @media (min-width: 768px) {
+        .imagegrid-socket{
+          margin: ;
+          float: ;
+          width: 100%;
+        }
+        .twoCols, .threeCols {
+          grid-column: span 6;
+        }
+
+        .fourCols, .sixCols {
+          grid-column: span 3;
+        }
+      }
+      @media (min-width: 992px) {
+        .twoCols {
+          grid-column: span 6;
+        }
+        .threeCols {
+          grid-column: span 4;
+        }
+        .sixCols {
+          grid-column: span 2;
+        }
+      }
+      .pogoimage {
+        width: 100%;
+      }
+    </style>
+
+    <div class="imagegrid-socket"><div class= "oneCol">
+          <img class="pogoimage" sizes="60vw" style="margin: 0px"
+                srcset='/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_200x0_resize_q75_box.jpg 200w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_360x0_resize_q75_box.jpg 360w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_480x0_resize_q75_box.jpg 480w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_800x0_resize_q75_box.jpg 800w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_1200x0_resize_q75_box.jpg 1200w,/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_1500x0_resize_q75_box.jpg 1500w,'
+                src="/news/customisable-design/images/socket-shocked_hu7e12f9160a43bb7077f75259b5f7bfaa_7884_640x0_resize_q75_box.jpg"
+                class="lazyload image"
+                alt="Customisable news "></div>
+    </div>
+</div><div class = "col-span-4 p-2 flex items-center max-h-screen writing-mode-horizontal  text-left bg-poppycolor3 md:row-span-5 md:col-span-1 text-transparent md:writing-mode-vertical font-art font-normal h2 text-stroke-poppycolor6 text-stroke-sm text-6xl lg:text-7xl xl:text-8xl py-4 uppercase w-full h-full "><h2 id="how-to-control-buttons">How to control buttons</h2>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="paragraaf-3">Paragraaf 3</h4>
+<p>sdfgsdfg<br>
+sdf<br>
+gs<br>
+dfg<br>
+sdfg<br>
+sdfgsdfgsdfg<br>
+spaseaasd</p>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="vier-na-een-aantal-sessies">VIER Na een aantal sessies</h4>
+<p>zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="twee-deze-dienst-is-de-favoriet">TWEE Deze dienst is de favoriet</h4>
+<p>van veel van mijn klanten, want het is vaak de sleutel tot een gelukkiger en gezonder leven. Mijn taak is om jou de hulpmiddelen en technieken mee te geven om te komen tot een meer evenwichtige levensstijl.</p>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="vijf">VIJF</h4>
+<p>Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.<br>
+Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+</div><div class = "col-span-4 md:col-span-3 row-span-1 p-2  prose w-full h-full "><h4 id="zes">ZES</h4>
+<p>Na een aantal sessies zul je merken dat je beter kunt omgaan met de problemen die je op je weg tegenkomt. Bel nu om een sessie te boeken.</p>
+</div></div>
+  </div></div>
+							<div>
+						</section>
+
+
+		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+		
+			
+			
+			
+			
+			
+
+
+		
+
+		
+
+<div id="btn-md-footer-footer" class="z-10 relative h-0">
+  <div class="absolute p-2">
+  <button  class="bg-gray text-white rounded-xl px-10">
+    Debug md-footer
+  </button>
+</div>
+</div>
+
+<section id="window-md-footer-footer" class="hidden m-4 p-3 pt-8 mx-auto container bg-gray mb-10">
+  <div class = "p-10 border-dotted border-4 border-white">
+    <div class="-ml-3 -mt-16 w-72 ">
+      <p class="text-4xl text-white text-center bg-gray">Poppy debug info</p>
+    </div>
+  <h2 class="text-xl text-white">Page Component: md-footer <h2>
+  <h2 class="text-xl text-white">Poppy component: poppy-components/poppy-footer/3-column-footer <h2>
+  <h2 class="text-xl text-white">Page: customisable-design</h2>
+
+  <div class= "my-10">
+    <h2 class="text-2xl text-white mb-3">Content</h2>
+    <div class ="bg-poppycolor-4 grid-cols-1 md:grid-cols-4 text-xs grid grid-row-auto-dense gap-2">
+
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">background_color</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg-poppycolor5
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_css</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg_c025faf8333d946373eb00730c96ca52_footer
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">bg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/my-components/md-footer/index.md)
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">design</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                map[typographies:[map[align:left background_color:none color:isabelline font:display1 font_weight:normal name:title size:xl transform:] map[align:left background_color:none color:erie-black font:display1 font_weight:normal name:subtitle size:xl transform:] map[align:left background_color:none color:isabelline font:body font_weight:thin name:body size:xl transform:] map[align:left background_color:none color:isabelline font:body font_weight:thin name:menu size:lg space:0 transform:lowercase]]]
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">fg_resource_page</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                Page(/my-components/md-footer/index.md)
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">headless</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                true
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">item_background_color</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                bg-transparent
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">menus</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            <div class="text-gray text-center">0
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-white text-gray">
+                        items
+                      </div>
+                      <div>
+                        [map[identifier: name:Components parent: url:/poppy-components/ weight:3] map[identifier: name:Customisable design parent: url:/pages/customisable-design/ weight:0] map[identifier: name:Content manageable parent: url:/pages/CMS/ weight:0]]
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        name
+                      </div>
+                      <div>
+                        menu1
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        title
+                      </div>
+                      <div>
+                        PoppyGo One
+                      </div>
+                    
+
+                   </div>
+                </div><div class="text-gray text-center">1
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-white text-gray">
+                        items
+                      </div>
+                      <div>
+                        [map[identifier: name:about PoppyGo parent: url:/pages/poppygo/ weight:3] map[identifier: name:Contact parent: url:https://poppygo.io weight:0]]
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        name
+                      </div>
+                      <div>
+                        menu2
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        title
+                      </div>
+                      <div>
+                        PoppyGo
+                      </div>
+                    
+
+                   </div>
+                </div>
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">name</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                footer
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_type</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                poppy-footer
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">poppy_variant</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                3-column-footer
+            
+          </div>
+        
+      
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">social_icons</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            <div class="text-gray text-center">0
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-white text-gray">
+                        icon
+                      </div>
+                      <div>
+                        linkedin
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        link
+                      </div>
+                      <div>
+                        https://nl.linkedin.com/in/wendy-van-den-beld-3519263
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        name
+                      </div>
+                      <div>
+                        linkedIn
+                      </div>
+                    
+
+                   </div>
+                </div><div class="text-gray text-center">1
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-white text-gray">
+                        icon
+                      </div>
+                      <div>
+                        instagram
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        link
+                      </div>
+                      <div>
+                        https://www.instagram.com/w.de.b/
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        name
+                      </div>
+                      <div>
+                        instagram
+                      </div>
+                    
+
+                   </div>
+                </div><div class="text-gray text-center">2
+                  <div class= "m-1 border p-1">
+
+                    
+                      <div class="bg-white text-gray">
+                        icon
+                      </div>
+                      <div>
+                        mail
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        link
+                      </div>
+                      <div>
+                        mailto:wendyvandenbeld@gmail.com?subject=websitefooter
+                      </div>
+                    
+                      <div class="bg-white text-gray">
+                        name
+                      </div>
+                      <div>
+                        email
+                      </div>
+                    
+
+                   </div>
+                </div>
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">textlogo</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                PoppyGo One
+            
+          </div>
+        
+      
+        <div class = "col-span-1  bg-white ">
+            <p class="text-gray">texture</p></div>
+          <div class = "md: col-span-3 text-white flex">
+            
+                grain
+            
+          </div>
+        
+      
+        
+      
+    </div>
+  </div>
+
+  <div class= "my-10 mb-0">
+    <h2 class="text-2xl text-white mb-3">Design</h2>
+    <div class ="bg-gray grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid grid-row-auto-dense gap-2">
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">body</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg- text-poppycolor6 font-body font-thin leading-relaxed body text-stroke-poppycolor1 text-stroke-2 text-xl lg:text-2xl xl:text-2xl py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border</p></div>
+              <div class = "text-white"> border-none border-poppycolor2 border-opacity-30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_color</p></div>
+              <div class = "text-white">bright-navy-blue</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">border_opacity</p></div>
+              <div class = "text-white">30</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_itembutton</p></div>
+              <div class = "text-white"> bg-poppycolor2 font-art font-normal information-circle outline itembutton isabelline sm rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_link</p></div>
+              <div class = "text-white"> bg- font-body outline link isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor1 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_primary</p></div>
+              <div class = "text-white"> bg-poppycolor1 font-art font-normal information-circle outline primary rounded-none text-lg lg:text- xl:text-xl py-2 lg:py-3 xl:py- px-6 lg:px-7 xl:px- text-poppycolor2 text-stroke-poppycolor6 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">button_secondary</p></div>
+              <div class = "text-white"> bg-poppycolor6 font-menu outline secondary isabelline sm text-base lg:text- xl:text-lg py-2 lg:py-2 xl:py- px-6 lg:px-5 xl:px- text-poppycolor2 uppercase mb-1 mr-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">gridgap</p></div>
+              <div class = "text-white">gap-x-0 gap-y-10 sm:gap-10</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itembody</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor6 font-body font-medium leading-loose itembody text-stroke-poppycolor1 text-stroke-2 text-base lg:text-lg xl:text-xl py-1</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemsubtitle</p></div>
+              <div class = "text-white"> text-left bg-transparent text-poppycolor1 font-display1 font-normal itemsubtitle text-stroke-poppycolor1 text-stroke-2 text-2xl lg:text-3xl xl:text-4xl py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">itemtitle</p></div>
+              <div class = "text-white"> text-left bg-poppycolor1 text-poppycolor2 font-art font-black itemtitle text-stroke-poppycolor6 text-xl lg:text-2xl xl:text-2xl uppercase py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">logo</p></div>
+              <div class = "text-white"> text-center bg-transparent text-transparent font-art font-bold logo text-stroke-poppycolor6 text-stroke-xs text-3xl lg:text-4xl xl:text-5xl uppercase py-3</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">menu</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py-</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">name</p></div>
+              <div class = "text-white">components</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">rounded</p></div>
+              <div class = "text-white">rounded-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">shadow</p></div>
+              <div class = "text-white">shadow-none</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">subtitle</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg- text-poppycolor1 font-display1 font-normal subtitle text-stroke-poppycolor1 text-stroke-2 text-xl lg:text-2xl xl:text-2xl py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-poppycolor1 ">
+                  <p class="text-gray">title</p>
+                  <p class="text-white"> -> override in Component </p></div>
+              <div class = "text-white"> text-left bg- text-poppycolor6 font-display1 font-normal leading-none title text-stroke-poppycolor6 text-stroke-sm text-xl lg:text-2xl xl:text-2xl uppercase py-2</div>
+            </div>
+          
+      <div class="col-span-1 text-xs  ">
+              <div class = " bg-white ">
+                  <p class="text-gray">vertical_space</p></div>
+              <div class = "text-white">py-12 sm:pt-15 md:pt-18 lg:pt-21 xl:pt-24</div>
+            </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+    document.getElementById('btn-md-footer-footer').addEventListener('click', function(){
+            document.getElementById('window-md-footer-footer').classList.toggle('hidden');
+        });
+</script>
+<style>
+        .bg_c025faf8333d946373eb00730c96ca52_footer::after {
+          content: "";
+          opacity:0.2;
+          mix-blend-mode:overlay;
+          position: absolute;
+          width:100%;
+          height:100%;
+          top:0;
+          z-index: 0;
+          pointer-events: none;
+          background-size:cover;
+        }
+  @media (max-width: 667px) {.bg_c025faf8333d946373eb00730c96ca52_footer:after {background-image:url(/my-components/md-footer/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_500x0_resize_box_2.png);}}
+  @media (min-width: 668px) {.bg_c025faf8333d946373eb00730c96ca52_footer:after {background-image:url(/my-components/md-footer/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_768x0_resize_box_2.png) ;}}
+  @media (min-width: 992px) {.bg_c025faf8333d946373eb00730c96ca52_footer:after {background-image:url( /my-components/md-footer/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_992x0_resize_box_2.png) ;}}
+  @media (min-width: 1200px) {.bg_c025faf8333d946373eb00730c96ca52_footer:after {background-image:url(/my-components/md-footer/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_1200x0_resize_box_2.png); }}
+  @media (min-width: 1600px) {.bg_c025faf8333d946373eb00730c96ca52_footer:after {background-image:url(/my-components/md-footer/images/grain1_hu7f631035eca52ccce508cd495308be79_1766650_1920x0_resize_box_2.png) blendmo ;}}
+        </style><section id="footer" class=" bg-poppycolor5 ">
+							<div class = "relative bg_c025faf8333d946373eb00730c96ca52_footer  bg-cover ">
+								<div class = " container  mx-auto"><div class="py-12 sm:pt-15 md:pt-18 lg:pt-21 xl:pt-24">
+    <div class="flex flex-wrap justify-between">
+      <div class="w-full sm:w-1/3 lg:w-1/4 mb-10">
+  <div class="py-6">
+      <a id="logo" class=" text-center bg-transparent text-transparent font-art font-bold logo text-stroke-poppycolor6 text-stroke-xs text-3xl lg:text-4xl xl:text-5xl uppercase py-3" href="/">PoppyGo One</a>
+  </div>
+
+</div>
+      <div class="w-full md:w-6/12">
+        <div class="flex flex-wrap items-top"><div class="w-full lg:w-6/12 lg:px-4 ml-auto mb-10">
+              <span class=" block  text-left bg- text-poppycolor1 font-display1 font-normal subtitle text-stroke-poppycolor1 text-stroke-2 text-xl lg:text-2xl xl:text-2xl py-2 mb-2">Poppy go one</span>
+              <ul class=""><li>
+                  <a title="" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- hover:text-gray-900 block pb-2" href="/poppy-components/">Components</a>
+                </li><li>
+                  <a title="" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- hover:text-gray-900 block pb-2" href="/pages/customisable-design/">Customisable design</a>
+                </li><li>
+                  <a title="" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- hover:text-gray-900 block pb-2" href="/pages/CMS/">Content manageable</a>
+                </li></ul>
+          </div><div class="w-full lg:w-6/12 lg:px-4 ml-auto mb-10">
+              <span class=" block  text-left bg- text-poppycolor1 font-display1 font-normal subtitle text-stroke-poppycolor1 text-stroke-2 text-xl lg:text-2xl xl:text-2xl py-2 mb-2">Poppy go</span>
+              <ul class=""><li>
+                  <a title="" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- hover:text-gray-900 block pb-2" href="/pages/poppygo/">about PoppyGo</a>
+                </li><li>
+                  <a title="" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- hover:text-gray-900 block pb-2" href="https://poppygo.io">Contact</a>
+                </li></ul>
+          </div></div>
+      </div>
+    </div>
+    <h4 class=" text-left bg- text-poppycolor6 font-display1 font-normal leading-none title text-stroke-poppycolor6 text-stroke-sm text-xl lg:text-2xl xl:text-2xl uppercase py-2"></h4>
+    <h5 class=" text-left bg- text-poppycolor1 font-display1 font-normal subtitle text-stroke-poppycolor1 text-stroke-2 text-xl lg:text-2xl xl:text-2xl py-2 md:mr-40"></h5><div class="flex flex-wrap">
+  <div class="sm:w-1/2 md:w-1/4 px-4 mx-auto justify-center flex flex-row"><a href="https://nl.linkedin.com/in/wendy-van-den-beld-3519263" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- h-8">
+          <div class="h-full"><svg width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+        </a><a href="https://www.instagram.com/w.de.b/" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- h-8">
+          <div class="h-full"><svg width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+</div>
+        </a><a href="mailto:wendyvandenbeld@gmail.com?subject=websitefooter" class=" text-left bg- text-poppycolor6 font-body font-thin menu text-stroke-transparent text-lg lowercase py- h-8">
+          <div class="h-full"><svg width="100%" height="100%" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="fill-current">
+<path d="M2.00333 5.88355L9.99995 9.88186L17.9967 5.8835C17.9363 4.83315 17.0655 4 16 4H4C2.93452 4 2.06363 4.83318 2.00333 5.88355Z"/>
+<path d="M18 8.1179L9.99995 12.1179L2 8.11796V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V8.1179Z"/>
+</svg>
+</div>
+        </a></div>
+</div>
+</div>
+
+  <div class="flex flex-wrap items-center md:justify-between justify-center">
+    <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+      <div class="text-xs text-black py-1">
+        <a href="/" class="text-black hover:text-white">Made with PoppyGo</a>.
+      </div>
+    </div>
+  </div></div>
+							<div>
+						</section>
+
+<script async defer data-website-id="XXXXX" src="//umami.example.com/umami.js"></script></body>
+
+</html>

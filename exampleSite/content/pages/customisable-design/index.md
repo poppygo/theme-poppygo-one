@@ -57,6 +57,7 @@ page_sections:
 resources: []
 subtitle: Design
 title: Customisable
+title2: ''
 
 ---
 
@@ -64,6 +65,10 @@ title: Customisable
 ##  Components
 
 ### Full control over layout
+
+Voorbeeld voor Hans
+{{< button primary "Hans" "/Hans/" >}}
+
 
 #### All pages are built with components
 See it as a kind of Lego with which you control the layout of every page.

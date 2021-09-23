@@ -1,0 +1,196 @@
+buttons:
+  - color: erie-black
+    font: art
+    font_weight: normal
+    icon: information-circle
+    icon_type: outline
+    name: primary
+    rounded: none
+    size: 2xl
+    text_color: tart-orange
+    text_outline_color: isabelline
+    text_outline_width: ''
+    text_transform: uppercase
+  - color: tart-orange
+    font: art
+    font_weight: normal
+    icon: information-circle
+    icon_type: outline
+    name: itembutton
+    outline_color: isabelline
+    outline_width: sm
+    rounded: none
+    size: lg
+    text_color: erie-black
+    text_outline_color: ''
+    text_outline_width: ''
+    text_transform: uppercase
+  - color: isabelline
+    font: menu
+    font_weight: ''
+    icon: ''
+    icon_type: outline
+    name: secondary
+    outline_color: isabelline
+    outline_width: sm
+    rounded: ''
+    size: base
+    text_color: tart-orange
+    text_outline_color: ''
+    text_outline_width: ''
+    text_transform: uppercase
+  - color: none
+    font: body
+    font_weight: ''
+    icon: ''
+    icon_type: outline
+    name: link
+    outline_color: isabelline
+    outline_width: sm
+    rounded: ''
+    size: base
+    text_color: erie-black
+    text_outline_color: ''
+    text_outline_width: ''
+    text_transform: uppercase
+colorscheme:
+  poppy_color1:
+    colorcode: '#1b1b1b'
+    name: erie-black
+  poppy_color2:
+    colorcode: '#FF3739'
+    name: tart-orange
+  poppy_color3:
+    colorcode: '#54514D'
+    name: davys-grey
+  poppy_color4:
+    colorcode: '#91785D'
+    name: liver-chestnut
+  poppy_color5:
+    colorcode: '#B98389'
+    name: old-rose
+  poppy_color6:
+    colorcode: '#F5F1ED'
+    name: isabelline
+components:
+  - border: none
+    border_color: tart-orange
+    border_opacity: 30
+    gridgap: 10
+    name: components
+    rounded: none
+    shadow: none
+    vertical_space: 12
+fontscheme:
+  - family: Domine
+    name: display1
+  - family: Domine
+    name: body
+  - family: Staatliches
+    name: menu
+  - family: Oswald
+    name: art
+  - family: Domine
+    name: display2
+site:
+  background_color: tart-orange
+  container: true
+  container_padding:
+    2xl: 0rem
+    DEFAULT: 0rem
+    lg: 0rem
+    name: padding
+    sm: 0rem
+    xl: 0rem
+  texture:
+    blendmode: overlay
+    opacity: 0.2
+typographies:
+  - align: center
+    background_color: none
+    color: transparent
+    font: art
+    font_weight: bold
+    line_height: none
+    name: title
+    outline_color: isabelline
+    outline_width: sm
+    size: 5xl
+    transform: uppercase
+  - align: ''
+    background_color: none
+    color: erie-black
+    font: body
+    font_weight: normal
+    line_height: relaxed
+    name: body
+    outline_color: erie-black
+    outline_width: '2'
+    size: base
+    transform: ''
+  - align: center
+    background_color: none
+    color: steal-teal
+    font: display2
+    font_weight: medium
+    line_height: ''
+    name: subtitle
+    outline_color: erie-black
+    outline_width: '2'
+    size: lg
+    transform: ''
+  - align: ''
+    background_color: erie-black
+    color: liver-chestnut
+    font: menu
+    font_weight: normal
+    line_height: ''
+    name: menu
+    outline_color: transparent
+    outline_width: ''
+    size: 2xl
+    transform: ''
+  - align: left
+    background_color: erie-black
+    color: tart-orange
+    font: art
+    font_weight: black
+    line_height: ''
+    name: itemtitle
+    outline_color: isabelline
+    outline_width: ''
+    size: xl
+    transform: uppercase
+  - align: left
+    background_color: transparent
+    color: erie-black
+    font: display1
+    font_weight: normal
+    line_height: ''
+    name: itemsubtitle
+    outline_color: erie-black
+    outline_width: '2'
+    size: 2xl
+    transform: ''
+  - align: left
+    background_color: transparent
+    color: isabelline
+    font: body
+    font_weight: medium
+    line_height: loose
+    name: itembody
+    outline_color: erie-black
+    outline_width: '2'
+    size: base
+    transform: ''
+  - align: center
+    background_color: transparent
+    color: transparent
+    font: art
+    font_weight: bold
+    line_height: ''
+    name: logo
+    outline_color: isabelline
+    outline_width: xs
+    size: 3xl
+    transform: uppercase

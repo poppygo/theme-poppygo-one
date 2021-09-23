@@ -1,4 +1,4 @@
-{
+  {
    "build": [
      {
        "config": "config.yml",
@@ -235,7 +235,7 @@
          {
            "key": "subtitle",
            "title": "Subtitle",
-           "type": "string"
+           "type": "markdown"
          },
          {
            "dynFormSearchKey": "component",
@@ -409,6 +409,11 @@
            "key": "draft",
            "title": "Draft",
            "type": "boolean"
+         },
+         {
+           "key": "title2",
+           "title": "Title2",
+           "type": "string"
          }
        ],
        "folder": "content/components/",
@@ -497,6 +502,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -534,6 +547,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -689,6 +710,14 @@
                      {
                        "text": "transparent",
                        "value": "transparent"
+                     },
+                     {
+                       "text": "white",
+                       "value": "white"
+                     },
+                     {
+                       "text": "transparent",
+                       "value": "transparent"
                      }
                    ],
                    "title": "Background color",
@@ -721,6 +750,14 @@
                      {
                        "text": "isabelline",
                        "value": "isabelline"
+                     },
+                     {
+                       "text": "white",
+                       "value": "white"
+                     },
+                     {
+                       "text": "transparent",
+                       "value": "transparent"
                      },
                      {
                        "text": "white",
@@ -839,6 +876,14 @@
                      {
                        "text": "isabelline",
                        "value": "isabelline"
+                     },
+                     {
+                       "text": "white",
+                       "value": "white"
+                     },
+                     {
+                       "text": "transparent",
+                       "value": "transparent"
                      },
                      {
                        "text": "white",
@@ -1006,6 +1051,11 @@
            "type": "boolean"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "item_background_color",
            "multiple": false,
            "options": [
@@ -1032,6 +1082,14 @@
              {
                "text": "isabelline",
                "value": "isabelline"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
              },
              {
                "text": "white",
@@ -1262,6 +1320,11 @@
            "key": "draft",
            "title": "Draft",
            "type": "boolean"
+         },
+         {
+           "key": "title2",
+           "title": "Title2",
+           "type": "string"
          }
        ],
        "folder": "content/pages/",
@@ -1316,6 +1379,15 @@
          }
        ],
        "title": "Site settings"
+     },
+     {
+       "key": "poppygo",
+       "menuItems": [
+         {
+           "key": "pogocms"
+         }
+       ],
+       "title": "PoppyGo"
      }
    ],
    "partials": [
@@ -1369,6 +1441,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1414,6 +1494,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -1434,6 +1522,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          }
        ],
        "key": "article-multi-column"
@@ -1488,6 +1581,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1533,6 +1634,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -1553,6 +1662,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          }
        ],
        "key": "article-standard"
@@ -1612,6 +1726,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1649,6 +1771,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -1744,6 +1874,11 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -1808,6 +1943,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1850,6 +1993,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -1945,6 +2096,11 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -2009,6 +2165,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2046,6 +2210,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2141,6 +2313,11 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "accordion"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -2210,6 +2387,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2247,6 +2432,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2344,6 +2537,11 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
@@ -2406,6 +2604,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2443,6 +2649,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2521,6 +2735,11 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
@@ -2583,6 +2802,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2620,6 +2847,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2722,6 +2957,11 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "summary",
            "title": "Summary",
            "type": "markdown"
@@ -2779,6 +3019,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2824,6 +3072,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -2844,6 +3100,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -2967,6 +3228,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3007,6 +3276,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -3022,6 +3299,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "position",
@@ -3081,6 +3363,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3126,6 +3416,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -3148,6 +3446,11 @@
            "type": "nest"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "fields": [
              {
                "key": "bodytext",
@@ -3158,6 +3461,30 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "button_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "primary",
+                       "value": "primary"
+                     },
+                     {
+                       "text": "itembutton",
+                       "value": "itembutton"
+                     },
+                     {
+                       "text": "secondary",
+                       "value": "secondary"
+                     },
+                     {
+                       "text": "link",
+                       "value": "link"
+                     }
+                   ],
+                   "title": "Button type",
+                   "type": "select"
+                 },
+                 {
                    "key": "icon",
                    "title": "Icon",
                    "type": "string"
@@ -3190,11 +3517,6 @@
                  {
                    "key": "link",
                    "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -3306,6 +3628,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3351,6 +3681,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -3371,6 +3709,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -3435,6 +3778,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3472,6 +3823,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3536,10 +3895,23 @@
              {
                "text": "transparent",
                "value": "transparent"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
              }
            ],
            "title": "Border color",
            "type": "select"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -3604,6 +3976,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3649,6 +4029,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -3674,6 +4062,30 @@
            "fields": [
              {
                "arrayTitle": true,
+               "key": "button_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "primary",
+                   "value": "primary"
+                 },
+                 {
+                   "text": "itembutton",
+                   "value": "itembutton"
+                 },
+                 {
+                   "text": "secondary",
+                   "value": "secondary"
+                 },
+                 {
+                   "text": "link",
+                   "value": "link"
+                 }
+               ],
+               "title": "Button type",
+               "type": "select"
+             },
+             {
                "key": "icon",
                "title": "Icon",
                "type": "string"
@@ -3707,11 +4119,6 @@
                "key": "link",
                "title": "Link",
                "type": "string"
-             },
-             {
-               "key": "type",
-               "title": "Type",
-               "type": "string"
              }
            ],
            "key": "buttons",
@@ -3722,6 +4129,11 @@
            "key": "count",
            "title": "Count",
            "type": "string"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "list",
@@ -3806,6 +4218,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3843,6 +4263,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3943,6 +4371,11 @@
            "key": "count",
            "title": "Count",
            "type": "string"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "list",
@@ -4027,6 +4460,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4064,6 +4505,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -4164,6 +4613,11 @@
            "key": "count",
            "title": "Count",
            "type": "string"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "list",
@@ -4256,6 +4710,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4293,6 +4755,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -4390,6 +4860,11 @@
            "type": "string"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "list",
            "multiple": false,
            "options": [
@@ -4462,6 +4937,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4507,6 +4990,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -4527,6 +5018,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -4627,6 +5123,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4672,6 +5176,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -4692,6 +5204,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -4797,6 +5314,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4842,6 +5367,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -4862,6 +5395,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          }
        ],
        "key": "poster-standard"
@@ -4916,6 +5454,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4961,6 +5507,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -4983,6 +5537,11 @@
            "type": "nest"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "fields": [
              {
                "key": "bodytext",
@@ -4993,6 +5552,30 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "button_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "primary",
+                       "value": "primary"
+                     },
+                     {
+                       "text": "itembutton",
+                       "value": "itembutton"
+                     },
+                     {
+                       "text": "secondary",
+                       "value": "secondary"
+                     },
+                     {
+                       "text": "link",
+                       "value": "link"
+                     }
+                   ],
+                   "title": "Button type",
+                   "type": "select"
+                 },
+                 {
                    "key": "icon",
                    "title": "Icon",
                    "type": "string"
@@ -5025,11 +5608,6 @@
                  {
                    "key": "link",
                    "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -5121,6 +5699,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5166,6 +5752,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -5188,6 +5782,11 @@
            "type": "nest"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "fields": [
              {
                "key": "bodytext",
@@ -5198,6 +5797,30 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "button_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "primary",
+                       "value": "primary"
+                     },
+                     {
+                       "text": "itembutton",
+                       "value": "itembutton"
+                     },
+                     {
+                       "text": "secondary",
+                       "value": "secondary"
+                     },
+                     {
+                       "text": "link",
+                       "value": "link"
+                     }
+                   ],
+                   "title": "Button type",
+                   "type": "select"
+                 },
+                 {
                    "key": "icon",
                    "title": "Icon",
                    "type": "string"
@@ -5230,11 +5853,6 @@
                  {
                    "key": "link",
                    "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -5321,6 +5939,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5366,6 +5992,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -5388,6 +6022,11 @@
            "type": "nest"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "fields": [
              {
                "key": "bodytext",
@@ -5398,6 +6037,30 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "button_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "primary",
+                       "value": "primary"
+                     },
+                     {
+                       "text": "itembutton",
+                       "value": "itembutton"
+                     },
+                     {
+                       "text": "secondary",
+                       "value": "secondary"
+                     },
+                     {
+                       "text": "link",
+                       "value": "link"
+                     }
+                   ],
+                   "title": "Button type",
+                   "type": "select"
+                 },
+                 {
                    "key": "icon",
                    "title": "Icon",
                    "type": "string"
@@ -5430,11 +6093,6 @@
                  {
                    "key": "link",
                    "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -5526,6 +6184,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5571,6 +6237,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -5593,6 +6267,11 @@
            "type": "nest"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "fields": [
              {
                "key": "bodytext",
@@ -5603,6 +6282,30 @@
                "fields": [
                  {
                    "arrayTitle": true,
+                   "key": "button_type",
+                   "multiple": false,
+                   "options": [
+                     {
+                       "text": "primary",
+                       "value": "primary"
+                     },
+                     {
+                       "text": "itembutton",
+                       "value": "itembutton"
+                     },
+                     {
+                       "text": "secondary",
+                       "value": "secondary"
+                     },
+                     {
+                       "text": "link",
+                       "value": "link"
+                     }
+                   ],
+                   "title": "Button type",
+                   "type": "select"
+                 },
+                 {
                    "key": "icon",
                    "title": "Icon",
                    "type": "string"
@@ -5635,11 +6338,6 @@
                  {
                    "key": "link",
                    "title": "Link",
-                   "type": "string"
-                 },
-                 {
-                   "key": "type",
-                   "title": "Type",
                    "type": "string"
                  }
                ],
@@ -5742,6 +6440,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5779,6 +6485,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -5876,6 +6590,11 @@
            "type": "accordion"
          },
          {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
            "key": "item_background_color",
            "multiple": false,
            "options": [
@@ -5902,6 +6621,14 @@
              {
                "text": "isabelline",
                "value": "isabelline"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
              },
              {
                "text": "white",
@@ -5983,6 +6710,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -6028,6 +6763,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -6048,6 +6791,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -6186,6 +6934,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -6231,6 +6987,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -6251,6 +7015,11 @@
            "key": "appearance",
            "title": "Appearance",
            "type": "nest"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "fields": [
@@ -6371,6 +7140,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -6416,6 +7193,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Item background color",
@@ -6441,6 +7226,11 @@
            "key": "buttons",
            "title": "Buttons",
            "type": "chips"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
          },
          {
            "key": "summary",
@@ -6495,6 +7285,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -6778,6 +7576,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Text color",
@@ -6810,6 +7616,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -7019,6 +7833,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Border color",
@@ -7217,6 +8039,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -7405,6 +8235,14 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -7437,6 +8275,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -7619,6 +8465,14 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -8493,6 +9347,56 @@
        "key": "s__contact",
        "previewUrl": "/contact/",
        "title": "Contact"
+     },
+     {
+       "dataformat": "json",
+       "fields": [
+         {
+           "fields": [
+             {
+               "key": "key",
+               "title": "Key",
+               "type": "readonly"
+             },
+             {
+               "fields": [
+                 {
+                   "arrayTitle": true,
+                   "key": "key",
+                   "title": "Key",
+                   "type": "readonly"
+                 },
+                 {
+                   "key": "visible",
+                   "title": "Visible",
+                   "type": "boolean"
+                 }
+               ],
+               "key": "menuItems",
+               "title": "Menu items",
+               "type": "accordion"
+             },
+             {
+               "arrayTitle": true,
+               "key": "title",
+               "title": "Title",
+               "type": "string"
+             },
+             {
+               "key": "visible",
+               "title": "Visible",
+               "type": "boolean"
+             }
+           ],
+           "key": "menu",
+           "title": "Menu",
+           "type": "accordion"
+         }
+       ],
+       "file": "/zpogomenu.json",
+       "key": "pogocms",
+       "previewUrl": "/",
+       "title": "CMS"
      }
    ]
  }

@@ -1,0 +1,56 @@
+---
+headless: true
+appearance:
+  background_color: white
+  item_background_color: white
+  background_image: back
+  texture: ''
+  parallax: false
+buttons:
+  - label: Check this
+    link: /page-components/
+    button_type: primary
+    icon: ''
+    icon_type: ''
+  - label: More about us
+    link: '#'
+    button_type: secondary
+    icon: ''
+    icon_type: ''
+image: ''
+name: headerbanner
+poppy_type: poppy-banner
+poppy_variant: header-banner
+subtitle: Banners can be used for selling your proposition
+summary: >-
+  -| I am the summary of the banner, which can be used for opengraph and SEO
+  descriptions
+title: I am a banner
+design:
+  typographies:
+    - align: center
+      background_color: transparent
+      color: isabelline
+      font: display1
+      font_weight: bold
+      name: title
+      size: 4xl
+      transform: normal
+      outline_color: transparent
+      outline_width: 0
+    - align: center
+      background_color: transparent
+      color: white
+      font: display1
+      font_weight: normal
+      name: subtitle
+      size: xl
+      transform: uppercase
+      outline_color: transparent
+      outline_width: 0
+
+---
+
+### I am the main content
+Here you have full freedom to add content as much as you want.
+You can add  Images as shortcodes, columns as shortcodes etc.

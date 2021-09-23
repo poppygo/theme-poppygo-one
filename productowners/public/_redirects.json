@@ -1,0 +1,15 @@
+{
+  "rules":[
+    {
+        "from": "/vergulden",
+        "to": "/technieken/vergulden/",
+        "code": 301
+    }
+  ],
+  "options":{
+    "mainDomain": "productowners.io",
+    "mainProtocol": "https",
+    "redirectAllToMainDomain": true,
+    "redirectCode": 301
+  }
+}

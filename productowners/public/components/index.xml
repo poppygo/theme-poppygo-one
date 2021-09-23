@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on PoppyGo One Hugo Theme</title>
+    <link>/components/</link>
+    <description>Recent content in Homepage on PoppyGo One Hugo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/components/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article Multi Column</title>
+      <link>/components/article-multi-column/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/article-multi-column/</guid>
+      <description>What does it do? This component takes the main page content and presents it for reading purposes.
+This will be presented in fix width columns, so the wider the screen the more columns.
+What can you customize? Like all components, you can customize the appearance, setting background color, background image, overlay texture, parallax effect and item background color.</description>
+    </item>
+    
+    <item>
+      <title>Article Standard</title>
+      <link>/components/article-standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/article-standard/</guid>
+      <description>What does it do? This component takes the page content and presents it for reading purposes.
+This will be presented in a standard single column with a maximum width.
+What can you customize? Like all components, you can customize the appearance, setting background color, background image, overlay texture, parallax effect and item background color.</description>
+    </item>
+    
+    <item>
+      <title>Gallery standard</title>
+      <link>/components/gallery-standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/gallery-standard/</guid>
+      <description>Component super power:
+showing all items square
+What does it do? This component shows a background image with a title and subtitle and buttons at the chosen height.
+When to use it? This component works well for homepages, some portfolio detail pages and landing pages with a simple call-to-action.</description>
+    </item>
+    
+    <item>
+      <title>Header banner full height</title>
+      <link>/components/headerbanner-full/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/headerbanner-full/</guid>
+      <description>What does it do? This component shows a bacground image with a title and subtitle and buttons at the full height of the screen.
+When to use it? This component works well for homepages, some portfolio detail pages and landing pages with a simple call-to-action.</description>
+    </item>
+    
+    <item>
+      <title>Headerbanner poster</title>
+      <link>/components/headerbanner-poster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/headerbanner-poster/</guid>
+      <description>Component super power:
+Graphic Typography
+What does it do? This component shows a background image with a title, subtitle and additional claim.
+When to use it? This component works well for homepages, some portfolio detail pages and landing pages with a simple call-to-action.</description>
+    </item>
+    
+    <item>
+      <title>Inpage banner</title>
+      <link>/components/inpage-banner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/inpage-banner/</guid>
+      <description>Component super power:
+Straight-forward
+What does it do? This component shows a background image with a title and subtitle and buttons at the chosen height.
+When to use it? This component works well for homepages, some portfolio detail pages and landing pages with a simple call-to-action.</description>
+    </item>
+    
+    <item>
+      <title>List articles standard</title>
+      <link>/components/list-articles-standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/list-articles-standard/</guid>
+      <description>Component super power:
+sorting date and weight
+What does it do? This component shows a background image with a title and subtitle and buttons at the chosen height.
+When to use it? This component works well for homepages, some portfolio detail pages and landing pages with a simple call-to-action.</description>
+    </item>
+    
+    <item>
+      <title>List cards</title>
+      <link>/components/list-cards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/components/list-cards/</guid>
+      <description>Component super power:
+sorting date and weight
+What does it do? This component shows a background image with a title and subtitle and buttons at the chosen height.
+When to use it? This component works well for homepages, some portfolio detail pages and landing pages with a simple call-to-action.</description>
+    </item>
+    
+  </channel>
+</rss>
