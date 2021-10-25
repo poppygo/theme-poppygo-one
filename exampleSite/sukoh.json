@@ -1,3 +1,35 @@
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+  
+  
+  
+  
   {
    "build": [
      {
@@ -77,6 +109,10 @@
                  {
                    "text": "contact-noform",
                    "value": "contact-noform"
+                 },
+                 {
+                   "text": "formbuilder",
+                   "value": "formbuilder"
                  },
                  {
                    "text": "newsletter-big",
@@ -287,6 +323,10 @@
                  {
                    "text": "contact-noform",
                    "value": "contact-noform"
+                 },
+                 {
+                   "text": "formbuilder",
+                   "value": "formbuilder"
                  },
                  {
                    "text": "newsletter-big",
@@ -502,14 +542,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -547,14 +579,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -710,14 +734,6 @@
                      {
                        "text": "transparent",
                        "value": "transparent"
-                     },
-                     {
-                       "text": "white",
-                       "value": "white"
-                     },
-                     {
-                       "text": "transparent",
-                       "value": "transparent"
                      }
                    ],
                    "title": "Background color",
@@ -750,14 +766,6 @@
                      {
                        "text": "isabelline",
                        "value": "isabelline"
-                     },
-                     {
-                       "text": "white",
-                       "value": "white"
-                     },
-                     {
-                       "text": "transparent",
-                       "value": "transparent"
                      },
                      {
                        "text": "white",
@@ -876,14 +884,6 @@
                      {
                        "text": "isabelline",
                        "value": "isabelline"
-                     },
-                     {
-                       "text": "white",
-                       "value": "white"
-                     },
-                     {
-                       "text": "transparent",
-                       "value": "transparent"
                      },
                      {
                        "text": "white",
@@ -1090,14 +1090,6 @@
              {
                "text": "transparent",
                "value": "transparent"
-             },
-             {
-               "text": "white",
-               "value": "white"
-             },
-             {
-               "text": "transparent",
-               "value": "transparent"
              }
            ],
            "title": "Item background color",
@@ -1198,6 +1190,10 @@
                  {
                    "text": "contact-noform",
                    "value": "contact-noform"
+                 },
+                 {
+                   "text": "formbuilder",
+                   "value": "formbuilder"
                  },
                  {
                    "text": "newsletter-big",
@@ -1441,14 +1437,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1486,14 +1474,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -1581,14 +1561,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1626,14 +1598,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -1726,14 +1690,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1771,14 +1727,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -1943,14 +1891,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -1993,14 +1933,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2165,14 +2097,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2210,14 +2134,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2387,14 +2303,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2432,14 +2340,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2604,14 +2504,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2649,14 +2541,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -2802,14 +2686,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -2847,14 +2723,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3019,14 +2887,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3064,14 +2924,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3228,14 +3080,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3268,14 +3112,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3363,14 +3199,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3408,14 +3236,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3574,6 +3394,300 @@
        "key": "contact-noform"
      },
      {
+       "component": "formbuilder",
+       "fields": [
+         {
+           "key": "title",
+           "title": "Title",
+           "type": "string"
+         },
+         {
+           "key": "subtitle",
+           "title": "Subtitle",
+           "type": "markdown"
+         },
+         {
+           "key": "image",
+           "title": "Image",
+           "type": "string"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Background color",
+               "type": "select"
+             },
+             {
+               "key": "background_image",
+               "title": "Background image",
+               "type": "string"
+             },
+             {
+               "key": "item_background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Item background color",
+               "type": "select"
+             },
+             {
+               "key": "parallax",
+               "title": "Parallax",
+               "type": "boolean"
+             },
+             {
+               "key": "texture",
+               "title": "Texture",
+               "type": "string"
+             }
+           ],
+           "groupdata": true,
+           "key": "appearance",
+           "title": "Appearance",
+           "type": "nest"
+         },
+         {
+           "key": "border_color",
+           "multiple": false,
+           "options": [
+             {
+               "text": "erie-black",
+               "value": "erie-black"
+             },
+             {
+               "text": "bright-navy-blue",
+               "value": "bright-navy-blue"
+             },
+             {
+               "text": "davys-grey",
+               "value": "davys-grey"
+             },
+             {
+               "text": "liver-chestnut",
+               "value": "liver-chestnut"
+             },
+             {
+               "text": "old-rose",
+               "value": "old-rose"
+             },
+             {
+               "text": "isabelline",
+               "value": "isabelline"
+             },
+             {
+               "text": "white",
+               "value": "white"
+             },
+             {
+               "text": "transparent",
+               "value": "transparent"
+             }
+           ],
+           "title": "Border color",
+           "type": "select"
+         },
+         {
+           "key": "headless",
+           "title": "Headless",
+           "type": "boolean"
+         },
+         {
+           "fields": [
+             {
+               "key": "id",
+               "title": "Id",
+               "type": "string"
+             },
+             {
+               "key": "input_type",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "button",
+                   "value": "button"
+                 },
+                 {
+                   "text": "checkbox",
+                   "value": "checkbox"
+                 },
+                 {
+                   "text": "color",
+                   "value": "color"
+                 },
+                 {
+                   "text": "date",
+                   "value": "date"
+                 },
+                 {
+                   "text": "datetime-local",
+                   "value": "datetime-local"
+                 },
+                 {
+                   "text": "email",
+                   "value": "email"
+                 },
+                 {
+                   "text": "file",
+                   "value": "file"
+                 },
+                 {
+                   "text": "image",
+                   "value": "image"
+                 },
+                 {
+                   "text": "month",
+                   "value": "month"
+                 },
+                 {
+                   "text": "number",
+                   "value": "number"
+                 },
+                 {
+                   "text": "password",
+                   "value": "password"
+                 },
+                 {
+                   "text": "radio",
+                   "value": "radio"
+                 },
+                 {
+                   "text": "range",
+                   "value": "range"
+                 },
+                 {
+                   "text": "reset",
+                   "value": "reset"
+                 },
+                 {
+                   "text": "search",
+                   "value": "search"
+                 },
+                 {
+                   "text": "submit",
+                   "value": "submit"
+                 },
+                 {
+                   "text": "tel",
+                   "value": "tel"
+                 },
+                 {
+                   "text": "text",
+                   "value": "text"
+                 },
+                 {
+                   "text": "time",
+                   "value": "time"
+                 },
+                 {
+                   "text": "url",
+                   "value": "url"
+                 },
+                 {
+                   "text": "week",
+                   "value": "week"
+                 }
+               ],
+               "title": "Input type",
+               "type": "select"
+             },
+             {
+               "key": "label",
+               "title": "Label",
+               "type": "string"
+             },
+             {
+               "arrayTitle": true,
+               "key": "name",
+               "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "required",
+               "title": "Required",
+               "type": "boolean"
+             }
+           ],
+           "key": "items",
+           "title": "Items",
+           "type": "accordion"
+         },
+         {
+           "key": "submit",
+           "title": "Submit",
+           "type": "string"
+         }
+       ],
+       "key": "formbuilder"
+     },
+     {
        "component": "newsletter-big",
        "fields": [
          {
@@ -3628,14 +3742,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3673,14 +3779,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3778,14 +3876,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -3823,14 +3913,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -3887,14 +3969,6 @@
              {
                "text": "isabelline",
                "value": "isabelline"
-             },
-             {
-               "text": "white",
-               "value": "white"
-             },
-             {
-               "text": "transparent",
-               "value": "transparent"
              },
              {
                "text": "white",
@@ -3976,14 +4050,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4021,14 +4087,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -4218,14 +4276,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4263,14 +4313,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -4460,14 +4502,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4505,14 +4539,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -4710,14 +4736,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4755,14 +4773,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -4937,14 +4947,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -4982,14 +4984,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -5123,14 +5117,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5168,14 +5154,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -5314,14 +5292,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5359,14 +5329,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -5454,14 +5416,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5499,14 +5453,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -5699,14 +5645,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5744,14 +5682,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -5939,14 +5869,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -5984,14 +5906,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -6184,14 +6098,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -6229,14 +6135,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -6356,9 +6254,19 @@
                "type": "string"
              },
              {
+               "key": "link",
+               "title": "Link",
+               "type": "string"
+             },
+             {
                "arrayTitle": true,
                "key": "name",
                "title": "Name",
+               "type": "string"
+             },
+             {
+               "key": "title",
+               "title": "Title",
                "type": "string"
              }
            ],
@@ -6440,14 +6348,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -6485,14 +6385,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -6629,14 +6521,6 @@
              {
                "text": "transparent",
                "value": "transparent"
-             },
-             {
-               "text": "white",
-               "value": "white"
-             },
-             {
-               "text": "transparent",
-               "value": "transparent"
              }
            ],
            "title": "Item background color",
@@ -6710,14 +6594,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -6755,14 +6631,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -6934,14 +6802,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -6979,14 +6839,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -7140,14 +6992,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -7185,14 +7029,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -7285,14 +7121,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -7576,14 +7404,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Text color",
@@ -7616,14 +7436,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -7833,14 +7645,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Border color",
@@ -8005,7 +7809,12 @@
          {
            "fields": [
              {
-               "key": "background_color",
+               "key": "bg_color",
+               "title": "Bg color",
+               "type": "string"
+             },
+             {
+               "key": "border_color",
                "multiple": false,
                "options": [
                  {
@@ -8039,6 +7848,86 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
+                 }
+               ],
+               "title": "Border color",
+               "type": "select"
+             },
+             {
+               "key": "text_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
+                 },
+                 {
+                   "text": "white",
+                   "value": "white"
+                 },
+                 {
+                   "text": "transparent",
+                   "value": "transparent"
+                 }
+               ],
+               "title": "Text color",
+               "type": "select"
+             }
+           ],
+           "groupdata": true,
+           "key": "form",
+           "title": "Form",
+           "type": "nest"
+         },
+         {
+           "fields": [
+             {
+               "key": "background_color",
+               "multiple": false,
+               "options": [
+                 {
+                   "text": "erie-black",
+                   "value": "erie-black"
+                 },
+                 {
+                   "text": "bright-navy-blue",
+                   "value": "bright-navy-blue"
+                 },
+                 {
+                   "text": "davys-grey",
+                   "value": "davys-grey"
+                 },
+                 {
+                   "text": "liver-chestnut",
+                   "value": "liver-chestnut"
+                 },
+                 {
+                   "text": "old-rose",
+                   "value": "old-rose"
+                 },
+                 {
+                   "text": "isabelline",
+                   "value": "isabelline"
                  },
                  {
                    "text": "white",
@@ -8235,14 +8124,6 @@
                  {
                    "text": "transparent",
                    "value": "transparent"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  }
                ],
                "title": "Background color",
@@ -8275,14 +8156,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -8465,14 +8338,6 @@
                  {
                    "text": "isabelline",
                    "value": "isabelline"
-                 },
-                 {
-                   "text": "white",
-                   "value": "white"
-                 },
-                 {
-                   "text": "transparent",
-                   "value": "transparent"
                  },
                  {
                    "text": "white",
@@ -8807,6 +8672,10 @@
                    "value": "contact-noform"
                  },
                  {
+                   "text": "formbuilder",
+                   "value": "formbuilder"
+                 },
+                 {
                    "text": "newsletter-big",
                    "value": "newsletter-big"
                  },
@@ -9020,6 +8889,10 @@
                    "value": "contact-noform"
                  },
                  {
+                   "text": "formbuilder",
+                   "value": "formbuilder"
+                 },
+                 {
                    "text": "newsletter-big",
                    "value": "newsletter-big"
                  },
@@ -9224,6 +9097,10 @@
                  {
                    "text": "contact-noform",
                    "value": "contact-noform"
+                 },
+                 {
+                   "text": "formbuilder",
+                   "value": "formbuilder"
                  },
                  {
                    "text": "newsletter-big",

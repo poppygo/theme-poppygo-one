@@ -92,6 +92,10 @@ fontscheme:
     name: art
   - family: Domine
     name: display2
+form:
+  bg_color: davys-grey
+  border_color: davys-grey
+  text_color: isabelline
 site:
   background_color: bright-navy-blue
   container: true

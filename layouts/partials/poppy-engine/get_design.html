@@ -3,8 +3,18 @@
 {{- $typographyData := site.Data.design.typographies -}}
 {{- $componentData := site.Data.design.components -}}
 {{- $buttonData := site.Data.design.buttons -}}
+{{- $formData := site.Data.design.form -}}
 {{- $design := dict -}}
 {{- $override_debug_info := dict -}}
+
+{{- $form := "" -}}
+{{- range $key, $value := $formData -}}
+    {{- if in $key "bg_color" -}} {{- $value = (printf "bg-%s"  (partial "poppy-engine/colors" $value) ) -}}
+    {{- else if in $key "border_color" -}} {{- $value = (printf "border-%s"  (partial "poppy-engine/colors" $value) ) -}}
+    {{- else if in $key "text_color" -}} {{- $value = (printf "text-%s"  (partial "poppy-engine/colors" $value) ) -}} {{- end -}}
+    {{- $form = printf "%s%s " $form $value -}}
+{{- end -}}
+{{- $design = merge $design (dict "form" $form) -}}
 
 {{- range $componentData -}}
   {{- $border := "" -}}
@@ -33,9 +43,6 @@
   {{- end -}}
   {{- $design = merge $design (dict "border" $border) -}}
 {{- end -}}
-
-
-
 
 {{- if $page_component.Params.design.typographies -}}
   {{- range $page_component.Params.design.typographies -}}

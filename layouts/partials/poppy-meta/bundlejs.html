@@ -6,5 +6,5 @@
 <script src="{{ $js_bundle.RelPermalink }}"></script> */}}
 
 {{- if not .Site.IsServer -}}
-    <script async defer data-website-id="{{ .Site.Params.umami.siteID }}" src="{{ .Site.Params.umami.trackerScript }}"></script>
+  <script async defer data-website-id="{{ .Site.Params.umami.siteid }}" src="{{ .Site.Params.umami.trackerscript }}"></script>
 {{- end -}}

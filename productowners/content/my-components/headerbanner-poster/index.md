@@ -63,7 +63,7 @@ design:
       space: 0
       transform: uppercase
 draft: false
-headless: false
+headless: true
 image: tub
 item_background_color: ''
 name: headerbanner

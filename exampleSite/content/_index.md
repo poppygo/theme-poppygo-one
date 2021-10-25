@@ -39,10 +39,10 @@ page_sections:
     bodytext: ''
     buttons: []
     component: headerbanner-height
-    image: none
+    image: robot
     name: headerbanner height
-    subtitle: none
-    title: none
+    subtitle: nog een test
+    title: test
   - appearance:
       background_color: bright-navy-blue
       background_image: none
@@ -64,6 +64,7 @@ page_sections:
         icon: none
         image: pew
         link: /components/
+        name: build any page
         title: Component based
       - bodytext: >-
           Manage lay-out, design and content all from within PoppyGo CMS. No
@@ -77,6 +78,7 @@ page_sections:
         icon: none
         image: felic
         link: /pages/mbit-training/
+        name: Manage lay-out
         title: 100% Manageable
       - bodytext: |-
           Built on tailwind,
@@ -90,6 +92,7 @@ page_sections:
         icon: none
         image: shocked
         link: /pages/dynamic-classes/
+        name: Built on tailwind
         title: 100% Tailwind
     name: Benefits
     subtitle: none
@@ -160,6 +163,49 @@ page_sections:
     name: About this theme
     subtitle: 'Most flexible, most manageable'
     title: About this theme
+  - appearance:
+      background_color: white
+      background_image: none
+      item_background_color: bright-navy-blue
+      parallax: true
+      texture: ''
+    border_color: bright-navy-blue
+    component: formbuilder
+    headless: false
+    image: robot
+    items:
+      - fieldtype: email
+        id: emailInput
+        input_type: color
+        label: emailfield
+        name: emailfield
+      - fieldtype: text
+        id: textInput
+        input_type: password
+        label: Textfield
+        name: textfield
+      - fieldtype: comment
+        id: comment
+        input_type: checkbox
+        label: comment
+        name: comment
+        required: false
+      - id: button
+        input_type: button
+        label: button
+        name: button
+        required: false
+      - id: date
+        input_type: date
+        label: date
+        name: date
+        required: false
+    menus: []
+    name: First form
+    social_icons: []
+    subtitle: Create any form field you like
+    textlogo: ''
+    title: Formbuilder form
   - appearance:
       background_color: ''
       background_image: ''

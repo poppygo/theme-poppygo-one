@@ -1,0 +1,28 @@
+{{- $page := .page -}}
+{{- $content := .content -}}
+{{- $design := .design -}}
+
+{{- with $design -}}
+  <div class="{{.vertical_space}} flex">
+    {{- if $content.image -}}
+      <div class = "hidden lg:w-2/3 md:flex lg:flex-col justify-center ">
+        {{- $class := printf "w-full max-h-full %s %s %s" .rounded .shadow .border -}}
+        {{- partial "poppy-elements/image" (dict "resource_page" $content.fg_resource_page "name" $content.image "link" $content.link "class" $class) -}}
+      </div>
+    {{- end -}}
+      <div class= "lg:flex lg:flex-col justify-center mx-auto p-3 {{$design.border}} {{$design.rounded}} {{$design.shadow}} {{$content.item_background_color}}">
+        <div class="mx-auto">
+          <h2 class="{{.itemtitle}}">{{$content.title}}</h2>
+          <span class="{{.itemsubtitle}}">{{$content.subtitle }}</span>
+        </div>
+        <form action="POGOFORM" class="mt-2 mx-auto w-full">
+            <div class="">
+                {{- range $content.items -}}
+                <input type={{.input_type}} name={{.name}} id={{.id}} class="w-full h-16 my-4 {{$design.form}} focus:ring-4" {{if eq .required true}} required {{end}}>
+                {{- end -}}
+                <button class="my-4 h-16 {{.button_primary}} {{$design.rounded}} hover:opacity-70">{{$content.submit}}</button>
+            </div>
+        </form>
+      </div>
+  </div>
+{{- end -}}

@@ -29,6 +29,21 @@ page_sections:
     title: '->frompage'
     title2: max control
   - appearance:
+      background_color: ''
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    component: introbanner
+    headless: false
+    image: ''
+    menus: []
+    name: introbanner
+    social_icons: []
+    subtitle: ''
+    textlogo: ''
+    title: ''
+  - appearance:
       background_color: davys-grey
       background_image: none
       item_background_color: old-rose
@@ -53,6 +68,21 @@ page_sections:
     image: ''
     name: footer
     subtitle: ''
+    title: ''
+  - appearance:
+      background_color: ''
+      background_image: ''
+      item_background_color: ''
+      parallax: false
+      texture: ''
+    component: navbar-collapsed
+    headless: false
+    image: ''
+    menus: []
+    name: contact
+    social_icons: []
+    subtitle: ''
+    textlogo: ''
     title: ''
 resources: []
 subtitle: Design
