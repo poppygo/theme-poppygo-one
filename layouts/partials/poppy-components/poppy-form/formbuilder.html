@@ -15,8 +15,9 @@
           <h2 class="{{.itemtitle}}">{{$content.title}}</h2>
           <span class="{{.itemsubtitle}}">{{$content.subtitle }}</span>
         </div>
-        <form action="POGOFORM" class="mt-2 mx-auto w-full">
+        <form name=default action="POGOFORM" method="POST" class="mt-2 mx-auto w-full">
             <div class="">
+                <input type="hidden" name="POGOFORM_ID" value="{{$content.form_endpoint}}">
                 {{- range $content.items -}}
                 <input type={{.input_type}} name={{.name}} id={{.id}} class="w-full h-16 my-4 {{$design.form}} focus:ring-4" {{if eq .required true}} required {{end}}>
                 {{- end -}}

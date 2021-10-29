@@ -172,7 +172,7 @@ page_sections:
     border_color: bright-navy-blue
     component: formbuilder
     headless: false
-    image: robot
+    image: socket
     items:
       - fieldtype: email
         id: emailInput
@@ -196,7 +196,7 @@ page_sections:
         name: button
         required: false
       - id: date
-        input_type: date
+        input_type: radio
         label: date
         name: date
         required: false

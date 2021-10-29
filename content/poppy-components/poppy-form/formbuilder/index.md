@@ -1,5 +1,6 @@
 ---
 headless: true
+endpoint: default
 appearance:
   background_image: back
   background_color: white
